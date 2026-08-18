@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>福岡・九州 2/1–2/12 行程</title>
+<link rel="preload" href="data.js?v=1" as="script">
+<link rel="preload" href="trip.js?v=1" as="script">
+<link rel="prefetch" href="libs/leaflet.js">
+<link rel="prefetch" href="libs/leaflet.css">
+<link rel="prefetch" href="map.html">
+<style>
+#pgload{position:fixed;inset:0;z-index:9999;background:#f7f9fb;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;transition:opacity .22s}
+#pgload.done{opacity:0;pointer-events:none}
+#pgload .sp{width:34px;height:34px;border:3px solid #d5dfe8;border-top-color:#1b4f8a;border-radius:50%;animation:pgsp .7s linear infinite}
+#pgload small{color:#77828d;font-size:12px}
+@keyframes pgsp{to{transform:rotate(360deg)}}
+</style>
+<style>
+:root{
+  --bg:#f7f9fb; --panel:#fff; --ink:#22282e; --muted:#77828d;
+  --accent:#1b4f8a; --accent2:#0e7c6b; --line:#dfe6ec; --chip:#eef3f7;
+  --fuk:#1b4f8a; --ngs:#c0392b; --oita:#d81b60; --kk:#5d4037;
+  --amber:#8a6d1f; --amberbg:#fdf8e9; --winter:#0f7bbd;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;color:var(--ink);background:var(--bg);padding-bottom:calc(60px + env(safe-area-inset-bottom))}
+
+.topnav{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:58px;padding:9px clamp(14px,3vw,28px);background:rgba(247,249,251,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.brand{display:flex;flex-direction:column;min-width:0}
+.brand strong{font-size:15px;line-height:1.25}
+.brand span{color:var(--muted);font-size:12px;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.navlinks{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.navlinks a{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 14px;border:1px solid var(--line);border-radius:8px;color:var(--ink);background:var(--panel);text-decoration:none;font-size:14px;font-weight:700}
+.navlinks a[aria-current="page"]{color:#fff;background:var(--accent);border-color:var(--accent)}
+a:active,.card:active,.navlinks a:active{transform:scale(.97)}
+
+.daynav-shell{position:sticky;top:58px;z-index:30;display:flex;align-items:stretch;gap:7px;padding:8px 0;background:rgba(247,249,251,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.day-jump{width:150px;flex-shrink:0;padding:0 10px;border:1px solid var(--accent2);border-radius:10px;background:#fff;color:var(--ink);font:700 12px/1.3 inherit;cursor:pointer}
+.daynav{display:flex;gap:6px;min-width:0;overflow-x:auto;padding:2px;margin:-2px;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scroll-snap-type:x proximity}
+.daynav::-webkit-scrollbar{display:none}
+.daynav a{display:flex;flex-direction:column;align-items:stretch;gap:4px;width:215px;min-height:58px;flex-shrink:0;padding:8px 11px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);text-decoration:none;box-shadow:0 1px 2px rgba(0,0,0,.03);scroll-snap-align:start}
+.daynav-top{display:flex;align-items:center;gap:6px;line-height:1}
+.daynav-day{font-size:13px;font-weight:900}
+.daynav-city{font-size:11px;font-weight:700;color:var(--accent);padding:2px 5px;border-radius:5px;background:#e9eff6}
+.daynav .daynav-title{font-size:11px;font-weight:500;color:var(--muted);line-height:1.35;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.daynav a small{margin-left:auto;font-weight:700;font-size:10.5px;color:var(--muted);white-space:nowrap}
+.daynav a.active{color:#fff;border-color:var(--accent2);background:var(--accent2);box-shadow:0 3px 10px rgba(0,0,0,.18)}
+.daynav a[data-city="福岡"].active{border-color:var(--fuk);background:var(--fuk)}
+.daynav a[data-city="長崎"].active{border-color:var(--ngs);background:var(--ngs)}
+.daynav a[data-city="大分"].active{border-color:var(--oita);background:var(--oita)}
+.daynav a[data-city="北九州"].active{border-color:var(--kk);background:var(--kk)}
+.daynav a.active small,.daynav a.active .daynav-title,.daynav a.active .daynav-city{color:rgba(255,255,255,.86)}
+.daynav a.active .daynav-city{background:rgba(255,255,255,.16)}
+.daynav a.bkx{color:var(--amber);border-color:#e8d9a8;background:var(--amberbg)}
+.daynav a.bkx.active{color:#fff;border-color:var(--amber);background:var(--amber)}
+
+.wrap{max-width:920px;margin:0 auto;padding:0 14px}
+header.pg{padding:24px 0 12px}
+header.pg h1{font-size:23px}
+header.pg .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
+.flights{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.flight{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:7px 12px;font-size:12.5px}
+.flight b{color:var(--accent)}
+.keydates{margin-top:12px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--winter);border-radius:12px;padding:12px 16px;font-size:12.5px;line-height:1.9}
+.keydates h2{font-size:14.5px;margin-bottom:4px}
+.keydates b{color:var(--winter)}
+
+.day{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:14px 0;overflow:hidden;scroll-margin-top:142px}
+.backup{scroll-margin-top:142px}
+.day-h{display:flex;align-items:center;gap:9px;padding:11px 16px;border-bottom:1px solid var(--line);background:linear-gradient(to right,#fbfdff,#fff);flex-wrap:wrap}
+.day-h .dnum{font-size:12px;color:#fff;background:var(--accent2);border-radius:8px;padding:2px 8px;white-space:nowrap}
+.day-h .date{font-weight:700;font-size:15px;white-space:nowrap}
+.day-h .cbadge{font-size:11px;color:#fff;border-radius:8px;padding:2px 8px;white-space:nowrap}
+.day-h .title{font-size:12.5px;color:var(--muted);margin-left:auto;text-align:right}
+.day-b{padding:8px 16px 12px}
+.variant-index{display:flex;gap:8px;flex-wrap:wrap;padding:12px 0 4px}
+.variant-index a{display:inline-flex;align-items:center;gap:6px;padding:7px 11px;border-radius:9px;text-decoration:none;font-size:12px;font-weight:800}
+.variant-index a[data-plan="A"]{color:#0b5d51;background:#e9f7f3;border:1px solid #b9ddd4}
+.variant-index a[data-plan="B"]{color:#7b5a0b;background:#fff8df;border:1px solid #ead493}
+.variant{margin:10px 0 18px;border:2px solid;border-radius:12px;overflow:hidden;scroll-margin-top:130px}
+.variant[data-plan="A"]{border-color:#78bbae;background:#fbfffe}
+.variant[data-plan="B"]{border-color:#d7b75c;background:#fffdf7}
+.variant-h{display:flex;align-items:flex-start;gap:10px;padding:10px 12px}
+.variant[data-plan="A"] .variant-h{background:#e9f7f3}
+.variant[data-plan="B"] .variant-h{background:#fff4cc}
+.variant-tag{flex-shrink:0;color:#fff;border-radius:8px;padding:3px 9px;font-size:12px;font-weight:900}
+.variant[data-plan="A"] .variant-tag{background:#0e7c6b}
+.variant[data-plan="B"] .variant-tag{background:#9a7415}
+.variant-title{font-size:14px;font-weight:800;line-height:1.45}
+.variant-note{font-size:11.5px;color:var(--muted);line-height:1.5;margin-top:2px}
+.variant-stops{padding:4px 12px 10px}
+
+.stop{display:flex;gap:8px;padding:8px 0 2px}
+.stop .tm{width:42px;flex-shrink:0;color:var(--muted);font-size:12px;font-weight:700;padding-top:3px;text-align:right}
+.stop .rail{width:14px;flex-shrink:0;position:relative}
+.stop .rail i{position:absolute;left:2px;top:6px;width:10px;height:10px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1.5px rgba(0,0,0,.1)}
+.stop .body{flex:1;min-width:0}
+.stop .line1{font-size:14px;line-height:1.5}
+.stop .line1 .lbl{font-size:10.5px;color:#fff;border-radius:8px;padding:1.5px 7px;margin-right:5px;white-space:nowrap;vertical-align:1px}
+.stop .line1 a{color:inherit;text-decoration:none;border-bottom:1px dashed #b9c5cf;font-weight:700}
+.stop .ja{font-size:11px;color:var(--muted);margin-top:1px}
+.stop .note{font-size:12.5px;color:#4d555d;margin-top:2px;line-height:1.6}
+.stop .facts{font-size:11.5px;color:var(--accent2);margin-top:3px}
+.facts i{display:inline-block;background:#eef6f4;border:1px solid #d3e6e1;color:var(--accent2);border-radius:8px;padding:1px 8px;margin:3px 5px 0 0;font-style:normal;font-size:11px;line-height:1.6}
+.facts i.w{background:#eaf5fc;border-color:#c5e2f4;color:var(--winter)}
+.stop details{margin-top:3px}
+.stop summary{font-size:11.5px;color:var(--muted);cursor:pointer;user-select:none}
+.stop .more{font-size:12px;color:#5c646c;background:#f8fafc;border-left:3px solid #d8e1e8;border-radius:0 8px 8px 0;padding:6px 9px;margin-top:4px;line-height:1.7}
+.stop .alt{font-size:12px;color:#a04b12;background:#fdf3ea;border-left:3px solid #e8b287;border-radius:0 8px 8px 0;padding:5px 9px;margin-top:5px;line-height:1.65}
+.go{display:inline-flex;align-items:center;gap:6px;margin:3px 0 3px 64px;font-size:11.5px;color:#41617f;background:#f1f6fa;border:1px dashed #cfdce8;border-radius:9px;padding:3px 10px;max-width:calc(100% - 70px)}
+.go::before{content:"↓";font-weight:700;color:#8fa8bd}
+
+.backup{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:18px 0;padding:14px 18px}
+.backup h2{font-size:16px;margin-bottom:6px}
+.backup h3{font-size:13.5px;color:var(--accent2);margin:12px 0 4px}
+.backup li{font-size:12.5px;line-height:1.85;margin-left:18px;color:#4d555d}
+.backup li b{color:var(--ink)}
+
+.gtips{margin-top:22px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 20px;font-size:13px;line-height:2}
+.gtips h2{font-size:15.5px;margin-bottom:6px}
+.gtips b{color:var(--accent2)}
+.gtips table{width:100%;border-collapse:collapse;margin:8px 0;font-size:12.5px}
+.gtips th,.gtips td{border:1px solid var(--line);padding:5px 8px;text-align:left}
+.gtips th{background:var(--chip);font-weight:700}
+.daytips{margin-top:14px;border-top:1px dashed var(--line);padding-top:8px}
+.daytips summary{cursor:pointer;font-size:13px;font-weight:600;color:var(--accent2);list-style:none}
+.daytips summary::-webkit-details-marker{display:none}
+.daytips summary::before{content:"▸ ";color:var(--muted)}
+.daytips details[open] summary::before{content:"▾ "}
+.daytips-b{font-size:12.5px;line-height:1.9;color:#4d555d;padding:8px 4px 2px}
+.daytips-b b{color:var(--accent2)}
+
+@media (max-width:600px){
+  .topnav{min-height:44px;padding:4px 12px}
+  .brand strong{font-size:13.5px}
+  .brand .trip-date{display:none}
+  .navlinks{gap:5px}
+  .navlinks a{min-height:32px;padding:0 8px;font-size:12px;border-radius:7px}
+  .daynav-shell{top:44px;gap:5px;padding:7px 0}
+  .day-jump{width:112px;padding:0 7px;font-size:11px}
+  .daynav a{display:block;width:auto;min-height:0;padding:7px 10px;border-radius:9px}
+  .daynav-top{display:block;text-align:center}
+  .daynav-city{display:inline;background:none;padding:0;color:inherit;font-size:10px}
+  .daynav-day{font-size:12px}
+  .daynav .daynav-title{display:none}
+  .daynav a small{display:block;font-size:10px;text-align:center}
+  .day,.backup{scroll-margin-top:106px}
+  header.pg h1{font-size:20px}
+  .stop .tm{width:36px;font-size:11px}
+  .go{margin-left:52px;max-width:calc(100% - 58px)}
+  .day-h .title{width:100%;text-align:left;margin-left:0}
+  .variant-index a{flex:1;justify-content:center}
+  .stop .line1{font-size:14.5px}
+  .stop .note{font-size:13px}
+  .backup li{font-size:13px}
+}
+</style>
+</head>
+<body>
+<div id="pgload"><div class="sp"></div><small>行程載入中…</small></div>
+<nav class="topnav" aria-label="主要導覽">
+  <div class="brand">
+    <strong>Fukuoka Trip</strong>
+    <span class="site-meta" id="siteMeta">2027/2/1–2/12</span>
+  </div>
+  <div class="navlinks">
+    <a href="itinerary.html" aria-current="page">行程</a>
+    <a href="map.html">地圖</a>
+  </div>
+</nav>
+<div class="wrap">
+<header class="pg">
+  <h1>🏯 福岡・九州 12 天行程</h1>
+  <div class="sub">2027/2/1（一）– 2/12（五）｜12 天 11 夜｜JR 為主・換宿 3 次｜博多 6 晚＋長崎 3 晚＋由布院 2 晚</div>
+  <div class="flights">
+    <div class="flight">✈️ 去程 2/1（一）<b>CI110</b> 台北 TPE 06:50 → <b>福岡 FUK 10:00</b>（2h10m）</div>
+    <div class="flight">✈️ 回程 2/12（五）<b>CI117</b> <b>福岡 FUK 20:35</b> → 台北 TPE 22:20（2h45m）</div>
+  </div>
+  <div class="keydates">
+    <h2>❄️ 2027 年 2 月的時間鎖定事件</h2>
+    <b>2/3（三）</b>櫛田神社 節分厄除大祭——撒豆 10:00 起每 30 分一次至約 16:00<br>
+    <b>2/5（五）– 2/21（日）</b>長崎燈會（官方已公告 2027 場次），點燈 17:00–22:00<br>
+    <b>2/6（六）</b>農曆初一——皇帝遊行／媽祖行列多排這天；也是住宿最貴、人最多的一天<br>
+    <b>2/11（四）</b>日本建國紀念日 ＋ 柳川雛祭「さげもんめぐり」開幕（お雛様始祭・遊行）<br>
+    <b>整個 2 月</b>太宰府梅花（2 月中旬見頃）、牡蠣小屋、下關河豚、柳川こたつ舟、溫泉季
+  </div>
+</header>
+
+<div class="daynav-shell">
+  <select class="day-jump" id="day-jump" aria-label="快速選擇行程日期"></select>
+  <nav class="daynav" id="daynav" aria-label="每日行程"></nav>
+</div>
+<div id="days"></div>
+<div class="backup" id="backup"><h2>📌 備選與備案清單</h2></div>
+
+</div>
+
+<script src="data.js?v=1"></script>
+<script src="trip.js?v=1"></script>
+<script>
+// ---- 共用：地點查找（日文新字體 → 繁體正規化）----
+const _J2T=(typeof J2T!=="undefined")?J2T:{};
+function j2t(s){let r="";for(const c of s)r+=_J2T[c]||c;return r;}
+function _normFull(s){return j2t((s||"").replace(/[·・\s]/g,"").toLowerCase());}
+function _norm(s){return j2t((s||"").replace(/[（(].*?[)）]/g,"").replace(/[·・\s]/g,"").toLowerCase());}
+const _IDX=PLACES.map(p=>[_norm(p.name),_normFull(p.name),p]);
+function lookup(name){
+  const full=_normFull(name),n=_norm(name);if(!n)return null;
+  const exact=_IDX.find(([,pfull])=>pfull===full);if(exact)return exact[2];
+  let best=null,bestLen=0;
+  for(const [pn,,p] of _IDX){
+    if(pn===n)return p;
+    if((pn.includes(n)||n.includes(pn))&&pn.length>bestLen){best=p;bestLen=pn.length;}
+  }
+  return best;
+}
+function placeMapURL(p){return 'map.html?q='+encodeURIComponent(p.name.trim());}
+function placeMapLink(p,label){return `<a href="${placeMapURL(p)}" target="_blank">${label||p.name}</a>`;}
+// 現場導航用：拿日文名去 Google Maps 搜，就算我們的座標有偏差也一定找得到正確的門口
+function gmapLink(p){if(!p)return"";const q=encodeURIComponent(p.name_ja||p.name);
+  return `<div style="margin-top:4px"><a href="https://www.google.com/maps/search/?api=1&query=${q}" target="_blank" rel="noopener" style="font-size:11.5px;color:#1b4f8a;border:0;text-decoration:none">🧭 在 Google Maps 開啟${p.name_ja?"（"+p.name_ja+"）":""}</a></div>`;}
+function _distKm(a,b){const dx=(a.lat-b.lat)*111,dy=(a.lng-b.lng)*93;return Math.sqrt(dx*dx+dy*dy);}
+const FOOD_CATS=new Set(["餐飲"]);
+
+function nearbyEats(p){
+  if(!p||!p.lat)return"";
+  const pick=PLACES.filter(q=>q.lat&&q.city===p.city&&FOOD_CATS.has(q.category)&&q.name!==p.name)
+    .map(q=>({q,d:_distKm(p,q)})).filter(x=>x.d<=0.6).sort((a,b)=>a.d-b.d).slice(0,4);
+  return pick.map(x=>`${placeMapLink(x.q)} ${Math.max(50,Math.round(x.d*1000/50)*50)}m`).join('、');
+}
+function nearbyText(p){
+  if(!p||!p.lat)return"";
+  return PLACES.filter(q=>q.lat&&q.city===p.city&&q.name!==p.name&&!['交通','住宿'].includes(q.category))
+    .map(q=>[_distKm(p,q),q]).filter(x=>x[0]<=0.6).sort((a,b)=>a[0]-b[0]).slice(0,4)
+    .map(x=>`${placeMapLink(x[1])} ${Math.max(50,Math.round(x[0]*1000/50)*50)}m`).join("、");
+}
+function autoAltName(stop){
+  const p=lookup(stop.name);if(!p||!p.lat)return null;
+  const cand=PLACES.filter(q=>q.lat&&q.city===p.city&&FOOD_CATS.has(q.category)&&q.name!==p.name)
+    .map(q=>({q,d:_distKm(p,q)})).filter(x=>x.d<=2).sort((a,b)=>a.d-b.d);
+  return cand.length?cand[0].q.name:null;
+}
+function altHTML(stop){
+  let names=Array.isArray(stop.alt)?stop.alt.slice():(stop.alt?[stop.alt]:[]);
+  let auto=false;
+  if(!names.length){const a=autoAltName(stop);if(a){names=[a];auto=true;}}
+  if(!names.length)return"";
+  const main=lookup(stop.name);
+  const items=names.map(nm=>{
+    const q=lookup(nm);if(!q)return null;
+    const d=(main&&main.lat&&q.lat)?_distKm(main,q):null;
+    const dist=d!=null?` ${Math.max(50,Math.round(d*1000/50)*50)}m`:'';
+    return `${placeMapLink(q)}${dist}`;
+  }).filter(Boolean);
+  if(!items.length)return"";
+  return `<div class="alt">🔁 備選：${items.join('、')}${auto?'（就近同類）':''}</div>`;
+}
+
+// ---- 天卡片 ----
+const KIND={spot:{c:"#1b4f8a",t:"景點"},meal:{c:"#e67e22",t:"用餐"},hotel:{c:"#37474f",t:"住宿"},move:{c:"#5d4037",t:"交通"}};
+const CITY_COLOR={"福岡":"var(--fuk)","長崎":"var(--ngs)","大分":"var(--oita)","北九州":"var(--kk)"};
+
+const GTIPS_HTML=`<div class="daytips"><details><summary>🚄 通用交通・JR Pass・2 月提醒</summary><div class="daytips-b">
+<b>JR Pass：</b>建議買<b>全九州 7 日券 ¥26,000</b>，啟用 <b>2/4（四）– 2/10（三）</b>——覆蓋下關／門司港往返（約 ¥4,000）、博多→長崎（¥6,490）、長崎→由布院（約 ¥12,000）、由布院↔日田往返（約 ¥3,000，2/9 選 A 案才用到）、由布院→博多（約 ¥6,470），單買約 ¥28,960–31,960，省約 ¥3,000–6,000 且指定席免費劃位。<br>
+<b>⚠️ Pass 不含山陽新幹線：</b>2/4 的<b>博多↔小倉不能搭新幹線</b>（那段是 JR 西日本的山陽新幹線，單買約 ¥2,160／趟），要走 <b>特急ソニック／きらめき 約 50 分</b>；下關雖是 JR 西日本車站，但在<b>全九州版</b>的有效範圍內，可直接進出。<br>
+<b>票種價格：</b>全九州 3 日 ¥22,000／5 日 ¥24,000／7 日 ¥26,000；北部九州 3 日 ¥15,000／5 日 ¥17,000。線上購買比日本櫃台便宜。<br>
+<b>若 2/2 選熊本（B 案）：</b>Pass 改成啟用 <b>2/2–2/8</b>（熊本新幹線往返約 ¥10,480，省更多），2/10 由布院→博多改單買約 ¥6,470（2/9 選 A 案日田往返再加約 ¥3,000）。<br>
+<b>不含 JR 的段：</b>太宰府與柳川走<b>西鐵</b>（柳川有「特盛きっぷ」套票含來回＋遊船＋鰻魚）；長崎市內走<b>路面電車</b>（一日券約 ¥600）；福岡市內走<b>地鐵</b>。<br>
+<b>溫泉據點：</b>本趟溫泉全部集中在<b>湯布院</b>（別府已排除）。由布院是山中盆地看不到海，客室露天風呂看的是由布岳；旅館候選 6 家與各自取捨請看地圖的 🏨 住宿類別。<br>
+<b>必訂項目與開賣日：</b>ゆふいんの森 指定席＝乘車日 1 個月前 10:00 JST（2/8 車 → <b>2027/1/8</b> 開賣，最難搶）；西九州新幹線指定席同樣 1 個月前；軍艦島 tour 建議提前 1–2 個月；<b>長崎 2/5–2/7 住宿與由布院 2/8–2/9 旅館現在就要訂</b>（燈會＋農曆春節＋好旅館 6–12 個月前開賣）。<br>
+<b>2 月天氣：</b>福岡日均 4–10°C、長崎略暖、由布院山區更冷且可能下雪。羽絨外套＋防風＋手套必備；稻佐山山頂比市區低 3–5 度。<br>
+<b>不爬山原則：</b>全程最長步行單段是由布院站→金鱗湖約 25 分平路。稻佐山搭纜車、哥拉巴園有斜行電梯、九博有電扶梯隧道、熊本城天守閣有電梯、日田豆田町全平地。已排除阿蘇、由布岳登山、寶滿山上宮、宮島彌山、龜山社中紀念館上坡石階。<br>
+<b>回程死線：</b>CI117 20:35 起飛 → <b>17:30 前必須離開飯店</b>（地鐵空港線 5 分＋國際線接駁巴士 10 分，機場報到與出境預留 2.5 小時）。
+</div></details></div>`;
+
+const daysEl=document.getElementById('days');
+TRIP.forEach(day=>{
+  const cc=CITY_COLOR[day.city]||'var(--accent2)';
+  let html=`<div class="day" id="day-${day.d}" style="border-left:4px solid ${cc}"><div class="day-h">
+    <span class="dnum">Day ${day.d}</span>
+    <span class="date">${day.date.replace('/','月')}日（${day.wd}）</span>
+    <span class="cbadge" style="background:${cc}">${day.city}</span>
+    <span class="title">${day.title}</span></div><div class="day-b">`;
+  if(day.variants){
+    html+=`<div class="variant-index" aria-label="D${day.d} 行程版本">`+
+      day.variants.map(v=>`<a href="#day-${day.d}-${v.id}" data-plan="${v.id}">方案 ${v.id}｜${v.title}</a>`).join("")+
+      `</div>`;
+  }
+  function renderStops(stops){
+   stops.forEach((s,i)=>{
+    const p=lookup(s.name);
+    const k=KIND[s.kind]||KIND.spot;
+    const facts=[];
+    if(p){
+      if(p.winter)facts.push(['w','❄️ 冬季限定／2 月亮點']);
+      if(p.ticket)facts.push(['','🎫 '+p.ticket]);
+      if(p.price)facts.push(['','💰 '+p.price]);
+      if(p.duration)facts.push(['','⏱ '+p.duration]);
+    }
+    const moreBits=[];
+    if(p){
+      if(p.hours)moreBits.push(`🕐 ${p.hours}`);
+      if(FOOD_CATS.has(p.category)&&p.dishes&&p.dishes.length)moreBits.push(`🍽 必點：${p.dishes.slice(0,5).join("、")}`);
+      if(!FOOD_CATS.has(p.category)&&p.activities&&p.activities.length)moreBits.push(`🎡 看點：${p.activities.slice(0,4).join("、")}`);
+      if(p.notes)moreBits.push(`⚠️ ${p.notes}`);
+      if(s.kind==='spot'||s.kind==='hotel'){
+        const eats=nearbyEats(p);
+        if(eats)moreBits.push(`🍽 附近吃的：${eats}`);
+      }
+      const nb=nearbyText(p);
+      if(nb)moreBits.push(`🧭 附近：${nb}`);
+      if(!p.lat)moreBits.push(`⚠️ 這個地點還沒有座標，地圖上不會出現（跑 python geocode.py 或手動補）`);
+    }
+    const q=encodeURIComponent((p?p.name:s.name).trim());
+    html+=`<div class="stop"><span class="tm">${s.t}</span><span class="rail"><i style="background:${k.c}"></i></span><div class="body">
+      <div class="line1"><span class="lbl" style="background:${k.c}">${s.label||k.t}</span><a href="map.html?q=${q}" target="_blank">${s.name}</a></div>
+      ${(p&&p.name_ja)?`<div class="ja">${p.name_ja}</div>`:""}
+      ${s.note?`<div class="note">${s.note}</div>`:""}
+      ${facts.length?`<div class="facts">${facts.map(f=>`<i class="${f[0]}">${f[1]}</i>`).join("")}</div>`:""}
+      ${(s.kind==='meal'||s.alt)?altHTML(s):""}
+      ${gmapLink(p||{name:s.name})}
+      ${moreBits.length?`<details><summary>更多（營業時間・注意・附近）</summary><div class="more">${moreBits.join("<br>")}</div></details>`:""}
+    </div></div>`;
+    if(s.go&&i<stops.length-1)html+=`<div class="go">${s.go}</div>`;
+  });
+  }
+  if(day.variants){
+    day.variants.forEach(v=>{
+      html+=`<section class="variant" id="day-${day.d}-${v.id}" data-plan="${v.id}">
+        <div class="variant-h"><span class="variant-tag">方案 ${v.id}</span><div><div class="variant-title">${v.title}</div><div class="variant-note">${v.note}</div></div></div>
+        <div class="variant-stops">`;
+      renderStops(day.stops.filter(s=>s.plan===v.id));
+      html+=`</div></section>`;
+    });
+  }else{
+    renderStops(day.stops);
+  }
+  html+=GTIPS_HTML;
+  html+=`</div></div>`;
+  daysEl.innerHTML+=html;
+});
+
+// ---- 日期導覽列 ----
+const daynav=document.getElementById('daynav');
+const dayJump=document.getElementById('day-jump');
+daynav.innerHTML=
+  TRIP.map(d=>`<a href="#day-${d.d}" data-day="${d.d}" data-city="${d.city}"><span class="daynav-top"><b class="daynav-day">D${d.d}</b><span class="daynav-city">${d.city}</span><small>${d.date}（${d.wd}）</small></span><span class="daynav-title">${d.title}</span></a>`).join("")+
+  `<a class="bkx" href="#backup" data-backup>📌 備選</a>`;
+dayJump.innerHTML=TRIP.map(d=>`<option value="${d.d}">D${d.d} ${d.date}（${d.wd}）${d.city}</option>`).join("")+`<option value="backup">📌 備選</option>`;
+dayJump.addEventListener('change',()=>{
+  const target=dayJump.value==='backup'?document.getElementById('backup'):document.getElementById(`day-${dayJump.value}`);
+  if(target)target.scrollIntoView({behavior:'auto',block:'start'});
+});
+
+const daySections=TRIP.map(d=>document.getElementById(`day-${d.d}`));
+const dayLinks=[...daynav.querySelectorAll('a[data-day]')];
+const backupSection=document.getElementById('backup');
+const backupLink=daynav.querySelector('a[data-backup]');
+let activeDay="",spyQueued=false;
+function setActiveDay(day){
+  const key=String(day);
+  if(key===activeDay)return;
+  activeDay=key;dayJump.value=key;
+  dayLinks.forEach(a=>{
+    const on=a.dataset.day===key;
+    a.classList.toggle('active',on);
+    if(on)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');
+  });
+  const backupOn=key==='backup';
+  backupLink.classList.toggle('active',backupOn);
+  const active=backupOn?backupLink:dayLinks.find(a=>a.dataset.day===key);
+  if(active)daynav.scrollTo({left:active.offsetLeft-(daynav.clientWidth-active.offsetWidth)/2,behavior:'smooth'});
+}
+function updateActiveDay(){
+  spyQueued=false;
+  const line=daynav.getBoundingClientRect().bottom+12;
+  if(backupSection.getBoundingClientRect().top<=line){setActiveDay('backup');return;}
+  let current=daySections[0];
+  for(const section of daySections){
+    if(section.getBoundingClientRect().top<=line)current=section;else break;
+  }
+  setActiveDay(Number(current.id.replace('day-','')));
+}
+function queueDaySpy(){if(spyQueued)return;spyQueued=true;requestAnimationFrame(updateActiveDay);}
+window.addEventListener('scroll',queueDaySpy,{passive:true});
+window.addEventListener('resize',queueDaySpy);
+updateActiveDay();
+
+// ---- 備選清單 ----
+document.getElementById('backup').innerHTML+=BACKUPS.map(g=>
+  `<h3>${g.g}</h3><ul>${g.items.map(x=>`<li>${x}</li>`).join("")}</ul>`).join("");
+
+if(typeof SITE_VERSION!=="undefined")document.getElementById('siteMeta').textContent=`2027/2/1–2/12 ｜ ${SITE_VERSION}・更新 ${SITE_UPDATED_AT}`;
+
+document.getElementById('pgload').classList.add('done');
+document.addEventListener('click',e=>{
+  const a=e.target.closest('a[href$=".html"]');
+  if(a&&!a.target)document.getElementById('pgload').classList.remove('done');
+});
+window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('pgload').classList.add('done');});
+</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('fukuoka-app-v1').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
+</body>
+</html>
