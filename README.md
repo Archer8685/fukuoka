@@ -218,8 +218,19 @@ My Maps 限制：一層 2000 列、最多 10 層、單檔 5MB——目前 305 �
 點開存完回來打勾，進度存在瀏覽器 localStorage。305 點全部存完大概要半小時，
 但這是唯一能真的進到「想去的地點」的路。
 
-⚠️ 用瀏覽器自動化（Selenium／Playwright）去點 Google Maps 的儲存鈕在技術上可行，
-但違反 Google 服務條款、帳號有被鎖的風險，而且 UI 一改就壞——不建議，本專案不做。
+**C. 瀏覽器自動化（2026/08/19 實測可行，但有前提）**
+
+用 Claude in Chrome 驅動已登入的 Chrome，逐點「儲存 → 想去的地點」，88 個行程站點全部成功。
+關鍵限制：**Chrome 分頁必須是 `document.visibilityState === 'visible'`**——分頁被其他視窗完全遮住時，
+Google Maps 收得到 hover 但不處理點擊，儲存選單根本不開（背景分頁還會被計時器節流，
+in-page 輪詢曾讓 renderer 卡死 45 秒）。把 Chrome 放到第二螢幕或左右並排才穩。
+
+實作重點：`computer` 的真實點擊在這頁不可靠，改用 JS 合成 pointerdown/mousedown/pointerup/click；
+搜尋結果是列表時先點第一筆 `a.hfpxzc`，並排除 `.Nv2PK` 內含「贊助商」的廣告卡
+（踩過一次：找飯店時存到廣告的 Hotel Indigo）。
+
+⚠️ 這仍然違反 Google 服務條款、帳號有被鎖的風險，UI 一改就壞。要跑請自負風險，
+一般情況用 A 或 B 就好。
 
 ## 快取提醒
 
