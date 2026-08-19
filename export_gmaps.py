@@ -20,11 +20,11 @@ import html
 import csv
 from urllib.parse import quote
 
-CATEGORY_ORDER = ["景點", "祭典", "溫泉", "購物", "餐飲", "住宿", "交通"]
-CAT_SLUG = {"景點": "sights", "祭典": "festivals", "溫泉": "onsen", "購物": "shopping",
-            "餐飲": "food", "住宿": "hotels", "交通": "transport"}
-CAT_COLOR = {"景點": "#1a73e8", "祭典": "#d93025", "溫泉": "#e8710a", "購物": "#9334e6",
-             "餐飲": "#188038", "住宿": "#795548", "交通": "#5f6368"}
+CATEGORY_ORDER = ["景點", "祭典", "動漫", "溫泉", "購物", "餐飲", "住宿", "交通"]
+CAT_SLUG = {"景點": "sights", "祭典": "festivals", "動漫": "anime", "溫泉": "onsen",
+            "購物": "shopping", "餐飲": "food", "住宿": "hotels", "交通": "transport"}
+CAT_COLOR = {"景點": "#1a73e8", "祭典": "#d93025", "動漫": "#e52592", "溫泉": "#e8710a",
+             "購物": "#9334e6", "餐飲": "#188038", "住宿": "#795548", "交通": "#5f6368"}
 OUT = "export"
 NL = "\n"
 
