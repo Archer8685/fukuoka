@@ -115,9 +115,10 @@
   "notes": "JR 竹下站步行約 10 分，或博多站搭巴士約 15 分；鋼彈演出時刻表在官網公告。約 10:00–21:00。",
   "hours": "10:00–21:00",
   "duration": "2–3 小時",
-  "lat": 33.564772,
-  "lng": 130.44032,
-  "coord_status": "nominatim"
+  "lat": 33.565168,
+  "lng": 130.440941,
+  "coord_status": "google",
+  "coord_source": "Google Places 驗證 2026-08-19：ららぽーと福岡／福岡県福岡市博多区那珂6-23-1（原 nominatim，差 72m）"
  },
  {
   "name": "MARK IS 福岡ももち",
@@ -135,9 +136,10 @@
   "notes": "地鐵唐人町站步行約 10 分。約 10:00–21:00。",
   "hours": "10:00–21:00",
   "duration": "2 小時",
-  "lat": 33.592341,
-  "lng": 130.363893,
-  "coord_status": "nominatim"
+  "lat": 33.592234,
+  "lng": 130.364556,
+  "coord_status": "google",
+  "coord_source": "Google Places 驗證 2026-08-19：MARK IS 福岡ももち／福岡県福岡市中央区地行浜2-2-1（原 nominatim，差 62m）"
  },
  {
   "name": "AMU PLAZA 長崎",

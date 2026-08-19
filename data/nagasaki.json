@@ -286,9 +286,10 @@
   "hours": "07:00–17:00",
   "ticket": "約 ¥300",
   "duration": "40 分",
-  "coord_status": "manual",
-  "lat": 32.7477,
-  "lng": 129.8828
+  "coord_status": "google",
+  "lat": 32.747886,
+  "lng": 129.88384,
+  "coord_source": "Google Places 驗證 2026-08-19：興福寺／長崎県長崎市寺町4-32（原 manual，差 99m）"
  },
  {
   "name": "崇福寺",
@@ -306,9 +307,10 @@
   "hours": "08:00–17:00",
   "ticket": "約 ¥300",
   "duration": "40 分",
-  "coord_status": "nominatim",
-  "lat": 32.742494,
-  "lng": 129.883392
+  "coord_status": "google",
+  "lat": 32.742447,
+  "lng": 129.883451,
+  "coord_source": "Google Places 驗證 2026-08-19：崇福寺／長崎県長崎市鍛冶屋町7-5（原 nominatim，差 8m）"
  },
  {
   "name": "荷蘭坂",

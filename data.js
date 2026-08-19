@@ -967,9 +967,9 @@ const PLACES = [
   "hours": "08:00–17:00",
   "ticket": "約 ¥300",
   "duration": "40 分",
-  "coord_status": "nominatim",
-  "lat": 32.742494,
-  "lng": 129.883392
+  "coord_status": "google",
+  "lat": 32.742447,
+  "lng": 129.883451
  },
  {
   "name": "平和公園",
@@ -1047,9 +1047,9 @@ const PLACES = [
   "hours": "07:00–17:00",
   "ticket": "約 ¥300",
   "duration": "40 分",
-  "coord_status": "manual",
-  "lat": 32.7477,
-  "lng": 129.8828
+  "coord_status": "google",
+  "lat": 32.747886,
+  "lng": 129.88384
  },
  {
   "name": "荷蘭坂",
@@ -2346,9 +2346,9 @@ const PLACES = [
   "notes": "地鐵唐人町站步行約 10 分。約 10:00–21:00。",
   "hours": "10:00–21:00",
   "duration": "2 小時",
-  "lat": 33.592341,
-  "lng": 130.363893,
-  "coord_status": "nominatim"
+  "lat": 33.592234,
+  "lng": 130.364556,
+  "coord_status": "google"
  },
  {
   "name": "MORE LIGHT",
@@ -2758,9 +2758,9 @@ const PLACES = [
   "notes": "JR 竹下站步行約 10 分，或博多站搭巴士約 15 分；鋼彈演出時刻表在官網公告。約 10:00–21:00。",
   "hours": "10:00–21:00",
   "duration": "2–3 小時",
-  "lat": 33.564772,
-  "lng": 130.44032,
-  "coord_status": "nominatim"
+  "lat": 33.565168,
+  "lng": 130.440941,
+  "coord_status": "google"
  },
  {
   "name": "アール福岡（旧 ANATOMICA）",
@@ -4652,9 +4652,9 @@ const PLACES = [
   "notes": "⚠️ <b>定休是週二，不是週三</b>（2026-08-19 查證 HotPepper 與官方資訊：月・水・木・金・土・日 11:00–19:00，火曜休、遇假日營業）——本行程 2/3（週三）有開。⚠️ 麵售完就提早結束；店面小要排隊。1882（明治 15）年創業，博多最老的烏龍麵店之一。",
   "price": "約 ¥600–900",
   "area_center": "中洲",
-  "lat": 33.592461,
-  "lng": 130.411012,
-  "coord_status": "nominatim",
+  "lat": 33.592431,
+  "lng": 130.411035,
+  "coord_status": "google",
   "hours": "11:00–19:00（⚠️ 麵售完提早關，常 17 點左右就收）"
  },
  {
@@ -5294,9 +5294,9 @@ const PLACES = [
   "price": "午 ¥5,000–5,999／晚 ¥10,000–14,999（另加 12% 服務費）",
   "hours": "11:00–16:00／17:00–22:00（餐點 LO 20:30），無定休",
   "duration": "1–1.5 小時",
-  "coord_status": "manual",
-  "lat": 33.5893,
-  "lng": 130.4207
+  "coord_status": "google",
+  "lat": 33.590002,
+  "lng": 130.41973
  },
  {
   "name": "元祖本吉屋（鰻魚蒸籠飯）",
@@ -5421,9 +5421,9 @@ const PLACES = [
   "price": "定食約 ¥1,500–2,500",
   "hours": "11:00–22:00（L.O.21:00）；店休日不定（依 MARK IS 福岡ももち）",
   "duration": "1 小時",
-  "coord_status": "manual",
-  "lat": 33.592341,
-  "lng": 130.363893
+  "coord_status": "google",
+  "lat": 33.593237,
+  "lng": 130.363043
  },
  {
   "name": "博多もつ鍋 おおやま",

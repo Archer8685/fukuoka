@@ -291,10 +291,10 @@
   "price": "午 ¥5,000–5,999／晚 ¥10,000–14,999（另加 12% 服務費）",
   "hours": "11:00–16:00／17:00–22:00（餐點 LO 20:30），無定休",
   "duration": "1–1.5 小時",
-  "coord_status": "manual",
-  "lat": 33.5893,
-  "lng": 130.4207,
-  "coord_source": "JR博多シティ（アミュプラザ博多）9F くうてん；沿用同棟 OSM node/5809137353（博多阪急）建物座標，尚未經 Google Places 驗證"
+  "coord_status": "google",
+  "lat": 33.590002,
+  "lng": 130.41973,
+  "coord_source": "Google Places 驗證 2026-08-19：人形町今半 JR博多シティ店／福岡市博多区博多駅中央街1-1 9F（原 manual 用博多阪急建物座標，差 119m）"
  },
  {
   "name": "博多めんたいやまや食堂 MARK IS 福岡ももち店",
@@ -315,9 +315,9 @@
   "price": "定食約 ¥1,500–2,500",
   "hours": "11:00–22:00（L.O.21:00）；店休日不定（依 MARK IS 福岡ももち）",
   "duration": "1 小時",
-  "coord_status": "manual",
-  "lat": 33.592341,
-  "lng": 130.363893,
-  "coord_source": "MARK IS 福岡ももち 3F（中央區地行浜 2-2-1）；沿用商場本體座標 OSM／nominatim，尚未經 Google Places 驗證"
+  "coord_status": "google",
+  "lat": 33.593237,
+  "lng": 130.363043,
+  "coord_source": "Google Places 驗證 2026-08-19：博多めんたいやまや食堂 MARK IS 福岡ももち店／福岡市中央区地行浜2-2-1 マークイズ福岡ももち 3F（原 manual 用商場本體座標，差 127m）"
  }
 ]
