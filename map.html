@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>福岡・九州 12 天 — 景點餐廳地圖</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
-<link rel="preload" href="data.js?v=12" as="script">
-<link rel="preload" href="trip.js?v=12" as="script">
+<link rel="preload" href="data.js?v=14" as="script">
+<link rel="preload" href="trip.js?v=14" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="stylesheet" href="libs/leaflet.css">
 <script src="libs/leaflet.js"></script>
@@ -73,6 +73,11 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 .card .top{display:flex;align-items:center;gap:7px}
 .badge{font-size:10.5px;color:#fff;padding:2px 7px;border-radius:9px;white-space:nowrap}
 .winter-tag{font-size:10.5px;color:var(--winter);border:1px solid var(--winter);padding:1px 6px;border-radius:9px;white-space:nowrap}
+.halal-tag{font-size:10.5px;color:#0e7c3f;border:1px solid #0e7c3f;padding:1px 6px;border-radius:9px;white-space:nowrap}
+.halal-tag.friendly{color:#3f8f4e;border-color:#7cc98a}
+.halal-tag.pray{color:#6d28d9;border-color:#a78bfa}
+.tabelog-tag{font-size:10.5px;color:#b45309;border:1px solid #e8b287;background:#fff8ef;padding:1px 6px;border-radius:9px;white-space:nowrap;font-weight:700}
+.chip.halal-chip.on{background:#0e7c3f}
 .card h3{font-size:14.5px;flex:1}
 .card .ja{font-size:11px;color:var(--muted);margin-top:2px}
 .card .meta{font-size:11.5px;color:var(--muted);margin-top:5px;line-height:1.5}
@@ -162,6 +167,7 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
       <div class="filter-row hidden" id="cuisineChips"></div>
       <div class="filter-row">
         <span class="chip winter-chip" id="winterOnly">❄️ 只看冬季限定／2 月亮點</span>
+        <span class="chip halal-chip" id="halalOnly">☪ 只看清真／禮拜所</span>
         <span class="chip" id="resetBtn">✅ 全選</span>
         <span class="chip" id="clearBtn">✕ 清除</span>
       </div>
@@ -178,8 +184,8 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=12"></script>
-<script src="trip.js?v=12"></script>
+<script src="data.js?v=14"></script>
+<script src="trip.js?v=14"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -191,6 +197,8 @@ const CATS={
   "住宿":{color:"#37474f",emoji:"🏨",label:"住宿"},
   "交通":{color:"#5d4037",emoji:"🚄",label:"車站機場"}
 };
+// 清真標記用色（要宣告在 legend 之前，否則 const 的 TDZ 會讓整頁掛掉）
+const HALAL_COLOR="#0e7c3f",HALAL_FRIENDLY_COLOR="#3f8f4e",PRAY_COLOR="#6d28d9";
 const FOOD_CATS=new Set(["餐飲"]);
 // 區域頁籤：把 city 收成 5 個地理群組，不然頁籤會太多
 const REGIONS=[
@@ -300,7 +308,7 @@ CUISINES.forEach(([cc,n])=>{
 cuisineChipsBox.classList.toggle('hidden',!foodChip.classList.contains('on'));
 document.getElementById('legend').innerHTML=
   Object.entries(CATS).map(([k,v])=>`<div>${v.emoji} ${v.label}</div>`).join("")+
-  `<div style="color:var(--winter)">❄️ 冬季限定／2 月亮點</div>`;
+  `<div style="color:var(--winter)">❄️ 冬季限定／2 月亮點</div>`+`<div style="color:${HALAL_COLOR}">☪ 清真</div><div style="color:${HALAL_FRIENDLY_COLOR}">☪ 清真友善</div><div style="color:${PRAY_COLOR}">🕌 禮拜所</div>`;
 
 // 區域頁籤
 const cityTabs=document.getElementById('cityTabs');
@@ -315,17 +323,32 @@ function focusOn(latlng,zoom){
   if(s>0)map.panBy([0,Math.round(s/2)],{animate:false});
 }
 
-let state={region:"福岡",cats:new Set(Object.keys(CATS)),cuisines:new Set(CUISINES.map(c=>c[0])),winterOnly:false,q:"",tripDay:1,tripPlan:"A",tripShowAll:true};
+let state={region:"福岡",cats:new Set(Object.keys(CATS)),cuisines:new Set(CUISINES.map(c=>c[0])),winterOnly:false,halalOnly:false,q:"",tripDay:1,tripPlan:"A",tripShowAll:true};
 let markers=[],routeLine=null;
 
 function regionOf(key){return REGIONS.find(r=>r.key===key)||REGIONS[0];}
 function citiesOf(key){return regionOf(key).cities;}
 function catOf(p){return p.category;}
 function isWinter(p){return p.winter===true;}
+// 清真：true＝有認證或明確清真對應；"友善"＝穆斯林友善／不使用豬肉；"礼拝所"＝清真寺或禱告室
+function isHalalish(p){return p.halal===true||p.halal==="友善"||p.halal==="礼拝所";}
+function halalLabel(p){
+  if(p.halal===true)return["☪ 清真",""];
+  if(p.halal==="友善")return["☪ 清真友善","friendly"];
+  if(p.halal==="礼拝所")return["🕌 禮拜所","pray"];
+  return null;
+}
 
-function iconFor(cat){const cfg=CATS[cat]||{color:"#555",emoji:"📌"};return{emoji:cfg.emoji,color:cfg.color};}
-function makeIcon(cat,dimmed){
-  const cfg=iconFor(cat);
+function iconFor(cat,p){
+  if(p){
+    if(p.halal===true)return{emoji:"☪",color:HALAL_COLOR};
+    if(p.halal==="友善")return{emoji:"☪",color:HALAL_FRIENDLY_COLOR};
+    if(p.halal==="礼拝所")return{emoji:"🕌",color:PRAY_COLOR};
+  }
+  const cfg=CATS[cat]||{color:"#555",emoji:"📌"};return{emoji:cfg.emoji,color:cfg.color};
+}
+function makeIcon(cat,dimmed,p){
+  const cfg=iconFor(cat,p);
   return L.divIcon({className:'pin-wrap',
     html:`<div class="pin" style="background:${cfg.color};${dimmed?'opacity:.22;transform:rotate(-45deg) scale(.78)':''}"><span>${cfg.emoji}</span></div>`,
     iconSize:[30,30],iconAnchor:[15,30],popupAnchor:[0,-30]});
@@ -379,6 +402,7 @@ function gmapLink(p){
 }
 function coordWarn(p){
   if(p.coord_status==="gsi")return `<div class="coordwarn">📍 座標為地名／地址級精度（國土地理院），可能與實際門口差數十至數百公尺——現場請以店名或日文名問路。</div>`;
+  if(p.coord_status==="area")return `<div class="coordwarn">📍 這是<b>區域概略位置</b>，不是店家實際座標——小店在 OSM 上沒有節點。請務必用下面的 Google Maps 連結導航。</div>`;
   if(p.coord_status==="approx")return `<div class="coordwarn">📍 座標是依地址推估的概略位置，可能差數十至數百公尺——請用下面的 Google Maps 連結導航。</div>`;
   if(p.coord_status==="manual")return `<div class="coordwarn">📍 座標為手動填入。</div>`;
   return "";
@@ -388,6 +412,8 @@ function popupHtml(p){
   return `<div class="pp">
     <h3>${p.name}</h3>
     <div class="sub">${p.name_ja?p.name_ja+"　":""}${p.city}・${p.area||""}${p.cuisine?("・"+p.cuisine):""}${isWinter(p)?"・❄️ 冬季限定":""}</div>
+    ${p.tabelog?`<div class="row"><b>⭐ 食べログ ${p.tabelog}</b>${p.tabelog_area?`（${p.tabelog_area} 第 ${p.tabelog_rank} 名）`:""}</div>`:""}
+    ${halalLabel(p)?`<div class="row"><b>${halalLabel(p)[0]}</b>${p.halal_cert?`（${p.halal_cert}）`:""}</div>`:""}
     ${p.hours?`<div class="row"><b>🕐 </b>${p.hours}</div>`:""}
     ${p.price?`<div class="row"><b>💰 </b>${p.price}</div>`:""}
     ${p.ticket?`<div class="row"><b>🎫 門票：</b>${p.ticket}</div>`:""}
@@ -407,12 +433,13 @@ function passesBase(p){
   if(!state.cats.has(p.category))return false;
   if(FOOD_CATS.has(p.category)&&p.cuisine&&!state.cuisines.has(p.cuisine))return false;
   if(state.winterOnly&&!isWinter(p))return false;
+  if(state.halalOnly&&!isHalalish(p))return false;
   return true;
 }
 function matchesSearch(p){
   if(!state.q)return true;
   const q=j2t(state.q.toLowerCase());
-  const hay=j2t([p.name,p.name_ja,p.area,p.address,p.cuisine,p.reason,...(p.dishes||[]),...(p.activities||[])].join(" ").toLowerCase());
+  const hay=j2t([p.name,p.name_ja,p.area,p.address,p.cuisine,p.reason,p.halal===true?'清真 ハラール halal':(p.halal||''),p.tabelog?'食べログ '+p.tabelog:'',...(p.dishes||[]),...(p.activities||[])].join(" ").toLowerCase());
   return hay.includes(q);
 }
 function passes(p){return passesBase(p)&&matchesSearch(p);}
@@ -435,9 +462,9 @@ function buildList(items){
   const list=document.getElementById('list');list.innerHTML="";
   items.forEach(p=>{
     const card=document.createElement('div');card.className='card';
-    const badgeCfg=iconFor(p.category);
+    const badgeCfg=iconFor(p.category,p);
     const label=(CATS[p.category]||{label:p.category}).label;
-    card.innerHTML=`<div class="top"><span class="badge" style="background:${badgeCfg.color}">${badgeCfg.emoji} ${label}</span><h3>${p.name}</h3>${isWinter(p)?`<span class="winter-tag">❄️ 冬季</span>`:""}</div>
+    card.innerHTML=`<div class="top"><span class="badge" style="background:${badgeCfg.color}">${badgeCfg.emoji} ${label}</span><h3>${p.name}</h3>${p.tabelog?`<span class="tabelog-tag">⭐${p.tabelog}</span>`:""}${halalLabel(p)?`<span class="halal-tag ${halalLabel(p)[1]}">${halalLabel(p)[0]}</span>`:""}${isWinter(p)?`<span class="winter-tag">❄️</span>`:""}</div>
       ${p.name_ja?`<div class="ja">${p.name_ja}</div>`:""}
       <div class="meta">${p.area||""}${p.cuisine?"｜"+p.cuisine:""}${p.hours?"｜"+p.hours:""}${p.price?"｜"+p.price:""}${p.ticket?"｜門票 "+p.ticket:""}</div>
       ${(p.dishes||p.activities)?`<div class="dishes">${(p.dishes||p.activities).slice(0,4).join("、")}</div>`:""}`;
@@ -462,7 +489,7 @@ function render(){
   mapItems.forEach(p=>{
     if(p.lat&&p.lng){
       const z=matchesSearch(p)?100:0;
-      const mk=L.marker([p.lat,p.lng],{icon:makeIcon(p.category,!!state.q&&!matchesSearch(p)),zIndexOffset:z})
+      const mk=L.marker([p.lat,p.lng],{icon:makeIcon(p.category,!!state.q&&!matchesSearch(p),p),zIndexOffset:z})
         .addTo(map).bindPopup(popupHtml(p),{maxWidth:popW});
       mk._pid=p._id;mk._z=z;markers.push(mk);
     }
@@ -494,7 +521,7 @@ function focusTripPlace(name){
   focusOn([p.lat,p.lng],16);
   let mk=markers.find(m=>m._pid===p._id);
   if(!mk){
-    mk=L.marker([p.lat,p.lng],{icon:makeIcon(p.category,false),zIndexOffset:1200})
+    mk=L.marker([p.lat,p.lng],{icon:makeIcon(p.category,false,p),zIndexOffset:1200})
       .addTo(map).bindPopup(popupHtml(p),{maxWidth:Math.min(300,window.innerWidth-90)});
     mk._pid=p._id;markers.push(mk);
   }
@@ -560,10 +587,11 @@ function renderTrip(keepView){
       if(!state.cats.has(p.category))return;
       if(FOOD_CATS.has(p.category)&&p.cuisine&&!state.cuisines.has(p.cuisine))return;
       if(state.winterOnly&&!isWinter(p))return;
+      if(state.halalOnly&&!isHalalish(p))return;
       if(stopNames.has(_norm(p.name)))return;
       let searchMatch=true;
       if(q){const hay=j2t([p.name,p.name_ja,p.area,p.cuisine,...(p.dishes||[]),...(p.activities||[])].join(" ").toLowerCase());searchMatch=hay.includes(q);}
-      const cfg=iconFor(p.category);
+      const cfg=iconFor(p.category,p);
       const mk=L.marker([p.lat,p.lng],{icon:L.divIcon({className:'pin-wrap',
         html:`<div class="pin" style="background:${cfg.color};transform:rotate(-45deg) scale(.72);opacity:${searchMatch?'.62':'.16'}"><span>${cfg.emoji}</span></div>`,
         iconSize:[30,30],iconAnchor:[15,30],popupAnchor:[0,-26]}),zIndexOffset:0})
@@ -624,6 +652,10 @@ document.getElementById('filterToggle').onclick=e=>{
 function rerender(){if(state.region==="__trip")renderTrip(true);else render();}
 document.getElementById('winterOnly').onclick=e=>{
   e.target.classList.toggle('on');state.winterOnly=e.target.classList.contains('on');
+  rerender();
+};
+document.getElementById('halalOnly').onclick=e=>{
+  e.target.classList.toggle('on');state.halalOnly=e.target.classList.contains('on');
   rerender();
 };
 document.getElementById('resetBtn').onclick=()=>{
@@ -828,7 +860,7 @@ window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('p
     window.addEventListener('load',function(){
       navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){
         if(!('caches' in window))return;
-        caches.open('fukuoka-app-v12').then(function(c){
+        caches.open('fukuoka-app-v14').then(function(c){
           document.querySelectorAll('script[src],link[href]').forEach(function(el){
             var u=el.src||el.href; if(!u||u.indexOf(location.origin)!==0)return;
             c.match(u).then(function(hit){ if(!hit) c.add(u).catch(function(){}); });

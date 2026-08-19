@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>福岡・九州 2/1–2/12 行程</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
-<link rel="preload" href="data.js?v=12" as="script">
-<link rel="preload" href="trip.js?v=12" as="script">
+<link rel="preload" href="data.js?v=14" as="script">
+<link rel="preload" href="trip.js?v=14" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
@@ -106,6 +106,8 @@ header.pg .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 .stop .facts{font-size:11.5px;color:var(--accent2);margin-top:3px}
 .facts i{display:inline-block;background:#eef6f4;border:1px solid #d3e6e1;color:var(--accent2);border-radius:8px;padding:1px 8px;margin:3px 5px 0 0;font-style:normal;font-size:11px;line-height:1.6}
 .facts i.w{background:#eaf5fc;border-color:#c5e2f4;color:var(--winter)}
+.facts i.t{background:#fff8ef;border-color:#e8b287;color:#b45309;font-weight:700}
+.facts i.h{background:#eaf7ee;border-color:#a5d6b4;color:#0e7c3f;font-weight:700}
 .stop details{margin-top:3px}
 .stop summary{font-size:11.5px;color:var(--muted);cursor:pointer;user-select:none}
 .stop .more{font-size:12px;color:#5c646c;background:#f8fafc;border-left:3px solid #d8e1e8;border-radius:0 8px 8px 0;padding:6px 9px;margin-top:4px;line-height:1.7}
@@ -219,8 +221,8 @@ header.pg .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
   <div class="mb" id="mBody"></div>
 </dialog>
 
-<script src="data.js?v=12"></script>
-<script src="trip.js?v=12"></script>
+<script src="data.js?v=14"></script>
+<script src="trip.js?v=14"></script>
 <script>
 // ---- 共用：地點查找（日文新字體 → 繁體正規化）----
 const _J2T=(typeof J2T!=="undefined")?J2T:{};
@@ -332,6 +334,10 @@ TRIP.forEach(day=>{
     const k=KIND[s.kind]||KIND.spot;
     const facts=[];
     if(p){
+      if(p.tabelog)facts.push(['t','⭐ 食べログ '+p.tabelog+(p.tabelog_area?'（'+p.tabelog_area+' 第 '+p.tabelog_rank+' 名）':'')]);
+      if(p.halal===true)facts.push(['h','☪ 清真'+(p.halal_cert?'（'+p.halal_cert+'）':'')]);
+      else if(p.halal==='友善')facts.push(['h','☪ 清真友善']);
+      else if(p.halal==='礼拝所')facts.push(['h','🕌 禮拜所']);
       if(p.winter)facts.push(['w','❄️ 冬季限定／2 月亮點']);
       if(p.ticket)facts.push(['','🎫 '+p.ticket]);
       if(p.price)facts.push(['','💰 '+p.price]);
@@ -350,6 +356,7 @@ TRIP.forEach(day=>{
       const nb=nearbyText(p);
       if(nb)moreBits.push(`🧭 附近：${nb}`);
       if(!p.lat)moreBits.push(`⚠️ 這個地點還沒有座標，地圖上不會出現（跑 python geocode.py 或手動補）`);
+      if(p.coord_status==='area')moreBits.push(`📍 地圖上是區域概略位置，導航請點地點名稱進地圖後用「在 Google Maps 開啟」`);
     }
     const q=encodeURIComponent((p?p.name:s.name).trim());
     html+=`<div class="stop"><span class="tm">${s.t}</span><span class="rail"><i style="background:${k.c}"></i></span><div class="body">
@@ -453,6 +460,6 @@ document.addEventListener('click',e=>{
 });
 window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('pgload').classList.add('done');});
 </script>
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('fukuoka-app-v12').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});});}).catch(function(){});});}</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('fukuoka-app-v14').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});});}).catch(function(){});});}</script>
 </body>
 </html>

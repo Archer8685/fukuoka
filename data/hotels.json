@@ -291,7 +291,10 @@
   "duration": "由布院的替代選擇",
   "coord_status": "approx",
   "lat": 33.2712,
-  "lng": 131.3745
+  "lng": 131.3745,
+  "tabelog": "3.55",
+  "tabelog_area": "湯布院",
+  "tabelog_rank": 18
  },
  {
   "name": "由布の彩 YADOYA おおはし",
@@ -354,7 +357,10 @@
   "duration": "若預算是台幣 2 萬等級",
   "lat": 33.275779,
   "lng": 131.369751,
-  "coord_status": "nominatim"
+  "coord_status": "nominatim",
+  "tabelog": "3.89",
+  "tabelog_area": "湯布院",
+  "tabelog_rank": 2
  },
  {
   "name": "由布院 玉の湯",
@@ -376,6 +382,9 @@
   "lat": 33.265613,
   "lng": 131.363017,
   "coord_status": "nominatim",
-  "chosen": true
+  "chosen": true,
+  "tabelog": "3.81",
+  "tabelog_area": "湯布院",
+  "tabelog_rank": 4
  }
 ]

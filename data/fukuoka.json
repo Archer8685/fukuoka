@@ -277,7 +277,10 @@
   "coord_status": "approx",
   "lat": 33.5199,
   "lng": 130.534,
-  "coord_source": "Nominatim かさの家, 太宰府天満宮参道, 宰府二丁目, 白川, 太宰府市, 福岡県, 818-0117, 日本"
+  "coord_source": "Nominatim かさの家, 太宰府天満宮参道, 宰府二丁目, 白川, 太宰府市, 福岡県, 818-0117, 日本",
+  "tabelog": "3.65",
+  "tabelog_area": "太宰府・大野城周辺",
+  "tabelog_rank": 5
  },
  {
   "name": "柳川川下り 松月乘船場",
@@ -341,7 +344,10 @@
   "duration": "1–1.5 小時",
   "coord_status": "manual",
   "lat": 33.1592,
-  "lng": 130.397
+  "lng": 130.397,
+  "tabelog": "3.42",
+  "tabelog_area": "柳川・大川周辺",
+  "tabelog_rank": 8
  },
  {
   "name": "若松屋（鰻魚蒸籠飯）",
@@ -363,7 +369,10 @@
   "coord_status": "nominatim",
   "lat": 33.158438,
   "lng": 130.396033,
-  "coord_source": "Nominatim 若松屋, 大牟田川副線, 沖端町, 柳川市, 福岡県, 832-0069, 日本"
+  "coord_source": "Nominatim 若松屋, 大牟田川副線, 沖端町, 柳川市, 福岡県, 832-0069, 日本",
+  "tabelog": "3.56",
+  "tabelog_area": "柳川・大川周辺",
+  "tabelog_rank": 3
  },
  {
   "name": "元祖本吉屋（鰻魚蒸籠飯）",
@@ -384,7 +393,10 @@
   "coord_status": "nominatim",
   "lat": 33.15845,
   "lng": 130.397028,
-  "coord_source": "Nominatim 元祖 本吉屋, 鬼童小路, 鬼童町, 柳川市, 福岡県, 832-0069, 日本"
+  "coord_source": "Nominatim 元祖 本吉屋, 鬼童小路, 鬼童町, 柳川市, 福岡県, 832-0069, 日本",
+  "tabelog": "3.68",
+  "tabelog_area": "柳川・大川周辺",
+  "tabelog_rank": 1
  },
  {
   "name": "岐志漁港 牡蠣小屋",
@@ -580,7 +592,10 @@
   "duration": "1.5–2 小時",
   "coord_status": "approx",
   "lat": 33.5946,
-  "lng": 130.4064
+  "lng": 130.4064,
+  "tabelog": "3.66",
+  "tabelog_area": "中洲",
+  "tabelog_rank": 17
  },
  {
   "name": "河太郎 中洲本店",
@@ -602,7 +617,10 @@
   "duration": "1.5 小時",
   "coord_status": "approx",
   "lat": 33.5928,
-  "lng": 130.4046
+  "lng": 130.4046,
+  "tabelog": "3.72",
+  "tabelog_area": "中洲",
+  "tabelog_rank": 10
  },
  {
   "name": "ふくや 中洲本店",

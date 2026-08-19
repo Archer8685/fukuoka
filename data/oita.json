@@ -220,7 +220,10 @@
   "duration": "15 分",
   "lat": 33.265644,
   "lng": 131.359873,
-  "coord_status": "nominatim"
+  "coord_status": "nominatim",
+  "tabelog": "3.63",
+  "tabelog_area": "湯布院",
+  "tabelog_rank": 10
  },
  {
   "name": "金賞可樂餅（湯之坪）",

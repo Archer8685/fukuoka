@@ -381,7 +381,10 @@
   "duration": "1 小時",
   "coord_status": "approx",
   "lat": 32.7423,
-  "lng": 129.8735
+  "lng": 129.8735,
+  "tabelog": "3.67",
+  "tabelog_area": "長崎市",
+  "tabelog_rank": 10
  },
  {
   "name": "吉宗 本店",

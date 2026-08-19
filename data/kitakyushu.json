@@ -121,7 +121,10 @@
   "duration": "45 分",
   "coord_status": "manual",
   "lat": 33.9456,
-  "lng": 130.9612
+  "lng": 130.9612,
+  "tabelog": "3.50",
+  "tabelog_area": "門司",
+  "tabelog_rank": 5
  },
  {
   "name": "唐戶市場",
@@ -146,7 +149,10 @@
   "coord_status": "nominatim",
   "lat": 33.956624,
   "lng": 130.945817,
-  "coord_source": "Nominatim 唐戸市場, 北浦街道, 宮田町一丁目, 唐戸町, 下関市, 山口県, 750-0004, 日本"
+  "coord_source": "Nominatim 唐戸市場, 北浦街道, 宮田町一丁目, 唐戸町, 下関市, 山口県, 750-0004, 日本",
+  "tabelog": "3.57",
+  "tabelog_area": "下関",
+  "tabelog_rank": 10
  },
  {
   "name": "海響館（下關市立水族館）",

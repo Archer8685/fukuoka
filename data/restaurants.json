@@ -149,7 +149,10 @@
   "duration": "1 小時",
   "lat": 32.743167,
   "lng": 129.880696,
-  "coord_status": "nominatim"
+  "coord_status": "nominatim",
+  "tabelog": "3.63",
+  "tabelog_area": "長崎市",
+  "tabelog_rank": 16
  },
  {
   "name": "共楽園",
@@ -255,6 +258,9 @@
   "duration": "40 分",
   "coord_status": "approx",
   "lat": 33.321,
-  "lng": 130.9455
+  "lng": 130.9455,
+  "tabelog": "3.71",
+  "tabelog_area": "日田市",
+  "tabelog_rank": 1
  }
 ]

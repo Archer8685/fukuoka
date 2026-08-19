@@ -211,6 +211,20 @@ const PLACES = [
   "lng": 131.3672
  },
  {
+  "name": "別府マスジド",
+  "name_ja": "別府マスジド",
+  "category": "景點",
+  "city": "大分",
+  "area": "別府市",
+  "halal": "礼拝所",
+  "reason": "⚠️ 這是離湯布院最近的清真寺（由布院搭 JR 約 1 小時）。立命館亞洲太平洋大學（APU）在別府，所以別府的穆斯林設施反而比大分其他地方齊全。",
+  "notes": "⚠️ 本趟不排別府，列在這裡是因為——湯布院本身沒有清真餐廳，最近的清真選項都在別府。",
+  "area_center": "別府",
+  "lat": 33.2793,
+  "lng": 131.501,
+  "coord_status": "area"
+ },
+ {
   "name": "宇奈岐日女神社",
   "name_ja": "宇奈岐日女神社",
   "category": "景點",
@@ -327,6 +341,20 @@ const PLACES = [
   "coord_status": "overpass",
   "lat": 32.809129,
   "lng": 130.703287
+ },
+ {
+  "name": "ACROS 福岡 禮拜室",
+  "name_ja": "福岡県国際交流センター 礼拝スペース 3F アクロス福岡",
+  "category": "景點",
+  "city": "福岡",
+  "area": "中央區・天神",
+  "halal": "礼拝所",
+  "reason": "天神中央公園旁的 ACROS 福岡 3 樓，福岡縣國際交流中心設有開放給所有訪客的禮拜空間——天神逛街時最方便的一處。",
+  "notes": "⚠️ 開放時間依中心營業時間。",
+  "area_center": "天神",
+  "lat": 33.591488,
+  "lng": 130.402445,
+  "coord_status": "nominatim"
  },
  {
   "name": "九州國立博物館",
@@ -462,7 +490,10 @@ const PLACES = [
   "duration": "1–1.5 小時",
   "coord_status": "manual",
   "lat": 33.1592,
-  "lng": 130.397
+  "lng": 130.397,
+  "tabelog": "3.42",
+  "tabelog_area": "柳川・大川周辺",
+  "tabelog_rank": 8
  },
  {
   "name": "東長寺",
@@ -543,6 +574,20 @@ const PLACES = [
   "coord_status": "overpass",
   "lat": 33.664061,
   "lng": 130.363845
+ },
+ {
+  "name": "福岡マスジド（福岡清真寺）",
+  "name_ja": "福岡マスジド",
+  "category": "景點",
+  "city": "福岡",
+  "area": "東區・箱崎",
+  "halal": "礼拝所",
+  "reason": "福岡的清真寺，九州最主要的禮拜設施之一，附近有清真食材店。",
+  "notes": "⚠️ 參觀請遵守服裝規定與禮拜時間；非穆斯林入內前先詢問。",
+  "area_center": "博多",
+  "lat": 33.5897,
+  "lng": 130.4207,
+  "coord_status": "area"
  },
  {
   "name": "福岡城跡・舞鶴公園",
@@ -643,6 +688,24 @@ const PLACES = [
   "coord_status": "nominatim",
   "lat": 32.733367,
   "lng": 129.869055
+ },
+ {
+  "name": "多姆托倫展望塔",
+  "name_ja": "ドムトールン",
+  "category": "景點",
+  "city": "長崎",
+  "area": "佐世保市",
+  "lat": 33.0862,
+  "lng": 129.7855,
+  "coord_status": "approx",
+  "winter": true,
+  "activities": [
+   "80m 展望室",
+   "俯瞰全園燈海"
+  ],
+  "reason": "園內 80 公尺高的象徵塔，展望室可以俯瞰整個園區——看燈海全景的最佳位置，天黑後上去。",
+  "notes": "含在 1DAY 護照內；有電梯不用爬。",
+  "duration": "30 分"
  },
  {
   "name": "大浦天主堂",
@@ -809,15 +872,16 @@ const PLACES = [
   "area": "佐世保市",
   "winter": true,
   "activities": [
-   "光之王國（冬季燈海）",
+   "光之王國（1,300 萬顆 LED 燈海）",
    "荷蘭街景與運河",
-   "鬱金香（3 月）"
+   "多姆托倫展望塔",
+   "遊園船與運河巡航"
   ],
-  "reason": "日本最大的燈光秀「光之王國」在冬季舉行，是 2 月九州最大的夜間景點。",
-  "notes": "⚠️ 博多搭特急みどり／ハウステンボス號約 1 小時 45 分，1DAY 護照約 ¥7,000–8,000。要看燈海必須待到晚上，回程末班車要先確認——建議在佐世保或園內住一晚。",
-  "ticket": "1DAY 約 ¥7,000–8,000",
+  "reason": "⭐ 2/2 的主行程。日本最大的主題樂園（面積是東京迪士尼的約 1.5 倍），整區複製荷蘭街景與運河；冬季的「光之王國」是日本規模最大的燈飾，1,300 萬顆 LED。白天看荷蘭街景、天黑後整個園區變成燈海——這是一個必須待到晚上的地方。",
+  "notes": "⚠️ <b>回程是這天唯一的難題</b>：ハウステンボス→博多 的最後一班直達特急是 18:04（2026 時刻表），而 2 月日落約 18:00、燈海才剛亮。要看燈海就必須用下面任一種回程：\n① <b>ハウステンボス→早岐（普通車約 5 分）→ 特急みどり → 博多</b>（みどり 從佐世保／早岐發車比直達車晚，是最實際的方案）\n② <b>高速巴士 ハウステンボス→福岡（天神）直達</b>：約 2 小時 3 分、片道 ¥2,600／往復 ¥5,000，免轉車但<b>一天只有 2 往復</b>，要先訂位（西鐵，可線上預約）\n③ 放棄燈海，搭 18:04 直達車回博多\n⚠️ 2027 年時刻表要到接近日期才出，出發前務必用 Yahoo 乘換案內或 JR 九州官網重查末班車。",
+  "ticket": "1DAY 護照 ¥7,600（2026）／JR 套票見下",
   "hours": "09:00–21:00（季節調整）",
-  "duration": "整天",
+  "duration": "整天（建議 10:30 入園、待到 20:00 以後）",
   "coord_status": "nominatim",
   "lat": 33.086204,
   "lng": 129.788315
@@ -1017,6 +1081,28 @@ const PLACES = [
   "coord_status": "nominatim",
   "lat": 33.59307,
   "lng": 130.410684
+ },
+ {
+  "name": "光之王國（燈海）",
+  "name_ja": "ハウステンボス 光の王国",
+  "category": "祭典",
+  "city": "長崎",
+  "area": "佐世保市",
+  "lat": 33.0855,
+  "lng": 129.7845,
+  "coord_status": "approx",
+  "winter": true,
+  "activities": [
+   "1,300 萬顆 LED",
+   "光之瀑布",
+   "光之極光庭園",
+   "冬季限定夜間秀"
+  ],
+  "reason": "⭐ 這天的主角。號稱日本第一的燈飾，1,300 萬顆 LED；2 月正是冬季檔期。白天的豪斯登堡是荷蘭街景，晚上完全變成另一個地方——只來白天等於只看一半。",
+  "notes": "⚠️ <b>點燈時間：日落～22:00</b>（2 月日落約 18:00）。2026 年冬季檔名為「白銀の世界」，會期 1/10–2/26；2027 年的檔名與會期通常在前一年秋天公告，出發前要再查。部分日期有煙火。",
+  "price": "含在 1DAY 護照內",
+  "hours": "日落–22:00",
+  "duration": "2–3 小時"
  },
  {
   "name": "長崎燈會 中央公園會場",
@@ -1267,6 +1353,22 @@ const PLACES = [
   "coord_status": "nominatim"
  },
  {
+  "name": "ハラールフードショップ ナビさん",
+  "name_ja": "ハラールフードショップ ナビさん",
+  "category": "購物",
+  "city": "福岡",
+  "area": "西區",
+  "cuisine": "清真・南亞",
+  "halal": true,
+  "halal_cert": "ハラール対応",
+  "reason": "清真食材專賣店兼餐廳，九州大學伊都／箱崎校區都有據點，西區另有餐廳（約營業到 19:30）。",
+  "notes": "⚠️ 離市中心較遠；主要是採買清真食材用。",
+  "area_center": "天神",
+  "lat": 33.5896,
+  "lng": 130.3986,
+  "coord_status": "area"
+ },
+ {
   "name": "博多川端商店街",
   "name_ja": "川端通商店街",
   "category": "購物",
@@ -1472,6 +1574,27 @@ const PLACES = [
   "coord_status": "nominatim"
  },
  {
+  "name": "岩永 梅寿軒",
+  "name_ja": "岩永 梅寿軒",
+  "category": "購物",
+  "city": "長崎",
+  "area": "長崎市",
+  "cuisine": "甜點・咖啡",
+  "tabelog": "3.68",
+  "tabelog_area": "長崎市",
+  "tabelog_rank": 7,
+  "dishes": [
+   "カステラ",
+   "もしほ草"
+  ],
+  "reason": "1830 年創業的和菓子老鋪，長崎蜂蜜蛋糕的第三個選擇（福砂屋、文明堂之外的行家選項）。",
+  "notes": "⚠️ 蜂蜜蛋糕常需預約，當日不一定買得到。",
+  "area_center": "長崎",
+  "lat": 32.744,
+  "lng": 129.878,
+  "coord_status": "area"
+ },
+ {
   "name": "文明堂總本店",
   "name_ja": "文明堂総本店",
   "category": "購物",
@@ -1543,7 +1666,240 @@ const PLACES = [
   "duration": "45 分",
   "coord_status": "manual",
   "lat": 33.9456,
-  "lng": 130.9612
+  "lng": 130.9612,
+  "tabelog": "3.50",
+  "tabelog_area": "門司",
+  "tabelog_rank": 5
+ },
+ {
+  "name": "こがねむし",
+  "name_ja": "こがねむし",
+  "category": "餐飲",
+  "city": "北九州",
+  "area": "北九州市・門司港",
+  "cuisine": "甜點・咖啡",
+  "tabelog": "3.58",
+  "tabelog_area": "門司",
+  "tabelog_rank": 1,
+  "reason": "門司地區第 1 名，昭和感十足的老喫茶店。",
+  "notes": "⚠️ 門司港整體分數天花板較低（第 1 名 3.58），這是小城市的常態，不代表不好吃。",
+  "area_center": "門司港",
+  "lat": 33.946905,
+  "lng": 130.966453,
+  "coord_status": "nominatim"
+ },
+ {
+  "name": "つる平 アミュプラザ小倉",
+  "name_ja": "つる平 アミュプラザ小倉",
+  "category": "餐飲",
+  "city": "北九州",
+  "area": "北九州市・小倉",
+  "cuisine": "清真・甜點",
+  "halal": "友善",
+  "halal_cert": "ムスリム対応",
+  "dishes": [
+   "和菓子",
+   "スイーツ"
+  ],
+  "reason": "小倉站 AMU PLAZA 內的和菓子店，穆斯林對應——2/4 在小倉轉車時可買伴手禮。",
+  "area_center": "門司港",
+  "lat": 33.9451,
+  "lng": 130.9628,
+  "coord_status": "area"
+ },
+ {
+  "name": "ふく料理 しのだ",
+  "name_ja": "ふく料理 しのだ",
+  "category": "餐飲",
+  "city": "北九州",
+  "area": "下關市",
+  "cuisine": "海鮮",
+  "tabelog": "3.56",
+  "tabelog_area": "下関",
+  "tabelog_rank": 13,
+  "winter": true,
+  "dishes": [
+   "ふく刺し",
+   "ふく鍋"
+  ],
+  "reason": "下關人說「ふく」不說「ふぐ」（避開「不遇」的諧音）——這家店名就是這個在地說法。",
+  "area_center": "下關",
+  "lat": 33.9518,
+  "lng": 130.9427,
+  "coord_status": "area"
+ },
+ {
+  "name": "もじこい",
+  "name_ja": "もじこい",
+  "category": "餐飲",
+  "city": "北九州",
+  "area": "北九州市・門司港",
+  "cuisine": "清真・洋食",
+  "halal": true,
+  "halal_cert": "ハラール対応",
+  "dishes": [
+   "焼きカレー"
+  ],
+  "reason": "門司港的清真對應咖哩店，與プリンセスピピ 一起讓門司港成為這趟少數清真選項充足的地方。",
+  "notes": "⚠️ 出發前請再確認營業狀況。",
+  "area_center": "門司港",
+  "lat": 33.9451,
+  "lng": 130.9628,
+  "coord_status": "area"
+ },
+ {
+  "name": "フルーツファクトリー モーン デ レトロ",
+  "name_ja": "フルーツファクトリー モーン デ レトロ",
+  "category": "餐飲",
+  "city": "北九州",
+  "area": "北九州市・門司港",
+  "cuisine": "甜點・咖啡",
+  "tabelog": "3.54",
+  "tabelog_area": "門司",
+  "tabelog_rank": 3,
+  "reason": "水果店直營的甜點咖啡，門司港復古區內的休息點。",
+  "area_center": "門司港",
+  "lat": 33.9451,
+  "lng": 130.9628,
+  "coord_status": "area"
+ },
+ {
+  "name": "プリンセスピピ門司港",
+  "name_ja": "世界にひとつだけの焼きカレー プリンセスピピ門司港",
+  "category": "餐飲",
+  "city": "北九州",
+  "area": "北九州市・門司港",
+  "cuisine": "清真・洋食",
+  "halal": "友善",
+  "halal_cert": "ムスリム対応",
+  "tabelog": "3.43",
+  "tabelog_area": "門司",
+  "tabelog_rank": 15,
+  "dishes": [
+   "焼きカレー"
+  ],
+  "reason": "⭐ 難得的雙重身分：既在門司港燒咖哩的 Tabelog 排行內（3.43），又被列為穆斯林對應店——清真旅客在 2/4 也吃得到門司港名物。",
+  "notes": "⚠️ 為「對應」而非認證，點餐時請向店家確認。",
+  "area_center": "門司港",
+  "lat": 33.945545,
+  "lng": 130.960993,
+  "coord_status": "nominatim"
+ },
+ {
+  "name": "ミルクホール門司港",
+  "name_ja": "ミルクホール門司港",
+  "category": "餐飲",
+  "city": "北九州",
+  "area": "北九州市・門司港",
+  "cuisine": "甜點・咖啡",
+  "tabelog": "3.50",
+  "tabelog_area": "門司",
+  "tabelog_rank": 6,
+  "reason": "門司港復古區的老派喫茶店，配合整區大正氛圍。",
+  "area_center": "門司港",
+  "lat": 33.9451,
+  "lng": 130.9628,
+  "coord_status": "area"
+ },
+ {
+  "name": "三井倶楽部（レストラン）",
+  "name_ja": "三井倶楽部",
+  "category": "餐飲",
+  "city": "北九州",
+  "area": "北九州市・門司港",
+  "cuisine": "洋食",
+  "tabelog": "3.44",
+  "tabelog_area": "門司",
+  "tabelog_rank": 14,
+  "dishes": [
+   "ふぐ料理",
+   "洋食"
+  ],
+  "reason": "就在舊門司三井俱樂部（愛因斯坦住過的洋館）裡的餐廳，可以在重要文化財裡吃飯。",
+  "area_center": "門司港",
+  "lat": 33.9451,
+  "lng": 130.9628,
+  "coord_status": "area"
+ },
+ {
+  "name": "三枡",
+  "name_ja": "三枡",
+  "category": "餐飲",
+  "city": "北九州",
+  "area": "下關市",
+  "cuisine": "海鮮",
+  "tabelog": "3.76",
+  "tabelog_area": "下関",
+  "tabelog_rank": 2,
+  "winter": true,
+  "dishes": [
+   "ふぐ",
+   "海鮮"
+  ],
+  "reason": "下關評分第 2 名（第 1 名是法式），做河豚與海鮮的居酒屋——比正式割烹好入手。",
+  "notes": "⚠️ 建議訂位。",
+  "area_center": "下關",
+  "lat": 33.9518,
+  "lng": 130.9427,
+  "coord_status": "area"
+ },
+ {
+  "name": "下関くじら館",
+  "name_ja": "下関くじら館",
+  "category": "餐飲",
+  "city": "北九州",
+  "area": "下關市",
+  "cuisine": "鄉土料理",
+  "tabelog": "3.53",
+  "tabelog_area": "下関",
+  "tabelog_rank": 19,
+  "dishes": [
+   "鯨料理"
+  ],
+  "reason": "下關也是日本捕鯨的重要港，這家是鯨魚料理專門店。⚠️ 是否要吃請自行斟酌。",
+  "area_center": "下關",
+  "lat": 33.9518,
+  "lng": 130.9427,
+  "coord_status": "area"
+ },
+ {
+  "name": "伽哩本舗 門司港レトロ店",
+  "name_ja": "伽哩本舗 門司港レトロ店",
+  "category": "餐飲",
+  "city": "北九州",
+  "area": "北九州市・門司港",
+  "cuisine": "洋食",
+  "tabelog": "3.55",
+  "tabelog_area": "門司",
+  "tabelog_rank": 2,
+  "dishes": [
+   "焼きカレー"
+  ],
+  "reason": "門司港燒咖哩評分最高的一家（3.55，比 BEAR FRUITS 的 3.50 高），全年供應十幾種燒咖哩。",
+  "notes": "2/4 吃燒咖哩的首選；就在門司港復古區內。",
+  "area_center": "門司港",
+  "lat": 33.9451,
+  "lng": 130.9628,
+  "coord_status": "area"
+ },
+ {
+  "name": "元祖 瓦そば たかせ 門司港レトロ店",
+  "name_ja": "元祖 瓦そば たかせ 門司港レトロ店",
+  "category": "餐飲",
+  "city": "北九州",
+  "area": "北九州市・門司港",
+  "cuisine": "麵食",
+  "tabelog": "3.48",
+  "tabelog_area": "門司",
+  "tabelog_rank": 9,
+  "dishes": [
+   "瓦そば"
+  ],
+  "reason": "山口名物「瓦そば」（在燒熱的瓦片上煎茶蕎麥麵）的元祖店分店——2/4 跨海峽那天很應景。",
+  "area_center": "門司港",
+  "lat": 33.9451,
+  "lng": 130.9628,
+  "coord_status": "area"
  },
  {
   "name": "唐戶市場",
@@ -1566,7 +1922,69 @@ const PLACES = [
   "duration": "1.5 小時",
   "coord_status": "nominatim",
   "lat": 33.956624,
-  "lng": 130.945817
+  "lng": 130.945817,
+  "tabelog": "3.57",
+  "tabelog_area": "下関",
+  "tabelog_rank": 10
+ },
+ {
+  "name": "圭順",
+  "name_ja": "圭順",
+  "category": "餐飲",
+  "city": "北九州",
+  "area": "北九州市・門司",
+  "cuisine": "拉麵",
+  "tabelog": "3.51",
+  "tabelog_area": "門司",
+  "tabelog_rank": 4,
+  "reason": "門司地區評分最高的拉麵。",
+  "area_center": "門司港",
+  "lat": 33.9451,
+  "lng": 130.9628,
+  "coord_status": "area"
+ },
+ {
+  "name": "旬楽館",
+  "name_ja": "旬楽館",
+  "category": "餐飲",
+  "city": "北九州",
+  "area": "下關市",
+  "cuisine": "海鮮",
+  "tabelog": "3.65",
+  "tabelog_area": "下関",
+  "tabelog_rank": 5,
+  "winter": true,
+  "dishes": [
+   "ふぐ刺し",
+   "ふぐ鍋"
+  ],
+  "reason": "下關河豚專門店，2 月正季。",
+  "notes": "⚠️ 需訂位，河豚套餐價位較高。",
+  "area_center": "下關",
+  "lat": 33.956552,
+  "lng": 130.943336,
+  "coord_status": "nominatim"
+ },
+ {
+  "name": "春帆楼 下関本店",
+  "name_ja": "春帆楼 下関本店",
+  "category": "餐飲",
+  "city": "北九州",
+  "area": "下關市",
+  "cuisine": "海鮮",
+  "tabelog": "3.60",
+  "tabelog_area": "下関",
+  "tabelog_rank": 7,
+  "winter": true,
+  "dishes": [
+   "ふぐ会席"
+  ],
+  "reason": "日本第一家獲准供應河豚的料亭（1888 年），也是 1895 年馬關條約簽署地——吃河豚兼看歷史現場。",
+  "notes": "⚠️ 需訂位，價位高；旁邊就是日清講和記念館。",
+  "area_center": "下關",
+  "lat": 33.9518,
+  "lng": 130.9427,
+  "coord_status": "area"
  },
  {
   "name": "資さんうどん（小倉）",
@@ -1590,6 +2008,27 @@ const PLACES = [
   "coord_status": "nominatim"
  },
  {
+  "name": "魚正本陣",
+  "name_ja": "魚正本陣",
+  "category": "餐飲",
+  "city": "北九州",
+  "area": "下關市",
+  "cuisine": "海鮮",
+  "tabelog": "3.60",
+  "tabelog_area": "下関",
+  "tabelog_rank": 9,
+  "winter": true,
+  "dishes": [
+   "ふぐ",
+   "地魚"
+  ],
+  "reason": "下關的居酒屋型河豚店，比料亭輕鬆。",
+  "area_center": "下關",
+  "lat": 33.959891,
+  "lng": 130.942859,
+  "coord_status": "nominatim"
+ },
+ {
   "name": "B-speak",
   "name_ja": "B-speak",
   "category": "餐飲",
@@ -1606,6 +2045,128 @@ const PLACES = [
   "duration": "15 分",
   "lat": 33.265644,
   "lng": 131.359873,
+  "coord_status": "nominatim",
+  "tabelog": "3.63",
+  "tabelog_area": "湯布院",
+  "tabelog_rank": 10
+ },
+ {
+  "name": "CAFE LA RUCHE",
+  "name_ja": "CAFE LA RUCHE",
+  "category": "餐飲",
+  "city": "大分",
+  "area": "由布市",
+  "cuisine": "甜點・咖啡",
+  "tabelog": "3.53",
+  "tabelog_area": "湯布院",
+  "tabelog_rank": 19,
+  "reason": "金鱗湖畔的咖啡廳（マルク・シャガール美術館併設），看湖景喝咖啡。",
+  "area_center": "湯布院",
+  "lat": 33.267372,
+  "lng": 131.368829,
+  "coord_status": "nominatim"
+ },
+ {
+  "name": "JIMGU",
+  "name_ja": "JIMGU",
+  "category": "餐飲",
+  "city": "大分",
+  "area": "由布市",
+  "cuisine": "洋食",
+  "tabelog": "3.88",
+  "tabelog_area": "湯布院",
+  "tabelog_rank": 3,
+  "reason": "湯布院第 3 名、非旅館類的第 1 名。創新料理（イノベーティブ），是湯布院近年最受注目的餐廳。",
+  "notes": "⚠️ 需訂位。",
+  "area_center": "湯布院",
+  "lat": 33.264,
+  "lng": 131.356,
+  "coord_status": "area"
+ },
+ {
+  "name": "みくま飯店",
+  "name_ja": "みくま飯店",
+  "category": "餐飲",
+  "city": "大分",
+  "area": "日田市",
+  "cuisine": "麵食",
+  "tabelog": "3.48",
+  "tabelog_area": "日田市",
+  "tabelog_rank": 7,
+  "dishes": [
+   "日田焼きそば"
+  ],
+  "reason": "日田燒麵的另一家名店，與想夫恋 並列雙璧。",
+  "area_center": "日田",
+  "lat": 33.3211,
+  "lng": 130.941,
+  "coord_status": "area"
+ },
+ {
+  "name": "一番どり",
+  "name_ja": "一番どり",
+  "category": "餐飲",
+  "city": "大分",
+  "area": "日田市",
+  "cuisine": "燒鳥",
+  "tabelog": "3.58",
+  "tabelog_area": "日田市",
+  "tabelog_rank": 3,
+  "reason": "日田市第 3 名，雞料理。",
+  "area_center": "日田",
+  "lat": 33.3211,
+  "lng": 130.941,
+  "coord_status": "area"
+ },
+ {
+  "name": "三久",
+  "name_ja": "三久",
+  "category": "餐飲",
+  "city": "大分",
+  "area": "日田市",
+  "cuisine": "拉麵",
+  "tabelog": "3.55",
+  "tabelog_area": "日田市",
+  "tabelog_rank": 4,
+  "reason": "日田評分最高的拉麵。",
+  "area_center": "日田",
+  "lat": 33.3211,
+  "lng": 130.941,
+  "coord_status": "area"
+ },
+ {
+  "name": "地鶏家（別府）",
+  "name_ja": "地鶏家 別府",
+  "category": "餐飲",
+  "city": "大分",
+  "area": "別府市",
+  "cuisine": "清真・和食",
+  "halal": true,
+  "halal_cert": "ハラール認証",
+  "dishes": [
+   "雞肉料理"
+  ],
+  "reason": "大分縣少數持清真認證的日式餐廳（雞料理），在別府。",
+  "notes": "⚠️ 由布院搭 JR 約 1 小時；本趟行程不排別府，要吃需另外安排半天。",
+  "area_center": "別府",
+  "lat": 33.2793,
+  "lng": 131.501,
+  "coord_status": "area"
+ },
+ {
+  "name": "寶屋 本店",
+  "name_ja": "寶屋 本店",
+  "category": "餐飲",
+  "city": "大分",
+  "area": "日田市",
+  "cuisine": "鄉土料理",
+  "tabelog": "3.44",
+  "tabelog_area": "日田市",
+  "tabelog_rank": 9,
+  "reason": "日田的老食堂。",
+  "area_center": "日田",
+  "lat": 33.317411,
+  "lng": 130.937945,
   "coord_status": "nominatim"
  },
  {
@@ -1626,7 +2187,106 @@ const PLACES = [
   "duration": "40 分",
   "coord_status": "approx",
   "lat": 33.321,
-  "lng": 130.9455
+  "lng": 130.9455,
+  "tabelog": "3.71",
+  "tabelog_area": "日田市",
+  "tabelog_rank": 1
+ },
+ {
+  "name": "戸山うなぎ",
+  "name_ja": "戸山うなぎ",
+  "category": "餐飲",
+  "city": "大分",
+  "area": "日田市",
+  "cuisine": "鰻魚",
+  "tabelog": "3.54",
+  "tabelog_area": "日田市",
+  "tabelog_rank": 6,
+  "reason": "日田的鰻魚老店。",
+  "area_center": "日田",
+  "lat": 33.3211,
+  "lng": 130.941,
+  "coord_status": "area"
+ },
+ {
+  "name": "日田まぶし千屋",
+  "name_ja": "日田まぶし千屋",
+  "category": "餐飲",
+  "city": "大分",
+  "area": "日田市",
+  "cuisine": "鰻魚",
+  "tabelog": "3.54",
+  "tabelog_area": "日田市",
+  "tabelog_rank": 5,
+  "dishes": [
+   "日田まぶし（鰻魚三吃）"
+  ],
+  "reason": "日田的鰻魚三吃，與由布院的「由布まぶし 心」是同一種吃法——2/9 選 A 案時的另一個午餐選項。",
+  "area_center": "日田",
+  "lat": 33.3211,
+  "lng": 130.941,
+  "coord_status": "area"
+ },
+ {
+  "name": "檪の丘",
+  "name_ja": "檪の丘",
+  "category": "餐飲",
+  "city": "大分",
+  "area": "由布市",
+  "cuisine": "洋食",
+  "tabelog": "3.67",
+  "tabelog_area": "湯布院",
+  "tabelog_rank": 8,
+  "dishes": [
+   "石窯ピッツァ"
+  ],
+  "reason": "由布岳山腳的窯烤披薩，露臺正對由布岳——2/9 選 B 案（純泡湯日）時的午餐。",
+  "notes": "⚠️ 離市街有距離，需開車或計程車。",
+  "area_center": "湯布院",
+  "lat": 33.264,
+  "lng": 131.356,
+  "coord_status": "area"
+ },
+ {
+  "name": "湯の岳庵",
+  "name_ja": "湯の岳庵",
+  "category": "餐飲",
+  "city": "大分",
+  "area": "由布市",
+  "cuisine": "鄉土料理",
+  "tabelog": "3.74",
+  "tabelog_area": "湯布院",
+  "tabelog_rank": 5,
+  "reason": "亀の井別荘 館內的餐廳，非住客也能用餐——想吃到御三家水準的料理但不住那裡，這是最直接的方式。",
+  "notes": "⚠️ 建議訂位；就在金鱗湖旁。",
+  "area_center": "湯布院",
+  "lat": 33.264,
+  "lng": 131.356,
+  "coord_status": "area"
+ },
+ {
+  "name": "甘味茶屋",
+  "name_ja": "甘味茶屋 別府",
+  "category": "餐飲",
+  "city": "大分",
+  "area": "別府市",
+  "cuisine": "清真・甜點",
+  "halal": "友善",
+  "halal_cert": "豚肉不使用",
+  "tabelog": "3.58",
+  "tabelog_area": "別府",
+  "tabelog_rank": 20,
+  "dishes": [
+   "だんご汁",
+   "やせうま",
+   "郷土料理"
+  ],
+  "reason": "大分鄉土甜點與輕食，Tabelog 3.58，被 Halal Gourmet Japan 列為不使用豬肉。",
+  "notes": "⚠️ Halal Gourmet Japan 把它標在由布市／湯布院，但 Tabelog 顯示在別府市——出發前請自行確認你要去的是哪一家分店。⚠️「不使用豬肉」不等於清真認證。",
+  "area_center": "別府",
+  "lat": 33.310572,
+  "lng": 131.486642,
+  "coord_status": "nominatim"
  },
  {
   "name": "由布まぶし 心",
@@ -1650,6 +2310,65 @@ const PLACES = [
   "lng": 131.3535
  },
  {
+  "name": "由布院 鞠智",
+  "name_ja": "由布院 鞠智",
+  "category": "餐飲",
+  "city": "大分",
+  "area": "由布市",
+  "cuisine": "甜點・咖啡",
+  "tabelog": "3.57",
+  "tabelog_area": "湯布院",
+  "tabelog_rank": 15,
+  "dishes": [
+   "どら焼き"
+  ],
+  "reason": "湯之坪街道上的銅鑼燒與咖啡，建築本身也很有設計感。",
+  "area_center": "湯布院",
+  "lat": 33.264,
+  "lng": 131.356,
+  "coord_status": "area"
+ },
+ {
+  "name": "由布院Milch 本店",
+  "name_ja": "由布院Milch 本店",
+  "category": "餐飲",
+  "city": "大分",
+  "area": "由布市",
+  "cuisine": "甜點・咖啡",
+  "tabelog": "3.57",
+  "tabelog_area": "湯布院",
+  "tabelog_rank": 16,
+  "dishes": [
+   "半熟起司蛋糕"
+  ],
+  "reason": "湯之坪街道的排隊點心，現烤半熟起司蛋糕一個 ¥150 上下。",
+  "area_center": "湯布院",
+  "lat": 33.264,
+  "lng": 131.356,
+  "coord_status": "area"
+ },
+ {
+  "name": "茶房 天井棧敷",
+  "name_ja": "茶房 天井棧敷",
+  "category": "餐飲",
+  "city": "大分",
+  "area": "由布市",
+  "cuisine": "甜點・咖啡",
+  "tabelog": "3.66",
+  "tabelog_area": "湯布院",
+  "tabelog_rank": 9,
+  "dishes": [
+   "モンブラン",
+   "蜂蜜咖啡"
+  ],
+  "reason": "亀の井別荘 的茶房，江戶時代穀倉改建，湯布院最有氣氛的咖啡廳。",
+  "notes": "金鱗湖步行約 3 分；下午常客滿。",
+  "area_center": "湯布院",
+  "lat": 33.264,
+  "lng": 131.356,
+  "coord_status": "area"
+ },
+ {
   "name": "金賞可樂餅（湯之坪）",
   "name_ja": "由布院 金賞コロッケ",
   "category": "餐飲",
@@ -1669,6 +2388,118 @@ const PLACES = [
   "lat": 33.267671,
   "lng": 131.365781,
   "coord_status": "nominatim"
+ },
+ {
+  "name": "むつ五郎",
+  "name_ja": "むつ五郎",
+  "category": "餐飲",
+  "city": "熊本",
+  "area": "熊本市",
+  "cuisine": "鄉土料理",
+  "tabelog": "3.68",
+  "tabelog_area": "熊本市",
+  "tabelog_rank": 20,
+  "dishes": [
+   "馬肉料理",
+   "郷土料理"
+  ],
+  "reason": "熊本鄉土料理與馬肉，2/2 選 B 案時的晚餐選項。",
+  "area_center": "熊本",
+  "lat": 32.803,
+  "lng": 130.708,
+  "coord_status": "area"
+ },
+ {
+  "name": "むら上",
+  "name_ja": "むら上",
+  "category": "餐飲",
+  "city": "熊本",
+  "area": "熊本市",
+  "cuisine": "壽司",
+  "tabelog": "4.28",
+  "tabelog_area": "熊本市",
+  "tabelog_rank": 1,
+  "reason": "熊本市第 1 名（4.28），壽司。",
+  "notes": "⚠️ 極難訂。",
+  "area_center": "熊本",
+  "lat": 32.803,
+  "lng": 130.708,
+  "coord_status": "area"
+ },
+ {
+  "name": "五郎八",
+  "name_ja": "五郎八",
+  "category": "餐飲",
+  "city": "熊本",
+  "area": "熊本市",
+  "cuisine": "鄉土料理",
+  "tabelog": "3.73",
+  "tabelog_area": "熊本市",
+  "tabelog_rank": 10,
+  "dishes": [
+   "馬刺し",
+   "ホルモン"
+  ],
+  "reason": "熊本馬肉評分最高的店之一，居酒屋形式比菅乃屋 輕鬆。",
+  "area_center": "熊本",
+  "lat": 32.789849,
+  "lng": 130.732885,
+  "coord_status": "nominatim"
+ },
+ {
+  "name": "勝烈亭 新市街本店",
+  "name_ja": "勝烈亭 新市街本店",
+  "category": "餐飲",
+  "city": "熊本",
+  "area": "熊本市",
+  "cuisine": "洋食",
+  "tabelog": "3.69",
+  "tabelog_area": "熊本市",
+  "tabelog_rank": 18,
+  "dishes": [
+   "ヒレカツ",
+   "ロースカツ"
+  ],
+  "reason": "熊本最有名的炸豬排，就在熊本城下的新市街商店街。",
+  "area_center": "熊本",
+  "lat": 32.803,
+  "lng": 130.708,
+  "coord_status": "area"
+ },
+ {
+  "name": "洋食の店 橋本",
+  "name_ja": "洋食の店 橋本",
+  "category": "餐飲",
+  "city": "熊本",
+  "area": "熊本市",
+  "cuisine": "洋食",
+  "tabelog": "3.94",
+  "tabelog_area": "熊本市",
+  "tabelog_rank": 3,
+  "reason": "熊本第 3 名的老派洋食店，3.94 卻是平價路線。",
+  "area_center": "熊本",
+  "lat": 32.803,
+  "lng": 130.708,
+  "coord_status": "area"
+ },
+ {
+  "name": "熊本ラーメン 黒亭 本店",
+  "name_ja": "熊本ラーメン 黒亭 本店",
+  "category": "餐飲",
+  "city": "熊本",
+  "area": "熊本市",
+  "cuisine": "拉麵",
+  "tabelog": "3.68",
+  "tabelog_area": "熊本市",
+  "tabelog_rank": 19,
+  "dishes": [
+   "熊本拉麵（焦蒜油）"
+  ],
+  "reason": "熊本拉麵的代表，1957 年創業，焦蒜油（マー油）是熊本與博多豚骨最大的差別。",
+  "area_center": "熊本",
+  "lat": 32.803,
+  "lng": 130.708,
+  "coord_status": "area"
  },
  {
   "name": "菅乃屋（馬肉）",
@@ -1692,6 +2523,23 @@ const PLACES = [
   "lng": 130.705
  },
  {
+  "name": "Restaurant Sola",
+  "name_ja": "Restaurant Sola",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "博多區・中洲",
+  "cuisine": "洋食",
+  "tabelog": "4.02",
+  "tabelog_area": "中洲",
+  "tabelog_rank": 1,
+  "reason": "中洲第 1 名，法式餐廳，福岡最高評價的餐廳之一。",
+  "notes": "⚠️ 高級店，需提前訂位。",
+  "area_center": "中洲",
+  "lat": 33.5931,
+  "lng": 130.4055,
+  "coord_status": "area"
+ },
+ {
   "name": "Shin-Shin 天神本店",
   "name_ja": "博多らーめん Shin-Shin 天神本店",
   "category": "餐飲",
@@ -1713,6 +2561,62 @@ const PLACES = [
   "lng": 130.3993
  },
  {
+  "name": "うどん平",
+  "name_ja": "うどん平",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "博多區",
+  "cuisine": "麵食",
+  "tabelog": "3.67",
+  "tabelog_area": "博多",
+  "tabelog_rank": 15,
+  "dishes": [
+   "肉ごぼ天うどん"
+  ],
+  "reason": "博多烏龍麵的另一家名店，跟葉隠うどん常被拿來比較。",
+  "notes": "⚠️ 只開午餐時段、賣完就關，週日休。",
+  "price": "約 ¥600–900",
+  "area_center": "博多",
+  "lat": 33.583126,
+  "lng": 130.41604,
+  "coord_status": "nominatim"
+ },
+ {
+  "name": "うなぎの原田",
+  "name_ja": "うなぎの原田",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "柳川市",
+  "cuisine": "鰻魚",
+  "tabelog": "3.40",
+  "tabelog_area": "柳川・大川周辺",
+  "tabelog_rank": 9,
+  "reason": "柳川鰻魚的第四選擇。",
+  "area_center": "柳川",
+  "lat": 33.127404,
+  "lng": 130.432991,
+  "coord_status": "nominatim"
+ },
+ {
+  "name": "うなぎ処 川よし",
+  "name_ja": "うなぎ処 川よし",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "柳川市",
+  "cuisine": "鰻魚",
+  "tabelog": "3.56",
+  "tabelog_area": "柳川・大川周辺",
+  "tabelog_rank": 5,
+  "dishes": [
+   "せいろ蒸し"
+  ],
+  "reason": "柳川鰻魚三強之一（本吉屋 3.68、若松屋 3.56、川よし 3.56），排隊通常比前兩家短。",
+  "area_center": "柳川",
+  "lat": 33.163634,
+  "lng": 130.414201,
+  "coord_status": "nominatim"
+ },
+ {
   "name": "かさの家（梅ヶ枝餅）",
   "name_ja": "かさの家",
   "category": "餐飲",
@@ -1730,7 +2634,69 @@ const PLACES = [
   "duration": "20 分",
   "coord_status": "approx",
   "lat": 33.5199,
-  "lng": 130.534
+  "lng": 130.534,
+  "tabelog": "3.65",
+  "tabelog_area": "太宰府・大野城周辺",
+  "tabelog_rank": 5
+ },
+ {
+  "name": "かろのうろん",
+  "name_ja": "かろのうろん",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "博多區",
+  "cuisine": "麵食",
+  "tabelog": "3.68",
+  "tabelog_area": "中洲",
+  "tabelog_rank": 13,
+  "dishes": [
+   "ごぼう天うどん",
+   "丸天うどん"
+  ],
+  "reason": "1882 年創業，博多最老的烏龍麵店之一，就在櫛田神社步行圈——2/3 節分那天順路。",
+  "notes": "⚠️ 週三休；店面小要排隊。",
+  "price": "約 ¥600–900",
+  "area_center": "中洲",
+  "lat": 33.592461,
+  "lng": 130.411012,
+  "coord_status": "nominatim"
+ },
+ {
+  "name": "せいもん払い",
+  "name_ja": "せいもん払い",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "博多區・中洲",
+  "cuisine": "海鮮",
+  "tabelog": "3.77",
+  "tabelog_area": "中洲",
+  "tabelog_rank": 8,
+  "dishes": [
+   "玄界灘海鮮",
+   "日本料理"
+  ],
+  "reason": "中洲的居酒屋兼海鮮料理，評分高但比割烹好進去，適合想吃玄界灘漁獲又不想太正式時。",
+  "notes": "⚠️ 建議訂位。",
+  "area_center": "中洲",
+  "lat": 33.5931,
+  "lng": 130.4055,
+  "coord_status": "area"
+ },
+ {
+  "name": "つきよし",
+  "name_ja": "つきよし",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "博多區・中洲",
+  "cuisine": "居酒屋",
+  "tabelog": "3.73",
+  "tabelog_area": "中洲",
+  "tabelog_rank": 9,
+  "reason": "居酒屋兼烏龍麵，中洲的在地口袋名單。",
+  "area_center": "中洲",
+  "lat": 33.5931,
+  "lng": 130.4055,
+  "coord_status": "area"
  },
  {
   "name": "とり田 博多本店",
@@ -1752,7 +2718,87 @@ const PLACES = [
   "duration": "1.5–2 小時",
   "coord_status": "approx",
   "lat": 33.5946,
-  "lng": 130.4064
+  "lng": 130.4064,
+  "tabelog": "3.66",
+  "tabelog_area": "中洲",
+  "tabelog_rank": 17
+ },
+ {
+  "name": "にぎり塚本鮮魚店",
+  "name_ja": "にぎり塚本鮮魚店",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "糸島市",
+  "cuisine": "海鮮",
+  "tabelog": "3.59",
+  "tabelog_area": "前原・志摩・二丈",
+  "tabelog_rank": 5,
+  "dishes": [
+   "握壽司",
+   "海鮮丼"
+  ],
+  "reason": "魚店直營的壽司，糸島最好入手的高分店之一。",
+  "area_center": "糸島",
+  "lat": 33.558,
+  "lng": 130.1969,
+  "coord_status": "area"
+ },
+ {
+  "name": "にしむら（西村）",
+  "name_ja": "にしむら",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "博多區・博多站",
+  "cuisine": "壽司",
+  "tabelog": "4.07",
+  "tabelog_area": "博多",
+  "tabelog_rank": 1,
+  "reason": "博多地區食べログ第 1 名的壽司店。",
+  "notes": "⚠️ 高級店，需提前很久訂位，人均可能上萬日圓。",
+  "area_center": "博多",
+  "lat": 33.5897,
+  "lng": 130.4207,
+  "coord_status": "area"
+ },
+ {
+  "name": "もつ鍋 極味や 福岡赤坂店",
+  "name_ja": "もつ鍋 極味や 福岡赤坂店",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區・赤坂",
+  "cuisine": "清真・和食",
+  "halal": true,
+  "halal_cert": "ハラール認証",
+  "winter": true,
+  "dishes": [
+   "ハラールもつ鍋",
+   "ハラール和牛ステーキ"
+  ],
+  "reason": "⭐ 號稱「世界第一家清真對應的もつ鍋店」，使用清真認證調味料與分開的烹調器具，另有清真認證和牛。清真旅客也能吃到博多牛腸鍋這個名物。",
+  "notes": "⚠️ 需預約並註明清真；與天神的「極味や 漢堡排」是同集團但不同店。",
+  "area_center": "天神",
+  "lat": 33.5896,
+  "lng": 130.3986,
+  "coord_status": "area"
+ },
+ {
+  "name": "やす武",
+  "name_ja": "やす武",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "太宰府市",
+  "cuisine": "甜點・咖啡",
+  "tabelog": "3.59",
+  "tabelog_area": "太宰府・大野城周辺",
+  "tabelog_rank": 9,
+  "dishes": [
+   "梅ヶ枝餅"
+  ],
+  "reason": "太宰府參道上的梅ヶ枝餅名店，分數比かさの家 略低但常被說更好吃，可以兩家都買來比。",
+  "area_center": "太宰府",
+  "lat": 33.519358,
+  "lng": 130.532767,
+  "coord_status": "nominatim"
  },
  {
   "name": "やま中（もつ鍋本店）",
@@ -1775,6 +2821,174 @@ const PLACES = [
   "coord_status": "approx",
   "lat": 33.5865,
   "lng": 130.3915
+ },
+ {
+  "name": "サフラン",
+  "name_ja": "サフラン",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "柳川市",
+  "cuisine": "洋食",
+  "tabelog": "3.66",
+  "tabelog_area": "柳川・大川周辺",
+  "tabelog_rank": 2,
+  "dishes": [
+   "ハンバーグ"
+  ],
+  "reason": "柳川第 2 名——在一整排鰻魚店裡殺出來的漢堡排店，不想吃鰻魚時的選擇。",
+  "area_center": "柳川",
+  "lat": 33.163,
+  "lng": 130.406,
+  "coord_status": "area"
+ },
+ {
+  "name": "ザエカ（Zaika）",
+  "name_ja": "ザエカ 福岡",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區",
+  "cuisine": "清真・南亞",
+  "halal": true,
+  "halal_cert": "ハラール対応",
+  "dishes": [
+   "巴基斯坦咖哩",
+   "ビリヤニ",
+   "ナン"
+  ],
+  "reason": "福岡在地穆斯林社群常去的巴基斯坦料理店，Yelp 福岡清真榜前段班。",
+  "notes": "⚠️ 供餐內容可能異動，建議先致電確認。",
+  "area_center": "天神",
+  "lat": 33.5896,
+  "lng": 130.3986,
+  "coord_status": "area"
+ },
+ {
+  "name": "チョコレートショップ 博多の石畳",
+  "name_ja": "チョコレートショップ 博多の石畳",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "博多區",
+  "cuisine": "甜點・咖啡",
+  "tabelog": "3.69",
+  "tabelog_area": "博多",
+  "tabelog_rank": 13,
+  "dishes": [
+   "石畳（巧克力蛋糕）"
+  ],
+  "reason": "博多老字號巧克力店，招牌「博多の石畳」是伴手禮與下午茶的常勝軍。",
+  "area_center": "博多",
+  "lat": 33.5897,
+  "lng": 130.4207,
+  "coord_status": "area"
+ },
+ {
+  "name": "トルコレストラン・エルトゥールル",
+  "name_ja": "トルコレストラン エルトゥールル",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區",
+  "cuisine": "清真・中東",
+  "halal": true,
+  "halal_cert": "ハラール対応",
+  "dishes": [
+   "ケバブ",
+   "トルコ料理"
+  ],
+  "reason": "店名取自 1890 年在和歌山遇難的土耳其軍艦「埃爾圖魯爾號」，福岡的土耳其清真料理選擇。",
+  "notes": "⚠️ 出發前請再確認營業狀況。",
+  "area_center": "天神",
+  "lat": 33.5896,
+  "lng": 130.3986,
+  "coord_status": "area"
+ },
+ {
+  "name": "ドゥワンチャン",
+  "name_ja": "ドゥワンチャン",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "糸島市",
+  "cuisine": "洋食",
+  "tabelog": "3.65",
+  "tabelog_area": "前原・志摩・二丈",
+  "tabelog_rank": 1,
+  "reason": "糸島第 1 名，泰式料理——在海鮮為主的糸島是意外的第一名。",
+  "area_center": "糸島",
+  "lat": 33.558,
+  "lng": 130.1969,
+  "coord_status": "area"
+ },
+ {
+  "name": "ハラールフードマルハバ",
+  "name_ja": "ハラールフードマルハバ",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "東區・箱崎",
+  "cuisine": "清真・南亞",
+  "halal": true,
+  "halal_cert": "ハラール対応",
+  "dishes": [
+   "巴基斯坦料理",
+   "清真食材"
+  ],
+  "reason": "箱崎的巴基斯坦料理店兼清真食材店，九州大學留學生社群的老據點。",
+  "notes": "⚠️ 位於東區箱崎，離博多站約 15 分（地鐵箱崎線）。",
+  "area_center": "博多",
+  "lat": 33.5897,
+  "lng": 130.4207,
+  "coord_status": "area"
+ },
+ {
+  "name": "ミスターケバブ（Mr. Kebab）",
+  "name_ja": "ミスターケバブ 福岡",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區",
+  "cuisine": "清真・中東",
+  "halal": true,
+  "halal_cert": "ハラール認証",
+  "dishes": [
+   "ケバブ",
+   "トルコ料理"
+  ],
+  "reason": "福岡少數持有正式「ハラール認証」的餐廳，土耳其料理。",
+  "notes": "⚠️ 認證與供餐內容可能異動，出發前請上店家或 Halal Gourmet Japan 再確認。",
+  "area_center": "天神",
+  "lat": 33.5896,
+  "lng": 130.3986,
+  "coord_status": "area"
+ },
+ {
+  "name": "ルアン HOTEL CULTIA 太宰府",
+  "name_ja": "ルアン HOTEL CULTIA 太宰府",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "太宰府市",
+  "cuisine": "洋食",
+  "tabelog": "3.54",
+  "tabelog_area": "太宰府・大野城周辺",
+  "tabelog_rank": 16,
+  "reason": "古民家改建旅館裡的法式餐廳，太宰府少見的正式用餐選擇。",
+  "notes": "⚠️ 需訂位。",
+  "area_center": "太宰府",
+  "lat": 33.5199,
+  "lng": 130.534,
+  "coord_status": "area"
+ },
+ {
+  "name": "レストランエッサンス",
+  "name_ja": "レストランエッサンス",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "太宰府市",
+  "cuisine": "洋食",
+  "tabelog": "3.53",
+  "tabelog_area": "太宰府・大野城周辺",
+  "tabelog_rank": 20,
+  "reason": "太宰府市內的法式餐廳，午間套餐較好入手。",
+  "area_center": "太宰府",
+  "lat": 33.5199,
+  "lng": 130.534,
+  "coord_status": "area"
  },
  {
   "name": "一幸舍（博多本店）",
@@ -1818,6 +3032,44 @@ const PLACES = [
   "lng": 130.4055
  },
  {
+  "name": "三原豆腐店",
+  "name_ja": "三原豆腐店",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區・天神",
+  "cuisine": "鄉土料理",
+  "tabelog": "3.78",
+  "tabelog_area": "天神",
+  "tabelog_rank": 17,
+  "dishes": [
+   "豆腐料理"
+  ],
+  "reason": "豆腐料理專門店，在以肉與海鮮為主的福岡是很特別的一家。",
+  "notes": "⚠️ 需訂位。",
+  "area_center": "天神",
+  "lat": 33.5896,
+  "lng": 130.3986,
+  "coord_status": "area"
+ },
+ {
+  "name": "中洲屋台 紀文",
+  "name_ja": "中洲屋台 紀文",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "博多區・中洲",
+  "cuisine": "屋台・居酒屋",
+  "tabelog": "3.72",
+  "tabelog_area": "博多",
+  "tabelog_rank": 10,
+  "winter": true,
+  "reason": "中洲屋台裡評分最高的一攤——2/1 晚上要吃屋台的話，直接找這攤。",
+  "notes": "⚠️ 露天、現金、無廁所；2 月很冷要穿夠。位置每天在那珂川岸邊。",
+  "area_center": "中洲",
+  "lat": 33.590478,
+  "lng": 130.4082,
+  "coord_status": "nominatim"
+ },
+ {
   "name": "中洲屋台街",
   "name_ja": "中洲屋台",
   "category": "餐飲",
@@ -1842,6 +3094,23 @@ const PLACES = [
   "lng": 130.407063
  },
  {
+  "name": "串揚げはやし",
+  "name_ja": "串揚げはやし",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "博多區・博多站",
+  "cuisine": "串炸",
+  "tabelog": "3.99",
+  "tabelog_area": "博多",
+  "tabelog_rank": 2,
+  "reason": "博多第 2 名，炸串專門店，一串一串上桌的職人式吃法。",
+  "notes": "⚠️ 需訂位；吧檯座為主。",
+  "area_center": "博多",
+  "lat": 33.5897,
+  "lng": 130.4207,
+  "coord_status": "area"
+ },
+ {
   "name": "元祖本吉屋（鰻魚蒸籠飯）",
   "name_ja": "元祖本吉屋",
   "category": "餐飲",
@@ -1858,7 +3127,10 @@ const PLACES = [
   "duration": "1 小時",
   "coord_status": "nominatim",
   "lat": 33.15845,
-  "lng": 130.397028
+  "lng": 130.397028,
+  "tabelog": "3.68",
+  "tabelog_area": "柳川・大川周辺",
+  "tabelog_rank": 1
  },
  {
   "name": "元祖長濱屋",
@@ -1880,6 +3152,27 @@ const PLACES = [
   "coord_status": "overpass",
   "lat": 33.592439,
   "lng": 130.386615
+ },
+ {
+  "name": "博多 魚蔵（都ホテル博多）",
+  "name_ja": "博多 魚蔵 都ホテル博多",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "博多區・博多站",
+  "cuisine": "清真・和食",
+  "halal": true,
+  "halal_cert": "ハラール認証の肉・豚肉/酒類不使用調味料",
+  "dishes": [
+   "黑毛和牛",
+   "刺身",
+   "唐揚"
+  ],
+  "reason": "⭐ 福岡官方觀光網站列出的穆斯林對應餐廳。用經過清真認證的肉、不含豬肉與酒精的調味料做日本料理——這是清真旅客在福岡最容易吃到「日式正餐」的地方，而且就在博多站旁（你住東急STAY博多，走得到）。",
+  "notes": "⚠️ 需事先預約並告知清真需求；供餐內容可能異動。",
+  "area_center": "博多",
+  "lat": 33.5897,
+  "lng": 130.4207,
+  "coord_status": "area"
  },
  {
   "name": "博多もつ鍋 おおやま",
@@ -1904,6 +3197,72 @@ const PLACES = [
   "lng": 130.4066
  },
  {
+  "name": "博多もつ鍋 徳永屋 総本店",
+  "name_ja": "博多もつ鍋 徳永屋 総本店",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "博多區",
+  "cuisine": "鄉土料理",
+  "tabelog": "3.73",
+  "tabelog_area": "博多",
+  "tabelog_rank": 6,
+  "winter": true,
+  "dishes": [
+   "もつ鍋",
+   "明太子"
+  ],
+  "reason": "博多牛腸鍋在 Tabelog 排最前面的一家（比おおやま、やま中都高），冬天首選。",
+  "notes": "⚠️ 需訂位。",
+  "area_center": "博多",
+  "lat": 33.5897,
+  "lng": 130.4207,
+  "coord_status": "area"
+ },
+ {
+  "name": "博多一双 博多駅東本店",
+  "name_ja": "博多一双 博多駅東本店",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "博多區",
+  "cuisine": "拉麵",
+  "tabelog": "3.72",
+  "tabelog_area": "博多",
+  "tabelog_rank": 8,
+  "dishes": [
+   "豚骨拉麵（泡系）",
+   "替玉"
+  ],
+  "reason": "博多站附近評分最高的拉麵，泡系豚骨的代表；湯頭表面浮著細密泡沫。",
+  "notes": "博多站筑紫口步行約 5 分；用餐時段排隊。",
+  "price": "約 ¥900",
+  "area_center": "博多",
+  "lat": 33.5897,
+  "lng": 130.4207,
+  "coord_status": "area"
+ },
+ {
+  "name": "博多名代 吉塚うなぎ屋",
+  "name_ja": "博多名代 吉塚うなぎ屋",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "博多區・中洲",
+  "cuisine": "鰻魚",
+  "tabelog": "3.71",
+  "tabelog_area": "中洲",
+  "tabelog_rank": 12,
+  "dishes": [
+   "せいろ蒸し",
+   "うな重"
+  ],
+  "reason": "1873 年創業的博多鰻魚老店，中洲河畔。若 2/11 柳川的鰻魚沒吃夠，這裡是市區版本。",
+  "notes": "⚠️ 用餐時段排隊；價位約 ¥4,000 起。",
+  "price": "約 ¥4,000 起",
+  "area_center": "中洲",
+  "lat": 33.5931,
+  "lng": 130.4055,
+  "coord_status": "area"
+ },
+ {
   "name": "因幡烏龍麵（博多站前店）",
   "name_ja": "因幡うどん 博多デイトス店",
   "category": "餐飲",
@@ -1925,6 +3284,46 @@ const PLACES = [
   "coord_status": "approx"
  },
  {
+  "name": "夜明茶屋",
+  "name_ja": "夜明茶屋",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "柳川市",
+  "cuisine": "海鮮",
+  "tabelog": "3.43",
+  "tabelog_area": "柳川・大川周辺",
+  "tabelog_rank": 7,
+  "dishes": [
+   "有明海珍味",
+   "ムツゴロウ"
+  ],
+  "reason": "有明海的鄉土料理，吃得到彈塗魚（ムツゴロウ）等別處沒有的食材——柳川不只有鰻魚。",
+  "area_center": "柳川",
+  "lat": 33.159716,
+  "lng": 130.394908,
+  "coord_status": "nominatim"
+ },
+ {
+  "name": "天山 本店",
+  "name_ja": "天山 本店",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "太宰府市",
+  "cuisine": "甜點・咖啡",
+  "tabelog": "3.57",
+  "tabelog_area": "太宰府・大野城周辺",
+  "tabelog_rank": 10,
+  "dishes": [
+   "梅ヶ枝餅",
+   "和菓子"
+  ],
+  "reason": "太宰府的和菓子老店，參道上的第三個梅ヶ枝餅選項。",
+  "area_center": "太宰府",
+  "lat": 33.51949,
+  "lng": 130.532403,
+  "coord_status": "nominatim"
+ },
+ {
   "name": "天麩羅処 ひらお（天神店）",
   "name_ja": "天麩羅処ひらお",
   "category": "餐飲",
@@ -1943,6 +3342,22 @@ const PLACES = [
   "lat": 33.5877,
   "lng": 130.4013,
   "coord_status": "approx"
+ },
+ {
+  "name": "寿司・活魚料理 玄海",
+  "name_ja": "寿司・活魚料理 玄海",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "糸島市",
+  "cuisine": "海鮮",
+  "tabelog": "3.56",
+  "tabelog_area": "前原・志摩・二丈",
+  "tabelog_rank": 9,
+  "reason": "糸島的壽司與活魚料理，玄界灘漁獲。",
+  "area_center": "糸島",
+  "lat": 33.558,
+  "lng": 130.1969,
+  "coord_status": "area"
  },
  {
   "name": "岐志漁港 牡蠣小屋",
@@ -1966,6 +3381,25 @@ const PLACES = [
   "coord_status": "approx",
   "lat": 33.585,
   "lng": 130.175
+ },
+ {
+  "name": "椛島氷菓",
+  "name_ja": "椛島氷菓",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "柳川市",
+  "cuisine": "甜點・咖啡",
+  "tabelog": "3.38",
+  "tabelog_area": "柳川・大川周辺",
+  "tabelog_rank": 12,
+  "dishes": [
+   "ジェラート"
+  ],
+  "reason": "柳川的義式冰淇淋，遊船後散步順路。",
+  "area_center": "柳川",
+  "lat": 33.159313,
+  "lng": 130.398964,
+  "coord_status": "nominatim"
  },
  {
   "name": "極味や（福岡 PARCO 店）",
@@ -2006,7 +3440,103 @@ const PLACES = [
   "duration": "1.5 小時",
   "coord_status": "approx",
   "lat": 33.5928,
-  "lng": 130.4046
+  "lng": 130.4046,
+  "tabelog": "3.72",
+  "tabelog_area": "中洲",
+  "tabelog_rank": 10
+ },
+ {
+  "name": "炭焼地鶏 山蔵",
+  "name_ja": "炭焼地鶏 山蔵",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "太宰府市",
+  "cuisine": "燒鳥",
+  "tabelog": "3.74",
+  "tabelog_area": "太宰府・大野城周辺",
+  "tabelog_rank": 4,
+  "reason": "太宰府市內評分最高的餐廳（3.74），炭火地雞。",
+  "notes": "⚠️ 需訂位；離參道有一段距離。",
+  "area_center": "太宰府",
+  "lat": 33.5199,
+  "lng": 130.534,
+  "coord_status": "area"
+ },
+ {
+  "name": "焼き鳥 こと",
+  "name_ja": "焼き鳥 こと",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區・天神",
+  "cuisine": "燒鳥",
+  "tabelog": "4.17",
+  "tabelog_area": "天神",
+  "tabelog_rank": 2,
+  "reason": "天神第 2 名的燒鳥，4.17 在燒鳥類是全國前段班。",
+  "notes": "⚠️ 需提前訂位。",
+  "area_center": "天神",
+  "lat": 33.5896,
+  "lng": 130.3986,
+  "coord_status": "area"
+ },
+ {
+  "name": "焼き鳥 松元 西中洲店",
+  "name_ja": "焼き鳥 松元 西中洲店",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "博多區・西中洲",
+  "cuisine": "燒鳥",
+  "tabelog": "3.67",
+  "tabelog_area": "中洲",
+  "tabelog_rank": 15,
+  "dishes": [
+   "焼き鳥",
+   "水炊き"
+  ],
+  "reason": "西中洲的高評價燒鳥，也做水炊き，是「想吃燒鳥又想喝一杯」的選擇。",
+  "notes": "⚠️ 需訂位。",
+  "area_center": "中洲",
+  "lat": 33.5931,
+  "lng": 130.4055,
+  "coord_status": "area"
+ },
+ {
+  "name": "焼肉すどう 春吉",
+  "name_ja": "焼肉すどう 春吉",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區・春吉",
+  "cuisine": "燒肉",
+  "tabelog": "3.92",
+  "tabelog_area": "天神",
+  "tabelog_rank": 9,
+  "reason": "福岡評價最高的燒肉系列店之一，春吉在天神與中洲之間。",
+  "notes": "⚠️ 需訂位。",
+  "area_center": "天神",
+  "lat": 33.5896,
+  "lng": 130.3986,
+  "coord_status": "area"
+ },
+ {
+  "name": "田中田式海鮮食堂 魚忠",
+  "name_ja": "田中田式海鮮食堂 魚忠",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區・天神",
+  "cuisine": "海鮮",
+  "tabelog": "3.76",
+  "tabelog_area": "天神",
+  "tabelog_rank": 19,
+  "dishes": [
+   "海鮮定食",
+   "刺身"
+  ],
+  "reason": "評分 3.76 但走食堂路線，午餐定食平價——是這份清單裡少數「高分又好進去」的店。",
+  "price": "午餐約 ¥1,000–2,000",
+  "area_center": "天神",
+  "lat": 33.5896,
+  "lng": 130.3986,
+  "coord_status": "area"
  },
  {
   "name": "磯ぎよし（天神本店）",
@@ -2052,6 +3582,61 @@ const PLACES = [
   "lng": 130.084747
  },
  {
+  "name": "立花うどん",
+  "name_ja": "立花うどん",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "柳川市",
+  "cuisine": "麵食",
+  "tabelog": "3.56",
+  "tabelog_area": "柳川・大川周辺",
+  "tabelog_rank": 4,
+  "dishes": [
+   "ごぼう天うどん"
+  ],
+  "reason": "柳川的烏龍麵名店，鰻魚吃不下或預算有限時的選擇。",
+  "price": "約 ¥500–900",
+  "area_center": "柳川",
+  "lat": 33.168283,
+  "lng": 130.417042,
+  "coord_status": "nominatim"
+ },
+ {
+  "name": "糸島ほたる",
+  "name_ja": "糸島ほたる",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "糸島市",
+  "cuisine": "海鮮",
+  "tabelog": "3.61",
+  "tabelog_area": "前原・志摩・二丈",
+  "tabelog_rank": 4,
+  "reason": "糸島的居酒屋兼海鮮食堂，當地評價高。",
+  "area_center": "糸島",
+  "lat": 33.558,
+  "lng": 130.1969,
+  "coord_status": "area"
+ },
+ {
+  "name": "糸島食堂 本店",
+  "name_ja": "糸島食堂 本店",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "糸島市",
+  "cuisine": "海鮮",
+  "tabelog": "3.53",
+  "tabelog_area": "前原・志摩・二丈",
+  "tabelog_rank": 15,
+  "dishes": [
+   "海鮮丼"
+  ],
+  "reason": "海鮮丼專門店，糸島兜風路線上的定番午餐。",
+  "area_center": "糸島",
+  "lat": 33.562074,
+  "lng": 130.213556,
+  "coord_status": "nominatim"
+ },
+ {
   "name": "若松屋（鰻魚蒸籠飯）",
   "name_ja": "柳川 若松屋",
   "category": "餐飲",
@@ -2069,7 +3654,182 @@ const PLACES = [
   "duration": "1 小時",
   "coord_status": "nominatim",
   "lat": 33.158438,
-  "lng": 130.396033
+  "lng": 130.396033,
+  "tabelog": "3.56",
+  "tabelog_area": "柳川・大川周辺",
+  "tabelog_rank": 3
+ },
+ {
+  "name": "茶房きくち",
+  "name_ja": "茶房きくち",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "太宰府市",
+  "cuisine": "甜點・咖啡",
+  "tabelog": "3.57",
+  "tabelog_area": "太宰府・大野城周辺",
+  "tabelog_rank": 12,
+  "dishes": [
+   "梅ヶ枝餅",
+   "抹茶套餐"
+  ],
+  "reason": "參道上可以坐下來吃現烤梅ヶ枝餅配抹茶的茶房。",
+  "area_center": "太宰府",
+  "lat": 33.5199,
+  "lng": 130.534,
+  "coord_status": "area"
+ },
+ {
+  "name": "葉隠うどん",
+  "name_ja": "葉隠うどん",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "博多區",
+  "cuisine": "麵食",
+  "tabelog": "3.74",
+  "tabelog_area": "博多",
+  "tabelog_rank": 5,
+  "dishes": [
+   "ごぼう天うどん",
+   "肉うどん"
+  ],
+  "reason": "博多烏龍麵的代表老店，牛蒡天婦羅烏龍麵是必點。一碗 ¥500 上下卻排到第 5 名。",
+  "notes": "博多站南側，步行約 12 分；賣完就關。",
+  "price": "約 ¥500–800",
+  "area_center": "博多",
+  "lat": 33.583609,
+  "lng": 130.424652,
+  "coord_status": "nominatim"
+ },
+ {
+  "name": "郷土料理 嗣味",
+  "name_ja": "郷土料理 嗣味",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區・天神",
+  "cuisine": "鄉土料理",
+  "tabelog": "3.96",
+  "tabelog_area": "天神",
+  "tabelog_rank": 7,
+  "reason": "想「一次吃到福岡鄉土料理」又要品質的話，這家評分最高（3.96）。",
+  "notes": "⚠️ 需訂位。",
+  "area_center": "天神",
+  "lat": 33.5896,
+  "lng": 130.3986,
+  "coord_status": "area"
+ },
+ {
+  "name": "食事処マルタ活魚",
+  "name_ja": "食事処マルタ活魚",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "糸島市",
+  "cuisine": "海鮮",
+  "tabelog": "3.62",
+  "tabelog_area": "前原・志摩・二丈",
+  "tabelog_rank": 3,
+  "dishes": [
+   "活魚料理",
+   "海鮮定食"
+  ],
+  "reason": "糸島活魚料理的代表，2/2 選 A 案吃完牡蠣小屋還有餘力時的另一站。",
+  "area_center": "糸島",
+  "lat": 33.558,
+  "lng": 130.1969,
+  "coord_status": "area"
+ },
+ {
+  "name": "鮨 さかい",
+  "name_ja": "鮨 さかい",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區・天神",
+  "cuisine": "壽司",
+  "tabelog": "4.53",
+  "tabelog_area": "天神",
+  "tabelog_rank": 1,
+  "reason": "天神第 1 名，也是九州分數最高的壽司店之一（4.53）。",
+  "notes": "⚠️ 極難訂，通常要透過飯店禮賓或熟客介紹，人均數萬日圓。列在這裡是給你知道天花板在哪。",
+  "area_center": "天神",
+  "lat": 33.5896,
+  "lng": 130.3986,
+  "coord_status": "area"
+ },
+ {
+  "name": "鮨しま",
+  "name_ja": "鮨しま 福岡",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區",
+  "cuisine": "清真・和食",
+  "halal": "友善",
+  "halal_cert": "ムスリムフレンドリー",
+  "dishes": [
+   "寿司"
+  ],
+  "reason": "Halal Gourmet Japan 收錄的穆斯林友善壽司店——清真旅客想吃壽司時的選項。",
+  "notes": "⚠️ 為「友善」而非認證，需自行向店家確認食材與調味料（味醂與料理酒是壽司店常見的酒精來源）。",
+  "area_center": "天神",
+  "lat": 33.5896,
+  "lng": 130.3986,
+  "coord_status": "area"
+ },
+ {
+  "name": "かにや 本店",
+  "name_ja": "かにや 本店",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "長崎市・銅座",
+  "cuisine": "鄉土料理",
+  "tabelog": "3.66",
+  "tabelog_area": "長崎市",
+  "tabelog_rank": 12,
+  "dishes": [
+   "おにぎり",
+   "おでん"
+  ],
+  "reason": "深夜營業的飯糰與關東煮老店，長崎的宵夜代表——看完燈會回程順路。",
+  "price": "約 ¥500–1,500",
+  "area_center": "長崎",
+  "lat": 32.744,
+  "lng": 129.878,
+  "coord_status": "area"
+ },
+ {
+  "name": "アサクラ",
+  "name_ja": "アサクラ 佐世保",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "佐世保市",
+  "cuisine": "洋食",
+  "tabelog": "3.69",
+  "tabelog_area": "佐世保",
+  "tabelog_rank": 2,
+  "dishes": [
+   "牛排",
+   "洋食"
+  ],
+  "reason": "佐世保第 2 名，牛排與洋食老店。",
+  "area_center": "佐世保",
+  "lat": 33.1595,
+  "lng": 129.723,
+  "coord_status": "area"
+ },
+ {
+  "name": "ガーデンテラス 花のれん",
+  "name_ja": "ガーデンテラス 花のれん",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "佐世保市",
+  "cuisine": "海鮮",
+  "tabelog": "3.60",
+  "tabelog_area": "佐世保",
+  "tabelog_rank": 7,
+  "reason": "佐世保的日本料理與海鮮，比漢堡正式的選擇。",
+  "area_center": "佐世保",
+  "lat": 33.1595,
+  "lng": 129.723,
+  "coord_status": "area"
  },
  {
   "name": "ツル茶ん",
@@ -2089,7 +3849,164 @@ const PLACES = [
   "duration": "1 小時",
   "lat": 32.743167,
   "lng": 129.880696,
+  "coord_status": "nominatim",
+  "tabelog": "3.63",
+  "tabelog_area": "長崎市",
+  "tabelog_rank": 16
+ },
+ {
+  "name": "バーガーショップ あいかわ",
+  "name_ja": "バーガーショップ あいかわ",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "佐世保市",
+  "cuisine": "洋食",
+  "tabelog": "3.56",
+  "tabelog_area": "佐世保",
+  "tabelog_rank": 11,
+  "dishes": [
+   "佐世保漢堡"
+  ],
+  "reason": "佐世保漢堡的另一家高分店，與 BigMan、ヒカリ 並列。",
+  "area_center": "佐世保",
+  "lat": 33.1595,
+  "lng": 129.723,
+  "coord_status": "area"
+ },
+ {
+  "name": "ビスヌ ココウォーク長崎店",
+  "name_ja": "ビスヌ みらい長崎ココウォーク店",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "長崎市・茂里町",
+  "cuisine": "清真・南亞",
+  "halal": "友善",
+  "halal_cert": "ハラール対応（肉・調味料）",
+  "dishes": [
+   "印度咖哩",
+   "ナン",
+   "素食選項"
+  ],
+  "reason": "⭐ 長崎清真選項極少，這是其中最好找的一家——就在「みらい長崎ココウォーク」商場內，有素食選項。",
+  "notes": "⚠️ 長崎市的清真餐廳屈指可數，且多為印度／土耳其料理；長崎名物（強棒麵、角煮饅頭）幾乎都含豬肉與豬骨湯，清真旅客要有心理準備。建議出發前用 Halal Gourmet Japan 再查一次。",
+  "area_center": "長崎",
+  "lat": 32.744,
+  "lng": 129.878,
+  "coord_status": "area"
+ },
+ {
+  "name": "ミサロッソ",
+  "name_ja": "ミサロッソ",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "佐世保市",
+  "cuisine": "洋食",
+  "tabelog": "3.72",
+  "tabelog_area": "佐世保",
+  "tabelog_rank": 1,
+  "dishes": [
+   "佐世保漢堡",
+   "披薩"
+  ],
+  "reason": "佐世保第 1 名。佐世保是日本漢堡的發源地（美軍基地帶來的），這家是評分最高的一間。",
+  "area_center": "佐世保",
+  "lat": 33.181696,
+  "lng": 129.714765,
   "coord_status": "nominatim"
+ },
+ {
+  "name": "ミラン 大波止店",
+  "name_ja": "ミラン 大波止店",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "長崎市・大波止",
+  "cuisine": "清真・南亞",
+  "halal": "友善",
+  "halal_cert": "ハラール対応（肉・調味料）",
+  "dishes": [
+   "印度咖哩",
+   "ナン"
+  ],
+  "reason": "大波止一帶的印度料理，就在軍艦島船碼頭附近——2/7 等船或下船後的清真選項。",
+  "notes": "⚠️ 為「對應」而非認證，請自行向店家確認。",
+  "area_center": "長崎",
+  "lat": 32.744,
+  "lng": 129.878,
+  "coord_status": "area"
+ },
+ {
+  "name": "下町の洋食 時代屋",
+  "name_ja": "下町の洋食 時代屋",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "佐世保市",
+  "cuisine": "洋食",
+  "tabelog": "3.59",
+  "tabelog_area": "佐世保",
+  "tabelog_rank": 8,
+  "reason": "佐世保的老派洋食店，牛排與洋食。",
+  "area_center": "佐世保",
+  "lat": 33.1595,
+  "lng": 129.723,
+  "coord_status": "area"
+ },
+ {
+  "name": "中華 大八 駅前店",
+  "name_ja": "中華 大八 駅前店",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "長崎市・長崎站",
+  "cuisine": "長崎中華",
+  "tabelog": "3.65",
+  "tabelog_area": "長崎市",
+  "tabelog_rank": 13,
+  "dishes": [
+   "ちゃんぽん",
+   "皿うどん"
+  ],
+  "reason": "長崎站前的強棒麵名店——你住 Coruscant（車站一帶），這家就在步行圈內。",
+  "area_center": "長崎",
+  "lat": 32.744,
+  "lng": 129.878,
+  "coord_status": "area"
+ },
+ {
+  "name": "亜紗 本店",
+  "name_ja": "亜紗 本店",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "長崎市",
+  "cuisine": "海鮮",
+  "tabelog": "3.68",
+  "tabelog_area": "長崎市",
+  "tabelog_rank": 6,
+  "reason": "長崎的居酒屋兼創作料理，海鮮評價高。",
+  "notes": "⚠️ 建議訂位。",
+  "area_center": "長崎",
+  "lat": 32.744,
+  "lng": 129.878,
+  "coord_status": "area"
+ },
+ {
+  "name": "佐世保バーガー BigMan 京町本店",
+  "name_ja": "佐世保バーガー BigMan 京町本店",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "佐世保市",
+  "cuisine": "洋食",
+  "tabelog": "3.66",
+  "tabelog_area": "佐世保",
+  "tabelog_rank": 4,
+  "dishes": [
+   "佐世保漢堡",
+   "培根蛋漢堡"
+  ],
+  "reason": "佐世保漢堡最有名的一家，培根蛋漢堡是招牌——「佐世保バーガー」這個名號就是這類店打出來的。",
+  "price": "約 ¥700–1,200",
+  "area_center": "佐世保",
+  "lat": 33.1595,
+  "lng": 129.723,
+  "coord_status": "area"
  },
  {
   "name": "共楽園",
@@ -2175,6 +4092,23 @@ const PLACES = [
   "lng": 129.869759
  },
  {
+  "name": "大阪屋 浜町店",
+  "name_ja": "大阪屋 浜町店",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "長崎市・濱町",
+  "cuisine": "燒肉",
+  "tabelog": "3.85",
+  "tabelog_area": "長崎市",
+  "tabelog_rank": 1,
+  "reason": "長崎市第 1 名，燒肉。就在濱町商店街——燈會逛完走過去就到。",
+  "notes": "⚠️ 需訂位，燈會期間尤其。",
+  "area_center": "長崎",
+  "lat": 32.744,
+  "lng": 129.878,
+  "coord_status": "area"
+ },
+ {
   "name": "岩崎本舖（角煮饅頭）",
   "name_ja": "岩崎本舗",
   "category": "餐飲",
@@ -2192,6 +4126,67 @@ const PLACES = [
   "coord_status": "approx",
   "lat": 32.7422,
   "lng": 129.8737
+ },
+ {
+  "name": "康楽",
+  "name_ja": "康楽",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "長崎市",
+  "cuisine": "長崎中華",
+  "tabelog": "3.69",
+  "tabelog_area": "長崎市",
+  "tabelog_rank": 5,
+  "dishes": [
+   "ちゃんぽん",
+   "皿うどん"
+  ],
+  "reason": "長崎強棒麵評分最高的一家（3.69，比四海樓與江山樓都高），當地人的口袋名單。",
+  "notes": "⚠️ 店面小、營業時間短，賣完就關。",
+  "area_center": "長崎",
+  "lat": 32.744,
+  "lng": 129.878,
+  "coord_status": "area"
+ },
+ {
+  "name": "思案橋ラーメン",
+  "name_ja": "思案橋ラーメン",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "長崎市・思案橋",
+  "cuisine": "拉麵",
+  "tabelog": "3.60",
+  "tabelog_area": "長崎市",
+  "tabelog_rank": 18,
+  "dishes": [
+   "ちゃんぽん",
+   "おでん"
+  ],
+  "reason": "思案橋的深夜食堂，喝完一輪後的收尾。",
+  "area_center": "長崎",
+  "lat": 32.743125,
+  "lng": 129.879104,
+  "coord_status": "nominatim"
+ },
+ {
+  "name": "桃若",
+  "name_ja": "桃若",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "長崎市",
+  "cuisine": "鄉土料理",
+  "tabelog": "3.71",
+  "tabelog_area": "長崎市",
+  "tabelog_rank": 4,
+  "winter": true,
+  "dishes": [
+   "おでん"
+  ],
+  "reason": "關東煮專門店排到長崎第 4 名——2 月的長崎夜裡最適合。",
+  "area_center": "長崎",
+  "lat": 32.744,
+  "lng": 129.878,
+  "coord_status": "area"
  },
  {
   "name": "江山樓 中華街本店",
@@ -2212,7 +4207,86 @@ const PLACES = [
   "duration": "1 小時",
   "coord_status": "approx",
   "lat": 32.7423,
-  "lng": 129.8735
+  "lng": 129.8735,
+  "tabelog": "3.67",
+  "tabelog_area": "長崎市",
+  "tabelog_rank": 10
+ },
+ {
+  "name": "豪斯登堡 園內美食",
+  "name_ja": "ハウステンボス 園内レストラン",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "佐世保市",
+  "cuisine": "洋食",
+  "lat": 33.0858,
+  "lng": 129.7862,
+  "coord_status": "approx",
+  "dishes": [
+   "佐世保漢堡",
+   "起司料理",
+   "長崎強棒麵"
+  ],
+  "reason": "園區內有數十家餐廳，佐世保漢堡、起司專門店與チーズの城 都在裡面——不用出園也吃得到當地名物。",
+  "notes": "⚠️ 園內用餐不含在 1DAY 護照內，要另外付費。傍晚人潮集中，建議 13:00 前或 17:00 前吃完，把天黑後的時間全部留給燈海。",
+  "price": "約 ¥1,500–3,000",
+  "duration": "1 小時"
+ },
+ {
+  "name": "雲龍亭 銅座店",
+  "name_ja": "雲龍亭 銅座店",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "長崎市・銅座",
+  "cuisine": "長崎中華",
+  "tabelog": "3.72",
+  "tabelog_area": "長崎市",
+  "tabelog_rank": 3,
+  "dishes": [
+   "一口餃子"
+  ],
+  "reason": "長崎名物「一口餃子」的代表店，第 3 名。銅座就在思案橋旁，宵夜時段最熱鬧。",
+  "price": "約 ¥1,000",
+  "area_center": "長崎",
+  "lat": 32.744,
+  "lng": 129.878,
+  "coord_status": "area"
+ },
+ {
+  "name": "香蘭",
+  "name_ja": "香蘭 佐世保",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "佐世保市",
+  "cuisine": "長崎中華",
+  "tabelog": "3.65",
+  "tabelog_area": "佐世保",
+  "tabelog_rank": 5,
+  "dishes": [
+   "ちゃんぽん"
+  ],
+  "reason": "佐世保的強棒麵名店——長崎縣內強棒麵不是只有長崎市，佐世保這家分數也很高。",
+  "area_center": "佐世保",
+  "lat": 33.1595,
+  "lng": 129.723,
+  "coord_status": "area"
+ },
+ {
+  "name": "鮨 重兵衛",
+  "name_ja": "鮨 重兵衛",
+  "category": "餐飲",
+  "city": "長崎",
+  "area": "佐世保市",
+  "cuisine": "壽司",
+  "tabelog": "3.69",
+  "tabelog_area": "佐世保",
+  "tabelog_rank": 3,
+  "reason": "佐世保評分最高的壽司店。",
+  "notes": "⚠️ 需訂位。",
+  "area_center": "佐世保",
+  "lat": 33.1595,
+  "lng": 129.723,
+  "coord_status": "area"
  },
  {
   "name": "ゆふいん七色の風",
@@ -2235,6 +4309,27 @@ const PLACES = [
   "lng": 131.378393
  },
  {
+  "name": "亀の井別荘",
+  "name_ja": "亀の井別荘",
+  "category": "住宿",
+  "city": "大分",
+  "area": "由布市",
+  "tabelog": "3.93",
+  "tabelog_area": "湯布院",
+  "tabelog_rank": 1,
+  "winter": true,
+  "activities": [
+   "由布院御三家",
+   "湯の岳庵・天井棧敷"
+  ],
+  "reason": "湯布院食べログ第 1 名（3.93，以料理旅館身分）。由布院御三家之一，也是「由布院式旅館」的開創者。",
+  "notes": "⚠️ 不住也能去——館內的「湯の岳庵」（3.74）與「茶房 天井棧敷」（3.66）對外開放。",
+  "area_center": "湯布院",
+  "lat": 33.264,
+  "lng": 131.356,
+  "coord_status": "area"
+ },
+ {
   "name": "山莊無量塔",
   "name_ja": "山荘無量塔",
   "category": "住宿",
@@ -2252,7 +4347,10 @@ const PLACES = [
   "duration": "若預算是台幣 2 萬等級",
   "lat": 33.275779,
   "lng": 131.369751,
-  "coord_status": "nominatim"
+  "coord_status": "nominatim",
+  "tabelog": "3.89",
+  "tabelog_area": "湯布院",
+  "tabelog_rank": 2
  },
  {
   "name": "柚富の郷 彩岳館",
@@ -2272,7 +4370,10 @@ const PLACES = [
   "duration": "由布院的替代選擇",
   "coord_status": "approx",
   "lat": 33.2712,
-  "lng": 131.3745
+  "lng": 131.3745,
+  "tabelog": "3.55",
+  "tabelog_area": "湯布院",
+  "tabelog_rank": 18
  },
  {
   "name": "由布の彩 YADOYA おおはし",
@@ -2313,7 +4414,10 @@ const PLACES = [
   "lat": 33.265613,
   "lng": 131.363017,
   "coord_status": "nominatim",
-  "chosen": true
+  "chosen": true,
+  "tabelog": "3.81",
+  "tabelog_area": "湯布院",
+  "tabelog_rank": 4
  },
  {
   "name": "草庵秋櫻",
@@ -2693,6 +4797,20 @@ const PLACES = [
   "lng": 130.419903
  },
  {
+  "name": "福岡機場 禮拜室",
+  "name_ja": "福岡空港 礼拝スペース",
+  "category": "交通",
+  "city": "福岡",
+  "area": "博多區",
+  "halal": "礼拝所",
+  "reason": "福岡機場設有禮拜空間——2/1 抵達與 2/12 回程都會經過。",
+  "notes": "⚠️ 實際位置與開放時間請在航廈服務台確認。",
+  "area_center": "博多",
+  "lat": 33.584822,
+  "lng": 130.444295,
+  "coord_status": "nominatim"
+ },
+ {
   "name": "福岡機場國際線航廈",
   "name_ja": "福岡空港国際線ターミナル",
   "category": "交通",
@@ -2721,6 +4839,23 @@ const PLACES = [
   "coord_status": "nominatim",
   "lat": 33.55714,
   "lng": 130.199293
+ },
+ {
+  "name": "豪斯登堡站",
+  "name_ja": "ハウステンボス駅",
+  "category": "交通",
+  "city": "長崎",
+  "area": "佐世保市",
+  "lat": 33.086,
+  "lng": 129.7893,
+  "coord_status": "approx",
+  "activities": [
+   "特急ハウステンボス 終點",
+   "步行過橋約 5 分到入園口"
+  ],
+  "reason": "博多搭特急「ハウステンボス」直達約 1 小時 50 分（最短 1 小時 43 分），一天 5 往復。出站過橋走 5 分就是入園口。",
+  "notes": "⚠️ 這站的直達特急班次少，回程尤其要先確認——2026 年時刻表上，ハウステンボス→博多 的<b>最後一班直達特急是 18:04</b>。要留下來看燈海就不能搭直達車（見下方回程方案）。",
+  "duration": "轉乘 10 分"
  },
  {
   "name": "長崎港 常盤碼頭",
