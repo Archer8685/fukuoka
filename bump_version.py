@@ -9,8 +9,8 @@
 
 版號散在 4 處，手動改很容易漏掉其中一處：
   1. sw.js          const APP_CACHE = 'fukuoka-app-vN'
-  2. itinerary.html / map.html 的 ?v=N（各 2 處：preload 與 script）
-  3. 兩個 HTML 底部 warm-up 腳本的 caches.open('fukuoka-app-vN')
+  2. itinerary.html / map.html / prep.html 的 ?v=N（preload 與 script）
+  3. 三個 HTML 底部 warm-up 腳本的 caches.open('fukuoka-app-vN')
   4. trip.js        SITE_VERSION（顯示在導覽列）
 
 用法：
@@ -22,7 +22,7 @@ import io
 import re
 import sys
 
-FILES = ("sw.js", "trip.js", "itinerary.html", "map.html")
+FILES = ("sw.js", "trip.js", "itinerary.html", "map.html", "prep.html")
 PATTERNS = (
     r"fukuoka-app-v(\d+)",
     r"data\.js\?v=(\d+)",

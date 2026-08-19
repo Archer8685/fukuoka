@@ -5,11 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>福岡・九州 2/1–2/12 行程</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
-<link rel="preload" href="data.js?v=15" as="script">
-<link rel="preload" href="trip.js?v=15" as="script">
+<link rel="preload" href="data.js?v=16" as="script">
+<link rel="preload" href="trip.js?v=16" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
+<link rel="prefetch" href="prep.html">
 <style>
 #pgload{position:fixed;inset:0;z-index:9999;background:#f7f9fb;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;transition:opacity .22s}
 #pgload.done{opacity:0;pointer-events:none}
@@ -185,6 +186,7 @@ header.pg .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
     <span class="site-meta" id="siteMeta">2027/2/1–2/12</span>
   </div>
   <div class="navlinks">
+    <a href="prep.html">行前</a>
     <a href="itinerary.html" aria-current="page">行程</a>
     <a href="map.html">地圖</a>
   </div>
@@ -221,8 +223,8 @@ header.pg .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
   <div class="mb" id="mBody"></div>
 </dialog>
 
-<script src="data.js?v=15"></script>
-<script src="trip.js?v=15"></script>
+<script src="data.js?v=16"></script>
+<script src="trip.js?v=16"></script>
 <script>
 // ---- 共用：地點查找（日文新字體 → 繁體正規化）----
 const _J2T=(typeof J2T!=="undefined")?J2T:{};
@@ -378,7 +380,8 @@ TRIP.forEach(day=>{
         if(s.go)rows.push(`<b>下一段交通</b><br>${s.go}`);
         const body=rows.map(r=>`<div class="mrow">${r}</div>`).join("")+
           `<div class="mlinks"><a href="${mapURL}" target="_blank">🗺 在地圖上顯示</a>`+
-          `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((p&&p.name_ja)||s.name)}" target="_blank" rel="noopener">🧭 Google Maps 導航</a></div>`;
+          `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((p&&p.name_ja)||s.name)}" target="_blank" rel="noopener">🧭 Google Maps 導航</a>`+
+          ((p&&p.tabelog)?`<a href="https://tabelog.com/rstLst/?sw=${encodeURIComponent(p.name_ja||p.name)}" target="_blank" rel="noopener">⭐ 食べログ ${p.tabelog}</a>`:"")+`</div>`;
         return STOPDETAIL.push({head,body,mapURL})-1;
       })()}">🔎 站點詳情</button>
     </div></div>`;
@@ -460,6 +463,6 @@ document.addEventListener('click',e=>{
 });
 window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('pgload').classList.add('done');});
 </script>
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('fukuoka-app-v15').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});});}).catch(function(){});});}</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('fukuoka-app-v16').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});});}).catch(function(){});});}</script>
 </body>
 </html>

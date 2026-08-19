@@ -64,9 +64,14 @@ def check_data(places):
     no_coord = [p["name"] for p in places if p.get("lat") is None]
     if no_coord:
         err(f"{len(no_coord)} 個地點沒有座標（地圖上不會出現）：{no_coord[:5]}")
+    # city="其他" 是刻意放在九州外的「跨區參考點」（廣島／宮島／倉敷／京都／大阪），
+    # 對它們放寬到本州西部＋關西；九州內的守門維持原樣，才擋得住配錯縣市的座標。
+    WIDE = (33.0, 128.5, 36.0, 136.2)
+    def in_box(p, b):
+        return b[0] <= p["lat"] <= b[2] and b[1] <= p["lng"] <= b[3]
     outside = [(p["name"], p["lat"], p["lng"]) for p in places
                if p.get("lat") is not None
-               and not (BBOX[0] <= p["lat"] <= BBOX[2] and BBOX[1] <= p["lng"] <= BBOX[3])]
+               and not in_box(p, WIDE if p.get("city") == "其他" else BBOX)]
     if outside:
         err(f"{len(outside)} 個座標落在九州＋下關範圍外：{outside[:3]}")
     if not no_coord and not outside:

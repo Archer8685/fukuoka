@@ -73,6 +73,78 @@ def nominatim(q, bbox):
     return None
 
 
+def spread_area_pins(places):
+    """把落在同一個區域中心點的圖釘散開，否則會完全疊在一起。
+
+    長崎有 8 間店共用同一組座標時，地圖上只點得到最上面那一枚，
+    下面的等於不存在。這裡依「店名的雜湊」在中心點周圍排成螺旋，
+    半徑最多約 140 公尺——同一個名字每次跑都落在同一位置（可重現），
+    而且仍在該區域街廓內，coord_status 維持 "area"（popup 會說是概略位置）。
+
+    真正導航一律走 popup 的「🧭 在 Google Maps 開啟」。
+    """
+    import hashlib
+    import math
+    groups = {}
+    for p in places:
+        if p.get("coord_status") != "area":
+            continue
+        key = (round(p.get("lat", 0), 5), round(p.get("lng", 0), 5))
+        groups.setdefault(key, []).append(p)
+    moved = 0
+    for (lat0, lng0), members in groups.items():
+        if len(members) < 2:
+            continue
+        # 依名稱雜湊排序，確保順序穩定
+        members.sort(key=lambda x: hashlib.md5(x["name"].encode("utf-8")).hexdigest())
+        for i, p in enumerate(members):
+            # 黃金角螺旋：點不會排成一直線，也不會互相重疊
+            ang = i * 2.39996
+            rad = 40 + 24 * math.sqrt(i)          # 公尺，第 8 個約 105m
+            p["lat"] = round(lat0 + (rad * math.cos(ang)) / 111000, 6)
+            p["lng"] = round(lng0 + (rad * math.sin(ang)) / 93000, 6)
+            p["coord_source"] = f"區域中心點散開（{p.get('area_center','')}，半徑約 {int(rad)}m）"
+            moved += 1
+    return moved
+
+
+def dedupe_all_pins(files):
+    """全域去重疊：跨檔案掃過所有座標，把完全相同的點錯開。
+
+    spread_area_pins() 是逐檔處理的，不同檔案裡同一個區域的店會拿到相同的
+    螺旋索引而再次重疊（實際踩到 14 組）。這一支在最後統一收尾：
+    以「檔名＋店名」的雜湊決定固定的微小位移（最多約 60m），
+    同一筆資料每次跑都落在同一位置。
+    """
+    import hashlib
+    import json
+    import math
+    seen = {}
+    changed = {}
+    for f in files:
+        with open(f, encoding="utf-8") as fh:
+            items = json.load(fh)
+        for p in items:
+            if p.get("lat") is None:
+                continue
+            key = (round(p["lat"], 5), round(p["lng"], 5))
+            if key not in seen:
+                seen[key] = 1
+                continue
+            seen[key] += 1
+            h = int(hashlib.md5((f + p["name"]).encode("utf-8")).hexdigest(), 16)
+            ang = (h % 3600) / 3600 * 2 * math.pi
+            rad = 25 + (h // 3600) % 36            # 25–60m
+            p["lat"] = round(p["lat"] + (rad * math.cos(ang)) / 111000, 6)
+            p["lng"] = round(p["lng"] + (rad * math.sin(ang)) / 93000, 6)
+            changed[f] = changed.get(f, 0) + 1
+        if changed.get(f):
+            with open(f, "w", encoding="utf-8", newline="") as fh:
+                json.dump(items, fh, ensure_ascii=False, indent=1)
+                fh.write(chr(10))
+    return changed
+
+
 def main():
     do_geo = "--no-geocode" not in sys.argv
     stats = {"nominatim": 0, "area": 0, "skip": 0, "no_center": 0}

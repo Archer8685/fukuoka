@@ -1,6 +1,6 @@
 // 最終行程 — 單一資料來源（map.html 行程模式 + itinerary.html 皆由此渲染）
 // stop.go = 前往「下一站」的交通方式／時間；name 需與 data.js PLACES 名稱一致
-const SITE_VERSION = "v15", SITE_UPDATED_AT = "2026/08/18";
+const SITE_VERSION = "v16", SITE_UPDATED_AT = "2026/08/18";
 const HOTEL_FUK = "東急STAY博多", HOTEL_NGS = "Coruscant Hotel 長崎駅Ⅲ", RYOKAN_YFI = "由布院 玉の湯";
 
 const TRIP = [

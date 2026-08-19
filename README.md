@@ -12,6 +12,7 @@
 ```
 index.html        入口（轉址到行程頁）
 config.js         底圖設定（Google Maps 金鑰，預設空白＝用國土地理院）
+prep.html         行前準備（倒數時間軸、訂票清單、入境、免稅、打包、清真）
 itinerary.html    逐日行程（載入 data.js 自動附加地點詳情）
 map.html          互動地圖（Leaflet + 國土地理院圖磚）
 data.js           ★ 唯一資料檔（PLACES / J2T），由 build_data.py 產生
@@ -30,7 +31,7 @@ audit/            座標查詢紀錄（geocode_latest.json）與稽核報告（R
 
 ## 部署清單（最小集合）
 
-`index.html`、`itinerary.html`、`map.html`、`data.js`、`trip.js`、`config.js`、`sw.js`、`libs/`（整個資料夾）
+`index.html`、`prep.html`、`itinerary.html`、`map.html`、`data.js`、`trip.js`、`config.js`、`sw.js`、`libs/`（整個資料夾）
 
 ## 對外相依（部署後仍需網路的部分）
 
@@ -140,8 +141,8 @@ python geocode.py && python fix_coords.py && python build_data.py
 版號散落在 4 個位置，**必須全部一起改成同一個 vN**：
 
 1. `sw.js` 的 `const APP_CACHE = 'fukuoka-app-vN'`
-2. `itinerary.html` 與 `map.html` 的 `?v=N`（各 2 處：preload 與 script）
-3. `itinerary.html` 與 `map.html` 底部 warm-up 腳本裡的 `caches.open('fukuoka-app-vN')`
+2. `itinerary.html`／`map.html`／`prep.html` 的 `?v=N`
+3. 三個 HTML 底部 warm-up 腳本裡的 `caches.open('fukuoka-app-vN')`
 4. `trip.js` 的 `SITE_VERSION`（顯示在導覽列）
 
 **不要手動改這 4 處**——用 `bump_version.py`，它會一次改完並檢查一致性：
@@ -178,6 +179,8 @@ python check_all.py
 - **柳川雛祭さげもんめぐり**：開幕日慣例 2/11 — 待柳川市公告
 - **太宰府梅花花況**：出發前看天滿宮官方開花情報
 - **JR 九州 Pass 價格**：全九州 3/5/7 日 ¥22,000/¥24,000/¥26,000（2026/08 官網），出發前再確認
+- **日本免稅新制**：2026/11/1 起改為「リファンド方式」（先付含稅價、出境時退稅），
+  廢止一般品／消耗品區分與 50 萬日圓上限。2027/2 出行會適用新制，實際流程以現場為準
 - **旅館房價與房型**：`data/hotels.json` 內的價位帶是概算，務必逐家上官網／樂天／一休確認，
   並注意「客室露天風呂付き」是房型條件而非全館條件
 

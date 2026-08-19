@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>福岡・九州 12 天 — 景點餐廳地圖</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
-<link rel="preload" href="data.js?v=15" as="script">
-<link rel="preload" href="trip.js?v=15" as="script">
+<link rel="preload" href="data.js?v=16" as="script">
+<link rel="preload" href="trip.js?v=16" as="script">
 <link rel="prefetch" href="itinerary.html">
+<link rel="prefetch" href="prep.html">
 <link rel="stylesheet" href="libs/leaflet.css">
 <script src="libs/leaflet.js"></script>
 <script src="config.js"></script>
@@ -149,6 +150,7 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
     <span class="site-meta" id="siteMeta">2027/2/1–2/12</span>
   </div>
   <div class="navlinks">
+    <a href="prep.html">行前</a>
     <a href="itinerary.html">行程</a>
     <a href="map.html" aria-current="page">地圖</a>
   </div>
@@ -184,8 +186,8 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=15"></script>
-<script src="trip.js?v=15"></script>
+<script src="data.js?v=16"></script>
+<script src="trip.js?v=16"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -239,6 +241,11 @@ window.__googleBaseActive=false;
                "Google 衛星":L.gridLayer.googleMutant({type:"hybrid"}),
                "Google 地形":L.gridLayer.googleMutant({type:"terrain"})};
       Object.entries(g).forEach(([n,l])=>layerCtl.addBaseLayer(l,n));
+      // 使用者指定「預設用 Google」：API 載入成功才切，失敗就留在國土地理院
+      map.addLayer(g["Google 道路"]);
+      map.removeLayer(baseGSI);
+      window.__googleBaseActive=true;
+      syncOfflineBtn();                // 程式化切換不會觸發 baselayerchange，手動同步
     }catch(e){console.warn("Google 底圖初始化失敗：",e);}
   };
   const sc=document.createElement("script");
@@ -248,15 +255,19 @@ window.__googleBaseActive=false;
   document.head.appendChild(sc);
 })();
 // 切到 Google 底圖時停用離線預載（Google 圖磚不得快取）
-map.on('baselayerchange',function(e){
-  window.__googleBaseActive=GOOGLE_LAYER_NAMES.includes(e.name);
+function syncOfflineBtn(){
   const b=document.getElementById('offlineBtn');
   if(!b)return;
   if(window.__googleBaseActive){
-    b.disabled=true; b.textContent='⬇️ Google 底圖不可離線快取（切回國土地理院即可預載）';
+    if(!b.dataset.origText)b.dataset.origText=b.textContent;   // 先存原文再覆蓋
+    b.disabled=true; b.textContent='⬇️ Google 底圖不可離線快取（切到國土地理院即可預載）';
   }else if(b.dataset.origText){
     b.disabled=false; b.textContent=b.dataset.origText;
   }
+}
+map.on('baselayerchange',function(e){
+  window.__googleBaseActive=GOOGLE_LAYER_NAMES.includes(e.name);
+  syncOfflineBtn();
 });
 
 // 建立分類 chips
@@ -412,7 +423,7 @@ function popupHtml(p){
   return `<div class="pp">
     <h3>${p.name}</h3>
     <div class="sub">${p.name_ja?p.name_ja+"　":""}${p.city}・${p.area||""}${p.cuisine?("・"+p.cuisine):""}${isWinter(p)?"・❄️ 冬季限定":""}</div>
-    ${p.tabelog?`<div class="row"><b>⭐ 食べログ ${p.tabelog}</b>${p.tabelog_area?`（${p.tabelog_area} 第 ${p.tabelog_rank} 名）`:""}</div>`:""}
+    ${p.tabelog?`<div class="row"><b>⭐ 食べログ ${p.tabelog}</b>${p.tabelog_area?`（${p.tabelog_area} 第 ${p.tabelog_rank} 名）`:""} <a href="https://tabelog.com/rstLst/?sw=${encodeURIComponent(p.name_ja||p.name)}" target="_blank" rel="noopener" style="font-size:10.5px;color:#b45309;font-weight:700;white-space:nowrap">↗ 到食べログ核對</a></div>`:""}
     ${halalLabel(p)?`<div class="row"><b>${halalLabel(p)[0]}</b>${p.halal_cert?`（${p.halal_cert}）`:""}</div>`:""}
     ${p.hours?`<div class="row"><b>🕐 </b>${p.hours}</div>`:""}
     ${p.price?`<div class="row"><b>💰 </b>${p.price}</div>`:""}
@@ -860,7 +871,7 @@ window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('p
     window.addEventListener('load',function(){
       navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){
         if(!('caches' in window))return;
-        caches.open('fukuoka-app-v15').then(function(c){
+        caches.open('fukuoka-app-v16').then(function(c){
           document.querySelectorAll('script[src],link[href]').forEach(function(el){
             var u=el.src||el.href; if(!u||u.indexOf(location.origin)!==0)return;
             c.match(u).then(function(hit){ if(!hit) c.add(u).catch(function(){}); });

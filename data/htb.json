@@ -137,9 +137,10 @@
   ],
   "reason": "佐世保第 2 名，牛排與洋食老店。",
   "area_center": "佐世保",
-  "lat": 33.1595,
+  "lat": 33.15986,
   "lng": 129.723,
-  "coord_status": "area"
+  "coord_status": "area",
+  "coord_source": "區域中心點散開（佐世保，半徑約 40m）"
  },
  {
   "name": "鮨 重兵衛",
@@ -155,9 +156,10 @@
   "reason": "佐世保評分最高的壽司店。",
   "notes": "⚠️ 需訂位。",
   "area_center": "佐世保",
-  "lat": 33.1595,
-  "lng": 129.723,
-  "coord_status": "area"
+  "lat": 33.159075,
+  "lng": 129.723465,
+  "coord_status": "area",
+  "coord_source": "區域中心點散開（佐世保，半徑約 64m）"
  },
  {
   "name": "佐世保バーガー BigMan 京町本店",
@@ -177,9 +179,10 @@
   "reason": "佐世保漢堡最有名的一家，培根蛋漢堡是招牌——「佐世保バーガー」這個名號就是這類店打出來的。",
   "price": "約 ¥700–1,200",
   "area_center": "佐世保",
-  "lat": 33.1595,
-  "lng": 129.723,
-  "coord_status": "area"
+  "lat": 33.158719,
+  "lng": 129.722835,
+  "coord_status": "area",
+  "coord_source": "區域中心點散開（佐世保，半徑約 88m）"
  },
  {
   "name": "香蘭",
@@ -197,9 +200,10 @@
   ],
   "reason": "佐世保的強棒麵名店——長崎縣內強棒麵不是只有長崎市，佐世保這家分數也很高。",
   "area_center": "佐世保",
-  "lat": 33.1595,
-  "lng": 129.723,
-  "coord_status": "area"
+  "lat": 33.159947,
+  "lng": 129.723696,
+  "coord_status": "area",
+  "coord_source": "區域中心點散開（佐世保，半徑約 81m）"
  },
  {
   "name": "ガーデンテラス 花のれん",
@@ -214,9 +218,10 @@
   "tabelog_rank": 7,
   "reason": "佐世保的日本料理與海鮮，比漢堡正式的選擇。",
   "area_center": "佐世保",
-  "lat": 33.1595,
-  "lng": 129.723,
-  "coord_status": "area"
+  "lat": 33.159558,
+  "lng": 129.722208,
+  "coord_status": "area",
+  "coord_source": "區域中心點散開（佐世保，半徑約 73m）"
  },
  {
   "name": "下町の洋食 時代屋",
@@ -231,9 +236,10 @@
   "tabelog_rank": 8,
   "reason": "佐世保的老派洋食店，牛排與洋食。",
   "area_center": "佐世保",
-  "lat": 33.1595,
-  "lng": 129.723,
-  "coord_status": "area"
+  "lat": 33.159269,
+  "lng": 129.724026,
+  "coord_status": "area",
+  "coord_source": "區域中心點散開（佐世保，半徑約 98m）"
  },
  {
   "name": "バーガーショップ あいかわ",
@@ -251,8 +257,9 @@
   ],
   "reason": "佐世保漢堡的另一家高分店，與 BigMan、ヒカリ 並列。",
   "area_center": "佐世保",
-  "lat": 33.1595,
-  "lng": 129.723,
-  "coord_status": "area"
+  "lat": 33.160212,
+  "lng": 129.722459,
+  "coord_status": "area",
+  "coord_source": "區域中心點散開（佐世保，半徑約 93m）"
  }
 ]

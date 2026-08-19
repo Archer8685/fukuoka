@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>行前準備 — 福岡・九州 2/1–2/12</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="trip.js?v=16" as="script">
+<link rel="prefetch" href="itinerary.html">
+<link rel="prefetch" href="map.html">
+<style>
+#pgload{position:fixed;inset:0;z-index:9999;background:#f7f9fb;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;transition:opacity .22s}
+#pgload.done{opacity:0;pointer-events:none}
+#pgload .sp{width:34px;height:34px;border:3px solid #d5dfe8;border-top-color:#1b4f8a;border-radius:50%;animation:pgsp .7s linear infinite}
+#pgload small{color:#77828d;font-size:12px}
+@keyframes pgsp{to{transform:rotate(360deg)}}
+a:active,.toc a:active,.navlinks a:active{transform:scale(.97)}
+</style>
+<style>
+:root{
+  --bg:#f7f9fb; --panel:#fff; --ink:#22282e; --muted:#77828d;
+  --accent:#1b4f8a; --accent2:#0e7c6b; --line:#dfe6ec; --chip:#eef3f7;
+  --amber:#8a6d1f; --amberbg:#fdf8e9; --winter:#0f7bbd; --prep:#b07a1f;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;color:var(--ink);background:var(--bg);padding-bottom:60px}
+.topnav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:58px;padding:9px clamp(14px,3vw,28px);background:rgba(247,249,251,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.brand{display:flex;flex-direction:column;min-width:0}
+.brand strong{font-size:15px;line-height:1.25}
+.brand span{color:var(--muted);font-size:12px;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.navlinks{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.navlinks a{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 14px;border:1px solid var(--line);border-radius:8px;color:var(--ink);background:var(--panel);text-decoration:none;font-size:14px;font-weight:700}
+.navlinks a[aria-current="page"]{color:#fff;background:var(--prep);border-color:var(--prep)}
+.wrap{max-width:880px;margin:0 auto;padding:0 14px}
+header.page{padding:22px 0 6px}
+header.page h1{font-size:22px}
+header.page .sub{color:var(--muted);font-size:13px;margin-top:5px;line-height:1.7}
+
+.toc{display:flex;gap:6px;overflow-x:auto;padding:10px 0 4px;position:sticky;top:58px;z-index:40;background:rgba(247,249,251,.96);backdrop-filter:blur(10px);scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.toc::-webkit-scrollbar{display:none}
+.toc a{flex-shrink:0;padding:7px 12px;border-radius:20px;border:1px solid var(--line);background:var(--panel);font-size:12.5px;font-weight:700;color:var(--ink);text-decoration:none;white-space:nowrap}
+.toc a:hover{border-color:var(--prep)}
+
+section{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:14px 0;padding:16px 20px;scroll-margin-top:112px}
+section h2{font-size:17px;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+section h3{font-size:14px;color:var(--accent2);margin:14px 0 5px}
+section p,section li{font-size:13.5px;line-height:1.85}
+section ul{margin-left:20px}
+section li{margin:3px 0}
+.hl{background:var(--amberbg);border-left:3px solid #e0c878;border-radius:0 8px 8px 0;padding:8px 12px;margin:10px 0;font-size:13px;line-height:1.8;color:#6b5a1e}
+.hl b{color:#a04b12}
+.hl.red{background:#fdf0ee;border-left-color:#e0a08c;color:#7d3520}
+.hl.red b{color:#b03a1a}
+.hl.blue{background:#eef6fc;border-left-color:#9cc9e8;color:#245b7d}
+.hl.blue b{color:#1b4f8a}
+.tbl{width:100%;border-collapse:collapse;margin:8px 0;font-size:12.5px}
+.tbl th{background:var(--chip);text-align:left;padding:7px 9px;border:1px solid var(--line);white-space:nowrap}
+.tbl td{padding:7px 9px;border:1px solid var(--line);line-height:1.65;vertical-align:top}
+.tbl tr.now td{background:#fff6ec}
+.tblwrap{overflow-x:auto}
+.tag{display:inline-block;font-size:10.5px;color:#fff;background:var(--accent);border-radius:8px;padding:1px 7px;margin-right:5px;white-space:nowrap;vertical-align:1px}
+.tag.now{background:#c0392b}
+.tag.g{background:var(--accent2)}
+.tag.o{background:#9a7415}
+.chk{list-style:none;margin-left:0}
+.chk li{padding-left:24px;position:relative}
+.chk li::before{content:"☐";position:absolute;left:2px;color:var(--prep);font-size:15px}
+.phr{width:100%;border-collapse:collapse;margin:8px 0;font-size:13px}
+.phr td{padding:6px 9px;border:1px solid var(--line);vertical-align:top}
+.phr td:first-child{width:38%;color:var(--muted)}
+.phr td:last-child{font-weight:700}
+a.ext{color:var(--accent);font-weight:700}
+@media (max-width:600px){
+  .topnav{min-height:44px;padding:4px 12px}
+  .brand strong{font-size:13.5px}
+  .navlinks{gap:5px}
+  .navlinks a{min-height:32px;padding:0 8px;font-size:12px;border-radius:7px}
+  .toc{top:44px}
+  section{padding:14px 15px;scroll-margin-top:96px}
+  section p,section li{font-size:13.5px}
+  .phr td:first-child{width:42%}
+}
+</style>
+</head>
+<body>
+<div id="pgload"><div class="sp"></div><small>載入中…</small></div>
+<nav class="topnav" aria-label="主要導覽">
+  <div class="brand">
+    <strong>Fukuoka Trip</strong>
+    <span class="site-meta" id="siteMeta">2027/2/1–2/12</span>
+  </div>
+  <div class="navlinks">
+    <a href="prep.html" aria-current="page">行前</a>
+    <a href="itinerary.html">行程</a>
+    <a href="map.html">地圖</a>
+  </div>
+</nav>
+<div class="wrap">
+<header class="page">
+  <h1>🧳 行前準備</h1>
+  <div class="sub">2027/2/1（一）– 2/12（五）｜CI110 TPE 06:50 → FUK 10:00／CI117 FUK 20:35 → TPE 22:20<br>
+  住宿已定：東急STAY博多 6 晚・Coruscant Hotel 長崎駅Ⅲ 3 晚・由布院 玉の湯 2 晚</div>
+</header>
+
+<nav class="toc">
+  <a href="#timeline">⏱ 倒數時間軸</a>
+  <a href="#book">🎫 要訂的東西</a>
+  <a href="#jr">🚄 JR Pass</a>
+  <a href="#htb">🎡 豪斯登堡</a>
+  <a href="#gunkan">🚢 軍艦島</a>
+  <a href="#dine">🍽 餐廳訂位</a>
+  <a href="#entry">🪪 入境</a>
+  <a href="#pay">💳 支付・免稅</a>
+  <a href="#net">📶 網路・App</a>
+  <a href="#pack">🧳 打包</a>
+  <a href="#halal">☪ 清真</a>
+  <a href="#misc">⚠️ 其他</a>
+</nav>
+
+<section id="timeline">
+<h2>⏱ 倒數時間軸（照這個順序做就對了）</h2>
+<div class="tblwrap">
+<table class="tbl">
+<tr><th>時機</th><th>要做的事</th><th>為什麼是這個時間</th></tr>
+<tr class="now"><td><span class="tag now">現在</span>2026/08–09</td><td><b>訂由布院 玉の湯（2/8–2/9）</b></td><td>御三家等級，旺季常在半年前滿房。這是全趟最可能訂不到的一項。</td></tr>
+<tr class="now"><td><span class="tag now">現在</span>2026/08–09</td><td><b>訂 Coruscant Hotel 長崎駅Ⅲ（2/5–2/7）</b></td><td>撞上長崎燈會（2/5–2/21）＋農曆春節初一（2/6），是全趟住宿最貴、最先賣完的時段。</td></tr>
+<tr><td>2026/09–10 起</td><td><b>每月查一次 KKday 豪斯登堡一日遊</b>是否開放 2027/2/2</td><td>這類行程通常提前 3–6 個月開賣。出發 4 天前可免費取消，一開賣就訂沒有風險。</td></tr>
+<tr><td>2026/11 前</td><td>訂<b>東急STAY博多</b>（2/1–2/4、2/10–2/11）</td><td>2/10–2/11 含建國紀念日（2/11）連假，愈晚愈貴。訂房時記得選<b>有洗衣烘乾機的房型</b>。</td></tr>
+<tr><td>2026/12</td><td>訂<b>軍艦島登島船</b>（2/7）</td><td>需提前 1–2 個月；同時確認該業者冬季有無檢修停航。</td></tr>
+<tr><td>2026/12</td><td>查<b>長崎燈會皇帝遊行時刻表</b></td><td>2027 詳細時刻表約這時公告，決定 2/6 傍晚怎麼排。</td></tr>
+<tr><td>2027/01 上旬</td><td>買 <b>JR 九州 Pass</b>（線上）</td><td>線上價比日本櫃台便宜。</td></tr>
+<tr><td><b>2027/1/5 起</b></td><td>劃<b>西九州新幹線</b>指定席（2/5、2/8）</td><td>乘車日 1 個月前開賣。</td></tr>
+<tr><td><b>2027/1/8 10:00 JST</b></td><td>劃<b>「ゆふいんの森」指定席</b>（2/8 博多→由布院）</td><td>⚠️ 九州最難訂的觀光列車，乘車日 1 個月前的 10:00 準時開賣，秒殺。設鬧鐘。</td></tr>
+<tr><td>2027/01 中</td><td>訂需要預約的餐廳（見下方清單）</td><td>多數店 1 個月前開放。</td></tr>
+<tr><td>出發前 1–2 週</td><td>辦 <b>Visit Japan Web</b>、買 eSIM、換日幣、印豪斯登堡紙本憑證</td><td>—</td></tr>
+<tr><td>出發前 3 天</td><td>查太宰府<b>梅花開花情報</b>、豪斯登堡<b>冬季燈海會期</b>、各項<b>末班車</b></td><td>2027 時刻表接近日期才出。</td></tr>
+</table>
+</div>
+</section>
+
+<section id="book">
+<h2>🎫 要訂的東西（總表）</h2>
+<div class="tblwrap">
+<table class="tbl">
+<tr><th>項目</th><th>日期</th><th>狀態／備註</th></tr>
+<tr><td>東急STAY博多</td><td>2/1–2/4、2/10–2/11（6 晚）</td><td>已選定。⚠️ 洗衣烘乾機是<b>房型</b>條件，部分房型只有共用洗衣間。</td></tr>
+<tr><td>Coruscant Hotel 長崎駅Ⅲ</td><td>2/5–2/7（3 晚）</td><td>已選定。公寓式，有廚房與洗衣機。⚠️ 在車站一帶，看完燈會要搭電車回來（末班約 23:00）。</td></tr>
+<tr><td>由布院 玉の湯</td><td>2/8–2/9（2 晚）</td><td>已選定。一泊二食。⚠️ 若有清真需求要事先溝通（會席一定有高湯與味醂）。</td></tr>
+<tr><td>KKday 豪斯登堡一日遊</td><td>2/2</td><td>⚠️ <b>務必選「方案二 09:10–20:00」</b>，其他場次看不到燈海。尚未開賣。</td></tr>
+<tr><td>JR 九州 Pass 全九州 7 日</td><td>啟用 2/4–2/10</td><td>¥26,000。線上買。</td></tr>
+<tr><td>ゆふいんの森 指定席</td><td>2/8</td><td>⚠️ 2027/1/8 10:00 JST 開賣，秒殺。</td></tr>
+<tr><td>西九州新幹線 指定席</td><td>2/5、2/8</td><td>1 個月前開賣；Pass 持有者免費劃位。</td></tr>
+<tr><td>軍艦島登島船</td><td>2/7</td><td>⚠️ 冬季海況取消率高，務必有備案。</td></tr>
+</table>
+</div>
+</section>
+
+<section id="jr">
+<h2>🚄 JR Pass 與交通</h2>
+<h3>買哪一張</h3>
+<p><b>全九州 7 日券 ¥26,000</b>，啟用 <b>2/4（四）– 2/10（三）</b>。</p>
+<div class="tblwrap">
+<table class="tbl">
+<tr><th>Pass 涵蓋的區間</th><th>單買約</th></tr>
+<tr><td>2/4 門司港＋下關 往返</td><td>¥4,000</td></tr>
+<tr><td>2/5 博多 → 長崎</td><td>¥6,490</td></tr>
+<tr><td>2/8 長崎 → 由布院（經博多）</td><td>¥12,000</td></tr>
+<tr><td>2/9 由布院 ↔ 日田 往返（選 A 案才用到）</td><td>¥3,000</td></tr>
+<tr><td>2/10 由布院 → 博多</td><td>¥6,470</td></tr>
+<tr><td><b>合計</b></td><td><b>約 ¥28,960–31,960 → 省 ¥3,000–6,000</b></td></tr>
+</table>
+</div>
+<div class="hl"><b>票種價格：</b>全九州 3 日 ¥22,000／5 日 ¥24,000／7 日 ¥26,000；北部九州 3 日 ¥15,000／5 日 ¥17,000。<b>線上買比日本櫃台便宜</b>，出發前再確認官網價格。</div>
+<h3>不含在 JR Pass 的段</h3>
+<ul>
+<li><b>太宰府（2/10）與柳川（2/11）走西鐵</b>——柳川有「特盛きっぷ」套票，含來回車票＋遊船＋鰻魚。</li>
+<li><b>長崎市內走路面電車</b>——一日券約 ¥600，你這三天會搭很多趟，第一天就買。</li>
+<li><b>福岡市內走地鐵</b>；<b>2/2 豪斯登堡走 KKday 巴士</b>。</li>
+</ul>
+<h3>兌換與劃位</h3>
+<p>抵達後在<b>博多站 1F 綠色窗口（みどりの窓口）</b>兌換 Pass 並一次把 2/5、2/8 的指定席劃完。⚠️ 早上 8–10 點最擠，建議 2/3 晚上或 2/4 一早提前去。</p>
+<div class="hl blue"><b>IC 卡：</b>九州的 SUGOCA／はやかけん／nimoca 與 Suica、ICOCA 全國互通，<b>你在台灣或日本其他地方買過的 IC 卡都能直接用</b>，不必再買一張。福岡地鐵、西鐵、長崎路面電車都可刷（出發前再確認長崎電軌的最新支援狀況）。</div>
+</section>
+
+<section id="htb">
+<h2>🎡 豪斯登堡（2/2）</h2>
+<p>用 <b>KKday #161157「豪斯登堡一日遊｜含往返巴士（博多出發）」</b>（供應商 HIS，巴士西鐵），含來回巴士＋1DAY 護照。成人 NT$3,262 起。</p>
+<div class="hl red"><b>⚠️ 一定要選「方案二：09:10–20:00」。</b>四個場次裡，18:00 收的兩個<b>看不到燈海</b>（2 月日落約 18:00 才點燈），11:10 出發的又少 2 小時園區時間。</div>
+<div class="hl red"><b>⚠️ 必須列印紙本三張</b>——去程巴士券、回程巴士券、門票兌換券。商品頁明訂「使用智慧型手機出示憑證將無效」。飯店櫃檯多半可代印，別拖到當天早上。</div>
+<h3>現場流程</h3>
+<ol style="margin-left:20px">
+<li>博多巴士總站 <b>3 樓 31 號乘車處</b>（很多人會在 1 樓繞，預留 20 分）</li>
+<li>車券交司機，座位已劃好</li>
+<li>到園區<b>先在 Welcome Gate 用兌換券換 1DAY 護照</b>再入園</li>
+<li>回程在早上下車的同一區「<b>紅色 3 號</b>」乘車處</li>
+</ol>
+<div class="hl"><b>省腳力：</b>園區面積約東京迪士尼的 1.5 倍，但<b>園內巴士與運河遊船都含在護照裡</b>，走累了直接搭。全區平地。</div>
+</section>
+
+<section id="gunkan">
+<h2>🚢 軍艦島（2/7）</h2>
+<div class="hl red"><b>⚠️ 這是全趟最可能泡湯的一項。</b>冬季海況不佳時登島取消率高，訂票時就要想好備案：長崎企鵝水族館、孔子廟・中國歷代博物館、崇福寺（兩座國寶），或把平和公園與原爆資料館提前。</div>
+<h3>五家業者，出港碼頭不同</h3>
+<div class="tblwrap">
+<table class="tbl">
+<tr><th>業者</th><th>出港地</th><th>船票</th><th>時間</th></tr>
+<tr><td>軍艦島コンシェルジュ</td><td>常盤ターミナル</td><td>¥5,500 起</td><td>約 165 分</td></tr>
+<tr><td>軍艦島クルーズ㈱</td><td>元船棧橋</td><td>¥4,000</td><td>約 190 分</td></tr>
+<tr><td>やまさ海運</td><td>長崎港ターミナル</td><td>¥4,700 起（有早鳥）</td><td>約 150 分</td></tr>
+<tr><td>シーマン商会</td><td>旭町棧橋</td><td>—</td><td>—</td></tr>
+</table>
+</div>
+<div class="hl"><b>島內設施使用料 ¥650 所有業者都另收</b>（2026/4 起由 ¥310 調漲）。⚠️ 訂完票要回頭確認碼頭位置與路面電車下車站——四家碼頭不一樣。部分業者冬季有船體檢修停航，2 月訂票前先看公告。</div>
+</section>
+
+<section id="dine">
+<h2>🍽 需要訂位的餐廳</h2>
+<p>行程裡標了 ⚠️ 需訂位的店，多數 1 個月前開放。<b>燈會期間（2/5–2/21）的長崎與週末的福岡尤其要早訂。</b></p>
+<ul>
+<li><b>2/1 中洲屋台</b>——不能訂位，直接去。評分最高的一攤是「中洲屋台 紀文」（食べログ 3.72）。</li>
+<li><b>2/3 河太郎 中洲本店</b>（活花枝，3.72）——需訂位，花枝有時售完。</li>
+<li><b>2/5–2/7 長崎</b>：大阪屋 浜町店（燒肉 3.85）、亜紗 本店（3.68）需訂位；康楽（強棒麵 3.69）不接受訂位、賣完就關。</li>
+<li><b>2/8 由布まぶし 心</b>——不接受預約，11:30 開店前去排。</li>
+<li><b>2/10 博多もつ鍋 おおやま</b>／とり田 博多本店——需訂位。</li>
+<li><b>2/11 若松屋</b>（柳川鰻魚 3.56）——假日排隊，可改元祖 本吉屋（3.68）或うなぎ処 川よし（3.56）。</li>
+</ul>
+<div class="hl"><b>日本訂位小技巧：</b>很多店只接電話訂位。可以請飯店櫃檯代打（東急STAY與玉の湯 都能幫忙），或用 TableCheck／食べログ 線上訂位。玉の湯 這種等級的旅館，提前跟他們說要訂哪家店通常都排得到。</div>
+</section>
+
+<section id="entry">
+<h2>🪪 入境與證件</h2>
+<h3>Visit Japan Web</h3>
+<p>日本政府的線上入境手續服務，可先登錄<b>入境審查</b>與<b>海關申報</b>，各自產生 QR code，在機場掃描即可，省下排隊填單的時間。福岡機場有支援。</p>
+<ul>
+<li>出發前 1–2 週用手機辦好（手機可讀護照晶片，比電腦方便）</li>
+<li>免費；每位旅客都要各自登錄（同行者可用同一帳號代辦）</li>
+<li>⚠️ 制度細節時常調整，出發前上官網再確認一次目前是否為必填</li>
+</ul>
+<h3>護照與簽證</h3>
+<ul>
+<li>台灣護照赴日<b>免簽證，可停留 90 天</b>。</li>
+<li>護照效期：日本要求涵蓋停留期間即可，但<b>建議留 6 個月以上</b>比較保險，也避免航空公司刁難。</li>
+<li>⚠️ 現在就確認護照效期——若要換發，2026 年底前處理完。</li>
+</ul>
+<div class="hl blue"><b>回程提醒：</b>CI117 20:35 起飛，<b>17:30 前一定要離開飯店</b>。地鐵空港線 5 分到福岡機場，但<b>國際線與國內線之間要轉免費接駁巴士約 10 分</b>，很多人會忘記這段。</div>
+</section>
+
+<section id="pay">
+<h2>💳 支付與免稅</h2>
+<h3>現金 vs 卡</h3>
+<ul>
+<li>日本都市已經很普及刷卡與行動支付，但<b>這趟有幾個地方幾乎只收現金</b>：中洲屋台、部分牡蠣小屋、小型商店、路面電車與公車、神社授與所。</li>
+<li>建議帶 <b>¥40,000–60,000 現金</b>（12 天、兩人份的零星支出），其餘刷卡。</li>
+<li>7-11 與郵局 ATM 可用台灣金融卡跨國提款，匯率通常比在台灣換好。</li>
+</ul>
+<h3 style="color:#b03a1a">⚠️ 免稅制度 2026/11 起大改（你會用到新制）</h3>
+<div class="hl red">
+<b>2026 年 11 月 1 日起，日本免稅改為「リファンド方式」（退稅制）</b>——不再是店家當場扣稅，而是<b>先付含稅價，出境時在機場海關確認商品帶出國後，再退還消費稅</b>。<br><br>
+同時放寬的部分：<b>廢止一般品／消耗品的區分、廢止 50 萬日圓購買上限、廢止免稅包裝</b>（以前消耗品要封起來不能拆，現在不用了）。<br><br>
+<b>對你的影響：</b>① 買東西當下要付含稅價，<b>預算要多抓 10%</b>；② 退稅在<b>出境時的福岡機場</b>辦，回程要多留時間；③ 好處是消耗品不再被封膜，旅途中就能拆用；④ 購買日起 <b>90 天內出境</b>才能退（你的行程完全沒問題）。<br><br>
+⚠️ 新制上路初期各店家作業可能不一致，實際流程以現場公告為準。
+</div>
+<h3>其他</h3>
+<ul>
+<li>免稅門檻仍是<b>同一店家同日滿 ¥5,000</b>（未稅）。</li>
+<li>買明太子等冷藏品要注意回程時間，<b>建議 2/12 當天再買</b>（行程已這樣排）。</li>
+</ul>
+</section>
+
+<section id="net">
+<h2>📶 網路與 App</h2>
+<h3>網路</h3>
+<ul>
+<li><b>eSIM</b> 最方便（不用換卡、落地即用）。12 天建議買 10–20GB 方案，這趟要一直查地圖與時刻表。</li>
+<li>若同行多人，一台 <b>WiFi 分享器</b>可能更划算，但要注意電量與「大家不能分頭行動」的限制——你這趟有幾天可能會分開走（例如有人想泡湯有人想逛街），eSIM 較彈性。</li>
+</ul>
+<h3>出發前先裝好的 App</h3>
+<ul>
+<li><b>Yahoo!乗換案内</b>或 <b>Google Maps</b>——查電車時刻與轉乘。日本的轉乘查詢 Yahoo 較準，且能查末班車。<b>2/2 豪斯登堡與 2/9 日田都要靠它確認末班車。</b></li>
+<li><b>食べログ</b>——地圖上的分數都來自這裡，現場可查營業時間與公休。</li>
+<li><b>KKday</b>——豪斯登堡憑證（但別忘了還是要印紙本）。</li>
+<li><b>Google 翻譯</b>——下載日文離線包，相機即時翻譯菜單很好用。</li>
+<li><b>JR九州アプリ</b>／JR 九州網路訂票——查特急時刻與劃位。</li>
+</ul>
+<div class="hl blue"><b>本網站可離線用：</b>地圖頁有「⬇️ 離線預載此區地圖」，出發前在飯店 WiFi 把福岡、長崎、由布院的範圍各預載一次，之後沒網路也看得到圖釘與行程。⚠️ 切到 Google 底圖時不能預載（Google 服務條款不允許快取），要先切回國土地理院。</div>
+</section>
+
+<section id="pack">
+<h2>🧳 打包（2 月九州：4–12°C）</h2>
+<h3>衣物</h3>
+<ul class="chk">
+<li><b>羽絨外套或厚外套</b>——福岡日均 4–10°C，長崎略暖，由布院山區更冷且可能下雪</li>
+<li><b>防風外層</b>——中洲屋台、門司港、稻佐山、豪斯登堡都在海邊或高處，風比氣溫更難受</li>
+<li><b>手套、圍巾、毛帽</b>——稻佐山山頂比市區低 3–5 度</li>
+<li>發熱衣２–３件、厚襪</li>
+<li><b>好走的鞋</b>——全程最長單段是由布院站→金鱗湖約 25 分平路，但每天步行量都不小</li>
+<li>溫泉用：玉の湯 有備品，但<b>自備一條小毛巾</b>方便泡公共浴場（金鱗湖的下ん湯 ¥300）</li>
+<li>⚠️ <b>牡蠣小屋若有去</b>（現為備選）油煙很重，準備一件不怕髒的外套</li>
+</ul>
+<h3>電子與雜物</h3>
+<ul class="chk">
+<li>行動電源（整天在外拍照導航很耗電）</li>
+<li>日本插座與台灣相同（A 型 100V），<b>不用轉接頭</b></li>
+<li>暖暖包（台灣買比較便宜，帶足）</li>
+<li>常備藥、口罩</li>
+<li><b>豪斯登堡紙本憑證 3 張</b>（最容易忘的一項）</li>
+<li>護照影本、旅遊平安險資料</li>
+<li>環保袋（日本購物袋要錢）</li>
+</ul>
+<div class="hl"><b>行李空間：</b>東急STAY博多 與 Coruscant 都有洗衣機——<b>衣服帶 4–5 天份就好</b>，中途洗一次。這也是當初選這兩間的理由之一。</div>
+</section>
+
+<section id="halal">
+<h2>☪ 清真旅客注意</h2>
+<p>地圖有「☪ 只看清真／禮拜所」篩選，共收錄 19 個地點。</p>
+<ul>
+<li><b>福岡選擇最多</b>：博多 魚蔵（都ホテル博多，用清真認證肉做日本料理，離你飯店走得到）、もつ鍋 極味や 福岡赤坂店（清真對應的博多牛腸鍋）、ミスターケバブ（有正式認證）。</li>
+<li><b>禮拜所</b>：福岡マスジド（箱崎）、ACROS 福岡 3F（天神逛街最方便）、福岡機場。</li>
+<li><b>門司港</b>意外友善：プリンセスピピ（穆斯林對應，食べログ 3.43）、もじこい。</li>
+<li>⚠️ <b>長崎選項極少</b>，而且名物幾乎全踩雷——強棒麵是豬骨湯、角煮饅頭是東坡肉、土耳其飯有豬排。</li>
+<li>⚠️ <b>湯布院沒有清真餐廳</b>，最近的在別府（JR 約 1 小時）。<b>2/8–2/9 的一泊二食務必事先跟玉の湯 溝通</b>，會席一定有高湯與味醂。</li>
+</ul>
+<div class="hl"><b>實用做法：</b>日本料理的隱形雷是<b>味醂、料理酒、豚骨高湯、豬油</b>，連看起來全素的湯麵都可能中。把下面這句存成手機截圖，點餐時直接出示：<br>
+<b>「豚肉・アルコール・豚骨だしを使っていますか？」</b>（有使用豬肉、酒精、豚骨高湯嗎？）</div>
+</section>
+
+<section id="misc">
+<h2>⚠️ 其他提醒</h2>
+<h3>出發前 3 天要再查一次的事</h3>
+<ul>
+<li><b>太宰府梅花開花情報</b>（天滿宮官網）——2/10 的花況決定值不值得多留時間</li>
+<li><b>豪斯登堡冬季燈海會期與檔名</b>——2027 版本通常前一年秋天公告</li>
+<li><b>長崎燈會皇帝遊行時刻表</b>——決定 2/6 傍晚的動線</li>
+<li><b>各段末班車</b>——2/2 豪斯登堡、2/9 日田（久大本線班次少，1–2 小時一班）</li>
+<li><b>軍艦島當日海況</b>——業者網站當天公告</li>
+</ul>
+<h3>2027 年 2 月的日期陷阱</h3>
+<ul>
+<li><b>2/6（六）是農曆初一</b>——長崎燈會最盛大也最擠，同時是台灣年假，機票與住宿都在高峰。</li>
+<li><b>2/11（四）是日本建國紀念日</b>——柳川雛祭開幕日，人比平日多；博多住宿也較貴。</li>
+<li><b>2/3（三）節分</b>——推算為 2/3（立春 2/4），2026 年為 2/3，待櫛田神社公告確認。</li>
+</ul>
+<h3>常用日文</h3>
+<table class="phr">
+<tr><td>不好意思（叫店員）</td><td>すみません</td></tr>
+<tr><td>請給我這個</td><td>これをください</td></tr>
+<tr><td>可以用信用卡嗎</td><td>カードは使えますか</td></tr>
+<tr><td>有中文／英文菜單嗎</td><td>中国語のメニューはありますか</td></tr>
+<tr><td>請問廁所在哪</td><td>トイレはどこですか</td></tr>
+<tr><td>我要辦免稅</td><td>免税でお願いします</td></tr>
+<tr><td>不要芥末</td><td>わさび抜きでお願いします</td></tr>
+<tr><td>幾點打烊？</td><td>何時までですか</td></tr>
+</table>
+<h3>緊急聯絡</h3>
+<ul>
+<li><b>日本報警 110／消防・救護 119</b></li>
+<li><b>駐福岡台北經濟文化辦事處</b>：福岡市中央區櫻坂 3-12-42，電話 <b>+81-92-734-2810</b>（⚠️ 出發前上外交部網站再確認地址與電話）</li>
+<li><b>外交部旅外國人急難救助全球免付費專線</b>：在日本撥 <b>001-010-800-0885-0885</b>（僅供緊急事故使用）</li>
+<li>信用卡掛失電話——出發前抄在紙上一份，別只存手機</li>
+</ul>
+<div class="hl blue">本頁與行程、地圖的資料都在同一個 repo，出發前若有更新會一起同步。<b>建議把網站加到手機主畫面</b>（可離線看行程與地圖）。</div>
+</section>
+
+</div>
+<script src="trip.js?v=16"></script>
+<script>
+if(typeof SITE_VERSION!=="undefined")document.getElementById('siteMeta').textContent=`2027/2/1–2/12 ｜ ${SITE_VERSION}・更新 ${SITE_UPDATED_AT}`;
+document.getElementById('pgload').classList.add('done');
+document.addEventListener('click',e=>{
+  const a=e.target.closest('a[href$=".html"]');
+  if(a&&!a.target)document.getElementById('pgload').classList.remove('done');
+});
+window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('pgload').classList.add('done');});
+</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('fukuoka-app-v16').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});});}).catch(function(){});});}</script>
+</body>
+</html>
