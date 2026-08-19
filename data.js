@@ -422,6 +422,65 @@ const PLACES = [
   "coord_status": "nominatim"
  },
  {
+  "name": "ヤシの木ブランコ",
+  "name_ja": "ヤシの木ブランコ",
+  "category": "景點",
+  "city": "福岡",
+  "area": "西區・小田",
+  "activities": [
+   "椰子樹鞦韆",
+   "天空鈴鐺之梯",
+   "沙灘打卡"
+  ],
+  "reason": "ざうお本店前沙灘上的椰子樹鞦韆與天空之梯，糸島最紅的打卡點之一。",
+  "notes": "座標是沙灘上的「ざうお BBQ ガーデン」——鞦韆就在這片海灘上。行政區屬福岡市西區小田（糸島海線的起點），不是糸島市。假日排隊拍照；冬天海風很大，注意保暖。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.629023,
+  "lng": 130.226851,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市西区小田79-6",
+  "hours": "週一–週日 11:00–21:00"
+ },
+ {
+  "name": "丸田池公園",
+  "name_ja": "丸田池公園",
+  "category": "景點",
+  "city": "福岡",
+  "area": "糸島市・前原西",
+  "activities": [
+   "親水綠地",
+   "筑前前原站旁"
+  ],
+  "reason": "筑前前原站旁的親水公園，逛完前原商店街散步用。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.559056,
+  "lng": 130.195612,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県糸島市前原西1-4-4",
+  "hours": "週一–週日 24 小時"
+ },
+ {
+  "name": "久保田クリニック",
+  "name_ja": "久保田クリニック",
+  "category": "景點",
+  "city": "福岡",
+  "area": "西區・小田",
+  "activities": [
+   "葉祥榮設計",
+   "現代建築巡禮"
+  ],
+  "reason": "建築家葉祥榮設計的診所，建築迷的巡禮點。",
+  "notes": "⚠️ 是營業中的診所，不是觀光設施——只在外面看，不要進去也不要影響病患。",
+  "duration": "15 分",
+  "coord_status": "google",
+  "lat": 33.63122,
+  "lng": 130.224309,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市西区小田51-1 久保田クリニック"
+ },
+ {
   "name": "九州國立博物館",
   "name_ja": "九州国立博物館",
   "category": "景點",
@@ -620,6 +679,26 @@ const PLACES = [
   "lng": 130.19648
  },
  {
+  "name": "櫻井神社（糸島）",
+  "name_ja": "櫻井神社",
+  "category": "景點",
+  "city": "福岡",
+  "area": "糸島市・志摩櫻井",
+  "activities": [
+   "古木參天",
+   "與二見浦同線"
+  ],
+  "reason": "歷史悠久、古木參天的神社；桜井二見ヶ浦 夫婦岩是它的社外攝社，兩者本來是一組。",
+  "notes": "與已在清單裡的「櫻井二見浦」一起排最順。",
+  "duration": "30 分",
+  "coord_status": "google",
+  "lat": 33.628159,
+  "lng": 130.191942,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県糸島市志摩桜井4227",
+  "hours": "週一–週日 24 小時"
+ },
+ {
   "name": "海之中道海濱公園",
   "name_ja": "海の中道海浜公園",
   "category": "景點",
@@ -714,6 +793,67 @@ const PLACES = [
   "lat": 33.589734,
   "lng": 130.353073,
   "coord_status": "nominatim"
+ },
+ {
+  "name": "糸島のトトロの森（芥屋大門公園）",
+  "name_ja": "糸島のトトロの森",
+  "category": "景點",
+  "city": "福岡",
+  "area": "糸島市・志摩芥屋",
+  "activities": [
+   "龍貓之森步道",
+   "海景展望",
+   "芥屋大門"
+  ],
+  "reason": "芥屋大門公園內的步道，穿過像龍貓隧道的樹洞後可眺望壯闊玄界灘。",
+  "notes": "⚠️ 步道是泥土路，雨後濕滑，請穿好走的鞋；冬天日落早，下午 4 點後光線就不夠了。",
+  "duration": "40–60 分",
+  "coord_status": "google",
+  "lat": 33.595023,
+  "lng": 130.10949,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県糸島市志摩芥屋",
+  "hours": "週一–週日 24 小時"
+ },
+ {
+  "name": "雷山千如寺大悲王院",
+  "name_ja": "雷山千如寺大悲王院",
+  "category": "景點",
+  "city": "福岡",
+  "area": "糸島市・雷山",
+  "activities": [
+   "樹齡 400 年大楓樹",
+   "紅葉／雪景名所",
+   "十一面千手觀音"
+  ],
+  "reason": "紅葉與冬季雪景名所，巨型大楓樹極具意境。",
+  "notes": "⚠️ 2 月是無葉的枯枝期，看的是雪景與寺體本身，不是紅葉；在雷山山腰，冬天路面可能結冰。",
+  "duration": "40–60 分",
+  "coord_status": "google",
+  "lat": 33.494446,
+  "lng": 130.228718,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県糸島市雷山626",
+  "hours": "週一–週日 9:00–16:30"
+ },
+ {
+  "name": "香月バス停",
+  "name_ja": "香月バス停",
+  "category": "景點",
+  "city": "福岡",
+  "area": "糸島市・志摩久家",
+  "activities": [
+   "電影《線》取景地",
+   "孤獨公車站"
+  ],
+  "reason": "電影《線：愛在相逢時》的取景公車站牌，畫面很有味道。",
+  "notes": "就是一個公車站，順路經過再停；Google 上可能找不到精確點位。",
+  "duration": "10 分",
+  "coord_status": "google",
+  "lat": 33.560987,
+  "lng": 130.134536,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県糸島市志摩久家"
  },
  {
   "name": "出島",
@@ -1211,6 +1351,387 @@ const PLACES = [
   "lng": 129.874645
  },
  {
+  "name": "あるあるCity",
+  "name_ja": "あるあるCity",
+  "category": "動漫",
+  "city": "北九州",
+  "area": "小倉北區・小倉站北口",
+  "activities": [
+   "animate・まんだらけ・駿河屋",
+   "北九州市漫畫博物館（5–6F）",
+   "7F 活動廳（聲優活動）"
+  ],
+  "reason": "小倉站北口的動漫大樓，一整棟都是動漫相關：animate、まんだらけ、駿河屋、扭蛋與模型店，5–6F 是北九州市漫畫博物館。4.1★、4,212 則評論。",
+  "notes": "小倉站北口空橋直通、步行 3 分。約 11:00–20:00（各店不同）。⚠️ 2/4 從博多往下關／門司港要在小倉轉車，但轉車空檔只有十幾分鐘，逛不了——真的想逛要另外挪半天。",
+  "price": "免費入館",
+  "hours": "約 11:00–20:00（各店不同）",
+  "duration": "1–2 小時",
+  "coord_status": "google",
+  "lat": 33.8875512,
+  "lng": 130.8846773
+ },
+ {
+  "name": "北九州市漫畫博物館",
+  "name_ja": "北九州市漫画ミュージアム",
+  "category": "動漫",
+  "city": "北九州",
+  "area": "小倉北區・小倉站北口",
+  "activities": [
+   "松本零士（銀河鐵道999）常設展",
+   "約 7 萬冊漫畫可自由閱讀",
+   "北九州出身漫畫家企劃展"
+  ],
+  "reason": "以北九州出身的松本零士（銀河鐵道999、宇宙海賊哈洛克）為核心的漫畫博物館，常設展外還有約 7 萬冊漫畫可以無限看。4.2★、1,114 則評論，是九州最正統的一座漫畫館。",
+  "notes": "⚠️ 週二休館（2/4 是週四，沒問題）。11:00–19:00、18:30 停止入館，常設展約 ¥480。在小倉站北口的「あるあるCity」5–6F，出站空橋直通、不用走到地面。⚠️ 需要 1.5–2 小時，塞不進 2/4 的門司港動線——見備選清單裡的排法建議。",
+  "ticket": "常設展約 ¥480",
+  "hours": "11:00–19:00（18:30 停止入館，週二休）",
+  "duration": "1.5–2 小時",
+  "coord_status": "google",
+  "lat": 33.8874206,
+  "lng": 130.8849869
+ },
+ {
+  "name": "銀河鐵道999 星野鐵郎銅像",
+  "name_ja": "銀河鉄道999 星野鉄郎銅像",
+  "category": "動漫",
+  "city": "北九州",
+  "area": "小倉北區・小倉站",
+  "activities": [
+   "星野鐵郎銅像",
+   "站內另有梅德爾像與車掌長椅"
+  ],
+  "reason": "小倉是松本零士的故鄉，小倉站內就放著星野鐵郎銅像。免費、就在站內動線上——2/4 在小倉轉車時花 3 分鐘就能收掉，是這趟最省力的一個動漫點。",
+  "notes": "⚠️ 不在 1F，在車站上層（空橋／新幹線口層）的通道上。站內另有「999 車掌長椅」與「梅德爾像」，一起看約 10 分。免費、隨時可看。",
+  "price": "免費",
+  "hours": "車站營業時間內",
+  "duration": "5–10 分",
+  "coord_status": "google",
+  "lat": 33.887832,
+  "lng": 130.8828591
+ },
+ {
+  "name": "三麗鷗和諧樂園",
+  "name_ja": "ハーモニーランド",
+  "category": "動漫",
+  "city": "大分",
+  "area": "速見郡日出町",
+  "activities": [
+   "凱蒂貓等三麗鷗角色遊行",
+   "戶外遊樂設施與表演",
+   "限定商品"
+  ],
+  "reason": "⭐ 日本唯一的三麗鷗戶外主題樂園（另一座是室內的東京三麗鷗彩虹樂園），就在大分縣日出町。4.2★、5,047 則評論——喜歡三麗鷗的話這是九州唯一的「本命」。",
+  "notes": "⚠️⚠️ 兩個大問題：①冬季平日常不營業——12–2 月多為週末與假日限定開園，2/9（週二）極可能休園，務必上 harmonyland.jp 的營業日曆確認。②交通遠：由布院→（久大本線約 1 小時）→大分→（日豐本線約 25 分）→杵築→接駁巴士約 10 分，單程約 2 小時，來回 4 小時。1 日護照約 ¥3,300–3,600（官網／Klook 價差大）。",
+  "ticket": "1 日護照約 ¥3,300–3,600（出發前確認）",
+  "hours": "約 10:00–17:00（⚠️ 冬季平日多休園，看官網營業日曆）",
+  "duration": "半天以上",
+  "coord_status": "google",
+  "lat": 33.4001589,
+  "lng": 131.5468003
+ },
+ {
+  "name": "進擊的巨人 in HITA 博物館",
+  "name_ja": "進撃の巨人 in HITA ミュージアム",
+  "category": "動漫",
+  "city": "大分",
+  "area": "日田市・大山町",
+  "activities": [
+   "諫山創原畫與設定資料",
+   "作者出身地企劃展",
+   "限定商品"
+  ],
+  "reason": "諫山創出身地的官方博物館，在大山水壩旁的道の駅「水辺の郷おおやま」內。4.3★、1,603 則評論，與大山水壩銅像車程 3 分，兩個一起走才完整。",
+  "notes": "⚠️ 約 10:00–17:00，需門票（出發前上 shingeki-hita.com 確認票價與休館日）。與大山水壩銅像同一區，含交通要留半天。",
+  "hours": "約 10:00–17:00（官網確認）",
+  "duration": "1 小時",
+  "coord_status": "google",
+  "lat": 33.2476101,
+  "lng": 130.9720758
+ },
+ {
+  "name": "進擊的巨人 in HITA 博物館 ANNEX",
+  "name_ja": "進撃の巨人 in HITAミュージアムANNEX",
+  "category": "動漫",
+  "city": "大分",
+  "area": "日田市・高瀬",
+  "activities": [
+   "分館展示與影片放映",
+   "札幌啤酒九州日田工廠腹地內"
+  ],
+  "reason": "本館的分館，4.5★（548 則）評價比本館還高，開到 19:00。位置比大山町近得多——距日田站約 5 km，是「不想跑大山町、但想看一點」的折衷選項。",
+  "notes": "在札幌啤酒九州日田工廠腹地內（日田市高瀬）。⚠️ 距日田站約 5 km，仍需巴士或計程車約 10–15 分。約 10:00–19:00，出發前上 shingeki-hita.com 確認。",
+  "hours": "約 10:00–19:00（官網確認）",
+  "duration": "40 分",
+  "coord_status": "google",
+  "lat": 33.2986117,
+  "lng": 130.9435722
+ },
+ {
+  "name": "進擊的巨人 大山水壩銅像",
+  "name_ja": "進撃の巨人 大山ダム銅像",
+  "category": "動漫",
+  "city": "大分",
+  "area": "日田市・大山町",
+  "activities": [
+   "艾連・米卡莎・阿爾敏三人銅像",
+   "以大山水壩當「牆」的原景"
+  ],
+  "reason": "⭐ 進擊的巨人聖地巡禮的正主：作者諫山創童年看著大山水壩想像出「牆」，水壩下就立著艾連、米卡莎、阿爾敏抬頭望牆的三人銅像。4.4★、1,781 則評論，免費、24 小時。",
+  "notes": "⚠️ 交通是難點：在日田市大山町，距日田站約 12 km。日田巴士「大山線」約 35 分（班次少），或計程車單程約 20–25 分。現場沒有廁所，先在道の駅 水辺の郷おおやま 解決（也是博物館所在地，車程 3 分）。",
+  "price": "免費",
+  "hours": "24 小時",
+  "duration": "30 分",
+  "coord_status": "google",
+  "lat": 33.2434582,
+  "lng": 130.9574765
+ },
+ {
+  "name": "進擊的巨人 里維兵士長像",
+  "name_ja": "進撃の巨人 リヴァイ兵士長像",
+  "category": "動漫",
+  "city": "大分",
+  "area": "日田市・日田站前",
+  "activities": [
+   "里維兵士長銅像",
+   "日田站前廣場"
+  ],
+  "reason": "《進擊的巨人》作者諫山創是日田市大山町出身，日田站前就立著里維兵士長銅像。4.6★、279 則評論。免費、24 小時，就在站前廣場——2/9 A 案下日田站直接看得到，零繞路。",
+  "notes": "日田市元町（日田站前）。免費、隨時可看，約 5–10 分。💡 站內觀光案內所有「進撃の巨人 in HITA」的巡禮地圖與周邊。",
+  "price": "免費",
+  "hours": "24 小時",
+  "duration": "5–10 分",
+  "coord_status": "google",
+  "lat": 33.3168,
+  "lng": 130.9383166
+ },
+ {
+  "name": "JUMP SHOP 福岡店",
+  "name_ja": "JUMP SHOP 福岡店",
+  "category": "動漫",
+  "city": "福岡",
+  "area": "博多區・中洲",
+  "activities": [
+   "海賊王・鬼滅之刃・咒術迴戰",
+   "少年 JUMP 官方商品",
+   "與 Sanrio Gallery 同一層"
+  ],
+  "reason": "集英社少年 JUMP 官方店，海賊王、鬼滅、咒術、排球少年的官方商品都在這裡，是福岡最集中的少年漫畫商品點。",
+  "notes": "在運河城博多 OPA B1F，與 Sanrio Gallery 同一層、走 20 秒。⚠️ 另一家在ららぽーと福岡 3F（跟 ν 鋼彈同一棟），兩家不必都去。約 10:00–21:00。",
+  "hours": "10:00–21:00",
+  "duration": "30 分",
+  "coord_status": "google",
+  "lat": 33.5900206,
+  "lng": 130.4111575
+ },
+ {
+  "name": "Sanrio Gallery 運河城博多店",
+  "name_ja": "Sanrio Gallery キャナルシティ博多店",
+  "category": "動漫",
+  "city": "福岡",
+  "area": "博多區・中洲",
+  "activities": [
+   "福岡最大的三麗鷗店",
+   "限定商品與扭蛋",
+   "與 JUMP SHOP 同一層"
+  ],
+  "reason": "福岡規模最大的三麗鷗直營店，在運河城博多的 OPA センターウォーク北側 B1F。⭐ 關鍵是 JUMP SHOP 福岡店就在同一層，一次逛完三麗鷗＋少年 JUMP 兩家。",
+  "notes": "行程 2/3 下午已經排了博多運河城，走到 B1 就是，零繞路。約 10:00–21:00。",
+  "hours": "10:00–21:00",
+  "duration": "30–40 分",
+  "coord_status": "google",
+  "lat": 33.58976,
+  "lng": 130.411229
+ },
+ {
+  "name": "animate 福岡PARCO店",
+  "name_ja": "アニメイト福岡パルコ",
+  "category": "動漫",
+  "city": "福岡",
+  "area": "中央區・天神",
+  "activities": [
+   "九州最大的 animate",
+   "同層有 Snoopy 與拉拉熊專櫃",
+   "常設作品立牌與特設展區"
+  ],
+  "reason": "九州規模最大的 animate（2,876 則評論、4.2★），在天神福岡PARCO 本館 8F。同一層還有 Kids Land、Snoopy 與拉拉熊專櫃，動漫＋角色商品一次掃完。",
+  "notes": "天神地下街走上來就到，與三麗鷗天神地下街店步行 3 分。約 10:00–20:30。💡 想找二手・絕版・賽璐璐畫的話，走 5 分到大名的まんだらけ福岡店。",
+  "hours": "10:00–20:30",
+  "duration": "40–60 分",
+  "coord_status": "google",
+  "lat": 33.5909156,
+  "lng": 130.3987274
+ },
+ {
+  "name": "まんだらけ 福岡店",
+  "name_ja": "まんだらけ 福岡店",
+  "category": "動漫",
+  "city": "福岡",
+  "area": "中央區・大名",
+  "activities": [
+   "二手・絕版動漫商品",
+   "老玩具與模型",
+   "同人與賽璐璐畫"
+  ],
+  "reason": "中野本店同一集團的九州店，賣的是 animate 沒有的東西——絕版玩具、老模型、賽璐璐畫。4.2★、3,309 則評論，是天神一帶評價最高的動漫店。",
+  "notes": "在天神隔一條的大名（グランドビル 1F），從福岡PARCO 步行約 5 分。約 12:00–20:00。⚠️ 是二手店，價格與品項每天不同，想找特定東西不一定有。",
+  "hours": "12:00–20:00",
+  "duration": "30–45 分",
+  "coord_status": "google",
+  "lat": 33.5901747,
+  "lng": 130.3937289
+ },
+ {
+  "name": "三麗鷗 博多阪急店",
+  "name_ja": "サンリオ 博多阪急店",
+  "category": "動漫",
+  "city": "福岡",
+  "area": "博多區・博多站",
+  "activities": [
+   "凱蒂貓與酷洛米商品",
+   "百貨內專櫃"
+  ],
+  "reason": "博多站內博多阪急 7F 的三麗鷗專櫃，位置最方便——回程日在站內買伴手禮時順手就逛到。",
+  "notes": "⚠️ 是百貨專櫃、規模小（Google 評論常提到「很小一櫃」），要買齊建議去天神地下街店或運河城的 Sanrio Gallery。約 10:00–20:00。",
+  "hours": "10:00–20:00",
+  "duration": "15–20 分",
+  "coord_status": "google",
+  "lat": 33.5893859,
+  "lng": 130.4200143
+ },
+ {
+  "name": "三麗鷗 天神地下街店",
+  "name_ja": "サンリオ 天神地下街店",
+  "category": "動漫",
+  "city": "福岡",
+  "area": "中央區・天神",
+  "activities": [
+   "凱蒂貓・酷洛米・美樂蒂",
+   "地下街店・不用出地面"
+  ],
+  "reason": "天神地下街裡的三麗鷗店，2025/9 才重新開幕。行程已經排了兩次天神地下街，這家完全零繞路，而且 2 月天神地面很冷，地下街最舒服。",
+  "notes": "⚠️ 在地下街「東 2 番街 304 号」，位置偏後段，Google 評論有人反映定位跟實際入口有落差，進地下街後看指標找「東 2 番街」。約 10:00–20:00。",
+  "hours": "10:00–20:00",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.5914372,
+  "lng": 130.3986175
+ },
+ {
+  "name": "三麗鷗角色夢幻樂園",
+  "name_ja": "サンリオキャラクターズ ドリーミングパーク",
+  "category": "動漫",
+  "city": "福岡",
+  "area": "中央區・地行濱",
+  "activities": [
+   "三麗鷗室內主題設施",
+   "拍照打卡空間",
+   "限定商品店"
+  ],
+  "reason": "2023 年開幕的三麗鷗室內主題設施，在福岡巨蛋旁的 BOSS E・ZO FUKUOKA 7F。是九州除了大分ハーモニーランド 以外唯一的三麗鷗「樂園型」設施，而且全室內，2 月天氣差也不受影響。",
+  "notes": "⚠️ 位置在地行濱（福岡PayPayドーム 旁），地鐵唐人町站步行約 12 分，不在博多／天神步行圈——要專程去一趟。約 10:00–19:00。入場需付費（E・ZO 單館券），出發前上 e-zofukuoka.com 確認當日營業與票價。",
+  "hours": "約 10:00–19:00（依官網）",
+  "duration": "1.5–2 小時",
+  "coord_status": "google",
+  "lat": 33.5950969,
+  "lng": 130.3637518
+ },
+ {
+  "name": "實物大 ν 鋼彈立像",
+  "name_ja": "実物大νガンダム立像",
+  "category": "動漫",
+  "city": "福岡",
+  "area": "博多區・那珂（ららぽーと福岡）",
+  "activities": [
+   "24.8m 實物大 RX-93ff ν 鋼彈",
+   "免費、24 小時可看",
+   "夜間點燈與演出"
+  ],
+  "reason": "⭐ 全九州最強的動漫地標：24.8 公尺高的實物大 ν 鋼彈立像，全世界唯一一座。4.6★、15,176 則評論——福岡動漫類評價最高的地點，而且完全免費、24 小時都在。",
+  "notes": "在ららぽーと福岡（博多區那珂 6-23-1）。⚠️ 不在博多站步行圈：JR 鹿兒島本線博多→竹下 1 站約 3 分＋步行 9 分，或博多巴士總站搭西鐵巴士約 20 分直達。同棟還有ガンダムパーク福岡（1F）與 JUMP SHOP ららぽーと店（3F）。晚上有點燈與音樂演出，冬天天黑得早，17:30 後來看夜版最值得。",
+  "price": "免費",
+  "hours": "24 小時（立像本體）",
+  "duration": "30 分（單看立像）／2 小時（含鋼彈公園）",
+  "coord_status": "google",
+  "lat": 33.5657052,
+  "lng": 130.4412874
+ },
+ {
+  "name": "寶可夢中心 福岡",
+  "name_ja": "ポケモンセンターフクオカ",
+  "category": "動漫",
+  "city": "福岡",
+  "area": "博多區・博多站",
+  "activities": [
+   "九州唯一的官方寶可夢中心",
+   "福岡限定商品",
+   "巨大皮卡丘與拍照點"
+  ],
+  "reason": "九州唯一一家官方 Pokémon Center，就在博多站旁的博多マルイ 8F——從 JR 博多站走過去約 3 分鐘，是整趟行程裡最不用繞路的寶可夢點。",
+  "notes": "⚠️ 不在 AMU PLAZA，是隔一棟的「博多マルイ（KITTE 博多）8F」——很多人會走錯。約 10:00–21:00，與博多阪急同一個街區，回程日買伴手禮時一起收掉最順。",
+  "hours": "10:00–21:00",
+  "duration": "30–45 分",
+  "coord_status": "google",
+  "lat": 33.5890033,
+  "lng": 130.4192564
+ },
+ {
+  "name": "福岡麵包超人兒童博物館",
+  "name_ja": "福岡アンパンマンこどもミュージアムinモール",
+  "category": "動漫",
+  "city": "福岡",
+  "area": "博多區・中洲川端",
+  "activities": [
+   "麵包超人室內遊戲區",
+   "每日舞台演出",
+   "限定商品與果醬爺爺麵包工房"
+  ],
+  "reason": "博多リバレインモール 5–6F 的麵包超人博物館，全室內。中洲川端站直通，是雨天／冷天的室內備案。",
+  "notes": "⚠️ 客群是學齡前小孩，成人動漫迷的滿足度不高（門票約 ¥2,000、含 1 份紀念品）。約 10:00–17:00。行程沒有排——列在這裡是因為它就在 2/3 與 2/12 的中洲動線上，臨時想去 20 分鐘內到得了。",
+  "ticket": "約 ¥2,000（含紀念品）",
+  "hours": "10:00–17:00",
+  "duration": "2–3 小時",
+  "coord_status": "google",
+  "lat": 33.5951049,
+  "lng": 130.4058425
+ },
+ {
+  "name": "鋼彈公園福岡",
+  "name_ja": "ガンダムパーク福岡",
+  "category": "動漫",
+  "city": "福岡",
+  "area": "博多區・那珂（ららぽーと福岡）",
+  "activities": [
+   "GUNDAM SIDE-F（鋼彈模型旗艦店）",
+   "VS PARK 體感遊戲",
+   "namco 遊戲區"
+  ],
+  "reason": "ν 鋼彈立像同一棟 1F 的鋼彈綜合設施，GUNDAM SIDE-F 是九州最大的鋼彈模型店（4.4★），限定鋼普拉與福岡限定盒繪都在這裡。",
+  "notes": "與實物大 ν 鋼彈立像同棟（ららぽーと福岡 1F），約 10:00–21:00。⚠️ 商店免費入場，體感遊戲區（VS PARK 等）另收費。",
+  "hours": "10:00–21:00",
+  "duration": "1–1.5 小時",
+  "coord_status": "google",
+  "lat": 33.5650059,
+  "lng": 130.4414037
+ },
+ {
+  "name": "animate 長崎店",
+  "name_ja": "アニメイト長崎",
+  "category": "動漫",
+  "city": "長崎",
+  "area": "長崎市・濱町",
+  "activities": [
+   "長崎唯一的 animate",
+   "商店街內・有頂棚"
+  ],
+  "reason": "長崎唯一一家 animate，就開在濱町商店街的大樓 3F。行程 2/5 傍晚已經排了濱町商店街，走進去就是，零繞路。",
+  "notes": "⚠️ 在商店街一棟大樓的 3F，入口不明顯（Google 評論多人反映找很久），看到「浜町 1-10」的大樓招牌再上樓。店面不大，約 10:00–20:00。",
+  "hours": "10:00–20:00",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 32.7444777,
+  "lng": 129.8771493
+ },
+ {
   "name": "武雄溫泉 樓門・元湯",
   "name_ja": "武雄温泉 楼門",
   "category": "溫泉",
@@ -1391,6 +1912,426 @@ const PLACES = [
   "lng": 130.703756
  },
  {
+  "name": "#FR2 福岡",
+  "name_ja": "#FR2 福岡",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・大名",
+  "activities": [
+   "兔頭 T",
+   "地區限定款"
+  ],
+  "reason": "★★ 各店常有地區限定圖案，福岡限定款只有這裡買得到。",
+  "duration": "15 分",
+  "coord_status": "google",
+  "lat": 33.586524,
+  "lng": 130.39704,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区大名1-1-3 石井ビル 1階 101",
+  "hours": "週一–週日 11:00–20:00"
+ },
+ {
+  "name": "1834 FUKUOKA",
+  "name_ja": "1834",
+  "category": "購物",
+  "city": "福岡",
+  "area": "博多區・博多站前",
+  "activities": [
+   "LIGHT YEARS 同體系",
+   "預約制空間"
+  ],
+  "reason": "LIGHT YEARS 體系的預約制空間。",
+  "notes": "⚠️ 需事前向 LIGHT YEARS 預約才能入場。Google 上查不到 1834 的獨立點位，這個圖釘是 LIGHT YEARS 本店的位置——請以預約時對方給的地址為準。",
+  "duration": "30–45 分",
+  "coord_status": "google",
+  "lat": 33.589675,
+  "lng": 130.41361,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市博多区博多駅前3-30-5",
+  "hours": "週一–週日 11:00–19:00"
+ },
+ {
+  "name": "Artwork Fukuoka",
+  "name_ja": "artwork",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・今泉",
+  "activities": [
+   "Factory-market 的女裝線",
+   "與 DICE&DICE 同區"
+  ],
+  "reason": "★★★★★ Factory-market 的女裝店，和 DICE&DICE 在同一區域，順路。",
+  "notes": "🗓 定休：週三——本行程在福岡的日子是 2/1(一)、2/2(二)、2/3(三)、2/4(四)、2/10(三)、2/11(四)、2/12(五)，排行程時避開。　店名很通用，導航請認地址不要只認店名。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.58544,
+  "lng": 130.396414,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区今泉2-5-11 カンファービル 1F",
+  "hours": "週一–週二 12:00–19:30｜週四–週五 12:00–19:30｜週六–週日 11:00–19:30｜週三休"
+ },
+ {
+  "name": "BAPE STORE 福岡",
+  "name_ja": "BAPE STORE FUKUOKA",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・大名",
+  "activities": [
+   "A Bathing Ape",
+   "鯊魚帽 T"
+  ],
+  "reason": "★★★ 經典猿人頭，日本本地價與台灣代理價差距大。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.587119,
+  "lng": 130.39485,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区大名1-11-28",
+  "hours": "週一–週日 11:00–19:00"
+ },
+ {
+  "name": "BILLYS 福岡",
+  "name_ja": "BILLYS ENT 福岡店",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・大名",
+  "activities": [
+   "老牌連鎖鞋店",
+   "與 UPTOWN、#FR2 緊鄰"
+  ],
+  "reason": "★★ 球鞋連鎖老店，和 UPTOWN、#FR2 就在隔壁，三家一起掃最省時間。",
+  "duration": "15–20 分",
+  "coord_status": "google",
+  "lat": 33.586533,
+  "lng": 130.397208,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区大名1-1-2",
+  "hours": "週一–週日 11:00–20:00"
+ },
+ {
+  "name": "BIOTOP 福岡",
+  "name_ja": "BIOTOP FUKUOKA",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・赤坂",
+  "activities": [
+   "GUIDI／The Row",
+   "HYKE／AURALEE",
+   "植物＋咖啡"
+  ],
+  "reason": "板友評 ★（私心 5 星）：服飾選貨＋植物＋咖啡的複合空間，逛累了可以直接在裡面吃下午茶。",
+  "notes": "與工藝風向相鄰。",
+  "duration": "45–60 分",
+  "coord_status": "google",
+  "lat": 33.582698,
+  "lng": 130.382143,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区赤坂2-6-30 2F",
+  "hours": "週一–週日 10:00–19:00"
+ },
+ {
+  "name": "Chrome Hearts 福岡",
+  "name_ja": "クロムハーツ 福岡",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・大名",
+  "activities": [
+   "銀飾之王",
+   "大名旗艦店"
+  ],
+  "reason": "★★★ 大名旗艦店（大丸東館 2F 另有櫃位）。",
+  "notes": "⚠️ 人氣款需預約或抽選，直接走進去多半只能看不能買。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.587492,
+  "lng": 130.39608,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区大名1-14-8 バルビゾン93",
+  "hours": "週一–週五 12:00–20:00｜週六–週日 11:00–20:00"
+ },
+ {
+  "name": "Comme des Garçons 福岡",
+  "name_ja": "コムデギャルソン 福岡",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・天神",
+  "activities": [
+   "CdG 全線",
+   "建築式店面"
+  ],
+  "reason": "★★★★★ 板友特別點名店面外觀極具設計感，鄰近 NEPENTHES。",
+  "notes": "⚠️ 板友文中「鄰近 NEPENTHES」的博多駅前獨立店，Google 已標示永久歇業；這裡指的是目前營業中的天神店（天神1-12-20）。岩田屋本店 1F 另有 PLAY 專櫃。",
+  "duration": "30–40 分",
+  "coord_status": "google",
+  "lat": 33.592192,
+  "lng": 130.399528,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区天神1-12-20 日之出天神ビルディング",
+  "hours": "週一–週日 10:00–20:00"
+ },
+ {
+  "name": "DESCENTE 福岡",
+  "name_ja": "DESCENTE 福岡",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・天神",
+  "activities": [
+   "ALLTERRAIN 支線",
+   "水沢羽絨"
+  ],
+  "reason": "★★★ 日本頂級機能品牌，主推 ALLTERRAIN；水沢ダウン 冬天在福岡買正是當季。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.590739,
+  "lng": 130.399967,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区天神1-11-11 ONE FUKUOKA BLDG 4F",
+  "hours": "週一–週五 11:00–20:00｜週六–週日 10:00–20:00"
+ },
+ {
+  "name": "DICE & DICE",
+  "name_ja": "DICE&DICE",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・今泉",
+  "activities": [
+   "Graphpaper",
+   "YAECA／BATONER",
+   "New Balance TDS 店中店"
+  ],
+  "reason": "★★★★★ 天神一帶最完整的日系選貨店，Graphpaper、YAECA、BATONER 都在同一層；店內還有 New Balance TDS 店中店與 Wounderkammer。",
+  "notes": "同一區塊還有 Factory-market 與 Artwork，可以一次逛完。",
+  "duration": "40–60 分",
+  "coord_status": "google",
+  "lat": 33.585262,
+  "lng": 130.396522,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区今泉2-1-43 DXD bldg 1F&2F",
+  "hours": "週一–週四 13:00–18:00｜週五 13:00–19:00｜週六 12:00–19:00｜週日 12:00–18:00"
+ },
+ {
+  "name": "F.I.L. FUKUOKA（visvim）",
+  "name_ja": "F.I.L. FUKUOKA",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・赤坂",
+  "activities": [
+   "visvim 專賣",
+   "木質店裝"
+  ],
+  "reason": "★★★ visvim 直營，店內木質地板與陳列本身就值得進去看一眼。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.58361,
+  "lng": 130.386099,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区赤坂3-8-26 赤坂エクセル 1F",
+  "hours": "週一–週日 11:00–19:00"
+ },
+ {
+  "name": "Factory - market",
+  "name_ja": "Factory-market",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・今泉",
+  "activities": [
+   "FreshService／DAIWA PIER39",
+   "AURALEE／Goldwin",
+   "nonnative／RAMIDUS"
+  ],
+  "reason": "★★★★★ 機能與都會日常的交集：FreshService、DAIWA PIER39、AURALEE、Goldwin、nonnative、RAMIDUS 選得很齊。",
+  "notes": "女裝在同體系的 Artwork。",
+  "duration": "40–60 分",
+  "coord_status": "google",
+  "lat": 33.585723,
+  "lng": 130.396768,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区今泉2-5-4",
+  "hours": "週一–週五 12:00–19:30｜週六–週日 11:00–19:30"
+ },
+ {
+  "name": "HIGHTIDE STORE 福岡",
+  "name_ja": "ハイタイドストア",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・白金",
+  "activities": [
+   "Penco 文具",
+   "Pake 聯名配件",
+   "自社直營"
+  ],
+  "reason": "★★（文具迷 5 星）：Penco 母公司的直營店，文具與雜貨的大本營，伴手禮好挑又輕。",
+  "notes": "適合安排在回程前買伴手禮。",
+  "duration": "30–40 分",
+  "coord_status": "google",
+  "lat": 33.578948,
+  "lng": 130.405768,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区白金1-8-28 ハイタイド",
+  "hours": "週一–週日 11:00–19:00"
+ },
+ {
+  "name": "HOODS FUKUOKA",
+  "name_ja": "HOODS FUKUOKA",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・大名",
+  "activities": [
+   "WTAPS",
+   "NEIGHBORHOOD"
+  ],
+  "reason": "★★★ WTAPS／NEIGHBORHOOD 正規取扱店，兩個牌子在台灣加價幅度大，在這裡買最實在。",
+  "notes": "熱門單品開季就完售，別期待撿貨。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.587233,
+  "lng": 130.395082,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区大名1-11-27",
+  "hours": "週一–週日 11:00–19:00"
+ },
+ {
+  "name": "HUES",
+  "name_ja": "HUES",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・警固",
+  "activities": [
+   "Yohji Yamamoto",
+   "Maison Margiela",
+   "ACRONYM／Bagjack"
+  ],
+  "reason": "★★★★★ 福岡的機能／暗黑先鋒重鎮，Yohji、Margiela、ACRONYM、Bagjack 同店並列，是這份清單裡風格最強烈的一家。",
+  "notes": "高單價店，試穿建議留時間。",
+  "duration": "30–45 分",
+  "coord_status": "google",
+  "lat": 33.585159,
+  "lng": 130.393608,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区警固1-15-28",
+  "hours": "週一 11:00–19:00｜週二 11:00–20:00｜週三–週日 11:00–19:00"
+ },
+ {
+  "name": "KAPITAL 福岡",
+  "name_ja": "KAPITAL 福岡",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・大名",
+  "activities": [
+   "重水洗工藝",
+   "刺子／襤褸",
+   "民族圖騰"
+  ],
+  "reason": "★★★★ 日系經典重水洗工藝品牌，實品的織法與洗色一定要現場看才知道差別。",
+  "duration": "30–40 分",
+  "coord_status": "google",
+  "lat": 33.586613,
+  "lng": 130.39457,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区大名1-3-42 ローズマンション大名 1F",
+  "hours": "週一–週日 11:00–20:00"
+ },
+ {
+  "name": "Kaddish",
+  "name_ja": "Kaddish",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・大名",
+  "activities": [
+   "WACKO MARIA",
+   "OLD JOE"
+  ],
+  "reason": "★★★★ 主打 WACKO MARIA 與 OLD JOE，風格集中、不雜。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.586249,
+  "lng": 130.395552,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区大名1-1-22 1F",
+  "hours": "週一–週日 12:00–20:00"
+ },
+ {
+  "name": "LIGHT YEARS",
+  "name_ja": "LIGHT YEARS",
+  "category": "購物",
+  "city": "福岡",
+  "area": "博多區・博多站前",
+  "activities": [
+   "各國民藝",
+   "骨董器物",
+   "如博物館般的陳列"
+  ],
+  "reason": "★★★★★ 宛如骨董博物館的民藝選貨店，同體系還有 MORE LIGHT 與 1834。",
+  "notes": "1834 需事前透過 LIGHT YEARS 預約。",
+  "duration": "40–60 分",
+  "coord_status": "google",
+  "lat": 33.589675,
+  "lng": 130.41361,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市博多区博多駅前3-30-5",
+  "hours": "週一–週日 11:00–19:00"
+ },
+ {
+  "name": "LOVELESS 福岡",
+  "name_ja": "LOVELESS FUKUOKA",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・天神",
+  "activities": [
+   "Doublet",
+   "Needles",
+   "South2 West8"
+  ],
+  "reason": "★★★ 大型選貨店，Doublet、Needles、South2 West8 加自有品牌，一次看到多個牌子。",
+  "duration": "30–40 分",
+  "coord_status": "google",
+  "lat": 33.589627,
+  "lng": 130.398413,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区天神2-10-3 VIORO 2F",
+  "hours": "週一–週日 10:00–20:00"
+ },
+ {
+  "name": "Le Labo 福岡",
+  "name_ja": "ルラボ 福岡",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・大名",
+  "activities": [
+   "現調手工香水",
+   "瓶身可刻字"
+  ],
+  "reason": "★★★ 紐約手工慢香水，現場現調、標籤可打上名字與日期，當旅行紀念很合適。",
+  "notes": "現調需等 10–15 分鐘。",
+  "duration": "30 分",
+  "coord_status": "google",
+  "lat": 33.587082,
+  "lng": 130.395345,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区大名1-15-24",
+  "hours": "週一–週日 11:00–20:00"
+ },
+ {
+  "name": "Loopwheeler 福岡",
+  "name_ja": "ループウィラー福岡",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・藥院",
+  "activities": [
+   "吊編（吊り編み）純棉",
+   "衛衣／帽 T 專門"
+  ],
+  "reason": "板友評 ★★★（私心 5 星）：日本頂級吊編衛衣專門店，福岡直營。買一件當旅行紀念很划算。",
+  "notes": "🗓 定休：週二、週三、週四、週五——本行程在福岡的日子是 2/1(一)、2/2(二)、2/3(三)、2/4(四)、2/10(三)、2/11(四)、2/12(五)，排行程時避開。　⚠️ 只有週一、週六、週日營業，而本行程在福岡沒有週末——整趟只有 2/1（週一）這天碰得到，而且 2/1 是抵達日（FUK 10:00 落地），週一只開到 17:00。後方就是 LIVING STEREO，兩家一起排。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.582543,
+  "lng": 130.392406,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区薬院2-18-12 財津ビル 1F",
+  "hours": "週一 12:00–17:00｜週六–週日 12:00–19:00｜週二、週三、週四、週五休"
+ },
+ {
   "name": "MARK IS 福岡ももち",
   "name_ja": "マークイズ福岡ももち",
   "category": "購物",
@@ -1410,6 +2351,208 @@ const PLACES = [
   "coord_status": "nominatim"
  },
  {
+  "name": "MORE LIGHT",
+  "name_ja": "MORE LIGHT",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・清川",
+  "activities": [
+   "LIGHT YEARS 同體系",
+   "空間陳列最精緻"
+  ],
+  "reason": "★★★★★ 三間之中空間陳列最講究的一間。",
+  "duration": "30–45 分",
+  "coord_status": "google",
+  "lat": 33.576428,
+  "lng": 130.41251,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区清川3-15-30",
+  "hours": "週一–週日 11:00–18:00"
+ },
+ {
+  "name": "Maison (MY) Labo",
+  "name_ja": "MAISON MIHARA YASUHIRO",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・赤坂",
+  "activities": [
+   "MAISON MIHARA YASUHIRO",
+   "溶解鞋"
+  ],
+  "reason": "★★★ 三原康裕的溶解鞋專賣，尺碼與配色比台灣專櫃齊。",
+  "notes": "🗓 定休：週三、週四——本行程在福岡的日子是 2/1(一)、2/2(二)、2/3(三)、2/4(四)、2/10(三)、2/11(四)、2/12(五)，排行程時避開。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.584262,
+  "lng": 130.387487,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "東急ドエルアルス1, B, 2-3-6 赤坂 中央区 福岡市 福岡県 810-0042",
+  "hours": "週一–週二 12:00–20:00｜週五–週日 12:00–20:00｜週三、週四休"
+ },
+ {
+  "name": "NEPENTHES HAKATA",
+  "name_ja": "ネペンテス 博多",
+  "category": "購物",
+  "city": "福岡",
+  "area": "博多區・店屋町",
+  "activities": [
+   "Needles",
+   "Engineered Garments",
+   "South2 West8"
+  ],
+  "reason": "★★★★ 必訪名店：Needles 蝴蝶褲、Engineered Garments、South2 West8 全在這裡，是這份清單在博多側的核心。",
+  "notes": "鄰近 Comme des Garçons 福岡，兩家一起排。",
+  "duration": "40–60 分",
+  "coord_status": "google",
+  "lat": 33.596252,
+  "lng": 130.41015,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市博多区店屋町2-28 2F",
+  "hours": "週一–週日 11:30–20:00"
+ },
+ {
+  "name": "NIGHTHAWKS",
+  "name_ja": "NIGHTHAWKS",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・今泉",
+  "activities": [
+   "Hender Scheme",
+   "_J.L-A.L_／NAMACHEKO",
+   "Salomon／Our Legacy"
+  ],
+  "reason": "板友評 ★★★（私心 5 星）：隱密的店中店，Hender Scheme、Our Legacy、Salomon 這種組合在福岡少見。",
+  "notes": "🗓 定休：週三——本行程在福岡的日子是 2/1(一)、2/2(二)、2/3(三)、2/4(四)、2/10(三)、2/11(四)、2/12(五)，排行程時避開。　地址在今泉 2 丁目 3-21，招牌不明顯、要找門牌上樓。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.583087,
+  "lng": 130.396562,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区2-3 今泉2-3-21 松永ビル201",
+  "hours": "週一–週二 13:00–19:00｜週四–週日 13:00–19:00｜週三休"
+ },
+ {
+  "name": "NYLON（The Real McCoys 福岡店）",
+  "name_ja": "ナイロン リアルマッコイズ福岡店",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・大名",
+  "activities": [
+   "The Real McCoys",
+   "美式軍裝復刻",
+   "店裝值得看"
+  ],
+  "reason": "★★★ 板友特別提店裝外觀極美；The Real McCoys 的 A-2、N-1 復刻是日本工藝天花板之一。",
+  "notes": "🗓 定休：週三——本行程在福岡的日子是 2/1(一)、2/2(二)、2/3(三)、2/4(四)、2/10(三)、2/11(四)、2/12(五)，排行程時避開。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.587469,
+  "lng": 130.395216,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区大名1-14-21",
+  "hours": "週一–週二 12:00–20:00｜週四–週日 12:00–20:00｜週三休"
+ },
+ {
+  "name": "ON AIR KEGO",
+  "name_ja": "ON AIR KEGO",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・警固",
+  "activities": [
+   "LTTT",
+   "Tomo & Co",
+   "Sneeze Magazine"
+  ],
+  "reason": "★★★★★ 藝術文化取向的服飾店，選件與雜誌陳列都很有觀點。",
+  "notes": "⚠️ 板友說「主要五、六、日營業」，但 Google 上是每天 12:00–18:00——兩邊對不上。本行程在福岡完全沒有週末，出發前務必查官方 Instagram 當週公告。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.584928,
+  "lng": 130.392374,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区警固1-12-8 2F",
+  "hours": "週一–週日 12:00–18:00"
+ },
+ {
+  "name": "PORTER 天神地下街店",
+  "name_ja": "ポーター 天神地下街",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・天神",
+  "activities": [
+   "吉田カバン PORTER",
+   "日本限定型號"
+  ],
+  "reason": "★★ 位於天神地下街內，雨天不用出地面；PORTER 日本本地價與台灣差距明顯。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.589228,
+  "lng": 130.400225,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区天神2-6-1004 東9-街",
+  "hours": "週一–週日 10:00–19:00"
+ },
+ {
+  "name": "SCATOLA",
+  "name_ja": "SCATOLA",
+  "category": "購物",
+  "city": "福岡",
+  "area": "糸島市・前原中央",
+  "activities": [
+   "包包專賣",
+   "咖啡店中店"
+  ],
+  "reason": "ここのき 旁的包包專賣，裡面還有咖啡店中店。",
+  "notes": "🗓 定休：週一——本行程在福岡的日子是 2/1(一)、2/2(二)、2/3(三)、2/4(四)、2/10(三)、2/11(四)、2/12(五)，排行程時避開。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.56042,
+  "lng": 130.201529,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県糸島市前原中央3-9-29",
+  "hours": "週二–週五 11:00–16:00｜週一、週六、週日休"
+ },
+ {
+  "name": "SOPH. FUKUOKA",
+  "name_ja": "SOPH. FUKUOKA",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・藥院",
+  "activities": [
+   "SOPHNET.",
+   "F.C.Real Bristol",
+   "uniform experiment"
+  ],
+  "reason": "★★★ 清水則之的三條線一次看完，F.C.R.B. 的球衣剪裁值得試穿。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.582509,
+  "lng": 130.398035,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区薬院1-12-30",
+  "hours": "週一–週日 11:00–19:00"
+ },
+ {
+  "name": "Sports Lab by atmos 博多",
+  "name_ja": "Sports Lab by atmos 博多",
+  "category": "購物",
+  "city": "福岡",
+  "area": "博多區・博多站",
+  "activities": [
+   "球鞋",
+   "AMU PLAZA 博多館內"
+  ],
+  "reason": "★★ 在博多站 AMU PLAZA 內，等車前的零碎時間剛好可以逛。",
+  "notes": "Google 上現在的店名是「atmos アミュプラザ博多店」（5F），Sports Lab 已整併進 atmos——找店請用 atmos。",
+  "duration": "20 分",
+  "coord_status": "google",
+  "lat": 33.590427,
+  "lng": 130.419949,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市博多区博多駅中央街1-1 アミュプラザ博多 5F",
+  "hours": "週一–週日 10:00–20:00"
+ },
+ {
   "name": "Sunny 博多駅南（24 小時）",
   "name_ja": "サニー",
   "category": "購物",
@@ -1422,6 +2565,165 @@ const PLACES = [
   "lat": 33.583105,
   "lng": 130.417493,
   "coord_status": "overpass"
+ },
+ {
+  "name": "Supreme 福岡",
+  "name_ja": "Supreme 福岡",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・大名",
+  "activities": [
+   "街頭滑板龍頭",
+   "日本限定配色"
+  ],
+  "reason": "★★★ 日本 Supreme 分店之一。",
+  "notes": "⚠️ Google 標示「暫停營業」——出發前務必再確認。　⚠️ drop 日（通常週六）會排隊管制，非 drop 日進出很輕鬆。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.587294,
+  "lng": 130.396594,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区大名1-15-35 247ビル 1F",
+  "business_status": "CLOSED_TEMPORARILY"
+ },
+ {
+  "name": "TAKAHIROMIYASHITA TheSoloist. 福岡",
+  "name_ja": "TAKAHIROMIYASHITATheSoloist. FUKUOKA",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・赤坂",
+  "activities": [
+   "宮下貴裕",
+   "彈鋼琴假人裝置"
+  ],
+  "reason": "★★★ 店內有彈鋼琴的假人裝置藝術，就算不買也值得走進去。",
+  "notes": "⚠️ Google 標示「永久歇業」——出發前務必再確認，可能已經收了。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.588011,
+  "lng": 130.389451,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区赤坂1-12-6",
+  "business_status": "CLOSED_PERMANENTLY"
+ },
+ {
+  "name": "THE STANDARD MANUAL",
+  "name_ja": "THE STANDARD MANUAL",
+  "category": "購物",
+  "city": "福岡",
+  "area": "博多區・住吉",
+  "activities": [
+   "硬派美式居家",
+   "戶外生活雜貨"
+  ],
+  "reason": "★★★ 硬派美式居家與戶外雜貨，工具感很強。",
+  "notes": "🗓 定休：週四——本行程在福岡的日子是 2/1(一)、2/2(二)、2/3(三)、2/4(四)、2/10(三)、2/11(四)、2/12(五)，排行程時避開。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.585366,
+  "lng": 130.410618,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市博多区住吉3-9-20 1Ｆ",
+  "hours": "週一–週三 11:00–19:00｜週五–週日 11:00–19:00｜週四休"
+ },
+ {
+  "name": "Tigre Brocante",
+  "name_ja": "ティグルブロカンテ",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・警固",
+  "activities": [
+   "藍染",
+   "民俗圖騰"
+  ],
+  "reason": "★★ 繽紛圖騰、藍染與民俗風格，和這條街上的極簡日系是完全另一種路線。",
+  "duration": "20 分",
+  "coord_status": "google",
+  "lat": 33.583512,
+  "lng": 130.39169,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区警固2-3-26",
+  "hours": "週一–週五 12:00–19:00｜週六–週日 11:00–19:00"
+ },
+ {
+  "name": "UPTOWN Deluxe 福岡店",
+  "name_ja": "UPTOWN Deluxe 福岡店",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・大名",
+  "activities": [
+   "潮流球鞋",
+   "二手／稀有款"
+  ],
+  "reason": "★★ 球鞋專賣，和 BILLYS 緊鄰。",
+  "duration": "15–20 分",
+  "coord_status": "google",
+  "lat": 33.586532,
+  "lng": 130.397137,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区大名1-1-2-2",
+  "hours": "週一–週五 12:00–20:00｜週六 11:00–21:00｜週日 11:00–20:00"
+ },
+ {
+  "name": "Unreal real clothes",
+  "name_ja": "Unreal real clothes",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・今泉",
+  "activities": [
+   "A.PRESSE",
+   "VAINL ARCHIVE",
+   "Graphpaper"
+  ],
+  "reason": "★★ 2F 的隱密選貨店，A.PRESSE 在福岡不好找。",
+  "notes": "在 2 樓，門面很低調。",
+  "duration": "20 分",
+  "coord_status": "google",
+  "lat": 33.586783,
+  "lng": 130.400343,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区今泉1-13-29 福泉ビル 2F",
+  "hours": "週一–週日 11:00–19:00"
+ },
+ {
+  "name": "VIORO",
+  "name_ja": "VIORO",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・天神",
+  "activities": [
+   "UNITED ARROWS",
+   "金子眼鏡",
+   "BEAMS GOLF"
+  ],
+  "reason": "★★★ 岩田屋旁的小型商場，金子眼鏡在這裡。",
+  "notes": "與岩田屋本店步行 1 分。",
+  "duration": "40–60 分",
+  "coord_status": "google",
+  "lat": 33.589722,
+  "lng": 130.398333,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区天神2-10-3",
+  "hours": "週一–週日 10:00–20:00"
+ },
+ {
+  "name": "nanamica 福岡",
+  "name_ja": "nanamica FUKUOKA",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・大名",
+  "activities": [
+   "都市機能美學",
+   "THE NORTH FACE PURPLE LABEL"
+  ],
+  "reason": "★★★ 兼售 The North Face 紫標，紫標在台灣不好買、價差也明顯。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.588412,
+  "lng": 130.394911,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区大名2-1-14",
+  "hours": "週一–週日 11:00–19:00"
  },
  {
   "name": "ふくや 中洲本店",
@@ -1459,6 +2761,26 @@ const PLACES = [
   "lat": 33.564772,
   "lng": 130.44032,
   "coord_status": "nominatim"
+ },
+ {
+  "name": "アール福岡（旧 ANATOMICA）",
+  "name_ja": "アール福岡",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・警固",
+  "activities": [
+   "ANATOMICA",
+   "Rocky Mountain Featherbed"
+  ],
+  "reason": "★★★ 原 ANATOMICA 福岡，法式基本款＋Rocky Mountain Featherbed 羽絨背心。",
+  "notes": "已改名「アール」，用舊名 ANATOMICA 找可能找不到。",
+  "duration": "20–30 分",
+  "coord_status": "google",
+  "lat": 33.585285,
+  "lng": 130.395265,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区警固1-15-51 RichStage上人橋 2F",
+  "hours": "週一–週日 12:00–19:00"
  },
  {
   "name": "セブン-イレブン（博多駅南）",
@@ -1617,6 +2939,27 @@ const PLACES = [
   "coord_status": "overpass"
  },
  {
+  "name": "九大伊都 蔦屋書店",
+  "name_ja": "蔦屋書店 伊都",
+  "category": "購物",
+  "city": "福岡",
+  "area": "西區・九大新町",
+  "activities": [
+   "旗艦蔦屋",
+   "採光與建築",
+   "咖啡座"
+  ],
+  "reason": "九州大學伊都校區旁的旗艦蔦屋，採光與建築本身就是景點。",
+  "notes": "⚠️ Google 標示「永久歇業」——出發前務必再確認，可能已經收了。　在伊都校區旁，離糸島海線有一段距離，開車或搭公車。",
+  "duration": "1 小時",
+  "coord_status": "google",
+  "lat": 33.59398,
+  "lng": 130.229496,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市西区九大新町5-1 いとLab＋",
+  "business_status": "CLOSED_PERMANENTLY"
+ },
+ {
   "name": "博多川端商店街",
   "name_ja": "川端通商店街",
   "category": "購物",
@@ -1747,6 +3090,26 @@ const PLACES = [
   "lng": 130.398
  },
  {
+  "name": "工藝風向",
+  "name_ja": "工藝風向",
+  "category": "購物",
+  "city": "福岡",
+  "area": "中央區・赤坂",
+  "activities": [
+   "日本傳統手工藝",
+   "民藝選物",
+   "作家器物"
+  ],
+  "reason": "板友評 ★（私心 5 星）：專營日本傳統手工藝與民藝，是這份清單裡最「非潮流」但最耐看的一家。",
+  "notes": "旁邊就是 BIOTOP，中間還有 STAND POINT 咖啡與 F.I.L.（visvim），這一小區可以連著走完。",
+  "duration": "30–45 分",
+  "coord_status": "google",
+  "lat": 33.582733,
+  "lng": 130.382692,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区赤坂2-6-27"
+ },
+ {
   "name": "福岡 PARCO",
   "name_ja": "福岡パルコ",
   "category": "購物",
@@ -1764,6 +3127,68 @@ const PLACES = [
   "lat": 33.590796,
   "lng": 130.398607,
   "coord_status": "nominatim"
+ },
+ {
+  "name": "糸島くらし×ここのき",
+  "name_ja": "糸島くらし×ここのき",
+  "category": "購物",
+  "city": "福岡",
+  "area": "糸島市・前原中央",
+  "activities": [
+   "糸島在地工藝",
+   "手作雜貨",
+   "果乾／食材"
+  ],
+  "reason": "筑前前原站周邊的在地工藝與食材選貨店，糸島伴手禮一站買齊。",
+  "notes": "🗓 定休：週二——本行程在福岡的日子是 2/1(一)、2/2(二)、2/3(三)、2/4(四)、2/10(三)、2/11(四)、2/12(五)，排行程時避開。　與 SCATOLA、小富士、書店都在步行圈內，這一區可以走著逛。",
+  "duration": "30–40 分",
+  "coord_status": "google",
+  "lat": 33.560409,
+  "lng": 130.201015,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県糸島市前原中央3-9-1",
+  "hours": "週一 10:00–18:00｜週三–週日 10:00–18:00｜週二休"
+ },
+ {
+  "name": "糸島の顔がみえる本屋さん",
+  "name_ja": "糸島の顔がみえる本屋さん",
+  "category": "購物",
+  "city": "福岡",
+  "area": "糸島市・前原中央",
+  "activities": [
+   "獨立書店",
+   "選書溫暖",
+   "緊鄰小富士"
+  ],
+  "reason": "氣氛溫馨的小小獨立書店，和小富士在一起。",
+  "notes": "🗓 定休：週二——本行程在福岡的日子是 2/1(一)、2/2(二)、2/3(三)、2/4(四)、2/10(三)、2/11(四)、2/12(五)，排行程時避開。　小店，營業日不固定。",
+  "duration": "20 分",
+  "coord_status": "google",
+  "lat": 33.560133,
+  "lng": 130.199126,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県糸島市前原中央3-2-14 2F",
+  "hours": "週一 11:00–17:00｜週三–週日 11:00–17:00｜週二休"
+ },
+ {
+  "name": "郷土文具のお店 小富士",
+  "name_ja": "郷土文具のお店 小富士",
+  "category": "購物",
+  "city": "福岡",
+  "area": "糸島市・前原中央",
+  "activities": [
+   "鄉土文具",
+   "小型展覽"
+  ],
+  "reason": "特色鄉土文具小店，也辦小型展覽，緊鄰旁邊的獨立書店。",
+  "notes": "🗓 定休：週二——本行程在福岡的日子是 2/1(一)、2/2(二)、2/3(三)、2/4(四)、2/10(三)、2/11(四)、2/12(五)，排行程時避開。　小店，營業日不固定，建議查 Instagram。",
+  "duration": "20 分",
+  "coord_status": "google",
+  "lat": 33.560272,
+  "lng": 130.19884,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県糸島市前原中央3-3-23",
+  "hours": "週一 11:00–15:00｜週三–週五 11:00–15:00｜週六 11:00–17:00｜週日 11:00–15:00｜週二休"
  },
  {
   "name": "AMU PLAZA 長崎",
@@ -2969,6 +4394,68 @@ const PLACES = [
   "area_center": "熊本"
  },
  {
+  "name": "Blue Bottle Coffee 福岡天神カフェ",
+  "name_ja": "ブルーボトルコーヒー 福岡天神カフェ",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區・天神",
+  "activities": [
+   "藍瓶咖啡",
+   "福岡首間街邊店",
+   "警固神社旁"
+  ],
+  "reason": "藍瓶咖啡在福岡的首間街邊門市，就在警固神社旁、天神地下街出口附近。",
+  "notes": "逛天神時的休息點。",
+  "duration": "30 分",
+  "coord_status": "google",
+  "lat": 33.587411,
+  "lng": 130.39971,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区天神2-2-20 警固神社社務所ビル 1階⁠",
+  "hours": "週一–週日 8:00–20:00"
+ },
+ {
+  "name": "LIVING STEREO",
+  "name_ja": "LIVING STEREO MUSIC BAR & RECORD STORE",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區・藥院",
+  "activities": [
+   "黑膠唱片行",
+   "咖啡＋酒吧",
+   "Loopwheeler 後方"
+  ],
+  "reason": "★★★★★ 質感黑膠行兼咖啡酒吧，逛完 Loopwheeler 直接坐下來歇腳。",
+  "notes": "白天咖啡、晚上酒吧，時段不同氣氛差很多。",
+  "duration": "40–60 分",
+  "coord_status": "google",
+  "lat": 33.582383,
+  "lng": 130.392588,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区薬院2-18-10 102",
+  "hours": "週一–週四 17:00–1:00｜週五 17:00–2:00｜週六 15:00–2:00｜週日休"
+ },
+ {
+  "name": "Liquid Liquid",
+  "name_ja": "Liquid Liquid",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區・大名",
+  "activities": [
+   "小巧精緻空間",
+   "設計別出心裁"
+  ],
+  "reason": "★★★ 空間小但設計很有想法的咖啡店。",
+  "notes": "⚠️ Google 標示「永久歇業」——出發前務必再確認，可能已經收了。　座位少，人多時要等。",
+  "duration": "30–40 分",
+  "coord_status": "google",
+  "lat": 33.587416,
+  "lng": 130.393915,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区大名1-9-1 粋名ビル 1F",
+  "business_status": "CLOSED_PERMANENTLY"
+ },
+ {
   "name": "Restaurant Sola",
   "name_ja": "Restaurant Sola",
   "category": "餐飲",
@@ -2984,6 +4471,25 @@ const PLACES = [
   "lat": 33.604638,
   "lng": 130.399101,
   "coord_status": "google"
+ },
+ {
+  "name": "STAND POINT",
+  "name_ja": "STAND POINT",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區・赤坂",
+  "activities": [
+   "精品咖啡",
+   "位於工藝風向與 visvim 之間"
+  ],
+  "reason": "★★★ 氛圍咖啡廳，剛好卡在工藝風向與 F.I.L. 中間，是這區的休息點。",
+  "duration": "30 分",
+  "coord_status": "google",
+  "lat": 33.583132,
+  "lng": 130.384541,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区赤坂3-4-37 2F",
+  "hours": "週一–週日 11:00–17:00"
  },
  {
   "name": "Shin-Shin 天神本店",
@@ -3005,6 +4511,47 @@ const PLACES = [
   "coord_status": "google",
   "lat": 33.59275,
   "lng": 130.396845
+ },
+ {
+  "name": "VALIANT GALLERY.BAR",
+  "name_ja": "VALIANT GALLERY.BAR",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區・今泉",
+  "activities": [
+   "調酒",
+   "藝術展覽",
+   "塊根植物 Caudex"
+  ],
+  "reason": "★★★★★ 藝廊酒吧，調酒＋展覽＋塊根植物，是這份清單裡最特別的夜間行程。",
+  "notes": "⚠️ Google 標示「永久歇業」——出發前務必再確認，可能已經收了。　酒吧性質，晚上才開；建議先查當期展覽。",
+  "duration": "1–1.5 小時",
+  "coord_status": "google",
+  "lat": 33.582851,
+  "lng": 130.396656,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区今泉2-3-18",
+  "business_status": "CLOSED_PERMANENTLY"
+ },
+ {
+  "name": "bbb haus",
+  "name_ja": "bbb haus",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "糸島市・志摩小金丸",
+  "activities": [
+   "海景咖啡／下午茶",
+   "生活選品",
+   "設計感民宿"
+  ],
+  "reason": "糸島海邊的設計旅宿，附設咖啡與選品，是這條海線上質感最高的一站。",
+  "notes": "住宿另計；只喝咖啡也可以進去。",
+  "duration": "1 小時",
+  "coord_status": "google",
+  "lat": 33.594197,
+  "lng": 130.148163,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県糸島市志摩小金丸1897"
  },
  {
   "name": "うどん平",
@@ -3108,6 +4655,27 @@ const PLACES = [
   "coord_status": "nominatim"
  },
  {
+  "name": "すみ劇場 むさし坐",
+  "name_ja": "すみ劇場 むさし坐",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區・渡邊通",
+  "activities": [
+   "爐端燒",
+   "炭火串燒",
+   "喜多郎同集團"
+  ],
+  "reason": "喜多郎壽司同集團的超人氣爐端燒／串燒居酒屋。",
+  "notes": "人氣店，建議預約。",
+  "duration": "1.5–2 小時",
+  "coord_status": "google",
+  "lat": 33.58779,
+  "lng": 130.403946,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区渡辺通5-5-12",
+  "hours": "週一–週四 16:00–0:00｜週五–週六 15:00–0:00｜週日 15:00–23:00"
+ },
+ {
   "name": "せいもん払い",
   "name_ja": "せいもん払い",
   "category": "餐飲",
@@ -3207,6 +4775,27 @@ const PLACES = [
   "coord_status": "google"
  },
  {
+  "name": "またいちの塩 製塩所 工房とったん",
+  "name_ja": "またいちの塩 製塩所 工房とったん",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "糸島市・志摩芥屋",
+  "activities": [
+   "花鹽布丁",
+   "海景製鹽所",
+   "鹽味甜點"
+  ],
+  "reason": "絕美海景製鹽所，招牌「花鹽布丁」配海景是糸島的經典畫面。",
+  "notes": "⚠️ 位置偏、路窄，沒車幾乎到不了；營業日與時間季節性調整，出發前查官網。",
+  "duration": "40–60 分",
+  "coord_status": "google",
+  "lat": 33.577182,
+  "lng": 130.08974,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県糸島市志摩芥屋3757",
+  "hours": "週一–週日 10:00–17:00"
+ },
+ {
   "name": "もつ鍋 極味や 福岡赤坂店",
   "name_ja": "もつ鍋 極味や 福岡赤坂店",
   "category": "餐飲",
@@ -3226,6 +4815,46 @@ const PLACES = [
   "lat": 33.586928,
   "lng": 130.391028,
   "coord_status": "google"
+ },
+ {
+  "name": "やきとり五二六",
+  "name_ja": "やきとり五二六",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區・渡邊通",
+  "activities": [
+   "炭火串燒",
+   "警固一帶"
+  ],
+  "reason": "警固的人氣炭火串燒專賣店。",
+  "notes": "座位少，建議預約。",
+  "duration": "1.5 小時",
+  "coord_status": "google",
+  "lat": 33.588523,
+  "lng": 130.403718,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区渡辺通5-3-23-1",
+  "hours": "週一–週六 17:00–0:00｜週日 17:00–23:00"
+ },
+ {
+  "name": "やきとり六三四",
+  "name_ja": "やきとり六三四",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區・渡邊通",
+  "activities": [
+   "炭火串燒",
+   "豚バラ",
+   "福岡風燒鳥"
+  ],
+  "reason": "經典福岡炭火串燒居酒屋。福岡燒鳥的招牌是豬五花（豚バラ），和東京不一樣。",
+  "duration": "1.5 小時",
+  "coord_status": "google",
+  "lat": 33.588481,
+  "lng": 130.403784,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区渡辺通5-3-23-1 プロスペリタ天神1 Ⅱ 1F",
+  "hours": "週一–週五 17:00–0:00｜週六 16:00–0:00｜週日 16:00–23:00"
  },
  {
   "name": "やす武",
@@ -3664,6 +5293,27 @@ const PLACES = [
   "lng": 130.385294
  },
  {
+  "name": "博多 喜多郎寿し",
+  "name_ja": "博多 喜多郎寿し",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區・渡邊通",
+  "activities": [
+   "鯖魚",
+   "黑喉（のどぐろ）",
+   "壽司居酒屋"
+  ],
+  "reason": "壽司居酒屋，板友點名必吃鯖魚與黑喉；同集團還有すみ劇場 むさし坐。",
+  "notes": "晚餐時段建議預約。",
+  "duration": "1.5–2 小時",
+  "coord_status": "google",
+  "lat": 33.588463,
+  "lng": 130.403512,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市中央区渡辺通5-2-9 1F",
+  "hours": "週一–週六 17:00–0:00｜週日 17:00–23:00"
+ },
+ {
   "name": "博多 魚蔵（都ホテル博多）",
   "name_ja": "博多 魚蔵 都ホテル博多",
   "category": "餐飲",
@@ -3771,6 +5421,27 @@ const PLACES = [
   "lat": 33.592607,
   "lng": 130.408956,
   "coord_status": "google"
+ },
+ {
+  "name": "古材の森（旧西原邸）",
+  "name_ja": "古材の森",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "糸島市・前原中央",
+  "activities": [
+   "明治古民家",
+   "可參觀 2F",
+   "古民家下午茶"
+  ],
+  "reason": "明治時期古民宅改的喫茶，可以上 2 樓參觀再坐下來喝茶。",
+  "notes": "🗓 定休：週三、週四——本行程在福岡的日子是 2/1(一)、2/2(二)、2/3(三)、2/4(四)、2/10(三)、2/11(四)、2/12(五)，排行程時避開。　有公休日，出發前查；午餐時段人多。",
+  "duration": "1 小時",
+  "coord_status": "google",
+  "lat": 33.560251,
+  "lng": 130.201472,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県糸島市前原中央3-18-15",
+  "hours": "週一–週二 11:30–17:00｜週五–週日 11:30–17:00｜週三、週四休"
  },
  {
   "name": "因幡烏龍麵（博多站前店）",
@@ -4376,6 +6047,26 @@ const PLACES = [
   "lng": 130.420068,
   "coord_status": "area",
   "area_center": "博多"
+ },
+ {
+  "name": "鮨 菜とい",
+  "name_ja": "鮨 菜とい",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "西區・周船寺",
+  "activities": [
+   "無菜單握壽司",
+   "糸島在地漁獲"
+  ],
+  "reason": "JR 周船寺站附近，大量使用糸島在地漁獲的無菜單壽司。",
+  "notes": "⚠️ 需事前預約，熱門日期要提早很久——想吃請在行前就訂。",
+  "duration": "1.5–2 小時",
+  "coord_status": "google",
+  "lat": 33.571674,
+  "lng": 130.243792,
+  "source": "PTT Street_Style 板推薦整理",
+  "address": "福岡県福岡市西区周船寺1-6-9",
+  "hours": "週一–週日 12:00–14:30, 18:00–22:30"
  },
  {
   "name": "鮨しま",

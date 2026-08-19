@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>座標補齊 — 用 Google Places 抓新地點座標</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%93%8C%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#f7f9fb;--ink:#22282e;--muted:#77828d;--line:#dfe6ec;--accent:#1b4f8a;
+      --ok:#0e7c3f;--warn:#b45309;--bad:#c0392b;--chip:#eef3f7}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;color:var(--ink);background:var(--bg);padding:0 0 60px}
+.top{position:sticky;top:0;z-index:20;background:rgba(247,249,251,.97);border-bottom:1px solid var(--line);padding:12px clamp(14px,3vw,28px);backdrop-filter:blur(10px)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 14px}
+h1{font-size:19px}
+.sub{color:var(--muted);font-size:12.5px;margin-top:4px;line-height:1.7}
+.warn{background:#fdf0ee;border:1px solid #e0a08c;border-left:4px solid #c0392b;color:#7d3520;border-radius:10px;padding:11px 14px;margin:14px 0;font-size:13px;line-height:1.8}
+.info{background:#eef6fc;border:1px solid #9cc9e8;border-left:4px solid var(--accent);color:#245b7d;border-radius:10px;padding:11px 14px;margin:14px 0;font-size:13px;line-height:1.8}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0}
+button{font-family:inherit;font-size:13px;font-weight:700;padding:9px 15px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
+button.pri{background:var(--accent);color:#fff;border-color:var(--accent)}
+button:disabled{opacity:.5;cursor:default}
+#prog{flex:1;min-width:180px;height:9px;background:#e6ecf2;border-radius:5px;overflow:hidden}
+#prog i{display:block;height:100%;width:0;background:var(--accent);transition:width .2s}
+#stat{font-size:12.5px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:12.5px;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+th{background:var(--chip);text-align:left;padding:8px 9px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:7px 9px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.55}
+td.mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;white-space:nowrap}
+.ok{color:var(--ok);font-weight:700}.bad{color:var(--bad);font-weight:800}.warn2{color:var(--warn);font-weight:700}
+textarea{width:100%;height:240px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;border:1px solid var(--line);border-radius:9px;padding:10px;margin-top:8px}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap">
+  <h1>📌 座標補齊 — 用 Google Places 抓「還沒有座標」的地點</h1>
+  <div class="sub">直接讀 <code>data/*.json</code>，把 <code>lat</code> 為空或 <code>coord_status=missing</code> 的地點丟給 Google Places，
+  取回官方座標、地址與營業時間。<a href="verify.html">座標稽核</a>｜<a href="map.html">地圖</a>｜<a href="itinerary.html">行程</a></div>
+</div></div>
+
+<div class="wrap">
+<div class="warn">
+<b>⚠️ 計費 API，且只能從金鑰允許的網域開啟</b>（<code>localhost:5173</code>）。
+本頁讀的是 <code>data/*.json</code> 原始檔，<b>只有本機 <code>python -m http.server 5173</code> 跑得起來</b>，
+GitHub Pages 上不一定有 data 目錄。
+</div>
+<div class="info">
+<b>和 verify.html 的差別：</b>verify.html 是「已經有座標，拿 Google 比對距離」；
+這一頁是「根本還沒有座標，跟 Google 要一個」。查詢字串優先用該筆的 <code>q</code> 欄位。
+<b>回傳的地址請逐筆看過</b>——Google 是「用名字找店」，同名分店、或名字太通用（例如 <code>artwork</code>）時會配到別家。
+</div>
+
+<div class="bar">
+  <button class="pri" id="run">▶ 開始查詢</button>
+  <button id="stop" disabled>■ 停止</button>
+  <div id="prog"><i></i></div>
+  <span id="stat">載入中…</span>
+</div>
+
+<div style="overflow-x:auto"><table id="tbl">
+<thead><tr><th>#</th><th>地點</th><th>查詢字串</th><th>Google 回傳名稱</th><th>地址</th><th>座標</th><th>營業時間</th></tr></thead>
+<tbody></tbody></table></div>
+
+<div class="bar" style="margin-top:16px"><button id="gen">📋 產生 JSON（貼進 audit/）</button></div>
+<textarea id="out" placeholder="按上面的按鈕產生…"></textarea>
+</div>
+
+<script src="config.js"></script>
+<script>
+const $=s=>document.querySelector(s);
+const tbody=$('#tbl tbody');
+let todo=[], rows=[], stopped=false, ready=false;
+
+// 讀 data/ 目錄索引（http.server 會列出檔案），挑出所有 .json
+async function loadTodo(){
+  const idx=await (await fetch('data/')).text();
+  const files=[...idx.matchAll(/href="([^"]+\.json)"/g)].map(m=>decodeURIComponent(m[1]).replace(/^.*\//,''));
+  const out=[];
+  for(const f of files){
+    const arr=await (await fetch('data/'+f)).json();
+    for(const p of arr){
+      if(p.lat==null||p.coord_status==='missing')out.push({file:f,...p});
+    }
+  }
+  return out;
+}
+function queryFor(p){
+  if(p.q)return p.q;
+  const area=(p.area||'').replace(/[・].*$/,'');
+  return ((p.name_ja||p.name)+' '+(area||p.city||'')).trim();
+}
+// 地址對不對得上我們標的區域：粗略檢查而已，最終還是要人看
+function addrFlag(p,addr){
+  if(!addr)return['bad','無地址'];
+  const key=(p.area||'').replace(/^.*・/,'').replace(/[區市]$/,'');
+  if(key&&addr.includes(key))return['ok','區域相符'];
+  if(addr.includes('福岡県'))return['warn2','在福岡縣內，但區域對不上'];
+  return['bad','不在福岡縣'];
+}
+
+function render(){
+  tbody.innerHTML=rows.map(r=>`<tr>
+    <td>${r.i}</td>
+    <td><b>${r.name}</b><br><span style="color:#77828d">${r.area||''}</span></td>
+    <td>${r.q}</td>
+    <td>${r.gname||'<span class="bad">查無</span>'}</td>
+    <td class="${r.flag}">${r.gaddr||'—'}<br><span style="font-size:11px">${r.flagtxt||''}</span></td>
+    <td class="mono">${r.lat?r.lat.toFixed(6)+'<br>'+r.lng.toFixed(6):'—'}</td>
+    <td style="font-size:11px">${(r.hours||[]).join('<br>')||'—'}</td>
+  </tr>`).join('');
+}
+
+async function lookup(q){
+  const {places}=await google.maps.places.Place.searchByText({
+    textQuery:q,
+    fields:['displayName','location','formattedAddress','regularOpeningHours','businessStatus'],
+    maxResultCount:1, language:'ja', region:'jp'
+  });
+  if(!places||!places.length)return null;
+  const p=places[0];
+  return {lat:p.location.lat(),lng:p.location.lng(),name:p.displayName,addr:p.formattedAddress,
+          hours:p.regularOpeningHours?p.regularOpeningHours.weekdayDescriptions:null,
+          status:p.businessStatus||''};
+}
+
+async function run(){
+  stopped=false; rows=[]; tbody.innerHTML='';
+  $('#run').disabled=true; $('#stop').disabled=false;
+  let done=0, firstErr=null;
+  for(const [i,p] of todo.entries()){
+    if(stopped)break;
+    const q=queryFor(p);
+    let g=null;
+    try{ g=await lookup(q); }catch(e){ if(!firstErr)firstErr=e.message||String(e); }
+    const [flag,flagtxt]=g?addrFlag(p,g.addr):['bad','查無結果'];
+    rows.push({i:i+1,name:p.name,area:p.area,q,flag,flagtxt,
+      gname:g?g.name:'',gaddr:g?g.addr:'',lat:g?g.lat:null,lng:g?g.lng:null,
+      hours:g?g.hours:null,status:g?g.status:''});
+    done++;
+    $('#prog i').style.width=(done/todo.length*100)+'%';
+    $('#stat').textContent=`${done} / ${todo.length}`+(firstErr?`　⚠️ ${firstErr}`:'');
+    if(done%5===0||done===todo.length)render();
+    await new Promise(r=>setTimeout(r,120));
+  }
+  render();
+  $('#run').disabled=false; $('#stop').disabled=true;
+  window.__DONE=true;
+}
+$('#run').onclick=run;
+$('#stop').onclick=()=>{stopped=true;};
+$('#gen').onclick=()=>{ $('#out').value=window.result(); };
+
+// 給自動化／複製用：[名稱, lat, lng, Google名稱, 地址, 營業時間, 狀態, 旗標]
+window.result=()=>JSON.stringify(rows.map(r=>[r.name,r.lat,r.lng,r.gname,r.gaddr,r.hours,r.status,r.flag]));
+
+(function(){
+  const key=(typeof GMAPS_KEY!=="undefined")?String(GMAPS_KEY).trim():"";
+  if(!key){ $('#stat').textContent='config.js 沒有 GMAPS_KEY'; $('#run').disabled=true; return; }
+  window.gm_authFailure=()=>{ $('#stat').textContent='❌ Google 認證失敗：金鑰受限或 Places API 未啟用'; $('#run').disabled=true; };
+  window.__ready=async function(){
+    try{
+      todo=await loadTodo();
+      ready=true; window.__TODO=todo.length;
+      $('#stat').textContent=`就緒：${todo.length} 個地點沒有座標`;
+    }catch(e){ $('#stat').textContent='讀 data/*.json 失敗：'+e.message; $('#run').disabled=true; }
+  };
+  const s=document.createElement('script');
+  s.async=true;
+  s.src='https://maps.googleapis.com/maps/api/js?key='+encodeURIComponent(key)
+       +'&libraries=places&callback=__ready&v=weekly&loading=async';
+  s.onerror=()=>{ $('#stat').textContent='Google Maps API 載入失敗'; };
+  document.head.appendChild(s);
+})();
+</script>
+</body>
+</html>

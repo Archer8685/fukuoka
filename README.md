@@ -16,6 +16,7 @@ prep.html         行前準備（倒數時間軸、訂票清單、入境、免�
 itinerary.html    逐日行程（載入 data.js 自動附加地點詳情）
 map.html          互動地圖（Leaflet + 國土地理院圖磚，可選 Google 底圖）
 verify.html       座標稽核：用 Google Places 逐筆驗證 data.js 的座標（見下節）
+lookup.html       座標補齊：對「還沒有座標」的新地點向 Google Places 要座標／地址／營業時間（見下節，僅本機可用）
 data.js           ★ 唯一資料檔（PLACES / J2T），由 build_data.py 產生
 trip.js           ★ 最終行程資料（TRIP / BACKUPS），手動維護
 sw.js             Service Worker（離線快取）
@@ -26,8 +27,12 @@ geocode.py        座標稽核：Overpass → Nominatim → 國土地理院，�
 fix_coords.py     手動座標覆寫表：自動查不到或配錯的地點在這裡指定 lat/lng
 bump_version.py   版號 +1／--check：一次改完散在 4 處的版號
 check_all.py      一鍵健檢：資料／座標／同步／版號／行程邏輯
+export_gmaps.py   匯出 Google 我的地圖用的 CSV／KML ＋ 逐點儲存清單（見下節）
+apply_google_coords.py  把 verify.html 稽核出的座標套回 data/*.json（偏掉的才改）
+apply_google_lookup.py  把 lookup.html 查到的座標／地址／營業時間套進 data/*.json
 fix_coords.py     手動座標表：補自動查不到、或明顯配錯的地點（詳見下節）
 audit/            座標查詢紀錄（geocode_latest.json）與稽核報告（REVIEW-*.md）
+export/           export_gmaps.py 的產出（CSV／KML／save_links.html）
 ```
 
 ## 部署清單（最小集合）
@@ -141,6 +146,37 @@ Google 上本來就沒有。
 ⚠️ **不要盲目套用 Google 的座標**：Google 回傳的是它自己的 POI 位置，偶爾也會指到分店或
 行政區中心。修正表產生後請逐筆看 Google 回傳的名稱與地址對不對，再決定要不要採用。
 
+## 新地點補座標（lookup.html）
+
+`verify.html` 的前提是「已經有座標，拿 Google 比距離」。
+新增一批**還沒有座標**的地點時用另一支 **`lookup.html`**：它直接 `fetch` `data/*.json`，
+挑出 `lat` 為空或 `coord_status=missing` 的地點，用各筆的 **`q` 欄位**當查詢字串問 Google Places，
+一次取回**官方座標、地址、每週營業時間、歇業狀態**。
+
+```
+python -m http.server 5173
+在 http://localhost:5173/lookup.html 開啟 → 按「開始查詢」
+→ 逐筆看「Google 回傳名稱／地址」對不對（地址欄會標「區域相符 / 對不上 / 不在福岡縣」）
+→ 結果存成 audit/google_lookup_<日期>.json
+→ 寫一支 apply_google_lookup.py 把它套進 data/*.json，再跑 build_data.py
+```
+
+⚠️ 它讀的是 `data/` 原始目錄（靠 `http.server` 的目錄索引列檔），**只有本機跑得起來**，
+所以 `lookup.html` 不在部署清單裡。
+⚠️ 同樣是計費 API，且金鑰的參照網址限制必須涵蓋 `localhost:5173`。
+⚠️ **Google 的第一筆不一定是你要的那家。** 實際踩到的：
+`Comme des Garçons` 配到岩田屋本店的專櫃（獨立店已歇業）、
+`1834` 沒有獨立點位而回傳母店 LIGHT YEARS、
+`ヤシの木ブランコ`（沙灘上的鞦韆）配到旁邊的餐廳ざうお。
+這些都在 `apply_google_lookup.py` 的 `SPECIAL` 表裡人工覆寫，並寫明理由。
+
+`apply_google_lookup.py` 除了座標還會做兩件事：
+1. **用 Google 地址反推 `area` 標籤**——手寫的區域常常是錯的
+   （例：Dice&Dice、Factory-market、artwork 其實都在**今泉**不是大名；Loopwheeler 在**藥院**）
+2. **把營業時間壓成一行**，並比對行程日：本行程在福岡只有
+   **2/1(一)、2/2(二)、2/3(三)、2/4(四)、2/10(三)、2/11(四)、2/12(五)——完全沒有週末**，
+   所以「週三定休」「只有六日營業」這種店會直接在 `notes` 標出來。
+
 ## 更新資料
 
 改或新增 `data/*.json` 後執行：
@@ -155,6 +191,35 @@ python geocode.py && python fix_coords.py && python build_data.py
 
 `build_data.py` 會去重、依分類排序、產生繁體／日文新字體搜尋對照表（J2T），
 並列出還沒有座標的地點。
+
+## 匯進 Google 地圖（export_gmaps.py）
+
+**Google 沒有開放寫入「想去的地點」的 API。** 儲存清單（Saved lists）是帳號私有資料，
+Maps Platform 那組 API 全部是唯讀的，也沒有對應的 OAuth scope；Takeout 只能把清單匯出，
+不能反向匯入。所以「一鍵把 305 個點灌進想去的地點」在官方管道下做不到。
+
+能做的是這兩條，跑 `python export_gmaps.py` 產生 `export/`：
+
+**A. 匯進「我的地圖」（My Maps）——全自動，但存的是自訂地圖不是想去的地點**
+
+```
+https://www.google.com/mymaps → 建立新地圖 → 匯入 → 選 export/mymaps_01_sights.csv
+→ 標記位置的欄位選「緯度」「經度」→ 標題欄位選「名稱」
+→ 其餘 mymaps_02..07 各自「新增圖層」再匯入一次（一個類別一層，可分色）
+```
+
+手機版 Google Maps 在「已儲存 → 地圖」看得到，可離線、可導航，但不會併進「想去的地點」。
+`export/fukuoka.kml` 是同一份資料的 KML 版（含類別資料夾），偏好匯 KML 的話用這個。
+My Maps 限制：一層 2000 列、最多 10 層、單檔 5MB——目前 305 點都遠低於上限。
+
+**B. `export/save_links.html`——逐點手動存進「想去的地點」**
+
+每個地點一個 Google Maps 連結（用日文店名＋區域搜尋，開得到店家資訊卡才有「儲存」鈕），
+點開存完回來打勾，進度存在瀏覽器 localStorage。305 點全部存完大概要半小時，
+但這是唯一能真的進到「想去的地點」的路。
+
+⚠️ 用瀏覽器自動化（Selenium／Playwright）去點 Google Maps 的儲存鈕在技術上可行，
+但違反 Google 服務條款、帳號有被鎖的風險，而且 UI 一改就壞——不建議，本專案不做。
 
 ## 快取提醒
 
@@ -205,6 +270,9 @@ python check_all.py
 - **JR 九州 Pass 價格**：全九州 3/5/7 日 ¥22,000/¥24,000/¥26,000（2026/08 官網），出發前再確認
 - **日本免稅新制**：2026/11/1 起改為「リファンド方式」（先付含稅價、出境時退稅），
   廢止一般品／消耗品區分與 50 萬日圓上限。2027/2 出行會適用新制，實際流程以現場為準
+- **動漫類景點的營業日／票價**：ハーモニーランド（三麗鷗和諧樂園）**冬季平日多休園**，2/9 是週二極可能沒開，看 harmonyland.jp 營業日曆；
+  進撃の巨人 in HITA ミュージアム（本館／ANNEX）票價與休館日看 shingeki-hita.com；
+  北九州市漫畫博物館**週二休**（2/4 是週四沒問題）；サンリオキャラクターズ ドリーミングパーク 看 e-zofukuoka.com
 - **旅館房價與房型**：`data/hotels.json` 內的價位帶是概算，務必逐家上官網／樂天／一休確認，
   並注意「客室露天風呂付き」是房型條件而非全館條件
 
