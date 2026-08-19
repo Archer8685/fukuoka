@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>福岡・九州 12 天 — 景點餐廳地圖</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
-<link rel="preload" href="data.js?v=22" as="script">
-<link rel="preload" href="trip.js?v=22" as="script">
+<link rel="preload" href="data.js?v=23" as="script">
+<link rel="preload" href="trip.js?v=23" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="stylesheet" href="libs/leaflet.css">
@@ -186,8 +186,8 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=22"></script>
-<script src="trip.js?v=22"></script>
+<script src="data.js?v=23"></script>
+<script src="trip.js?v=23"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -262,7 +262,7 @@ window.__googleBaseActive=false;
   function fallbackToGSI(reason,hard){
     if(googleFailed)return;
     googleFailed=true;
-    if(guard){clearTimeout(guard);guard=null;}
+    if(guard){clearInterval(guard);guard=null;}
     if(gLayers){
       Object.values(gLayers).forEach(function(l){
         if(map.hasLayer(l))map.removeLayer(l);
@@ -299,20 +299,31 @@ window.__googleBaseActive=false;
       // 之前的寫法是 callback 一觸發就 removeLayer(baseGSI)，但 script 載入成功 ≠ API 可用；
       // ApiNotActivatedMapError 是 render 時才報，那時 GSI 已經被移掉 → 整張圖空白（實際踩過）。
       map.addLayer(gLayers["Google 道路"]);
-      guard=setTimeout(function(){
-        if(googleFailed)return;
-        // 正面確認，不能只靠 gm_authFailure——那支回呼不保證會被呼叫。
-        // Google 認證失敗時會在容器裡塞 .gm-err-container 錯誤遮罩；
-        // 正常時則會有 .gm-style 底下的圖磚 <img>。兩個都檢查。
-        var err=document.querySelector('.gm-err-container,.gm-err-content');
-        var painted=document.querySelectorAll('.gm-style img,.leaflet-google-mutant img').length;
-        if(err){ fallbackToGSI('API 未啟用或金鑰受限',true); return; }
-        if(!painted){ fallbackToGSI('Google 圖磚未載入（網路慢或被擋）',false); return; }
-        googleOK=true;
-        map.removeLayer(baseGSI);          // 確定 Google 真的畫出來了，才拆掉墊底層
-        window.__googleBaseActive=true;
-        syncOfflineBtn();
-      },3500);
+      // 輪詢確認，不能只靠 gm_authFailure——那支回呼不保證會被呼叫。
+      // ⚠️ 也<b>不能</b>用「有沒有 &lt;img&gt; 圖磚」判斷：新版 Maps JS（v3.65+）
+      // 走向量／WebGL 渲染時根本不產生 img 元素，會被誤判成失敗（實際踩過）。
+      // 正確的成功訊號是 Google 建好地圖容器 .gm-style；失敗訊號是 .gm-err-container。
+      var waited=0, POLL=400, MAXW=12000;
+      guard=setInterval(function(){
+        if(googleFailed){clearInterval(guard);guard=null;return;}
+        waited+=POLL;
+        if(document.querySelector('.gm-err-container,.gm-err-content')){
+          clearInterval(guard);guard=null;
+          fallbackToGSI('API 未啟用或金鑰受限',true); return;
+        }
+        if(document.querySelector('.gm-style')){
+          clearInterval(guard);guard=null;
+          googleOK=true;
+          map.removeLayer(baseGSI);        // 確定 Google 容器建好了，才拆掉墊底層
+          window.__googleBaseActive=true;
+          syncOfflineBtn();
+          return;
+        }
+        if(waited>=MAXW){
+          clearInterval(guard);guard=null;
+          fallbackToGSI('Google 地圖逾時未初始化',false);
+        }
+      },POLL);
     }catch(e){ fallbackToGSI('初始化例外：'+e.message,true); }
   };
 
@@ -940,7 +951,7 @@ window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('p
     window.addEventListener('load',function(){
       navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){
         if(!('caches' in window))return;
-        caches.open('fukuoka-app-v22').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});
+        caches.open('fukuoka-app-v23').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});
           document.querySelectorAll('script[src],link[href]').forEach(function(el){
             var u=el.src||el.href; if(!u||u.indexOf(location.origin)!==0)return;
             c.match(u).then(function(hit){ if(!hit) c.add(u).catch(function(){}); });
