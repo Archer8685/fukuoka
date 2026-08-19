@@ -6,9 +6,9 @@
   "city": "福岡",
   "area": "博多區・博多站",
   "q": "博多バスターミナル",
-  "lat": 33.5905,
-  "lng": 130.4204,
-  "coord_status": "approx",
+  "lat": 33.591484,
+  "lng": 130.41982,
+  "coord_status": "google",
   "activities": [
    "3F＝高速巴士乘車處",
    "豪斯登堡一日遊 31 號乘車處",
@@ -16,7 +16,8 @@
   ],
   "reason": "2/2 豪斯登堡一日遊的出發地。就在博多站旁，從東急STAY博多 走過來約 5 分。",
   "notes": "⚠️ <b>高速巴士在 3 樓</b>，第一次去很容易在 1 樓繞（多位旅客的評論都提到這點）——預留 20 分找乘車處。豪斯登堡線是 <b>31 號乘車處</b>。回程下車與去程上車是同一區的「紅色 3 號」乘車處。",
-  "duration": "報到 20 分"
+  "duration": "報到 20 分",
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 122m）"
  },
  {
   "name": "豪斯登堡站",
@@ -25,16 +26,17 @@
   "city": "長崎",
   "area": "佐世保市",
   "q": "ハウステンボス駅",
-  "lat": 33.086,
-  "lng": 129.7893,
-  "coord_status": "approx",
+  "lat": 33.091781,
+  "lng": 129.796504,
+  "coord_status": "google",
   "activities": [
    "特急ハウステンボス 終點",
    "步行過橋約 5 分到入園口"
   ],
   "reason": "JR 方案的門戶站（本趟改搭巴士，未使用）。特急「ハウステンボス」終點，出站過橋步行 5 分到入園口。",
   "notes": "⚠️ <b>2/2 這天不會用到這一站</b>——你買的是 KKday 巴士一日遊，巴士直接停園區門口。這站留著是給 JR 方案參考用：博多搭特急「ハウステンボス」約 1 小時 50 分，但<b>回程最後一班直達特急 18:04</b>，看不到燈海，所以巴士方案才是對的選擇。",
-  "duration": "轉乘 10 分"
+  "duration": "轉乘 10 分",
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 928m）"
  },
  {
   "name": "光之王國（燈海）",
@@ -43,9 +45,9 @@
   "city": "長崎",
   "area": "佐世保市",
   "q": "ハウステンボス 光の王国",
-  "lat": 33.0855,
-  "lng": 129.7845,
-  "coord_status": "approx",
+  "lat": 33.085194,
+  "lng": 129.786121,
+  "coord_status": "google",
   "winter": true,
   "activities": [
    "1,300 萬顆 LED",
@@ -57,7 +59,8 @@
   "notes": "⚠️ <b>點燈時間：日落～22:00</b>（2 月日落約 18:00）。2026 年冬季檔名為「白銀の世界」，會期 1/10–2/26；2027 年的檔名與會期通常在前一年秋天公告，出發前要再查。部分日期有煙火。",
   "price": "含在 1DAY 護照內",
   "hours": "日落–22:00",
-  "duration": "2–3 小時"
+  "duration": "2–3 小時",
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 154m）"
  },
  {
   "name": "多姆托倫展望塔",
@@ -66,9 +69,9 @@
   "city": "長崎",
   "area": "佐世保市",
   "q": "ハウステンボス ドムトールン",
-  "lat": 33.0862,
-  "lng": 129.7855,
-  "coord_status": "approx",
+  "lat": 33.084672,
+  "lng": 129.786059,
+  "coord_status": "google",
   "winter": true,
   "activities": [
    "80m 展望室",
@@ -76,7 +79,8 @@
   ],
   "reason": "園內 80 公尺高的象徵塔，展望室可以俯瞰整個園區——看燈海全景的最佳位置，天黑後上去。",
   "notes": "含在 1DAY 護照內；有電梯不用爬。",
-  "duration": "30 分"
+  "duration": "30 分",
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 177m）"
  },
  {
   "name": "豪斯登堡 園內美食",
@@ -86,9 +90,9 @@
   "area": "佐世保市",
   "cuisine": "洋食",
   "q": "ハウステンボス アトラクションタウン",
-  "lat": 33.0858,
-  "lng": 129.7862,
-  "coord_status": "approx",
+  "lat": 33.084782,
+  "lng": 129.78627,
+  "coord_status": "google",
   "dishes": [
    "佐世保漢堡",
    "起司料理",
@@ -97,7 +101,8 @@
   "reason": "園區內有數十家餐廳，佐世保漢堡、起司專門店與チーズの城 都在裡面——不用出園也吃得到當地名物。",
   "notes": "⚠️ 園內用餐不含在 1DAY 護照內，要另外付費。傍晚人潮集中，建議 13:00 前或 17:00 前吃完，把天黑後的時間全部留給燈海。",
   "price": "約 ¥1,500–3,000",
-  "duration": "1 小時"
+  "duration": "1 小時",
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 113m）"
  },
  {
   "name": "ミサロッソ",
@@ -137,10 +142,10 @@
   ],
   "reason": "佐世保第 2 名，牛排與洋食老店。",
   "area_center": "佐世保",
-  "lat": 33.15986,
-  "lng": 129.723,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（佐世保，半徑約 40m）"
+  "lat": 33.167014,
+  "lng": 129.723066,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 794m）"
  },
  {
   "name": "鮨 重兵衛",
@@ -156,10 +161,10 @@
   "reason": "佐世保評分最高的壽司店。",
   "notes": "⚠️ 需訂位。",
   "area_center": "佐世保",
-  "lat": 33.159075,
-  "lng": 129.723465,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（佐世保，半徑約 64m）"
+  "lat": 33.173689,
+  "lng": 129.71961,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 1661m）"
  },
  {
   "name": "佐世保バーガー BigMan 京町本店",
@@ -179,10 +184,10 @@
   "reason": "佐世保漢堡最有名的一家，培根蛋漢堡是招牌——「佐世保バーガー」這個名號就是這類店打出來的。",
   "price": "約 ¥700–1,200",
   "area_center": "佐世保",
-  "lat": 33.158719,
-  "lng": 129.722835,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（佐世保，半徑約 88m）"
+  "lat": 33.16972,
+  "lng": 129.721739,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 1225m）"
  },
  {
   "name": "香蘭",
@@ -200,10 +205,10 @@
   ],
   "reason": "佐世保的強棒麵名店——長崎縣內強棒麵不是只有長崎市，佐世保這家分數也很高。",
   "area_center": "佐世保",
-  "lat": 33.159947,
-  "lng": 129.723696,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（佐世保，半徑約 81m）"
+  "lat": 33.16349,
+  "lng": 129.72658,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 476m）"
  },
  {
   "name": "ガーデンテラス 花のれん",
@@ -218,10 +223,10 @@
   "tabelog_rank": 7,
   "reason": "佐世保的日本料理與海鮮，比漢堡正式的選擇。",
   "area_center": "佐世保",
-  "lat": 33.159558,
-  "lng": 129.722208,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（佐世保，半徑約 73m）"
+  "lat": 33.16611,
+  "lng": 129.72667,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 837m）"
  },
  {
   "name": "下町の洋食 時代屋",
@@ -236,10 +241,10 @@
   "tabelog_rank": 8,
   "reason": "佐世保的老派洋食店，牛排與洋食。",
   "area_center": "佐世保",
-  "lat": 33.159269,
-  "lng": 129.724026,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（佐世保，半徑約 98m）"
+  "lat": 33.164744,
+  "lng": 129.835838,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 10408m）"
  },
  {
   "name": "バーガーショップ あいかわ",
@@ -257,9 +262,9 @@
   ],
   "reason": "佐世保漢堡的另一家高分店，與 BigMan、ヒカリ 並列。",
   "area_center": "佐世保",
-  "lat": 33.160212,
-  "lng": 129.722459,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（佐世保，半徑約 93m）"
+  "lat": 33.12685,
+  "lng": 129.789695,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 7263m）"
  }
 ]

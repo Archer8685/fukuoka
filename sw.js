@@ -1,13 +1,13 @@
 // sw.js — 離線快取
 // 策略：App 殼層（HTML/JS/CSS/Leaflet/資料）可離線；國土地理院底圖圖磚 cache-first，看過或預載過即離線可用。
-const APP_CACHE = 'fukuoka-app-v24';
+const APP_CACHE = 'fukuoka-app-v28';
 const TILE_CACHE = 'fukuoka-tiles-v1';
 // 首次安裝就把「離線看行程」需要的全部檔案預快取。
 // data.js／trip.js 帶 ?v= 版號，版號直接從 APP_CACHE 推導，不用另外維護一份常數
 // （原本這兩支靠執行時快取，但首次造訪時頁面還沒被 SW 接管，fetch 不會被攔 →
 //   離線時殼層有、PLACES/TRIP 是 undefined，行程頁會空白。2026/08/18 實測踩到。）
 const V = APP_CACHE.replace(/^.*-v/, '');
-const SHELL = ['./', 'itinerary.html', 'map.html', 'prep.html', 'libs/leaflet.js', 'libs/leaflet.css',
+const SHELL = ['./', 'itinerary.html', 'map.html', 'prep.html', 'verify.html', 'libs/leaflet.js', 'libs/leaflet.css',
                'data.js?v=' + V, 'trip.js?v=' + V, 'config.js'];
 
 self.addEventListener('install', e => {

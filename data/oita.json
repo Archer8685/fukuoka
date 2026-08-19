@@ -6,7 +6,7 @@
   "city": "大分",
   "area": "由布市",
   "q": "由布院駅",
-  "coord_status": "manual",
+  "coord_status": "google",
   "activities": [
    "ゆふいんの森 終點",
    "站內足湯",
@@ -15,8 +15,9 @@
   "reason": "觀光列車「ゆふいんの森」的終點，站內就有足湯；由布院所有步行動線都從這裡開始，而且全程平路。",
   "notes": "ゆふいんの森 為全車指定席，乘車日 1 個月前 10:00（JST）開賣，是九州最難訂的觀光列車之一。",
   "duration": "轉乘 10 分",
-  "lat": 33.2624,
-  "lng": 131.3527
+  "lat": 33.26267,
+  "lng": 131.355101,
+  "coord_source": "Google Places 稽核 2026-08-19（原 manual，差 225m）"
  },
  {
   "name": "金鱗湖",
@@ -25,7 +26,7 @@
   "city": "大分",
   "area": "由布市",
   "q": "金鱗湖",
-  "coord_status": "manual",
+  "coord_status": "google",
   "winter": true,
   "activities": [
    "冬季晨霧",
@@ -36,8 +37,9 @@
   "notes": "由布院駅步行約 25 分（全程平路，沿湯之坪街道）。晨霧要 7–8 點到；湖畔的「下ん湯」是 ¥300 的共同浴場（混浴，要有心理準備）。",
   "price": "免費",
   "duration": "40 分",
-  "lat": 33.2646,
-  "lng": 131.3703
+  "lat": 33.266664,
+  "lng": 131.369027,
+  "coord_source": "Google Places 稽核 2026-08-19（原 manual，差 258m）"
  },
  {
   "name": "湯之坪街道",
@@ -73,9 +75,10 @@
   "reason": "由布院站正前方的街道，正對由布岳，是湯之坪街道以外的另一條動線，人明顯比湯之坪少。",
   "notes": "多數店 09:00–17:30。",
   "duration": "40 分",
-  "coord_status": "nominatim",
-  "lat": 33.264386,
-  "lng": 131.355708
+  "coord_status": "google",
+  "lat": 33.264966,
+  "lng": 131.358709,
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 286m）"
  },
  {
   "name": "由布岳展望（由布院盆地）",
@@ -94,9 +97,10 @@
   "notes": "登山口在正面登山口方向，來回 4 小時以上，完全不排。",
   "price": "免費",
   "duration": "20 分（純觀景）",
-  "lat": 33.28229,
-  "lng": 131.390237,
-  "coord_status": "nominatim"
+  "lat": 33.28589,
+  "lng": 131.429406,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 3656m）"
  },
  {
   "name": "宇奈岐日女神社",
@@ -134,9 +138,10 @@
   "notes": "免費；境內為平地與短緩坡。",
   "price": "免費",
   "duration": "20 分",
-  "coord_status": "approx",
-  "lat": 33.2662,
-  "lng": 131.3672
+  "coord_status": "google",
+  "lat": 33.263572,
+  "lng": 131.369711,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 373m）"
  },
  {
   "name": "COMICO ART MUSEUM YUFUIN",
@@ -176,9 +181,10 @@
   "ticket": "約 ¥1,000",
   "hours": "10:00–17:00",
   "duration": "1–1.5 小時",
-  "coord_status": "approx",
-  "lat": 33.2707,
-  "lng": 131.356
+  "coord_status": "google",
+  "lat": 33.27573,
+  "lng": 131.36847,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 1285m）"
  },
  {
   "name": "由布まぶし 心",
@@ -188,7 +194,7 @@
   "area": "由布市",
   "cuisine": "鄉土料理",
   "q": "由布まぶし 心 由布院",
-  "coord_status": "approx",
+  "coord_status": "google",
   "dishes": [
    "豐後牛まぶし",
    "地雞まぶし",
@@ -199,8 +205,9 @@
   "price": "約 ¥2,500–3,500",
   "hours": "駅前支店 10:30–20:30（L.O.19:30）／金鱗湖本店 10:30–18:30（L.O.17:30）",
   "duration": "1 小時",
-  "lat": 33.2627,
-  "lng": 131.3535
+  "lat": 33.262965,
+  "lng": 131.355675,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 204m）"
  },
  {
   "name": "B-speak",
@@ -263,9 +270,10 @@
   "notes": "JR 日田站步行約 12 分；全區平地。多數店 09:00–17:00，週三部分休。可順嚐日田燒麵（日田焼きそば）。",
   "price": "免費（各館另計）",
   "duration": "2.5–3 小時",
-  "coord_status": "manual",
-  "lat": 33.3268,
-  "lng": 130.9395
+  "coord_status": "google",
+  "lat": 33.327262,
+  "lng": 130.936598,
+  "coord_source": "Google Places 稽核 2026-08-19（原 manual，差 274m）"
  },
  {
   "name": "日田站",

@@ -79,9 +79,10 @@
   "price": "免費",
   "hours": "07:00–16:30",
   "duration": "1–1.5 小時",
-  "lat": 33.618126,
-  "lng": 130.571872,
-  "coord_status": "nominatim"
+  "lat": 33.619838,
+  "lng": 130.572978,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 216m）"
  },
  {
   "name": "孔子廟・中國歷代博物館",
@@ -122,9 +123,10 @@
   "ticket": "常設展約 ¥420",
   "hours": "10:00–20:00（週一休）",
   "duration": "1–1.5 小時",
-  "lat": 32.7385,
-  "lng": 129.872,
-  "coord_status": "manual"
+  "lat": 32.74191,
+  "lng": 129.870318,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 manual，差 410m）"
  },
  {
   "name": "長崎水邊之森公園",

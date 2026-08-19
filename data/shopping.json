@@ -94,9 +94,10 @@
   "reason": "福岡最老的拱廊商店街（約 130 年），連接櫛田神社與運河城，有頂棚下雨也能逛。名物是川端善哉（紅豆湯）。",
   "notes": "多數店 10:00–19:00，部分週三休；與櫛田神社、東長寺、運河城可串成一條線。",
   "duration": "40–60 分",
-  "coord_status": "nominatim",
-  "lat": 33.592553,
-  "lng": 130.410226
+  "coord_status": "google",
+  "lat": 33.593716,
+  "lng": 130.408092,
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 236m）"
  },
  {
   "name": "ららぽーと福岡",
@@ -173,9 +174,10 @@
   "notes": "約 10:00–20:00。",
   "hours": "10:00–20:00",
   "duration": "1 小時",
-  "lat": 32.746878,
-  "lng": 129.871295,
-  "coord_status": "nominatim"
+  "lat": 32.746263,
+  "lng": 129.870253,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 119m）"
  },
  {
   "name": "みらい長崎ココウォーク",

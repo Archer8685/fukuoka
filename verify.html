@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>座標稽核 — 用 Google 驗證所有地點</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%93%8D%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#f7f9fb;--panel:#fff;--ink:#22282e;--muted:#77828d;--line:#dfe6ec;--accent:#1b4f8a;
+      --ok:#0e7c3f;--warn:#b45309;--bad:#c0392b;--chip:#eef3f7}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;color:var(--ink);background:var(--bg);padding:0 0 60px}
+.top{position:sticky;top:0;z-index:20;background:rgba(247,249,251,.97);border-bottom:1px solid var(--line);padding:12px clamp(14px,3vw,28px);backdrop-filter:blur(10px)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 14px}
+h1{font-size:19px}
+.sub{color:var(--muted);font-size:12.5px;margin-top:4px;line-height:1.7}
+.warn{background:#fdf0ee;border:1px solid #e0a08c;border-left:4px solid #c0392b;color:#7d3520;border-radius:10px;padding:11px 14px;margin:14px 0;font-size:13px;line-height:1.8}
+.warn b{color:#b03a1a}
+.info{background:#eef6fc;border:1px solid #9cc9e8;border-left:4px solid var(--accent);color:#245b7d;border-radius:10px;padding:11px 14px;margin:14px 0;font-size:13px;line-height:1.8}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0}
+button{font-family:inherit;font-size:13px;font-weight:700;padding:9px 15px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
+button.pri{background:var(--accent);color:#fff;border-color:var(--accent)}
+button:disabled{opacity:.5;cursor:default}
+#prog{flex:1;min-width:180px;height:9px;background:#e6ecf2;border-radius:5px;overflow:hidden}
+#prog i{display:block;height:100%;width:0;background:var(--accent);transition:width .2s}
+#stat{font-size:12.5px;color:var(--muted);white-space:nowrap}
+.sum{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.sum span{font-size:12.5px;font-weight:700;padding:5px 11px;border-radius:20px;background:var(--chip)}
+table{width:100%;border-collapse:collapse;font-size:12.5px;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+th{background:var(--chip);text-align:left;padding:8px 9px;border-bottom:1px solid var(--line);white-space:nowrap;position:sticky;top:0}
+td{padding:7px 9px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.55}
+tr.ok td:nth-child(4){color:var(--ok);font-weight:700}
+tr.warn2 td:nth-child(4){color:var(--warn);font-weight:700}
+tr.bad td:nth-child(4){color:var(--bad);font-weight:800}
+tr.none td:nth-child(4){color:var(--muted)}
+td.mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;white-space:nowrap}
+a{color:var(--accent)}
+textarea{width:100%;height:220px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;border:1px solid var(--line);border-radius:9px;padding:10px;margin-top:8px}
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+.filters label{font-size:12.5px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:5px 11px;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap">
+  <h1>📍 座標稽核 — 用 Google Places 驗證所有地點</h1>
+  <div class="sub">把 <code>data.js</code> 裡每個地點的日文名丟給 Google Places 搜尋，比對回傳座標與我們現有座標的距離。
+  <a href="map.html">地圖</a>｜<a href="itinerary.html">行程</a>｜<a href="prep.html">行前</a></div>
+</div></div>
+
+<div class="wrap">
+<div class="warn">
+<b>⚠️ 這頁會呼叫 Google Places API，是計費 API。</b>
+全部跑一次約 <b id="cnt">?</b> 次請求。個人用量通常落在免費額度內，但<b>請自行確認你的 Google Cloud 帳單設定</b>。
+建議先按「試跑前 20 筆」確認可用再全跑。<br>
+⚠️ 這支只能從<b>金鑰允許的網域</b>開啟（<code>localhost:5173</code> 或 <code>archer8685.github.io/fukuoka/</code>），
+且金鑰的「API 限制」必須包含 <b>Places API</b>，專案也要啟用它——否則會出現 <code>REQUEST_DENIED</code>。
+</div>
+
+<div class="info">
+<b>怎麼判讀：</b>Google 回傳的是「店家／設施的官方位置」，我們的座標則來自 OSM／國土地理院／人工推估。
+<b>差距 &lt; 100m</b> 視為一致；<b>100–500m</b> 值得看一下（可能是同名分店或建物大）；
+<b>&gt; 500m</b> 幾乎確定是配錯，要改。<b>查無結果</b>不代表錯，可能只是 Google 上沒這個名稱（例如「園內美食」這種概念性地點）。
+跑完可以按「產生 fix_coords.py 修正表」把要改的貼回專案。
+</div>
+
+<div class="bar">
+  <button class="pri" id="runAll">▶ 全部驗證</button>
+  <button id="run20">試跑前 20 筆</button>
+  <button id="stop" disabled>■ 停止</button>
+  <div id="prog"><i></i></div>
+  <span id="stat">尚未開始</span>
+</div>
+<div class="sum" id="sum"></div>
+<div class="filters" id="filters"></div>
+<div style="overflow-x:auto"><table id="tbl">
+<thead><tr><th>#</th><th>地點</th><th>日文名／查詢字串</th><th>距離</th><th>我們的座標</th><th>Google 回傳</th><th>Google 名稱／地址</th></tr></thead>
+<tbody></tbody></table></div>
+
+<div class="bar" style="margin-top:16px">
+  <button id="genFix">📋 產生 fix_coords.py 修正表（僅 &gt;100m 者）</button>
+</div>
+<textarea id="fixOut" placeholder="按上面的按鈕產生…"></textarea>
+</div>
+
+<script src="config.js"></script>
+<script src="data.js?v=28"></script>
+<script>
+const $=s=>document.querySelector(s);
+const tbody=$('#tbl tbody');
+let rows=[], stopped=false;
+
+$('#cnt').textContent=PLACES.length;
+
+function dist(a,b){ // 公尺
+  const dy=(a[0]-b[0])*111000, dx=(a[1]-b[1])*Math.cos(a[0]*Math.PI/180)*111000;
+  return Math.hypot(dx,dy);
+}
+function cls(d,found){
+  if(!found)return'none';
+  if(d<100)return'ok';
+  if(d<500)return'warn2';
+  return'bad';
+}
+// 查詢字串：日文名優先，再補區域讓 Google 不會配到外縣市的同名店
+function queryFor(p){
+  const base=p.name_ja||p.name;
+  const area=(p.area||'').replace(/[・].*$/,'');
+  return (base+' '+(area||p.city||'')).trim();
+}
+
+function render(){
+  const show=new Set([...document.querySelectorAll('#filters input:checked')].map(i=>i.value));
+  tbody.innerHTML=rows.filter(r=>show.has(r.cls)).map(r=>`<tr class="${r.cls}">
+    <td>${r.i}</td>
+    <td><b>${r.name}</b><br><span style="color:#77828d">${r.city}・${r.area||''}</span></td>
+    <td>${r.q}</td>
+    <td>${r.found?Math.round(r.d)+' m':'查無'}</td>
+    <td class="mono">${r.ours}</td>
+    <td class="mono">${r.g||'—'}</td>
+    <td>${r.gname||'—'}${r.gaddr?'<br><span style="color:#77828d">'+r.gaddr+'</span>':''}</td>
+  </tr>`).join('');
+}
+function summarise(){
+  const c={ok:0,warn2:0,bad:0,none:0};
+  rows.forEach(r=>c[r.cls]++);
+  $('#sum').innerHTML=
+    `<span style="color:#0e7c3f">✅ 一致 &lt;100m：${c.ok}</span>`+
+    `<span style="color:#b45309">⚠️ 100–500m：${c.warn2}</span>`+
+    `<span style="color:#c0392b">❌ &gt;500m：${c.bad}</span>`+
+    `<span style="color:#77828d">— 查無：${c.none}</span>`;
+  if(!$('#filters').children.length){
+    $('#filters').innerHTML=[['bad','❌ >500m'],['warn2','⚠️ 100–500m'],['none','— 查無'],['ok','✅ <100m']]
+      .map(([v,t])=>`<label><input type="checkbox" value="${v}" ${v==='ok'?'':'checked'}> ${t}</label>`).join('');
+    $('#filters').onchange=render;
+  }
+}
+
+// Google Places：優先用新版 Place.searchByText，舊版 PlacesService 當後備
+async function lookup(q){
+  if(google.maps.places.Place && google.maps.places.Place.searchByText){
+    const {places}=await google.maps.places.Place.searchByText({
+      textQuery:q, fields:['displayName','location','formattedAddress'], maxResultCount:1, language:'ja', region:'jp'
+    });
+    if(!places||!places.length)return null;
+    const p=places[0];
+    return {lat:p.location.lat(),lng:p.location.lng(),name:p.displayName,addr:p.formattedAddress};
+  }
+  return new Promise(res=>{
+    svc.textSearch({query:q,language:'ja'},(r,st)=>{
+      if(st!=='OK'||!r||!r.length){res(st==='ZERO_RESULTS'?null:{err:st});return;}
+      const p=r[0];
+      res({lat:p.geometry.location.lat(),lng:p.geometry.location.lng(),name:p.name,addr:p.formatted_address});
+    });
+  });
+}
+let svc=null;
+
+async function run(limit){
+  stopped=false; rows=[]; tbody.innerHTML=''; $('#sum').innerHTML='';
+  $('#runAll').disabled=$('#run20').disabled=true; $('#stop').disabled=false;
+  const list=PLACES.slice(0,limit||PLACES.length);
+  let done=0, firstErr=null;
+  for(const [i,p] of list.entries()){
+    if(stopped)break;
+    const q=queryFor(p);
+    let g=null;
+    try{ g=await lookup(q); }
+    catch(e){ if(!firstErr)firstErr=e.message||String(e); }
+    if(g&&g.err){ if(!firstErr)firstErr=g.err; g=null; }
+    const ours=[p.lat,p.lng];
+    const found=!!(g&&g.lat);
+    const d=found?dist(ours,[g.lat,g.lng]):Infinity;
+    const r={i:i+1,name:p.name,city:p.city,area:p.area,q,found,d,
+      ours:p.lat.toFixed(6)+', '+p.lng.toFixed(6),
+      g:found?g.lat.toFixed(6)+', '+g.lng.toFixed(6):'',
+      gname:found?g.name:'',gaddr:found?g.addr:'',glat:found?g.lat:null,glng:found?g.lng:null};
+    r.cls=cls(d,found); rows.push(r);
+    done++;
+    $('#prog i').style.width=(done/list.length*100)+'%';
+    $('#stat').textContent=`${done} / ${list.length}`+(firstErr?`　⚠️ ${firstErr}`:'');
+    if(done%5===0||done===list.length){ summarise(); render(); }
+    await new Promise(r=>setTimeout(r,120));   // 對 API 客氣一點
+  }
+  summarise(); render();
+  $('#runAll').disabled=$('#run20').disabled=false; $('#stop').disabled=true;
+  if(firstErr)$('#stat').textContent+=`　（第一個錯誤：${firstErr}）`;
+}
+
+$('#runAll').onclick=()=>run(0);
+$('#run20').onclick=()=>run(20);
+$('#stop').onclick=()=>{stopped=true;$('#stat').textContent+='（已停止）';};
+$('#genFix').onclick=()=>{
+  const bad=rows.filter(r=>r.found&&r.d>=100).sort((a,b)=>b.d-a.d);
+  $('#fixOut').value=bad.length
+    ? '# Google Places 稽核結果（貼進 fix_coords.py 的 FIX，人工確認每一筆後再套用）\n'
+      +bad.map(r=>`    ${JSON.stringify(r.name)}: (${r.glat.toFixed(6)}, ${r.glng.toFixed(6)}, "manual"),`
+        +`   # 原差 ${Math.round(r.d)}m ← Google：${r.gname}`).join('\n')
+    : '（沒有超過 100m 的項目）';
+};
+
+// 載入 Maps JS API（含 places 函式庫）
+(function(){
+  const key=(typeof GMAPS_KEY!=="undefined")?String(GMAPS_KEY).trim():"";
+  if(!key){ $('#stat').textContent='config.js 沒有 GMAPS_KEY，無法驗證'; $('#runAll').disabled=$('#run20').disabled=true; return; }
+  window.gm_authFailure=function(){
+    $('#stat').textContent='❌ Google 認證失敗：金鑰受限或 Places API 未啟用';
+    $('#runAll').disabled=$('#run20').disabled=true;
+  };
+  window.__vready=function(){
+    try{ svc=new google.maps.places.PlacesService(document.createElement('div')); }catch(e){}
+    $('#stat').textContent='Google Places 已就緒，可以開始';
+  };
+  const s=document.createElement('script');
+  s.async=true;
+  s.src='https://maps.googleapis.com/maps/api/js?key='+encodeURIComponent(key)
+       +'&libraries=places&callback=__vready&v=weekly&loading=async';
+  s.onerror=()=>{$('#stat').textContent='Google Maps API 載入失敗';};
+  document.head.appendChild(s);
+})();
+</script>
+</body>
+</html>

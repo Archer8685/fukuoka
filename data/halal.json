@@ -16,10 +16,10 @@
   "reason": "福岡少數持有正式「ハラール認証」的餐廳，土耳其料理。",
   "notes": "⚠️ 認證與供餐內容可能異動，出發前請上店家或 Halal Gourmet Japan 再確認。",
   "area_center": "天神",
-  "lat": 33.589175,
-  "lng": 130.399065,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（天神，半徑約 64m）"
+  "lat": 33.657121,
+  "lng": 130.429953,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 8065m）"
  },
  {
   "name": "ザエカ（Zaika）",
@@ -39,10 +39,10 @@
   "reason": "福岡在地穆斯林社群常去的巴基斯坦料理店，Yelp 福岡清真榜前段班。",
   "notes": "⚠️ 供餐內容可能異動，建議先致電確認。",
   "area_center": "天神",
-  "lat": 33.58996,
-  "lng": 130.3986,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（天神，半徑約 40m）"
+  "lat": 33.591625,
+  "lng": 130.393516,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 505m）"
  },
  {
   "name": "トルコレストラン・エルトゥールル",
@@ -84,10 +84,10 @@
   "reason": "⭐ 福岡官方觀光網站列出的穆斯林對應餐廳。用經過清真認證的肉、不含豬肉與酒精的調味料做日本料理——這是清真旅客在福岡最容易吃到「日式正餐」的地方，而且就在博多站旁（你住東急STAY博多，走得到）。",
   "notes": "⚠️ 需事先預約並告知清真需求；供餐內容可能異動。",
   "area_center": "博多",
-  "lat": 33.589758,
-  "lng": 130.419908,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（博多，半徑約 73m）"
+  "lat": 33.5897,
+  "lng": 130.422761,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 264m）"
  },
  {
   "name": "もつ鍋 極味や 福岡赤坂店",
@@ -107,10 +107,10 @@
   "reason": "⭐ 號稱「世界第一家清真對應的もつ鍋店」，使用清真認證調味料與分開的烹調器具，另有清真認證和牛。清真旅客也能吃到博多牛腸鍋這個名物。",
   "notes": "⚠️ 需預約並註明清真；與天神的「極味や 漢堡排」是同集團但不同店。",
   "area_center": "天神",
-  "lat": 33.589658,
-  "lng": 130.397808,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（天神，半徑約 73m）"
+  "lat": 33.586928,
+  "lng": 130.391028,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 696m）"
  },
  {
   "name": "ハラールフードマルハバ",
@@ -129,10 +129,10 @@
   "reason": "箱崎的巴基斯坦料理店兼清真食材店，九州大學留學生社群的老據點。",
   "notes": "⚠️ 位於東區箱崎，離博多站約 15 分（地鐵箱崎線）。",
   "area_center": "博多",
-  "lat": 33.589275,
-  "lng": 130.421165,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（博多，半徑約 64m）"
+  "lat": 33.624209,
+  "lng": 130.428907,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 3943m）"
  },
  {
   "name": "ハラールフードショップ ナビさん",
@@ -147,10 +147,10 @@
   "reason": "清真食材專賣店兼餐廳，九州大學伊都／箱崎校區都有據點，西區另有餐廳（約營業到 19:30）。",
   "notes": "⚠️ 離市中心較遠；主要是採買清真食材用。",
   "area_center": "天神",
-  "lat": 33.590047,
-  "lng": 130.399296,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（天神，半徑約 81m）"
+  "lat": 33.596995,
+  "lng": 130.223546,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 16269m）"
  },
  {
   "name": "鮨しま",
@@ -168,10 +168,10 @@
   "reason": "Halal Gourmet Japan 收錄的穆斯林友善壽司店——清真旅客想吃壽司時的選項。",
   "notes": "⚠️ 為「友善」而非認證，需自行向店家確認食材與調味料（味醂與料理酒是壽司店常見的酒精來源）。",
   "area_center": "天神",
-  "lat": 33.588819,
-  "lng": 130.398435,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（天神，半徑約 88m）"
+  "lat": 33.593826,
+  "lng": 130.379218,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 1862m）"
  },
  {
   "name": "福岡マスジド（福岡清真寺）",
@@ -184,10 +184,10 @@
   "reason": "福岡的清真寺，九州最主要的禮拜設施之一，附近有清真食材店。",
   "notes": "⚠️ 參觀請遵守服裝規定與禮拜時間；非穆斯林入內前先詢問。",
   "area_center": "博多",
-  "lat": 33.59006,
-  "lng": 130.4207,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（博多，半徑約 40m）"
+  "lat": 33.619986,
+  "lng": 130.4271,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 3374m）"
  },
  {
   "name": "福岡機場 禮拜室",
@@ -258,10 +258,10 @@
   "reason": "門司港的清真對應咖哩店，與プリンセスピピ 一起讓門司港成為這趟少數清真選項充足的地方。",
   "notes": "⚠️ 出發前請再確認營業狀況。",
   "area_center": "門司港",
-  "lat": 33.944675,
-  "lng": 130.963265,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（門司港，半徑約 64m）"
+  "lat": 33.945906,
+  "lng": 130.963657,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 141m）"
  },
  {
   "name": "つる平 アミュプラザ小倉",
@@ -279,10 +279,10 @@
   ],
   "reason": "小倉站 AMU PLAZA 內的和菓子店，穆斯林對應——2/4 在小倉轉車時可買伴手禮。",
   "area_center": "門司港",
-  "lat": 33.94546,
-  "lng": 130.9628,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（門司港，半徑約 40m）"
+  "lat": 33.88664,
+  "lng": 130.881977,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 9900m）"
  },
  {
   "name": "ビスヌ ココウォーク長崎店",
@@ -302,10 +302,10 @@
   "reason": "⭐ 長崎清真選項極少，這是其中最好找的一家——就在「みらい長崎ココウォーク」商場內，有素食選項。",
   "notes": "⚠️ 長崎市的清真餐廳屈指可數，且多為印度／土耳其料理；長崎名物（強棒麵、角煮饅頭）幾乎都含豬肉與豬骨湯，清真旅客要有心理準備。建議出發前用 Halal Gourmet Japan 再查一次。",
   "area_center": "長崎",
-  "lat": 32.74436,
-  "lng": 129.878,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（長崎，半徑約 40m）"
+  "lat": 32.763986,
+  "lng": 129.865011,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 2493m）"
  },
  {
   "name": "ミラン 大波止店",
@@ -324,10 +324,10 @@
   "reason": "大波止一帶的印度料理，就在軍艦島船碼頭附近——2/7 等船或下船後的清真選項。",
   "notes": "⚠️ 為「對應」而非認證，請自行向店家確認。",
   "area_center": "長崎",
-  "lat": 32.743575,
-  "lng": 129.878465,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（長崎，半徑約 64m）"
+  "lat": 32.74699,
+  "lng": 129.872546,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 670m）"
  },
  {
   "name": "別府マスジド",
@@ -340,10 +340,10 @@
   "reason": "⚠️ 這是離湯布院最近的清真寺（由布院搭 JR 約 1 小時）。立命館亞洲太平洋大學（APU）在別府，所以別府的穆斯林設施反而比大分其他地方齊全。",
   "notes": "⚠️ 本趟不排別府，列在這裡是因為——湯布院本身沒有清真餐廳，最近的清真選項都在別府。",
   "area_center": "別府",
-  "lat": 33.278875,
-  "lng": 131.501465,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（別府，半徑約 64m）"
+  "lat": 33.291617,
+  "lng": 131.503035,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 1422m）"
  },
  {
   "name": "地鶏家（別府）",

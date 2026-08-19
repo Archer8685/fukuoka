@@ -16,9 +16,10 @@
   "price": "約 ¥1,500–2,500",
   "hours": "11:00–21:00",
   "duration": "1 小時",
-  "coord_status": "nominatim",
-  "lat": 33.586899,
-  "lng": 130.394804
+  "coord_status": "google",
+  "lat": 33.590618,
+  "lng": 130.398678,
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 547m）"
  },
  {
   "name": "天麩羅処 ひらお（天神店）",
@@ -37,9 +38,10 @@
   "price": "約 ¥800–1,200",
   "hours": "10:30–21:00",
   "duration": "45 分",
-  "lat": 33.5877,
-  "lng": 130.4013,
-  "coord_status": "approx"
+  "lat": 33.588839,
+  "lng": 130.394289,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 661m）"
  },
  {
   "name": "因幡烏龍麵（博多站前店）",
@@ -59,9 +61,10 @@
   "price": "約 ¥600–800",
   "hours": "11:00–22:30",
   "duration": "25 分",
-  "lat": 33.5905,
-  "lng": 130.4185,
-  "coord_status": "approx"
+  "lat": 33.59059,
+  "lng": 130.421134,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 244m）"
  },
  {
   "name": "一幸舍（博多本店）",
@@ -103,9 +106,10 @@
   "price": "約 ¥5,000–8,000",
   "hours": "17:00–23:00",
   "duration": "2 小時",
-  "coord_status": "approx",
-  "lat": 33.5896,
-  "lng": 130.3975
+  "coord_status": "google",
+  "lat": 33.592277,
+  "lng": 130.394411,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 412m）"
  },
  {
   "name": "やま中（もつ鍋本店）",
@@ -126,9 +130,10 @@
   "price": "約 ¥4,000–5,000",
   "hours": "17:00–23:00",
   "duration": "2 小時",
-  "coord_status": "approx",
-  "lat": 33.5865,
-  "lng": 130.3915
+  "coord_status": "google",
+  "lat": 33.591909,
+  "lng": 130.402613,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 1190m）"
  },
  {
   "name": "ツル茶ん",
@@ -172,9 +177,10 @@
   "price": "約 ¥1,000–1,800",
   "hours": "11:00–20:00",
   "duration": "1 小時",
-  "coord_status": "approx",
-  "lat": 32.7424,
-  "lng": 129.8737
+  "coord_status": "google",
+  "lat": 32.754869,
+  "lng": 129.862229,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 1750m）"
  },
  {
   "name": "文明堂總本店",
@@ -191,9 +197,10 @@
   "notes": "約 09:00–18:00；濱町與長崎站都有店。",
   "hours": "09:00–18:00",
   "duration": "20 分",
-  "lat": 32.7448,
-  "lng": 129.873,
-  "coord_status": "approx"
+  "lat": 32.745624,
+  "lng": 129.872428,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 106m）"
  },
  {
   "name": "吉宗 濱町分店",
@@ -235,9 +242,10 @@
   "price": "約 ¥600–900",
   "hours": "24 小時",
   "duration": "25 分",
-  "lat": 33.885199,
-  "lng": 130.868058,
-  "coord_status": "nominatim"
+  "lat": 33.837281,
+  "lng": 130.909949,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 6572m）"
  },
  {
   "name": "想夫恋 日田本店",
@@ -256,11 +264,12 @@
   "price": "約 ¥800–1,200",
   "hours": "11:00–21:30",
   "duration": "40 分",
-  "coord_status": "approx",
-  "lat": 33.321,
-  "lng": 130.9455,
+  "coord_status": "google",
+  "lat": 33.310829,
+  "lng": 130.942062,
   "tabelog": "3.71",
   "tabelog_area": "日田市",
-  "tabelog_rank": 1
+  "tabelog_rank": 1,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 1173m）"
  }
 ]

@@ -22,7 +22,7 @@ import io
 import re
 import sys
 
-FILES = ("sw.js", "trip.js", "itinerary.html", "map.html", "prep.html")
+FILES = ("sw.js", "trip.js", "itinerary.html", "map.html", "prep.html", "verify.html")
 PATTERNS = (
     r"fukuoka-app-v(\d+)",
     r"data\.js\?v=(\d+)",

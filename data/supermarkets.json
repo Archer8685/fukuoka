@@ -10,10 +10,10 @@
   "duration": "20–30 分",
   "reason": "都市型小超市，離飯店最近（步行 4 分）。早上 7:30 就開，適合出門前買早餐與飲料。",
   "notes": "距東急ステイ博多約 338m／步行約 4 分（實測直線距離）。座標來自 OSM 門口級節點。",
-  "lat": 33.586997,
-  "lng": 130.424306,
-  "coord_status": "overpass",
-  "coord_source": "OSM shop=supermarket"
+  "lat": 33.59121,
+  "lng": 130.419559,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 overpass，差 641m）"
  },
  {
   "name": "マックスバリュ 博多駅南",
@@ -26,10 +26,10 @@
   "duration": "20–30 分",
   "reason": "イオン 系超市，開到半夜 12 點——這是「行程晚回來還買得到東西」的首選。熟食與便當有折價時段。",
   "notes": "距東急ステイ博多約 346m／步行約 4 分（實測直線距離）。座標來自 OSM 門口級節點。",
-  "lat": 33.583547,
-  "lng": 130.418216,
-  "coord_status": "overpass",
-  "coord_source": "OSM shop=supermarket"
+  "lat": 33.576986,
+  "lng": 130.431656,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 overpass，差 1441m）"
  },
  {
   "name": "ロピア 博多",

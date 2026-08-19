@@ -13,10 +13,10 @@
   "reason": "CI110 抵達點。國際線沒有地鐵站，需搭免費接駁巴士約 10 分到國內線航廈才能搭地鐵。",
   "notes": "回程 CI117 20:35，建議 18:00–18:30 抵達；退稅與免稅店在 3F。",
   "duration": "入境約 40–60 分",
-  "coord_status": "nominatim",
-  "lat": 33.584822,
-  "lng": 130.444295,
-  "coord_source": "Nominatim 福岡空港 国際線ターミナル, 国道3号, 東那珂二丁目, 雀居, 博多区, 福岡市, 福岡県, 812-0897, 日本"
+  "coord_status": "google",
+  "lat": 33.583849,
+  "lng": 130.444176,
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 109m）"
  },
  {
   "name": "博多站",
@@ -53,10 +53,10 @@
   "reason": "福岡最密集的購物核心，地下街連通各百貨，冬天與雨天都不受影響。",
   "notes": "多數店 10:00–20:00；假日人潮多。",
   "duration": "2–3 小時",
-  "coord_status": "overpass",
-  "lat": 33.58826,
-  "lng": 130.400779,
-  "coord_source": "OSM node/5504541421"
+  "coord_status": "google",
+  "lat": 33.589572,
+  "lng": 130.399748,
+  "coord_source": "Google Places 稽核 2026-08-19（原 overpass，差 174m）"
  },
  {
   "name": "中洲屋台街",
@@ -79,10 +79,10 @@
   "price": "約 ¥2,000–3,000／人",
   "hours": "約 18:00–24:00",
   "duration": "1–1.5 小時",
-  "coord_status": "overpass",
-  "lat": 33.591394,
-  "lng": 130.407063,
-  "coord_source": "OSM node/4908537226"
+  "coord_status": "google",
+  "lat": 33.589941,
+  "lng": 130.40894,
+  "coord_source": "Google Places 稽核 2026-08-19（原 overpass，差 237m）"
  },
  {
   "name": "櫛田神社",
@@ -188,10 +188,10 @@
   "notes": "日本庭園 ¥250、週一休；冬天湖風冷。",
   "price": "免費（日本庭園 ¥250）",
   "duration": "1 小時",
-  "coord_status": "nominatim",
-  "lat": 33.586121,
-  "lng": 130.376361,
-  "coord_source": "Nominatim 大濠公園, 2, 中央区, 福岡市, 福岡県, 810-0051, 日本"
+  "coord_status": "google",
+  "lat": 33.589824,
+  "lng": 130.375132,
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 427m）"
  },
  {
   "name": "太宰府天滿宮",
@@ -211,10 +211,10 @@
   "hours": "06:30–18:30（季節調整）",
   "price": "免費",
   "duration": "1.5 小時",
-  "coord_status": "nominatim",
-  "lat": 33.61943,
-  "lng": 130.421366,
-  "coord_source": "Nominatim 天満宮, 福岡太宰府線, 箱崎二丁目, 郷口町, 東区, 福岡市, 福岡県, 812-8581, 日本"
+  "coord_status": "google",
+  "lat": 33.52137,
+  "lng": 130.534824,
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 15115m）"
  },
  {
   "name": "九州國立博物館",
@@ -253,9 +253,10 @@
   "notes": "上宮在寶滿山頂需登山 2 小時——本趟只到下宮，不上山。天滿宮搭巴士約 10 分。",
   "price": "免費",
   "duration": "40 分",
-  "coord_status": "approx",
-  "lat": 33.5305,
-  "lng": 130.5545
+  "coord_status": "google",
+  "lat": 33.528838,
+  "lng": 130.552531,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 259m）"
  },
  {
   "name": "かさの家（梅ヶ枝餅）",
@@ -300,9 +301,10 @@
   "price": "約 ¥1,900",
   "hours": "09:00–16:00（季節調整）",
   "duration": "70 分",
-  "coord_status": "approx",
-  "lat": 33.1717,
-  "lng": 130.406
+  "coord_status": "google",
+  "lat": 33.167152,
+  "lng": 130.415402,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 1009m）"
  },
  {
   "name": "柳川雛祭 さげもんめぐり",
@@ -342,12 +344,13 @@
   "hours": "10:00–16:00",
   "ticket": "約 ¥1,000",
   "duration": "1–1.5 小時",
-  "coord_status": "manual",
-  "lat": 33.1592,
-  "lng": 130.397,
+  "coord_status": "google",
+  "lat": 33.158256,
+  "lng": 130.398272,
   "tabelog": "3.42",
   "tabelog_area": "柳川・大川周辺",
-  "tabelog_rank": 8
+  "tabelog_rank": 8,
+  "coord_source": "Google Places 稽核 2026-08-19（原 manual，差 158m）"
  },
  {
   "name": "若松屋（鰻魚蒸籠飯）",
@@ -390,10 +393,10 @@
   "price": "約 ¥4,000 起",
   "hours": "11:00–20:00",
   "duration": "1 小時",
-  "coord_status": "nominatim",
-  "lat": 33.15845,
-  "lng": 130.397028,
-  "coord_source": "Nominatim 元祖 本吉屋, 鬼童小路, 鬼童町, 柳川市, 福岡県, 832-0069, 日本",
+  "coord_status": "google",
+  "lat": 33.167961,
+  "lng": 130.411063,
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 1678m）",
   "tabelog": "3.68",
   "tabelog_area": "柳川・大川周辺",
   "tabelog_rank": 1
@@ -418,10 +421,10 @@
   "price": "牡蠣一籃約 ¥1,000",
   "hours": "09:00–17:00（烤牡蠣 10:00 起）",
   "duration": "1.5 小時",
-  "coord_status": "approx",
-  "lat": 33.585,
-  "lng": 130.175,
-  "coord_source": "Nominatim 岐志漁港, 県道54号福岡志摩前原線, 志摩新町, 糸島市, 福岡県, 819-1335, 日本"
+  "coord_status": "google",
+  "lat": 33.574626,
+  "lng": 130.120647,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 5156m）"
  },
  {
   "name": "福吉漁港 牡蠣小屋",
@@ -442,10 +445,10 @@
   "price": "牡蠣一籃約 ¥1,000",
   "hours": "09:00–17:00（烤牡蠣 10:00 起）",
   "duration": "1.5 小時",
-  "coord_status": "overpass",
-  "lat": 33.506242,
-  "lng": 130.084747,
-  "coord_source": "OSM node/6634066047"
+  "coord_status": "google",
+  "lat": 33.505236,
+  "lng": 130.084537,
+  "coord_source": "Google Places 稽核 2026-08-19（原 overpass，差 113m）"
  },
  {
   "name": "筑前前原站",
@@ -477,10 +480,10 @@
   "notes": "無鐵路直達，需自駕或計程車；冬天海風極強。",
   "price": "免費",
   "duration": "30 分",
-  "coord_status": "overpass",
-  "lat": 33.63954,
-  "lng": 130.197004,
-  "coord_source": "OSM node/6576409000"
+  "coord_status": "google",
+  "lat": 33.640495,
+  "lng": 130.19648,
+  "coord_source": "Google Places 稽核 2026-08-19（原 overpass，差 117m）"
  },
  {
   "name": "一蘭本社總店",
@@ -521,9 +524,10 @@
   "price": "約 ¥900",
   "hours": "11:00–翌 03:00（週日休）",
   "duration": "40 分",
-  "coord_status": "approx",
-  "lat": 33.5924,
-  "lng": 130.3993
+  "coord_status": "google",
+  "lat": 33.59275,
+  "lng": 130.396845,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 230m）"
  },
  {
   "name": "元祖長濱屋",
@@ -543,10 +547,10 @@
   "price": "約 ¥600",
   "hours": "06:00–20:45",
   "duration": "25 分",
-  "coord_status": "overpass",
-  "lat": 33.592439,
-  "lng": 130.386615,
-  "coord_source": "OSM node/5424645313"
+  "coord_status": "google",
+  "lat": 33.591746,
+  "lng": 130.385294,
+  "coord_source": "Google Places 稽核 2026-08-19（原 overpass，差 144m）"
  },
  {
   "name": "博多もつ鍋 おおやま",
@@ -567,9 +571,10 @@
   "price": "約 ¥3,000–4,000／人",
   "hours": "本店 16:00–23:00（L.O.22:00）",
   "duration": "1.5 小時",
-  "coord_status": "approx",
-  "lat": 33.591,
-  "lng": 130.4066
+  "coord_status": "google",
+  "lat": 33.588847,
+  "lng": 130.419729,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 1237m）"
  },
  {
   "name": "とり田 博多本店",
@@ -590,12 +595,13 @@
   "price": "約 ¥4,000／人",
   "hours": "平日 11:30–16:00（L.O.15:00）／17:00–23:00（L.O.22:00）；週末假日 11:30–23:00",
   "duration": "1.5–2 小時",
-  "coord_status": "approx",
-  "lat": 33.5946,
-  "lng": 130.4064,
+  "coord_status": "google",
+  "lat": 33.596036,
+  "lng": 130.405893,
   "tabelog": "3.66",
   "tabelog_area": "中洲",
-  "tabelog_rank": 17
+  "tabelog_rank": 17,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 166m）"
  },
  {
   "name": "河太郎 中洲本店",
@@ -615,12 +621,13 @@
   "price": "約 ¥4,000–6,000",
   "hours": "午 11:45–14:00／晚 17:30–22:00（週日假日 17:00–21:30）",
   "duration": "1.5 小時",
-  "coord_status": "approx",
-  "lat": 33.5928,
-  "lng": 130.4046,
+  "coord_status": "google",
+  "lat": 33.590066,
+  "lng": 130.409375,
   "tabelog": "3.72",
   "tabelog_area": "中洲",
-  "tabelog_rank": 10
+  "tabelog_rank": 10,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 536m）"
  },
  {
   "name": "ふくや 中洲本店",
@@ -637,9 +644,10 @@
   "notes": "冷藏品要注意回程時間；機場也有分店但本店品項最全。",
   "hours": "08:00–24:00",
   "duration": "30 分",
-  "coord_status": "approx",
-  "lat": 33.5947,
-  "lng": 130.4083
+  "coord_status": "google",
+  "lat": 33.592051,
+  "lng": 130.408074,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 295m）"
  },
  {
   "name": "博多阪急・AMU PLAZA 博多",
@@ -679,9 +687,9 @@
   "ticket": "約 ¥450",
   "hours": "09:30–17:30",
   "duration": "2–3 小時",
-  "coord_status": "overpass",
-  "lat": 33.664061,
-  "lng": 130.363845,
-  "coord_source": "OSM relation/15512029"
+  "coord_status": "google",
+  "lat": 33.664279,
+  "lng": 130.3616,
+  "coord_source": "Google Places 稽核 2026-08-19（原 overpass，差 209m）"
  }
 ]

@@ -175,7 +175,7 @@ def main():
         for p in places:
             if only and only not in p["name"]:
                 continue
-            if not redo_all and p.get("lat") and p.get("coord_status") in ("overpass", "nominatim", "manual", "approx"):
+            if not redo_all and p.get("lat") and p.get("coord_status") in ("overpass", "nominatim", "manual", "approx", "google"):
                 stats["skip"] += 1
                 continue
             bbox = CITY_BBOX.get(p.get("city"), (30.5, 128.5, 35.2, 133.0))

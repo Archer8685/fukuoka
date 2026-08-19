@@ -13,10 +13,10 @@
   "reason": "博多地區食べログ第 1 名的壽司店。",
   "notes": "⚠️ 高級店，需提前很久訂位，人均可能上萬日圓。",
   "area_center": "博多",
-  "lat": 33.590147,
-  "lng": 130.421396,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（博多，半徑約 81m）"
+  "lat": 33.586153,
+  "lng": 130.412449,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 939m）"
  },
  {
   "name": "串揚げはやし",
@@ -32,10 +32,10 @@
   "reason": "博多第 2 名，炸串專門店，一串一串上桌的職人式吃法。",
   "notes": "⚠️ 需訂位；吧檯座為主。",
   "area_center": "博多",
-  "lat": 33.588886,
-  "lng": 130.420853,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（博多，半徑約 64m）"
+  "lat": 33.591034,
+  "lng": 130.410112,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 1021m）"
  },
  {
   "name": "葉隠うどん",
@@ -79,10 +79,10 @@
   "reason": "博多牛腸鍋在 Tabelog 排最前面的一家（比おおやま、やま中都高），冬天首選。",
   "notes": "⚠️ 需訂位。",
   "area_center": "博多",
-  "lat": 33.589488,
-  "lng": 130.419894,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（博多，半徑約 73m）"
+  "lat": 33.594423,
+  "lng": 130.41141,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 957m）"
  },
  {
   "name": "博多一双 博多駅東本店",
@@ -103,10 +103,10 @@
   "notes": "博多站筑紫口步行約 5 分；用餐時段排隊。",
   "price": "約 ¥900",
   "area_center": "博多",
-  "lat": 33.589569,
-  "lng": 130.420625,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（博多，半徑約 40m）"
+  "lat": 33.586378,
+  "lng": 130.4251,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 545m）"
  },
  {
   "name": "中洲屋台 紀文",
@@ -143,10 +143,10 @@
   ],
   "reason": "博多老字號巧克力店，招牌「博多の石畳」是伴手禮與下午茶的常勝軍。",
   "area_center": "博多",
-  "lat": 33.588919,
-  "lng": 130.420535,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（博多，半徑約 88m）"
+  "lat": 33.590458,
+  "lng": 130.420013,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 178m）"
  },
  {
   "name": "うどん平",
@@ -184,10 +184,10 @@
   "reason": "中洲第 1 名，法式餐廳，福岡最高評價的餐廳之一。",
   "notes": "⚠️ 高級店，需提前訂位。",
   "area_center": "中洲",
-  "lat": 33.592675,
-  "lng": 130.405965,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（中洲，半徑約 64m）"
+  "lat": 33.604638,
+  "lng": 130.399101,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 1472m）"
  },
  {
   "name": "せいもん払い",
@@ -207,10 +207,10 @@
   "reason": "中洲的居酒屋兼海鮮料理，評分高但比割烹好進去，適合想吃玄界灘漁獲又不想太正式時。",
   "notes": "⚠️ 建議訂位。",
   "area_center": "中洲",
-  "lat": 33.593547,
-  "lng": 130.406196,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（中洲，半徑約 81m）"
+  "lat": 33.592747,
+  "lng": 130.410069,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 369m）"
  },
  {
   "name": "つきよし",
@@ -225,10 +225,10 @@
   "tabelog_rank": 9,
   "reason": "居酒屋兼烏龍麵，中洲的在地口袋名單。",
   "area_center": "中洲",
-  "lat": 33.592319,
-  "lng": 130.405335,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（中洲，半徑約 88m）"
+  "lat": 33.596493,
+  "lng": 130.403936,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 481m）"
  },
  {
   "name": "博多名代 吉塚うなぎ屋",
@@ -249,10 +249,10 @@
   "notes": "⚠️ 用餐時段排隊；價位約 ¥4,000 起。",
   "price": "約 ¥4,000 起",
   "area_center": "中洲",
-  "lat": 33.59346,
-  "lng": 130.4055,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（中洲，半徑約 40m）"
+  "lat": 33.592607,
+  "lng": 130.408956,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 333m）"
  },
  {
   "name": "かろのうろん",
@@ -295,10 +295,10 @@
   "reason": "西中洲的高評價燒鳥，也做水炊き，是「想吃燒鳥又想喝一杯」的選擇。",
   "notes": "⚠️ 需訂位。",
   "area_center": "中洲",
-  "lat": 33.593158,
-  "lng": 130.404708,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（中洲，半徑約 73m）"
+  "lat": 33.590885,
+  "lng": 130.405251,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 257m）"
  },
  {
   "name": "鮨 さかい",
@@ -314,10 +314,10 @@
   "reason": "天神第 1 名，也是九州分數最高的壽司店之一（4.53）。",
   "notes": "⚠️ 極難訂，通常要透過飯店禮賓或熟客介紹，人均數萬日圓。列在這裡是給你知道天花板在哪。",
   "area_center": "天神",
-  "lat": 33.589768,
-  "lng": 130.398418,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（天神，半徑約 73m）"
+  "lat": 33.591059,
+  "lng": 130.405508,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 671m）"
  },
  {
   "name": "焼き鳥 こと",
@@ -333,10 +333,10 @@
   "reason": "天神第 2 名的燒鳥，4.17 在燒鳥類是全國前段班。",
   "notes": "⚠️ 需提前訂位。",
   "area_center": "天神",
-  "lat": 33.590446,
-  "lng": 130.398762,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（天神，半徑約 40m）"
+  "lat": 33.588369,
+  "lng": 130.403433,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 490m）"
  },
  {
   "name": "郷土料理 嗣味",
@@ -352,10 +352,10 @@
   "reason": "想「一次吃到福岡鄉土料理」又要品質的話，這家評分最高（3.96）。",
   "notes": "⚠️ 需訂位。",
   "area_center": "天神",
-  "lat": 33.590145,
-  "lng": 130.39827,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（天神，半徑約 93m）"
+  "lat": 33.580607,
+  "lng": 130.406553,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 1307m）"
  },
  {
   "name": "焼肉すどう 春吉",
@@ -371,10 +371,10 @@
   "reason": "福岡評價最高的燒肉系列店之一，春吉在天神與中洲之間。",
   "notes": "⚠️ 需訂位。",
   "area_center": "天神",
-  "lat": 33.589056,
-  "lng": 130.397978,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（天神，半徑約 88m）"
+  "lat": 33.589672,
+  "lng": 130.406139,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 758m）"
  },
  {
   "name": "三原豆腐店",
@@ -393,10 +393,10 @@
   "reason": "豆腐料理專門店，在以肉與海鮮為主的福岡是很特別的一家。",
   "notes": "⚠️ 需訂位。",
   "area_center": "天神",
-  "lat": 33.590342,
-  "lng": 130.399561,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（天神，半徑約 81m）"
+  "lat": 33.591151,
+  "lng": 130.405746,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 579m）"
  },
  {
   "name": "田中田式海鮮食堂 魚忠",
@@ -416,10 +416,10 @@
   "reason": "評分 3.76 但走食堂路線，午餐定食平價——是這份清單裡少數「高分又好進去」的店。",
   "price": "午餐約 ¥1,000–2,000",
   "area_center": "天神",
-  "lat": 33.589393,
-  "lng": 130.398913,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（天神，半徑約 64m）"
+  "lat": 33.585405,
+  "lng": 130.397749,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 456m）"
  },
  {
   "name": "炭焼地鶏 山蔵",
@@ -435,10 +435,10 @@
   "reason": "太宰府市內評分最高的餐廳（3.74），炭火地雞。",
   "notes": "⚠️ 需訂位；離參道有一段距離。",
   "area_center": "太宰府",
-  "lat": 33.519475,
-  "lng": 130.534465,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（太宰府，半徑約 64m）"
+  "lat": 33.525797,
+  "lng": 130.551415,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 1718m）"
  },
  {
   "name": "やす武",
@@ -517,10 +517,10 @@
   "reason": "古民家改建旅館裡的法式餐廳，太宰府少見的正式用餐選擇。",
   "notes": "⚠️ 需訂位。",
   "area_center": "太宰府",
-  "lat": 33.520347,
-  "lng": 130.534696,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（太宰府，半徑約 81m）"
+  "lat": 33.520947,
+  "lng": 130.533756,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 110m）"
  },
  {
   "name": "レストランエッサンス",
@@ -535,10 +535,10 @@
   "tabelog_rank": 20,
   "reason": "太宰府市內的法式餐廳，午間套餐較好入手。",
   "area_center": "太宰府",
-  "lat": 33.519958,
-  "lng": 130.533208,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（太宰府，半徑約 73m）"
+  "lat": 33.517918,
+  "lng": 130.535593,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 316m）"
  },
  {
   "name": "ドゥワンチャン",
@@ -553,10 +553,10 @@
   "tabelog_rank": 1,
   "reason": "糸島第 1 名，泰式料理——在海鮮為主的糸島是意外的第一名。",
   "area_center": "糸島",
-  "lat": 33.55836,
-  "lng": 130.1969,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（糸島，半徑約 40m）"
+  "lat": 33.512141,
+  "lng": 130.129343,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 8085m）"
  },
  {
   "name": "食事処マルタ活魚",
@@ -575,10 +575,10 @@
   ],
   "reason": "糸島活魚料理的代表，2/2 選 A 案吃完牡蠣小屋還有餘力時的另一站。",
   "area_center": "糸島",
-  "lat": 33.557575,
-  "lng": 130.197365,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（糸島，半徑約 64m）"
+  "lat": 33.549498,
+  "lng": 130.164079,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 3207m）"
  },
  {
   "name": "糸島ほたる",
@@ -593,10 +593,10 @@
   "tabelog_rank": 4,
   "reason": "糸島的居酒屋兼海鮮食堂，當地評價高。",
   "area_center": "糸島",
-  "lat": 33.557219,
-  "lng": 130.196735,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（糸島，半徑約 88m）"
+  "lat": 33.584572,
+  "lng": 130.214324,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 3445m）"
  },
  {
   "name": "にぎり塚本鮮魚店",
@@ -615,10 +615,10 @@
   ],
   "reason": "魚店直營的壽司，糸島最好入手的高分店之一。",
   "area_center": "糸島",
-  "lat": 33.558447,
-  "lng": 130.197596,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（糸島，半徑約 81m）"
+  "lat": 33.546601,
+  "lng": 130.165311,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 3263m）"
  },
  {
   "name": "寿司・活魚料理 玄海",
@@ -633,10 +633,10 @@
   "tabelog_rank": 9,
   "reason": "糸島的壽司與活魚料理，玄界灘漁獲。",
   "area_center": "糸島",
-  "lat": 33.558058,
-  "lng": 130.196108,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（糸島，半徑約 73m）"
+  "lat": 33.565052,
+  "lng": 130.223465,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 2647m）"
  },
  {
   "name": "糸島食堂 本店",
@@ -654,9 +654,10 @@
   ],
   "reason": "海鮮丼專門店，糸島兜風路線上的定番午餐。",
   "area_center": "糸島",
-  "lat": 33.562074,
-  "lng": 130.213556,
-  "coord_status": "nominatim"
+  "lat": 33.546476,
+  "lng": 130.171987,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 4217m）"
  },
  {
   "name": "こがねむし",
@@ -693,10 +694,10 @@
   "reason": "門司港燒咖哩評分最高的一家（3.55，比 BEAR FRUITS 的 3.50 高），全年供應十幾種燒咖哩。",
   "notes": "2/4 吃燒咖哩的首選；就在門司港復古區內。",
   "area_center": "門司港",
-  "lat": 33.944319,
-  "lng": 130.962635,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（門司港，半徑約 88m）"
+  "lat": 33.945995,
+  "lng": 130.96162,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 208m）"
  },
  {
   "name": "フルーツファクトリー モーン デ レトロ",
@@ -711,10 +712,10 @@
   "tabelog_rank": 3,
   "reason": "水果店直營的甜點咖啡，門司港復古區內的休息點。",
   "area_center": "門司港",
-  "lat": 33.945812,
-  "lng": 130.962259,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（門司港，半徑約 93m）"
+  "lat": 33.947717,
+  "lng": 130.963436,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 238m）"
  },
  {
   "name": "圭順",
@@ -729,10 +730,10 @@
   "tabelog_rank": 4,
   "reason": "門司地區評分最高的拉麵。",
   "area_center": "門司港",
-  "lat": 33.945158,
-  "lng": 130.962008,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（門司港，半徑約 73m）"
+  "lat": 33.908299,
+  "lng": 130.938704,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 4620m）"
  },
  {
   "name": "ミルクホール門司港",
@@ -747,10 +748,10 @@
   "tabelog_rank": 6,
   "reason": "門司港復古區的老派喫茶店，配合整區大正氛圍。",
   "area_center": "門司港",
-  "lat": 33.944951,
-  "lng": 130.963017,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（門司港，半徑約 40m）"
+  "lat": 33.945784,
+  "lng": 130.961365,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 178m）"
  },
  {
   "name": "元祖 瓦そば たかせ 門司港レトロ店",
@@ -768,10 +769,10 @@
   ],
   "reason": "山口名物「瓦そば」（在燒熱的瓦片上煎茶蕎麥麵）的元祖店分店——2/4 跨海峽那天很應景。",
   "area_center": "門司港",
-  "lat": 33.944864,
-  "lng": 130.962684,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（門司港，半徑約 64m）"
+  "lat": 33.945924,
+  "lng": 130.963676,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 149m）"
  },
  {
   "name": "三井倶楽部（レストラン）",
@@ -814,10 +815,10 @@
   "reason": "下關評分第 2 名（第 1 名是法式），做河豚與海鮮的居酒屋——比正式割烹好入手。",
   "notes": "⚠️ 建議訂位。",
   "area_center": "下關",
-  "lat": 33.951858,
-  "lng": 130.941908,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（下關，半徑約 73m）"
+  "lat": 33.951061,
+  "lng": 130.924253,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 1628m）"
  },
  {
   "name": "旬楽館",
@@ -860,10 +861,10 @@
   "reason": "日本第一家獲准供應河豚的料亭（1888 年），也是 1895 年馬關條約簽署地——吃河豚兼看歷史現場。",
   "notes": "⚠️ 需訂位，價位高；旁邊就是日清講和記念館。",
   "area_center": "下關",
-  "lat": 33.95216,
-  "lng": 130.9427,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（下關，半徑約 40m）"
+  "lat": 33.959097,
+  "lng": 130.948013,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 912m）"
  },
  {
   "name": "魚正本陣",
@@ -905,10 +906,10 @@
   ],
   "reason": "下關人說「ふく」不說「ふぐ」（避開「不遇」的諧音）——這家店名就是這個在地說法。",
   "area_center": "下關",
-  "lat": 33.951375,
-  "lng": 130.943165,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（下關，半徑約 64m）"
+  "lat": 33.953567,
+  "lng": 130.920736,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 2079m）"
  },
  {
   "name": "下関くじら館",
@@ -926,10 +927,10 @@
   ],
   "reason": "下關也是日本捕鯨的重要港，這家是鯨魚料理專門店。⚠️ 是否要吃請自行斟酌。",
   "area_center": "下關",
-  "lat": 33.952247,
-  "lng": 130.943396,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（下關，半徑約 81m）"
+  "lat": 33.951931,
+  "lng": 130.929013,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 1325m）"
  },
  {
   "name": "大阪屋 浜町店",
@@ -945,10 +946,10 @@
   "reason": "長崎市第 1 名，燒肉。就在濱町商店街——燈會逛完走過去就到。",
   "notes": "⚠️ 需訂位，燈會期間尤其。",
   "area_center": "長崎",
-  "lat": 32.744447,
-  "lng": 129.878696,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（長崎，半徑約 81m）"
+  "lat": 32.743551,
+  "lng": 129.880504,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 196m）"
  },
  {
   "name": "雲龍亭 銅座店",
@@ -989,10 +990,10 @@
   ],
   "reason": "關東煮專門店排到長崎第 4 名——2 月的長崎夜裡最適合。",
   "area_center": "長崎",
-  "lat": 32.74432,
-  "lng": 129.878579,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（長崎，半徑約 40m）"
+  "lat": 32.742657,
+  "lng": 129.878801,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 186m）"
  },
  {
   "name": "康楽",
@@ -1012,10 +1013,10 @@
   "reason": "長崎強棒麵評分最高的一家（3.69，比四海樓與江山樓都高），當地人的口袋名單。",
   "notes": "⚠️ 店面小、營業時間短，賣完就關。",
   "area_center": "長崎",
-  "lat": 32.744058,
-  "lng": 129.877208,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（長崎，半徑約 73m）"
+  "lat": 32.742663,
+  "lng": 129.879484,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 263m）"
  },
  {
   "name": "亜紗 本店",
@@ -1031,10 +1032,10 @@
   "reason": "長崎的居酒屋兼創作料理，海鮮評價高。",
   "notes": "⚠️ 建議訂位。",
   "area_center": "長崎",
-  "lat": 32.74357,
-  "lng": 129.877012,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（長崎，半徑約 103m）"
+  "lat": 32.750477,
+  "lng": 129.876207,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 770m）"
  },
  {
   "name": "岩永 梅寿軒",
@@ -1054,10 +1055,10 @@
   "reason": "1830 年創業的和菓子老鋪，長崎蜂蜜蛋糕的第三個選擇（福砂屋、文明堂之外的行家選項）。",
   "notes": "⚠️ 蜂蜜蛋糕常需預約，當日不一定買得到。",
   "area_center": "長崎",
-  "lat": 32.743769,
-  "lng": 129.879026,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（長崎，半徑約 98m）"
+  "lat": 32.746667,
+  "lng": 129.880997,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 371m）"
  },
  {
   "name": "かにや 本店",
@@ -1077,10 +1078,10 @@
   "reason": "深夜營業的飯糰與關東煮老店，長崎的宵夜代表——看完燈會回程順路。",
   "price": "約 ¥500–1,500",
   "area_center": "長崎",
-  "lat": 32.74377,
-  "lng": 129.878761,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（長崎，半徑約 64m）"
+  "lat": 32.742597,
+  "lng": 129.877419,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 181m）"
  },
  {
   "name": "中華 大八 駅前店",
@@ -1099,10 +1100,10 @@
   ],
   "reason": "長崎站前的強棒麵名店——你住 Coruscant（車站一帶），這家就在步行圈內。",
   "area_center": "長崎",
-  "lat": 32.744712,
-  "lng": 129.877459,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（長崎，半徑約 93m）"
+  "lat": 32.75249,
+  "lng": 129.872902,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 962m）"
  },
  {
   "name": "思案橋ラーメン",
@@ -1143,10 +1144,10 @@
   "reason": "湯布院食べログ第 1 名（3.93，以料理旅館身分）。由布院御三家之一，也是「由布院式旅館」的開創者。",
   "notes": "⚠️ 不住也能去——館內的「湯の岳庵」（3.74）與「茶房 天井棧敷」（3.66）對外開放。",
   "area_center": "湯布院",
-  "lat": 33.264712,
-  "lng": 131.355459,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（湯布院，半徑約 93m）"
+  "lat": 33.265743,
+  "lng": 131.367421,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 1116m）"
  },
  {
   "name": "JIMGU",
@@ -1162,10 +1163,10 @@
   "reason": "湯布院第 3 名、非旅館類的第 1 名。創新料理（イノベーティブ），是湯布院近年最受注目的餐廳。",
   "notes": "⚠️ 需訂位。",
   "area_center": "湯布院",
-  "lat": 33.264058,
-  "lng": 131.355208,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（湯布院，半徑約 73m）"
+  "lat": 33.276365,
+  "lng": 131.365192,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 1651m）"
  },
  {
   "name": "湯の岳庵",
@@ -1181,10 +1182,10 @@
   "reason": "亀の井別荘 館內的餐廳，非住客也能用餐——想吃到御三家水準的料理但不住那裡，這是最直接的方式。",
   "notes": "⚠️ 建議訂位；就在金鱗湖旁。",
   "area_center": "湯布院",
-  "lat": 33.263769,
-  "lng": 131.357026,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（湯布院，半徑約 98m）"
+  "lat": 33.266123,
+  "lng": 131.368644,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 1110m）"
  },
  {
   "name": "茶房 天井棧敷",
@@ -1204,10 +1205,10 @@
   "reason": "亀の井別荘 的茶房，江戶時代穀倉改建，湯布院最有氣氛的咖啡廳。",
   "notes": "金鱗湖步行約 3 分；下午常客滿。",
   "area_center": "湯布院",
-  "lat": 33.263575,
-  "lng": 131.356465,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（湯布院，半徑約 64m）"
+  "lat": 33.266075,
+  "lng": 131.368346,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 1137m）"
  },
  {
   "name": "檪の丘",
@@ -1226,10 +1227,10 @@
   "reason": "由布岳山腳的窯烤披薩，露臺正對由布岳——2/9 選 B 案（純泡湯日）時的午餐。",
   "notes": "⚠️ 離市街有距離，需開車或計程車。",
   "area_center": "湯布院",
-  "lat": 33.264447,
-  "lng": 131.356696,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（湯布院，半徑約 81m）"
+  "lat": 33.263267,
+  "lng": 131.329941,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 2487m）"
  },
  {
   "name": "由布院 鞠智",
@@ -1247,10 +1248,10 @@
   ],
   "reason": "湯之坪街道上的銅鑼燒與咖啡，建築本身也很有設計感。",
   "area_center": "湯布院",
-  "lat": 33.26436,
-  "lng": 131.356,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（湯布院，半徑約 40m）"
+  "lat": 33.266253,
+  "lng": 131.361945,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 590m）"
  },
  {
   "name": "由布院Milch 本店",
@@ -1268,10 +1269,10 @@
   ],
   "reason": "湯之坪街道的排隊點心，現烤半熟起司蛋糕一個 ¥150 上下。",
   "area_center": "湯布院",
-  "lat": 33.263219,
-  "lng": 131.355835,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（湯布院，半徑約 88m）"
+  "lat": 33.26623,
+  "lng": 131.361593,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 630m）"
  },
  {
   "name": "CAFE LA RUCHE",
@@ -1303,10 +1304,10 @@
   "tabelog_rank": 3,
   "reason": "日田市第 3 名，雞料理。",
   "area_center": "日田",
-  "lat": 33.320319,
-  "lng": 130.940835,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（日田，半徑約 88m）"
+  "lat": 33.317383,
+  "lng": 130.933287,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 772m）"
  },
  {
   "name": "三久",
@@ -1321,10 +1322,10 @@
   "tabelog_rank": 4,
   "reason": "日田評分最高的拉麵。",
   "area_center": "日田",
-  "lat": 33.321158,
-  "lng": 130.940208,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（日田，半徑約 73m）"
+  "lat": 33.317056,
+  "lng": 130.932628,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 838m）"
  },
  {
   "name": "日田まぶし千屋",
@@ -1342,10 +1343,10 @@
   ],
   "reason": "日田的鰻魚三吃，與由布院的「由布まぶし 心」是同一種吃法——2/9 選 A 案時的另一個午餐選項。",
   "area_center": "日田",
-  "lat": 33.32146,
-  "lng": 130.941,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（日田，半徑約 40m）"
+  "lat": 33.327285,
+  "lng": 130.937331,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 731m）"
  },
  {
   "name": "戸山うなぎ",
@@ -1360,10 +1361,10 @@
   "tabelog_rank": 6,
   "reason": "日田的鰻魚老店。",
   "area_center": "日田",
-  "lat": 33.320675,
-  "lng": 130.941465,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（日田，半徑約 64m）"
+  "lat": 33.305366,
+  "lng": 130.944963,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 1730m）"
  },
  {
   "name": "みくま飯店",
@@ -1381,10 +1382,10 @@
   ],
   "reason": "日田燒麵的另一家名店，與想夫恋 並列雙璧。",
   "area_center": "日田",
-  "lat": 33.321547,
-  "lng": 130.941696,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（日田，半徑約 81m）"
+  "lat": 33.312394,
+  "lng": 130.932642,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 1318m）"
  },
  {
   "name": "寶屋 本店",
@@ -1419,9 +1420,10 @@
   ],
   "reason": "柳川第 2 名——在一整排鰻魚店裡殺出來的漢堡排店，不想吃鰻魚時的選擇。",
   "area_center": "柳川",
-  "lat": 33.163,
-  "lng": 130.406,
-  "coord_status": "area"
+  "lat": 33.163793,
+  "lng": 130.429522,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 2187m）"
  },
  {
   "name": "立花うどん",
@@ -1536,10 +1538,10 @@
   "reason": "熊本市第 1 名（4.28），壽司。",
   "notes": "⚠️ 極難訂。",
   "area_center": "熊本",
-  "lat": 32.802219,
-  "lng": 130.707835,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（熊本，半徑約 88m）"
+  "lat": 32.800056,
+  "lng": 130.700981,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 683m）"
  },
  {
   "name": "洋食の店 橋本",
@@ -1554,10 +1556,10 @@
   "tabelog_rank": 3,
   "reason": "熊本第 3 名的老派洋食店，3.94 卻是平價路線。",
   "area_center": "熊本",
-  "lat": 32.803447,
-  "lng": 130.708696,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（熊本，半徑約 81m）"
+  "lat": 32.804007,
+  "lng": 130.710548,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 184m）"
  },
  {
   "name": "五郎八",
@@ -1597,10 +1599,10 @@
   ],
   "reason": "熊本最有名的炸豬排，就在熊本城下的新市街商店街。",
   "area_center": "熊本",
-  "lat": 32.80336,
-  "lng": 130.708,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（熊本，半徑約 40m）"
+  "lat": 32.798616,
+  "lng": 130.705876,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 563m）"
  },
  {
   "name": "熊本ラーメン 黒亭 本店",
@@ -1618,10 +1620,10 @@
   ],
   "reason": "熊本拉麵的代表，1957 年創業，焦蒜油（マー油）是熊本與博多豚骨最大的差別。",
   "area_center": "熊本",
-  "lat": 32.802575,
-  "lng": 130.708465,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（熊本，半徑約 64m）"
+  "lat": 32.786146,
+  "lng": 130.691736,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 2400m）"
  },
  {
   "name": "むつ五郎",
@@ -1640,9 +1642,9 @@
   ],
   "reason": "熊本鄉土料理與馬肉，2/2 選 B 案時的晚餐選項。",
   "area_center": "熊本",
-  "lat": 32.803058,
-  "lng": 130.707208,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（熊本，半徑約 73m）"
+  "lat": 32.800789,
+  "lng": 130.706014,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 275m）"
  }
 ]

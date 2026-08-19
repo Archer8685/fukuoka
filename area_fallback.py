@@ -156,7 +156,7 @@ def main():
             ac = p.get("area_center")
             if not ac:
                 continue
-            if p.get("lat") and p.get("coord_status") in ("nominatim", "manual", "approx", "overpass"):
+            if p.get("lat") and p.get("coord_status") in ("nominatim", "manual", "approx", "overpass", "google"):
                 stats["skip"] += 1
                 continue
             if ac not in AREA_CENTER:

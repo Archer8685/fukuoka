@@ -26,10 +26,10 @@
   "duration": "30 分",
   "reason": "由布院站步行圈的公共浴場，當地人日常在泡的湯，¥200 就能進。",
   "notes": "⚠️ 座標是「由布院站周邊」的區域概略位置（OSM 查不到節點），到現場請用 popup 的 Google Maps 連結導航。男女分浴。",
-  "lat": 33.264,
-  "lng": 131.356,
-  "coord_status": "area",
-  "coord_source": "區域中心點（湯布院）",
+  "lat": 33.264149,
+  "lng": 131.358195,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 area，差 204m）",
   "area_center": "湯布院"
  },
  {
@@ -43,10 +43,10 @@
   "duration": "1 小時",
   "reason": "日本最高的步行專用吊橋（高 173m、長 390m），走完約 30 分且全程平路、不用爬山。",
   "notes": "⚠️ 由布院搭巴士約 1 小時且班次極少、JR 不可達，實務上要包車或計程車。冬天橋面可能結冰封閉，出發前查官網。",
-  "lat": 33.174177,
-  "lng": 131.227066,
-  "coord_status": "nominatim",
-  "coord_source": "OSM 九重夢大吊橋"
+  "lat": 33.172776,
+  "lng": 131.225559,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 209m）"
  },
  {
   "name": "城島高原（塚原高原一帶）",
@@ -102,10 +102,10 @@
   "duration": "2–3 小時",
   "reason": "白牆黑瓦的江戶商家街與柳川運河，是「跨出九州」路線裡最有畫面的一站。",
   "notes": "⚠️ 博多約 1 小時 45 分–2 小時（山陽新幹線），<b>不在 JR 九州 Pass 範圍</b>，往返車資另計。本次沒排。",
-  "lat": 34.596525,
-  "lng": 133.772586,
-  "coord_status": "nominatim",
-  "coord_source": "OSM 倉敷美観地区"
+  "lat": 34.595739,
+  "lng": 133.771765,
+  "coord_status": "google",
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 115m）"
  },
  {
   "name": "京都站（跨區參考）",

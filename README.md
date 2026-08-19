@@ -14,7 +14,8 @@ index.html        入口（轉址到行程頁）
 config.js         底圖設定（Google Maps 金鑰，預設空白＝用國土地理院）
 prep.html         行前準備（倒數時間軸、訂票清單、入境、免稅、打包、清真）
 itinerary.html    逐日行程（載入 data.js 自動附加地點詳情）
-map.html          互動地圖（Leaflet + 國土地理院圖磚）
+map.html          互動地圖（Leaflet + 國土地理院圖磚，可選 Google 底圖）
+verify.html       座標稽核：用 Google Places 逐筆驗證 data.js 的座標（見下節）
 data.js           ★ 唯一資料檔（PLACES / J2T），由 build_data.py 產生
 trip.js           ★ 最終行程資料（TRIP / BACKUPS），手動維護
 sw.js             Service Worker（離線快取）
@@ -31,7 +32,7 @@ audit/            座標查詢紀錄（geocode_latest.json）與稽核報告（R
 
 ## 部署清單（最小集合）
 
-`index.html`、`prep.html`、`itinerary.html`、`map.html`、`data.js`、`trip.js`、`config.js`、`sw.js`、`libs/`（整個資料夾）
+`index.html`、`prep.html`、`itinerary.html`、`map.html`、`verify.html`、`data.js`、`trip.js`、`config.js`、`sw.js`、`libs/`（整個資料夾）
 
 ## 對外相依（部署後仍需網路的部分）
 
@@ -116,6 +117,29 @@ urllib 連 overpass-api.de 會 `CERTIFICATE_VERIFY_FAILED`。
 另外每次查詢都會用「該城市的 bbox」過濾：日本同名地點極多
 （福岡市也有「別府駅」、茨城縣也有「竹瓦」、岩手縣也有「福岡」），
 不做 bbox 驗證會配到完全另一個縣的地方。
+
+## 用 Google 驗證座標（verify.html）
+
+`geocode.py`／`area_fallback.py` 的來源（OSM、國土地理院、區域中心點）精度落差很大，
+所以另外做了一支 **`verify.html`**：把每個地點的日文名丟給 **Google Places**，
+比對回傳座標與現有座標的距離，一次看完全部。
+
+```
+在 http://localhost:5173/verify.html 開啟（金鑰的參照網址限制必須涵蓋這個網域）
+→ 先按「試跑前 20 筆」確認 API 可用
+→ 再按「全部驗證」
+→ 按「產生 fix_coords.py 修正表」，把 >100m 的項目貼回 fix_coords.py 的 FIX
+```
+
+判讀標準：**<100m** 視為一致；**100–500m** 值得看（同名分店、建物大、或我們用的是區域中心點）；
+**>500m** 幾乎確定配錯。**「查無」不代表錯**——像「豪斯登堡 園內美食」這種概念性地點
+Google 上本來就沒有。
+
+⚠️ **這是計費 API**。全跑一次約 286 次 Places Text Search 請求，個人用量通常在免費額度內，
+但請自行確認 Google Cloud 的帳單設定。
+⚠️ 金鑰的「API 限制」必須包含 **Places API**，專案也要啟用它，否則會 `REQUEST_DENIED`。
+⚠️ **不要盲目套用 Google 的座標**：Google 回傳的是它自己的 POI 位置，偶爾也會指到分店或
+行政區中心。修正表產生後請逐筆看 Google 回傳的名稱與地址對不對，再決定要不要採用。
 
 ## 更新資料
 

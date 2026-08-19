@@ -55,10 +55,10 @@
   "notes": "全區平地，步行即可；冬天海邊風大。",
   "price": "免費（各館另計）",
   "duration": "2–3 小時",
-  "coord_status": "nominatim",
-  "lat": 33.945036,
-  "lng": 130.964724,
-  "coord_source": "Nominatim 門司港レトロ, 国道3号, 清滝二丁目, 本町, 門司区, 北九州市, 福岡県, 801-0862, 日本"
+  "coord_status": "google",
+  "lat": 33.946204,
+  "lng": 130.96301,
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 204m）"
  },
  {
   "name": "舊門司三井俱樂部",
@@ -170,10 +170,10 @@
   "ticket": "約 ¥2,090",
   "hours": "09:30–17:30",
   "duration": "1.5–2 小時",
-  "coord_status": "nominatim",
-  "lat": 33.949385,
-  "lng": 130.921789,
-  "coord_source": "Nominatim 下関, 南風泊港線, 大和町一丁目, 今浦町, 下関市, 山口県, 750-0025, 日本"
+  "coord_status": "google",
+  "lat": 33.954619,
+  "lng": 130.942361,
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 1981m）"
  },
  {
   "name": "赤間神宮",
@@ -232,9 +232,9 @@
   "notes": "⚠️ 從下關站需搭巴士約 1 小時或自駕，JR 為主的行程不容易排；列為備選。",
   "price": "免費",
   "duration": "半天（含交通）",
-  "coord_status": "overpass",
-  "lat": 34.355378,
-  "lng": 130.877353,
-  "coord_source": "OSM node/6444916059"
+  "coord_status": "google",
+  "lat": 34.351237,
+  "lng": 130.889214,
+  "coord_source": "Google Places 稽核 2026-08-19（原 overpass，差 1180m）"
  }
 ]

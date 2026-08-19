@@ -14,9 +14,10 @@
   "reason": "2022 年新站啟用，西九州新幹線終點；市內移動主要靠站前的路面電車。",
   "notes": "博多來需在武雄溫泉對面月台換車（接力かもめ→かもめ），全程約 1 小時 20 分。",
   "duration": "轉乘 10 分",
-  "coord_status": "manual",
-  "lat": 32.7527,
-  "lng": 129.8706
+  "coord_status": "google",
+  "lat": 32.752303,
+  "lng": 129.868948,
+  "coord_source": "Google Places 稽核 2026-08-19（原 manual，差 160m）"
  },
  {
   "name": "長崎新地中華街",
@@ -35,9 +36,10 @@
   "notes": "燈會期間（2027/2/5–2/21）晚上極擠；平日白天較好逛。",
   "price": "免費",
   "duration": "1–1.5 小時",
-  "coord_status": "manual",
-  "lat": 32.7424,
-  "lng": 129.8734
+  "coord_status": "google",
+  "lat": 32.741465,
+  "lng": 129.875285,
+  "coord_source": "Google Places 稽核 2026-08-19（原 manual，差 204m）"
  },
  {
   "name": "長崎燈會 湊公園會場",
@@ -57,9 +59,10 @@
   "price": "免費",
   "hours": "點燈 17:00–22:00",
   "duration": "1–1.5 小時",
-  "coord_status": "manual",
-  "lat": 32.7415,
-  "lng": 129.8739
+  "coord_status": "google",
+  "lat": 32.7408,
+  "lng": 129.874645,
+  "coord_source": "Google Places 稽核 2026-08-19（原 manual，差 104m）"
  },
  {
   "name": "長崎燈會 中央公園會場",
@@ -78,9 +81,10 @@
   "price": "免費",
   "hours": "點燈 17:00–22:00",
   "duration": "1 小時",
-  "coord_status": "manual",
-  "lat": 32.7443,
-  "lng": 129.8781
+  "coord_status": "google",
+  "lat": 32.746932,
+  "lng": 129.877037,
+  "coord_source": "Google Places 稽核 2026-08-19（原 manual，差 309m）"
  },
  {
   "name": "眼鏡橋",
@@ -119,9 +123,10 @@
   "hours": "08:00–21:00",
   "ticket": "約 ¥520",
   "duration": "1–1.5 小時",
-  "coord_status": "manual",
-  "lat": 32.7434,
-  "lng": 129.873
+  "coord_status": "google",
+  "lat": 32.743286,
+  "lng": 129.871412,
+  "coord_source": "Google Places 稽核 2026-08-19（原 manual，差 149m）"
  },
  {
   "name": "哥拉巴園",
@@ -140,9 +145,10 @@
   "hours": "08:00–18:00",
   "ticket": "約 ¥620",
   "duration": "1–1.5 小時",
-  "coord_status": "nominatim",
-  "lat": 32.733367,
-  "lng": 129.869055
+  "coord_status": "google",
+  "lat": 32.734331,
+  "lng": 129.869189,
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 108m）"
  },
  {
   "name": "大浦天主堂",
@@ -202,9 +208,10 @@
   "notes": "與原爆資料館步行約 8 分；全區平地。",
   "price": "免費",
   "duration": "40 分",
-  "coord_status": "manual",
-  "lat": 32.7729,
-  "lng": 129.8637
+  "coord_status": "google",
+  "lat": 32.776397,
+  "lng": 129.86365,
+  "coord_source": "Google Places 稽核 2026-08-19（原 manual，差 388m）"
  },
  {
   "name": "長崎原爆資料館",
@@ -222,9 +229,10 @@
   "hours": "08:30–17:30",
   "ticket": "約 ¥200",
   "duration": "1–1.5 小時",
-  "coord_status": "manual",
-  "lat": 32.7716,
-  "lng": 129.8642
+  "coord_status": "google",
+  "lat": 32.772796,
+  "lng": 129.864362,
+  "coord_source": "Google Places 稽核 2026-08-19（原 manual，差 134m）"
  },
  {
   "name": "軍艦島（端島）",
@@ -242,9 +250,10 @@
   "notes": "⚠️ 必須參加登島船 tour（約 2.5–3 小時），冬季因海況取消率高，建議提前 1–2 個月預約並安排備案。島上為平地步道約 40 分。\n🚢 五家業者、出港碼頭各不相同，訂票前先確認要去哪個碼頭：\n・軍艦島コンシェルジュ＝常盤ターミナル，¥5,500 起，約 165 分\n・軍艦島クルーズ㈱＝元船棧橋，¥4,000，約 190 分\n・やまさ海運＝長崎港ターミナル，¥4,700 起（有早鳥最多 8 折），約 150 分\n・シーマン商会＝旭町棧橋／第 7 ゑびす丸＝野母崎港（團體向）\n💰 島內設施使用料 ¥650（小學生 ¥320）<b>所有業者都是另收</b>，2026/4 起由 ¥310 調漲。\n⚠️ 部分業者冬季會安排船體檢修停航（例：2026/1/5–1/31），2 月訂票前先看該業者公告。",
   "ticket": "船票 ¥4,000–5,500＋島內設施使用料 ¥650（2026/4 起調漲）",
   "duration": "約 3 小時（含航程）",
-  "coord_status": "nominatim",
-  "lat": 32.62664,
-  "lng": 129.738832
+  "coord_status": "google",
+  "lat": 32.627633,
+  "lng": 129.738526,
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 114m）"
  },
  {
   "name": "長崎港 常盤碼頭",
@@ -316,9 +325,10 @@
   "notes": "是坡道但很短（約 5–10 分緩坡），不算健行。",
   "price": "免費",
   "duration": "20–30 分",
-  "coord_status": "manual",
-  "lat": 32.7392,
-  "lng": 129.8747
+  "coord_status": "google",
+  "lat": 32.737938,
+  "lng": 129.873209,
+  "coord_source": "Google Places 稽核 2026-08-19（原 manual，差 197m）"
  },
  {
   "name": "龜山社中紀念館",
@@ -336,9 +346,10 @@
   "ticket": "約 ¥310",
   "hours": "09:00–17:00",
   "duration": "40 分",
-  "coord_status": "approx",
-  "lat": 32.7414,
-  "lng": 129.8845
+  "coord_status": "google",
+  "lat": 32.748767,
+  "lng": 129.886782,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 845m）"
  },
  {
   "name": "四海樓",
@@ -379,12 +390,13 @@
   "price": "約 ¥1,500–3,000",
   "hours": "11:00–20:00",
   "duration": "1 小時",
-  "coord_status": "approx",
-  "lat": 32.7423,
-  "lng": 129.8735,
+  "coord_status": "google",
+  "lat": 32.741218,
+  "lng": 129.875803,
   "tabelog": "3.67",
   "tabelog_area": "長崎市",
-  "tabelog_rank": 10
+  "tabelog_rank": 10,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 246m）"
  },
  {
   "name": "吉宗 本店",
@@ -424,9 +436,10 @@
   "notes": "一個約 ¥450；可買冷凍包帶回台灣。",
   "price": "約 ¥450／個",
   "duration": "15 分",
-  "coord_status": "approx",
-  "lat": 32.7422,
-  "lng": 129.8737
+  "coord_status": "google",
+  "lat": 32.742308,
+  "lng": 129.875961,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 211m）"
  },
  {
   "name": "福砂屋 本店",
@@ -443,9 +456,10 @@
   "notes": "Cube 小包裝適合送人；本店在思案橋一帶。",
   "hours": "09:30–17:00",
   "duration": "20 分",
-  "coord_status": "approx",
-  "lat": 32.7405,
-  "lng": 129.8797
+  "coord_status": "google",
+  "lat": 32.741644,
+  "lng": 129.879395,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 130m）"
  },
  {
   "name": "長崎濱町商店街",
@@ -462,8 +476,9 @@
   ],
   "reason": "長崎最大的有頂棚商店街，燈會期間整條掛滿燈籠，下雨也能逛。",
   "duration": "1 小時",
-  "coord_status": "manual",
-  "lat": 32.7444,
-  "lng": 129.8776
+  "coord_status": "google",
+  "lat": 32.743942,
+  "lng": 129.878602,
+  "coord_source": "Google Places 稽核 2026-08-19（原 manual，差 106m）"
  }
 ]

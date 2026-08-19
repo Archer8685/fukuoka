@@ -35,10 +35,10 @@
   "ticket": "約 ¥800",
   "hours": "09:00–17:00",
   "duration": "2 小時",
-  "coord_status": "overpass",
-  "lat": 32.809129,
-  "lng": 130.703287,
-  "coord_source": "OSM node/3792170487"
+  "coord_status": "google",
+  "lat": 32.806186,
+  "lng": 130.705833,
+  "coord_source": "Google Places 稽核 2026-08-19（原 overpass，差 404m）"
  },
  {
   "name": "櫻之馬場 城彩苑",
@@ -55,10 +55,10 @@
   "reason": "熊本城下的重現街區，一次吃齊馬肉、太平燕、辛子蓮根等熊本名物。",
   "hours": "09:00–18:00",
   "duration": "1–1.5 小時",
-  "coord_status": "approx",
-  "lat": 33.8027,
-  "lng": 130.7036,
-  "coord_source": "Nominatim 桜の馬場城彩苑, 行幸橋, 二の丸, 中央区, 熊本市, 熊本県, 860-8601, 日本"
+  "coord_status": "google",
+  "lat": 32.803671,
+  "lng": 130.703756,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 110892m）"
  },
  {
   "name": "菅乃屋（馬肉）",
@@ -78,10 +78,10 @@
   "price": "約 ¥3,000–6,000",
   "hours": "11:00–22:00",
   "duration": "1.5 小時",
-  "coord_status": "approx",
-  "lat": 32.803,
-  "lng": 130.705,
-  "coord_source": "Nominatim 菅乃屋, 行幸橋, 二の丸, 中央区, 熊本市, 熊本県, 860-8601, 日本"
+  "coord_status": "google",
+  "lat": 32.800697,
+  "lng": 130.707124,
+  "coord_source": "Google Places 稽核 2026-08-19（原 approx，差 323m）"
  },
  {
   "name": "武雄溫泉站",
@@ -164,10 +164,10 @@
   "ticket": "1DAY 護照 ¥7,600（2026）／JR 套票見下",
   "hours": "09:00–21:00（季節調整）",
   "duration": "整天（建議 10:30 入園、待到 20:00 以後）",
-  "coord_status": "nominatim",
-  "lat": 33.086204,
-  "lng": 129.788315,
-  "coord_source": "Nominatim ハウステンボス, ハウステンボス町, 佐世保市, 長崎県, 859-3243, 日本"
+  "coord_status": "google",
+  "lat": 33.08972,
+  "lng": 129.791892,
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 513m）"
  },
  {
   "name": "鹿兒島中央站",
@@ -204,10 +204,10 @@
   "notes": "不需登山，展望所都有車道與平緩步道；火山灰視當日風向。",
   "price": "渡輪約 ¥250",
   "duration": "半天",
-  "coord_status": "nominatim",
-  "lat": 31.580574,
-  "lng": 130.657984,
-  "coord_source": "Nominatim 桜島, 鹿児島市, 鹿児島県, 892-8677, 日本"
+  "coord_status": "google",
+  "lat": 31.583333,
+  "lng": 130.65,
+  "coord_source": "Google Places 稽核 2026-08-19（原 nominatim，差 815m）"
  },
  {
   "name": "指宿 砂蒸溫泉",
