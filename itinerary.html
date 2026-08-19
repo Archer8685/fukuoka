@@ -4,8 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>福岡・九州 2/1–2/12 行程</title>
-<link rel="preload" href="data.js?v=1" as="script">
-<link rel="preload" href="trip.js?v=1" as="script">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="data.js?v=11" as="script">
+<link rel="preload" href="trip.js?v=11" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
@@ -111,6 +112,22 @@ header.pg .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 .stop .alt{font-size:12px;color:#a04b12;background:#fdf3ea;border-left:3px solid #e8b287;border-radius:0 8px 8px 0;padding:5px 9px;margin-top:5px;line-height:1.65}
 .go{display:inline-flex;align-items:center;gap:6px;margin:3px 0 3px 64px;font-size:11.5px;color:#41617f;background:#f1f6fa;border:1px dashed #cfdce8;border-radius:9px;padding:3px 10px;max-width:calc(100% - 70px)}
 .go::before{content:"↓";font-weight:700;color:#8fa8bd}
+.more-btn{margin-top:5px;font:600 11.5px/1 inherit;color:var(--accent);background:#eef3f7;border:1px solid #d6e2ec;border-radius:8px;padding:6px 10px;cursor:pointer;min-height:30px}
+.more-btn:active{transform:scale(.97)}
+#stopModal{border:0;padding:0;border-radius:16px;width:min(560px,94vw);max-height:86vh;background:var(--panel);color:var(--ink);box-shadow:0 18px 50px rgba(12,20,28,.32);overflow:hidden}
+#stopModal::backdrop{background:rgba(18,24,30,.55);backdrop-filter:blur(2px)}
+#stopModal .mh{display:flex;align-items:flex-start;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0}
+#stopModal .mh-txt{min-width:0;flex:1}
+#stopModal .mh-t{font-size:15.5px;font-weight:800;line-height:1.35}
+#stopModal .mh-ja{font-size:12px;color:var(--muted);margin-top:2px}
+#stopModal .mh-meta{font-size:11.5px;color:var(--accent2);font-weight:700;margin-top:4px}
+#stopModal .mclose{flex-shrink:0;width:32px;height:32px;border:1px solid var(--line);border-radius:9px;background:var(--panel);color:var(--muted);font-size:16px;line-height:1;cursor:pointer}
+#stopModal .mb{padding:14px 16px 18px;overflow-y:auto;max-height:calc(86vh - 62px);font-size:12.5px;line-height:1.75;color:#4d555d}
+#stopModal .mb b{color:var(--ink)}
+#stopModal .mrow{padding:7px 0;border-bottom:1px dashed var(--line)}
+#stopModal .mrow:last-child{border-bottom:0}
+#stopModal .mlinks{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+#stopModal .mlinks a{display:inline-flex;align-items:center;min-height:36px;padding:0 12px;border-radius:9px;border:1px solid var(--line);background:var(--chip);color:var(--accent);font-size:12.5px;font-weight:700;text-decoration:none}
 
 .backup{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:18px 0;padding:14px 18px}
 .backup h2{font-size:16px;margin-bottom:6px}
@@ -197,8 +214,13 @@ header.pg .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 
 </div>
 
-<script src="data.js?v=1"></script>
-<script src="trip.js?v=1"></script>
+<dialog id="stopModal" aria-label="站點詳情">
+  <div class="mh"><div class="mh-txt" id="mhTxt"></div><button type="button" class="mclose" id="mClose" aria-label="關閉">✕</button></div>
+  <div class="mb" id="mBody"></div>
+</dialog>
+
+<script src="data.js?v=11"></script>
+<script src="trip.js?v=11"></script>
 <script>
 // ---- 共用：地點查找（日文新字體 → 繁體正規化）----
 const _J2T=(typeof J2T!=="undefined")?J2T:{};
@@ -257,6 +279,22 @@ function altHTML(stop){
   if(!items.length)return"";
   return `<div class="alt">🔁 備選：${items.join('、')}${auto?'（就近同類）':''}</div>`;
 }
+
+// ---- 站點詳情 Modal ----
+const STOPDETAIL=[];
+const modal=document.getElementById('stopModal');
+function openStopModal(i){
+  const d=STOPDETAIL[i];if(!d)return;
+  document.getElementById('mhTxt').innerHTML=d.head;
+  document.getElementById('mBody').innerHTML=d.body;
+  if(typeof modal.showModal==='function')modal.showModal();else location.href=d.mapURL;
+}
+document.addEventListener('click',e=>{
+  const b=e.target.closest('.more-btn');
+  if(b){openStopModal(Number(b.dataset.si));return;}
+  if(e.target.id==='mClose'){modal.close();return;}
+  if(e.target===modal)modal.close();   // 點背景關閉
+});
 
 // ---- 天卡片 ----
 const KIND={spot:{c:"#1b4f8a",t:"景點"},meal:{c:"#e67e22",t:"用餐"},hotel:{c:"#37474f",t:"住宿"},move:{c:"#5d4037",t:"交通"}};
@@ -321,7 +359,21 @@ TRIP.forEach(day=>{
       ${facts.length?`<div class="facts">${facts.map(f=>`<i class="${f[0]}">${f[1]}</i>`).join("")}</div>`:""}
       ${(s.kind==='meal'||s.alt)?altHTML(s):""}
       ${gmapLink(p||{name:s.name})}
-      ${moreBits.length?`<details><summary>更多（營業時間・注意・附近）</summary><div class="more">${moreBits.join("<br>")}</div></details>`:""}
+      <button type="button" class="more-btn" data-si="${(()=>{
+        const mapURL=`map.html?q=${q}`;
+        const head=`<div class="mh-t">${s.name}</div>${(p&&p.name_ja)?`<div class="mh-ja">${p.name_ja}</div>`:""}`+
+          `<div class="mh-meta">${s.t}・${s.label||k.t}${p&&p.city?`・${p.city}${p.area?"／"+p.area:""}`:""}</div>`;
+        const rows=[];
+        if(s.note)rows.push(s.note);
+        if(p&&p.reason)rows.push(`💡 ${p.reason}`);
+        if(facts.length)rows.push(facts.map(f=>f[1]).join("　"));
+        moreBits.forEach(m=>rows.push(m));
+        if(s.go)rows.push(`<b>下一段交通</b><br>${s.go}`);
+        const body=rows.map(r=>`<div class="mrow">${r}</div>`).join("")+
+          `<div class="mlinks"><a href="${mapURL}" target="_blank">🗺 在地圖上顯示</a>`+
+          `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((p&&p.name_ja)||s.name)}" target="_blank" rel="noopener">🧭 Google Maps 導航</a></div>`;
+        return STOPDETAIL.push({head,body,mapURL})-1;
+      })()}">🔎 站點詳情</button>
     </div></div>`;
     if(s.go&&i<stops.length-1)html+=`<div class="go">${s.go}</div>`;
   });
@@ -401,6 +453,6 @@ document.addEventListener('click',e=>{
 });
 window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('pgload').classList.add('done');});
 </script>
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('fukuoka-app-v1').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('fukuoka-app-v11').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});});}).catch(function(){});});}</script>
 </body>
 </html>

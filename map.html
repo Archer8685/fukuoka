@@ -4,11 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>福岡・九州 12 天 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=1" as="script">
-<link rel="preload" href="trip.js?v=1" as="script">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="data.js?v=11" as="script">
+<link rel="preload" href="trip.js?v=11" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="stylesheet" href="libs/leaflet.css">
 <script src="libs/leaflet.js"></script>
+<script src="config.js"></script>
+<script src="libs/Leaflet.GoogleMutant.js"></script>
 <style>
 #pgload{position:fixed;inset:0;z-index:9999;background:#f7f9fb;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;transition:opacity .22s}
 #pgload.done{opacity:0;pointer-events:none}
@@ -175,8 +178,8 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=1"></script>
-<script src="trip.js?v=1"></script>
+<script src="data.js?v=11"></script>
+<script src="trip.js?v=11"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -208,7 +211,45 @@ const GSI_PALE='https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png';
 const baseGSI=L.tileLayer(GSI_PALE,{maxZoom:18,attribution:'&copy; <a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院</a>'}).addTo(map);
 const baseGSIStd=L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; 国土地理院'});
 const baseOSM=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'});
-L.control.layers({"國土地理院 淡色":baseGSI,"國土地理院 標準":baseGSIStd,"OpenStreetMap":baseOSM},null,{position:'topright'}).addTo(map);
+const BASES={"國土地理院 淡色":baseGSI,"國土地理院 標準":baseGSIStd,"OpenStreetMap":baseOSM};
+const layerCtl=L.control.layers(BASES,null,{position:'topright'}).addTo(map);
+
+// ---------- Google Map 底圖（選用）----------
+// 走官方路線：載入 Google Maps JavaScript API，再用 GoogleMutant 把它包成 Leaflet 圖層，
+// 所有既有的圖釘／popup／路線程式碼都不用改。
+// 沒填金鑰就完全不載入 Google 的東西，網站照常運作（預設國土地理院）。
+// ⚠️ 不使用 mt0.google.com 之類的裸圖磚網址——那違反 Google 服務條款。
+const GOOGLE_LAYER_NAMES=["Google 道路","Google 衛星","Google 地形"];
+window.__googleBaseActive=false;
+(function initGoogleBase(){
+  const key=(typeof GMAPS_KEY!=="undefined")?String(GMAPS_KEY).trim():"";
+  if(!key)return;                      // 沒金鑰就跳過
+  const cb="__gmapsReady";
+  window[cb]=function(){
+    try{
+      const g={"Google 道路":L.gridLayer.googleMutant({type:"roadmap"}),
+               "Google 衛星":L.gridLayer.googleMutant({type:"hybrid"}),
+               "Google 地形":L.gridLayer.googleMutant({type:"terrain"})};
+      Object.entries(g).forEach(([n,l])=>layerCtl.addBaseLayer(l,n));
+    }catch(e){console.warn("Google 底圖初始化失敗：",e);}
+  };
+  const sc=document.createElement("script");
+  sc.async=true;
+  sc.src="https://maps.googleapis.com/maps/api/js?key="+encodeURIComponent(key)+"&callback="+cb+"&v=weekly";
+  sc.onerror=function(){console.warn("Google Maps API 載入失敗（金鑰或網域限制？），維持國土地理院底圖。");};
+  document.head.appendChild(sc);
+})();
+// 切到 Google 底圖時停用離線預載（Google 圖磚不得快取）
+map.on('baselayerchange',function(e){
+  window.__googleBaseActive=GOOGLE_LAYER_NAMES.includes(e.name);
+  const b=document.getElementById('offlineBtn');
+  if(!b)return;
+  if(window.__googleBaseActive){
+    b.disabled=true; b.textContent='⬇️ Google 底圖不可離線快取（切回國土地理院即可預載）';
+  }else if(b.dataset.origText){
+    b.disabled=false; b.textContent=b.dataset.origText;
+  }
+});
 
 // 建立分類 chips
 const catChips=document.getElementById('catChips');
@@ -787,10 +828,10 @@ window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('p
     window.addEventListener('load',function(){
       navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){
         if(!('caches' in window))return;
-        caches.open('fukuoka-app-v1').then(function(c){
+        caches.open('fukuoka-app-v11').then(function(c){
           document.querySelectorAll('script[src],link[href]').forEach(function(el){
             var u=el.src||el.href; if(!u||u.indexOf(location.origin)!==0)return;
-            c.match(u).then(function(hit){ if(!hit) fetch(u).catch(function(){}); });
+            c.match(u).then(function(hit){ if(!hit) c.add(u).catch(function(){}); });
           });
         });
       }).catch(function(){});
@@ -803,8 +844,10 @@ window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('p
   function lat2tile(lat,z){var r=lat*Math.PI/180;return Math.floor((1-Math.log(Math.tan(r)+1/Math.cos(r))/Math.PI)/2*Math.pow(2,z));}
   function tileUrl(x,y,z){return 'https://cyberjapandata.gsi.go.jp/xyz/pale/'+z+'/'+x+'/'+y+'.png';}
   var busy=false, orig=btn.textContent;
+  btn.dataset.origText=orig;
   btn.onclick=async function(){
     if(busy)return;
+    if(window.__googleBaseActive){ alert('Google 圖磚依服務條款不可離線快取。請先在右上角切回「國土地理院」或「OpenStreetMap」再預載。'); return; }
     var b=map.getBounds(), z0=Math.max(11,Math.round(map.getZoom())), zMax=Math.min(16,z0+2);
     var urls=[];
     for(var z=z0; z<=zMax; z++){

@@ -11,30 +11,68 @@
 
 ```
 index.html        入口（轉址到行程頁）
+config.js         底圖設定（Google Maps 金鑰，預設空白＝用國土地理院）
 itinerary.html    逐日行程（載入 data.js 自動附加地點詳情）
 map.html          互動地圖（Leaflet + 國土地理院圖磚）
 data.js           ★ 唯一資料檔（PLACES / J2T），由 build_data.py 產生
 trip.js           ★ 最終行程資料（TRIP / BACKUPS），手動維護
 sw.js             Service Worker（離線快取）
-libs/             Leaflet 1.9.4 本地副本（已去 CDN 依賴）
+libs/             Leaflet 1.9.4 ＋ Leaflet.GoogleMutant 0.13.4 本地副本（已去 CDN 依賴）
 data/*.json       原始研究資料（部署可不上傳，僅重建 data.js 用）
 build_data.py     資料合併：python build_data.py → 重新產生 data.js
-geocode.py        座標稽核：Overpass → Nominatim → 國土地理院，逐城市 bbox 驗證
+geocode.py        座標稽核：Overpass → Nominatim → 國土地理院，逐城市 bbox 驗證（有執行鎖，不可並行）
+fix_coords.py     手動座標覆寫表：自動查不到或配錯的地點在這裡指定 lat/lng
+bump_version.py   版號 +1／--check：一次改完散在 4 處的版號
+check_all.py      一鍵健檢：資料／座標／同步／版號／行程邏輯
 fix_coords.py     手動座標表：補自動查不到、或明顯配錯的地點（詳見下節）
-audit/            座標查詢結果紀錄（geocode_latest.json）
+audit/            座標查詢紀錄（geocode_latest.json）與稽核報告（REVIEW-*.md）
 ```
 
 ## 部署清單（最小集合）
 
-`index.html`、`itinerary.html`、`map.html`、`data.js`、`trip.js`、`sw.js`、`libs/`（整個資料夾）
+`index.html`、`itinerary.html`、`map.html`、`data.js`、`trip.js`、`config.js`、`sw.js`、`libs/`（整個資料夾）
 
 ## 對外相依（部署後仍需網路的部分）
 
-1. **國土地理院圖磚** `cyberjapandata.gsi.go.jp`：官方、免金鑰、日本境內細節最好。
+1. **國土地理院圖磚** `cyberjapandata.gsi.go.jp`：官方、免金鑰、日本境內細節最好，**預設底圖**。
    地圖右上可切換「淡色／標準／OpenStreetMap」。
-   - 日本座標為 **WGS-84**，與 Leaflet／OSM／國土地理院一致——**不需要**像中國那樣做 GCJ-02 偏移轉換。
-     瀏覽器定位回傳的座標也可以直接用。
+   - 日本座標為 **WGS-84**，與 Leaflet／OSM／國土地理院／Google 一致——**不需要**像中國那樣做
+     GCJ-02 偏移轉換。瀏覽器定位回傳的座標也可以直接用。
 2. 各地點的「🧭 在 Google Maps 開啟」為外部連結。
+3. **Google Map 底圖（選用，預設關閉）**：見下節。
+
+## 用 Google Map 當底圖（選用）
+
+在 [`config.js`](config.js) 填入 Google Maps JavaScript API 金鑰即可，右上角圖層選單會多出
+「Google 道路／Google 衛星／Google 地形」。沒填金鑰就完全不載入 Google 的東西，網站照常運作。
+
+```js
+const GMAPS_KEY = "你的金鑰";
+```
+
+實作走**官方路線**：載入 Google Maps JavaScript API，再用
+[`libs/Leaflet.GoogleMutant.js`](libs/Leaflet.GoogleMutant.js) 把它包成 Leaflet 圖層——
+既有的圖釘、popup、行程路線程式碼一行都不用改。
+
+⚠️ **不使用 `mt0.google.com/vt/...` 之類的裸圖磚網址。** 那種寫法一行就能換底圖、網路上也到處都是，
+但它違反 Google 服務條款（繞過計費與歸屬），而且是非公開端點、Google 隨時可以擋掉。本專案不採用。
+
+### 取得金鑰的注意事項
+
+1. Google Cloud Console 建專案 → 啟用 **Maps JavaScript API** → 建立 API 金鑰。
+2. ⚠️ **一定要加「HTTP 參照網址」限制**，只允許自己的網域
+   （`https://archer8685.github.io/fukuoka/*`、`http://localhost:5173/*`）。
+   靜態網站無法隱藏金鑰，它一定會出現在原始碼裡——安全性來自參照網址限制，不是來自藏起來。
+   再加「API 限制」只允許 Maps JavaScript API。
+3. ⚠️ **需要綁信用卡**才會發金鑰。個人行程網站的用量遠低於免費額度，實務上不會產生費用，
+   但帳號本身要有計費設定。
+4. ⚠️ **Google 圖磚不可離線快取**（服務條款）。所以：
+   - 切到 Google 底圖時「離線預載此區地圖」按鈕會自動停用
+   - `sw.js` 對 `googleapis.com` / `google.com` / `gstatic.com` 一律直接走網路、不進快取
+   - 要離線用，請切回國土地理院或 OpenStreetMap
+
+`config.js` 刻意**不帶 `?v=` 版本號**，且在 `sw.js` 走 network-first——否則貼上金鑰後會一直吃到
+快取裡的舊空金鑰（實測踩過）。
 
 其餘（Leaflet、字型、資料）皆已本地化，離線也能開啟版面；地圖頁有「⬇️ 離線預載此區地圖」可把目前範圍的圖磚存進快取。
 
@@ -105,6 +143,33 @@ python geocode.py && python fix_coords.py && python build_data.py
 2. `itinerary.html` 與 `map.html` 的 `?v=N`（各 2 處：preload 與 script）
 3. `itinerary.html` 與 `map.html` 底部 warm-up 腳本裡的 `caches.open('fukuoka-app-vN')`
 4. `trip.js` 的 `SITE_VERSION`（顯示在導覽列）
+
+**不要手動改這 4 處**——用 `bump_version.py`，它會一次改完並檢查一致性：
+
+```bash
+python bump_version.py          # 全部 +1
+python bump_version.py --check  # 只檢查是否一致（不一致回傳 1，可放 CI）
+python bump_version.py --set 7  # 指定版號
+```
+
+漏 bump 的症狀是「檔案改了但畫面沒變」——SW 會繼續回舊的 `data.js?v=N`。
+遇到時先跑 `python bump_version.py --check`。
+
+## 一鍵健檢
+
+改完任何東西後跑這一支就好，它會把下面全部檢查一遍（有問題回傳 1，可掛 CI 或 pre-commit）：
+
+```bash
+python check_all.py
+```
+
+1. `data/*.json` 合法、名稱不重複
+2. 每個地點都有座標且落在九州＋下關 bbox 內（擋掉配到外縣市的座標）
+3. `data.js` 與 `data/*.json` 同步（忘記 `build_data.py` 會被抓到）
+4. 版號 4 處一致（忘記 `bump_version.py` 會被抓到）
+5. `trip.js` 語法（需要 node，沒有就跳過這兩項）
+6. 行程邏輯：12 天、日期↔星期符合 2027 年曆、每天時間遞增、方案標記完整、
+   住宿連續性與換宿次數、每個站點與備選都能在 `data.js` 找到
 
 ## 待確認事項（2027 年官方公告後要回頭查）
 
