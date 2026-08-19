@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>福岡・九州 12 天 — 景點餐廳地圖</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
-<link rel="preload" href="data.js?v=21" as="script">
-<link rel="preload" href="trip.js?v=21" as="script">
+<link rel="preload" href="data.js?v=22" as="script">
+<link rel="preload" href="trip.js?v=22" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="stylesheet" href="libs/leaflet.css">
@@ -186,8 +186,8 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=21"></script>
-<script src="trip.js?v=21"></script>
+<script src="data.js?v=22"></script>
+<script src="trip.js?v=22"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -233,25 +233,93 @@ const GOOGLE_LAYER_NAMES=["Google 道路","Google 衛星","Google 地形"];
 window.__googleBaseActive=false;
 (function initGoogleBase(){
   const key=(typeof GMAPS_KEY!=="undefined")?String(GMAPS_KEY).trim():"";
-  if(!key)return;                      // 沒金鑰就跳過
+  if(!key)return;                      // 沒金鑰就跳過，維持國土地理院
   const cb="__gmapsReady";
+  let gLayers=null, googleOK=false, googleFailed=false, guard=null;
+
+  function notice(msg){
+    let el=document.getElementById('mapNotice');
+    if(!el){
+      el=document.createElement('div'); el.id='mapNotice';
+      el.style.cssText='position:absolute;left:50%;transform:translateX(-50%);top:12px;z-index:1100;'
+        +'max-width:min(560px,92%);background:#fff8e6;border:1px solid #e0c878;color:#6b5a1e;'
+        +'border-radius:10px;padding:9px 34px 9px 12px;font-size:12.5px;line-height:1.7;'
+        +'box-shadow:0 3px 12px rgba(0,0,0,.15)';
+      const x=document.createElement('button');
+      x.textContent='✕';
+      x.style.cssText='position:absolute;top:6px;right:8px;border:0;background:none;cursor:pointer;color:#8a7a3e;font-size:13px';
+      x.onclick=function(){el.remove();};
+      el.appendChild(x);
+      const t=document.createElement('span'); t.id='mapNoticeText'; el.insertBefore(t,x);
+      document.getElementById('map').appendChild(el);
+    }
+    document.getElementById('mapNoticeText').innerHTML=msg;
+  }
+
+  // 退回國土地理院。⚠️ 這支必須是冪等的：gm_authFailure 可能被呼叫多次。
+  // hard=true（認證失敗）才把 Google 選項從圖層選單移除；
+  // 只是逾時的話保留選項，讓使用者網路好的時候可以自己再切一次。
+  function fallbackToGSI(reason,hard){
+    if(googleFailed)return;
+    googleFailed=true;
+    if(guard){clearTimeout(guard);guard=null;}
+    if(gLayers){
+      Object.values(gLayers).forEach(function(l){
+        if(map.hasLayer(l))map.removeLayer(l);
+        if(hard)layerCtl.removeLayer(l);
+      });
+      if(hard)gLayers=null;
+    }
+    if(!map.hasLayer(baseGSI))map.addLayer(baseGSI);
+    window.__googleBaseActive=false;
+    syncOfflineBtn();
+    console.warn('Google 底圖不可用（'+reason+'），已切回國土地理院。');
+    notice('<b>Google 底圖無法使用</b>（'+reason+'），已自動切回<b>國土地理院</b>底圖——地圖與所有圖釘都正常。'
+      +'<br>要修：Google Cloud Console → 該金鑰所屬專案 → 啟用「Maps JavaScript API」並確認已設定計費。');
+  }
+
+  // Google 官方的認證失敗回呼：金鑰無效、API 未啟用、未設定計費、參照網址被擋，都走這裡。
+  // 這是唯一可靠的失敗訊號——script 的 onerror 不會觸發，callback 也照常執行。
+  window.gm_authFailure=function(){ fallbackToGSI('API 未啟用或金鑰受限',true); };
+
   window[cb]=function(){
     try{
-      const g={"Google 道路":L.gridLayer.googleMutant({type:"roadmap"}),
-               "Google 衛星":L.gridLayer.googleMutant({type:"hybrid"}),
-               "Google 地形":L.gridLayer.googleMutant({type:"terrain"})};
-      Object.entries(g).forEach(([n,l])=>layerCtl.addBaseLayer(l,n));
-      // 使用者指定「預設用 Google」：API 載入成功才切，失敗就留在國土地理院
-      map.addLayer(g["Google 道路"]);
-      map.removeLayer(baseGSI);
-      window.__googleBaseActive=true;
-      syncOfflineBtn();                // 程式化切換不會觸發 baselayerchange，手動同步
-    }catch(e){console.warn("Google 底圖初始化失敗：",e);}
+      // GoogleMutant 0.13.4 內部是 `styles: this.options.styles || {}`，
+      // 沒給就傳空物件，但 Google 要求陣列 → 主控台會噴 "Map styles must be an array"。
+      // 明確傳 [] 繞掉這個上游 bug。
+      const base={styles:[]};
+      gLayers={
+        "Google 道路":L.gridLayer.googleMutant(Object.assign({},base,{type:"roadmap"})),
+        "Google 衛星":L.gridLayer.googleMutant(Object.assign({},base,{type:"hybrid"})),
+        "Google 地形":L.gridLayer.googleMutant(Object.assign({},base,{type:"terrain"}))
+      };
+      Object.entries(gLayers).forEach(function(e){layerCtl.addBaseLayer(e[1],e[0]);});
+
+      // ⚠️ 關鍵：先把 Google 疊在國土地理院「之上」，確認沒有認證錯誤才移除底下那層。
+      // 之前的寫法是 callback 一觸發就 removeLayer(baseGSI)，但 script 載入成功 ≠ API 可用；
+      // ApiNotActivatedMapError 是 render 時才報，那時 GSI 已經被移掉 → 整張圖空白（實際踩過）。
+      map.addLayer(gLayers["Google 道路"]);
+      guard=setTimeout(function(){
+        if(googleFailed)return;
+        // 正面確認，不能只靠 gm_authFailure——那支回呼不保證會被呼叫。
+        // Google 認證失敗時會在容器裡塞 .gm-err-container 錯誤遮罩；
+        // 正常時則會有 .gm-style 底下的圖磚 <img>。兩個都檢查。
+        var err=document.querySelector('.gm-err-container,.gm-err-content');
+        var painted=document.querySelectorAll('.gm-style img,.leaflet-google-mutant img').length;
+        if(err){ fallbackToGSI('API 未啟用或金鑰受限',true); return; }
+        if(!painted){ fallbackToGSI('Google 圖磚未載入（網路慢或被擋）',false); return; }
+        googleOK=true;
+        map.removeLayer(baseGSI);          // 確定 Google 真的畫出來了，才拆掉墊底層
+        window.__googleBaseActive=true;
+        syncOfflineBtn();
+      },3500);
+    }catch(e){ fallbackToGSI('初始化例外：'+e.message,true); }
   };
+
   const sc=document.createElement("script");
   sc.async=true;
   sc.src="https://maps.googleapis.com/maps/api/js?key="+encodeURIComponent(key)+"&callback="+cb+"&v=weekly&loading=async";
-  sc.onerror=function(){console.warn("Google Maps API 載入失敗（金鑰或網域限制？），維持國土地理院底圖。");};
+  sc.onerror=function(){ fallbackToGSI('Google Maps API 載入失敗',true); };
   document.head.appendChild(sc);
 })();
 // 切到 Google 底圖時停用離線預載（Google 圖磚不得快取）
@@ -266,6 +334,7 @@ function syncOfflineBtn(){
   }
 }
 map.on('baselayerchange',function(e){
+  var _n=document.getElementById('mapNotice'); if(_n&&!GOOGLE_LAYER_NAMES.includes(e.name))_n.remove();
   window.__googleBaseActive=GOOGLE_LAYER_NAMES.includes(e.name);
   syncOfflineBtn();
 });
@@ -871,7 +940,7 @@ window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('p
     window.addEventListener('load',function(){
       navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){
         if(!('caches' in window))return;
-        caches.open('fukuoka-app-v21').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});
+        caches.open('fukuoka-app-v22').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});
           document.querySelectorAll('script[src],link[href]').forEach(function(el){
             var u=el.src||el.href; if(!u||u.indexOf(location.origin)!==0)return;
             c.match(u).then(function(hit){ if(!hit) c.add(u).catch(function(){}); });
