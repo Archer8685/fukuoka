@@ -22,4 +22,4 @@
 //    所以選 Google 底圖時「離線預載此區地圖」按鈕會停用；
 //    要離線用請切回國土地理院或 OpenStreetMap。
 
-const GMAPS_KEY = "";
+const GMAPS_KEY = "AIzaSyDNfqqy0di91Cc-dXq-MtSVQ6N_t1AtGWg";
