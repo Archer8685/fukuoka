@@ -11,3 +11,5 @@ research/raw/*.html
 research/raw2/*.html
 research/text/
 research/text2/
+.geocode.lock
+audit/.geocode.lock
