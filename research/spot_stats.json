@@ -1,0 +1,1793 @@
+{
+ "n_docs": 52,
+ "rows": [
+  {
+   "name": "太宰府天滿宮",
+   "area": "太宰府",
+   "docs": 43,
+   "mentions": 1510,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b03_carolblog",
+    "b04_gofunit_spots",
+    "b05_gogojp",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b13_funliday_1day",
+    "b19_ryansdaily_itin",
+    "b21_mimihan_kyushu",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b25_gofunit_yanagawa",
+    "b27_bringyou_yanagawa",
+    "b28_journey_yanagawa",
+    "b29_funtime",
+    "b30_gltjp",
+    "b31_5c5g",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b36_letsgojp_866935",
+    "b37_letsgojp_572478",
+    "b38_whatime_yanagawa",
+    "b39_mimigo_dazaifu",
+    "b40_crossroad",
+    "b41_mamahuhu",
+    "b42_ryans_dazaifu",
+    "b43_k1andpause",
+    "b45_wamazing",
+    "VID_v01",
+    "VID_v02",
+    "VID_v04",
+    "VID_v10",
+    "VID_v11",
+    "VID_v13",
+    "VID_v15"
+   ]
+  },
+  {
+   "name": "柳川遊船",
+   "area": "柳川",
+   "docs": 43,
+   "mentions": 1317,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b03_carolblog",
+    "b04_gofunit_spots",
+    "b05_gogojp",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b13_funliday_1day",
+    "b19_ryansdaily_itin",
+    "b20_massi_kyushu",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b25_gofunit_yanagawa",
+    "b27_bringyou_yanagawa",
+    "b28_journey_yanagawa",
+    "b29_funtime",
+    "b30_gltjp",
+    "b31_5c5g",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b36_letsgojp_866935",
+    "b37_letsgojp_572478",
+    "b38_whatime_yanagawa",
+    "b39_mimigo_dazaifu",
+    "b40_crossroad",
+    "b41_mamahuhu",
+    "b42_ryans_dazaifu",
+    "b43_k1andpause",
+    "b45_wamazing",
+    "VID_v01",
+    "VID_v02",
+    "VID_v10",
+    "VID_v11",
+    "VID_v13",
+    "VID_v14",
+    "VID_v15"
+   ]
+  },
+  {
+   "name": "中洲屋台",
+   "area": "博多",
+   "docs": 30,
+   "mentions": 402,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b04_gofunit_spots",
+    "b05_gogojp",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b13_funliday_1day",
+    "b19_ryansdaily_itin",
+    "b21_mimihan_kyushu",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b27_bringyou_yanagawa",
+    "b29_funtime",
+    "b30_gltjp",
+    "b31_5c5g",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b36_letsgojp_866935",
+    "b38_whatime_yanagawa",
+    "b41_mamahuhu",
+    "b43_k1andpause",
+    "b45_wamazing",
+    "VID_v15"
+   ]
+  },
+  {
+   "name": "門司港懷舊區",
+   "area": "北九州",
+   "docs": 30,
+   "mentions": 322,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b03_carolblog",
+    "b04_gofunit_spots",
+    "b05_gogojp",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b13_funliday_1day",
+    "b19_ryansdaily_itin",
+    "b20_massi_kyushu",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b28_journey_yanagawa",
+    "b30_gltjp",
+    "b31_5c5g",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b37_letsgojp_572478",
+    "b38_whatime_yanagawa",
+    "b40_crossroad",
+    "b41_mamahuhu",
+    "b45_wamazing",
+    "VID_v01",
+    "VID_v02"
+   ]
+  },
+  {
+   "name": "梅枝餅",
+   "area": "太宰府",
+   "docs": 27,
+   "mentions": 114,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b03_carolblog",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b13_funliday_1day",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b25_gofunit_yanagawa",
+    "b29_funtime",
+    "b30_gltjp",
+    "b31_5c5g",
+    "b32_matcha",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b36_letsgojp_866935",
+    "b37_letsgojp_572478",
+    "b38_whatime_yanagawa",
+    "b39_mimigo_dazaifu",
+    "b40_crossroad",
+    "b41_mamahuhu",
+    "b42_ryans_dazaifu",
+    "b43_k1andpause"
+   ]
+  },
+  {
+   "name": "一蘭拉麵",
+   "area": "美食",
+   "docs": 27,
+   "mentions": 76,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b03_carolblog",
+    "b04_gofunit_spots",
+    "b05_gogojp",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b13_funliday_1day",
+    "b21_mimihan_kyushu",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b29_funtime",
+    "b31_5c5g",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b37_letsgojp_572478",
+    "b39_mimigo_dazaifu",
+    "b40_crossroad",
+    "b41_mamahuhu",
+    "b42_ryans_dazaifu"
+   ]
+  },
+  {
+   "name": "福岡塔",
+   "area": "百道・海濱",
+   "docs": 26,
+   "mentions": 175,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b03_carolblog",
+    "b04_gofunit_spots",
+    "b05_gogojp",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b19_ryansdaily_itin",
+    "b20_massi_kyushu",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b25_gofunit_yanagawa",
+    "b29_funtime",
+    "b30_gltjp",
+    "b31_5c5g",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b40_crossroad",
+    "b41_mamahuhu"
+   ]
+  },
+  {
+   "name": "博多運河城",
+   "area": "博多",
+   "docs": 25,
+   "mentions": 164,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b03_carolblog",
+    "b04_gofunit_spots",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b13_funliday_1day",
+    "b21_mimihan_kyushu",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b27_bringyou_yanagawa",
+    "b29_funtime",
+    "b30_gltjp",
+    "b31_5c5g",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b39_mimigo_dazaifu",
+    "b40_crossroad"
+   ]
+  },
+  {
+   "name": "大濠公園",
+   "area": "天神・大濠",
+   "docs": 25,
+   "mentions": 134,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b03_carolblog",
+    "b04_gofunit_spots",
+    "b05_gogojp",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b13_funliday_1day",
+    "b19_ryansdaily_itin",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b29_funtime",
+    "b30_gltjp",
+    "b31_5c5g",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b40_crossroad",
+    "b41_mamahuhu"
+   ]
+  },
+  {
+   "name": "博多站/阪急",
+   "area": "博多",
+   "docs": 25,
+   "mentions": 111,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b03_carolblog",
+    "b04_gofunit_spots",
+    "b05_gogojp",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b19_ryansdaily_itin",
+    "b20_massi_kyushu",
+    "b21_mimihan_kyushu",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b27_bringyou_yanagawa",
+    "b29_funtime",
+    "b30_gltjp",
+    "b31_5c5g",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b36_letsgojp_866935",
+    "b37_letsgojp_572478",
+    "b40_crossroad"
+   ]
+  },
+  {
+   "name": "天神地下街",
+   "area": "天神・大濠",
+   "docs": 25,
+   "mentions": 91,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b03_carolblog",
+    "b05_gogojp",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b13_funliday_1day",
+    "b19_ryansdaily_itin",
+    "b21_mimihan_kyushu",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b29_funtime",
+    "b30_gltjp",
+    "b31_5c5g",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b40_crossroad",
+    "b43_k1andpause"
+   ]
+  },
+  {
+   "name": "櫛田神社",
+   "area": "博多",
+   "docs": 24,
+   "mentions": 266,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b03_carolblog",
+    "b04_gofunit_spots",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b19_ryansdaily_itin",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b27_bringyou_yanagawa",
+    "b29_funtime",
+    "b30_gltjp",
+    "b31_5c5g",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b40_crossroad",
+    "b41_mamahuhu"
+   ]
+  },
+  {
+   "name": "マリンワールド海之中道",
+   "area": "百道・海濱",
+   "docs": 22,
+   "mentions": 246,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b03_carolblog",
+    "b04_gofunit_spots",
+    "b05_gogojp",
+    "b06_mimigo_trip",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b12_funliday_attr",
+    "b13_funliday_1day",
+    "b20_massi_kyushu",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b29_funtime",
+    "b30_gltjp",
+    "b31_5c5g",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b40_crossroad"
+   ]
+  },
+  {
+   "name": "明太子",
+   "area": "美食",
+   "docs": 21,
+   "mentions": 130,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b03_carolblog",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b13_funliday_1day",
+    "b19_ryansdaily_itin",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b27_bringyou_yanagawa",
+    "b29_funtime",
+    "b30_gltjp",
+    "b32_matcha",
+    "b34_adventurousmark",
+    "b37_letsgojp_572478",
+    "b41_mamahuhu"
+   ]
+  },
+  {
+   "name": "小倉城",
+   "area": "北九州",
+   "docs": 21,
+   "mentions": 104,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b03_carolblog",
+    "b04_gofunit_spots",
+    "b06_mimigo_trip",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b19_ryansdaily_itin",
+    "b20_massi_kyushu",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b29_funtime",
+    "b30_gltjp",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b38_whatime_yanagawa",
+    "b41_mamahuhu"
+   ]
+  },
+  {
+   "name": "關門海峽/人行海底隧道",
+   "area": "北九州",
+   "docs": 21,
+   "mentions": 80,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b04_gofunit_spots",
+    "b05_gogojp",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b09_letsgojp_350621",
+    "b11_funliday_5days",
+    "b20_massi_kyushu",
+    "b22_littlewave",
+    "b28_journey_yanagawa",
+    "b29_funtime",
+    "b30_gltjp",
+    "b31_5c5g",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b39_mimigo_dazaifu",
+    "b40_crossroad",
+    "b42_ryans_dazaifu"
+   ]
+  },
+  {
+   "name": "糸島",
+   "area": "糸島",
+   "docs": 20,
+   "mentions": 124,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b04_gofunit_spots",
+    "b05_gogojp",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b13_funliday_1day",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b25_gofunit_yanagawa",
+    "b29_funtime",
+    "b30_gltjp",
+    "b32_matcha",
+    "b33_boo2k",
+    "b35_welcometw",
+    "b37_letsgojp_572478",
+    "b40_crossroad"
+   ]
+  },
+  {
+   "name": "teamLab Forest",
+   "area": "福岡市內",
+   "docs": 20,
+   "mentions": 115,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b03_carolblog",
+    "b04_gofunit_spots",
+    "b05_gogojp",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b10_letsgojp_692650",
+    "b12_funliday_attr",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b30_gltjp",
+    "b31_5c5g",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b38_whatime_yanagawa",
+    "b41_mamahuhu"
+   ]
+  },
+  {
+   "name": "竈門神社",
+   "area": "太宰府",
+   "docs": 19,
+   "mentions": 203,
+   "hit": [
+    "b03_carolblog",
+    "b04_gofunit_spots",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b10_letsgojp_692650",
+    "b23_utravel_11",
+    "b25_gofunit_yanagawa",
+    "b29_funtime",
+    "b30_gltjp",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b37_letsgojp_572478",
+    "b39_mimigo_dazaifu",
+    "b42_ryans_dazaifu",
+    "b45_wamazing",
+    "VID_v11",
+    "VID_v15"
+   ]
+  },
+  {
+   "name": "福岡城跡",
+   "area": "天神・大濠",
+   "docs": 19,
+   "mentions": 143,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b03_carolblog",
+    "b04_gofunit_spots",
+    "b05_gogojp",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b13_funliday_1day",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b30_gltjp",
+    "b31_5c5g",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw"
+   ]
+  },
+  {
+   "name": "LaLaport福岡",
+   "area": "福岡市郊",
+   "docs": 19,
+   "mentions": 60,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b04_gofunit_spots",
+    "b05_gogojp",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b19_ryansdaily_itin",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b27_bringyou_yanagawa",
+    "b30_gltjp",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "VID_v04"
+   ]
+  },
+  {
+   "name": "阿蘇火山",
+   "area": "熊本",
+   "docs": 18,
+   "mentions": 74,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b03_carolblog",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b13_funliday_1day",
+    "b19_ryansdaily_itin",
+    "b21_mimihan_kyushu",
+    "b22_littlewave",
+    "b33_boo2k",
+    "b36_letsgojp_866935",
+    "b37_letsgojp_572478",
+    "b39_mimigo_dazaifu",
+    "b41_mamahuhu"
+   ]
+  },
+  {
+   "name": "BOSS E・ZO FUKUOKA",
+   "area": "百道・海濱",
+   "docs": 16,
+   "mentions": 93,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b04_gofunit_spots",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b10_letsgojp_692650",
+    "b12_funliday_attr",
+    "b22_littlewave",
+    "b25_gofunit_yanagawa",
+    "b30_gltjp",
+    "b31_5c5g",
+    "b32_matcha",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b38_whatime_yanagawa"
+   ]
+  },
+  {
+   "name": "柳川蒸籠鰻魚飯",
+   "area": "柳川",
+   "docs": 16,
+   "mentions": 67,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b04_gofunit_spots",
+    "b19_ryansdaily_itin",
+    "b20_massi_kyushu",
+    "b25_gofunit_yanagawa",
+    "b27_bringyou_yanagawa",
+    "b28_journey_yanagawa",
+    "b32_matcha",
+    "b36_letsgojp_866935",
+    "b40_crossroad",
+    "b41_mamahuhu",
+    "b43_k1andpause",
+    "b45_wamazing",
+    "VID_v13",
+    "VID_v14"
+   ]
+  },
+  {
+   "name": "九州國立博物館",
+   "area": "太宰府",
+   "docs": 15,
+   "mentions": 55,
+   "hit": [
+    "b03_carolblog",
+    "b04_gofunit_spots",
+    "b07_minako_travel",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b30_gltjp",
+    "b32_matcha",
+    "b33_boo2k",
+    "b35_welcometw",
+    "b36_letsgojp_866935",
+    "b37_letsgojp_572478",
+    "b41_mamahuhu"
+   ]
+  },
+  {
+   "name": "牛腸鍋(もつ鍋)",
+   "area": "美食",
+   "docs": 15,
+   "mentions": 51,
+   "hit": [
+    "b02_bobbytravel_travel",
+    "b04_gofunit_spots",
+    "b06_mimigo_trip",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b25_gofunit_yanagawa",
+    "b30_gltjp",
+    "b32_matcha",
+    "b35_welcometw",
+    "b41_mamahuhu",
+    "b43_k1andpause",
+    "VID_v07"
+   ]
+  },
+  {
+   "name": "能古島",
+   "area": "百道・海濱",
+   "docs": 14,
+   "mentions": 73,
+   "hit": [
+    "b04_gofunit_spots",
+    "b05_gogojp",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b13_funliday_1day",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b30_gltjp",
+    "b31_5c5g",
+    "b32_matcha",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b40_crossroad"
+   ]
+  },
+  {
+   "name": "櫻井二見浦",
+   "area": "糸島",
+   "docs": 14,
+   "mentions": 72,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b04_gofunit_spots",
+    "b05_gogojp",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b13_funliday_1day",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b29_funtime",
+    "b30_gltjp",
+    "b32_matcha",
+    "b35_welcometw",
+    "b40_crossroad"
+   ]
+  },
+  {
+   "name": "豪斯登堡",
+   "area": "長崎",
+   "docs": 14,
+   "mentions": 27,
+   "hit": [
+    "b03_carolblog",
+    "b04_gofunit_spots",
+    "b05_gogojp",
+    "b06_mimigo_trip",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b13_funliday_1day",
+    "b21_mimihan_kyushu",
+    "b31_5c5g",
+    "b38_whatime_yanagawa",
+    "b39_mimigo_dazaifu",
+    "b43_k1andpause"
+   ]
+  },
+  {
+   "name": "唐戶市場",
+   "area": "下關",
+   "docs": 13,
+   "mentions": 45,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b04_gofunit_spots",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b09_letsgojp_350621",
+    "b11_funliday_5days",
+    "b22_littlewave",
+    "b31_5c5g",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b37_letsgojp_572478"
+   ]
+  },
+  {
+   "name": "黑川溫泉",
+   "area": "熊本",
+   "docs": 13,
+   "mentions": 34,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b05_gogojp",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b19_ryansdaily_itin",
+    "b22_littlewave",
+    "b33_boo2k",
+    "b34_adventurousmark"
+   ]
+  },
+  {
+   "name": "高千穗峽",
+   "area": "宮崎",
+   "docs": 13,
+   "mentions": 29,
+   "hit": [
+    "b05_gogojp",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b21_mimihan_kyushu",
+    "b22_littlewave",
+    "b32_matcha",
+    "b33_boo2k",
+    "b36_letsgojp_866935",
+    "b37_letsgojp_572478",
+    "b41_mamahuhu",
+    "VID_v07"
+   ]
+  },
+  {
+   "name": "皿倉山",
+   "area": "北九州",
+   "docs": 12,
+   "mentions": 57,
+   "hit": [
+    "b04_gofunit_spots",
+    "b08_vivian_attr",
+    "b10_letsgojp_692650",
+    "b20_massi_kyushu",
+    "b30_gltjp",
+    "b31_5c5g",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b40_crossroad",
+    "b43_k1andpause"
+   ]
+  },
+  {
+   "name": "天神大丸/三越/PARCO",
+   "area": "天神・大濠",
+   "docs": 11,
+   "mentions": 43,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b05_gogojp",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b29_funtime",
+    "b31_5c5g",
+    "b33_boo2k",
+    "b41_mamahuhu"
+   ]
+  },
+  {
+   "name": "ゆふいんの森",
+   "area": "由布院",
+   "docs": 11,
+   "mentions": 36,
+   "hit": [
+    "b04_gofunit_spots",
+    "b07_minako_travel",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b19_ryansdaily_itin",
+    "b21_mimihan_kyushu",
+    "b22_littlewave",
+    "b23_utravel_11",
+    "b31_5c5g",
+    "b37_letsgojp_572478",
+    "b41_mamahuhu"
+   ]
+  },
+  {
+   "name": "藥院/白金",
+   "area": "天神・大濠",
+   "docs": 11,
+   "mentions": 35,
+   "hit": [
+    "b02_bobbytravel_travel",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b13_funliday_1day",
+    "b23_utravel_11",
+    "b29_funtime",
+    "b34_adventurousmark",
+    "b41_mamahuhu",
+    "b43_k1andpause",
+    "VID_v01"
+   ]
+  },
+  {
+   "name": "PayPay巨蛋",
+   "area": "百道・海濱",
+   "docs": 11,
+   "mentions": 20,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b04_gofunit_spots",
+    "b05_gogojp",
+    "b08_vivian_attr",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b30_gltjp",
+    "b32_matcha",
+    "b33_boo2k",
+    "b35_welcometw"
+   ]
+  },
+  {
+   "name": "御花",
+   "area": "柳川",
+   "docs": 10,
+   "mentions": 37,
+   "hit": [
+    "b10_letsgojp_692650",
+    "b12_funliday_attr",
+    "b27_bringyou_yanagawa",
+    "b28_journey_yanagawa",
+    "b31_5c5g",
+    "b33_boo2k",
+    "b36_letsgojp_866935",
+    "b37_letsgojp_572478",
+    "b45_wamazing",
+    "VID_v14"
+   ]
+  },
+  {
+   "name": "水炊雞湯鍋",
+   "area": "美食",
+   "docs": 10,
+   "mentions": 27,
+   "hit": [
+    "b02_bobbytravel_travel",
+    "b04_gofunit_spots",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b13_funliday_1day",
+    "b19_ryansdaily_itin",
+    "b25_gofunit_yanagawa",
+    "b30_gltjp",
+    "b35_welcometw"
+   ]
+  },
+  {
+   "name": "三麗鷗彩虹樂園/HARMONYLAND",
+   "area": "近郊",
+   "docs": 10,
+   "mentions": 24,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b04_gofunit_spots",
+    "b06_mimigo_trip",
+    "b09_letsgojp_350621",
+    "b21_mimihan_kyushu",
+    "b22_littlewave",
+    "b29_funtime",
+    "b35_welcometw",
+    "b39_mimigo_dazaifu"
+   ]
+  },
+  {
+   "name": "川端商店街",
+   "area": "博多",
+   "docs": 10,
+   "mentions": 20,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b04_gofunit_spots",
+    "b06_mimigo_trip",
+    "b07_minako_travel",
+    "b09_letsgojp_350621",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b22_littlewave",
+    "b29_funtime",
+    "b33_boo2k"
+   ]
+  },
+  {
+   "name": "旦過市場",
+   "area": "北九州",
+   "docs": 10,
+   "mentions": 19,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b05_gogojp",
+    "b10_letsgojp_692650",
+    "b28_journey_yanagawa",
+    "b32_matcha",
+    "b34_adventurousmark",
+    "b35_welcometw",
+    "b40_crossroad",
+    "b41_mamahuhu"
+   ]
+  },
+  {
+   "name": "東長寺",
+   "area": "博多",
+   "docs": 9,
+   "mentions": 34,
+   "hit": [
+    "b03_carolblog",
+    "b08_vivian_attr",
+    "b22_littlewave",
+    "b30_gltjp",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark",
+    "b37_letsgojp_572478",
+    "b40_crossroad"
+   ]
+  },
+  {
+   "name": "宮地嶽神社",
+   "area": "福岡市郊",
+   "docs": 8,
+   "mentions": 40,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b04_gofunit_spots",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b23_utravel_11",
+    "b29_funtime",
+    "b36_letsgojp_866935",
+    "b40_crossroad"
+   ]
+  },
+  {
+   "name": "住吉神社",
+   "area": "博多",
+   "docs": 8,
+   "mentions": 32,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b04_gofunit_spots",
+    "b06_mimigo_trip",
+    "b10_letsgojp_692650",
+    "b30_gltjp",
+    "b32_matcha",
+    "b33_boo2k",
+    "b34_adventurousmark"
+   ]
+  },
+  {
+   "name": "舊門司三井俱樂部",
+   "area": "北九州",
+   "docs": 8,
+   "mentions": 11,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b04_gofunit_spots",
+    "b10_letsgojp_692650",
+    "b11_funliday_5days",
+    "b22_littlewave",
+    "b31_5c5g",
+    "b33_boo2k",
+    "b35_welcometw"
+   ]
+  },
+  {
+   "name": "南藏院",
+   "area": "福岡市郊",
+   "docs": 7,
+   "mentions": 28,
+   "hit": [
+    "b04_gofunit_spots",
+    "b23_utravel_11",
+    "b29_funtime",
+    "b30_gltjp",
+    "b32_matcha",
+    "b35_welcometw",
+    "b40_crossroad"
+   ]
+  },
+  {
+   "name": "呼子/唐津",
+   "area": "佐賀",
+   "docs": 7,
+   "mentions": 21,
+   "hit": [
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b22_littlewave",
+    "b30_gltjp",
+    "b33_boo2k",
+    "b36_letsgojp_866935",
+    "b37_letsgojp_572478"
+   ]
+  },
+  {
+   "name": "福岡市美術館",
+   "area": "天神・大濠",
+   "docs": 7,
+   "mentions": 18,
+   "hit": [
+    "b03_carolblog",
+    "b04_gofunit_spots",
+    "b08_vivian_attr",
+    "b12_funliday_attr",
+    "b29_funtime",
+    "b35_welcometw",
+    "b40_crossroad"
+   ]
+  },
+  {
+   "name": "由布院金鱗湖",
+   "area": "由布院",
+   "docs": 6,
+   "mentions": 38,
+   "hit": [
+    "b06_mimigo_trip",
+    "b09_letsgojp_350621",
+    "b12_funliday_attr",
+    "b19_ryansdaily_itin",
+    "b21_mimihan_kyushu",
+    "b22_littlewave"
+   ]
+  },
+  {
+   "name": "熊本城",
+   "area": "熊本",
+   "docs": 6,
+   "mentions": 22,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b09_letsgojp_350621",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b19_ryansdaily_itin",
+    "b22_littlewave"
+   ]
+  },
+  {
+   "name": "嬉野溫泉",
+   "area": "佐賀",
+   "docs": 6,
+   "mentions": 22,
+   "hit": [
+    "b03_carolblog",
+    "b09_letsgojp_350621",
+    "b22_littlewave",
+    "b33_boo2k",
+    "b36_letsgojp_866935",
+    "b39_mimigo_dazaifu"
+   ]
+  },
+  {
+   "name": "湯之坪街道",
+   "area": "由布院",
+   "docs": 6,
+   "mentions": 20,
+   "hit": [
+    "b06_mimigo_trip",
+    "b11_funliday_5days",
+    "b12_funliday_attr",
+    "b13_funliday_1day",
+    "b21_mimihan_kyushu",
+    "b22_littlewave"
+   ]
+  },
+  {
+   "name": "白絲瀑布",
+   "area": "糸島",
+   "docs": 6,
+   "mentions": 10,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b02_bobbytravel_travel",
+    "b05_gogojp",
+    "b08_vivian_attr",
+    "b22_littlewave",
+    "b30_gltjp"
+   ]
+  },
+  {
+   "name": "博多利久牛舌",
+   "area": "美食",
+   "docs": 5,
+   "mentions": 13,
+   "hit": [
+    "b03_carolblog",
+    "b19_ryansdaily_itin",
+    "b22_littlewave",
+    "b34_adventurousmark",
+    "b42_ryans_dazaifu"
+   ]
+  },
+  {
+   "name": "河豚",
+   "area": "美食",
+   "docs": 5,
+   "mentions": 13,
+   "hit": [
+    "b07_minako_travel",
+    "b09_letsgojp_350621",
+    "b11_funliday_5days",
+    "b22_littlewave",
+    "b33_boo2k"
+   ]
+  },
+  {
+   "name": "河内藤園",
+   "area": "北九州",
+   "docs": 5,
+   "mentions": 9,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b30_gltjp",
+    "b32_matcha",
+    "b34_adventurousmark",
+    "b40_crossroad"
+   ]
+  },
+  {
+   "name": "別府地獄巡禮",
+   "area": "別府",
+   "docs": 5,
+   "mentions": 8,
+   "hit": [
+    "b07_minako_travel",
+    "b20_massi_kyushu",
+    "b21_mimihan_kyushu",
+    "b22_littlewave",
+    "b34_adventurousmark"
+   ]
+  },
+  {
+   "name": "軍艦島",
+   "area": "長崎",
+   "docs": 5,
+   "mentions": 6,
+   "hit": [
+    "b06_mimigo_trip",
+    "b09_letsgojp_350621",
+    "b11_funliday_5days",
+    "b21_mimihan_kyushu",
+    "b31_5c5g"
+   ]
+  },
+  {
+   "name": "稻佐山夜景",
+   "area": "長崎",
+   "docs": 4,
+   "mentions": 20,
+   "hit": [
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b36_letsgojp_866935",
+    "b37_letsgojp_572478"
+   ]
+  },
+  {
+   "name": "志賀島",
+   "area": "百道・海濱",
+   "docs": 4,
+   "mentions": 8,
+   "hit": [
+    "b04_gofunit_spots",
+    "b08_vivian_attr",
+    "b09_letsgojp_350621",
+    "b13_funliday_1day"
+   ]
+  },
+  {
+   "name": "天開稻荷社",
+   "area": "太宰府",
+   "docs": 4,
+   "mentions": 8,
+   "hit": [
+    "b37_letsgojp_572478",
+    "b38_whatime_yanagawa",
+    "b42_ryans_dazaifu",
+    "VID_v11"
+   ]
+  },
+  {
+   "name": "海濱百道公園",
+   "area": "百道・海濱",
+   "docs": 4,
+   "mentions": 6,
+   "hit": [
+    "b04_gofunit_spots",
+    "b10_letsgojp_692650",
+    "b12_funliday_attr",
+    "b29_funtime"
+   ]
+  },
+  {
+   "name": "祐德稻荷神社",
+   "area": "佐賀",
+   "docs": 4,
+   "mentions": 5,
+   "hit": [
+    "b09_letsgojp_350621",
+    "b10_letsgojp_692650",
+    "b22_littlewave",
+    "b36_letsgojp_866935"
+   ]
+  },
+  {
+   "name": "警固神社",
+   "area": "天神・大濠",
+   "docs": 3,
+   "mentions": 11,
+   "hit": [
+    "b07_minako_travel",
+    "b29_funtime",
+    "b33_boo2k"
+   ]
+  },
+  {
+   "name": "光明禪寺",
+   "area": "太宰府",
+   "docs": 3,
+   "mentions": 7,
+   "hit": [
+    "b10_letsgojp_692650",
+    "b22_littlewave",
+    "b37_letsgojp_572478"
+   ]
+  },
+  {
+   "name": "一幸舍",
+   "area": "美食",
+   "docs": 3,
+   "mentions": 6,
+   "hit": [
+    "b22_littlewave",
+    "b30_gltjp",
+    "b32_matcha"
+   ]
+  },
+  {
+   "name": "かさの家",
+   "area": "太宰府",
+   "docs": 3,
+   "mentions": 5,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b22_littlewave",
+    "b41_mamahuhu"
+   ]
+  },
+  {
+   "name": "Shin Shin拉麵",
+   "area": "美食",
+   "docs": 3,
+   "mentions": 5,
+   "hit": [
+    "b02_bobbytravel_travel",
+    "b06_mimigo_trip",
+    "VID_v01"
+   ]
+  },
+  {
+   "name": "日田豆田町",
+   "area": "大分",
+   "docs": 3,
+   "mentions": 4,
+   "hit": [
+    "b05_gogojp",
+    "b09_letsgojp_350621",
+    "b33_boo2k"
+   ]
+  },
+  {
+   "name": "博多町家鄉土館",
+   "area": "博多",
+   "docs": 3,
+   "mentions": 3,
+   "hit": [
+    "b12_funliday_attr",
+    "b22_littlewave",
+    "b31_5c5g"
+   ]
+  },
+  {
+   "name": "角島大橋",
+   "area": "下關",
+   "docs": 3,
+   "mentions": 3,
+   "hit": [
+    "b07_minako_travel",
+    "b11_funliday_5days",
+    "b22_littlewave"
+   ]
+  },
+  {
+   "name": "赤間神宮",
+   "area": "下關",
+   "docs": 3,
+   "mentions": 3,
+   "hit": [
+    "b04_gofunit_spots",
+    "b22_littlewave",
+    "b35_welcometw"
+   ]
+  },
+  {
+   "name": "元乃隅神社",
+   "area": "下關",
+   "docs": 3,
+   "mentions": 3,
+   "hit": [
+    "b07_minako_travel",
+    "b11_funliday_5days",
+    "b33_boo2k"
+   ]
+  },
+  {
+   "name": "MARK IS 福岡ももち",
+   "area": "百道・海濱",
+   "docs": 2,
+   "mentions": 6,
+   "hit": [
+    "b22_littlewave",
+    "b33_boo2k"
+   ]
+  },
+  {
+   "name": "別府纜車/鶴見岳",
+   "area": "別府",
+   "docs": 2,
+   "mentions": 6,
+   "hit": [
+    "b20_massi_kyushu",
+    "b22_littlewave"
+   ]
+  },
+  {
+   "name": "草千里",
+   "area": "熊本",
+   "docs": 2,
+   "mentions": 6,
+   "hit": [
+    "b09_letsgojp_350621",
+    "b22_littlewave"
+   ]
+  },
+  {
+   "name": "北九州漫畫博物館",
+   "area": "北九州",
+   "docs": 2,
+   "mentions": 4,
+   "hit": [
+    "b03_carolblog",
+    "b33_boo2k"
+   ]
+  },
+  {
+   "name": "福岡市博物館",
+   "area": "百道・海濱",
+   "docs": 2,
+   "mentions": 3,
+   "hit": [
+    "b22_littlewave",
+    "b35_welcometw"
+   ]
+  },
+  {
+   "name": "牡蠣小屋",
+   "area": "糸島",
+   "docs": 2,
+   "mentions": 2,
+   "hit": [
+    "b01_bobbytravel_attractions",
+    "b40_crossroad"
+   ]
+  },
+  {
+   "name": "和平公園/原爆資料館",
+   "area": "長崎",
+   "docs": 1,
+   "mentions": 6,
+   "hit": [
+    "b09_letsgojp_350621"
+   ]
+  },
+  {
+   "name": "眼鏡橋",
+   "area": "長崎",
+   "docs": 1,
+   "mentions": 3,
+   "hit": [
+    "b09_letsgojp_350621"
+   ]
+  },
+  {
+   "name": "住吉/樂天地",
+   "area": "博多",
+   "docs": 1,
+   "mentions": 2,
+   "hit": [
+    "b02_bobbytravel_travel"
+   ]
+  },
+  {
+   "name": "九重夢大吊橋",
+   "area": "大分",
+   "docs": 1,
+   "mentions": 2,
+   "hit": [
+    "b22_littlewave"
+   ]
+  },
+  {
+   "name": "極味屋漢堡排",
+   "area": "美食",
+   "docs": 1,
+   "mentions": 2,
+   "hit": [
+    "b22_littlewave"
+   ]
+  },
+  {
+   "name": "警固/今泉",
+   "area": "天神・大濠",
+   "docs": 1,
+   "mentions": 1,
+   "hit": [
+    "b07_minako_travel"
+   ]
+  },
+  {
+   "name": "Fukuoka Open Top Bus",
+   "area": "福岡市內",
+   "docs": 1,
+   "mentions": 1,
+   "hit": [
+    "b30_gltjp"
+   ]
+  },
+  {
+   "name": "海響館",
+   "area": "下關",
+   "docs": 1,
+   "mentions": 1,
+   "hit": [
+    "b01_bobbytravel_attractions"
+   ]
+  },
+  {
+   "name": "芥屋大門",
+   "area": "糸島",
+   "docs": 1,
+   "mentions": 1,
+   "hit": [
+    "b05_gogojp"
+   ]
+  },
+  {
+   "name": "由布院floral village",
+   "area": "由布院",
+   "docs": 1,
+   "mentions": 1,
+   "hit": [
+    "b22_littlewave"
+   ]
+  },
+  {
+   "name": "長崎哥拉巴園",
+   "area": "長崎",
+   "docs": 1,
+   "mentions": 1,
+   "hit": [
+    "b09_letsgojp_350621"
+   ]
+  },
+  {
+   "name": "天婦羅ひらお",
+   "area": "美食",
+   "docs": 1,
+   "mentions": 1,
+   "hit": [
+    "b32_matcha"
+   ]
+  },
+  {
+   "name": "承天寺",
+   "area": "博多",
+   "docs": 0,
+   "mentions": 0,
+   "hit": []
+  },
+  {
+   "name": "水鏡天滿宮",
+   "area": "天神・大濠",
+   "docs": 0,
+   "mentions": 0,
+   "hit": []
+  },
+  {
+   "name": "赤煉瓦文化館",
+   "area": "天神・大濠",
+   "docs": 0,
+   "mentions": 0,
+   "hit": []
+  },
+  {
+   "name": "香椎宮",
+   "area": "福岡市郊",
+   "docs": 0,
+   "mentions": 0,
+   "hit": []
+  },
+  {
+   "name": "PALM BEACH/天使之翼",
+   "area": "糸島",
+   "docs": 0,
+   "mentions": 0,
+   "hit": []
+  },
+  {
+   "name": "大浦天主堂",
+   "area": "長崎",
+   "docs": 0,
+   "mentions": 0,
+   "hit": []
+  },
+  {
+   "name": "出島",
+   "area": "長崎",
+   "docs": 0,
+   "mentions": 0,
+   "hit": []
+  },
+  {
+   "name": "長崎新地中華街",
+   "area": "長崎",
+   "docs": 0,
+   "mentions": 0,
+   "hit": []
+  },
+  {
+   "name": "長崎燈會",
+   "area": "長崎",
+   "docs": 0,
+   "mentions": 0,
+   "hit": []
+  },
+  {
+   "name": "吉野里遺跡",
+   "area": "佐賀",
+   "docs": 0,
+   "mentions": 0,
+   "hit": []
+  }
+ ]
+}

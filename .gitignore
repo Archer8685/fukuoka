@@ -4,3 +4,10 @@ Thumbs.db
 __pycache__/
 *.py[cod]
 .claude/
+
+# 研究語料：抓取的第三方網頁與抽出的正文，不進公開 repo
+# （著作權 + 43MB 體積；分析結果 *.json 與腳本有版控就夠了）
+research/raw/*.html
+research/raw2/*.html
+research/text/
+research/text2/

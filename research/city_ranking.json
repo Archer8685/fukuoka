@@ -1,0 +1,424 @@
+[
+ {
+  "city": "柳川",
+  "docs": 43,
+  "share": 82.7,
+  "hours": 1.0,
+  "access": "西鐵 50 分",
+  "spots": [
+   {
+    "name": "柳川遊船",
+    "hits": 47
+   },
+   {
+    "name": "御花",
+    "hits": 12
+   }
+  ]
+ },
+ {
+  "city": "太宰府",
+  "docs": 43,
+  "share": 82.7,
+  "hours": 0.5,
+  "access": "西鐵 30 分",
+  "spots": [
+   {
+    "name": "太宰府天滿宮",
+    "hits": 68
+   },
+   {
+    "name": "竈門神社",
+    "hits": 26
+   },
+   {
+    "name": "九州國立博物館",
+    "hits": 22
+   },
+   {
+    "name": "南藏院",
+    "hits": 11
+   }
+  ]
+ },
+ {
+  "city": "北九州/小倉",
+  "docs": 39,
+  "share": 75.0,
+  "hours": 0.3,
+  "access": "新幹線 16 分",
+  "spots": [
+   {
+    "name": "門司港復古區",
+    "hits": 79
+   },
+   {
+    "name": "小倉城",
+    "hits": 37
+   },
+   {
+    "name": "皿倉山",
+    "hits": 19
+   },
+   {
+    "name": "旦過市場",
+    "hits": 19
+   },
+   {
+    "name": "九州鐵道紀念館",
+    "hits": 18
+   }
+  ]
+ },
+ {
+  "city": "由布院",
+  "docs": 31,
+  "share": 59.6,
+  "hours": 2.2,
+  "access": "特急 2 小時",
+  "spots": [
+   {
+    "name": "金鱗湖",
+    "hits": 36
+   },
+   {
+    "name": "由布院湯之坪",
+    "hits": 29
+   }
+  ]
+ },
+ {
+  "city": "熊本",
+  "docs": 31,
+  "share": 59.6,
+  "hours": 0.7,
+  "access": "新幹線 40 分",
+  "spots": [
+   {
+    "name": "熊本城",
+    "hits": 29
+   },
+   {
+    "name": "熊本熊部長辦公室",
+    "hits": 18
+   },
+   {
+    "name": "水前寺成趣園",
+    "hits": 17
+   }
+  ]
+ },
+ {
+  "city": "門司港",
+  "docs": 30,
+  "share": 57.7,
+  "hours": 1.3,
+  "access": "JR 1.5 小時",
+  "spots": []
+ },
+ {
+  "city": "長崎",
+  "docs": 29,
+  "share": 55.8,
+  "hours": 2.0,
+  "access": "新幹線+特急 2 小時",
+  "spots": [
+   {
+    "name": "稻佐山",
+    "hits": 18
+   },
+   {
+    "name": "軍艦島",
+    "hits": 14
+   }
+  ]
+ },
+ {
+  "city": "鹿兒島",
+  "docs": 24,
+  "share": 46.2,
+  "hours": 1.6,
+  "access": "新幹線 1.6 小時",
+  "spots": [
+   {
+    "name": "指宿砂浴",
+    "hits": 26
+   },
+   {
+    "name": "櫻島",
+    "hits": 21
+   },
+   {
+    "name": "霧島神宮",
+    "hits": 14
+   },
+   {
+    "name": "天文館",
+    "hits": 10
+   }
+  ]
+ },
+ {
+  "city": "別府",
+  "docs": 24,
+  "share": 46.2,
+  "hours": 2.2,
+  "access": "特急 2 小時",
+  "spots": [
+   {
+    "name": "別府地獄巡",
+    "hits": 27
+   },
+   {
+    "name": "砂湯",
+    "hits": 12
+   },
+   {
+    "name": "別府纜車",
+    "hits": 10
+   }
+  ]
+ },
+ {
+  "city": "糸島",
+  "docs": 20,
+  "share": 38.5,
+  "hours": 0.7,
+  "access": "JR+車 40 分",
+  "spots": [
+   {
+    "name": "糸島",
+    "hits": 36
+   }
+  ]
+ },
+ {
+  "city": "佐賀",
+  "docs": 19,
+  "share": 36.5,
+  "hours": 1.0,
+  "access": "JR 1 小時",
+  "spots": [
+   {
+    "name": "祐德稻荷神社",
+    "hits": 21
+   },
+   {
+    "name": "大魚神社海中鳥居",
+    "hits": 13
+   },
+   {
+    "name": "吉野里遺跡",
+    "hits": 11
+   }
+  ]
+ },
+ {
+  "city": "下關",
+  "docs": 19,
+  "share": 36.5,
+  "hours": 1.5,
+  "access": "JR+船 1.5 小時",
+  "spots": [
+   {
+    "name": "唐戶市場",
+    "hits": 37
+   },
+   {
+    "name": "赤間神宮",
+    "hits": 12
+   },
+   {
+    "name": "巖流島",
+    "hits": 10
+   }
+  ]
+ },
+ {
+  "city": "阿蘇",
+  "docs": 18,
+  "share": 34.6,
+  "hours": 2.5,
+  "access": "新幹線+車 2.5 小時",
+  "spots": [
+   {
+    "name": "阿蘇火山",
+    "hits": 39
+   },
+   {
+    "name": "上色見熊野座",
+    "hits": 10
+   }
+  ]
+ },
+ {
+  "city": "佐世保/豪斯登堡",
+  "docs": 17,
+  "share": 32.7,
+  "hours": 1.7,
+  "access": "特急 1.7 小時",
+  "spots": [
+   {
+    "name": "豪斯登堡",
+    "hits": 52
+   },
+   {
+    "name": "九十九島",
+    "hits": 24
+   }
+  ]
+ },
+ {
+  "city": "黑川溫泉",
+  "docs": 13,
+  "share": 25.0,
+  "hours": 3.0,
+  "access": "巴士 3 小時",
+  "spots": [
+   {
+    "name": "黑川溫泉",
+    "hits": 47
+   }
+  ]
+ },
+ {
+  "city": "福津",
+  "docs": 8,
+  "share": 15.4,
+  "hours": 0.8,
+  "access": "JR+巴士 50 分",
+  "spots": [
+   {
+    "name": "宮地嶽神社",
+    "hits": 12
+   }
+  ]
+ },
+ {
+  "city": "武雄/嬉野",
+  "docs": 8,
+  "share": 15.4,
+  "hours": 1.4,
+  "access": "西九州新幹線",
+  "spots": [
+   {
+    "name": "武雄溫泉樓門",
+    "hits": 29
+   },
+   {
+    "name": "嬉野溫泉",
+    "hits": 27
+   },
+   {
+    "name": "御船山樂園",
+    "hits": 17
+   }
+  ]
+ },
+ {
+  "city": "唐津/呼子",
+  "docs": 7,
+  "share": 13.5,
+  "hours": 1.3,
+  "access": "地鐵直通 1.3 小時",
+  "spots": [
+   {
+    "name": "唐津城",
+    "hits": 20
+   },
+   {
+    "name": "虹之松原",
+    "hits": 18
+   },
+   {
+    "name": "呼子朝市",
+    "hits": 18
+   },
+   {
+    "name": "七釜洞窟",
+    "hits": 12
+   }
+  ]
+ },
+ {
+  "city": "八女",
+  "docs": 7,
+  "share": 13.5,
+  "hours": 1.2,
+  "access": "巴士 1.2 小時",
+  "spots": [
+   {
+    "name": "八女福島",
+    "hits": 15
+   }
+  ]
+ },
+ {
+  "city": "久留米",
+  "docs": 7,
+  "share": 13.5,
+  "hours": 0.7,
+  "access": "新幹線 17 分",
+  "spots": []
+ },
+ {
+  "city": "山口/角島",
+  "docs": 4,
+  "share": 7.7,
+  "hours": 2.5,
+  "access": "新幹線+車 2.5 小時",
+  "spots": [
+   {
+    "name": "角島大橋",
+    "hits": 16
+   },
+   {
+    "name": "元乃隅神社",
+    "hits": 16
+   },
+   {
+    "name": "秋芳洞",
+    "hits": 10
+   }
+  ]
+ },
+ {
+  "city": "日田",
+  "docs": 3,
+  "share": 5.8,
+  "hours": 1.5,
+  "access": "特急 1.5 小時",
+  "spots": [
+   {
+    "name": "豆田町",
+    "hits": 13
+   }
+  ]
+ },
+ {
+  "city": "雲仙/島原",
+  "docs": 2,
+  "share": 3.8,
+  "hours": 2.5,
+  "access": "2.5 小時以上",
+  "spots": [
+   {
+    "name": "雲仙地獄",
+    "hits": 20
+   }
+  ]
+ },
+ {
+  "city": "有田",
+  "docs": 0,
+  "share": 0.0,
+  "hours": 1.5,
+  "access": "JR 1.5 小時",
+  "spots": [
+   {
+    "name": "有田陶瓷",
+    "hits": 23
+   }
+  ]
+ }
+]

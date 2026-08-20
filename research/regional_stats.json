@@ -1,0 +1,464 @@
+[
+ {
+  "hits": 79,
+  "name": "門司港復古區",
+  "city": "北九州",
+  "hours": 1.3
+ },
+ {
+  "hits": 68,
+  "name": "太宰府天滿宮",
+  "city": "太宰府",
+  "hours": 0.5
+ },
+ {
+  "hits": 52,
+  "name": "豪斯登堡",
+  "city": "佐世保",
+  "hours": 1.7
+ },
+ {
+  "hits": 47,
+  "name": "黑川溫泉",
+  "city": "黑川",
+  "hours": 3.0
+ },
+ {
+  "hits": 47,
+  "name": "柳川遊船",
+  "city": "柳川",
+  "hours": 1.0
+ },
+ {
+  "hits": 47,
+  "name": "中洲屋台",
+  "city": "福岡市",
+  "hours": 0
+ },
+ {
+  "hits": 44,
+  "name": "福岡塔",
+  "city": "福岡市",
+  "hours": 0
+ },
+ {
+  "hits": 39,
+  "name": "阿蘇火山",
+  "city": "阿蘇",
+  "hours": 2.5
+ },
+ {
+  "hits": 37,
+  "name": "小倉城",
+  "city": "北九州",
+  "hours": 0.3
+ },
+ {
+  "hits": 37,
+  "name": "唐戶市場",
+  "city": "下關",
+  "hours": 1.5
+ },
+ {
+  "hits": 36,
+  "name": "金鱗湖",
+  "city": "由布院",
+  "hours": 2.2
+ },
+ {
+  "hits": 36,
+  "name": "糸島",
+  "city": "糸島",
+  "hours": 0.7
+ },
+ {
+  "hits": 35,
+  "name": "teamLab Forest",
+  "city": "福岡市",
+  "hours": 0
+ },
+ {
+  "hits": 34,
+  "name": "櫛田神社",
+  "city": "福岡市",
+  "hours": 0
+ },
+ {
+  "hits": 31,
+  "name": "海之中道",
+  "city": "福岡市",
+  "hours": 0.5
+ },
+ {
+  "hits": 29,
+  "name": "由布院湯之坪",
+  "city": "由布院",
+  "hours": 2.2
+ },
+ {
+  "hits": 29,
+  "name": "熊本城",
+  "city": "熊本",
+  "hours": 0.7
+ },
+ {
+  "hits": 29,
+  "name": "武雄溫泉樓門",
+  "city": "武雄",
+  "hours": 1.3
+ },
+ {
+  "hits": 29,
+  "name": "大濠公園",
+  "city": "福岡市",
+  "hours": 0
+ },
+ {
+  "hits": 27,
+  "name": "嬉野溫泉",
+  "city": "嬉野",
+  "hours": 1.5
+ },
+ {
+  "hits": 27,
+  "name": "別府地獄巡",
+  "city": "別府",
+  "hours": 2.2
+ },
+ {
+  "hits": 26,
+  "name": "竈門神社",
+  "city": "太宰府",
+  "hours": 0.7
+ },
+ {
+  "hits": 26,
+  "name": "指宿砂浴",
+  "city": "指宿",
+  "hours": 2.5
+ },
+ {
+  "hits": 24,
+  "name": "九十九島",
+  "city": "佐世保",
+  "hours": 2.0
+ },
+ {
+  "hits": 23,
+  "name": "有田陶瓷",
+  "city": "有田",
+  "hours": 1.5
+ },
+ {
+  "hits": 22,
+  "name": "九州國立博物館",
+  "city": "太宰府",
+  "hours": 0.6
+ },
+ {
+  "hits": 21,
+  "name": "祐德稻荷神社",
+  "city": "鹿島",
+  "hours": 1.5
+ },
+ {
+  "hits": 21,
+  "name": "櫻島",
+  "city": "鹿兒島",
+  "hours": 1.6
+ },
+ {
+  "hits": 20,
+  "name": "雲仙地獄",
+  "city": "雲仙",
+  "hours": 2.5
+ },
+ {
+  "hits": 20,
+  "name": "唐津城",
+  "city": "唐津",
+  "hours": 1.3
+ },
+ {
+  "hits": 19,
+  "name": "能古島",
+  "city": "福岡市",
+  "hours": 0.5
+ },
+ {
+  "hits": 19,
+  "name": "皿倉山",
+  "city": "北九州",
+  "hours": 1.0
+ },
+ {
+  "hits": 19,
+  "name": "旦過市場",
+  "city": "北九州",
+  "hours": 0.3
+ },
+ {
+  "hits": 18,
+  "name": "虹之松原",
+  "city": "唐津",
+  "hours": 1.3
+ },
+ {
+  "hits": 18,
+  "name": "稻佐山",
+  "city": "長崎",
+  "hours": 2.0
+ },
+ {
+  "hits": 18,
+  "name": "熊本熊部長辦公室",
+  "city": "熊本",
+  "hours": 0.7
+ },
+ {
+  "hits": 18,
+  "name": "呼子朝市",
+  "city": "唐津",
+  "hours": 1.8
+ },
+ {
+  "hits": 18,
+  "name": "九州鐵道紀念館",
+  "city": "北九州",
+  "hours": 1.3
+ },
+ {
+  "hits": 17,
+  "name": "水前寺成趣園",
+  "city": "熊本",
+  "hours": 0.9
+ },
+ {
+  "hits": 17,
+  "name": "御船山樂園",
+  "city": "武雄",
+  "hours": 1.4
+ },
+ {
+  "hits": 16,
+  "name": "角島大橋",
+  "city": "山口",
+  "hours": 2.5
+ },
+ {
+  "hits": 16,
+  "name": "元乃隅神社",
+  "city": "山口",
+  "hours": 3.0
+ },
+ {
+  "hits": 15,
+  "name": "八女福島",
+  "city": "八女",
+  "hours": 1.2
+ },
+ {
+  "hits": 14,
+  "name": "霧島神宮",
+  "city": "霧島",
+  "hours": 2.2
+ },
+ {
+  "hits": 14,
+  "name": "軍艦島",
+  "city": "長崎",
+  "hours": 2.5
+ },
+ {
+  "hits": 13,
+  "name": "豆田町",
+  "city": "日田",
+  "hours": 1.5
+ },
+ {
+  "hits": 13,
+  "name": "大魚神社海中鳥居",
+  "city": "太良",
+  "hours": 1.8
+ },
+ {
+  "hits": 12,
+  "name": "赤間神宮",
+  "city": "下關",
+  "hours": 1.5
+ },
+ {
+  "hits": 12,
+  "name": "砂湯",
+  "city": "別府",
+  "hours": 2.2
+ },
+ {
+  "hits": 12,
+  "name": "御花",
+  "city": "柳川",
+  "hours": 1.0
+ },
+ {
+  "hits": 12,
+  "name": "宮地嶽神社",
+  "city": "福津",
+  "hours": 0.8
+ },
+ {
+  "hits": 12,
+  "name": "七釜洞窟",
+  "city": "唐津",
+  "hours": 1.8
+ },
+ {
+  "hits": 11,
+  "name": "吉野里遺跡",
+  "city": "佐賀",
+  "hours": 0.7
+ },
+ {
+  "hits": 11,
+  "name": "南藏院",
+  "city": "篠栗",
+  "hours": 0.5
+ },
+ {
+  "hits": 10,
+  "name": "秋芳洞",
+  "city": "山口",
+  "hours": 2.2
+ },
+ {
+  "hits": 10,
+  "name": "巖流島",
+  "city": "下關",
+  "hours": 1.6
+ },
+ {
+  "hits": 10,
+  "name": "天文館",
+  "city": "鹿兒島",
+  "hours": 1.6
+ },
+ {
+  "hits": 10,
+  "name": "別府纜車",
+  "city": "別府",
+  "hours": 2.3
+ },
+ {
+  "hits": 10,
+  "name": "上色見熊野座",
+  "city": "高森",
+  "hours": 3.0
+ },
+ {
+  "hits": 9,
+  "name": "眼鏡橋",
+  "city": "長崎",
+  "hours": 2.0
+ },
+ {
+  "hits": 9,
+  "name": "武雄圖書館",
+  "city": "武雄",
+  "hours": 1.3
+ },
+ {
+  "hits": 9,
+  "name": "住吉神社",
+  "city": "福岡市",
+  "hours": 0
+ },
+ {
+  "hits": 8,
+  "name": "原爆資料館",
+  "city": "長崎",
+  "hours": 2.0
+ },
+ {
+  "hits": 8,
+  "name": "仙巖園",
+  "city": "鹿兒島",
+  "hours": 1.6
+ },
+ {
+  "hits": 7,
+  "name": "福岡市美術館",
+  "city": "福岡市",
+  "hours": 0
+ },
+ {
+  "hits": 7,
+  "name": "平和公園",
+  "city": "長崎",
+  "hours": 2.0
+ },
+ {
+  "hits": 7,
+  "name": "島原城",
+  "city": "島原",
+  "hours": 2.5
+ },
+ {
+  "hits": 7,
+  "name": "哥拉巴園",
+  "city": "長崎",
+  "hours": 2.0
+ },
+ {
+  "hits": 7,
+  "name": "出島",
+  "city": "長崎",
+  "hours": 2.0
+ },
+ {
+  "hits": 6,
+  "name": "長崎新地中華街",
+  "city": "長崎",
+  "hours": 2.0
+ },
+ {
+  "hits": 6,
+  "name": "海響館",
+  "city": "下關",
+  "hours": 1.5
+ },
+ {
+  "hits": 6,
+  "name": "天開稻荷社",
+  "city": "太宰府",
+  "hours": 0.7
+ },
+ {
+  "hits": 6,
+  "name": "大浦天主堂",
+  "city": "長崎",
+  "hours": 2.0
+ },
+ {
+  "hits": 6,
+  "name": "佐賀城本丸",
+  "city": "佐賀",
+  "hours": 1.0
+ },
+ {
+  "hits": 5,
+  "name": "錦帶橋",
+  "city": "山口",
+  "hours": 2.0
+ },
+ {
+  "hits": 2,
+  "name": "鍋之瀧",
+  "city": "小國",
+  "hours": 3.0
+ },
+ {
+  "hits": 1,
+  "name": "成田山久留米",
+  "city": "久留米",
+  "hours": 0.7
+ }
+]

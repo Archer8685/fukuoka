@@ -1,0 +1,706 @@
+{
+ "福岡": [
+  {
+   "hits": 0,
+   "date": "2/1",
+   "time": "13:45",
+   "kind": "spot",
+   "name": "Loopwheeler 福岡",
+   "label": "🛍 藥院・整趟只有今天"
+  },
+  {
+   "hits": 0,
+   "date": "2/1",
+   "time": "14:40",
+   "kind": "spot",
+   "name": "DICE & DICE",
+   "label": "🛍 今泉核心"
+  },
+  {
+   "hits": 0,
+   "date": "2/1",
+   "time": "15:40",
+   "kind": "spot",
+   "name": "KAPITAL 福岡",
+   "label": "🛍 大名・重水洗工藝"
+  },
+  {
+   "hits": 0,
+   "date": "2/1",
+   "time": "16:35",
+   "kind": "spot",
+   "name": "Kaddish",
+   "label": "🛍 大名 1 丁目 1 番・四家並排"
+  },
+  {
+   "hits": 0,
+   "date": "2/1",
+   "time": "17:10",
+   "kind": "spot",
+   "name": "#FR2 福岡",
+   "label": "🛍 地區限定圖案"
+  },
+  {
+   "hits": 0,
+   "date": "2/10",
+   "time": "18:45",
+   "kind": "meal",
+   "name": "とり田 博多本店",
+   "label": "晚餐・博多水炊き"
+  },
+  {
+   "hits": 0,
+   "date": "2/11",
+   "time": "17:30",
+   "kind": "spot",
+   "name": "animate 福岡PARCO店",
+   "label": "🎀 動漫掃街"
+  },
+  {
+   "hits": 0,
+   "date": "2/11",
+   "time": "18:15",
+   "kind": "spot",
+   "name": "VIORO",
+   "label": "🛍 岩田屋旁・金子眼鏡"
+  },
+  {
+   "hits": 0,
+   "date": "2/11",
+   "time": "19:00",
+   "kind": "meal",
+   "name": "博多 喜多郎寿し",
+   "label": "晚餐・壽司居酒屋"
+  },
+  {
+   "hits": 0,
+   "date": "2/12",
+   "time": "10:00",
+   "kind": "spot",
+   "name": "BIOTOP 福岡",
+   "label": "🛍 赤坂・最早開門的一家"
+  },
+  {
+   "hits": 0,
+   "date": "2/12",
+   "time": "10:35",
+   "kind": "spot",
+   "name": "工藝風向",
+   "label": "🛍 民藝・板友私心 5 星"
+  },
+  {
+   "hits": 0,
+   "date": "2/12",
+   "time": "11:05",
+   "kind": "spot",
+   "name": "F.I.L. FUKUOKA（visvim）",
+   "label": "🛍 visvim 直營"
+  },
+  {
+   "hits": 0,
+   "date": "2/12",
+   "time": "11:40",
+   "kind": "spot",
+   "name": "HUES",
+   "label": "🛍 警固・機能與暗黑先鋒"
+  },
+  {
+   "hits": 0,
+   "date": "2/3",
+   "time": "12:00",
+   "kind": "spot",
+   "name": "NEPENTHES HAKATA",
+   "label": "🛍 選貨店・零繞路"
+  },
+  {
+   "hits": 0,
+   "date": "2/3",
+   "time": "16:30",
+   "kind": "spot",
+   "name": "LIGHT YEARS",
+   "label": "🛍 民藝・如骨董博物館"
+  },
+  {
+   "hits": 0,
+   "date": "2/3",
+   "time": "18:15",
+   "kind": "meal",
+   "name": "博多 魚蔵（都ホテル博多）",
+   "label": "晚餐 ☪ 清真和食"
+  },
+  {
+   "hits": 1,
+   "date": "2/1",
+   "time": "12:45",
+   "kind": "meal",
+   "name": "天麩羅処 ひらお（天神店）",
+   "label": "午餐・現炸天婦羅定食"
+  },
+  {
+   "hits": 1,
+   "date": "2/10",
+   "time": "15:20",
+   "kind": "spot",
+   "name": "鋼彈公園福岡",
+   "label": "⚔️ GUNDAM SIDE-F"
+  },
+  {
+   "hits": 1,
+   "date": "2/11",
+   "time": "10:15",
+   "kind": "spot",
+   "name": "柳川雛祭 さげもんめぐり",
+   "label": "🎎 開幕日"
+  },
+  {
+   "hits": 1,
+   "date": "2/3",
+   "time": "12:50",
+   "kind": "meal",
+   "name": "かろのうろん",
+   "label": "午餐・博多最老的烏龍麵"
+  },
+  {
+   "hits": 1,
+   "date": "2/9",
+   "time": "18:40",
+   "kind": "meal",
+   "name": "もつ鍋 極味や 福岡赤坂店",
+   "label": "晚餐 ☪♨️ 清真牛腸鍋"
+  },
+  {
+   "hits": 2,
+   "date": "2/10",
+   "time": "11:55",
+   "kind": "meal",
+   "name": "博多めんたいやまや食堂 MARK IS 福岡ももち店",
+   "label": "午餐・明太子吃到飽定食"
+  },
+  {
+   "hits": 2,
+   "date": "2/10",
+   "time": "12:55",
+   "kind": "spot",
+   "name": "MARK IS 福岡ももち",
+   "label": "🛍 福岡巨蛋旁的大型商場"
+  },
+  {
+   "hits": 2,
+   "date": "2/3",
+   "time": "15:50",
+   "kind": "spot",
+   "name": "JUMP SHOP 福岡店",
+   "label": "🎀 少年 JUMP"
+  },
+  {
+   "hits": 5,
+   "date": "2/12",
+   "time": "12:30",
+   "kind": "meal",
+   "name": "河太郎 中洲本店",
+   "label": "午餐・活花枝"
+  },
+  {
+   "hits": 5,
+   "date": "2/12",
+   "time": "13:45",
+   "kind": "spot",
+   "name": "ふくや 中洲本店",
+   "label": "🛍 明太子・冷藏品留到最後"
+  },
+  {
+   "hits": 6,
+   "date": "2/9",
+   "time": "16:50",
+   "kind": "meal",
+   "name": "かさの家（梅ヶ枝餅）",
+   "label": "🍡 梅ヶ枝餅"
+  },
+  {
+   "hits": 7,
+   "date": "2/9",
+   "time": "13:15",
+   "kind": "spot",
+   "name": "寶可夢中心 福岡",
+   "label": "🎀 寶可夢・九州唯一"
+  },
+  {
+   "hits": 8,
+   "date": "2/10",
+   "time": "16:40",
+   "kind": "spot",
+   "name": "實物大 ν 鋼彈立像",
+   "label": "⚔️ 白天→點燈，全世界唯一"
+  },
+  {
+   "hits": 10,
+   "date": "2/11",
+   "time": "12:45",
+   "kind": "meal",
+   "name": "若松屋（鰻魚蒸籠飯）",
+   "label": "午餐・鰻魚"
+  },
+  {
+   "hits": 11,
+   "date": "2/3",
+   "time": "11:30",
+   "kind": "spot",
+   "name": "東長寺",
+   "label": "景點"
+  },
+  {
+   "hits": 12,
+   "date": "2/11",
+   "time": "14:15",
+   "kind": "spot",
+   "name": "御花（立花氏庭園）",
+   "label": "景點"
+  },
+  {
+   "hits": 17,
+   "date": "2/10",
+   "time": "10:15",
+   "kind": "spot",
+   "name": "三麗鷗角色夢幻樂園",
+   "label": "🎀 三麗鷗樂園・全室內"
+  },
+  {
+   "hits": 17,
+   "date": "2/12",
+   "time": "14:20",
+   "kind": "spot",
+   "name": "博多川端商店街",
+   "label": "🛍 博多最老的商店街"
+  },
+  {
+   "hits": 18,
+   "date": "2/3",
+   "time": "15:15",
+   "kind": "spot",
+   "name": "Sanrio Gallery 運河城博多店",
+   "label": "🎀 福岡最大三麗鷗"
+  },
+  {
+   "hits": 22,
+   "date": "2/9",
+   "time": "14:40",
+   "kind": "spot",
+   "name": "九州國立博物館",
+   "label": "景點"
+  },
+  {
+   "hits": 24,
+   "date": "2/10",
+   "time": "14:20",
+   "kind": "spot",
+   "name": "ららぽーと福岡",
+   "label": "🛍 竹下・大型商場"
+  },
+  {
+   "hits": 24,
+   "date": "2/12",
+   "time": "15:05",
+   "kind": "spot",
+   "name": "福岡城跡・舞鶴公園",
+   "label": "🌸 城跡・梅園"
+  },
+  {
+   "hits": 29,
+   "date": "2/12",
+   "time": "16:00",
+   "kind": "spot",
+   "name": "大濠公園",
+   "label": "🌳 環湖散步"
+  },
+  {
+   "hits": 31,
+   "date": "2/11",
+   "time": "16:45",
+   "kind": "spot",
+   "name": "天神・天神地下街",
+   "label": "🛍 採買・順收 PORTER"
+  },
+  {
+   "hits": 31,
+   "date": "2/3",
+   "time": "14:00",
+   "kind": "spot",
+   "name": "博多運河城",
+   "label": "🛍 商場"
+  },
+  {
+   "hits": 34,
+   "date": "2/3",
+   "time": "09:30",
+   "kind": "spot",
+   "name": "櫛田神社",
+   "label": "🎋 節分厄除大祭"
+  },
+  {
+   "hits": 47,
+   "date": "2/1",
+   "time": "18:30",
+   "kind": "meal",
+   "name": "中洲屋台街",
+   "label": "晚餐 🌃 屋台"
+  },
+  {
+   "hits": 47,
+   "date": "2/11",
+   "time": "11:00",
+   "kind": "spot",
+   "name": "柳川川下り 松月乘船場",
+   "label": "❄️ こたつ舟"
+  },
+  {
+   "hits": 68,
+   "date": "2/9",
+   "time": "15:55",
+   "kind": "spot",
+   "name": "太宰府天滿宮",
+   "label": "🌸 梅花"
+  }
+ ],
+ "長崎": [
+  {
+   "hits": 0,
+   "date": "2/2",
+   "time": "15:00",
+   "kind": "spot",
+   "name": "多姆托倫展望塔",
+   "label": "展望"
+  },
+  {
+   "hits": 0,
+   "date": "2/5",
+   "time": "11:45",
+   "kind": "meal",
+   "name": "割烹 とし",
+   "label": "午餐・卓袱料理"
+  },
+  {
+   "hits": 0,
+   "date": "2/5",
+   "time": "15:05",
+   "kind": "spot",
+   "name": "興福寺",
+   "label": "景點・日本最古的唐寺"
+  },
+  {
+   "hits": 0,
+   "date": "2/5",
+   "time": "15:55",
+   "kind": "spot",
+   "name": "崇福寺",
+   "label": "景點・兩座國寶"
+  },
+  {
+   "hits": 0,
+   "date": "2/6",
+   "time": "13:25",
+   "kind": "spot",
+   "name": "荷蘭坂",
+   "label": "景點・免費順路"
+  },
+  {
+   "hits": 0,
+   "date": "2/6",
+   "time": "13:50",
+   "kind": "spot",
+   "name": "孔子廟・中國歷代博物館",
+   "label": "景點"
+  },
+  {
+   "hits": 2,
+   "date": "2/5",
+   "time": "19:30",
+   "kind": "meal",
+   "name": "大阪屋 浜町店",
+   "label": "晚餐 🥩 長崎和牛燒肉"
+  },
+  {
+   "hits": 3,
+   "date": "2/6",
+   "time": "20:15",
+   "kind": "meal",
+   "name": "吉宗 本店",
+   "label": "晚餐・茶碗蒸"
+  },
+  {
+   "hits": 5,
+   "date": "2/6",
+   "time": "12:30",
+   "kind": "meal",
+   "name": "四海樓",
+   "label": "午餐・強棒麵發源店"
+  },
+  {
+   "hits": 6,
+   "date": "2/5",
+   "time": "17:00",
+   "kind": "spot",
+   "name": "長崎燈會 湊公園會場",
+   "label": "🏮 點燈！"
+  },
+  {
+   "hits": 6,
+   "date": "2/5",
+   "time": "18:30",
+   "kind": "spot",
+   "name": "長崎新地中華街",
+   "label": "🏮 燈會夜市"
+  },
+  {
+   "hits": 6,
+   "date": "2/6",
+   "time": "09:45",
+   "kind": "spot",
+   "name": "大浦天主堂",
+   "label": "景點・國寶"
+  },
+  {
+   "hits": 6,
+   "date": "2/6",
+   "time": "15:00",
+   "kind": "spot",
+   "name": "福砂屋 本店",
+   "label": "🛍 蜂蜜蛋糕"
+  },
+  {
+   "hits": 7,
+   "date": "2/2",
+   "time": "18:00",
+   "kind": "spot",
+   "name": "光之王國（燈海）",
+   "label": "🌃 主角・冬季限定"
+  },
+  {
+   "hits": 7,
+   "date": "2/5",
+   "time": "13:20",
+   "kind": "spot",
+   "name": "出島",
+   "label": "景點"
+  },
+  {
+   "hits": 7,
+   "date": "2/6",
+   "time": "10:45",
+   "kind": "spot",
+   "name": "哥拉巴園",
+   "label": "景點・世界遺產"
+  },
+  {
+   "hits": 9,
+   "date": "2/5",
+   "time": "14:30",
+   "kind": "spot",
+   "name": "眼鏡橋",
+   "label": "景點"
+  },
+  {
+   "hits": 9,
+   "date": "2/5",
+   "time": "16:40",
+   "kind": "spot",
+   "name": "長崎濱町商店街",
+   "label": "🛍 有頂棚商店街"
+  },
+  {
+   "hits": 12,
+   "date": "2/6",
+   "time": "18:45",
+   "kind": "spot",
+   "name": "長崎燈會 中央公園會場",
+   "label": "🏮 燈組巡禮"
+  },
+  {
+   "hits": 18,
+   "date": "2/6",
+   "time": "16:30",
+   "kind": "spot",
+   "name": "稻佐山展望台",
+   "label": "🌃 黃昏→夜景"
+  },
+  {
+   "hits": 51,
+   "date": "2/2",
+   "time": "13:00",
+   "kind": "meal",
+   "name": "豪斯登堡 園內美食",
+   "label": "午餐"
+  },
+  {
+   "hits": 52,
+   "date": "2/2",
+   "time": "11:20",
+   "kind": "spot",
+   "name": "豪斯登堡",
+   "label": "入園・白天"
+  }
+ ],
+ "北九州": [
+  {
+   "hits": 0,
+   "date": "2/4",
+   "time": "18:30",
+   "kind": "spot",
+   "name": "銀河鐵道999 星野鐵郎銅像",
+   "label": "🎀 松本零士・轉車順看"
+  },
+  {
+   "hits": 4,
+   "date": "2/4",
+   "time": "18:40",
+   "kind": "spot",
+   "name": "あるあるCity",
+   "label": "🎀 小倉・九州最大動漫大樓"
+  },
+  {
+   "hits": 5,
+   "date": "2/4",
+   "time": "15:30",
+   "kind": "spot",
+   "name": "關門海峽博物館",
+   "label": "景點・室內"
+  },
+  {
+   "hits": 12,
+   "date": "2/4",
+   "time": "11:45",
+   "kind": "spot",
+   "name": "赤間神宮",
+   "label": "景點"
+  },
+  {
+   "hits": 12,
+   "date": "2/4",
+   "time": "14:45",
+   "kind": "spot",
+   "name": "舊門司三井俱樂部",
+   "label": "景點・重要文化財"
+  },
+  {
+   "hits": 19,
+   "date": "2/4",
+   "time": "13:00",
+   "kind": "spot",
+   "name": "門司港站",
+   "label": "景點"
+  },
+  {
+   "hits": 28,
+   "date": "2/4",
+   "time": "17:00",
+   "kind": "meal",
+   "name": "BEAR FRUITS（燒咖哩）",
+   "label": "晚餐・燒咖哩"
+  },
+  {
+   "hits": 37,
+   "date": "2/4",
+   "time": "09:55",
+   "kind": "meal",
+   "name": "唐戶市場",
+   "label": "早午餐 ❄️ 河豚"
+  },
+  {
+   "hits": 79,
+   "date": "2/4",
+   "time": "13:30",
+   "kind": "spot",
+   "name": "門司港復古區",
+   "label": "景點"
+  }
+ ],
+ "大分": [
+  {
+   "hits": 0,
+   "date": "2/8",
+   "time": "15:05",
+   "kind": "spot",
+   "name": "空想之森 アルテジオ",
+   "label": "景點・咖啡"
+  },
+  {
+   "hits": 1,
+   "date": "2/8",
+   "time": "10:35",
+   "kind": "spot",
+   "name": "宇奈岐日女神社",
+   "label": "景點"
+  },
+  {
+   "hits": 2,
+   "date": "2/8",
+   "time": "14:10",
+   "kind": "spot",
+   "name": "COMICO ART MUSEUM YUFUIN",
+   "label": "景點・需預約"
+  },
+  {
+   "hits": 2,
+   "date": "2/8",
+   "time": "15:55",
+   "kind": "meal",
+   "name": "茶房 天井棧敷",
+   "label": "🍰 御三家茶房"
+  },
+  {
+   "hits": 5,
+   "date": "2/8",
+   "time": "10:00",
+   "kind": "spot",
+   "name": "佛山寺",
+   "label": "景點・人很少"
+  },
+  {
+   "hits": 7,
+   "date": "2/7",
+   "time": "08:15",
+   "kind": "spot",
+   "name": "平和公園",
+   "label": "景點"
+  },
+  {
+   "hits": 7,
+   "date": "2/8",
+   "time": "12:10",
+   "kind": "meal",
+   "name": "由布まぶし 心",
+   "label": "午餐・豐後牛"
+  },
+  {
+   "hits": 8,
+   "date": "2/7",
+   "time": "09:15",
+   "kind": "spot",
+   "name": "長崎原爆資料館",
+   "label": "景點・長崎的最後一站"
+  },
+  {
+   "hits": 8,
+   "date": "2/8",
+   "time": "13:30",
+   "kind": "meal",
+   "name": "B-speak",
+   "label": "🍰 P-roll 蛋糕捲"
+  },
+  {
+   "hits": 29,
+   "date": "2/8",
+   "time": "11:20",
+   "kind": "spot",
+   "name": "湯之坪街道",
+   "label": "🛍 主街"
+  },
+  {
+   "hits": 36,
+   "date": "2/8",
+   "time": "07:30",
+   "kind": "spot",
+   "name": "金鱗湖",
+   "label": "❄️ 晨霧・住這裡才看得到"
+  }
+ ]
+}
