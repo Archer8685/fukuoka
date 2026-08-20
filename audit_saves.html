@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>稽核「存進 Google 想去的地點」的配對結果</title>
+<style>
+body{font:14px/1.6 -apple-system,"Noto Sans TC",sans-serif;margin:0;padding:16px;max-width:1200px;margin-inline:auto}
+h1{font-size:18px;margin:0 0 8px}
+button{padding:8px 14px;margin-right:8px}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:12px}
+th,td{border:1px solid #ddd;padding:5px 7px;vertical-align:top}
+tr.bad{background:#fdecea}tr.warn{background:#fff8e1}tr.none{background:#eee}
+.mono{font-family:ui-monospace,monospace;font-size:12px}
+#stat{margin-left:8px;color:#555}
+</style></head><body>
+<h1>稽核：存進 Google 的地點跟 data.js 座標對不對</h1>
+<p>用跟 <code>export_gmaps.py</code> 完全相同的查詢字串打 Places Text Search，
+比對回傳 POI 與 <code>data.js</code> 座標的距離。&gt;1km 或查無＝幾乎確定存錯。</p>
+<button id="run">全部稽核</button><button id="run20">試跑前 20</button><span id="stat"></span>
+<table><thead><tr><th>#</th><th>名稱</th><th>查詢</th><th>距離</th><th>Google 回傳</th><th>place_id</th></tr></thead>
+<tbody id="tb"></tbody></table>
+<script src="config.js"></script>
+<script src="data.js"></script>
+<script>
+const $ = s => document.querySelector(s);
+window.AUDIT = [];
+
+function dist(a, b) {
+  const R = 6371000, rad = x => x * Math.PI / 180;
+  const dLat = rad(b[0] - a[0]), dLng = rad(b[1] - a[1]);
+  const s = Math.sin(dLat / 2) ** 2 + Math.cos(rad(a[0])) * Math.cos(rad(b[0])) * Math.sin(dLng / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(s));
+}
+// 與 export_gmaps.py 的 gmaps_url() 一致：日文名 ＋ 完整 area（不砍「・」後面）
+function queryFor(p) {
+  return ((p.name_ja || p.name) + ' ' + (p.area || p.city || '')).trim();
+}
+async function lookup(q) {
+  const { places } = await google.maps.places.Place.searchByText({
+    textQuery: q, fields: ['id', 'displayName', 'location', 'formattedAddress'],
+    maxResultCount: 1, language: 'ja', region: 'jp'
+  });
+  if (!places || !places.length) return null;
+  const p = places[0];
+  return { id: p.id, name: p.displayName, addr: p.formattedAddress, lat: p.location.lat(), lng: p.location.lng() };
+}
+function cls(r) {
+  if (!r.found) return 'none';
+  if (r.d > 1000) return 'bad';
+  if (r.d > 300) return 'warn';
+  return 'ok';
+}
+async function run(limit) {
+  window.AUDIT = [];
+  const list = limit ? PLACES.slice(0, limit) : PLACES;
+  const tb = $('#tb'); tb.innerHTML = '';
+  for (const [i, p] of list.entries()) {
+    const q = queryFor(p);
+    let g = null, err = '';
+    try { g = await lookup(q); } catch (e) { err = e.message || String(e); }
+    const found = !!(g && g.lat);
+    const d = found ? dist([p.lat, p.lng], [g.lat, g.lng]) : -1;
+    const r = { i: i + 1, name: p.name, cat: p.category, city: p.city, area: p.area || '', q,
+                found, d: Math.round(d), err,
+                gname: found ? g.name : '', gaddr: found ? g.addr : '', gid: found ? g.id : '',
+                glat: found ? g.lat : null, glng: found ? g.lng : null,
+                ours: [p.lat, p.lng] };
+    r.cls = cls(r);
+    window.AUDIT.push(r);
+    if (r.cls !== 'ok') {
+      tb.insertAdjacentHTML('beforeend',
+        `<tr class="${r.cls}"><td>${r.i}</td><td><b>${r.name}</b><br><span class="mono">${r.cat}・${r.city}</span></td>`
+        + `<td>${r.q}</td><td>${found ? r.d + ' m' : (err || '查無')}</td>`
+        + `<td>${r.gname}<br><span class="mono">${r.gaddr}</span></td><td class="mono">${r.gid}</td></tr>`);
+    }
+    $('#stat').textContent = `${i + 1} / ${list.length}`;
+    await new Promise(res => setTimeout(res, 120));
+  }
+  const c = { ok: 0, warn: 0, bad: 0, none: 0 };
+  window.AUDIT.forEach(r => c[r.cls]++);
+  $('#stat').textContent = `完成 ${window.AUDIT.length}　✅<300m ${c.ok}　⚠️300m–1km ${c.warn}　❌>1km ${c.bad}　查無 ${c.none}`;
+}
+$('#run').onclick = () => run(0);
+$('#run20').onclick = () => run(20);
+window.__vready = () => { $('#stat').textContent = 'Places API 就緒'; };
+(function () {
+  const key = (typeof GMAPS_KEY !== 'undefined') ? String(GMAPS_KEY).trim() : '';
+  if (!key) { $('#stat').textContent = 'config.js 沒有 GMAPS_KEY'; return; }
+  const s = document.createElement('script');
+  s.src = 'https://maps.googleapis.com/maps/api/js?key=' + encodeURIComponent(key)
+        + '&libraries=places&callback=__vready&v=weekly&loading=async';
+  document.head.appendChild(s);
+})();
+</script></body></html>

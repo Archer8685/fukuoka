@@ -16,6 +16,7 @@ prep.html         行前準備（倒數時間軸、訂票清單、入境、免�
 itinerary.html    逐日行程（載入 data.js 自動附加地點詳情）
 map.html          互動地圖（Leaflet + 國土地理院圖磚，可選 Google 底圖）
 verify.html       座標稽核：用 Google Places 逐筆驗證 data.js 的座標（見下節）
+audit_saves.html  存進 Google 清單後的稽核：用跟 export_gmaps.py 相同的查詢字串打 Places，比對配到的 POI 與 data.js 座標的距離
 lookup.html       座標補齊：對「還沒有座標」的新地點向 Google Places 要座標／地址／營業時間（見下節，僅本機可用）
 data.js           ★ 唯一資料檔（PLACES / J2T），由 build_data.py 產生
 trip.js           ★ 最終行程資料（TRIP / BACKUPS），手動維護
