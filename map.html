@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>福岡・九州 12 天 — 景點餐廳地圖</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
-<link rel="preload" href="data.js?v=85" as="script">
-<link rel="preload" href="trip.js?v=85" as="script">
+<link rel="preload" href="data.js?v=86" as="script">
+<link rel="preload" href="trip.js?v=86" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="stylesheet" href="libs/leaflet.css">
@@ -168,8 +168,6 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
       <div class="filter-row" id="catChips"></div>
       <div class="filter-row hidden" id="cuisineChips"></div>
       <div class="filter-row">
-        <span class="chip winter-chip" id="winterOnly">❄️ 只看冬季限定／2 月亮點</span>
-        <span class="chip halal-chip" id="halalOnly">☪ 只看清真／禮拜所</span>
         <span class="chip" id="resetBtn">✅ 全選</span>
         <span class="chip" id="clearBtn">✕ 清除</span>
       </div>
@@ -186,8 +184,8 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=85"></script>
-<script src="trip.js?v=85"></script>
+<script src="data.js?v=86"></script>
+<script src="trip.js?v=86"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -439,7 +437,7 @@ function focusOn(latlng,zoom){
   if(s>0)map.panBy([0,Math.round(s/2)],{animate:false});
 }
 
-let state={region:"福岡",cats:new Set(Object.keys(CATS)),cuisineGroups:new Set(CUISINE_GROUPS.map(g=>g[0])),winterOnly:false,halalOnly:false,q:"",tripDay:1,tripPlan:"A",tripShowAll:true};
+let state={region:"福岡",cats:new Set(Object.keys(CATS)),cuisineGroups:new Set(CUISINE_GROUPS.map(g=>g[0])),q:"",tripDay:1,tripPlan:"A",tripShowAll:true};
 let markers=[],routeLine=null;
 
 function regionOf(key){return REGIONS.find(r=>r.key===key)||REGIONS[0];}
@@ -548,9 +546,7 @@ function popupHtml(p){
 function passesBase(p){
   if(!citiesOf(state.region).includes(p.city))return false;
   if(!state.cats.has(p.category))return false;
-  if(FOOD_CATS.has(p.category)&&p.cuisine&&!state.cuisineGroups.has(CUISINE2GROUP[p.cuisine]||cuisineGroup(p.cuisine)))return false;
-  if(state.winterOnly&&!isWinter(p))return false;
-  if(state.halalOnly&&!isHalalish(p))return false;
+  if(FOOD_CATS.has(p.category)&&!state.cuisineGroups.has(CUISINE2GROUP[p.cuisine]||cuisineGroup(p.cuisine)))return false;
   return true;
 }
 function matchesSearch(p){
@@ -702,9 +698,7 @@ function renderTrip(keepView){
     PLACES.forEach(p=>{
       if(!p.lat||!dayCities.has(p.city))return;
       if(!state.cats.has(p.category))return;
-      if(FOOD_CATS.has(p.category)&&p.cuisine&&!state.cuisineGroups.has(CUISINE2GROUP[p.cuisine]||cuisineGroup(p.cuisine)))return;
-      if(state.winterOnly&&!isWinter(p))return;
-      if(state.halalOnly&&!isHalalish(p))return;
+      if(FOOD_CATS.has(p.category)&&!state.cuisineGroups.has(CUISINE2GROUP[p.cuisine]||cuisineGroup(p.cuisine)))return;
       if(stopNames.has(_norm(p.name)))return;
       let searchMatch=true;
       if(q){const hay=j2t([p.name,p.name_ja,p.area,p.cuisine,...(p.dishes||[]),...(p.activities||[])].join(" ").toLowerCase());searchMatch=hay.includes(q);}
@@ -767,14 +761,6 @@ document.getElementById('filterToggle').onclick=e=>{
   e.currentTarget.setAttribute('aria-expanded',String(!hidden));
 };
 function rerender(){if(state.region==="__trip")renderTrip(true);else render();}
-document.getElementById('winterOnly').onclick=e=>{
-  e.target.classList.toggle('on');state.winterOnly=e.target.classList.contains('on');
-  rerender();
-};
-document.getElementById('halalOnly').onclick=e=>{
-  e.target.classList.toggle('on');state.halalOnly=e.target.classList.contains('on');
-  rerender();
-};
 document.getElementById('resetBtn').onclick=()=>{
   state.cats=new Set(Object.keys(CATS));
   state.cuisineGroups=new Set(CUISINE_GROUPS.map(g=>g[0]));
@@ -977,7 +963,7 @@ window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('p
     window.addEventListener('load',function(){
       navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){
         if(!('caches' in window))return;
-        caches.open('fukuoka-app-v85').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});
+        caches.open('fukuoka-app-v86').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});
           document.querySelectorAll('script[src],link[href]').forEach(function(el){
             var u=el.src||el.href; if(!u||u.indexOf(location.origin)!==0)return;
             c.match(u).then(function(hit){ if(!hit) c.add(u).catch(function(){}); });
