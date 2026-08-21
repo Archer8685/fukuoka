@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>福岡・九州 2/1–2/12 行程</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
-<link rel="preload" href="data.js?v=96" as="script">
-<link rel="preload" href="trip.js?v=96" as="script">
+<link rel="preload" href="data.js?v=97" as="script">
+<link rel="preload" href="trip.js?v=97" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
@@ -225,8 +225,8 @@ header.pg .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
   <div class="mb" id="mBody"></div>
 </dialog>
 
-<script src="data.js?v=96"></script>
-<script src="trip.js?v=96"></script>
+<script src="data.js?v=97"></script>
+<script src="trip.js?v=97"></script>
 <script>
 // ---- 共用：地點查找（日文新字體 → 繁體正規化）----
 const _J2T=(typeof J2T!=="undefined")?J2T:{};
@@ -464,6 +464,6 @@ document.addEventListener('click',e=>{
 });
 window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('pgload').classList.add('done');});
 </script>
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('fukuoka-app-v96').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});});}).catch(function(){});});}</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('fukuoka-app-v97').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});});}).catch(function(){});});}</script>
 </body>
 </html>
