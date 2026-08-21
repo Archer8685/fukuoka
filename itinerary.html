@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>福岡・九州 2/1–2/12 行程</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
-<link rel="preload" href="data.js?v=82" as="script">
-<link rel="preload" href="trip.js?v=82" as="script">
+<link rel="preload" href="data.js?v=83" as="script">
+<link rel="preload" href="trip.js?v=83" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
@@ -94,11 +94,11 @@ header.pg .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 .variant-note{font-size:11.5px;color:var(--muted);line-height:1.5;margin-top:2px}
 .variant-stops{padding:4px 12px 10px}
 
-.stop{display:flex;gap:8px;padding:8px 0 2px}
-.stop .tm{width:42px;flex-shrink:0;color:var(--muted);font-size:12px;font-weight:700;padding-top:3px;text-align:right}
-.stop .rail{width:14px;flex-shrink:0;position:relative}
+.stop{display:grid;grid-template-columns:14px minmax(0,1fr);gap:8px;padding:8px 0 2px}
+.stop .tm{flex:0 0 auto;color:var(--muted);font-size:12px;font-weight:800;white-space:nowrap}
+.stop .rail{width:14px;position:relative;grid-column:1;grid-row:1 / span 20}
 .stop .rail i{position:absolute;left:2px;top:6px;width:10px;height:10px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1.5px rgba(0,0,0,.1)}
-.stop .body{flex:1;min-width:0}
+.stop .body{grid-column:2;min-width:0}
 .stop .line1{display:flex;align-items:center;gap:5px;min-width:0;font-size:14px;line-height:1.5;white-space:nowrap}
 .stop .line1 .lbl{flex:0 0 auto;font-size:10.5px;color:#fff;border-radius:8px;padding:1.5px 7px;white-space:nowrap;vertical-align:1px}
 .stop .line1 a{flex:1 1 auto;min-width:0;color:inherit;text-decoration:none;border-bottom:1px dashed #b9c5cf;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -170,8 +170,8 @@ header.pg .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
   .daynav a small{display:block;font-size:10px;text-align:center}
   .day,.backup{scroll-margin-top:106px}
   header.pg h1{font-size:20px}
-  .stop .tm{width:36px;font-size:11px}
-  .go{margin-left:52px;max-width:calc(100% - 58px)}
+  .stop .tm{font-size:11px}
+  .go{margin-left:22px;max-width:calc(100% - 28px)}
   .day-h .title{width:100%;text-align:left;margin-left:0}
   .variant-index a{flex:1;justify-content:center}
   .stop .line1{font-size:14.5px}
@@ -226,8 +226,8 @@ header.pg .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
   <div class="mb" id="mBody"></div>
 </dialog>
 
-<script src="data.js?v=82"></script>
-<script src="trip.js?v=82"></script>
+<script src="data.js?v=83"></script>
+<script src="trip.js?v=83"></script>
 <script>
 // ---- 共用：地點查找（日文新字體 → 繁體正規化）----
 const _J2T=(typeof J2T!=="undefined")?J2T:{};
@@ -363,8 +363,8 @@ TRIP.forEach(day=>{
       if(p.coord_status==='area')moreBits.push(`📍 地圖上是區域概略位置，導航請點地點名稱進地圖後用「在 Google Maps 開啟」`);
     }
     const q=encodeURIComponent((p?p.name:s.name).trim());
-    html+=`<div class="stop"><span class="tm">${s.t}</span><span class="rail"><i style="background:${k.c}"></i></span><div class="body">
-      <div class="line1"><span class="lbl" style="background:${k.c}">${s.label||k.t}</span><a href="map.html?q=${q}" target="_blank">${s.name}</a></div>
+    html+=`<div class="stop"><span class="rail"><i style="background:${k.c}"></i></span><div class="body">
+      <div class="line1"><span class="tm">${s.t}</span><span class="lbl" style="background:${k.c}">${s.label||k.t}</span><a href="map.html?q=${q}" target="_blank">${s.name}</a></div>
       ${(p&&p.name_ja)?`<div class="ja">${p.name_ja}</div>`:""}
       ${s.note?`<div class="note">${s.note}</div>`:""}
       ${facts.length?`<div class="facts">${facts.map(f=>`<i class="${f[0]}">${f[1]}</i>`).join("")}</div>`:""}
@@ -465,6 +465,6 @@ document.addEventListener('click',e=>{
 });
 window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('pgload').classList.add('done');});
 </script>
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('fukuoka-app-v82').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});});}).catch(function(){});});}</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('fukuoka-app-v83').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});});}).catch(function(){});});}</script>
 </body>
 </html>
