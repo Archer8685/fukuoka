@@ -394,5 +394,34 @@
   "lat": 33.310572,
   "lng": 131.486642,
   "coord_status": "nominatim"
+ },
+ {
+  "name": "Vegan Ramen YADOKARI",
+  "name_ja": "Vegan Ramen YADOKARI",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區・平尾",
+  "cuisine": "清真・麵食",
+  "q": "Vegan Ramen YADOKARI 福岡 平尾",
+  "halal": "友善",
+  "halal_cert": "Islamic menu available（福岡縣官方 Vegan Muslim Friendly 收錄）",
+  "dishes": [
+   "博多風ヴィーガンラーメン",
+   "ヴィーガン担々麺",
+   "ヴィーガン餃子",
+   "季節野菜のお寿司"
+  ],
+  "reason": "⭐ 福岡縣官方觀光「Vegan Muslim Friendly」收錄，標示 Islamic menu available；Google Places 類型也列為 halal_restaurant＋ramen_restaurant。100% 植物性博多風拉麵，符合「日式、非印度／中東」的清真友善備選。",
+  "notes": "⚠️ 非清真認證店，為 vegan／Islamic menu 對應；出發前請再確認是否仍提供 Islamic menu。營業 10:00–15:00（L.O.14:30），週日休。距藥院／藥院大通站步行約 12 分。",
+  "hours": "10:00–15:00（L.O.14:30）；週日休",
+  "price": "單品拉麵約 ¥1,400；套餐約 ¥3,800",
+  "area_center": "天神",
+  "lat": 33.5757391,
+  "lng": 130.3993639,
+  "coord_status": "google",
+  "coord_source": "Google Places 2026-08-21（Vegan Ramen YADOKARI）",
+  "google_maps_uri": "https://maps.google.com/?cid=10963512356416840276&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県福岡市中央区平尾３丁目２２−３ 平丘ビル 2F",
+  "source": "https://www.crossroadfukuoka.jp/en/inbound-shop/16423"
  }
 ]
