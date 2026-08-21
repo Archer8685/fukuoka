@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>福岡・九州 2/1–2/12 行程</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
-<link rel="preload" href="data.js?v=81" as="script">
-<link rel="preload" href="trip.js?v=81" as="script">
+<link rel="preload" href="data.js?v=82" as="script">
+<link rel="preload" href="trip.js?v=82" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
@@ -99,9 +99,9 @@ header.pg .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 .stop .rail{width:14px;flex-shrink:0;position:relative}
 .stop .rail i{position:absolute;left:2px;top:6px;width:10px;height:10px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1.5px rgba(0,0,0,.1)}
 .stop .body{flex:1;min-width:0}
-.stop .line1{font-size:14px;line-height:1.5}
-.stop .line1 .lbl{font-size:10.5px;color:#fff;border-radius:8px;padding:1.5px 7px;margin-right:5px;white-space:nowrap;vertical-align:1px}
-.stop .line1 a{color:inherit;text-decoration:none;border-bottom:1px dashed #b9c5cf;font-weight:700}
+.stop .line1{display:flex;align-items:center;gap:5px;min-width:0;font-size:14px;line-height:1.5;white-space:nowrap}
+.stop .line1 .lbl{flex:0 0 auto;font-size:10.5px;color:#fff;border-radius:8px;padding:1.5px 7px;white-space:nowrap;vertical-align:1px}
+.stop .line1 a{flex:1 1 auto;min-width:0;color:inherit;text-decoration:none;border-bottom:1px dashed #b9c5cf;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .stop .ja{font-size:11px;color:var(--muted);margin-top:1px}
 .stop .note{font-size:12.5px;color:#4d555d;margin-top:2px;line-height:1.6}
 .stop .facts{font-size:11.5px;color:var(--accent2);margin-top:3px}
@@ -226,8 +226,8 @@ header.pg .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
   <div class="mb" id="mBody"></div>
 </dialog>
 
-<script src="data.js?v=81"></script>
-<script src="trip.js?v=81"></script>
+<script src="data.js?v=82"></script>
+<script src="trip.js?v=82"></script>
 <script>
 // ---- 共用：地點查找（日文新字體 → 繁體正規化）----
 const _J2T=(typeof J2T!=="undefined")?J2T:{};
@@ -465,6 +465,6 @@ document.addEventListener('click',e=>{
 });
 window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('pgload').classList.add('done');});
 </script>
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('fukuoka-app-v81').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});});}).catch(function(){});});}</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('fukuoka-app-v82').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});});}).catch(function(){});});}</script>
 </body>
 </html>
