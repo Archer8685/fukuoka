@@ -119,12 +119,15 @@
   "price": "約 ¥1,000–1,500",
   "hours": "11:00–21:00",
   "duration": "45 分",
-  "coord_status": "manual",
-  "lat": 33.9456,
-  "lng": 130.9612,
+  "coord_status": "google",
+  "lat": 33.9455425,
+  "lng": 130.9610642,
   "tabelog": "3.50",
   "tabelog_area": "門司",
-  "tabelog_rank": 5
+  "tabelog_rank": 5,
+  "coord_source": "Google Places 重查 2026-08-21（焼きカレー専門店 BEAR FRUITS）",
+  "google_maps_uri": "https://maps.google.com/?cid=4799326744322264152&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県北九州市門司区西海岸１丁目４−７ １F"
  },
  {
   "name": "唐戶市場",

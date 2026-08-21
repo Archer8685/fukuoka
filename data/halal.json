@@ -45,26 +45,28 @@
   "coord_source": "Google Places 稽核 2026-08-19（原 area，差 505m）"
  },
  {
-  "name": "トルコレストラン・エルトゥールル",
-  "name_ja": "トルコレストラン エルトゥールル",
+  "name": "Kafe Toruko",
+  "name_ja": "Kafe Toruko",
   "category": "餐飲",
   "city": "福岡",
-  "area": "中央區",
+  "area": "中央區・六本松",
   "cuisine": "清真・中東",
-  "q": "エルトゥールル 福岡 トルコ料理",
+  "q": "Kafe Toruko 福岡 六本松 トルコ料理",
   "halal": true,
   "halal_cert": "ハラール対応",
   "dishes": [
    "ケバブ",
    "トルコ料理"
   ],
-  "reason": "店名取自 1890 年在和歌山遇難的土耳其軍艦「埃爾圖魯爾號」，福岡的土耳其清真料理選擇。",
+  "reason": "六本松的土耳其料理／清真對應餐廳。福岡市內想吃中東・土耳其料理時可作為備選。",
   "notes": "⚠️ 出發前請再確認營業狀況。",
   "area_center": "天神",
-  "lat": 33.590312,
-  "lng": 130.398059,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（天神，半徑約 93m）"
+  "lat": 33.5806607,
+  "lng": 130.379058,
+  "coord_status": "google",
+  "coord_source": "Google Places 重查 2026-08-21（Kafe Toruko）",
+  "google_maps_uri": "https://maps.google.com/?cid=17853224437483228901&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県福岡市中央区六本松１丁目３−１４"
  },
  {
   "name": "博多 魚蔵（都ホテル博多）",
@@ -350,7 +352,7 @@
   "name_ja": "地鶏家 別府",
   "category": "餐飲",
   "city": "大分",
-  "area": "別府市",
+  "area": "別府市・照波園町",
   "cuisine": "清真・和食",
   "q": "地鶏家 別府",
   "halal": true,
@@ -361,10 +363,12 @@
   "reason": "大分縣少數持清真認證的日式餐廳（雞料理），在別府。",
   "notes": "⚠️ 由布院搭 JR 約 1 小時；本趟行程不排別府，要吃需另外安排半天。",
   "area_center": "別府",
-  "lat": 33.27966,
-  "lng": 131.501,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（別府，半徑約 40m）"
+  "lat": 33.319375,
+  "lng": 131.496275,
+  "coord_status": "google",
+  "coord_source": "Google Places 重查 2026-08-21（旨鶏商人 地鶏家）",
+  "google_maps_uri": "https://maps.google.com/?cid=7308541136852101673&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "大分県別府市照波園町１３−１７"
  },
  {
   "name": "甘味茶屋",

@@ -3654,12 +3654,14 @@ const PLACES = [
   "price": "約 ¥1,000–1,500",
   "hours": "11:00–21:00",
   "duration": "45 分",
-  "coord_status": "manual",
-  "lat": 33.9456,
-  "lng": 130.9612,
+  "coord_status": "google",
+  "lat": 33.9455425,
+  "lng": 130.9610642,
   "tabelog": "3.50",
   "tabelog_area": "門司",
-  "tabelog_rank": 5
+  "tabelog_rank": 5,
+  "google_maps_uri": "https://maps.google.com/?cid=4799326744322264152&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県北九州市門司区西海岸１丁目４−７ １F"
  },
  {
   "name": "こがねむし",
@@ -3796,16 +3798,19 @@ const PLACES = [
   "name_ja": "レストラン 高津",
   "category": "餐飲",
   "city": "北九州",
-  "area": "下關市",
+  "area": "下關市・岬之町",
   "tabelog": "4.09",
   "tabelog_area": "下關",
   "duration": "1–2 小時",
   "reason": "下關地區食べログ排行前段（4.09）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 33.951678,
-  "lng": 130.943673,
-  "coord_status": "area",
-  "area_center": "下關"
+  "lat": 33.9516092,
+  "lng": 130.9351233,
+  "coord_status": "google",
+  "area_center": "下關",
+  "cuisine": "洋食",
+  "google_maps_uri": "https://maps.google.com/?cid=11816304780209342941&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "山口県下関市岬之町１３−７ 蜂谷ビル 蜂屋ビル1F"
  },
  {
   "name": "三井倶楽部（レストラン）",
@@ -3823,9 +3828,11 @@ const PLACES = [
   ],
   "reason": "就在舊門司三井俱樂部（愛因斯坦住過的洋館）裡的餐廳，可以在重要文化財裡吃飯。",
   "area_center": "門司港",
-  "lat": 33.945547,
-  "lng": 130.963496,
-  "coord_status": "area"
+  "lat": 33.9457227,
+  "lng": 130.962514,
+  "coord_status": "google",
+  "google_maps_uri": "https://maps.google.com/?cid=10179529924273055573&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県北九州市門司区港町７−１"
  },
  {
   "name": "三枡",
@@ -3974,32 +3981,38 @@ const PLACES = [
   "name_ja": "広島お好み焼き 弘々家",
   "category": "餐飲",
   "city": "北九州",
-  "area": "下關市",
+  "area": "下關市・山の田",
   "tabelog": "3.74",
   "tabelog_area": "下關",
   "duration": "1–2 小時",
   "reason": "下關地區食べログ排行前段（3.74）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 33.951834,
-  "lng": 130.942326,
-  "coord_status": "area",
-  "area_center": "下關"
+  "lat": 33.986585,
+  "lng": 130.9281955,
+  "coord_status": "google",
+  "area_center": "下關",
+  "cuisine": "廣島燒",
+  "google_maps_uri": "https://maps.google.com/?cid=17589692518577891443&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "山口県下関市山の田中央町１−１３ 武嶋ビル １階"
  },
  {
   "name": "日和庵",
   "name_ja": "日和庵",
   "category": "餐飲",
   "city": "北九州",
-  "area": "下關市",
+  "area": "下關市・丸山町",
   "tabelog": "3.71",
   "tabelog_area": "下關",
   "duration": "1–2 小時",
   "reason": "下關地區食べログ排行前段（3.71）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 33.952306,
-  "lng": 130.94322,
-  "coord_status": "area",
-  "area_center": "下關"
+  "lat": 33.95412,
+  "lng": 130.932318,
+  "coord_status": "google",
+  "area_center": "下關",
+  "cuisine": "其他",
+  "google_maps_uri": "https://maps.google.com/?cid=18132573436871643141&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "山口県下関市丸山町５丁目３−１９"
  },
  {
   "name": "旬楽館",
@@ -4186,16 +4199,19 @@ const PLACES = [
   "name_ja": "おやど二本の葦束",
   "category": "餐飲",
   "city": "大分",
-  "area": "由布市",
+  "area": "由布市・川北",
   "tabelog": "3.74",
   "tabelog_area": "湯布院",
   "duration": "1–2 小時",
   "reason": "湯布院地區食べログ排行前段（3.74）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 33.263886,
-  "lng": 131.356268,
-  "coord_status": "area",
-  "area_center": "湯布院"
+  "lat": 33.262023,
+  "lng": 131.3359806,
+  "coord_status": "google",
+  "area_center": "湯布院",
+  "cuisine": "和食",
+  "google_maps_uri": "https://maps.google.com/?cid=2385430233505685692&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "大分県由布市湯布院町川北９１８−１８"
  },
  {
   "name": "みくま飯店",
@@ -4273,7 +4289,7 @@ const PLACES = [
   "name_ja": "地鶏家 別府",
   "category": "餐飲",
   "city": "大分",
-  "area": "別府市",
+  "area": "別府市・照波園町",
   "cuisine": "清真・和食",
   "halal": true,
   "halal_cert": "ハラール認証",
@@ -4283,9 +4299,11 @@ const PLACES = [
   "reason": "大分縣少數持清真認證的日式餐廳（雞料理），在別府。",
   "notes": "⚠️ 由布院搭 JR 約 1 小時；本趟行程不排別府，要吃需另外安排半天。",
   "area_center": "別府",
-  "lat": 33.27966,
-  "lng": 131.501,
-  "coord_status": "area"
+  "lat": 33.319375,
+  "lng": 131.496275,
+  "coord_status": "google",
+  "google_maps_uri": "https://maps.google.com/?cid=7308541136852101673&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "大分県別府市照波園町１３−１７"
  },
  {
   "name": "寶屋 本店",
@@ -4530,32 +4548,38 @@ const PLACES = [
   "name_ja": ".know",
   "category": "餐飲",
   "city": "熊本",
-  "area": "熊本市",
+  "area": "熊本市・西阿弥陀寺町",
   "tabelog": "3.84",
   "tabelog_area": "熊本",
   "duration": "1–2 小時",
   "reason": "熊本地區食べログ排行前段（3.84）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 32.803458,
-  "lng": 130.707128,
-  "coord_status": "area",
-  "area_center": "熊本"
+  "lat": 32.7939476,
+  "lng": 130.6951576,
+  "coord_status": "google",
+  "area_center": "熊本",
+  "cuisine": "其他",
+  "google_maps_uri": "https://maps.google.com/?cid=9431139705054867161&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "熊本県熊本市中央区西阿弥陀寺町６−６ 商工クラブ 1F"
  },
  {
   "name": "IL CASINO",
   "name_ja": "IL CASINO",
   "category": "餐飲",
   "city": "熊本",
-  "area": "熊本市",
+  "area": "熊本市・手取本町",
   "tabelog": "3.86",
   "tabelog_area": "熊本",
   "duration": "1–2 小時",
   "reason": "熊本地區食べログ排行前段（3.86）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 32.803053,
-  "lng": 130.708356,
-  "coord_status": "area",
-  "area_center": "熊本"
+  "lat": 32.8031143,
+  "lng": 130.708716,
+  "coord_status": "google",
+  "area_center": "熊本",
+  "cuisine": "洋食",
+  "google_maps_uri": "https://maps.google.com/?cid=51804321841709359&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "熊本県熊本市中央区手取本町３−７"
  },
  {
   "name": "むつ五郎",
@@ -4599,16 +4623,19 @@ const PLACES = [
   "name_ja": "ステーキハウス バロン",
   "category": "餐飲",
   "city": "熊本",
-  "area": "熊本市",
+  "area": "熊本市・下通",
   "tabelog": "3.88",
   "tabelog_area": "熊本",
   "duration": "1–2 小時",
   "reason": "熊本地區食べログ排行前段（3.88）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 32.80375,
-  "lng": 130.708966,
-  "coord_status": "area",
-  "area_center": "熊本"
+  "lat": 32.8007336,
+  "lng": 130.7073588,
+  "coord_status": "google",
+  "area_center": "熊本",
+  "cuisine": "肉料理",
+  "google_maps_uri": "https://maps.google.com/?cid=13206351657385979574&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "熊本県熊本市中央区下通１丁目９−４ 宇都宮ビル ２階"
  },
  {
   "name": "五郎八",
@@ -4751,16 +4778,19 @@ const PLACES = [
   "name_ja": "鮨中村",
   "category": "餐飲",
   "city": "熊本",
-  "area": "熊本市",
+  "area": "熊本市・坪井",
   "tabelog": "4.06",
   "tabelog_area": "熊本",
   "duration": "1–2 小時",
   "reason": "熊本地區食べログ排行前段（4.06）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 32.803266,
-  "lng": 130.708303,
-  "coord_status": "area",
-  "area_center": "熊本"
+  "lat": 32.8101972,
+  "lng": 130.7101717,
+  "coord_status": "google",
+  "area_center": "熊本",
+  "cuisine": "壽司",
+  "google_maps_uri": "https://maps.google.com/?cid=9186417911524372865&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "熊本県熊本市中央区坪井１丁目４−２１"
  },
  {
   "name": "Blue Bottle Coffee 福岡天神カフェ",
@@ -4781,7 +4811,30 @@ const PLACES = [
   "lng": 130.39971,
   "source": "PTT Street_Style 板推薦整理",
   "address": "福岡県福岡市中央区天神2-2-20 警固神社社務所ビル 1階⁠",
-  "hours": "週一–週日 8:00–20:00"
+  "hours": "週一–週日 8:00–20:00",
+  "cuisine": "甜點・咖啡"
+ },
+ {
+  "name": "Kafe Toruko",
+  "name_ja": "Kafe Toruko",
+  "category": "餐飲",
+  "city": "福岡",
+  "area": "中央區・六本松",
+  "cuisine": "清真・中東",
+  "halal": true,
+  "halal_cert": "ハラール対応",
+  "dishes": [
+   "ケバブ",
+   "トルコ料理"
+  ],
+  "reason": "六本松的土耳其料理／清真對應餐廳。福岡市內想吃中東・土耳其料理時可作為備選。",
+  "notes": "⚠️ 出發前請再確認營業狀況。",
+  "area_center": "天神",
+  "lat": 33.5806607,
+  "lng": 130.379058,
+  "coord_status": "google",
+  "google_maps_uri": "https://maps.google.com/?cid=17853224437483228901&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県福岡市中央区六本松１丁目３−１４"
  },
  {
   "name": "LIVING STEREO",
@@ -4802,7 +4855,8 @@ const PLACES = [
   "lng": 130.392588,
   "source": "PTT Street_Style 板推薦整理",
   "address": "福岡県福岡市中央区薬院2-18-10 102",
-  "hours": "週一–週四 17:00–1:00｜週五 17:00–2:00｜週六 15:00–2:00｜週日休"
+  "hours": "週一–週四 17:00–1:00｜週五 17:00–2:00｜週六 15:00–2:00｜週日休",
+  "cuisine": "甜點・咖啡"
  },
  {
   "name": "Liquid Liquid",
@@ -4822,7 +4876,8 @@ const PLACES = [
   "lng": 130.393915,
   "source": "PTT Street_Style 板推薦整理",
   "address": "福岡県福岡市中央区大名1-9-1 粋名ビル 1F",
-  "business_status": "CLOSED_PERMANENTLY"
+  "business_status": "CLOSED_PERMANENTLY",
+  "cuisine": "甜點・咖啡"
  },
  {
   "name": "Restaurant Sola",
@@ -4858,7 +4913,8 @@ const PLACES = [
   "lng": 130.384541,
   "source": "PTT Street_Style 板推薦整理",
   "address": "福岡県福岡市中央区赤坂3-4-37 2F",
-  "hours": "週一–週日 11:00–17:00"
+  "hours": "週一–週日 11:00–17:00",
+  "cuisine": "甜點・咖啡"
  },
  {
   "name": "Shin-Shin 天神本店",
@@ -4900,7 +4956,8 @@ const PLACES = [
   "lng": 130.396656,
   "source": "PTT Street_Style 板推薦整理",
   "address": "福岡県福岡市中央区今泉2-3-18",
-  "business_status": "CLOSED_PERMANENTLY"
+  "business_status": "CLOSED_PERMANENTLY",
+  "cuisine": "酒吧"
  },
  {
   "name": "bbb haus",
@@ -4920,7 +4977,8 @@ const PLACES = [
   "lat": 33.594197,
   "lng": 130.148163,
   "source": "PTT Street_Style 板推薦整理",
-  "address": "福岡県糸島市志摩小金丸1897"
+  "address": "福岡県糸島市志摩小金丸1897",
+  "cuisine": "甜點・咖啡"
  },
  {
   "name": "あまおうチーズケーキファクトリー Kingberry（太宰府天滿宮本店）",
@@ -5002,7 +5060,7 @@ const PLACES = [
   "name_ja": "かさの家",
   "category": "餐飲",
   "city": "福岡",
-  "area": "太宰府市",
+  "area": "太宰府市・宰府",
   "cuisine": "甜點・咖啡",
   "dishes": [
    "梅ヶ枝餅",
@@ -5013,12 +5071,14 @@ const PLACES = [
   "price": "約 ¥130／個",
   "hours": "11:00–17:30",
   "duration": "20 分",
-  "coord_status": "approx",
-  "lat": 33.5199,
-  "lng": 130.534,
+  "coord_status": "google",
+  "lat": 33.5194547,
+  "lng": 130.5334317,
   "tabelog": "3.65",
   "tabelog_area": "太宰府・大野城周辺",
-  "tabelog_rank": 5
+  "tabelog_rank": 5,
+  "google_maps_uri": "https://maps.google.com/?cid=16637148433084021916&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県太宰府市宰府２丁目７−２４"
  },
  {
   "name": "かろのうろん",
@@ -5062,7 +5122,8 @@ const PLACES = [
   "lng": 130.403946,
   "source": "PTT Street_Style 板推薦整理",
   "address": "福岡県福岡市中央区渡辺通5-5-12",
-  "hours": "週一–週四 16:00–0:00｜週五–週六 15:00–0:00｜週日 15:00–23:00"
+  "hours": "週一–週四 16:00–0:00｜週五–週六 15:00–0:00｜週日 15:00–23:00",
+  "cuisine": "燒鳥"
  },
  {
   "name": "せいもん払い",
@@ -5205,7 +5266,8 @@ const PLACES = [
   "lng": 130.08974,
   "source": "PTT Street_Style 板推薦整理",
   "address": "福岡県糸島市志摩芥屋3757",
-  "hours": "週一–週日 10:00–17:00"
+  "hours": "週一–週日 10:00–17:00",
+  "cuisine": "甜點・咖啡"
  },
  {
   "name": "もつ鍋 極味や 福岡赤坂店",
@@ -5246,7 +5308,8 @@ const PLACES = [
   "lng": 130.403718,
   "source": "PTT Street_Style 板推薦整理",
   "address": "福岡県福岡市中央区渡辺通5-3-23-1",
-  "hours": "週一–週六 17:00–0:00｜週日 17:00–23:00"
+  "hours": "週一–週六 17:00–0:00｜週日 17:00–23:00",
+  "cuisine": "燒鳥"
  },
  {
   "name": "やきとり六三四",
@@ -5266,7 +5329,8 @@ const PLACES = [
   "lng": 130.403784,
   "source": "PTT Street_Style 板推薦整理",
   "address": "福岡県福岡市中央区渡辺通5-3-23-1 プロスペリタ天神1 Ⅱ 1F",
-  "hours": "週一–週五 17:00–0:00｜週六 16:00–0:00｜週日 16:00–23:00"
+  "hours": "週一–週五 17:00–0:00｜週六 16:00–0:00｜週日 16:00–23:00",
+  "cuisine": "燒鳥"
  },
  {
   "name": "やす武",
@@ -5314,16 +5378,19 @@ const PLACES = [
   "name_ja": "クッカーニャ",
   "category": "餐飲",
   "city": "福岡",
-  "area": "中央區・天神",
+  "area": "中央區・春吉",
   "tabelog": "4.04",
   "tabelog_area": "天神",
   "duration": "1–2 小時",
   "reason": "天神地區食べログ排行前段（4.04）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 33.589119,
-  "lng": 130.398521,
-  "coord_status": "area",
-  "area_center": "天神"
+  "lat": 33.5879966,
+  "lng": 130.4058931,
+  "coord_status": "google",
+  "area_center": "天神",
+  "cuisine": "洋食",
+  "google_maps_uri": "https://maps.google.com/?cid=9614876326394383311&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県福岡市中央区春吉３丁目２５−２１"
  },
  {
   "name": "サフラン",
@@ -5385,26 +5452,6 @@ const PLACES = [
   "coord_status": "google"
  },
  {
-  "name": "トルコレストラン・エルトゥールル",
-  "name_ja": "トルコレストラン エルトゥールル",
-  "category": "餐飲",
-  "city": "福岡",
-  "area": "中央區",
-  "cuisine": "清真・中東",
-  "halal": true,
-  "halal_cert": "ハラール対応",
-  "dishes": [
-   "ケバブ",
-   "トルコ料理"
-  ],
-  "reason": "店名取自 1890 年在和歌山遇難的土耳其軍艦「埃爾圖魯爾號」，福岡的土耳其清真料理選擇。",
-  "notes": "⚠️ 出發前請再確認營業狀況。",
-  "area_center": "天神",
-  "lat": 33.590312,
-  "lng": 130.398059,
-  "coord_status": "area"
- },
- {
   "name": "ドゥワンチャン",
   "name_ja": "ドゥワンチャン",
   "category": "餐飲",
@@ -5451,10 +5498,13 @@ const PLACES = [
   "duration": "1–2 小時",
   "reason": "中洲地區食べログ排行前段（3.83）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 33.593842,
-  "lng": 130.406148,
-  "coord_status": "area",
-  "area_center": "中洲"
+  "lat": 33.5926751,
+  "lng": 130.4076676,
+  "coord_status": "google",
+  "area_center": "中洲",
+  "cuisine": "酒吧",
+  "google_maps_uri": "https://maps.google.com/?cid=4927485409273480114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県福岡市博多区中洲３丁目２−１２ 5階"
  },
  {
   "name": "ミスターケバブ（Mr. Kebab）",
@@ -5498,16 +5548,19 @@ const PLACES = [
   "name_ja": "レストラン アレナ",
   "category": "餐飲",
   "city": "福岡",
-  "area": "中央區・天神",
+  "area": "博多區・中洲",
   "tabelog": "4.16",
   "tabelog_area": "天神",
   "duration": "1–2 小時",
   "reason": "天神地區食べログ排行前段（4.16）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 33.58991,
-  "lng": 130.397802,
-  "coord_status": "area",
-  "area_center": "天神"
+  "lat": 33.5901228,
+  "lng": 130.4046807,
+  "coord_status": "google",
+  "area_center": "天神",
+  "cuisine": "洋食",
+  "google_maps_uri": "https://maps.google.com/?cid=3305205894113988311&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県福岡市中央区西中洲１０−３ Nビル 1F"
  },
  {
   "name": "レストランエッサンス",
@@ -5551,7 +5604,7 @@ const PLACES = [
   "name_ja": "一蘭 本社総本店",
   "category": "餐飲",
   "city": "福岡",
-  "area": "博多區",
+  "area": "博多區・中洲",
   "cuisine": "拉麵",
   "dishes": [
    "天然豚骨拉麵",
@@ -5562,9 +5615,11 @@ const PLACES = [
   "price": "約 ¥1,000–1,500",
   "hours": "24 小時",
   "duration": "40 分",
-  "coord_status": "approx",
-  "lat": 33.5931,
-  "lng": 130.4055
+  "coord_status": "google",
+  "lat": 33.5932405,
+  "lng": 130.4045974,
+  "google_maps_uri": "https://maps.google.com/?cid=7524611293723795643&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県福岡市博多区中洲５丁目３−２"
  },
  {
   "name": "三原豆腐店",
@@ -5598,10 +5653,13 @@ const PLACES = [
   "duration": "1–2 小時",
   "reason": "中洲地區食べログ排行前段（3.92）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 33.592873,
-  "lng": 130.404761,
-  "coord_status": "area",
-  "area_center": "中洲"
+  "lat": 33.5935797,
+  "lng": 130.4038291,
+  "coord_status": "google",
+  "area_center": "中洲",
+  "cuisine": "其他",
+  "google_maps_uri": "https://maps.google.com/?cid=3872452049694717136&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県福岡市博多区中洲５丁目４−６ 2F"
  },
  {
   "name": "中洲屋台 紀文",
@@ -5699,9 +5757,11 @@ const PLACES = [
   "price": "未查證",
   "hours": "未查證（出發前確認）",
   "duration": "40 分",
-  "lat": 33.5859,
-  "lng": 130.451,
-  "coord_status": "approx"
+  "lat": 33.5868798,
+  "lng": 130.4434678,
+  "coord_status": "google",
+  "google_maps_uri": "https://maps.google.com/?cid=1390673363679043061&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県福岡市博多区青木７３９ 国際線旅客ターミナルビル 3階 福岡空港 ゲートラウンジエリア"
  },
  {
   "name": "元祖本吉屋（鰻魚蒸籠飯）",
@@ -5785,7 +5845,8 @@ const PLACES = [
   "lng": 130.403512,
   "source": "PTT Street_Style 板推薦整理",
   "address": "福岡県福岡市中央区渡辺通5-2-9 1F",
-  "hours": "週一–週六 17:00–0:00｜週日 17:00–23:00"
+  "hours": "週一–週六 17:00–0:00｜週日 17:00–23:00",
+  "cuisine": "壽司"
  },
  {
   "name": "博多 魚蔵（都ホテル博多）",
@@ -5979,7 +6040,8 @@ const PLACES = [
   "lng": 130.201472,
   "source": "PTT Street_Style 板推薦整理",
   "address": "福岡県糸島市前原中央3-18-15",
-  "hours": "週一–週二 11:30–17:00｜週五–週日 11:30–17:00｜週三、週四休"
+  "hours": "週一–週二 11:30–17:00｜週五–週日 11:30–17:00｜週三、週四休",
+  "cuisine": "甜點・咖啡"
  },
  {
   "name": "因幡烏龍麵（博多站前店）",
@@ -6007,16 +6069,19 @@ const PLACES = [
   "name_ja": "在掌",
   "category": "餐飲",
   "city": "福岡",
-  "area": "中央區・天神",
+  "area": "博多區・中洲",
   "tabelog": "4.03",
   "tabelog_area": "天神",
   "duration": "1–2 小時",
   "reason": "天神地區食べログ排行前段（4.03）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 33.589438,
-  "lng": 130.398619,
-  "coord_status": "area",
-  "area_center": "天神"
+  "lat": 33.5908336,
+  "lng": 130.4055671,
+  "coord_status": "google",
+  "area_center": "天神",
+  "cuisine": "其他",
+  "google_maps_uri": "https://maps.google.com/?cid=2892760705338515902&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県福岡市中央区西中洲３−２０ LANEラウンドビル 2F"
  },
  {
   "name": "夜明茶屋",
@@ -6142,16 +6207,19 @@ const PLACES = [
   "name_ja": "我逢人",
   "category": "餐飲",
   "city": "福岡",
-  "area": "中央區・天神",
+  "area": "博多區・中洲",
   "tabelog": "4.14",
   "tabelog_area": "天神",
   "duration": "1–2 小時",
   "reason": "天神地區食べログ排行前段（4.14）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 33.590421,
-  "lng": 130.398924,
-  "coord_status": "area",
-  "area_center": "天神"
+  "lat": 33.5910418,
+  "lng": 130.4054942,
+  "coord_status": "google",
+  "area_center": "天神",
+  "cuisine": "其他",
+  "google_maps_uri": "https://maps.google.com/?cid=7893160212842065212&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県福岡市中央区西中洲３−２０ LANEラウンドビル 3F"
  },
  {
   "name": "椛島氷菓",
@@ -6221,16 +6289,19 @@ const PLACES = [
   "name_ja": "油 ヒトツキ",
   "category": "餐飲",
   "city": "福岡",
-  "area": "博多區・博多站",
+  "area": "博多區・博多站南",
   "tabelog": "3.73",
   "tabelog_area": "博多",
   "duration": "1–2 小時",
   "reason": "博多地區食べログ排行前段（3.73）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 33.588912,
-  "lng": 130.420828,
-  "coord_status": "area",
-  "area_center": "博多"
+  "lat": 33.5811733,
+  "lng": 130.4277402,
+  "coord_status": "google",
+  "area_center": "博多",
+  "cuisine": "其他",
+  "google_maps_uri": "https://maps.google.com/?cid=509286681780742512&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県福岡市博多区博多駅南４丁目１２−３０ 1F"
  },
  {
   "name": "炭とおがわ",
@@ -6243,10 +6314,13 @@ const PLACES = [
   "duration": "1–2 小時",
   "reason": "中洲地區食べログ排行前段（3.92）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 33.592424,
-  "lng": 130.405844,
-  "coord_status": "area",
-  "area_center": "中洲"
+  "lat": 33.5934522,
+  "lng": 130.4048048,
+  "coord_status": "google",
+  "area_center": "中洲",
+  "cuisine": "燒鳥",
+  "google_maps_uri": "https://maps.google.com/?cid=11666363415124724149&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県福岡市博多区中洲５丁目２−５３ ３Ｆ"
  },
  {
   "name": "炭焼地鶏 山蔵",
@@ -6569,7 +6643,7 @@ const PLACES = [
   "name_ja": "茶房きくち",
   "category": "餐飲",
   "city": "福岡",
-  "area": "太宰府市",
+  "area": "太宰府市・宰府",
   "cuisine": "甜點・咖啡",
   "tabelog": "3.57",
   "tabelog_area": "太宰府・大野城周辺",
@@ -6580,9 +6654,11 @@ const PLACES = [
   ],
   "reason": "參道上可以坐下來吃現烤梅ヶ枝餅配抹茶的茶房。",
   "area_center": "太宰府",
-  "lat": 33.52026,
-  "lng": 130.534,
-  "coord_status": "area"
+  "lat": 33.5194878,
+  "lng": 130.5337426,
+  "coord_status": "google",
+  "google_maps_uri": "https://maps.google.com/?cid=13517668316196102746&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県太宰府市宰府２丁目７−２８"
  },
  {
   "name": "葉隠うどん",
@@ -6659,9 +6735,11 @@ const PLACES = [
   "price": "未查證",
   "hours": "未查證（出發前確認）",
   "duration": "30 分",
-  "lat": 33.5859,
-  "lng": 130.451,
-  "coord_status": "approx"
+  "lat": 33.5868798,
+  "lng": 130.4434678,
+  "coord_status": "google",
+  "address": "福岡県福岡市博多区青木739 福岡空港 国際線旅客ターミナルビル 3階 フードホール",
+  "google_maps_uri": "https://www.google.com/maps/search/?api=1&query=33.5868798,130.4434678"
  },
  {
   "name": "食事処マルタ活魚",
@@ -6694,10 +6772,13 @@ const PLACES = [
   "duration": "1–2 小時",
   "reason": "中洲地區食べログ排行前段（3.87）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 33.593293,
-  "lng": 130.404955,
-  "coord_status": "area",
-  "area_center": "中洲"
+  "lat": 33.5987482,
+  "lng": 130.4021042,
+  "coord_status": "google",
+  "area_center": "中洲",
+  "cuisine": "其他",
+  "google_maps_uri": "https://maps.google.com/?cid=15803700576720004769&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県福岡市博多区対馬小路２−１０"
  },
  {
   "name": "鮨 さかい",
@@ -6721,32 +6802,38 @@ const PLACES = [
   "name_ja": "鮨 そえ島",
   "category": "餐飲",
   "city": "福岡",
-  "area": "博多區・博多站",
+  "area": "博多區・美野島",
   "tabelog": "3.92",
   "tabelog_area": "博多",
   "duration": "1–2 小時",
   "reason": "博多地區食べログ排行前段（3.92）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 33.590061,
-  "lng": 130.420179,
-  "coord_status": "area",
-  "area_center": "博多"
+  "lat": 33.5801391,
+  "lng": 130.4187496,
+  "coord_status": "google",
+  "area_center": "博多",
+  "cuisine": "壽司",
+  "google_maps_uri": "https://maps.google.com/?cid=8769074137211731050&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県福岡市博多区美野島２丁目６−３４ 早川ビル"
  },
  {
   "name": "鮨 安吉",
   "name_ja": "鮨 安吉",
   "category": "餐飲",
   "city": "福岡",
-  "area": "博多區・博多站",
+  "area": "博多區・博多站前",
   "tabelog": "3.89",
   "tabelog_area": "博多",
   "duration": "1–2 小時",
   "reason": "博多地區食べログ排行前段（3.89）。這批是我用 Tabelog 各區「依評分排序」頁面掃出來、原本名單漏掉的高分店。",
   "notes": "⚠️ 只查證了分數與所在地區，營業時間、價位、是否需預約都未查證——多為高單價或預約制，去之前請用 popup 的食べログ連結自行確認。座標為區域概略位置，導航用 Google Maps 連結。",
-  "lat": 33.590168,
-  "lng": 130.420068,
-  "coord_status": "area",
-  "area_center": "博多"
+  "lat": 33.5859243,
+  "lng": 130.4168082,
+  "coord_status": "google",
+  "area_center": "博多",
+  "cuisine": "壽司",
+  "google_maps_uri": "https://maps.google.com/?cid=9370919548574684556&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県福岡市博多区博多駅前４丁目３−１１"
  },
  {
   "name": "鮨 菜とい",
@@ -6766,7 +6853,8 @@ const PLACES = [
   "lng": 130.243792,
   "source": "PTT Street_Style 板推薦整理",
   "address": "福岡県福岡市西区周船寺1-6-9",
-  "hours": "週一–週日 12:00–14:30, 18:00–22:30"
+  "hours": "週一–週日 12:00–14:30, 18:00–22:30",
+  "cuisine": "壽司"
  },
  {
   "name": "鮨しま",
@@ -6883,10 +6971,12 @@ const PLACES = [
   "duration": "1–1.5 小時",
   "reason": "長崎名物「土耳其飯」的代表店之一（食べログ 3.47），長崎駅前分店。一盤裡有豬排＋咖哩飯＋義大利麵。",
   "notes": "⚠️ 土耳其飯含豬排，穆斯林旅客請避開。 距 Coruscant Hotel 長崎駅Ⅰ（已選定的那間）約 321m／步行約 4 分。座標是「長崎駅」街區概略位置（店家不在 OSM），導航請用 popup 的 Google Maps 連結。",
-  "lat": 32.75275,
-  "lng": 129.86892,
-  "coord_status": "area",
-  "area_center": "長崎駅前"
+  "lat": 32.7531832,
+  "lng": 129.8686562,
+  "coord_status": "google",
+  "area_center": "長崎駅前",
+  "google_maps_uri": "https://maps.google.com/?cid=2325570491430466601&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "長崎県長崎市尾上町１−６７ 長崎街道かもめ市場"
  },
  {
   "name": "バーガーショップ あいかわ",
@@ -7094,7 +7184,7 @@ const PLACES = [
   "name_ja": "吉宗 本店",
   "category": "餐飲",
   "city": "長崎",
-  "area": "長崎市",
+  "area": "別府市・浜町",
   "cuisine": "鄉土料理",
   "dishes": [
    "茶碗蒸（大碗）",
@@ -7106,9 +7196,11 @@ const PLACES = [
   "price": "約 ¥1,500–2,500",
   "hours": "11:00–21:00",
   "duration": "1 小時",
-  "coord_status": "approx",
-  "lat": 32.744,
-  "lng": 129.8783
+  "coord_status": "google",
+  "lat": 32.7445064,
+  "lng": 129.8787748,
+  "google_maps_uri": "https://maps.google.com/?cid=10315780853087379114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "長崎県長崎市浜町８−９"
  },
  {
   "name": "吉宗 濱町分店",
@@ -7378,10 +7470,12 @@ const PLACES = [
   "duration": "1–1.5 小時",
   "reason": "長崎名物「豚まん」老舖桃太呂的長崎駅店（食べログ 3.31）。一個一口大、便宜，適合當宵夜或早餐。",
   "notes": "⚠️ 只賣豚まん類，不是正餐；含豬肉。 距 Coruscant Hotel 長崎駅Ⅰ（已選定的那間）約 261m／步行約 3 分。座標是「長崎駅」街區概略位置（店家不在 OSM），導航請用 popup 的 Google Maps 連結。",
-  "lat": 32.752837,
-  "lng": 129.869616,
-  "coord_status": "area",
-  "area_center": "長崎駅前"
+  "lat": 32.752977,
+  "lng": 129.8691672,
+  "coord_status": "google",
+  "area_center": "長崎駅前",
+  "google_maps_uri": "https://maps.google.com/?cid=5712240243836316291&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "長崎県長崎市尾上町１−６７"
  },
  {
   "name": "雲龍亭 銅座店",
@@ -7399,9 +7493,11 @@ const PLACES = [
   "reason": "長崎名物「一口餃子」的代表店，第 3 名。銅座就在思案橋旁，宵夜時段最熱鬧。",
   "price": "約 ¥1,000",
   "area_center": "長崎",
-  "lat": 32.743219,
-  "lng": 129.877835,
-  "coord_status": "area"
+  "lat": 32.742549,
+  "lng": 129.8777119,
+  "coord_status": "google",
+  "google_maps_uri": "https://maps.google.com/?cid=11241182924587756239&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "長崎県長崎市銅座町１３−１０"
  },
  {
   "name": "香蘭",
@@ -7438,10 +7534,12 @@ const PLACES = [
   "duration": "1–1.5 小時",
   "reason": "長崎駅一帶評價最高的海鮮居酒屋（食べログ 3.56）。亜紗系列以魚料理見長，離旅館只 400m。",
   "notes": "⚠️ 居酒屋型態，晚餐建議訂位。 距 Coruscant Hotel 長崎駅Ⅰ（已選定的那間）約 25m／步行約 1 分。座標是「大黒町」街區概略位置（店家不在 OSM），導航請用 popup 的 Google Maps 連結。",
-  "lat": 32.752215,
-  "lng": 129.872586,
-  "coord_status": "area",
-  "area_center": "長崎駅前"
+  "lat": 32.7517041,
+  "lng": 129.8725897,
+  "coord_status": "google",
+  "area_center": "長崎駅前",
+  "google_maps_uri": "https://maps.google.com/?cid=5497377980254618956&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "長崎県長崎市大黒町１０−２ フィールド大黒町ビル １Ｆ"
  },
  {
   "name": "鮨 重兵衛",

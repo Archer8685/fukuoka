@@ -16,11 +16,13 @@
   "duration": "1–1.5 小時",
   "reason": "長崎駅一帶評價最高的海鮮居酒屋（食べログ 3.56）。亜紗系列以魚料理見長，離旅館只 400m。",
   "notes": "⚠️ 居酒屋型態，晚餐建議訂位。 距 Coruscant Hotel 長崎駅Ⅰ（已選定的那間）約 25m／步行約 1 分。座標是「大黒町」街區概略位置（店家不在 OSM），導航請用 popup 的 Google Maps 連結。",
-  "lat": 32.752215,
-  "lng": 129.872586,
-  "coord_status": "area",
-  "coord_source": "街區中心（大黒町）",
-  "area_center": "長崎駅前"
+  "lat": 32.7517041,
+  "lng": 129.8725897,
+  "coord_status": "google",
+  "coord_source": "Google Places 重查 2026-08-21（長崎地魚ダイニング 魚店亜紗）",
+  "area_center": "長崎駅前",
+  "google_maps_uri": "https://maps.google.com/?cid=5497377980254618956&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "長崎県長崎市大黒町１０−２ フィールド大黒町ビル １Ｆ"
  },
  {
   "name": "ニッキー・アースティン 長崎駅前店",
@@ -39,11 +41,13 @@
   "duration": "1–1.5 小時",
   "reason": "長崎名物「土耳其飯」的代表店之一（食べログ 3.47），長崎駅前分店。一盤裡有豬排＋咖哩飯＋義大利麵。",
   "notes": "⚠️ 土耳其飯含豬排，穆斯林旅客請避開。 距 Coruscant Hotel 長崎駅Ⅰ（已選定的那間）約 321m／步行約 4 分。座標是「長崎駅」街區概略位置（店家不在 OSM），導航請用 popup 的 Google Maps 連結。",
-  "lat": 32.75275,
-  "lng": 129.86892,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（長崎駅前，半徑約 40m）",
-  "area_center": "長崎駅前"
+  "lat": 32.7531832,
+  "lng": 129.8686562,
+  "coord_status": "google",
+  "coord_source": "Google Places 重查 2026-08-21（ニッキー・アースティン長崎駅前店）",
+  "area_center": "長崎駅前",
+  "google_maps_uri": "https://maps.google.com/?cid=2325570491430466601&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "長崎県長崎市尾上町１−６７ 長崎街道かもめ市場"
  },
  {
   "name": "大阪屋 長崎駅店",
@@ -84,11 +88,13 @@
   "duration": "1–1.5 小時",
   "reason": "長崎名物「豚まん」老舖桃太呂的長崎駅店（食べログ 3.31）。一個一口大、便宜，適合當宵夜或早餐。",
   "notes": "⚠️ 只賣豚まん類，不是正餐；含豬肉。 距 Coruscant Hotel 長崎駅Ⅰ（已選定的那間）約 261m／步行約 3 分。座標是「長崎駅」街區概略位置（店家不在 OSM），導航請用 popup 的 Google Maps 連結。",
-  "lat": 32.752837,
-  "lng": 129.869616,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（長崎駅前，半徑約 81m）",
-  "area_center": "長崎駅前"
+  "lat": 32.752977,
+  "lng": 129.8691672,
+  "coord_status": "google",
+  "coord_source": "Google Places 重查 2026-08-21（長崎ぶたまん桃太呂 長崎駅店）",
+  "area_center": "長崎駅前",
+  "google_maps_uri": "https://maps.google.com/?cid=5712240243836316291&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "長崎県長崎市尾上町１−６７"
  },
  {
   "name": "老李 台湾居酒屋 駅前店",

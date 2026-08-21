@@ -1,0 +1,1825 @@
+[
+  {
+    "file": "data\\fukuoka.json",
+    "name": "かさの家（梅ヶ枝餅）",
+    "old_lat": 33.5199,
+    "old_lng": 130.534,
+    "query": "かさの家 太宰府",
+    "result": {
+      "types": [
+        "dessert_shop",
+        "confectionery",
+        "japanese_restaurant",
+        "food_store",
+        "restaurant",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒818-0117 福岡県太宰府市宰府２丁目７−２４",
+      "location": {
+        "latitude": 33.5194547,
+        "longitude": 130.5334317
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=16637148433084021916&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "かさの家",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 72,
+    "candidates": [
+      {
+        "types": [
+          "dessert_shop",
+          "confectionery",
+          "japanese_restaurant",
+          "food_store",
+          "restaurant",
+          "food",
+          "store",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒818-0117 福岡県太宰府市宰府２丁目７−２４",
+        "location": {
+          "latitude": 33.5194547,
+          "longitude": 130.5334317
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=16637148433084021916&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "かさの家",
+          "languageCode": "ja"
+        }
+      },
+      {
+        "types": [
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒818-0117 福岡県太宰府市宰府３丁目２−４１",
+        "location": {
+          "latitude": 33.5195712,
+          "longitude": 130.5334431
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3395693889608103093&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "笠乃家",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\fukuoka.json",
+    "name": "一蘭本社總店",
+    "old_lat": 33.5931,
+    "old_lng": 130.4055,
+    "query": "一蘭 本社総本店",
+    "result": {
+      "types": [
+        "ramen_restaurant",
+        "snack_bar",
+        "japanese_restaurant",
+        "chinese_noodle_restaurant",
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒810-0801 福岡県福岡市博多区中洲５丁目３−２",
+      "location": {
+        "latitude": 33.5932405,
+        "longitude": 130.4045974
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=7524611293723795643&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "一蘭 本社総本店",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 85,
+    "candidates": [
+      {
+        "types": [
+          "ramen_restaurant",
+          "snack_bar",
+          "japanese_restaurant",
+          "chinese_noodle_restaurant",
+          "meal_takeaway",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒810-0801 福岡県福岡市博多区中洲５丁目３−２",
+        "location": {
+          "latitude": 33.5932405,
+          "longitude": 130.4045974
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=7524611293723795643&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "一蘭 本社総本店",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\halal.json",
+    "name": "トルコレストラン・エルトゥールル",
+    "old_lat": 33.590312,
+    "old_lng": 130.398059,
+    "query": "エルトゥールル 福岡 トルコ料理",
+    "result": {
+      "types": [
+        "restaurant",
+        "halal_restaurant",
+        "turkish_restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒810-0044 福岡県福岡市中央区六本松１丁目３−１４",
+      "location": {
+        "latitude": 33.580660699999996,
+        "longitude": 130.379058
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=17853224437483228901&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Kafe Toruko",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 2061,
+    "candidates": [
+      {
+        "types": [
+          "restaurant",
+          "halal_restaurant",
+          "turkish_restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒810-0044 福岡県福岡市中央区六本松１丁目３−１４",
+        "location": {
+          "latitude": 33.580660699999996,
+          "longitude": 130.379058
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17853224437483228901&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "Kafe Toruko",
+          "languageCode": "ja"
+        }
+      },
+      {
+        "types": [
+          "turkish_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "Nagaichi Bld, 2F, １丁目-４-10 魚町 小倉北区 北九州市 福岡県 802-0006",
+        "location": {
+          "latitude": 33.8848054,
+          "longitude": 130.8804539
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13289373094622275084&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "エルトゥールル",
+          "languageCode": "ja"
+        }
+      },
+      {
+        "types": [
+          "kebab_shop",
+          "yakitori_restaurant",
+          "ramen_restaurant",
+          "hamburger_restaurant",
+          "cafe",
+          "sandwich_shop",
+          "american_restaurant",
+          "wholesaler",
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "manufacturer",
+          "service",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒810-0041 福岡県福岡市中央区大名１丁目１−２１ ケバブバーアンプル 内",
+        "location": {
+          "latitude": 33.5861389,
+          "longitude": 130.39555959999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=18137404174034480210&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "【福岡名物グルグルチキン大名本店GURUGURUCHICKEN】ケバブ天神ハンバーガー焼鳥 焼き鳥もつ鍋",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\halal.json",
+    "name": "地鶏家（別府）",
+    "old_lat": 33.27966,
+    "old_lng": 131.501,
+    "query": "地鶏家 別府",
+    "result": {
+      "types": [
+        "chicken_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒874-0945 大分県別府市浜町７−１４",
+      "location": {
+        "latitude": 33.273831099999995,
+        "longitude": 131.506876
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=17426364794522303474&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "地鶏屋",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 848,
+    "candidates": [
+      {
+        "types": [
+          "chicken_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒874-0945 大分県別府市浜町７−１４",
+        "location": {
+          "latitude": 33.273831099999995,
+          "longitude": 131.506876
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17426364794522303474&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "地鶏屋",
+          "languageCode": "ja"
+        }
+      },
+      {
+        "types": [
+          "yakitori_restaurant",
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒874-0031 大分県別府市照波園町１３−１７",
+        "location": {
+          "latitude": 33.319375,
+          "longitude": 131.496275
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=7308541136852101673&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "旨鶏商人 地鶏家",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\kitakyushu.json",
+    "name": "BEAR FRUITS（燒咖哩）",
+    "old_lat": 33.9456,
+    "old_lng": 130.9612,
+    "query": "ベアフルーツ 門司港",
+    "result": {
+      "types": [
+        "japanese_curry_restaurant",
+        "cafe",
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒801-0841 福岡県北九州市門司区西海岸１丁目４−７ １F",
+      "location": {
+        "latitude": 33.9455425,
+        "longitude": 130.96106419999998
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=4799326744322264152&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "焼きカレー専門店 BEAR FRUITS",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 14,
+    "candidates": [
+      {
+        "types": [
+          "japanese_curry_restaurant",
+          "cafe",
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒801-0841 福岡県北九州市門司区西海岸１丁目４−７ １F",
+        "location": {
+          "latitude": 33.9455425,
+          "longitude": 130.96106419999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=4799326744322264152&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "焼きカレー専門店 BEAR FRUITS",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\nagasaki.json",
+    "name": "吉宗 本店",
+    "old_lat": 32.744,
+    "old_lng": 129.8783,
+    "query": "吉宗 本店 長崎",
+    "result": {
+      "types": [
+        "japanese_restaurant",
+        "sushi_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒850-0853 長崎県長崎市浜町８−９",
+      "location": {
+        "latitude": 32.744506400000006,
+        "longitude": 129.8787748
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=10315780853087379114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "吉宗 本店",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 72,
+    "candidates": [
+      {
+        "types": [
+          "japanese_restaurant",
+          "sushi_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒850-0853 長崎県長崎市浜町８−９",
+        "location": {
+          "latitude": 32.744506400000006,
+          "longitude": 129.8787748
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=10315780853087379114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "吉宗 本店",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\nagasaki_station.json",
+    "name": "魚店亜紗（大黑町）",
+    "old_lat": 32.752215,
+    "old_lng": 129.872586,
+    "query": "魚店亜紗 長崎",
+    "result": {
+      "types": [
+        "japanese_izakaya_restaurant",
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒850-0057 長崎県長崎市大黒町１０−２ フィールド大黒町ビル １Ｆ",
+      "location": {
+        "latitude": 32.7517041,
+        "longitude": 129.87258970000002
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=5497377980254618956&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "長崎地魚ダイニング 魚店亜紗",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 57,
+    "candidates": [
+      {
+        "types": [
+          "japanese_izakaya_restaurant",
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒850-0057 長崎県長崎市大黒町１０−２ フィールド大黒町ビル １Ｆ",
+        "location": {
+          "latitude": 32.7517041,
+          "longitude": 129.87258970000002
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5497377980254618956&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "長崎地魚ダイニング 魚店亜紗",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\nagasaki_station.json",
+    "name": "ニッキー・アースティン 長崎駅前店",
+    "old_lat": 32.75275,
+    "old_lng": 129.86892,
+    "query": "ニッキー・アースティン 長崎駅前店 長崎",
+    "result": {
+      "types": [
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒850-0058 長崎県長崎市尾上町１−６７ 長崎街道かもめ市場",
+      "location": {
+        "latitude": 32.753183199999995,
+        "longitude": 129.8686562
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=2325570491430466601&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "ニッキー・アースティン長崎駅前店",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 54,
+    "candidates": [
+      {
+        "types": [
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒850-0058 長崎県長崎市尾上町１−６７ 長崎街道かもめ市場",
+        "location": {
+          "latitude": 32.753183199999995,
+          "longitude": 129.8686562
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=2325570491430466601&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "ニッキー・アースティン長崎駅前店",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\nagasaki_station.json",
+    "name": "長崎ぶたまん 桃太呂 長崎駅店",
+    "old_lat": 32.752837,
+    "old_lng": 129.869616,
+    "query": "長崎ぶたまん 桃太呂 長崎駅店 長崎",
+    "result": {
+      "types": [
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒850-0058 長崎県長崎市尾上町１−６７",
+      "location": {
+        "latitude": 32.752977,
+        "longitude": 129.8691672
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=5712240243836316291&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "長崎ぶたまん桃太呂 長崎駅店",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 45,
+    "candidates": [
+      {
+        "types": [
+          "meal_takeaway",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒850-0058 長崎県長崎市尾上町１−６７",
+        "location": {
+          "latitude": 32.752977,
+          "longitude": 129.8691672
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5712240243836316291&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "長崎ぶたまん桃太呂 長崎駅店",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\restaurants.json",
+    "name": "元祖もつ鍋楽天地 福岡空港國際線美食廣場店",
+    "old_lat": 33.5859,
+    "old_lng": 130.451,
+    "query": "元祖もつ鍋楽天地 福岡空港国際線",
+    "result": {
+      "types": [
+        "japanese_izakaya_restaurant",
+        "brunch_restaurant",
+        "cafe",
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒812-0851 福岡県福岡市博多区青木７３９ 国際線旅客ターミナルビル 3階 福岡空港 ゲートラウンジエリア",
+      "location": {
+        "latitude": 33.5868798,
+        "longitude": 130.4434678
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=1390673363679043061&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "元祖もつ鍋ちゃんぽん楽天地 福岡空港国際線フードホール店",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 706,
+    "candidates": [
+      {
+        "types": [
+          "japanese_izakaya_restaurant",
+          "brunch_restaurant",
+          "cafe",
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒812-0851 福岡県福岡市博多区青木７３９ 国際線旅客ターミナルビル 3階 福岡空港 ゲートラウンジエリア",
+        "location": {
+          "latitude": 33.5868798,
+          "longitude": 130.4434678
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1390673363679043061&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "元祖もつ鍋ちゃんぽん楽天地 福岡空港国際線フードホール店",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\restaurants.json",
+    "name": "釜喜利烏龍麵 福岡空港國際線航廈店",
+    "old_lat": 33.5859,
+    "old_lng": 130.451,
+    "query": "釜喜利うどん 福岡空港国際線",
+    "result": {
+      "types": [
+        "japanese_restaurant",
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒810-0041 福岡県福岡市中央区大名１丁目７−８ F,Corazón大名",
+      "location": {
+        "latitude": 33.5858214,
+        "longitude": 130.3915615
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=1471727695290131633&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "釜喜利うどん",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 5506,
+    "candidates": [
+      {
+        "types": [
+          "japanese_restaurant",
+          "meal_takeaway",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒810-0041 福岡県福岡市中央区大名１丁目７−８ F,Corazón大名",
+        "location": {
+          "latitude": 33.5858214,
+          "longitude": 130.3915615
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1471727695290131633&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "釜喜利うどん",
+          "languageCode": "ja"
+        }
+      },
+      {
+        "types": [
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒812-0853 福岡県福岡市博多区東平尾２丁目４−３０",
+        "location": {
+          "latitude": 33.5835045,
+          "longitude": 130.4570315
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=4605552942591107844&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "牧のうどん 空港店",
+          "languageCode": "ja"
+        }
+      },
+      {
+        "types": [
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒812-0003 福岡県福岡市博多区下臼井７７８−１",
+        "location": {
+          "latitude": 33.5996966,
+          "longitude": 130.4462536
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13317937451634731304&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "あご出汁うどん こがね丸",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog.json",
+    "name": "茶房きくち",
+    "old_lat": 33.52026,
+    "old_lng": 130.534,
+    "query": "茶房きくち 太宰府",
+    "result": {
+      "types": [
+        "confectionery",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒818-0117 福岡県太宰府市宰府２丁目７−２８",
+      "location": {
+        "latitude": 33.5194878,
+        "longitude": 130.5337426
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=13517668316196102746&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "茶房きくち",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 89,
+    "candidates": [
+      {
+        "types": [
+          "confectionery",
+          "food_store",
+          "store",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒818-0117 福岡県太宰府市宰府２丁目７−２８",
+        "location": {
+          "latitude": 33.5194878,
+          "longitude": 130.5337426
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13517668316196102746&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "茶房きくち",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog.json",
+    "name": "三井倶楽部（レストラン）",
+    "old_lat": 33.945547,
+    "old_lng": 130.963496,
+    "query": "三井倶楽部 門司港 レストラン",
+    "result": {
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒801-0852 福岡県北九州市門司区港町７−１",
+      "location": {
+        "latitude": 33.9457227,
+        "longitude": 130.96251400000003
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=10179529924273055573&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "和洋レストラン三井倶楽部",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 93,
+    "candidates": [
+      {
+        "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒801-0852 福岡県北九州市門司区港町７−１",
+        "location": {
+          "latitude": 33.9457227,
+          "longitude": 130.96251400000003
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=10179529924273055573&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "和洋レストラン三井倶楽部",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog.json",
+    "name": "雲龍亭 銅座店",
+    "old_lat": 32.743219,
+    "old_lng": 129.877835,
+    "query": "雲龍亭 銅座店 長崎",
+    "result": {
+      "types": [
+        "chinese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒850-0841 長崎県長崎市銅座町１３−１０",
+      "location": {
+        "latitude": 32.742549,
+        "longitude": 129.87771189999998
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=11241182924587756239&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "雲龍亭 銅座店",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 75,
+    "candidates": [
+      {
+        "types": [
+          "chinese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒850-0841 長崎県長崎市銅座町１３−１０",
+        "location": {
+          "latitude": 32.742549,
+          "longitude": 129.87771189999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11241182924587756239&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "雲龍亭 銅座店",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": "レストラン 高津",
+    "old_lat": 33.951678,
+    "old_lng": 130.943673,
+    "query": "レストラン 高津 下關",
+    "result": {
+      "types": [
+        "western_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒750-0014 山口県下関市岬之町１３−７ 蜂谷ビル 蜂屋ビル1F",
+      "location": {
+        "latitude": 33.9516092,
+        "longitude": 130.9351233
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=11816304780209342941&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "レストラン高津（restaurant takatsu）",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 789,
+    "candidates": [
+      {
+        "types": [
+          "western_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒750-0014 山口県下関市岬之町１３−７ 蜂谷ビル 蜂屋ビル1F",
+        "location": {
+          "latitude": 33.9516092,
+          "longitude": 130.9351233
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11816304780209342941&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "レストラン高津（restaurant takatsu）",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": "広島お好み焼き 弘々家",
+    "old_lat": 33.951834,
+    "old_lng": 130.942326,
+    "query": "広島お好み焼き 弘々家 下關",
+    "result": {
+      "types": [
+        "japanese_izakaya_restaurant",
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒751-0837 山口県下関市山の田中央町１−１３ 武嶋ビル １階",
+      "location": {
+        "latitude": 33.986585,
+        "longitude": 130.9281955
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=17589692518577891443&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "広島お好み焼き 弘々家",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 4078,
+    "candidates": [
+      {
+        "types": [
+          "japanese_izakaya_restaurant",
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒751-0837 山口県下関市山の田中央町１−１３ 武嶋ビル １階",
+        "location": {
+          "latitude": 33.986585,
+          "longitude": 130.9281955
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17589692518577891443&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "広島お好み焼き 弘々家",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": "日和庵",
+    "old_lat": 33.952306,
+    "old_lng": 130.94322,
+    "query": "日和庵 下關",
+    "result": {
+      "types": [
+        "french_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒750-0019 山口県下関市丸山町５丁目３−１９",
+      "location": {
+        "latitude": 33.95412,
+        "longitude": 130.93231799999998
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=18132573436871643141&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "日和庵",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 1026,
+    "candidates": [
+      {
+        "types": [
+          "french_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒750-0019 山口県下関市丸山町５丁目３−１９",
+        "location": {
+          "latitude": 33.95412,
+          "longitude": 130.93231799999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=18132573436871643141&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "日和庵",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": "中洲 松",
+    "old_lat": 33.592873,
+    "old_lng": 130.404761,
+    "query": "中洲 松 中洲",
+    "result": {
+      "types": [
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒810-0801 福岡県福岡市博多区中洲５丁目４−６ 2F",
+      "location": {
+        "latitude": 33.5935797,
+        "longitude": 130.4038291
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=3872452049694717136&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "中洲 松",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 117,
+    "candidates": [
+      {
+        "types": [
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒810-0801 福岡県福岡市博多区中洲５丁目４−６ 2F",
+        "location": {
+          "latitude": 33.5935797,
+          "longitude": 130.4038291
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3872452049694717136&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "中洲 松",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": "炭とおがわ",
+    "old_lat": 33.592424,
+    "old_lng": 130.405844,
+    "query": "炭とおがわ 中洲",
+    "result": {
+      "types": [
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒810-0801 福岡県福岡市博多区中洲５丁目２−５３ ３Ｆ",
+      "location": {
+        "latitude": 33.5934522,
+        "longitude": 130.4048048
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=11666363415124724149&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "炭とおがわ",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 149,
+    "candidates": [
+      {
+        "types": [
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒810-0801 福岡県福岡市博多区中洲５丁目２−５３ ３Ｆ",
+        "location": {
+          "latitude": 33.5934522,
+          "longitude": 130.4048048
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11666363415124724149&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "炭とおがわ",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": "馳走なかむら",
+    "old_lat": 33.593293,
+    "old_lng": 130.404955,
+    "query": "馳走なかむら 中洲",
+    "result": {
+      "types": [
+        "japanese_restaurant",
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒812-0020 福岡県福岡市博多区対馬小路２−１０",
+      "location": {
+        "latitude": 33.598748199999996,
+        "longitude": 130.4021042
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=15803700576720004769&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "なかむら",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 662,
+    "candidates": [
+      {
+        "types": [
+          "japanese_restaurant",
+          "meal_takeaway",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒812-0020 福岡県福岡市博多区対馬小路２−１０",
+        "location": {
+          "latitude": 33.598748199999996,
+          "longitude": 130.4021042
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=15803700576720004769&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "なかむら",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": "ハート・ストリングス",
+    "old_lat": 33.593842,
+    "old_lng": 130.406148,
+    "query": "ハート・ストリングス 中洲",
+    "result": {
+      "types": [
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒810-0801 福岡県福岡市博多区中洲３丁目２−１２ 5階",
+      "location": {
+        "latitude": 33.5926751,
+        "longitude": 130.4076676
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=4927485409273480114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "ハートストリングス",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 191,
+    "candidates": [
+      {
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒810-0801 福岡県福岡市博多区中洲３丁目２−１２ 5階",
+        "location": {
+          "latitude": 33.5926751,
+          "longitude": 130.4076676
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=4927485409273480114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "ハートストリングス",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": "鮨 そえ島",
+    "old_lat": 33.590061,
+    "old_lng": 130.420179,
+    "query": "鮨 そえ島 博多",
+    "result": {
+      "types": [
+        "sushi_restaurant",
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒812-0017 福岡県福岡市博多区美野島２丁目６−３４ 早川ビル",
+      "location": {
+        "latitude": 33.5801391,
+        "longitude": 130.41874959999998
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=8769074137211731050&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "そえ島",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 1111,
+    "candidates": [
+      {
+        "types": [
+          "sushi_restaurant",
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒812-0017 福岡県福岡市博多区美野島２丁目６−３４ 早川ビル",
+        "location": {
+          "latitude": 33.5801391,
+          "longitude": 130.41874959999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=8769074137211731050&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "そえ島",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": "鮨 安吉",
+    "old_lat": 33.590168,
+    "old_lng": 130.420068,
+    "query": "鮨 安吉 博多",
+    "result": {
+      "types": [
+        "sushi_restaurant",
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒812-0011 福岡県福岡市博多区博多駅前４丁目３−１１",
+      "location": {
+        "latitude": 33.585924299999995,
+        "longitude": 130.4168082
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=9370919548574684556&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "鮨 安吉",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 560,
+    "candidates": [
+      {
+        "types": [
+          "sushi_restaurant",
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒812-0011 福岡県福岡市博多区博多駅前４丁目３−１１",
+        "location": {
+          "latitude": 33.585924299999995,
+          "longitude": 130.4168082
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9370919548574684556&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "鮨 安吉",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": "油 ヒトツキ",
+    "old_lat": 33.588912,
+    "old_lng": 130.420828,
+    "query": "油 ヒトツキ 博多",
+    "result": {
+      "types": [
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒812-0016 福岡県福岡市博多区博多駅南４丁目１２−３０ 1F",
+      "location": {
+        "latitude": 33.581173299999996,
+        "longitude": 130.4277402
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=509286681780742512&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "油HITOTSUKI",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 1073,
+    "candidates": [
+      {
+        "types": [
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒812-0016 福岡県福岡市博多区博多駅南４丁目１２−３０ 1F",
+        "location": {
+          "latitude": 33.581173299999996,
+          "longitude": 130.4277402
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=509286681780742512&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "油HITOTSUKI",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": "レストラン アレナ",
+    "old_lat": 33.58991,
+    "old_lng": 130.397802,
+    "query": "レストラン アレナ 天神",
+    "result": {
+      "types": [
+        "french_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒810-0002 福岡県福岡市中央区西中洲１０−３ Nビル 1F",
+      "location": {
+        "latitude": 33.590122799999996,
+        "longitude": 130.4046807
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=3305205894113988311&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "レストラン アレナ",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 638,
+    "candidates": [
+      {
+        "types": [
+          "french_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒810-0002 福岡県福岡市中央区西中洲１０−３ Nビル 1F",
+        "location": {
+          "latitude": 33.590122799999996,
+          "longitude": 130.4046807
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3305205894113988311&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "レストラン アレナ",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": "我逢人",
+    "old_lat": 33.590421,
+    "old_lng": 130.398924,
+    "query": "我逢人 天神",
+    "result": {
+      "types": [
+        "sushi_restaurant",
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒810-0002 福岡県福岡市中央区西中洲３−２０ LANEラウンドビル 3F",
+      "location": {
+        "latitude": 33.5910418,
+        "longitude": 130.4054942
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=7893160212842065212&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "我逢人",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 612,
+    "candidates": [
+      {
+        "types": [
+          "sushi_restaurant",
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒810-0002 福岡県福岡市中央区西中洲３−２０ LANEラウンドビル 3F",
+        "location": {
+          "latitude": 33.5910418,
+          "longitude": 130.4054942
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=7893160212842065212&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "我逢人",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": "クッカーニャ",
+    "old_lat": 33.589119,
+    "old_lng": 130.398521,
+    "query": "クッカーニャ 天神",
+    "result": {
+      "types": [
+        "italian_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒810-0003 福岡県福岡市中央区春吉３丁目２５−２１",
+      "location": {
+        "latitude": 33.5879966,
+        "longitude": 130.4058931
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=9614876326394383311&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "クッカーニャ",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 694,
+    "candidates": [
+      {
+        "types": [
+          "italian_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒810-0003 福岡県福岡市中央区春吉３丁目２５−２１",
+        "location": {
+          "latitude": 33.5879966,
+          "longitude": 130.4058931
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9614876326394383311&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "クッカーニャ",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": "在掌",
+    "old_lat": 33.589438,
+    "old_lng": 130.398619,
+    "query": "在掌 天神",
+    "result": {
+      "types": [
+        "sushi_restaurant",
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒810-0002 福岡県福岡市中央区西中洲３−２０ LANEラウンドビル 2F",
+      "location": {
+        "latitude": 33.590833599999996,
+        "longitude": 130.40556709999998
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=2892760705338515902&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "在掌",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 662,
+    "candidates": [
+      {
+        "types": [
+          "sushi_restaurant",
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒810-0002 福岡県福岡市中央区西中洲３−２０ LANEラウンドビル 2F",
+        "location": {
+          "latitude": 33.590833599999996,
+          "longitude": 130.40556709999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=2892760705338515902&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "在掌",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": "鮨中村",
+    "old_lat": 32.803266,
+    "old_lng": 130.708303,
+    "query": "鮨中村 熊本",
+    "result": {
+      "types": [
+        "sushi_restaurant",
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒860-0863 熊本県熊本市中央区坪井１丁目４−２１",
+      "location": {
+        "latitude": 32.8101972,
+        "longitude": 130.7101717
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=9186417911524372865&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "鮨 中村",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 790,
+    "candidates": [
+      {
+        "types": [
+          "sushi_restaurant",
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒860-0863 熊本県熊本市中央区坪井１丁目４−２１",
+        "location": {
+          "latitude": 32.8101972,
+          "longitude": 130.7101717
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9186417911524372865&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "鮨 中村",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": "ステーキハウス バロン",
+    "old_lat": 32.80375,
+    "old_lng": 130.708966,
+    "query": "ステーキハウス バロン 熊本",
+    "result": {
+      "types": [
+        "steak_house",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒860-0807 熊本県熊本市中央区下通１丁目９−４ 宇都宮ビル ２階",
+      "location": {
+        "latitude": 32.8007336,
+        "longitude": 130.70735879999998
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=13206351657385979574&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "ステーキハウス バロン",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 368,
+    "candidates": [
+      {
+        "types": [
+          "steak_house",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒860-0807 熊本県熊本市中央区下通１丁目９−４ 宇都宮ビル ２階",
+        "location": {
+          "latitude": 32.8007336,
+          "longitude": 130.70735879999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13206351657385979574&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "ステーキハウス バロン",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": "IL CASINO",
+    "old_lat": 32.803053,
+    "old_lng": 130.708356,
+    "query": "IL CASINO 熊本",
+    "result": {
+      "types": [
+        "italian_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒860-0808 熊本県熊本市中央区手取本町３−７",
+      "location": {
+        "latitude": 32.8031143,
+        "longitude": 130.70871599999998
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=51804321841709359&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "IL CASINO",
+        "languageCode": "en"
+      }
+    },
+    "distance_m": 34,
+    "candidates": [
+      {
+        "types": [
+          "italian_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒860-0808 熊本県熊本市中央区手取本町３−７",
+        "location": {
+          "latitude": 32.8031143,
+          "longitude": 130.70871599999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=51804321841709359&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "IL CASINO",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": ".know",
+    "old_lat": 32.803458,
+    "old_lng": 130.707128,
+    "query": ".know 熊本",
+    "result": {
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒860-0037 熊本県熊本市中央区西阿弥陀寺町６−６ 商工クラブ 1F",
+      "location": {
+        "latitude": 32.793947599999996,
+        "longitude": 130.6951576
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=9431139705054867161&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": ".know restaurant",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 1540,
+    "candidates": [
+      {
+        "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒860-0037 熊本県熊本市中央区西阿弥陀寺町６−６ 商工クラブ 1F",
+        "location": {
+          "latitude": 32.793947599999996,
+          "longitude": 130.6951576
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9431139705054867161&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": ".know restaurant",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\tabelog_top.json",
+    "name": "おやど二本の葦束",
+    "old_lat": 33.263886,
+    "old_lng": 131.356268,
+    "query": "おやど二本の葦束 湯布院",
+    "result": {
+      "types": [
+        "japanese_inn",
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "〒879-5114 大分県由布市湯布院町川北９１８−１８",
+      "location": {
+        "latitude": 33.262023,
+        "longitude": 131.3359806
+      },
+      "googleMapsUri": "https://maps.google.com/?cid=2385430233505685692&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "おやど 二本の葦束",
+        "languageCode": "ja"
+      }
+    },
+    "distance_m": 1898,
+    "candidates": [
+      {
+        "types": [
+          "japanese_inn",
+          "hotel",
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "〒879-5114 大分県由布市湯布院町川北９１８−１８",
+        "location": {
+          "latitude": 33.262023,
+          "longitude": 131.3359806
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=2385430233505685692&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+        "businessStatus": "OPERATIONAL",
+        "displayName": {
+          "text": "おやど 二本の葦束",
+          "languageCode": "ja"
+        }
+      }
+    ]
+  }
+]

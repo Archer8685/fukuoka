@@ -179,7 +179,8 @@
   "source": "PTT Street_Style 板推薦整理",
   "coord_source": "Google Places 查詢 2026-08-19（LIVING STEREO MUSIC BAR & RECORD STORE）",
   "address": "福岡県福岡市中央区薬院2-18-10 102",
-  "hours": "週一–週四 17:00–1:00｜週五 17:00–2:00｜週六 15:00–2:00｜週日休"
+  "hours": "週一–週四 17:00–1:00｜週五 17:00–2:00｜週六 15:00–2:00｜週日休",
+  "cuisine": "甜點・咖啡"
  },
  {
   "name": "Kaddish",
@@ -700,7 +701,8 @@
   "source": "PTT Street_Style 板推薦整理",
   "coord_source": "Google Places 查詢 2026-08-19（STANDPOINT）",
   "address": "福岡県福岡市中央区赤坂3-4-37 2F",
-  "hours": "週一–週日 11:00–17:00"
+  "hours": "週一–週日 11:00–17:00",
+  "cuisine": "甜點・咖啡"
  },
  {
   "name": "NEPENTHES HAKATA",
@@ -879,7 +881,8 @@
   "source": "PTT Street_Style 板推薦整理",
   "coord_source": "Google Places 查詢 2026-08-19（valiant gallery）",
   "address": "福岡県福岡市中央区今泉2-3-18",
-  "business_status": "CLOSED_PERMANENTLY"
+  "business_status": "CLOSED_PERMANENTLY",
+  "cuisine": "酒吧"
  },
  {
   "name": "Liquid Liquid",
@@ -901,7 +904,8 @@
   "source": "PTT Street_Style 板推薦整理",
   "coord_source": "Google Places 查詢 2026-08-19（Liquid Liquid）",
   "address": "福岡県福岡市中央区大名1-9-1 粋名ビル 1F",
-  "business_status": "CLOSED_PERMANENTLY"
+  "business_status": "CLOSED_PERMANENTLY",
+  "cuisine": "甜點・咖啡"
  },
  {
   "name": "VIORO",
@@ -1013,7 +1017,8 @@
   "source": "PTT Street_Style 板推薦整理",
   "coord_source": "Google Places 查詢 2026-08-19（またいちの塩 製塩所 工房とったん）",
   "address": "福岡県糸島市志摩芥屋3757",
-  "hours": "週一–週日 10:00–17:00"
+  "hours": "週一–週日 10:00–17:00",
+  "cuisine": "甜點・咖啡"
  },
  {
   "name": "ヤシの木ブランコ",
@@ -1058,7 +1063,8 @@
   "lng": 130.148163,
   "source": "PTT Street_Style 板推薦整理",
   "coord_source": "Google Places 查詢 2026-08-19（bbb haus）",
-  "address": "福岡県糸島市志摩小金丸1897"
+  "address": "福岡県糸島市志摩小金丸1897",
+  "cuisine": "甜點・咖啡"
  },
  {
   "name": "櫻井神社（糸島）",
@@ -1213,7 +1219,8 @@
   "source": "PTT Street_Style 板推薦整理",
   "coord_source": "Google Places 查詢 2026-08-19（古材の森（旧西原邸））",
   "address": "福岡県糸島市前原中央3-18-15",
-  "hours": "週一–週二 11:30–17:00｜週五–週日 11:30–17:00｜週三、週四休"
+  "hours": "週一–週二 11:30–17:00｜週五–週日 11:30–17:00｜週三、週四休",
+  "cuisine": "甜點・咖啡"
  },
  {
   "name": "郷土文具のお店 小富士",
@@ -1324,7 +1331,8 @@
   "source": "PTT Street_Style 板推薦整理",
   "coord_source": "Google Places 查詢 2026-08-19（鮨 菜とい）",
   "address": "福岡県福岡市西区周船寺1-6-9",
-  "hours": "週一–週日 12:00–14:30, 18:00–22:30"
+  "hours": "週一–週日 12:00–14:30, 18:00–22:30",
+  "cuisine": "壽司"
  },
  {
   "name": "博多 喜多郎寿し",
@@ -1347,7 +1355,8 @@
   "source": "PTT Street_Style 板推薦整理",
   "coord_source": "Google Places 查詢 2026-08-19（博多 喜多郎寿し）",
   "address": "福岡県福岡市中央区渡辺通5-2-9 1F",
-  "hours": "週一–週六 17:00–0:00｜週日 17:00–23:00"
+  "hours": "週一–週六 17:00–0:00｜週日 17:00–23:00",
+  "cuisine": "壽司"
  },
  {
   "name": "すみ劇場 むさし坐",
@@ -1370,7 +1379,8 @@
   "source": "PTT Street_Style 板推薦整理",
   "coord_source": "Google Places 查詢 2026-08-19（すみ劇場 むさし坐）",
   "address": "福岡県福岡市中央区渡辺通5-5-12",
-  "hours": "週一–週四 16:00–0:00｜週五–週六 15:00–0:00｜週日 15:00–23:00"
+  "hours": "週一–週四 16:00–0:00｜週五–週六 15:00–0:00｜週日 15:00–23:00",
+  "cuisine": "燒鳥"
  },
  {
   "name": "やきとり六三四",
@@ -1392,7 +1402,8 @@
   "source": "PTT Street_Style 板推薦整理",
   "coord_source": "Google Places 查詢 2026-08-19（やきとり 六三四）",
   "address": "福岡県福岡市中央区渡辺通5-3-23-1 プロスペリタ天神1 Ⅱ 1F",
-  "hours": "週一–週五 17:00–0:00｜週六 16:00–0:00｜週日 16:00–23:00"
+  "hours": "週一–週五 17:00–0:00｜週六 16:00–0:00｜週日 16:00–23:00",
+  "cuisine": "燒鳥"
  },
  {
   "name": "やきとり五二六",
@@ -1414,7 +1425,8 @@
   "source": "PTT Street_Style 板推薦整理",
   "coord_source": "Google Places 查詢 2026-08-19（やきとり 五二六）",
   "address": "福岡県福岡市中央区渡辺通5-3-23-1",
-  "hours": "週一–週六 17:00–0:00｜週日 17:00–23:00"
+  "hours": "週一–週六 17:00–0:00｜週日 17:00–23:00",
+  "cuisine": "燒鳥"
  },
  {
   "name": "Blue Bottle Coffee 福岡天神カフェ",
@@ -1437,6 +1449,7 @@
   "source": "PTT Street_Style 板推薦整理",
   "coord_source": "Google Places 查詢 2026-08-19（ブルーボトルコーヒー福岡天神カフェ）",
   "address": "福岡県福岡市中央区天神2-2-20 警固神社社務所ビル 1階⁠",
-  "hours": "週一–週日 8:00–20:00"
+  "hours": "週一–週日 8:00–20:00",
+  "cuisine": "甜點・咖啡"
  }
 ]

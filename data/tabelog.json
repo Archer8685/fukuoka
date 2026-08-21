@@ -492,7 +492,7 @@
   "name_ja": "茶房きくち",
   "category": "餐飲",
   "city": "福岡",
-  "area": "太宰府市",
+  "area": "太宰府市・宰府",
   "cuisine": "甜點・咖啡",
   "q": "茶房きくち 太宰府",
   "tabelog": "3.57",
@@ -504,10 +504,12 @@
   ],
   "reason": "參道上可以坐下來吃現烤梅ヶ枝餅配抹茶的茶房。",
   "area_center": "太宰府",
-  "lat": 33.52026,
-  "lng": 130.534,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（太宰府，半徑約 40m）"
+  "lat": 33.5194878,
+  "lng": 130.5337426,
+  "coord_status": "google",
+  "coord_source": "Google Places 重查 2026-08-21（茶房きくち）",
+  "google_maps_uri": "https://maps.google.com/?cid=13517668316196102746&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県太宰府市宰府２丁目７−２８"
  },
  {
   "name": "ルアン HOTEL CULTIA 太宰府",
@@ -797,10 +799,12 @@
   ],
   "reason": "就在舊門司三井俱樂部（愛因斯坦住過的洋館）裡的餐廳，可以在重要文化財裡吃飯。",
   "area_center": "門司港",
-  "lat": 33.945547,
-  "lng": 130.963496,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（門司港，半徑約 81m）"
+  "lat": 33.9457227,
+  "lng": 130.962514,
+  "coord_status": "google",
+  "coord_source": "Google Places 重查 2026-08-21（和洋レストラン三井倶楽部）",
+  "google_maps_uri": "https://maps.google.com/?cid=10179529924273055573&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県北九州市門司区港町７−１"
  },
  {
   "name": "三枡",
@@ -982,10 +986,12 @@
   "reason": "長崎名物「一口餃子」的代表店，第 3 名。銅座就在思案橋旁，宵夜時段最熱鬧。",
   "price": "約 ¥1,000",
   "area_center": "長崎",
-  "lat": 32.743219,
-  "lng": 129.877835,
-  "coord_status": "area",
-  "coord_source": "區域中心點散開（長崎，半徑約 88m）"
+  "lat": 32.742549,
+  "lng": 129.8777119,
+  "coord_status": "google",
+  "coord_source": "Google Places 重查 2026-08-21（雲龍亭 銅座店）",
+  "google_maps_uri": "https://maps.google.com/?cid=11241182924587756239&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "長崎県長崎市銅座町１３−１０"
  },
  {
   "name": "桃若",

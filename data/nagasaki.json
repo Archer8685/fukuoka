@@ -405,7 +405,7 @@
   "name_ja": "吉宗 本店",
   "category": "餐飲",
   "city": "長崎",
-  "area": "長崎市",
+  "area": "別府市・浜町",
   "cuisine": "鄉土料理",
   "q": "吉宗 本店 長崎",
   "dishes": [
@@ -418,9 +418,12 @@
   "price": "約 ¥1,500–2,500",
   "hours": "11:00–21:00",
   "duration": "1 小時",
-  "coord_status": "approx",
-  "lat": 32.744,
-  "lng": 129.8783
+  "coord_status": "google",
+  "lat": 32.7445064,
+  "lng": 129.8787748,
+  "coord_source": "Google Places 重查 2026-08-21（吉宗 本店）",
+  "google_maps_uri": "https://maps.google.com/?cid=10315780853087379114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "長崎県長崎市浜町８−９"
  },
  {
   "name": "岩崎本舖（角煮饅頭）",

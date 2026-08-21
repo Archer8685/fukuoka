@@ -263,7 +263,7 @@
   "name_ja": "かさの家",
   "category": "餐飲",
   "city": "福岡",
-  "area": "太宰府市",
+  "area": "太宰府市・宰府",
   "cuisine": "甜點・咖啡",
   "q": "かさの家 太宰府",
   "dishes": [
@@ -275,13 +275,15 @@
   "price": "約 ¥130／個",
   "hours": "11:00–17:30",
   "duration": "20 分",
-  "coord_status": "approx",
-  "lat": 33.5199,
-  "lng": 130.534,
-  "coord_source": "Nominatim かさの家, 太宰府天満宮参道, 宰府二丁目, 白川, 太宰府市, 福岡県, 818-0117, 日本",
+  "coord_status": "google",
+  "lat": 33.5194547,
+  "lng": 130.5334317,
+  "coord_source": "Google Places 重查 2026-08-21（かさの家）",
   "tabelog": "3.65",
   "tabelog_area": "太宰府・大野城周辺",
-  "tabelog_rank": 5
+  "tabelog_rank": 5,
+  "google_maps_uri": "https://maps.google.com/?cid=16637148433084021916&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県太宰府市宰府２丁目７−２４"
  },
  {
   "name": "柳川川下り 松月乘船場",
@@ -490,7 +492,7 @@
   "name_ja": "一蘭 本社総本店",
   "category": "餐飲",
   "city": "福岡",
-  "area": "博多區",
+  "area": "博多區・中洲",
   "cuisine": "拉麵",
   "q": "一蘭 本社総本店",
   "dishes": [
@@ -502,9 +504,12 @@
   "price": "約 ¥1,000–1,500",
   "hours": "24 小時",
   "duration": "40 分",
-  "coord_status": "approx",
-  "lat": 33.5931,
-  "lng": 130.4055
+  "coord_status": "google",
+  "lat": 33.5932405,
+  "lng": 130.4045974,
+  "coord_source": "Google Places 重查 2026-08-21（一蘭 本社総本店）",
+  "google_maps_uri": "https://maps.google.com/?cid=7524611293723795643&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgBIAA",
+  "address": "福岡県福岡市博多区中洲５丁目３−２"
  },
  {
   "name": "Shin-Shin 天神本店",
