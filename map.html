@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>福岡・九州 12 天 — 景點餐廳地圖</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
-<link rel="preload" href="data.js?v=65" as="script">
-<link rel="preload" href="trip.js?v=65" as="script">
+<link rel="preload" href="data.js?v=66" as="script">
+<link rel="preload" href="trip.js?v=66" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="stylesheet" href="libs/leaflet.css">
@@ -186,8 +186,8 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=65"></script>
-<script src="trip.js?v=65"></script>
+<script src="data.js?v=66"></script>
+<script src="trip.js?v=66"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -385,18 +385,38 @@ foodChip.onclick=()=>{
   rerender();
 };
 catChips.appendChild(foodChip);
-// 餐飲子分類直接取 data 的 cuisine 欄位，依店家數排序
-const CUISINES=(function(){
+// 餐飲子分類：原始 cuisine 有 32 種，全部攤成 chips 會吃掉整個版面。
+// 收成 7 個語意群組，一列就放得完；清真獨立成群，方便一眼找到。
+const CUISINE_GROUPS=[
+  ["☪ 清真",      c=>c.startsWith("清真")],
+  ["🍲 鄉土・和食", c=>["鄉土料理","和食","定食・明太子","馬肉","壽喜燒","肉包"].includes(c)],
+  ["🐟 海鮮・壽司", c=>["海鮮","壽司","牡蠣・海鮮","海鮮・居酒屋","鰻魚"].includes(c)],
+  ["🥩 肉・燒肉",   c=>["燒肉","燒鳥","牛料理・燒肉","肉料理","串炸"].includes(c)],
+  ["🍜 麵食",      c=>["拉麵","麵食","烏龍麵","うどん・そば"].includes(c)],
+  ["🍰 洋食・甜點", c=>["洋食","甜點・咖啡"].includes(c)],
+  ["🏮 居酒屋・其他",c=>true]
+];
+function cuisineGroup(c){
+  const k=c||"";
+  for(const [name,test] of CUISINE_GROUPS){ if(test(k)) return name; }
+  return "🏮 居酒屋・其他";
+}
+// 把 cuisine → group 的對照表先算好，rerender 時不用重跑判斷
+const CUISINE2GROUP={};
+PLACES.forEach(p=>{ if(FOOD_CATS.has(p.category)&&p.cuisine&&!(p.cuisine in CUISINE2GROUP)) CUISINE2GROUP[p.cuisine]=cuisineGroup(p.cuisine); });
+const GROUP_COUNTS=(function(){
   const c={};
-  PLACES.forEach(p=>{if(FOOD_CATS.has(p.category)&&p.cuisine)c[p.cuisine]=(c[p.cuisine]||0)+1;});
-  return Object.keys(c).sort((a,b)=>c[b]-c[a]).map(k=>[k,c[k]]);
+  PLACES.forEach(p=>{ if(FOOD_CATS.has(p.category)) c[cuisineGroup(p.cuisine)]=(c[cuisineGroup(p.cuisine)]||0)+1; });
+  return c;
 })();
-CUISINES.forEach(([cc,n])=>{
-  const c=document.createElement('span');c.className='chip cuisine-chip on';c.dataset.cuisine=cc;
-  c.textContent=`${cc} (${n})`;
+CUISINE_GROUPS.forEach(([g])=>{
+  const n=GROUP_COUNTS[g]||0;
+  if(!n)return;
+  const c=document.createElement('span');c.className='chip cuisine-chip on';c.dataset.group=g;
+  c.textContent=`${g} (${n})`;
   c.onclick=()=>{
     c.classList.toggle('on');
-    if(c.classList.contains('on'))state.cuisines.add(cc);else state.cuisines.delete(cc);
+    if(c.classList.contains('on'))state.cuisineGroups.add(g);else state.cuisineGroups.delete(g);
     rerender();
   };
   cuisineChipsBox.appendChild(c);
@@ -419,7 +439,7 @@ function focusOn(latlng,zoom){
   if(s>0)map.panBy([0,Math.round(s/2)],{animate:false});
 }
 
-let state={region:"福岡",cats:new Set(Object.keys(CATS)),cuisines:new Set(CUISINES.map(c=>c[0])),winterOnly:false,halalOnly:false,q:"",tripDay:1,tripPlan:"A",tripShowAll:true};
+let state={region:"福岡",cats:new Set(Object.keys(CATS)),cuisineGroups:new Set(CUISINE_GROUPS.map(g=>g[0])),winterOnly:false,halalOnly:false,q:"",tripDay:1,tripPlan:"A",tripShowAll:true};
 let markers=[],routeLine=null;
 
 function regionOf(key){return REGIONS.find(r=>r.key===key)||REGIONS[0];}
@@ -528,7 +548,7 @@ function popupHtml(p){
 function passesBase(p){
   if(!citiesOf(state.region).includes(p.city))return false;
   if(!state.cats.has(p.category))return false;
-  if(FOOD_CATS.has(p.category)&&p.cuisine&&!state.cuisines.has(p.cuisine))return false;
+  if(FOOD_CATS.has(p.category)&&p.cuisine&&!state.cuisineGroups.has(CUISINE2GROUP[p.cuisine]||cuisineGroup(p.cuisine)))return false;
   if(state.winterOnly&&!isWinter(p))return false;
   if(state.halalOnly&&!isHalalish(p))return false;
   return true;
@@ -682,7 +702,7 @@ function renderTrip(keepView){
     PLACES.forEach(p=>{
       if(!p.lat||!dayCities.has(p.city))return;
       if(!state.cats.has(p.category))return;
-      if(FOOD_CATS.has(p.category)&&p.cuisine&&!state.cuisines.has(p.cuisine))return;
+      if(FOOD_CATS.has(p.category)&&p.cuisine&&!state.cuisineGroups.has(CUISINE2GROUP[p.cuisine]||cuisineGroup(p.cuisine)))return;
       if(state.winterOnly&&!isWinter(p))return;
       if(state.halalOnly&&!isHalalish(p))return;
       if(stopNames.has(_norm(p.name)))return;
@@ -757,7 +777,7 @@ document.getElementById('halalOnly').onclick=e=>{
 };
 document.getElementById('resetBtn').onclick=()=>{
   state.cats=new Set(Object.keys(CATS));
-  state.cuisines=new Set(CUISINES.map(c=>c[0]));
+  state.cuisineGroups=new Set(CUISINE_GROUPS.map(g=>g[0]));
   document.querySelectorAll('#catChips .chip').forEach(c=>{
     c.classList.add('on');
     if(c.id==='foodChip'){c.style.background=FOOD_MERGED.color;c.style.color="#fff";return;}
@@ -768,7 +788,7 @@ document.getElementById('resetBtn').onclick=()=>{
   rerender();
 };
 document.getElementById('clearBtn').onclick=()=>{
-  state.cats.clear();state.cuisines.clear();
+  state.cats.clear();state.cuisineGroups.clear();
   document.querySelectorAll('#catChips .chip').forEach(c=>{
     c.classList.remove('on');c.style.background="#fff";c.style.color="var(--ink)";
   });
@@ -957,7 +977,7 @@ window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('p
     window.addEventListener('load',function(){
       navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){
         if(!('caches' in window))return;
-        caches.open('fukuoka-app-v65').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});
+        caches.open('fukuoka-app-v66').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});
           document.querySelectorAll('script[src],link[href]').forEach(function(el){
             var u=el.src||el.href; if(!u||u.indexOf(location.origin)!==0)return;
             c.match(u).then(function(hit){ if(!hit) c.add(u).catch(function(){}); });
