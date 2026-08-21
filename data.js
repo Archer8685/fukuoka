@@ -1638,6 +1638,44 @@ const PLACES = [
   "lng": 130.9383166
  },
  {
+  "name": "BANDAI NAMCO Cross Store 博多",
+  "name_ja": "バンダイナムコ Cross Store 博多",
+  "category": "動漫",
+  "city": "福岡",
+  "area": "博多區・運河城",
+  "activities": [
+   "官方角色商店區",
+   "遊戲／扭蛋／活動區",
+   "運河城室內順路"
+  ],
+  "reason": "BANDAI NAMCO 的大型角色娛樂複合店，位於キャナルシティ博多サウスビル B1F；官方頁面列為大型店，包含官方商店、遊戲、ガシャポン與活動區。",
+  "notes": "官方頁面確認地址：福岡市博多区住吉1丁目2-74 キャナルシティ博多 サウスビルB1F。10:00–21:00、定休隨商場。與天神PARCO角色店分屬不同區域。",
+  "hours": "10:00–21:00",
+  "duration": "45–60 分",
+  "coord_status": "official",
+  "lat": 33.58944,
+  "lng": 130.4122
+ },
+ {
+  "name": "GASHAPON BANDAI OFFICIAL SHOP 福岡PARCO店",
+  "name_ja": "ガシャポン バンダイオフィシャルショップ",
+  "category": "動漫",
+  "city": "福岡",
+  "area": "中央區・天神",
+  "activities": [
+   "BANDAI 官方扭蛋店",
+   "330 面扭蛋機",
+   "福岡PARCO 本館7F"
+  ],
+  "reason": "福岡PARCO 官方頁確認本館 7F，BANDAI 只扱い的官方扭蛋專門店，與草帽商店／蠟筆小新同樓層。",
+  "notes": "福岡PARCO 官方頁確認：本館7F、全館 10:00–20:30。這是 PARCO 的 BANDAI 官方扭蛋店，不是運河城的 Cross Store。",
+  "hours": "10:00–20:30",
+  "duration": "15–25 分",
+  "coord_status": "official",
+  "lat": 33.590796,
+  "lng": 130.398607
+ },
+ {
   "name": "JUMP SHOP 福岡店",
   "name_ja": "JUMP SHOP 福岡店",
   "category": "動漫",
@@ -1657,6 +1695,25 @@ const PLACES = [
   "lng": 130.4111575
  },
  {
+  "name": "ONE PIECE 麦わらストア 福岡店",
+  "name_ja": "ONE PIECE 麦わらストア 福岡店",
+  "category": "動漫",
+  "city": "福岡",
+  "area": "中央區・天神",
+  "activities": [
+   "航海王官方商店",
+   "草帽商店限定商品",
+   "福岡PARCO 本館7F"
+  ],
+  "reason": "ONE PIECE 官方專門店；福岡PARCO 官方頁確認位於本館 7F，與蠟筆小新官方店、BANDAI 官方扭蛋店同樓層。",
+  "notes": "福岡PARCO 官方頁確認：本館7F、10:00–20:30、電話 092-235-7428。與天神PARCO角色店群同層順路。",
+  "hours": "10:00–20:30",
+  "duration": "20–30 分",
+  "coord_status": "official",
+  "lat": 33.590796,
+  "lng": 130.398607
+ },
+ {
   "name": "Sanrio Gallery 運河城博多店",
   "name_ja": "Sanrio Gallery キャナルシティ博多店",
   "category": "動漫",
@@ -1668,7 +1725,7 @@ const PLACES = [
    "與 JUMP SHOP 同一層"
   ],
   "reason": "福岡規模最大的三麗鷗直營店，在運河城博多的 OPA センターウォーク北側 B1F。⭐ 關鍵是 JUMP SHOP 福岡店就在同一層，一次逛完三麗鷗＋少年 JUMP 兩家。",
-  "notes": "行程 2/3 下午已經排了博多運河城，走到 B1 就是，零繞路。約 10:00–21:00。",
+  "notes": "博多運河城 OPA センターウォーク北側 B1F，走到商場內即可，零繞路。約 10:00–21:00。",
   "hours": "10:00–21:00",
   "duration": "30–40 分",
   "coord_status": "google",
@@ -1695,6 +1752,25 @@ const PLACES = [
   "lng": 130.3987274
  },
  {
+  "name": "ちいかわらんど 福岡パルコ店",
+  "name_ja": "ちいかわらんど 福岡パルコ店",
+  "category": "動漫",
+  "city": "福岡",
+  "area": "中央區・天神",
+  "activities": [
+   "吉伊卡哇官方常設店",
+   "福岡PARCO店",
+   "角色商品"
+  ],
+  "reason": "Chiikawaland 官方頁列有「福岡パルコ店」。若仍在福岡PARCO 同館營業，與天神角色店群零繞路。",
+  "notes": "⚠️ Chiikawaland 官方頁可確認福岡パルコ店存在，但本次以 PARCO 店鋪清單未抓到樓層；出發前再確認樓層與整理券／入場規則。若仍在福岡PARCO，與本館 7–8F 角色店群順路。",
+  "hours": "依福岡PARCO／官方公告",
+  "duration": "20–30 分",
+  "coord_status": "official-approx",
+  "lat": 33.590796,
+  "lng": 130.398607
+ },
+ {
   "name": "まんだらけ 福岡店",
   "name_ja": "まんだらけ 福岡店",
   "category": "動漫",
@@ -1712,6 +1788,25 @@ const PLACES = [
   "coord_status": "google",
   "lat": 33.5901747,
   "lng": 130.3937289
+ },
+ {
+  "name": "クレヨンしんちゃんオフィシャルショップ アクションデパート",
+  "name_ja": "クレヨンしんちゃんオフィシャルショップ アクションデパート",
+  "category": "動漫",
+  "city": "福岡",
+  "area": "中央區・天神",
+  "activities": [
+   "蠟筆小新官方常設店",
+   "九州初常設店",
+   "福岡PARCO 本館7F"
+  ],
+  "reason": "福岡PARCO 官方頁確認為「九州初となる常設オフィシャルショップ」，以野原一家常去的アクションデパート為概念。",
+  "notes": "福岡PARCO 官方頁確認：本館7F、全館 10:00–20:30、電話 092-235-7279。與草帽商店同層。",
+  "hours": "10:00–20:30",
+  "duration": "20–30 分",
+  "coord_status": "official",
+  "lat": 33.590796,
+  "lng": 130.398607
  },
  {
   "name": "三麗鷗 博多阪急店",
