@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>福岡・九州 2/1–2/12 行程</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
-<link rel="preload" href="data.js?v=77" as="script">
-<link rel="preload" href="trip.js?v=77" as="script">
+<link rel="preload" href="data.js?v=79" as="script">
+<link rel="preload" href="trip.js?v=79" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
@@ -115,6 +115,8 @@ header.pg .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 .stop .alt{font-size:12px;color:#a04b12;background:#fdf3ea;border-left:3px solid #e8b287;border-radius:0 8px 8px 0;padding:5px 9px;margin-top:5px;line-height:1.65}
 .go{display:inline-flex;align-items:center;gap:6px;margin:3px 0 3px 64px;font-size:11.5px;color:#41617f;background:#f1f6fa;border:1px dashed #cfdce8;border-radius:9px;padding:3px 10px;max-width:calc(100% - 70px)}
 .go::before{content:"↓";font-weight:700;color:#8fa8bd}
+.wrap,.day,.day-b,.stop .body,.stop .note,.go,.daytips,.daytips-b,.backup,.backup li{min-width:0;overflow-wrap:anywhere;word-break:break-word}
+.go{display:flex;white-space:normal;line-height:1.55}
 .more-btn{margin-top:5px;font:600 11.5px/1 inherit;color:var(--accent);background:#eef3f7;border:1px solid #d6e2ec;border-radius:8px;padding:6px 10px;cursor:pointer;min-height:30px}
 .more-btn:active{transform:scale(.97)}
 #stopModal{border:0;padding:0;border-radius:16px;width:min(560px,94vw);max-height:86vh;background:var(--panel);color:var(--ink);box-shadow:0 18px 50px rgba(12,20,28,.32);overflow:hidden}
@@ -194,7 +196,7 @@ header.pg .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 <div class="wrap">
 <header class="pg">
   <h1>🏯 福岡・九州 12 天行程</h1>
-  <div class="sub">2027/2/1（一）– 2/12（五）｜12 天 11 夜｜JR 為主・換宿 3 次｜博多 7 晚＋長崎 2 晚＋由布院 2 晚</div>
+  <div class="sub">2027/2/1（一）– 2/12（五）｜12 天 11 夜｜換宿 1 次｜由布院 2 晚＋博多 9 晚</div>
   <div class="flights">
     <div class="flight">✈️ 去程 2/1（一）<b>CI110</b> 台北 TPE 06:50 → <b>福岡 FUK 10:00</b>（2h10m）</div>
     <div class="flight">✈️ 回程 2/12（五）<b>CI117</b> <b>福岡 FUK 20:35</b> → 台北 TPE 22:20（2h45m）</div>
@@ -202,10 +204,11 @@ header.pg .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
   <div class="keydates">
     <h2>❄️ 2027 年 2 月的時間鎖定事件</h2>
     <b>2/3（三）</b>櫛田神社 節分厄除大祭——撒豆 10:00 起每 30 分一次至約 16:00<br>
-    <b>2/5（五）– 2/21（日）</b>長崎燈會（官方已公告 2027 場次），點燈 17:00–22:00<br>
-    <b>2/6（六）</b>農曆初一——皇帝遊行／媽祖行列多排這天；也是住宿最貴、人最多的一天<br>
-    <b>2/11（四）</b>日本建國紀念日 ＋ 柳川雛祭「さげもんめぐり」開幕（お雛様始祭・遊行）<br>
-    <b>整個 2 月</b>太宰府梅花（2 月中旬見頃）、牡蠣小屋、下關河豚、柳川こたつ舟、溫泉季
+    <b>2/4（四）</b>皿倉山日落 17:49——夜景成立與否取決於冬季平日纜車時刻<br>
+    <b>2/5（五）</b>唐戶市場「活きいき馬関街」壽司攤出攤日——河豚安排在這天<br>
+    <b>2/9（二）</b>豪斯登堡光之王國——KKday 09:10–20:00 場次才看得到燈海<br>
+    <b>2/11（四）</b>日本建國紀念日 ＋ 柳川雛祭「さげもんめぐり」開幕<br>
+    <b>整個 2 月</b>太宰府梅花、あまおう、下關河豚、柳川こたつ舟、溫泉季
   </div>
 </header>
 
@@ -223,8 +226,8 @@ header.pg .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
   <div class="mb" id="mBody"></div>
 </dialog>
 
-<script src="data.js?v=77"></script>
-<script src="trip.js?v=77"></script>
+<script src="data.js?v=79"></script>
+<script src="trip.js?v=79"></script>
 <script>
 // ---- 共用：地點查找（日文新字體 → 繁體正規化）----
 const _J2T=(typeof J2T!=="undefined")?J2T:{};
@@ -305,16 +308,14 @@ const KIND={spot:{c:"#1b4f8a",t:"景點"},meal:{c:"#e67e22",t:"用餐"},hotel:{c
 const CITY_COLOR={"福岡":"var(--fuk)","長崎":"var(--ngs)","大分":"var(--oita)","北九州":"var(--kk)"};
 
 const GTIPS_HTML=`<div class="daytips"><details><summary>🚄 通用交通・JR Pass・2 月提醒</summary><div class="daytips-b">
-<b>JR Pass：</b>建議買<b>全九州 7 日券 ¥26,000</b>，啟用 <b>2/4（四）– 2/10（三）</b>——覆蓋下關／門司港往返（約 ¥4,000）、博多→長崎（¥6,490）、長崎→由布院（約 ¥12,000）、由布院↔日田往返（約 ¥3,000，2/9 選 A 案才用到）、由布院→博多（約 ¥6,470），單買約 ¥28,960–31,960，省約 ¥3,000–6,000 且指定席免費劃位。<br>
-<b>⚠️ Pass 不含山陽新幹線：</b>2/4 的<b>博多↔小倉不能搭新幹線</b>（那段是 JR 西日本的山陽新幹線，單買約 ¥2,160／趟），要走 <b>特急ソニック／きらめき 約 50 分</b>；下關雖是 JR 西日本車站，但在<b>全九州版</b>的有效範圍內，可直接進出。<br>
-<b>票種價格：</b>全九州 3 日 ¥22,000／5 日 ¥24,000／7 日 ¥26,000；北部九州 3 日 ¥15,000／5 日 ¥17,000。線上購買比日本櫃台便宜。<br>
-<b>2/2 豪斯登堡不用 JR Pass：</b>走 KKday 巴士一日遊（含來回巴士＋1DAY 護照，成人約 NT$3,262），<b>務必選 09:10–20:00 的方案二</b>才看得到燈海。⚠️ <b>必須列印紙本憑證三張</b>；博多巴士總站 <b>3 樓 31 號</b>乘車處。2027/2 尚未開賣，2026 年 9–10 月起要定期查。<br>
-<b>不含 JR 的段：</b>太宰府與柳川走<b>西鐵</b>（柳川有「特盛きっぷ」套票含來回＋遊船＋鰻魚）；長崎市內走<b>路面電車</b>（一日券約 ¥600）；福岡市內走<b>地鐵</b>。<br>
-<b>溫泉據點：</b>本趟溫泉全部集中在<b>湯布院</b>（別府已排除）。由布院是山中盆地看不到海，客室露天風呂看的是由布岳；旅館候選 6 家與各自取捨請看地圖的 🏨 住宿類別。<br>
-<b>必訂項目與開賣日：</b>ゆふいんの森 指定席＝乘車日 1 個月前 10:00 JST（<b>2/7</b> 車 → <b>2027/1/7</b> 開賣，最難搶）；西九州新幹線指定席同樣 1 個月前；軍艦島 tour 建議提前 1–2 個月；<b>長崎 2/5–2/7 住宿與由布院 2/8–2/9 旅館現在就要訂</b>（燈會＋農曆春節＋好旅館 6–12 個月前開賣）。<br>
-<b>2 月天氣：</b>福岡日均 4–10°C、長崎略暖、由布院山區更冷且可能下雪。羽絨外套＋防風＋手套必備；稻佐山山頂比市區低 3–5 度。<br>
-<b>不爬山原則：</b>全程最長步行單段是由布院站→金鱗湖約 25 分平路。稻佐山搭纜車、哥拉巴園有斜行電梯、九博有電扶梯隧道、熊本城天守閣有電梯、日田豆田町全平地。已排除阿蘇、由布岳登山、寶滿山上宮、宮島彌山、龜山社中紀念館上坡石階。<br>
-<b>回程死線：</b>CI117 20:35 起飛 → <b>17:30 前必須離開飯店</b>（地鐵空港線 5 分＋國際線接駁巴士 10 分，機場報到與出境預留 2.5 小時）。
+<b>JR Pass：</b>建議買 <b>JR 九州 Pass 北部九州 3 日券 ¥15,000</b>，啟用 <b>2/4（四）– 2/6（六）</b>。北部九州版涵蓋 <b>博多～熊本 九州新幹線</b>、小倉／門司港／下關；南部九州版不適用，目前也不需要全九州版。<br>
+<b>⚠️ Pass 不含山陽新幹線：</b>博多↔小倉不能搭新幹線（JR 西日本區間），要走特急ソニック／きらめき或鹿兒島本線。<br>
+<b>Pass 用到：</b>2/4 小倉・八幡、2/5 下關・門司港、2/6 熊本。2/8 若渡輪停航改 JR 香椎線，單買即可。<br>
+<b>不含 JR 的段：</b>2/1 高速巴士、2/3 ゆふいんの森、2/7 太宰府與 2/11 柳川（西鐵）、2/9 豪斯登堡（KKday 巴士）、福岡市內地鐵。<br>
+<b>必訂項目：</b>ゆふいんの森2号＝<b>2027/1/3 10:00 JST</b>；KKday 豪斯登堡＝預估 <b>2026/12/12 前後</b> 開賣、12 月起每週查；魚蔵／極味や訂位時註明 ☪ 清真。<br>
+<b>住宿：</b>由布院別邸 樹 2 晚＋東急STAY博多 9 晚，換宿 1 次。東急STAY已確認 2/12 退房後可寄放 4 件行李到 16:25。<br>
+<b>2 月天氣：</b>福岡約 4–10°C，由布院山區與皿倉山夜間更冷；皿倉山、豪斯登堡夜間請帶厚外套、手套、暖暖包。<br>
+<b>回程：</b>16:25 東急STAY取行李 → 計程車到 ひらお本店 → 計程車直達福岡機場國際線航廈；不走地鐵國內線轉接駁巴士。
 </div></details></div>`;
 
 const daysEl=document.getElementById('days');
@@ -464,6 +465,6 @@ document.addEventListener('click',e=>{
 });
 window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('pgload').classList.add('done');});
 </script>
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('fukuoka-app-v77').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});});}).catch(function(){});});}</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('fukuoka-app-v79').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});});}).catch(function(){});});}</script>
 </body>
 </html>

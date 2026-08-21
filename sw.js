@@ -1,6 +1,6 @@
 // sw.js — 離線快取
 // 策略：App 殼層（HTML/JS/CSS/Leaflet/資料）可離線；國土地理院底圖圖磚 cache-first，看過或預載過即離線可用。
-const APP_CACHE = 'fukuoka-app-v77';
+const APP_CACHE = 'fukuoka-app-v79';
 const TILE_CACHE = 'fukuoka-tiles-v1';
 // 首次安裝就把「離線看行程」需要的全部檔案預快取。
 // data.js／trip.js 帶 ?v= 版號，版號直接從 APP_CACHE 推導，不用另外維護一份常數
