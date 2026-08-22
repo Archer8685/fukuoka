@@ -367,6 +367,74 @@ def check_closed_days(stops):
         print(f"    （另有 {missing} 站 Google 未提供營業時間，如公園／街道／銅像，無法檢查定休）")
 
 
+DUMP_NOTES_JS = r"""
+const fs=require('fs');
+const src=fs.readFileSync('trip.js','utf8');
+const m=new Function(src+'; return {TRIP};')();
+const out=[];
+m.TRIP.forEach(d=>d.stops.forEach(s=>out.push({
+  date:d.date, t:s.t, name:s.name, note:s.note||'', alt:s.alt||[],
+})));
+console.log(JSON.stringify(out));
+"""
+
+def dump_notes():
+    """從 trip.js 取出每站的 note 與 alt。"""
+    r = subprocess.run(["node", "-e", DUMP_NOTES_JS],
+                       capture_output=True, text=True, encoding="utf-8")
+    if r.returncode != 0:
+        err(f"dump_notes 失敗：{(r.stderr or '').strip()[:200]}")
+        return []
+    return json.loads(r.stdout)
+
+
+# note 裡出現這些字眼 = 把修改歷程寫進了給使用者看的行程頁。
+# 使用者已為此清理過兩次（v65「清除全檔歷程語言」等），不該再犯。
+HISTORY_WORDS = [
+    "實查後換掉", "換掉了原本", "已從", "訂正（", "時間訂正", "開門時間訂正",
+    "原本排的", "原本寫的", "先前寫的", "原版是", "本次修正", "已改成",
+]
+
+
+def check_note_history(notes):
+    """站點 note 只該寫現況，不該寫修改歷程或日期戳記。"""
+    if not notes:
+        return
+    bad = 0
+    for s in notes:
+        note = s["note"]
+        hits = [w for w in HISTORY_WORDS if w in note]
+        # 日期戳記通常是「我幾號查的」這種歷程語言，但「店家幾號回信確認」
+        # 是真實事證，必須保留 → 只在日期附近沒有事證關鍵字時才告警。
+        for m in re.finditer(r"20\d\d-\d\d-\d\d", note):
+            ctx = note[max(0, m.start() - 25):m.end() + 25]
+            if not re.search(r"回信|回覆|來信|確認|預約|訂位|公告|官網", ctx):
+                hits.append(f"日期戳記({m.group(0)})")
+        if hits:
+            warn(f"{s['date']} {s['t']} {s['name']} note 含修改歷程語言：{'、'.join(hits)}")
+            bad += 1
+    if not bad:
+        ok("站點 note 無修改歷程語言（只講現況）")
+
+
+def check_alt_conflicts(notes, places):
+    """備選清單裡不該出現「已知會撲空」的店。
+
+    判斷依據：note 用「不要改去 X」「X 會吃閉門羹」點名的店，
+    若同時還列在該站的 alt 裡，等於修了主站卻留著地雷備案。"""
+    if not notes:
+        return
+    bad = 0
+    for s in notes:
+        for a in s["alt"]:
+            if re.search(r"不要(改去|選)\s*[「『]?" + re.escape(a), s["note"]):
+                err(f"{s['date']} {s['t']} {s['name']} note 說不要去「{a}」，"
+                    f"卻仍列在 alt 備選中")
+                bad += 1
+    if not bad:
+        ok("備選清單無已知會撲空的店")
+
+
 def main():
     print("=== 福岡專案健檢 ===\n")
     places = load_data_dir()
@@ -377,6 +445,9 @@ def main():
     stops = dump_stops()
     check_stay_duration(stops, places)
     check_closed_days(stops)
+    notes = dump_notes()
+    check_note_history(notes)
+    check_alt_conflicts(notes, places)
     print(f"\n=== 錯誤 {len(ERR)}、警告 {len(WARN)} ===")
     sys.exit(1 if ERR else 0)
 
