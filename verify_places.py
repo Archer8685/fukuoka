@@ -227,6 +227,25 @@ def main():
 
     os.makedirs(os.path.join(BASE, "audit"), exist_ok=True)
     out = os.path.join(BASE, "audit", f"verify_places_{date.today()}.json")
+
+    # 部分執行（verify_places.py 5 7）不可以把當天的完整快取洗掉：
+    # check_all.py 的定休日檢查靠這份快取，被截短就會漏檢。
+    # 因此同日重跑時以站點為單位合併，只覆寫這次真的查過的站。
+    partial = bool(only)
+    if partial and os.path.exists(out):
+        try:
+            prev = json.load(open(out, encoding="utf-8"))
+            fresh = {(r.get("date"), r.get("name")) for r in results}
+            merged = [r for r in prev.get("results", [])
+                      if (r.get("date"), r.get("name")) not in fresh]
+            kept_days = {r.get("date") for r in merged}
+            results = merged + results
+            results.sort(key=lambda r: (r.get("day", 0), r.get("time") or ""))
+            issues = [i for i in prev.get("issues", []) if i[0] in kept_days] + issues
+            print(f"\n（部分執行：已與 {out} 既有的 {len(merged)} 站快取合併）")
+        except Exception as e:
+            print(f"\n⚠️  既有快取合併失敗，將只寫入本次結果：{e}")
+
     json.dump({"generated": str(date.today()), "results": results, "issues": issues},
               open(out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 

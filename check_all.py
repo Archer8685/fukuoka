@@ -185,6 +185,188 @@ def check_trip():
         ok("行程邏輯正確（12 天、日期↔星期、時間遞增、站點名稱、住宿連續性）")
 
 
+DUMP_STOPS_JS = r"""
+const fs=require('fs');
+const src=fs.readFileSync('trip.js','utf8');
+const m=new Function(src+'; return {TRIP};')();
+const out=[];
+m.TRIP.forEach(d=>d.stops.forEach((s,i)=>out.push({
+  day:d.d, date:d.date, wd:d.wd, t:s.t, name:s.name, kind:s.kind||'',
+  go:s.go||'', last:i===d.stops.length-1,
+})));
+console.log(JSON.stringify(out));
+"""
+
+
+def dump_stops():
+    """把 trip.js 的所有站點抓成 python list（trip.js 用 const，必須走 new Function）。"""
+    node = shutil.which("node")
+    if not node:
+        return None
+    r = subprocess.run([node, "-e", DUMP_STOPS_JS], capture_output=True, text=True,
+                       encoding="utf-8")
+    if r.returncode != 0:
+        err("dump_stops 失敗：" + r.stderr.strip()[:200])
+        return None
+    return json.loads(r.stdout)
+
+
+def _mins(t):
+    a, b = t.split(":")
+    return int(a) * 60 + int(b)
+
+
+def travel_cost(go):
+    """從 go 文字估移動時間。
+    「或／則」代表替代方案（計程車 5 分 or 步行 20 分）→ 取最小的那個，
+    同一方案內的多段（地鐵 11 分 ＋ 步行 12 分）才相加。"""
+    if not go:
+        return 0
+    costs = []
+    for alt in re.split(r"[，,]?\s*(?:或|則)\s*", go):
+        n = [int(x) for x in re.findall(r"(\d+)\s*分", alt)]
+        if n:
+            costs.append(sum(n))
+    return min(costs) if costs else 0
+
+
+# 沒有 duration 欄位時的保底門檻（分鐘）——只抓明顯不合理的。
+FALLBACK_MIN = {"spot": 25, "meal": 40, "shop": 20}
+
+# 刻意短停、不需要告警的站（拍照點、外帶、轉乘、跳店採購）
+SHORT_OK = {
+    "銀河鐵道999 星野鐵郎銅像", "B-speak", "みっふぃー森のきっちん 由布院店",
+    "あまおうチーズケーキファクトリー Kingberry（太宰府天滿宮本店）",
+    "MARK IS 福岡ももち", "博多運河城", "Sanrio Gallery 運河城博多店",
+    "JUMP SHOP 福岡店", "NEPENTHES HAKATA", "博多川端商店街", "ふくや 中洲本店",
+    "あるあるCity", "櫻之馬場 城彩苑", "湯之坪街道",
+}
+
+# 目前行程已核可的停留基準線：audit/stay_baseline.json
+# {"2/5|門司港復古區": 50, ...}
+# 有些站是刻意壓縮的（門司港復古區 建議 120 分但只給 50），
+# 這些現況一旦記為基準線，就不會每次都吵；
+# 但只要之後任何改動讓它「比現在更短」，仍然會告警。
+BASELINE_PATH = os.path.join("audit", "stay_baseline.json")
+
+
+def load_baseline():
+    if os.path.exists(BASELINE_PATH):
+        try:
+            return json.load(io.open(BASELINE_PATH, encoding="utf-8"))
+        except Exception:
+            pass
+    return {}
+
+
+def need_minutes(place, kind):
+    """這個地點「該待多久」。優先用 data/*.json 的 duration 欄位
+    （例 '45 分'、'1.5–2 小時'、'2 小時'）——取區間下限；
+    沒有 duration 才退回站別保底門檻。"""
+    raw = (place or {}).get("duration") or ""
+    m = re.search(r"(\d+(?:\.\d+)?)\s*(?:[–~-]\s*\d+(?:\.\d+)?\s*)?(小時|時間|分)", raw)
+    if m:
+        v = float(m.group(1))
+        return int(v * 60) if m.group(2) in ("小時", "時間") else int(v)
+    return FALLBACK_MIN.get(kind, 0)
+
+
+def check_stay_duration(stops, places):
+    """站點實際停留（到下一站的間隔扣掉移動時間）是否足夠。
+
+    門檻 = min(該地點建議 duration, 已核可基準線)。
+    這樣既能擋「改了某一站把後面那站擠爆」的回歸
+    （例：三麗鷗延到 11:00，teamLab 只剩 40 分 < 建議 45 分），
+    又不會對本來就刻意壓縮的站每次嘮叨。
+    要重設基準線：python check_all.py --save-baseline"""
+    if not stops:
+        return
+    byname = {p["name"]: p for p in (places or [])}
+    base = load_baseline()
+    save = "--save-baseline" in sys.argv
+    newbase, bad = {}, 0
+    for cur, nxt in zip(stops, stops[1:]):
+        if cur["last"] or cur["kind"] in ("hotel", "move", ""):
+            continue
+        stay = _mins(nxt["t"]) - _mins(cur["t"]) - travel_cost(cur["go"])
+        key = f"{cur['date']}|{cur['name']}"
+        newbase[key] = stay
+        if cur["name"] in SHORT_OK:
+            continue
+        need = need_minutes(byname.get(cur["name"]), cur["kind"])
+        if not need:
+            continue
+        limit = min(need, base.get(key, need))
+        if stay < limit:
+            extra = "" if limit == need else f"（已核可基準 {limit} 分）"
+            warn(f"{cur['date']}({cur['wd']}) {cur['t']} {cur['name']} "
+                 f"實際只停 {stay} 分，建議 {need} 分{extra}")
+            bad += 1
+    if save:
+        os.makedirs("audit", exist_ok=True)
+        json.dump(newbase, io.open(BASELINE_PATH, "w", encoding="utf-8"),
+                  ensure_ascii=False, indent=1, sort_keys=True)
+        ok(f"已寫入停留基準線 {BASELINE_PATH}（{len(newbase)} 站）")
+    elif not bad:
+        ok("每站停留時間符合建議／已核可基準（已扣除移動時間）")
+
+
+WD_JA = {"一": "月曜日", "二": "火曜日", "三": "水曜日", "四": "木曜日",
+         "五": "金曜日", "六": "土曜日", "日": "日曜日"}
+
+
+def check_closed_days(stops):
+    """比對「造訪當天的星期」與 Google 的定休日。
+
+    營業時間來自 verify_places.py 產生的 audit/verify_places_*.json 快取
+    （這支腳本不打 API，才能離線快速跑完）。
+    快取過期或不存在就提醒去跑 verify_places.py。"""
+    if not stops:
+        return
+    reports = sorted(glob.glob(os.path.join("audit", "verify_places_*.json")))
+    if not reports:
+        warn("找不到 audit/verify_places_*.json，無法檢查定休日——跑 python verify_places.py")
+        return
+    latest = reports[-1]
+    try:
+        data = json.load(io.open(latest, encoding="utf-8"))
+    except Exception as e:
+        warn(f"{latest} 解析失敗，跳過定休日檢查：{e}")
+        return
+
+    hours = {}
+    seen = set()
+    for r in data.get("results", []):
+        seen.add((r.get("date"), r.get("name")))
+        if r.get("hours"):
+            hours.setdefault((r.get("date"), r.get("name")), r["hours"])
+
+    tag = os.path.basename(latest).replace("verify_places_", "").replace(".json", "")
+    hit = missing = unqueried = 0
+    for s in stops:
+        if s["last"] or s["kind"] in ("hotel", "move", ""):
+            continue
+        key = (s["date"], s["name"])
+        if key not in seen:
+            unqueried += 1          # 這站根本不在快取裡（行程改過、還沒重查）
+            continue
+        h = hours.get(key)
+        if h is None:
+            missing += 1            # 查過了，但 Google 沒提供營業時間（公園、街道、銅像）
+            continue
+        target = WD_JA.get(s["wd"], "")
+        for line in h:
+            if line.startswith(target) and re.search(r"定休|休業|Closed", line):
+                err(f"{s['date']}({s['wd']}) {s['t']} {s['name']} 當天公休：{line}")
+                hit += 1
+    if not hit:
+        ok(f"定休日與造訪星期無衝突（依 {tag} 的實查快取）")
+    if unqueried:
+        warn(f"{unqueried} 站不在 {tag} 快取中（行程改過）——跑 python verify_places.py 重查")
+    if missing:
+        print(f"    （另有 {missing} 站 Google 未提供營業時間，如公園／街道／銅像，無法檢查定休）")
+
+
 def main():
     print("=== 福岡專案健檢 ===\n")
     places = load_data_dir()
@@ -192,6 +374,9 @@ def main():
     check_data_js(places)
     check_version()
     check_trip()
+    stops = dump_stops()
+    check_stay_duration(stops, places)
+    check_closed_days(stops)
     print(f"\n=== 錯誤 {len(ERR)}、警告 {len(WARN)} ===")
     sys.exit(1 if ERR else 0)
 
