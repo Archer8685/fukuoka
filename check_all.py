@@ -393,6 +393,14 @@ def dump_notes():
 HISTORY_WORDS = [
     "實查後換掉", "換掉了原本", "已從", "訂正（", "時間訂正", "開門時間訂正",
     "原本排的", "原本寫的", "先前寫的", "原版是", "本次修正", "已改成",
+    "重要更正", "已砍", "砍掉", "晚出發版", "原夜景版", "本日已做",
+    "比原本", "比原規劃", "原規劃", "原本是", "原本的", "換掉", "改為",
+]
+
+# 有些「原本」只是地點的歷史／屬性，例如「福岡城原本的外濠」，不是修改歷程。
+# 這類現況描述可保留；其餘 HISTORY_WORDS 命中一律警告。
+HISTORY_CONTEXT_ALLOW = [
+    r"原本就", r"原本的外濠", r"原本是.{0,10}(建築|倉庫|旅館|店)",
 ]
 
 
@@ -403,7 +411,16 @@ def check_note_history(notes):
     bad = 0
     for s in notes:
         note = s["note"]
-        hits = [w for w in HISTORY_WORDS if w in note]
+        hits = []
+        for w in HISTORY_WORDS:
+            if w not in note:
+                continue
+            contexts = [note[max(0, m.start() - 12):m.end() + 25]
+                        for m in re.finditer(re.escape(w), note)]
+            if all(any(re.search(pat, ctx) for pat in HISTORY_CONTEXT_ALLOW)
+                   for ctx in contexts):
+                continue
+            hits.append(w)
         # 日期戳記通常是「我幾號查的」這種歷程語言，但「店家幾號回信確認」
         # 是真實事證，必須保留 → 只在日期附近沒有事證關鍵字時才告警。
         for m in re.finditer(r"20\d\d-\d\d-\d\d", note):
@@ -415,6 +432,41 @@ def check_note_history(notes):
             bad += 1
     if not bad:
         ok("站點 note 無修改歷程語言（只講現況）")
+
+
+def check_cross_file_facts():
+    """鎖住曾多次跨檔漂移的現行決策與已確認狀態。"""
+    files = {
+        "trip.js": io.open("trip.js", encoding="utf-8").read(),
+        "prep.html": io.open("prep.html", encoding="utf-8").read(),
+        "HANDOFF.md": io.open("HANDOFF.md", encoding="utf-8").read(),
+    }
+    forbidden = {
+        "prep.html": [
+            "最大缺口是 2/1–2/2 由布院", "務必提早聯繫別邸 樹",
+            "2/7 喜多郎寿し", "請訂 19:50", "18:00 上山",
+        ],
+        "HANDOFF.md": ["依 v104", "現行 18:00 上山"],
+        "trip.js": ["晚餐 18:00 才開", "現行 18:00 上山"],
+    }
+    bad = 0
+    for filename, phrases in forbidden.items():
+        for phrase in phrases:
+            if phrase in files[filename]:
+                err(f"{filename} 殘留舊現況：{phrase}")
+                bad += 1
+    required = {
+        "prep.html": ["請訂 19:15", "現行 17:10 上山", "由布院餐食已確認"],
+        "HANDOFF.md": ["田舎庵（19:15）", "現行 17:10 上山"],
+        "trip.js": ["需訂位——請訂 19:15", "現行 17:10 上山", "週五 11:00–20:30"],
+    }
+    for filename, phrases in required.items():
+        for phrase in phrases:
+            if phrase not in files[filename]:
+                err(f"{filename} 缺少現行決策：{phrase}")
+                bad += 1
+    if not bad:
+        ok("跨檔現行決策一致（皿倉山／田舎庵／由布院／プリンセスピピ）")
 
 
 def check_alt_conflicts(notes, places):
@@ -448,6 +500,7 @@ def main():
     notes = dump_notes()
     check_note_history(notes)
     check_alt_conflicts(notes, places)
+    check_cross_file_facts()
     print(f"\n=== 錯誤 {len(ERR)}、警告 {len(WARN)} ===")
     sys.exit(1 if ERR else 0)
 
