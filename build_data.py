@@ -84,7 +84,9 @@ def main():
     cats = Counter(p["category"] for p in places)
     cities = Counter(p.get("city", "?") for p in places)
 
-    with open("data.js", "w", encoding="utf-8") as f:
+    # newline="\n" 可避免 Windows 依 os.linesep 產生 CRLF；專案由
+    # .gitattributes 統一使用 LF，build 後不應出現換行轉換警告。
+    with open("data.js", "w", encoding="utf-8", newline="\n") as f:
         f.write("// 由 build_data.py 從 data/*.json 產生 — 請勿手改，改 data/*.json 後重跑\n")
         f.write("const PLACES = ")
         json.dump(places, f, ensure_ascii=False, indent=1)

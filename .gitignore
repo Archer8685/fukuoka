@@ -13,3 +13,6 @@ research/text/
 research/text2/
 .geocode.lock
 audit/.geocode.lock
+
+# Hermes 工具產生的原子寫入暫存目錄
+.hermes-tmp.*/

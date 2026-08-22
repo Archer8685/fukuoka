@@ -160,7 +160,10 @@ console.log(out.join('\n'));
 
 
 def check_trip():
-    node = shutil.which("node")
+    # Windows 明確使用 node.exe，避開 Git Bash 的 `node` 包裝層偶發
+    # `stdin is not a tty` 假錯誤；其他平台照常使用 node。
+    node_name = "node.exe" if os.name == "nt" else "node"
+    node = shutil.which(node_name)
     if not node:
         warn("找不到 node，跳過 trip.js 語法與行程邏輯檢查")
         return

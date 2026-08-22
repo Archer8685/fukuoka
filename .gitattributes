@@ -1,0 +1,10 @@
+* text=auto
+
+# 專案文字檔統一 LF，避免 Windows core.autocrlf 反覆提示或改寫。
+.*      text eol=lf
+*.js   text eol=lf
+*.py   text eol=lf
+*.html text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+*.css  text eol=lf

@@ -60,7 +60,7 @@ git add -A && git commit && git push
 - **新增／修改地點一律改 `data/*.json`**，不要直接改 `data.js`（build 會覆蓋）
 - 同名店家消歧義：在 `data/*.json` 該筆加 `q` 欄位當搜尋字串
   （例 `"q": "ステーキハウス ミディアムレア ザ・ルイガンズ 西戸崎"`）
-- `trip.js` 是 **CRLF** 換行，Python 讀寫要 `open(p, newline="")` 保留
+- 文字檔由 `.gitattributes` 統一為 **LF**；不要手動轉成 CRLF
 - `trip.js` 用 `const` 宣告，Node 解析要用
   `new Function(src + '; return {TRIP};')()`，**直接 `eval` 會 exit 1**
 - 站點 `kind`：`spot` / `meal` / `shop` / `move`（轉乘，不算停留）/ `hotel`
@@ -129,6 +129,8 @@ git add -A && git commit && git push
 ## 環境
 
 - Windows / git-bash。POSIX 語法，不要用 PowerShell 指令
+- 在 Windows 驗證 JavaScript 語法用 `node.exe --check ./trip.js`，不要用
+  `node --check trip.js`，避免 Git Bash 包裝層偶發 `stdin is not a tty`
 - `terminal` 裡 **heredoc 會報 `stdin is not a tty`**；node 單行內用
   **arrow function 也會觸發同錯**，改寫成 `function(x){...}`
 - Google Places API key 在 `config.js`，需帶 `Referer: https://archer8685.github.io/fukuoka/`

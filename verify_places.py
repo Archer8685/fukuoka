@@ -89,7 +89,10 @@ def load_trip():
     js = ("const fs=require('fs');const src=fs.readFileSync('trip.js','utf8');"
           "const m=new Function(src+'; return {TRIP};')();"
           "process.stdout.write(JSON.stringify(m.TRIP));")
-    r = subprocess.run(["node", "-e", js], cwd=BASE, capture_output=True)
+    # Windows Git Bash 的 `node` 包裝層偶爾會誤報 `stdin is not a tty`；
+    # 明確呼叫 node.exe 可避開包裝層，其他平台仍使用 node。
+    node = "node.exe" if os.name == "nt" else "node"
+    r = subprocess.run([node, "-e", js], cwd=BASE, capture_output=True)
     if r.returncode:
         sys.exit("讀 trip.js 失敗：" + r.stderr.decode("utf-8", "replace"))
     return json.loads(r.stdout.decode("utf-8"))
@@ -246,15 +249,21 @@ def main():
         except Exception as e:
             print(f"\n⚠️  既有快取合併失敗，將只寫入本次結果：{e}")
 
-    json.dump({"generated": str(date.today()), "results": results, "issues": issues},
-              open(out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    with open(out, "w", encoding="utf-8", newline="\n") as f:
+        json.dump({"generated": str(date.today()), "results": results, "issues": issues},
+                  f, ensure_ascii=False, indent=1)
 
+    errors = [i for i in issues if i[3].startswith("❌")]
+    warnings = [i for i in issues if i[3].startswith("⚠️")]
     print("\n" + "=" * 72)
-    print(f"共查 {len(results)} 站，發現 {len(issues)} 個問題")
+    print(f"共查 {len(results)} 站：錯誤 {len(errors)}、警告 {len(warnings)}")
     print("=" * 72)
     for dt, t, n, msg, extra in issues:
         print(f"{dt} {t or '--:--':6s} {n[:26]:28s} {msg}  {extra[:40]}")
     print(f"\n報告：{out}")
+    # 真錯誤（查無地點、歇業、公休、抵達時未營業）必須讓 CI／呼叫端失敗；
+    # 風險警告仍完整列出，但不等同驗證失敗。
+    sys.exit(1 if errors else 0)
 
 
 if __name__ == "__main__":
