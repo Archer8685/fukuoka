@@ -3617,6 +3617,132 @@
    },
    "fetched": "2026-08-23"
   },
+  "マイング 博多": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "マイング 博多・九州のおみやげ処"
+    },
+    "editorialSummary": {
+     "languageCode": "en",
+     "text": "Sprawling transit-center marketplace specializing in Hakata souvenirs, groceries & food."
+    },
+    "formattedAddress": "〒812-0012 福岡県福岡市博多区博多駅中央街１−１",
+    "id": "ChIJkwiS2seRQTURIJ3omrAIJFk",
+    "location": {
+     "latitude": 33.5909444,
+     "longitude": 130.4206514
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "ショッピング モール"
+    },
+    "rating": 4,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T12:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時00分～21時00分",
+      "火曜日: 9時00分～21時00分",
+      "水曜日: 9時00分～21時00分",
+      "木曜日: 9時00分～21時00分",
+      "金曜日: 9時00分～21時00分",
+      "土曜日: 9時00分～21時00分",
+      "日曜日: 9時00分～21時00分"
+     ]
+    },
+    "userRatingCount": 1378,
+    "websiteUri": "http://www.ming.or.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
   "マリンワールド海の中道": {
    "data": {
     "businessStatus": "OPERATIONAL",
@@ -4245,6 +4371,128 @@
      ]
     },
     "userRatingCount": 316
+   },
+   "fetched": "2026-08-23"
+  },
+  "伊都きんぐ 博多いっぴん通り店": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "福岡県産あまおう苺加工販売所 伊都きんぐ 博多いっぴん通り店"
+    },
+    "formattedAddress": "〒812-0012 福岡県福岡市博多区博多駅中央街１−１ JR博多駅 博多デイトス1階 いっぴん通り",
+    "id": "ChIJD0xb4seRQTURrIv3C5IAuCo",
+    "location": {
+     "latitude": 33.5897806,
+     "longitude": 130.420972
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "デザート ショップ"
+    },
+    "rating": 4,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T12:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 8,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 8,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 8,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 8,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 8,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 8,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 8,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 8時00分～21時00分",
+      "火曜日: 8時00分～21時00分",
+      "水曜日: 8時00分～21時00分",
+      "木曜日: 8時00分～21時00分",
+      "金曜日: 8時00分～21時00分",
+      "土曜日: 8時00分～21時00分",
+      "日曜日: 8時00分～21時00分"
+     ]
+    },
+    "userRatingCount": 173,
+    "websiteUri": "https://www.itoking.jp/"
    },
    "fetched": "2026-08-23"
   },
