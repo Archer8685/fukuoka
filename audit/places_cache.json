@@ -1,5 +1,379 @@
 {
  "places": {
+  "B-speak 湯布院": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "B-speak"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "上品で穏やかなケーキ屋。シンプルな素材で焼き上げた生地とバランスの良いクリームを使った有名なロールケーキを販売している。"
+    },
+    "formattedAddress": "〒879-5102 大分県由布市湯布院町川上３０４０−２",
+    "id": "ChIJO7RnQNetRjUR0hEidDDEOvo",
+    "location": {
+     "latitude": 33.2653853,
+     "longitude": 131.35938439999998
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "ケーキ屋"
+    },
+    "rating": 3.9,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時00分～17時00分",
+      "火曜日: 10時00分～17時00分",
+      "水曜日: 10時00分～17時00分",
+      "木曜日: 10時00分～17時00分",
+      "金曜日: 10時00分～17時00分",
+      "土曜日: 10時00分～17時00分",
+      "日曜日: 10時00分～17時00分"
+     ]
+    },
+    "userRatingCount": 1237,
+    "websiteUri": "http://www.b-speak.net/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "BIOTOP 福岡 赤坂": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "BIOTOP (ビオトープ) FUKUOKA"
+    },
+    "formattedAddress": "〒810-0042 福岡県福岡市中央区赤坂２丁目６−３０ 2F",
+    "id": "ChIJZwONllyTQTURlWjsLDVFvX8",
+    "location": {
+     "latitude": 33.5826979,
+     "longitude": 130.3821434
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "衣料品店"
+    },
+    "rating": 3.8,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T10:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時00分～19時00分",
+      "火曜日: 10時00分～19時00分",
+      "水曜日: 10時00分～19時00分",
+      "木曜日: 10時00分～19時00分",
+      "金曜日: 10時00分～19時00分",
+      "土曜日: 10時00分～19時00分",
+      "日曜日: 10時00分～19時00分"
+     ]
+    },
+    "userRatingCount": 85,
+    "websiteUri": "https://www.biotop.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "BOSS E・ZO FUKUOKA": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "BOSS E･ZO FUKUOKA"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "VR 映像空間でのアクティビティのほか、デジタル装飾を施したチューブ型スライダーを備える娯楽施設。食事や公演も楽しめる。"
+    },
+    "formattedAddress": "〒810-0065 福岡県福岡市中央区地行浜２丁目２−６",
+    "id": "ChIJwdDAakKTQTURjtpW3lHTCug",
+    "location": {
+     "latitude": 33.5949436,
+     "longitude": 130.363646
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "観光名所"
+    },
+    "rating": 4.2,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 11時00分～20時00分",
+      "火曜日: 11時00分～20時00分",
+      "水曜日: 11時00分～20時00分",
+      "木曜日: 11時00分～20時00分",
+      "金曜日: 11時00分～20時00分",
+      "土曜日: 10時00分～20時00分",
+      "日曜日: 10時00分～20時00分"
+     ]
+    },
+    "userRatingCount": 3045,
+    "websiteUri": "https://e-zofukuoka.com/?utm_source=googlemybusiness&utm_medium=maps&utm_campaign=ezo_top"
+   },
+   "fetched": "2026-08-23"
+  },
   "CAFE LA RUCHE 由布院": {
    "data": {
     "businessStatus": "OPERATIONAL",
@@ -114,6 +488,8525 @@
    },
    "fetched": "2026-08-23"
   },
+  "COMICO ART MUSEUM YUFUIN": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "COMICO ART MUSEUM YUFUIN"
+    },
+    "formattedAddress": "〒879-5102 大分県由布市湯布院町川上２９９５−１ ＊休館日は隔週水曜日です",
+    "id": "ChIJ6Tamp3iuRjURHNkaIRhCLE4",
+    "location": {
+     "latitude": 33.2652947,
+     "longitude": 131.3613162
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "en",
+     "text": "Art museum"
+    },
+    "rating": 4.5,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T00:30:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 30
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時30分～17時00分",
+      "火曜日: 9時30分～17時00分",
+      "水曜日: 定休日",
+      "木曜日: 9時30分～17時00分",
+      "金曜日: 9時30分～17時00分",
+      "土曜日: 9時30分～17時00分",
+      "日曜日: 9時30分～17時00分"
+     ]
+    },
+    "userRatingCount": 776,
+    "websiteUri": "http://camy.oita.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "JUMP SHOP キャナルシティ博多": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "JUMP SHOP福岡店"
+    },
+    "formattedAddress": "〒812-0018 福岡県福岡市博多区住吉１丁目２−22B1",
+    "id": "ChIJaxduH76RQTURcnUkUnD443U",
+    "location": {
+     "latitude": 33.590020599999995,
+     "longitude": 130.4111575
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "雑貨店"
+    },
+    "rating": 3.9,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時00分～21時00分",
+      "火曜日: 10時00分～21時00分",
+      "水曜日: 10時00分～21時00分",
+      "木曜日: 10時00分～21時00分",
+      "金曜日: 10時00分～21時00分",
+      "土曜日: 10時00分～21時00分",
+      "日曜日: 10時00分～21時00分"
+     ]
+    },
+    "userRatingCount": 296,
+    "websiteUri": "https://www.shonenjump.com/j/jumpshop/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "LIGHT YEARS 福岡市 古道具": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "LIGHT YEARS"
+    },
+    "formattedAddress": "〒812-0011 福岡県福岡市博多区博多駅前３丁目３０−５",
+    "id": "ChIJnTtKAL-RQTURmah3nBJNfyM",
+    "location": {
+     "latitude": 33.5896748,
+     "longitude": 130.4136097
+    },
+    "rating": 4.3,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T02:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 11,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 11時00分～19時00分",
+      "火曜日: 11時00分～19時00分",
+      "水曜日: 11時00分～19時00分",
+      "木曜日: 11時00分～19時00分",
+      "金曜日: 11時00分～19時00分",
+      "土曜日: 11時00分～19時00分",
+      "日曜日: 11時00分～19時00分"
+     ]
+    },
+    "userRatingCount": 38,
+    "websiteUri": "http://www.light-years.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "NEPENTHES HAKATA ネペンテス 博多": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "NEPENTHES HAKATA"
+    },
+    "formattedAddress": "〒812-0025 福岡県福岡市博多区店屋町２−２８ 2F",
+    "id": "ChIJVVWQb-qRQTURBy_5rV2oMv0",
+    "location": {
+     "latitude": 33.5962515,
+     "longitude": 130.41015009999998
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "衣料品店"
+    },
+    "rating": 4.3,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T02:30:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 11,
+        "minute": 30
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 11時30分～20時00分",
+      "火曜日: 11時30分～20時00分",
+      "水曜日: 11時30分～20時00分",
+      "木曜日: 11時30分～20時00分",
+      "金曜日: 11時30分～20時00分",
+      "土曜日: 11時30分～20時00分",
+      "日曜日: 11時30分～20時00分"
+     ]
+    },
+    "userRatingCount": 84,
+    "websiteUri": "http://www.nepenthes.co.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "Sanrio Gallery キャナルシティ": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "サンリオギャラリー 博多店"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "ハローキティをはじめとするキャラクター グッズを取り揃えたチェーン店。ギフト、衣料品、アクセサリーを販売。"
+    },
+    "formattedAddress": "〒812-0018 福岡県福岡市博多区住吉１丁目２−２２ B1F キャナルシティOPAセンターウォーク北側",
+    "id": "ChIJYcOBiZWRQTUR7TLOgG1w8Fs",
+    "location": {
+     "latitude": 33.58976,
+     "longitude": 130.411229
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "店舗"
+    },
+    "rating": 3.9,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時00分～21時00分",
+      "火曜日: 10時00分～21時00分",
+      "水曜日: 10時00分～21時00分",
+      "木曜日: 10時00分～21時00分",
+      "金曜日: 10時00分～21時00分",
+      "土曜日: 10時00分～21時00分",
+      "日曜日: 10時00分～21時00分"
+     ]
+    },
+    "userRatingCount": 221,
+    "websiteUri": "https://stores.sanrio.co.jp/2978100"
+   },
+   "fetched": "2026-08-23"
+  },
+  "あまおうチーズケーキファクトリー Kingberry 太宰府": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "Kingberry"
+    },
+    "formattedAddress": "〒818-0117 福岡県太宰府市宰府２丁目７−２９",
+    "id": "ChIJb8HTj5ibQTUR5TeAei1wsfw",
+    "location": {
+     "latitude": 33.519464,
+     "longitude": 130.53381199999998
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "カフェ・喫茶"
+    },
+    "rating": 4,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T08:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時00分～17時00分",
+      "火曜日: 9時00分～17時00分",
+      "水曜日: 9時00分～17時00分",
+      "木曜日: 9時00分～17時00分",
+      "金曜日: 9時00分～17時00分",
+      "土曜日: 9時00分～17時00分",
+      "日曜日: 9時00分～17時00分"
+     ]
+    },
+    "userRatingCount": 109,
+    "websiteUri": "http://www.kingberry.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "あるあるCity 小倉": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "あるあるCity"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "アニメグッズ、漫画、コスプレ衣装を販売する店が並ぶ小さなショッピング モール。カラオケ店や飲食店もある。"
+    },
+    "formattedAddress": "〒802-0001 福岡県北九州市小倉北区浅野２丁目１４−５",
+    "id": "ChIJU41AEEm_QzURmQifczh8sqM",
+    "location": {
+     "latitude": 33.8875512,
+     "longitude": 130.8846773
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "ショッピング モール"
+    },
+    "rating": 4.1,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T02:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 11,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 11時00分～20時00分",
+      "火曜日: 11時00分～20時00分",
+      "水曜日: 11時00分～20時00分",
+      "木曜日: 11時00分～20時00分",
+      "金曜日: 11時00分～20時00分",
+      "土曜日: 11時00分～20時00分",
+      "日曜日: 11時00分～20時00分"
+     ]
+    },
+    "userRatingCount": 4215,
+    "websiteUri": "https://aruarucity.com/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "かさの家 太宰府": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "かさの家"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "上品で落ち着きのある大正モダンな店内で、和食御膳や丼、蕎麦を提供。梅ヶ枝餅が名物の庭園を眺める喫茶を併設している。"
+    },
+    "formattedAddress": "〒818-0117 福岡県太宰府市宰府２丁目７−２４",
+    "id": "ChIJVVURhJibQTURnHxrPVoG4-Y",
+    "location": {
+     "latitude": 33.5194547,
+     "longitude": 130.5334317
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "デザート ショップ"
+    },
+    "rating": 4.4,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T09:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時00分～18時00分",
+      "火曜日: 9時00分～18時00分",
+      "水曜日: 9時00分～18時00分",
+      "木曜日: 9時00分～18時00分",
+      "金曜日: 9時00分～18時00分",
+      "土曜日: 9時00分～18時00分",
+      "日曜日: 9時00分～18時00分"
+     ]
+    },
+    "userRatingCount": 1449,
+    "websiteUri": "http://www.kasanoya.com/umegaemochi.html"
+   },
+   "fetched": "2026-08-23"
+  },
+  "くまモンスクエア": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "くまモンスクエア"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "マスコットのヒグマが有名な観光客を対象とした店。地元の情報、地域の生産物、食品を販売。"
+    },
+    "formattedAddress": "〒860-0808 熊本県熊本市中央区手取本町８−２ テトリアくまもとビル 1階",
+    "id": "ChIJ0yu7wAv0QDUR9Ml7hdGOYuo",
+    "location": {
+     "latitude": 32.8018121,
+     "longitude": 130.712455
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "ショッピング モール"
+    },
+    "rating": 4.1,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時00分～18時00分",
+      "火曜日: 10時00分～18時00分",
+      "水曜日: 10時00分～18時00分",
+      "木曜日: 10時00分～18時00分",
+      "金曜日: 10時00分～18時00分",
+      "土曜日: 10時00分～18時00分",
+      "日曜日: 10時00分～18時00分"
+     ]
+    },
+    "userRatingCount": 3708,
+    "websiteUri": "http://www.kumamon-sq.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "とり田 博多本店": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "とり田 博多本店"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "板張りの床とテーブルを備えたシックでモダンなレストラン。スープや水炊きなどの鶏料理専門店。"
+    },
+    "formattedAddress": "〒812-0027 福岡県福岡市博多区下川端町１０−５ 1F",
+    "id": "ChIJs0-UX-uRQTURkYi-DvhX3S0",
+    "location": {
+     "latitude": 33.5960356,
+     "longitude": 130.4058933
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "鶏料理店"
+    },
+    "rating": 4.4,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T02:30:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 16,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 16,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 16,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 16,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 16,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 11,
+        "minute": 30
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 11時30分～16時00分, 17時00分～23時00分",
+      "火曜日: 11時30分～16時00分, 17時00分～23時00分",
+      "水曜日: 11時30分～16時00分, 17時00分～23時00分",
+      "木曜日: 11時30分～16時00分, 17時00分～23時00分",
+      "金曜日: 11時30分～16時00分, 17時00分～23時00分",
+      "土曜日: 11時30分～23時00分",
+      "日曜日: 11時30分～23時00分"
+     ]
+    },
+    "userRatingCount": 1877,
+    "websiteUri": "https://toriden.com/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "ふくや 中洲本店": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "味の明太子ふくや 中洲本店"
+    },
+    "formattedAddress": "〒810-8629 福岡県福岡市博多区中洲２丁目６−１０",
+    "id": "ChIJFZ4i_JSRQTURZXWTUqkSsrE",
+    "location": {
+     "latitude": 33.592050799999996,
+     "longitude": 130.4080741
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "ギフト ショップ"
+    },
+    "rating": 4.3,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T00:30:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 30
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時00分～22時00分",
+      "火曜日: 9時00分～22時00分",
+      "水曜日: 9時00分～22時00分",
+      "木曜日: 9時00分～22時00分",
+      "金曜日: 9時00分～22時00分",
+      "土曜日: 9時30分～18時00分",
+      "日曜日: 9時30分～18時00分"
+     ]
+    },
+    "userRatingCount": 300,
+    "websiteUri": "https://www.fukuya.com/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "みっふぃー森のきっちん 由布院店": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "みっふぃー森のきっちん＆べーかりー 湯布院店"
+    },
+    "formattedAddress": "〒879-5102 大分県由布市湯布院町川上１５０３−８",
+    "id": "ChIJMVihsxitRjURqVSTJ8mogfQ",
+    "location": {
+     "latitude": 33.267188,
+     "longitude": 131.3656948
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "ベーカリー"
+    },
+    "rating": 4.2,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T00:30:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 30
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時30分～17時30分",
+      "火曜日: 9時30分～17時30分",
+      "水曜日: 9時30分～17時30分",
+      "木曜日: 9時30分～17時30分",
+      "金曜日: 9時30分～17時30分",
+      "土曜日: 9時30分～17時30分",
+      "日曜日: 9時30分～17時30分"
+     ]
+    },
+    "userRatingCount": 437,
+    "websiteUri": "http://miffykitchenbakery.jp/goods/?category=yuhuin"
+   },
+   "fetched": "2026-08-23"
+  },
+  "やまや食堂 MARK IS 福岡ももち": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "博多めんたいやまや食堂 MARK IS 福岡ももち店"
+    },
+    "formattedAddress": "〒810-8639 福岡県福岡市中央区地行浜２丁目２−１ マークイズ福岡ももち 3F",
+    "id": "ChIJJcmpQaaTQTUR4iiwI37URAs",
+    "location": {
+     "latitude": 33.5932369,
+     "longitude": 130.363043
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "和食店"
+    },
+    "rating": 4.3,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T02:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 11,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 11時00分～22時00分",
+      "火曜日: 11時00分～22時00分",
+      "水曜日: 11時00分～22時00分",
+      "木曜日: 11時00分～22時00分",
+      "金曜日: 11時00分～22時00分",
+      "土曜日: 11時00分～22時00分",
+      "日曜日: 11時00分～22時00分"
+     ]
+    },
+    "userRatingCount": 197,
+    "websiteUri": "https://restaurant-yamaya.com/brand/mentai-shokudo/restaurant/markismomochi"
+   },
+   "fetched": "2026-08-23"
+  },
+  "アルテジオ 由布院": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "空想の森 アルテジオ"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "地元にゆかりのある展示が交代で行われる、風変わりな現代美術館。ティールームがある。"
+    },
+    "formattedAddress": "〒879-5102 大分県由布市湯布院町川上１２７２−１７５",
+    "id": "ChIJnUYI4YSuRjUR2KvLPSR43qk",
+    "location": {
+     "latitude": 33.275729999999996,
+     "longitude": 131.36847
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "en",
+     "text": "Art museum"
+    },
+    "rating": 4.2,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 16,
+        "minute": 30
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 16,
+        "minute": 30
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 16,
+        "minute": 30
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 16,
+        "minute": 30
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 16,
+        "minute": 30
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 16,
+        "minute": 30
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時00分～16時30分",
+      "火曜日: 10時00分～16時30分",
+      "水曜日: 定休日",
+      "木曜日: 10時00分～16時30分",
+      "金曜日: 10時00分～16時30分",
+      "土曜日: 10時00分～16時30分",
+      "日曜日: 10時00分～16時30分"
+     ]
+    },
+    "userRatingCount": 193,
+    "websiteUri": "https://sansou-murata.com/facilities/artegio/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "ガンダムパーク福岡": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "ガンダムパーク福岡"
+    },
+    "formattedAddress": "〒812-0893 福岡県福岡市博多区那珂６丁目２３−１",
+    "id": "ChIJvSIxCuCRQTURbWTvzVSagic",
+    "location": {
+     "latitude": 33.565005899999996,
+     "longitude": 130.4414037
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "店舗"
+    },
+    "rating": 4.4,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時00分～21時00分",
+      "火曜日: 10時00分～21時00分",
+      "水曜日: 10時00分～21時00分",
+      "木曜日: 10時00分～21時00分",
+      "金曜日: 10時00分～21時00分",
+      "土曜日: 10時00分～21時00分",
+      "日曜日: 10時00分～21時00分"
+     ]
+    },
+    "userRatingCount": 1141,
+    "websiteUri": "https://www.gundampark.net/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "キャナルシティ博多": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "キャナルシティ博多"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "ブランド店や専門店、飲食店、噴水ショーがある広々としたショッピング モール。"
+    },
+    "formattedAddress": "〒812-0018 福岡県福岡市博多区住吉１丁目２−２",
+    "id": "ChIJYcOBiZWRQTUR0Rl0ehe67eA",
+    "location": {
+     "latitude": 33.5896305,
+     "longitude": 130.41094780000003
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "ショッピング モール"
+    },
+    "rating": 4.2,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時00分～21時00分",
+      "火曜日: 10時00分～21時00分",
+      "水曜日: 10時00分～21時00分",
+      "木曜日: 10時00分～21時00分",
+      "金曜日: 10時00分～21時00分",
+      "土曜日: 10時00分～21時00分",
+      "日曜日: 10時00分～21時00分"
+     ]
+    },
+    "userRatingCount": 55138,
+    "websiteUri": "https://canalcity.co.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "サンリオキャラクターズ ドリーミングパーク": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "サンリオキャラクターズ ドリーミングパーク Sanrio characters Dream!ng Park Supported by PayPay"
+    },
+    "formattedAddress": "〒810-0065 福岡県福岡市中央区地行浜２丁目２−６ BOSS E・ZO FUKUOKA 7F",
+    "id": "ChIJJ5d2eEKTQTURErERRD2GP8E",
+    "location": {
+     "latitude": 33.5950969,
+     "longitude": 130.3637518
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "観光名所"
+    },
+    "rating": 4,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 11時00分～19時00分",
+      "火曜日: 11時00分～19時00分",
+      "水曜日: 11時00分～19時00分",
+      "木曜日: 11時00分～19時00分",
+      "金曜日: 11時00分～19時00分",
+      "土曜日: 10時00分～19時00分",
+      "日曜日: 10時00分～19時00分"
+     ]
+    },
+    "userRatingCount": 107,
+    "websiteUri": "https://e-zofukuoka.com/dreamingpark/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "ステーキハウス ミディアムレア ザ・ルイガンズ 西戸崎": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "Steak house Medium Rare"
+    },
+    "formattedAddress": "〒811-0321 福岡県福岡市東区西戸崎１８−２５ ＴＨＥ ＬＵＩＧＡＮＳ 1F Spa & Resort",
+    "id": "ChIJ1x5U9LONQTURTTRMueyVct0",
+    "location": {
+     "latitude": 33.663045499999996,
+     "longitude": 130.3648528
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "ステーキハウス"
+    },
+    "rating": 4.3,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T03:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 12,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 0,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 12,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 12,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 12,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 12,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 12,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 12,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 12時00分～15時00分, 17時00分～22時00分",
+      "火曜日: 12時00分～15時00分, 17時00分～22時00分",
+      "水曜日: 12時00分～15時00分, 17時00分～22時00分",
+      "木曜日: 12時00分～15時00分, 17時00分～22時00分",
+      "金曜日: 12時00分～15時00分, 17時00分～22時00分",
+      "土曜日: 12時00分～15時00分, 17時00分～22時00分",
+      "日曜日: 12時00分～15時00分, 17時00分～22時00分"
+     ]
+    },
+    "userRatingCount": 48,
+    "websiteUri": "https://www.luigans.com/restaurant/mediumrare/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "スヌーピー茶屋 由布院店": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "SNOOPY茶屋 由布院店"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "こだわりの抹茶を使ったメニューやスヌーピーのキャラクターがテーマの軽食が頂ける。古典的で穏やかな店内にはテーブル席があり。"
+    },
+    "formattedAddress": "〒879-5102 大分県由布市湯布院町川上１５４０−２",
+    "id": "ChIJg8kh-H6uRjURISKPf0GgqKI",
+    "location": {
+     "latitude": 33.2665748,
+     "longitude": 131.36561709999998
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "カフェ・喫茶"
+    },
+    "rating": 4.1,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T00:30:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 30
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時30分～17時30分",
+      "火曜日: 9時30分～17時30分",
+      "水曜日: 9時30分～17時30分",
+      "木曜日: 9時30分～17時30分",
+      "金曜日: 9時30分～17時30分",
+      "土曜日: 9時30分～17時30分",
+      "日曜日: 9時30分～17時30分"
+     ]
+    },
+    "userRatingCount": 1668,
+    "websiteUri": "http://www.snoopychaya.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "ハウステンボス": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "ハウステンボス"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "オランダの村を模したテーマパーク。多彩なショーを楽しめるほか、たくさんの乗り物で遊べる。"
+    },
+    "formattedAddress": "〒859-3243 長崎県佐世保市ハウステンボス町１−１",
+    "id": "ChIJvc-zbma9ajUR93iHfUJ7Jm8",
+    "location": {
+     "latitude": 33.0897198,
+     "longitude": 129.79189209999998
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "アミューズメント センター"
+    },
+    "rating": 4.3,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時00分～21時00分",
+      "火曜日: 10時00分～21時00分",
+      "水曜日: 10時00分～21時00分",
+      "木曜日: 10時00分～21時00分",
+      "金曜日: 10時00分～21時00分",
+      "土曜日: 10時00分～22時00分",
+      "日曜日: 10時00分～22時00分"
+     ]
+    },
+    "userRatingCount": 25435,
+    "websiteUri": "https://www.huistenbosch.co.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "ハウステンボス アトラクションタウン": {
+   "data": {
+    "displayName": {
+     "languageCode": "ja",
+     "text": "アトラクションタウン"
+    },
+    "formattedAddress": "〒859-3243 長崎県佐世保市ハウステンボス町アトラクションタウン",
+    "id": "ChIJy8Ck7269ajURoj2YSGnsKRc",
+    "location": {
+     "latitude": 33.085879399999996,
+     "longitude": 129.7891565
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "建造物"
+    }
+   },
+   "fetched": "2026-08-23"
+  },
+  "ハウステンボス ドムトールン": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "ドムトールン"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "高さ 105 m のタワー。5 階の展望室からは街と大村湾を一望できる。"
+    },
+    "formattedAddress": "〒859-3243 長崎県佐世保市ハウステンボス町８−２",
+    "id": "ChIJ2Wpp9m29ajURqd3j2gGame8",
+    "location": {
+     "latitude": 33.0846723,
+     "longitude": 129.7860589
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "展望台"
+    },
+    "rating": 4.3,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T12:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時00分～21時00分",
+      "火曜日: 10時00分～21時00分",
+      "水曜日: 10時00分～21時00分",
+      "木曜日: 10時00分～21時00分",
+      "金曜日: 10時00分～21時00分",
+      "土曜日: 9時00分～22時00分",
+      "日曜日: 9時00分～21時00分"
+     ]
+    },
+    "userRatingCount": 332,
+    "websiteUri": "https://www.huistenbosch.co.jp/enjoy/145"
+   },
+   "fetched": "2026-08-23"
+  },
+  "ハウステンボス 光の王国": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "光の滝"
+    },
+    "formattedAddress": "〒859-3243 長崎県佐世保市ハウステンボス町",
+    "id": "ChIJp18jew69ajURxUpre3coLAY",
+    "location": {
+     "latitude": 33.0851944,
+     "longitude": 129.7861206
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "アミューズメント センター"
+    },
+    "rating": 4.6,
+    "userRatingCount": 36
+   },
+   "fetched": "2026-08-23"
+  },
+  "バンダイナムコ Cross Store 博多 キャナルシティ博多": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "バンダイナムコ Cross Store 博多"
+    },
+    "formattedAddress": "〒812-0018 福岡県福岡市博多区住吉１丁目２−７４ キャナルシティ博多 サウスビル B1F",
+    "id": "ChIJrVNlkjuRQTURFzjhoiNcNow",
+    "location": {
+     "latitude": 33.588670199999996,
+     "longitude": 130.4108171
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "ゲームセンター"
+    },
+    "rating": 3.7,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時00分～21時00分",
+      "火曜日: 10時00分～21時00分",
+      "水曜日: 10時00分～21時00分",
+      "木曜日: 10時00分～21時00分",
+      "金曜日: 10時00分～21時00分",
+      "土曜日: 10時00分～21時00分",
+      "日曜日: 10時00分～21時00分"
+     ]
+    },
+    "userRatingCount": 189,
+    "websiteUri": "https://bandainamco-am.co.jp/game_center/loc/hakata-canalcity/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "プリンセスピピ門司港": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "プリンセスピピ門司港"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "パエリア式王様焼きカレーなど、タイ料理から着想を得たメニューが楽しめる、居心地の良い店。"
+    },
+    "formattedAddress": "〒801-0841 福岡県北九州市門司区西海岸１丁目４−７",
+    "id": "ChIJTY3z1S6WQzURA85AUpAA_WI",
+    "location": {
+     "latitude": 33.945513,
+     "longitude": 130.961044
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "カレー店"
+    },
+    "rating": 4.5,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T02:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 20,
+        "minute": 30
+       },
+       "open": {
+        "day": 0,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 15,
+        "minute": 30
+       },
+       "open": {
+        "day": 1,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 20,
+        "minute": 30
+       },
+       "open": {
+        "day": 2,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 20,
+        "minute": 30
+       },
+       "open": {
+        "day": 3,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 20,
+        "minute": 30
+       },
+       "open": {
+        "day": 4,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 20,
+        "minute": 30
+       },
+       "open": {
+        "day": 5,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 20,
+        "minute": 30
+       },
+       "open": {
+        "day": 6,
+        "hour": 11,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 11時00分～15時30分",
+      "火曜日: 11時00分～20時30分",
+      "水曜日: 11時00分～20時30分",
+      "木曜日: 11時00分～20時30分",
+      "金曜日: 11時00分～20時30分",
+      "土曜日: 11時00分～20時30分",
+      "日曜日: 11時00分～20時30分"
+     ]
+    },
+    "userRatingCount": 4450,
+    "websiteUri": "https://tabelog.com/fukuoka/A4004/A400501/40003136/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "ポケモンセンターフクオカ": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "ポケモンセンターフクオカ"
+    },
+    "formattedAddress": "〒812-0012 福岡県福岡市博多区博多駅中央街９−１ 博多マルイ 2F",
+    "id": "ChIJ74LQjMeRQTURouWqGzzDgF8",
+    "location": {
+     "latitude": 33.5890033,
+     "longitude": 130.4192564
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "店舗"
+    },
+    "rating": 4.2,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時00分～21時00分",
+      "火曜日: 10時00分～21時00分",
+      "水曜日: 10時00分～21時00分",
+      "木曜日: 10時00分～21時00分",
+      "金曜日: 10時00分～21時00分",
+      "土曜日: 10時00分～21時00分",
+      "日曜日: 10時00分～21時00分"
+     ]
+    },
+    "userRatingCount": 2062,
+    "websiteUri": "https://www.pokemon.co.jp/shop/pokecen/fukuoka/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "マリンワールド海の中道": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "マリンワールド海の中道"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "多様な海洋生物が展示され、スタジアム プールを備えた都市型水族館。イルカやアシカのショーを開催。"
+    },
+    "formattedAddress": "〒811-0321 福岡県福岡市東区西戸崎１８−２８",
+    "id": "ChIJR4tIGrGNQTURRMLEZ9kNOr8",
+    "location": {
+     "latitude": 33.660851,
+     "longitude": 130.36341299999998
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "水族館"
+    },
+    "rating": 4.5,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T00:30:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 21,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 30
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時30分～17時30分",
+      "火曜日: 9時30分～17時30分",
+      "水曜日: 9時30分～17時30分",
+      "木曜日: 9時30分～17時30分",
+      "金曜日: 9時30分～17時30分",
+      "土曜日: 9時30分～21時00分",
+      "日曜日: 9時30分～21時00分"
+     ]
+    },
+    "userRatingCount": 13661,
+    "websiteUri": "http://www.marine-world.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "マークイズ福岡ももち": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "MARK IS 福岡ももち"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "広々としたモダンなショッピング モール。国内外のチェーン店、伝統的なレストラン、カフェがある。"
+    },
+    "formattedAddress": "〒810-8639 福岡県福岡市中央区地行浜２丁目２−１",
+    "id": "ChIJx0YIukySQTURTcj52BPDl3c",
+    "location": {
+     "latitude": 33.592234,
+     "longitude": 130.3645564
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "ショッピング モール"
+    },
+    "rating": 3.9,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時00分～22時00分",
+      "火曜日: 10時00分～22時00分",
+      "水曜日: 10時00分～22時00分",
+      "木曜日: 10時00分～22時00分",
+      "金曜日: 10時00分～22時00分",
+      "土曜日: 10時00分～22時00分",
+      "日曜日: 10時00分～22時00分"
+     ]
+    },
+    "userRatingCount": 6389,
+    "websiteUri": "http://www.mec-markis.jp/fukuoka-momochi/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "中洲屋台": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "中洲の屋台街"
+    },
+    "formattedAddress": "〒810-0801 福岡県福岡市博多区中洲１丁目８",
+    "id": "ChIJxSSDyVORQTURNCeKKwmq6Fk",
+    "location": {
+     "latitude": 33.5899407,
+     "longitude": 130.4089399
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "観光名所"
+    },
+    "rating": 3.7,
+    "userRatingCount": 847
+   },
+   "fetched": "2026-08-23"
+  },
+  "九州国立博物館": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "九州国立博物館"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "モダンなガラス張りの建築で知られる美術と歴史の博物館。旧石器時代から近世末期までの日本の文化の形成について展示している。"
+    },
+    "formattedAddress": "〒818-0118 福岡県太宰府市石坂４丁目７−２",
+    "id": "ChIJK4ld4qiTQTURnIfmKzchJLs",
+    "location": {
+     "latitude": 33.5182578,
+     "longitude": 130.5381224
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "博物館"
+    },
+    "rating": 4.3,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T00:30:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 30
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 定休日",
+      "火曜日: 9時30分～17時00分",
+      "水曜日: 9時30分～17時00分",
+      "木曜日: 9時30分～17時00分",
+      "金曜日: 9時30分～17時00分",
+      "土曜日: 9時30分～19時00分",
+      "日曜日: 9時30分～17時00分"
+     ]
+    },
+    "userRatingCount": 10208,
+    "websiteUri": "http://www.kyuhaku.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "人形町今半 JR博多シティ店": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "人形町今半 JR博多シティ店"
+    },
+    "formattedAddress": "〒812-0012 福岡県福岡市博多区博多駅中央街１−１ ９Ｆ",
+    "id": "ChIJBVmI6seRQTURtmFXqdZSsKU",
+    "location": {
+     "latitude": 33.590001900000004,
+     "longitude": 130.41973
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "和食店"
+    },
+    "rating": 4.5,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T02:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 11,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 11時00分～22時00分",
+      "火曜日: 11時00分～22時00分",
+      "水曜日: 11時00分～22時00分",
+      "木曜日: 11時00分～22時00分",
+      "金曜日: 11時00分～22時00分",
+      "土曜日: 11時00分～22時00分",
+      "日曜日: 11時00分～22時00分"
+     ]
+    },
+    "userRatingCount": 652,
+    "websiteUri": "https://restaurant.imahan.com/hakata/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "仏山寺 由布院": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "佛山寺"
+    },
+    "formattedAddress": "〒879-5102 大分県由布市湯布院町川上１８７９",
+    "id": "ChIJtSuL6XyuRjURwlF4eqJC2Fk",
+    "location": {
+     "latitude": 33.2635717,
+     "longitude": 131.36971069999998
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "仏教寺院"
+    },
+    "rating": 4.2,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T08:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 8,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 8,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 8,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 8,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 8,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 8,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 8,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 8時00分～17時00分",
+      "火曜日: 8時00分～17時00分",
+      "水曜日: 8時00分～17時00分",
+      "木曜日: 8時00分～17時00分",
+      "金曜日: 8時00分～17時00分",
+      "土曜日: 8時00分～17時00分",
+      "日曜日: 8時00分～17時00分"
+     ]
+    },
+    "userRatingCount": 316
+   },
+   "fetched": "2026-08-23"
+  },
+  "博多 魚蔵 都ホテル博多": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "博多 魚蔵"
+    },
+    "formattedAddress": "〒812-0013 福岡県福岡市博多区博多駅東２丁目１−１ 都ホテル ２F",
+    "id": "ChIJgUxcoOmRQTUReJs_rQlGLuM",
+    "location": {
+     "latitude": 33.5896999,
+     "longitude": 130.4227611
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "和食店"
+    },
+    "rating": 4.2,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T02:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 0,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 11時00分～15時00分, 17時00分～23時00分",
+      "火曜日: 11時00分～15時00分, 17時00分～23時00分",
+      "水曜日: 11時00分～15時00分, 17時00分～23時00分",
+      "木曜日: 11時00分～15時00分, 17時00分～23時00分",
+      "金曜日: 11時00分～15時00分, 17時00分～23時00分",
+      "土曜日: 11時00分～15時00分, 17時00分～23時00分",
+      "日曜日: 11時00分～15時00分, 17時00分～23時00分"
+     ]
+    },
+    "userRatingCount": 750,
+    "websiteUri": "https://uokura-hakata.com/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "唐戸市場": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "下関 唐戸市場"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "活気あふれる大きな市場。刺身や寿司、加工食品を販売する露店が所狭しと並ぶ。"
+    },
+    "formattedAddress": "〒750-0005 山口県下関市唐戸町５−５０",
+    "id": "ChIJNVeCCJ29QzURQrmJDMCxImw",
+    "location": {
+     "latitude": 33.9566087,
+     "longitude": 130.945824
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "マーケット"
+    },
+    "rating": 4.1,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T06:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 8,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 5,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 5,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 5,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 5,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 15,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 5,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 5時00分～15時00分",
+      "火曜日: 5時00分～15時00分",
+      "水曜日: 定休日",
+      "木曜日: 5時00分～15時00分",
+      "金曜日: 5時00分～15時00分",
+      "土曜日: 5時00分～15時00分",
+      "日曜日: 8時00分～15時00分"
+     ]
+    },
+    "userRatingCount": 25528,
+    "websiteUri": "http://www.karatoichiba.com/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "大濠公園": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "大濠公園"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "大きな池、池周りのジョギング コース、貸しボート、コーヒー ショップがある都市公園。"
+    },
+    "formattedAddress": "〒810-0051 福岡県福岡市中央区大濠公園１ 公園管理事務所",
+    "id": "ChIJx6TbjMyTQTURmPdN7915780",
+    "location": {
+     "latitude": 33.586206499999996,
+     "longitude": 130.3764646
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "公園"
+    },
+    "rating": 4.5,
+    "regularOpeningHours": {
+     "openNow": true,
+     "periods": [
+      {
+       "open": {
+        "day": 0,
+        "hour": 0,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 24 時間営業",
+      "火曜日: 24 時間営業",
+      "水曜日: 24 時間営業",
+      "木曜日: 24 時間営業",
+      "金曜日: 24 時間営業",
+      "土曜日: 24 時間営業",
+      "日曜日: 24 時間営業"
+     ]
+    },
+    "userRatingCount": 15355,
+    "websiteUri": "https://www.ohorikouen.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "天神地下街": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "天神地下街"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "ヨーロッパをイメージした内装の広々とした地下ショッピング モール。12 番街まで区分けされ、ショップや飲食店が軒を連ねる。"
+    },
+    "formattedAddress": "〒810-0001 福岡県福岡市中央区天神２丁目１ 地下1・2・3号",
+    "id": "ChIJ970Xo46RQTURm6GUmUJcn6Y",
+    "location": {
+     "latitude": 33.589571899999996,
+     "longitude": 130.3997484
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "ショッピング モール"
+    },
+    "rating": 4.1,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時00分～20時00分",
+      "火曜日: 10時00分～20時00分",
+      "水曜日: 10時00分～20時00分",
+      "木曜日: 10時00分～20時00分",
+      "金曜日: 10時00分～20時00分",
+      "土曜日: 10時00分～20時00分",
+      "日曜日: 10時00分～20時00分"
+     ]
+    },
+    "userRatingCount": 7086,
+    "websiteUri": "http://www.tenchika.com/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "天麩羅処ひらお 本店 福岡空港": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "天麩羅処ひらお 本店"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "連日混み合っている忙しいお店で、産地直送のこだわりの素材を使った揚げたての天ぷらが気軽に頂ける素朴で気取らないレストラン。"
+    },
+    "formattedAddress": "〒812-0853 福岡県福岡市博多区東平尾２丁目４−１",
+    "id": "ChIJq6qGUheQQTUR8E_T7T9tsnY",
+    "location": {
+     "latitude": 33.5838348,
+     "longitude": 130.4565615
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "和食店"
+    },
+    "rating": 4.4,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:30:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 30
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時30分～20時00分",
+      "火曜日: 10時30分～20時00分",
+      "水曜日: 10時30分～20時00分",
+      "木曜日: 10時30分～20時00分",
+      "金曜日: 10時30分～20時00分",
+      "土曜日: 10時30分～20時00分",
+      "日曜日: 10時30分～20時00分"
+     ]
+    },
+    "userRatingCount": 6969,
+    "websiteUri": "http://www.hirao-foods.net/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "太宰府天満宮": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "太宰府天満宮"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "学問の神様を祀る人気の神社。宝物殿があり、梅の名所でもある。"
+    },
+    "formattedAddress": "〒818-0117 福岡県太宰府市宰府４丁目７−１",
+    "id": "ChIJzfvrKp-bQTURl65fp6vRJLg",
+    "location": {
+     "latitude": 33.5213697,
+     "longitude": 130.5348239
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "神社"
+    },
+    "rating": 4.5,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T10:30:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 19,
+        "minute": 30
+       },
+       "open": {
+        "day": 0,
+        "hour": 6,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 19,
+        "minute": 30
+       },
+       "open": {
+        "day": 1,
+        "hour": 6,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 19,
+        "minute": 30
+       },
+       "open": {
+        "day": 2,
+        "hour": 6,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 19,
+        "minute": 30
+       },
+       "open": {
+        "day": 3,
+        "hour": 6,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 19,
+        "minute": 30
+       },
+       "open": {
+        "day": 4,
+        "hour": 6,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 19,
+        "minute": 30
+       },
+       "open": {
+        "day": 5,
+        "hour": 6,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 19,
+        "minute": 30
+       },
+       "open": {
+        "day": 6,
+        "hour": 6,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 6時00分～19時30分",
+      "火曜日: 6時00分～19時30分",
+      "水曜日: 6時00分～19時30分",
+      "木曜日: 6時00分～19時30分",
+      "金曜日: 6時00分～19時30分",
+      "土曜日: 6時00分～19時30分",
+      "日曜日: 6時00分～19時30分"
+     ]
+    },
+    "userRatingCount": 43856,
+    "websiteUri": "http://www.dazaifutenmangu.or.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "宇奈岐日女神社": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "宇奈岐日女神社"
+    },
+    "formattedAddress": "〒879-5102 大分県由布市湯布院町川上２２２０",
+    "id": "ChIJK3bx0HauRjURMe-gDHlKsGg",
+    "location": {
+     "latitude": 33.256865,
+     "longitude": 131.3656231
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "神社"
+    },
+    "rating": 4.3,
+    "regularOpeningHours": {
+     "openNow": true,
+     "periods": [
+      {
+       "open": {
+        "day": 0,
+        "hour": 0,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 24 時間営業",
+      "火曜日: 24 時間営業",
+      "水曜日: 24 時間営業",
+      "木曜日: 24 時間営業",
+      "金曜日: 24 時間営業",
+      "土曜日: 24 時間営業",
+      "日曜日: 24 時間営業"
+     ]
+    },
+    "userRatingCount": 891
+   },
+   "fetched": "2026-08-23"
+  },
+  "実物大νガンダム立像": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "実物大νガンダム立像"
+    },
+    "formattedAddress": "〒812-0893 福岡県福岡市博多区那珂６丁目２３−１",
+    "id": "ChIJ4_0WFuiRQTURxlN32OlD-ck",
+    "location": {
+     "latitude": 33.5657052,
+     "longitude": 130.4412874
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "観光名所"
+    },
+    "rating": 4.6,
+    "regularOpeningHours": {
+     "openNow": true,
+     "periods": [
+      {
+       "open": {
+        "day": 0,
+        "hour": 0,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 24 時間営業",
+      "火曜日: 24 時間営業",
+      "水曜日: 24 時間営業",
+      "木曜日: 24 時間営業",
+      "金曜日: 24 時間営業",
+      "土曜日: 24 時間営業",
+      "日曜日: 24 時間営業"
+     ]
+    },
+    "userRatingCount": 15207,
+    "websiteUri": "https://rx93ff-gundam-statue.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "小倉城": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "小倉城"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "再建された 17 世紀の城で、庭園、郷土資料館、松本清張記念館がある。"
+    },
+    "formattedAddress": "〒803-0813 福岡県北九州市小倉北区城内２−１",
+    "id": "ChIJIwxQlK24QzURaG19997uBxM",
+    "location": {
+     "latitude": 33.8844357,
+     "longitude": 130.8742541
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "城"
+    },
+    "rating": 4.3,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T11:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時00分～20時00分",
+      "火曜日: 9時00分～20時00分",
+      "水曜日: 9時00分～20時00分",
+      "木曜日: 9時00分～20時00分",
+      "金曜日: 9時00分～20時00分",
+      "土曜日: 9時00分～22時00分",
+      "日曜日: 9時00分～20時00分"
+     ]
+    },
+    "userRatingCount": 12698,
+    "websiteUri": "https://kokura-castle.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "小倉城庭園": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "北九州市立 小倉城庭園"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "花や池、橋があり手入れの行き届いた日本庭園。再建された封建時代の天守閣に隣接する。"
+    },
+    "formattedAddress": "〒803-0813 福岡県北九州市小倉北区城内１−２",
+    "id": "ChIJX17CeK24QzURIRfwJ2u1yp0",
+    "location": {
+     "latitude": 33.8845854,
+     "longitude": 130.8754279
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "庭園"
+    },
+    "rating": 4.1,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T11:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時00分～20時00分",
+      "火曜日: 9時00分～20時00分",
+      "水曜日: 9時00分～20時00分",
+      "木曜日: 9時00分～20時00分",
+      "金曜日: 9時00分～20時00分",
+      "土曜日: 9時00分～20時00分",
+      "日曜日: 9時00分～20時00分"
+     ]
+    },
+    "userRatingCount": 982,
+    "websiteUri": "https://kokura-castle.jp/kokura-garden/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "川端通商店街": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "川端通商店街"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "アーケード商店街。ラーメン店や博多人形などの工芸品の店がある。"
+    },
+    "formattedAddress": "〒812-0026 福岡県福岡市博多区上川端町６−１３５",
+    "id": "ChIJiShWTeuRQTURqDhAzGV8sXw",
+    "location": {
+     "latitude": 33.593537,
+     "longitude": 130.4083423
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "ショッピング モール"
+    },
+    "rating": 4,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-24T00:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 1,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時00分～18時00分",
+      "火曜日: 9時00分～18時00分",
+      "水曜日: 9時00分～18時00分",
+      "木曜日: 9時00分～18時00分",
+      "金曜日: 9時00分～18時00分",
+      "土曜日: 定休日",
+      "日曜日: 定休日"
+     ]
+    },
+    "userRatingCount": 3992,
+    "websiteUri": "https://kawabatadori.com/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "旦過市場": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "旦過市場"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "歴史ある屋根付き市場。鮮魚店、青果店、肉屋、惣菜店など 100 を超える店舗が並ぶ。"
+    },
+    "formattedAddress": "〒802-0006 福岡県北九州市小倉北区魚町４丁目２−１８",
+    "id": "ChIJX06g5VK_QzUR6f9jhMmw_f4",
+    "location": {
+     "latitude": 33.88131130000001,
+     "longitude": 130.87946309999998
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "マーケット"
+    },
+    "rating": 4,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-24T01:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時00分～17時00分",
+      "火曜日: 10時00分～17時00分",
+      "水曜日: 10時00分～17時00分",
+      "木曜日: 10時00分～17時00分",
+      "金曜日: 10時00分～17時00分",
+      "土曜日: 10時00分～17時00分",
+      "日曜日: 定休日"
+     ]
+    },
+    "userRatingCount": 5724,
+    "websiteUri": "http://tangaichiba.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "旧門司三井倶楽部": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "旧 門司三井倶楽部"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "ハーフティンバー様式と呼ばれるヨーロッパ伝統の木造建築工法で作られた洋館。館内は幾何学模様のアールデコ調で飾られている。"
+    },
+    "formattedAddress": "〒801-0852 福岡県北九州市門司区港町７−１",
+    "id": "ChIJ7d3bFimWQzURJmSw4ZyZ1nQ",
+    "location": {
+     "latitude": 33.945699399999995,
+     "longitude": 130.962505
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "史跡"
+    },
+    "rating": 4.2,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T08:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時00分～17時00分",
+      "火曜日: 9時00分～17時00分",
+      "水曜日: 9時00分～17時00分",
+      "木曜日: 9時00分～17時00分",
+      "金曜日: 9時00分～17時00分",
+      "土曜日: 9時00分～17時00分",
+      "日曜日: 9時00分～17時00分"
+     ]
+    },
+    "userRatingCount": 761,
+    "websiteUri": "https://mojiko-retoro9.jp/spot/former_moji_mitsui_club/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "東長寺": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "東長寺"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "木像の大仏、古い彫刻、展示物で有名な平安時代の寺院。"
+    },
+    "formattedAddress": "〒812-0037 福岡県福岡市博多区御供所町２−４",
+    "id": "ChIJa2avE8GRQTURwD8yDpUT99g",
+    "location": {
+     "latitude": 33.5949498,
+     "longitude": 130.4143877
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "仏教寺院"
+    },
+    "rating": 4.4,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T07:45:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 16,
+        "minute": 45
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 16,
+        "minute": 45
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 16,
+        "minute": 45
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 16,
+        "minute": 45
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 16,
+        "minute": 45
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 16,
+        "minute": 45
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 16,
+        "minute": 45
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時00分～16時45分",
+      "火曜日: 9時00分～16時45分",
+      "水曜日: 9時00分～16時45分",
+      "木曜日: 9時00分～16時45分",
+      "金曜日: 9時00分～16時45分",
+      "土曜日: 9時00分～16時45分",
+      "日曜日: 9時00分～16時45分"
+     ]
+    },
+    "userRatingCount": 4063,
+    "websiteUri": "https://www.tochoji.net/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "柳川市観光案内所": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "柳川市観光案内所（一般社団法人柳川市観光協会）"
+    },
+    "formattedAddress": "〒832-0065 福岡県柳川市沖端町３５",
+    "id": "ChIJ0XVDpahMQDURHkYIp6AxaNs",
+    "location": {
+     "latitude": 33.158470099999995,
+     "longitude": 130.3948963
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "観光案内所"
+    },
+    "rating": 4.1,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T00:30:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 30
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時30分～17時00分",
+      "火曜日: 9時30分～17時00分",
+      "水曜日: 9時30分～17時00分",
+      "木曜日: 9時30分～17時00分",
+      "金曜日: 9時30分～17時00分",
+      "土曜日: 9時30分～17時00分",
+      "日曜日: 9時30分～17時00分"
+     ]
+    },
+    "userRatingCount": 162,
+    "websiteUri": "https://www.yanagawa-net.com/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "柳川藩主立花邸 御花": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "柳川藩主立花邸 御花(Ryokan Ohana)"
+    },
+    "editorialSummary": {
+     "languageCode": "JA",
+     "text": "洋館や史料館を有した優雅な日本庭園内に建つ、風格ある老舗の料亭旅館。モダンな洋室や和洋室も用意し、会席料理と和朝食を提供する。"
+    },
+    "formattedAddress": "〒832-0069 福岡県柳川市新外町１",
+    "id": "ChIJbVJADa9MQDUR40iwcLzZl1c",
+    "location": {
+     "latitude": 33.1582558,
+     "longitude": 130.3982725
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "旅館"
+    },
+    "rating": 4.1,
+    "userRatingCount": 1714,
+    "websiteUri": "http://www.ohana.co.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "柳川藩主立花邸 御花 松濤園": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "松濤園・立花氏庭園 文化財見学"
+    },
+    "formattedAddress": "〒832-0069 福岡県柳川市新外町",
+    "id": "ChIJyVyadK9MQDUREuK2e8p5cVs",
+    "location": {
+     "latitude": 33.157819599999996,
+     "longitude": 130.39785
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "庭園"
+    },
+    "rating": 4.2,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 16,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 16,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 16,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 16,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 16,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 16,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 16,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時00分～16時00分",
+      "火曜日: 10時00分～16時00分",
+      "水曜日: 10時00分～16時00分",
+      "木曜日: 10時00分～16時00分",
+      "金曜日: 10時00分～16時00分",
+      "土曜日: 10時00分～16時00分",
+      "日曜日: 10時00分～16時00分"
+     ]
+    },
+    "userRatingCount": 84,
+    "websiteUri": "https://ohana.co.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "桜の馬場城彩苑": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "桜の馬場 城彩苑"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "さまざまな店が立ち並ぶ広大なアーケード、カフェ、文化的な展示がある人気の観光スポット。"
+    },
+    "formattedAddress": "〒860-0008 熊本県熊本市中央区二の丸１−１−２",
+    "id": "ChIJVVWF5hL0QDURK6OuEjMkKjw",
+    "location": {
+     "latitude": 32.803671099999995,
+     "longitude": 130.70375579999998
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "観光名所"
+    },
+    "rating": 4.1,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T09:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 18,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時00分～18時00分",
+      "火曜日: 9時00分～18時00分",
+      "水曜日: 9時00分～18時00分",
+      "木曜日: 9時00分～18時00分",
+      "金曜日: 9時00分～18時00分",
+      "土曜日: 9時00分～18時00分",
+      "日曜日: 9時00分～18時00分"
+     ]
+    },
+    "userRatingCount": 10421,
+    "websiteUri": "https://www.sakuranobaba-johsaien.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "極味や 福岡赤坂店 もつ鍋": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "もつ鍋 極味や 赤坂店"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "4種のもつ鍋やステーキなど肉料理を提供するカジュアルな専門店。掘りごたつ席を備え天井に絵画を飾るユニークな店内。コース料理あり。"
+    },
+    "formattedAddress": "〒810-0042 福岡県福岡市中央区赤坂１丁目６−２２ 赤坂野田ビル 1F",
+    "id": "ChIJ4_hCJaWTQTURkgBG0fXntUI",
+    "location": {
+     "latitude": 33.5869283,
+     "longitude": 130.39102839999998
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "レストラン"
+    },
+    "rating": 4.4,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T08:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 22,
+        "minute": 30
+       },
+       "open": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 22,
+        "minute": 30
+       },
+       "open": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 22,
+        "minute": 30
+       },
+       "open": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 22,
+        "minute": 30
+       },
+       "open": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 22,
+        "minute": 30
+       },
+       "open": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 17時00分～22時30分",
+      "火曜日: 17時00分～22時30分",
+      "水曜日: 17時00分～22時30分",
+      "木曜日: 17時00分～22時30分",
+      "金曜日: 17時00分～22時30分",
+      "土曜日: 17時00分～23時00分",
+      "日曜日: 17時00分～23時00分"
+     ]
+    },
+    "userRatingCount": 365,
+    "websiteUri": "https://kiwamiya.com/shoplist/akasaka"
+   },
+   "fetched": "2026-08-23"
+  },
+  "櫛田神社": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "櫛田神社"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "市内で最大規模の祭り、博多祇園山笠が毎年開催される 757 年創建の神社。"
+    },
+    "formattedAddress": "〒812-0026 福岡県福岡市博多区上川端町１−４１",
+    "id": "ChIJV2pTquqRQTURpI1FhH5siaE",
+    "location": {
+     "latitude": 33.5929546,
+     "longitude": 130.41045889999998
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "神社"
+    },
+    "rating": 4.3,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T08:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時00分～17時00分",
+      "火曜日: 9時00分～17時00分",
+      "水曜日: 9時00分～17時00分",
+      "木曜日: 9時00分～17時00分",
+      "金曜日: 9時00分～17時00分",
+      "土曜日: 9時00分～17時00分",
+      "日曜日: 9時00分～17時00分"
+     ]
+    },
+    "userRatingCount": 13960,
+    "websiteUri": "https://fukuoka-jinjacho.or.jp/area/fukuoka/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "水郷柳川観光 川下り 柳川": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "水郷柳川観光"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "木造の家が並ぶ古い町並みと桜で有名。木の小舟での川下りからの眺望が人気。"
+    },
+    "formattedAddress": "〒832-0822 福岡県柳川市三橋町下百町１−６",
+    "id": "ChIJuSibxjCzQTURq4xBjzhnGss",
+    "location": {
+     "latitude": 33.166723999999995,
+     "longitude": 130.416811
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "観光名所"
+    },
+    "rating": 4.3,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T06:30:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 15,
+        "minute": 30
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 10
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 15,
+        "minute": 30
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 10
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 15,
+        "minute": 30
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 10
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 15,
+        "minute": 30
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 10
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 15,
+        "minute": 30
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 10
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 15,
+        "minute": 30
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 10
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 15,
+        "minute": 30
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 10
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時10分～15時30分",
+      "火曜日: 9時10分～15時30分",
+      "水曜日: 9時10分～15時30分",
+      "木曜日: 9時10分～15時30分",
+      "金曜日: 9時10分～15時30分",
+      "土曜日: 9時10分～15時30分",
+      "日曜日: 9時10分～15時30分"
+     ]
+    },
+    "userRatingCount": 1724,
+    "websiteUri": "http://kawakudari.com/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "沖端 柳川": {
+   "data": {
+    "displayName": {
+     "languageCode": "ja",
+     "text": "沖端町"
+    },
+    "formattedAddress": "〒832-0065 福岡県柳川市沖端町",
+    "id": "ChIJbYlmm6hMQDURQljffF_U7Yc",
+    "location": {
+     "latitude": 33.1581342,
+     "longitude": 130.3965417
+    }
+   },
+   "fetched": "2026-08-23"
+  },
+  "河太郎 中洲本店": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "河太郎 中洲本店"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "昭和35年創業の、活魚専門店の老舗。「イカ活き造りの発祥の店」として知られる。1階には生簀を囲むテーブル席、2階には座敷席を用意。"
+    },
+    "formattedAddress": "〒810-0801 福岡県福岡市博多区中洲１丁目６−６",
+    "id": "ChIJC5Zjv5WRQTURB0VrIshobl4",
+    "location": {
+     "latitude": 33.5900659,
+     "longitude": 130.4093753
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "レストラン"
+    },
+    "rating": 4.1,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T02:45:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 14,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 11,
+        "minute": 45
+       }
+      },
+      {
+       "close": {
+        "day": 0,
+        "hour": 21,
+        "minute": 30
+       },
+       "open": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 14,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 11,
+        "minute": 45
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 17,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 14,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 11,
+        "minute": 45
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 17,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 14,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 11,
+        "minute": 45
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 17,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 14,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 11,
+        "minute": 45
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 17,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 14,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 11,
+        "minute": 45
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 17,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 14,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 11,
+        "minute": 45
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 17,
+        "minute": 30
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 11時45分～14時00分, 17時30分～22時00分",
+      "火曜日: 11時45分～14時00分, 17時30分～22時00分",
+      "水曜日: 11時45分～14時00分, 17時30分～22時00分",
+      "木曜日: 11時45分～14時00分, 17時30分～22時00分",
+      "金曜日: 11時45分～14時00分, 17時30分～22時00分",
+      "土曜日: 11時45分～14時00分, 17時30分～22時00分",
+      "日曜日: 11時45分～14時00分, 17時00分～21時30分"
+     ]
+    },
+    "userRatingCount": 1968,
+    "websiteUri": "https://www.kawataro.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "河太郎 博多駅店": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "河太郎 博多駅店"
+    },
+    "formattedAddress": "〒812-0012 福岡県福岡市博多区博多駅中央街８−１ 1階",
+    "id": "ChIJuY5BZLiRQTURlIT_rh_Itfw",
+    "location": {
+     "latitude": 33.588234,
+     "longitude": 130.4193603
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "シーフード・海鮮料理店"
+    },
+    "rating": 4.1,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T03:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 13,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 12,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 0,
+        "hour": 20,
+        "minute": 45
+       },
+       "open": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 13,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 12,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 20,
+        "minute": 45
+       },
+       "open": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 13,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 12,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 20,
+        "minute": 45
+       },
+       "open": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 13,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 12,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 20,
+        "minute": 45
+       },
+       "open": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 13,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 12,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 20,
+        "minute": 45
+       },
+       "open": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 13,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 12,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 20,
+        "minute": 45
+       },
+       "open": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 13,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 12,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 20,
+        "minute": 45
+       },
+       "open": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 12時00分～13時00分, 17時00分～20時45分",
+      "火曜日: 12時00分～13時00分, 17時00分～20時45分",
+      "水曜日: 12時00分～13時00分, 17時00分～20時45分",
+      "木曜日: 12時00分～13時00分, 17時00分～20時45分",
+      "金曜日: 12時00分～13時00分, 17時00分～20時45分",
+      "土曜日: 12時00分～13時00分, 17時00分～20時45分",
+      "日曜日: 12時00分～13時00分, 17時00分～20時45分"
+     ]
+    },
+    "userRatingCount": 1365,
+    "websiteUri": "http://kawatarou.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "海の中道海浜公園": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "国営海の中道海浜公園"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "遊園地、キャンプ場、プール、季節の花の祭典を楽しめる広々としたレジャーパーク。"
+    },
+    "formattedAddress": "〒811-0321 福岡県福岡市東区西戸崎１８−２５",
+    "id": "ChIJaQp6H7KNQTURjzG7SoOP370",
+    "location": {
+     "latitude": 33.6642785,
+     "longitude": 130.36159999999998
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "国の公園"
+    },
+    "rating": 4.5,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T00:30:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 17,
+        "minute": 30
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 30
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時30分～17時30分",
+      "火曜日: 定休日",
+      "水曜日: 9時30分～17時30分",
+      "木曜日: 9時30分～17時30分",
+      "金曜日: 9時30分～17時30分",
+      "土曜日: 9時30分～17時30分",
+      "日曜日: 9時30分～17時30分"
+     ]
+    },
+    "userRatingCount": 5369,
+    "websiteUri": "https://uminaka-park.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "湯の坪街道 由布院": {
+   "data": {
+    "displayName": {
+     "languageCode": "ja",
+     "text": "湯の坪街道"
+    },
+    "formattedAddress": "〒879-5102 大分県由布市湯布院町川上 湯の坪街道",
+    "id": "ChIJSTy-RNatRjURgl1CI-VDlVU",
+    "location": {
+     "latitude": 33.266739,
+     "longitude": 131.363057
+    }
+   },
+   "fetched": "2026-08-23"
+  },
+  "焼とりの八兵衛 Bekkan 住吉": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "焼とりの八兵衛 Bekkan"
+    },
+    "formattedAddress": "〒812-0018 福岡県福岡市博多区住吉１丁目１−９",
+    "id": "ChIJ_88FQb6RQTURZkkNG95JusM",
+    "location": {
+     "latitude": 33.5890667,
+     "longitude": 130.41233309999998
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "焼き鳥店"
+    },
+    "rating": 4.5,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T08:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 17時00分～23時00分",
+      "火曜日: 17時00分～23時00分",
+      "水曜日: 17時00分～23時00分",
+      "木曜日: 17時00分～23時00分",
+      "金曜日: 17時00分～23時00分",
+      "土曜日: 17時00分～23時00分",
+      "日曜日: 17時00分～23時00分"
+     ]
+    },
+    "userRatingCount": 596,
+    "websiteUri": "https://hachibei.com/?page_id=11634"
+   },
+   "fetched": "2026-08-23"
+  },
+  "焼肉 大東園 本店 福岡": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "焼肉・冷麺 大東園本店"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "モダンなデザインが印象的な焼肉店。自分で牛肉や豚肉を卓上グリルで焼いて楽しむ。"
+    },
+    "formattedAddress": "〒812-0026 福岡県福岡市博多区上川端町１−１−１",
+    "id": "ChIJqzKNB8CRQTURbmafA1JA7mg",
+    "location": {
+     "latitude": 33.592771,
+     "longitude": 130.41143599999998
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "焼肉店"
+    },
+    "rating": 4.3,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T02:30:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 22,
+        "minute": 30
+       },
+       "open": {
+        "day": 0,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 14,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 22,
+        "minute": 30
+       },
+       "open": {
+        "day": 1,
+        "hour": 16,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 14,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 22,
+        "minute": 30
+       },
+       "open": {
+        "day": 2,
+        "hour": 16,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 14,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 22,
+        "minute": 30
+       },
+       "open": {
+        "day": 3,
+        "hour": 16,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 14,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 22,
+        "minute": 30
+       },
+       "open": {
+        "day": 4,
+        "hour": 16,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 14,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 22,
+        "minute": 30
+       },
+       "open": {
+        "day": 5,
+        "hour": 16,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 22,
+        "minute": 30
+       },
+       "open": {
+        "day": 6,
+        "hour": 11,
+        "minute": 30
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 11時30分～14時00分, 16時00分～22時30分",
+      "火曜日: 11時30分～14時00分, 16時00分～22時30分",
+      "水曜日: 11時30分～14時00分, 16時00分～22時30分",
+      "木曜日: 11時30分～14時00分, 16時00分～22時30分",
+      "金曜日: 11時30分～14時00分, 16時00分～22時30分",
+      "土曜日: 11時30分～22時30分",
+      "日曜日: 11時30分～22時30分"
+     ]
+    },
+    "userRatingCount": 1950,
+    "websiteUri": "https://ssl.daitoen.com/index.html"
+   },
+   "fetched": "2026-08-23"
+  },
+  "熊本城": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "熊本城"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "1607 年創建の城を再建したもの。丘の上にあり、歴史博物館も併設。"
+    },
+    "formattedAddress": "〒860-0002 熊本県熊本市中央区本丸１−１",
+    "id": "ChIJWco6Ag70QDURMOTNdshmi14",
+    "location": {
+     "latitude": 32.806185899999996,
+     "longitude": 130.70583349999998
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "城"
+    },
+    "rating": 4.5,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T08:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時00分～17時00分",
+      "火曜日: 9時00分～17時00分",
+      "水曜日: 9時00分～17時00分",
+      "木曜日: 9時00分～17時00分",
+      "金曜日: 9時00分～17時00分",
+      "土曜日: 9時00分～17時00分",
+      "日曜日: 9時00分～17時00分"
+     ]
+    },
+    "userRatingCount": 25501,
+    "websiteUri": "https://kumamoto-guide.jp/kumamoto-castle/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "田舎庵": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "鰻料理 田舎庵 小倉本店"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "畳にテーブルを配した個室や大広間を備える和の風情ある上品な店内で、各種のうなぎ料理を提供。コースの他、日本酒や焼酎も取り揃える。"
+    },
+    "formattedAddress": "〒802-0004 福岡県北九州市小倉北区鍛冶町１丁目１−１３",
+    "id": "ChIJWxvZwU2_QzURfZot60nWpRI",
+    "location": {
+     "latitude": 33.8835085,
+     "longitude": 130.88176959999998
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "和食店"
+    },
+    "rating": 4.4,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T02:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 11,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 11時00分～20時00分",
+      "火曜日: 11時00分～20時00分",
+      "水曜日: 11時00分～20時00分",
+      "木曜日: 11時00分～20時00分",
+      "金曜日: 11時00分～20時00分",
+      "土曜日: 11時00分～20時00分",
+      "日曜日: 11時00分～20時00分"
+     ]
+    },
+    "userRatingCount": 2921,
+    "websiteUri": "https://www.inakaan.com/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "由布まぶし 心 湯布院駅前支店": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "由布まぶし 心 湯布院駅前支店"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "地鶏、うなぎ、豊後牛のまぶし料理が味わえる、庶民的な店。"
+    },
+    "formattedAddress": "〒879-5114 大分県由布市湯布院町川北５−３",
+    "id": "ChIJy4bzG9qtRjURc71lZQwySTs",
+    "location": {
+     "latitude": 33.2629646,
+     "longitude": 131.3556746
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "和食店"
+    },
+    "rating": 4.1,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:30:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 19,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 30
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時30分～19時00分",
+      "火曜日: 10時30分～19時00分",
+      "水曜日: 10時30分～19時00分",
+      "木曜日: 10時30分～19時00分",
+      "金曜日: 10時30分～19時00分",
+      "土曜日: 10時30分～19時00分",
+      "日曜日: 10時30分～19時00分"
+     ]
+    },
+    "userRatingCount": 2974,
+    "websiteUri": "http://yufumabushi-shin.com/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "皿倉山": {
+   "data": {
+    "displayName": {
+     "languageCode": "ja",
+     "text": "皿倉山"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "標高 622 m の山。ケーブルカー、ハイキング トレイル、市街を一望できる山頂の展望エリアがある。"
+    },
+    "formattedAddress": "〒805-0057 福岡県北九州市八幡東区尾倉 皿倉山",
+    "id": "ChIJq7QgVKfIQzURHDEmcVY-3J0",
+    "location": {
+     "latitude": 33.8475053,
+     "longitude": 130.7970804
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "山頂"
+    },
+    "rating": 4.5,
+    "userRatingCount": 438
+   },
+   "fetched": "2026-08-23"
+  },
+  "皿倉山展望台 北九州": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "皿倉山展望台"
+    },
+    "formattedAddress": "〒805-0057 福岡県北九州市八幡東区尾倉１４８１−１ 2F",
+    "id": "ChIJJU0y6J3IQzURZusDFIngutg",
+    "location": {
+     "latitude": 33.846732599999996,
+     "longitude": 130.7968029
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "展望台"
+    },
+    "rating": 4.5,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 21,
+        "minute": 40
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 21,
+        "minute": 40
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 21,
+        "minute": 40
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 21,
+        "minute": 40
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 21,
+        "minute": 40
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 21,
+        "minute": 40
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時00分～21時40分",
+      "火曜日: 定休日",
+      "水曜日: 10時00分～21時40分",
+      "木曜日: 10時00分～21時40分",
+      "金曜日: 10時00分～21時40分",
+      "土曜日: 10時00分～21時40分",
+      "日曜日: 10時00分～21時40分"
+     ]
+    },
+    "userRatingCount": 3217,
+    "websiteUri": "http://www.sarakurayama-cablecar.co.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "磯ぎよし 天神": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "博多磯ぎよし 天神店"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "さまざまな和の海鮮料理と日本酒を提供。カジュアルな店内には、一人で利用しやすいカウンター席、宴会向きの座敷や完全個室などがある。"
+    },
+    "formattedAddress": "〒810-0073 福岡県福岡市中央区舞鶴１丁目９−２３ 1階",
+    "id": "ChIJd4w23oiRQTUR8z-r1X-S5VY",
+    "location": {
+     "latitude": 33.5922769,
+     "longitude": 130.394411
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "居酒屋"
+    },
+    "rating": 4.2,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-24T08:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 1,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 17時00分～23時00分",
+      "火曜日: 17時00分～23時00分",
+      "水曜日: 17時00分～23時00分",
+      "木曜日: 17時00分～23時00分",
+      "金曜日: 17時00分～23時00分",
+      "土曜日: 17時00分～23時00分",
+      "日曜日: 定休日"
+     ]
+    },
+    "userRatingCount": 445,
+    "websiteUri": "https://www.isogiyoshi.com/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "福岡パルコ": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "福岡PARCO"
+    },
+    "formattedAddress": "〒810-0001 福岡県福岡市中央区天神２丁目１１−１",
+    "id": "ChIJVVUVAI-RQTUR4O0-0xXxi0Y",
+    "location": {
+     "latitude": 33.5907445,
+     "longitude": 130.39866519999998
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "ショッピング モール"
+    },
+    "rating": 4,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T01:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 20,
+        "minute": 30
+       },
+       "open": {
+        "day": 0,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 20,
+        "minute": 30
+       },
+       "open": {
+        "day": 1,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 20,
+        "minute": 30
+       },
+       "open": {
+        "day": 2,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 20,
+        "minute": 30
+       },
+       "open": {
+        "day": 3,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 20,
+        "minute": 30
+       },
+       "open": {
+        "day": 4,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 20,
+        "minute": 30
+       },
+       "open": {
+        "day": 5,
+        "hour": 10,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 20,
+        "minute": 30
+       },
+       "open": {
+        "day": 6,
+        "hour": 10,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 10時00分～20時30分",
+      "火曜日: 10時00分～20時30分",
+      "水曜日: 10時00分～20時30分",
+      "木曜日: 10時00分～20時30分",
+      "金曜日: 10時00分～20時30分",
+      "土曜日: 10時00分～20時30分",
+      "日曜日: 10時00分～20時30分"
+     ]
+    },
+    "userRatingCount": 7996,
+    "websiteUri": "https://fukuoka.parco.jp/?utm_source=mybusiness"
+   },
+   "fetched": "2026-08-23"
+  },
+  "福岡城跡": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "福岡城跡"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "見晴らしのいい丘の上の公園にたたずむ 1600 年代の城の跡。石垣が一部現存している。"
+    },
+    "formattedAddress": "〒810-0043 福岡県福岡市中央区城内１−１",
+    "id": "ChIJQ_6JJtOTQTURigJ8dBobe18",
+    "location": {
+     "latitude": 33.585245199999996,
+     "longitude": 130.38321589999998
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "史跡"
+    },
+    "rating": 4.1,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T08:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時00分～17時00分",
+      "火曜日: 9時00分～17時00分",
+      "水曜日: 9時00分～17時00分",
+      "木曜日: 9時00分～17時00分",
+      "金曜日: 9時00分～17時00分",
+      "土曜日: 9時00分～17時00分",
+      "日曜日: 9時00分～17時00分"
+     ]
+    },
+    "userRatingCount": 4912,
+    "websiteUri": "https://fukuokajyo.com/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "若松屋 柳川": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "うなぎ料理 若松屋"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "老舗のうなぎ料理店。座敷や日本庭園がある。"
+    },
+    "formattedAddress": "〒832-0065 福岡県柳川市沖端町２６",
+    "id": "ChIJ_R5gM99NQDURZI5n5Ege7hc",
+    "location": {
+     "latitude": 33.158445799999996,
+     "longitude": 130.3960606
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "和食店"
+    },
+    "rating": 4.4,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T02:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 14,
+        "minute": 30
+       },
+       "open": {
+        "day": 0,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 0,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 14,
+        "minute": 30
+       },
+       "open": {
+        "day": 1,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 14,
+        "minute": 30
+       },
+       "open": {
+        "day": 2,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 14,
+        "minute": 30
+       },
+       "open": {
+        "day": 4,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 14,
+        "minute": 30
+       },
+       "open": {
+        "day": 5,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 14,
+        "minute": 30
+       },
+       "open": {
+        "day": 6,
+        "hour": 11,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 20,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 11時00分～14時30分, 17時00分～20時00分",
+      "火曜日: 11時00分～14時30分, 17時00分～20時00分",
+      "水曜日: 定休日",
+      "木曜日: 11時00分～14時30分, 17時00分～20時00分",
+      "金曜日: 11時00分～14時30分, 17時00分～20時00分",
+      "土曜日: 11時00分～14時30分, 17時00分～20時00分",
+      "日曜日: 11時00分～14時30分, 17時00分～20時00分"
+     ]
+    },
+    "userRatingCount": 3708,
+    "websiteUri": "http://wakamatuya.com/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "茶房 天井棧敷 由布院": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "茶房 天井棧敷"
+    },
+    "formattedAddress": "〒879-5102 大分県由布市湯布院町川上２６３３−１",
+    "id": "ChIJwdevqH2uRjURoerEsBnw5Vg",
+    "location": {
+     "latitude": 33.2660745,
+     "longitude": 131.3683461
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "カフェ・喫茶"
+    },
+    "rating": 4.5,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T08:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時00分～17時00分",
+      "火曜日: 9時00分～17時00分",
+      "水曜日: 9時00分～17時00分",
+      "木曜日: 9時00分～17時00分",
+      "金曜日: 9時00分～17時00分",
+      "土曜日: 9時00分～17時00分",
+      "日曜日: 9時00分～17時00分"
+     ]
+    },
+    "userRatingCount": 843,
+    "websiteUri": "https://www.kamenoi-bessou.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "菅乃屋 銀座通り店 熊本": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "菅乃屋 銀座通り店"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "馬刺しなどの馬肉料理を味わえる、モダンな雰囲気の有名店。"
+    },
+    "formattedAddress": "〒860-0807 熊本県熊本市中央区下通１丁目９−１ ダイワロイネットホテル 熊本銀座通り PREMIER ２F",
+    "id": "ChIJ8QMSLA30QDURS58RWidtb9c",
+    "location": {
+     "latitude": 32.8006975,
+     "longitude": 130.7071243
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "和食店"
+    },
+    "rating": 4.5,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T02:30:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 14,
+        "minute": 30
+       },
+       "open": {
+        "day": 0,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 0,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 14,
+        "minute": 30
+       },
+       "open": {
+        "day": 1,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 14,
+        "minute": 30
+       },
+       "open": {
+        "day": 2,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 14,
+        "minute": 30
+       },
+       "open": {
+        "day": 3,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 14,
+        "minute": 30
+       },
+       "open": {
+        "day": 4,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 14,
+        "minute": 30
+       },
+       "open": {
+        "day": 5,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 14,
+        "minute": 30
+       },
+       "open": {
+        "day": 6,
+        "hour": 11,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 11時30分～14時30分, 17時00分～22時00分",
+      "火曜日: 11時30分～14時30分, 17時00分～22時00分",
+      "水曜日: 11時30分～14時30分, 17時00分～22時00分",
+      "木曜日: 11時30分～14時30分, 17時00分～22時00分",
+      "金曜日: 11時30分～14時30分, 17時00分～22時00分",
+      "土曜日: 11時30分～14時30分, 17時00分～22時00分",
+      "日曜日: 11時30分～14時30分, 17時00分～22時00分"
+     ]
+    },
+    "userRatingCount": 1127,
+    "websiteUri": "http://service.suganoya.com/ginzadori/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "資さんうどん 魚町店": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "資さんうどん 魚町店"
+    },
+    "formattedAddress": "〒802-0006 福岡県北九州市小倉北区魚町２丁目６−１",
+    "id": "ChIJ-chzm02_QzURgzGYVbqtN1o",
+    "location": {
+     "latitude": 33.883496799999996,
+     "longitude": 130.880783
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "和食店"
+    },
+    "rating": 4.1,
+    "regularOpeningHours": {
+     "openNow": true,
+     "periods": [
+      {
+       "open": {
+        "day": 0,
+        "hour": 0,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 24 時間営業",
+      "火曜日: 24 時間営業",
+      "水曜日: 24 時間営業",
+      "木曜日: 24 時間営業",
+      "金曜日: 24 時間営業",
+      "土曜日: 24 時間営業",
+      "日曜日: 24 時間営業"
+     ]
+    },
+    "userRatingCount": 4582,
+    "websiteUri": "https://map.sukesanudon.com/detail/46/?utm_source=google&utm_medium=maps&utm_campaign=gmb"
+   },
+   "fetched": "2026-08-23"
+  },
+  "赤間神宮": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "赤間神宮"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "12 世紀に幼くして亡くなった天皇を祀る神社。鮮やかな朱塗りの門が特徴的。"
+    },
+    "formattedAddress": "〒750-0003 山口県下関市阿弥陀寺町４−１",
+    "id": "ChIJAQAQh3e9QzUR8mNjoS49mA4",
+    "location": {
+     "latitude": 33.959345,
+     "longitude": 130.9486892
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "神社"
+    },
+    "rating": 4.3,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T08:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時00分～17時00分",
+      "火曜日: 9時00分～17時00分",
+      "水曜日: 9時00分～17時00分",
+      "木曜日: 9時00分～17時00分",
+      "金曜日: 9時00分～17時00分",
+      "土曜日: 9時00分～17時00分",
+      "日曜日: 9時00分～17時00分"
+     ]
+    },
+    "userRatingCount": 5117,
+    "websiteUri": "https://akama-jingu.com/"
+   },
+   "fetched": "2026-08-23"
+  },
   "金鱗湖": {
    "data": {
     "businessStatus": "OPERATIONAL",
@@ -159,6 +9052,350 @@
     },
     "userRatingCount": 22586,
     "websiteUri": "https://www.city.yufu.oita.jp/kankou/kankou-2/kankou_cate1_1/kinrinko"
+   },
+   "fetched": "2026-08-23"
+  },
+  "銀河鉄道999星野鉄郎銅像": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "銀河鉄道999星野鉄郎銅像"
+    },
+    "formattedAddress": "〒802-0001 福岡県北九州市小倉北区浅野２丁目１−１−１",
+    "id": "ChIJV4Zt0gm_QzURPeolkCJGsFQ",
+    "location": {
+     "latitude": 33.887831999999996,
+     "longitude": 130.8828591
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "観光名所"
+    },
+    "rating": 4.2,
+    "userRatingCount": 25
+   },
+   "fetched": "2026-08-23"
+  },
+  "門司港レトロ": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "門司港レトロ"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "港に沿って歴史的建造物が並ぶ観光スポット。さまざまな店があり、イベントも開催される。"
+    },
+    "formattedAddress": "〒801-0852 福岡県北九州市門司区港町９",
+    "id": "ChIJ2W-aPimWQzURtAmKbRfMEvA",
+    "location": {
+     "latitude": 33.9462036,
+     "longitude": 130.96300990000003
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "観光名所"
+    },
+    "rating": 4.3,
+    "regularOpeningHours": {
+     "openNow": true,
+     "periods": [
+      {
+       "open": {
+        "day": 0,
+        "hour": 0,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 24 時間営業",
+      "火曜日: 24 時間営業",
+      "水曜日: 24 時間営業",
+      "木曜日: 24 時間営業",
+      "金曜日: 24 時間営業",
+      "土曜日: 24 時間営業",
+      "日曜日: 24 時間営業"
+     ]
+    },
+    "userRatingCount": 13574,
+    "websiteUri": "http://www.mojiko.info/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "門司港駅": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "門司港駅"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "1891 年に建造され、1914 年に改装されたネオルネッサンス様式の駅。正面の広場には噴水がある。"
+    },
+    "formattedAddress": "〒801-0841 福岡県北九州市門司区西海岸１丁目５−３１",
+    "id": "ChIJm7Lk-SiWQzURomPcFPli5vg",
+    "location": {
+     "latitude": 33.945112099999996,
+     "longitude": 130.9615522
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "駅"
+    },
+    "rating": 4.5,
+    "userRatingCount": 2146,
+    "websiteUri": "http://www.jrkyushu.co.jp/railway/station/1191912_1601.html"
+   },
+   "fetched": "2026-08-23"
+  },
+  "関門トンネル": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "関門トンネル人道"
+    },
+    "formattedAddress": "〒751-0813 山口県下関市みもすそ川町２２−２２",
+    "id": "ChIJHeZmAQCXQzURb8Dw3yKkO5U",
+    "location": {
+     "latitude": 33.9633117,
+     "longitude": 130.95978829999999
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "観光名所"
+    },
+    "rating": 4.5,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T13:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 6,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 6,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 6,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 6,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 6,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 6,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 22,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 6,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 6時00分～22時00分",
+      "火曜日: 6時00分～22時00分",
+      "水曜日: 6時00分～22時00分",
+      "木曜日: 6時00分～22時00分",
+      "金曜日: 6時00分～22時00分",
+      "土曜日: 6時00分～22時00分",
+      "日曜日: 6時00分～22時00分"
+     ]
+    },
+    "userRatingCount": 115
+   },
+   "fetched": "2026-08-23"
+  },
+  "関門海峡ミュージアム": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "関門海峡ミュージアム"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "展示と映像で関門海峡を紹介するミュージアム。昔の大型客船をイメージした館内には展望デッキもある。"
+    },
+    "formattedAddress": "〒801-0841 福岡県北九州市門司区西海岸１丁目３−３ 関門海峡ミュージアム ４階",
+    "id": "ChIJ1aE6XYi9QzURp09eMNn_v_w",
+    "location": {
+     "latitude": 33.9437731,
+     "longitude": 130.95694430000003
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "博物館"
+    },
+    "rating": 4,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T08:00:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 17,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時00分～17時00分",
+      "火曜日: 9時00分～17時00分",
+      "水曜日: 9時00分～17時00分",
+      "木曜日: 9時00分～17時00分",
+      "金曜日: 9時00分～17時00分",
+      "土曜日: 9時00分～17時00分",
+      "日曜日: 9時00分～17時00分"
+     ]
+    },
+    "userRatingCount": 2951,
+    "websiteUri": "https://mojiko-retoro9.jp/spot/kanmon_kaikyo_museum/"
    },
    "fetched": "2026-08-23"
   }

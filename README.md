@@ -141,7 +141,7 @@ urllib 連 overpass-api.de 會 `CERTIFICATE_VERIFY_FAILED`。
 **>500m** 幾乎確定配錯。**「查無」不代表錯**——像「豪斯登堡 園內美食」這種概念性地點
 Google 上本來就沒有。
 
-⚠️ **這是計費 API**。全跑一次約 286 次 Places Text Search 請求，個人用量通常在免費額度內，
+⚠️ **這是計費 API**。全跑一次約 458 次 Places Text Search 請求，個人用量通常在免費額度內，
 但請自行確認 Google Cloud 的帳單設定。
 ⚠️ 金鑰的「API 限制」必須包含 **Places API**，專案也要啟用它，否則會 `REQUEST_DENIED`。
 ⚠️ **不要盲目套用 Google 的座標**：Google 回傳的是它自己的 POI 位置，偶爾也會指到分店或
@@ -197,7 +197,7 @@ python geocode.py && python fix_coords.py && python build_data.py
 
 **Google 沒有開放寫入「想去的地點」的 API。** 儲存清單（Saved lists）是帳號私有資料，
 Maps Platform 那組 API 全部是唯讀的，也沒有對應的 OAuth scope；Takeout 只能把清單匯出，
-不能反向匯入。所以「一鍵把 305 個點灌進想去的地點」在官方管道下做不到。
+不能反向匯入。所以「一鍵把 458 個點灌進想去的地點」在官方管道下做不到。
 
 能做的是這兩條，跑 `python export_gmaps.py` 產生 `export/`：
 
@@ -211,17 +211,17 @@ https://www.google.com/mymaps → 建立新地圖 → 匯入 → 選 export/myma
 
 手機版 Google Maps 在「已儲存 → 地圖」看得到，可離線、可導航，但不會併進「想去的地點」。
 `export/fukuoka.kml` 是同一份資料的 KML 版（含類別資料夾），偏好匯 KML 的話用這個。
-My Maps 限制：一層 2000 列、最多 10 層、單檔 5MB——目前 305 點都遠低於上限。
+My Maps 限制：一層 2000 列、最多 10 層、單檔 5MB——目前 454 點都遠低於上限。
 
 **B. `export/save_links.html`——逐點手動存進「想去的地點」**
 
 每個地點一個 Google Maps 連結（用日文店名＋區域搜尋，開得到店家資訊卡才有「儲存」鈕），
-點開存完回來打勾，進度存在瀏覽器 localStorage。305 點全部存完大概要半小時，
+點開存完回來打勾，進度存在瀏覽器 localStorage。454 點全部存完大概要一小時，
 但這是唯一能真的進到「想去的地點」的路。
 
 **C. 瀏覽器自動化（2026/08/19 實測可行，但有前提）**
 
-用 Claude in Chrome 驅動已登入的 Chrome，逐點「儲存 → 想去的地點」，88 個行程站點全部成功。
+用 Claude in Chrome 驅動已登入的 Chrome，逐點「儲存 → 想去的地點」。2026/08/19 先用 88 個行程站點驗證流程，之後陸續補齊，**目前 data.js 的地點都已存入**。已存的清單記在 repo 根目錄的 `.gmaps-ledger.json`（地點名 → 當時用的搜尋字串），所以之後只需要處理差異，不用整批重跑。
 關鍵限制：**Chrome 分頁必須是 `document.visibilityState === 'visible'`**——分頁被其他視窗完全遮住時，
 Google Maps 收得到 hover 但不處理點擊，儲存選單根本不開（背景分頁還會被計時器節流，
 in-page 輪詢曾讓 renderer 卡死 45 秒）。把 Chrome 放到第二螢幕或左右並排才穩。
