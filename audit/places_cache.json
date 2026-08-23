@@ -1586,6 +1586,128 @@
    },
    "fetched": "2026-08-23"
   },
+  "すみ劇場 むさし坐 福岡": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "すみ劇場 むさし坐"
+    },
+    "formattedAddress": "〒810-0004 福岡県福岡市中央区渡辺通５丁目５−１２",
+    "id": "ChIJU-HAnpaRQTURwxqU4EbTMYg",
+    "location": {
+     "latitude": 33.5877896,
+     "longitude": 130.403946
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "居酒屋"
+    },
+    "rating": 4.2,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-23T06:00:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 15,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 0,
+        "minute": 0
+       },
+       "open": {
+        "day": 1,
+        "hour": 16,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 0,
+        "minute": 0
+       },
+       "open": {
+        "day": 2,
+        "hour": 16,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 0,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 16,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 0,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 16,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 0,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 15,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 0,
+        "hour": 0,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 15,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 16時00分～0時00分",
+      "火曜日: 16時00分～0時00分",
+      "水曜日: 16時00分～0時00分",
+      "木曜日: 16時00分～0時00分",
+      "金曜日: 15時00分～0時00分",
+      "土曜日: 15時00分～0時00分",
+      "日曜日: 15時00分～23時00分"
+     ]
+    },
+    "userRatingCount": 1411,
+    "websiteUri": "https://www.instagram.com/musasiza/?hl=ja"
+   },
+   "fetched": "2026-08-23"
+  },
   "とり田 博多本店": {
    "data": {
     "businessStatus": "OPERATIONAL",
