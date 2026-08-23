@@ -3503,7 +3503,9 @@ const PLACES = [
   "lat": 33.582733,
   "lng": 130.382692,
   "source": "PTT Street_Style 板推薦整理",
-  "address": "福岡県福岡市中央区赤坂2-6-27"
+  "address": "福岡県福岡市中央区赤坂2-6-27",
+  "hours": "11:00–18:30",
+  "hours_source": "使用者提供（Google Places 查不到）"
  },
  {
   "name": "明月堂 川端店（博多通りもん）",
