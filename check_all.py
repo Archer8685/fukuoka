@@ -365,7 +365,8 @@ def check_closed_days(stops):
     if not hit:
         ok(f"定休日與造訪星期無衝突（依 {tag} 的實查快取）")
     if unqueried:
-        warn(f"{unqueried} 站不在 {tag} 快取中（行程改過）——跑 python verify_places.py 重查")
+        err(f"{unqueried} 站不在 {tag} 快取中——營業時間未經 API 實查。"
+            f"跑 python verify_places.py（可只查改動的天，例 verify_places.py 5 7）")
     if missing:
         print(f"    （另有 {missing} 站 Google 未提供營業時間，如公園／街道／銅像，無法檢查定休）")
 
