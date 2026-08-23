@@ -1,0 +1,167 @@
+{
+ "places": {
+  "CAFE LA RUCHE 由布院": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "CAFE LA RUCHE"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "金鱗湖を一望するおしゃれなベーカリー カフェ。コーヒーと焼きたてのクロワッサンのほか、軽食メニューを楽しめる。"
+    },
+    "formattedAddress": "〒879-5102 大分県由布市湯布院町川上１５９２−１ CAFE LA RUCHE 2Ｆ",
+    "id": "ChIJ8RYhfIeuRjURGstyZ9HLzzc",
+    "location": {
+     "latitude": 33.267373299999996,
+     "longitude": 131.3688473
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "カフェ・喫茶"
+    },
+    "rating": 4.3,
+    "regularOpeningHours": {
+     "nextCloseTime": "2026-08-23T07:30:00Z",
+     "openNow": true,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 16,
+        "minute": 30
+       },
+       "open": {
+        "day": 0,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 1,
+        "hour": 16,
+        "minute": 30
+       },
+       "open": {
+        "day": 1,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 16,
+        "minute": 30
+       },
+       "open": {
+        "day": 2,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 16,
+        "minute": 30
+       },
+       "open": {
+        "day": 4,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 16,
+        "minute": 30
+       },
+       "open": {
+        "day": 5,
+        "hour": 9,
+        "minute": 0
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 16,
+        "minute": 30
+       },
+       "open": {
+        "day": 6,
+        "hour": 9,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 9時00分～16時30分",
+      "火曜日: 9時00分～16時30分",
+      "水曜日: 定休日",
+      "木曜日: 9時00分～16時30分",
+      "金曜日: 9時00分～16時30分",
+      "土曜日: 9時00分～16時30分",
+      "日曜日: 9時00分～16時30分"
+     ]
+    },
+    "userRatingCount": 942,
+    "websiteUri": "https://cafelaruche.jp/"
+   },
+   "fetched": "2026-08-23"
+  },
+  "金鱗湖": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "金鱗湖"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "朝霧で有名な美しい湖。南端に小さな神社がある。"
+    },
+    "formattedAddress": "〒879-5102 大分県由布市湯布院町川上１５６１−１",
+    "id": "ChIJa7QFnn2uRjUR5ofN82Ctd44",
+    "location": {
+     "latitude": 33.266664399999996,
+     "longitude": 131.3690272
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "景勝地"
+    },
+    "rating": 4.1,
+    "regularOpeningHours": {
+     "openNow": true,
+     "periods": [
+      {
+       "open": {
+        "day": 0,
+        "hour": 0,
+        "minute": 0
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 24 時間営業",
+      "火曜日: 24 時間営業",
+      "水曜日: 24 時間営業",
+      "木曜日: 24 時間営業",
+      "金曜日: 24 時間営業",
+      "土曜日: 24 時間営業",
+      "日曜日: 24 時間営業"
+     ]
+    },
+    "userRatingCount": 22586,
+    "websiteUri": "https://www.city.yufu.oita.jp/kankou/kankou-2/kankou_cate1_1/kinrinko"
+   },
+   "fetched": "2026-08-23"
+  }
+ },
+ "updated": "2026-08-23"
+}

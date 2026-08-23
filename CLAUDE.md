@@ -24,6 +24,11 @@
 
 API 查不到就寫「查不到，出發前自行確認」，不要填看起來合理的數字。
 
+💡 **不用怕燒 API**：`verify_places.py` 有以查詢字串為 key 的地點快取
+（`audit/places_cache.json`，預設 30 天內重用），同一家店只打一次。只改一天就
+`verify_places.py 5`，沒動過的店會全部命中快取、API 呼叫 0 次。
+**但出發前要跑一次 `--refresh` 全部重驗。**
+
 ---
 
 ## 省 context：這個專案最容易浪費 input 的三件事

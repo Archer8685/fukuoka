@@ -38,6 +38,50 @@ FIELDS = ",".join([
 ])
 
 
+CACHE = os.path.join(BASE, "audit", "places_cache.json")
+CACHE_TTL_DAYS = 30   # 超過這個天數就重查；出發前記得用 --refresh 全部重驗
+
+
+def load_cache():
+    """以查詢字串（q）為 key 的地點快取。
+
+    同一家店可能出現在多天，也可能在多次執行間重複查——這份快取讓
+    Places API 對同一個 q 只打一次。行程改動只影響「哪些站要出現在報告裡」，
+    不影響已經查過的店家資料，所以快取跨執行有效。"""
+    try:
+        d = json.load(open(CACHE, encoding="utf-8"))
+        return d.get("places", {})
+    except Exception:
+        return {}
+
+
+def save_cache(places):
+    os.makedirs(os.path.join(BASE, "audit"), exist_ok=True)
+    with open(CACHE, "w", encoding="utf-8", newline=chr(10)) as f:
+        json.dump({"updated": str(date.today()), "places": places},
+                  f, ensure_ascii=False, indent=1, sort_keys=True)
+
+
+def cache_age(entry):
+    try:
+        y, m, d = (int(x) for x in entry["fetched"].split("-"))
+        return (date.today() - date(y, m, d)).days
+    except Exception:
+        return 10 ** 6
+
+
+def get_place(q, lat, lng, cache, force):
+    """回傳 (google_place_dict 或 None, fetched 日期, 是否命中快取)。"""
+    hit = cache.get(q)
+    if hit and not force and cache_age(hit) <= CACHE_TTL_DAYS:
+        return hit.get("data"), hit.get("fetched"), True
+    d = search(q, lat, lng)
+    time.sleep(0.12)
+    cand = (d.get("places") or [None])[0]
+    cache[q] = {"fetched": str(date.today()), "data": cand}
+    return cand, str(date.today()), False
+
+
 def api_key():
     src = open(os.path.join(BASE, "config.js"), encoding="utf-8").read()
     m = re.search(r"AIza[A-Za-z0-9_-]+", src)
@@ -148,8 +192,14 @@ def open_intervals(oh, weekday):
 
 
 def main():
-    only = {int(x) for x in sys.argv[1:] if x.isdigit()}
+    args = sys.argv[1:]
+    only = {int(x) for x in args if x.isdigit()}
+    force = any(x in ("--refresh", "-f") for x in args)
     trip, places = load_trip(), load_places()
+    cache = load_cache()
+    n_api = n_hit = 0
+    if force:
+        print("（--refresh：忽略快取，全部重打 API）")
     results, issues = [], []
 
     for day in trip:
@@ -164,12 +214,15 @@ def main():
             # q 欄位優先（用來對同名店消歧義，例：ミディアムレア 有博多站南／西戶崎兩家）
             q = meta.get("q") or meta.get("name_ja") or name
             lat, lng = meta.get("lat"), meta.get("lng")
-            d = search(q, lat, lng)
-            time.sleep(0.12)
-            cand = d.get("places") or []
+            gp, fetched, hit = get_place(q, lat, lng, cache, force)
+            if hit:
+                n_hit += 1
+            else:
+                n_api += 1
+            cand = [gp] if gp else []
             rec = {"day": day["d"], "date": day["date"], "wd": day.get("wd"),
                    "time": st.get("t"), "name": name, "query": q,
-                   "in_data_js": bool(meta)}
+                   "in_data_js": bool(meta), "fetched": fetched}
             if not cand:
                 rec["status"] = "NOT_FOUND"
                 issues.append((day["date"], st.get("t"), name, "❌ Google 查無此地點", ""))
@@ -228,6 +281,7 @@ def main():
             print(f"  {day['date']} {st.get('t')} {name[:22]:24s} "
                   f"{rec.get('rating','-')}★ {rec.get('reviews',0) or 0:>6,}")
 
+    save_cache(cache)
     os.makedirs(os.path.join(BASE, "audit"), exist_ok=True)
     out = os.path.join(BASE, "audit", f"verify_places_{date.today()}.json")
 
@@ -235,9 +289,17 @@ def main():
     # check_all.py 的定休日檢查靠這份快取，被截短就會漏檢。
     # 因此同日重跑時以站點為單位合併，只覆寫這次真的查過的站。
     partial = bool(only)
-    if partial and os.path.exists(out):
+    # 部分執行時要接續「最近一份」報告，不只是今天那份——否則換一天再跑
+    # verify_places.py 5 7 會產出只含兩天的報告，check_all 會把其餘站點
+    # 全判成未實查（錯誤）。
+    seed = out if os.path.exists(out) else None
+    if partial and not seed:
+        old = sorted(glob.glob(os.path.join(BASE, "audit", "verify_places_*.json")))
+        old = [f for f in old if os.path.basename(f) != os.path.basename(out)]
+        seed = old[-1] if old else None
+    if partial and seed:
         try:
-            prev = json.load(open(out, encoding="utf-8"))
+            prev = json.load(open(seed, encoding="utf-8"))
             fresh = {(r.get("date"), r.get("name")) for r in results}
             merged = [r for r in prev.get("results", [])
                       if (r.get("date"), r.get("name")) not in fresh]
@@ -245,7 +307,7 @@ def main():
             results = merged + results
             results.sort(key=lambda r: (r.get("day", 0), r.get("time") or ""))
             issues = [i for i in prev.get("issues", []) if i[0] in kept_days] + issues
-            print(f"\n（部分執行：已與 {out} 既有的 {len(merged)} 站快取合併）")
+            print(chr(10) + f"（部分執行：已接續 {os.path.basename(seed)} 的 {len(merged)} 站）")
         except Exception as e:
             print(f"\n⚠️  既有快取合併失敗，將只寫入本次結果：{e}")
 
@@ -257,6 +319,8 @@ def main():
     warnings = [i for i in issues if i[3].startswith("⚠️")]
     print("\n" + "=" * 72)
     print(f"共查 {len(results)} 站：錯誤 {len(errors)}、警告 {len(warnings)}")
+    print(f"API 呼叫 {n_api} 次、快取命中 {n_hit} 次"
+          f"（快取 {CACHE_TTL_DAYS} 天內有效；--refresh 可強制重查）")
     print("=" * 72)
     for dt, t, n, msg, extra in issues:
         print(f"{dt} {t or '--:--':6s} {n[:26]:28s} {msg}  {extra[:40]}")
