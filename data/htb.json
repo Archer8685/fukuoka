@@ -106,6 +106,7 @@
  },
  {
   "name": "ミサロッソ",
+  "name_zh": "Misa Rosso（佐世保漢堡）",
   "name_ja": "ミサロッソ",
   "category": "餐飲",
   "city": "長崎",
@@ -127,6 +128,7 @@
  },
  {
   "name": "アサクラ",
+  "name_zh": "Asakura（洋食）",
   "name_ja": "アサクラ 佐世保",
   "category": "餐飲",
   "city": "長崎",
@@ -168,6 +170,7 @@
  },
  {
   "name": "佐世保バーガー BigMan 京町本店",
+  "name_zh": "佐世保漢堡 BigMan 京町本店",
   "name_ja": "佐世保バーガー BigMan 京町本店",
   "category": "餐飲",
   "city": "長崎",
@@ -212,6 +215,7 @@
  },
  {
   "name": "ガーデンテラス 花のれん",
+  "name_zh": "Garden Terrace 花暖簾",
   "name_ja": "ガーデンテラス 花のれん",
   "category": "餐飲",
   "city": "長崎",
@@ -230,6 +234,7 @@
  },
  {
   "name": "下町の洋食 時代屋",
+  "name_zh": "下町洋食 時代屋",
   "name_ja": "下町の洋食 時代屋",
   "category": "餐飲",
   "city": "長崎",
@@ -248,6 +253,7 @@
  },
  {
   "name": "バーガーショップ あいかわ",
+  "name_zh": "漢堡店 Aikawa（あいかわ）",
   "name_ja": "バーガーショップ あいかわ",
   "category": "餐飲",
   "city": "長崎",

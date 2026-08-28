@@ -1,6 +1,7 @@
 [
  {
   "name": "レガネットキュート",
+  "name_zh": "Reganet Cute 超市",
   "name_ja": "レガネットキュート 博多駅前",
   "category": "購物",
   "city": "福岡",
@@ -17,6 +18,7 @@
  },
  {
   "name": "マックスバリュ 博多駅南",
+  "name_zh": "MaxValu 超市 博多站南",
   "name_ja": "マックスバリュエクスプレス",
   "category": "購物",
   "city": "福岡",
@@ -33,6 +35,7 @@
  },
  {
   "name": "ロピア 博多",
+  "name_zh": "Lopia 超市 博多",
   "name_ja": "ロピア",
   "category": "購物",
   "city": "福岡",
@@ -65,6 +68,7 @@
  },
  {
   "name": "ボンラパス タンブル",
+  "name_zh": "Bon Repas 超市 Tumble",
   "name_ja": "ボンラパス",
   "category": "購物",
   "city": "福岡",
@@ -81,6 +85,7 @@
  },
  {
   "name": "マルショク 博多",
+  "name_zh": "Marushoku 超市 博多",
   "name_ja": "マルショク",
   "category": "購物",
   "city": "福岡",
@@ -97,6 +102,7 @@
  },
  {
   "name": "ニューヨークストア住吉店",
+  "name_zh": "New York Store 住吉店",
   "name_ja": "ニューヨークストア",
   "category": "購物",
   "city": "福岡",
@@ -113,6 +119,7 @@
  },
  {
   "name": "ミスターマックス（24 小時）",
+  "name_zh": "Mr. Max 量販店（24 小時）",
   "name_ja": "ミスターマックス",
   "category": "購物",
   "city": "福岡",
@@ -145,6 +152,7 @@
  },
  {
   "name": "フーズ・ホットライン長崎店",
+  "name_zh": "Foods Hotline 長崎店",
   "name_ja": "フーズ・ホットライン長崎店",
   "category": "購物",
   "city": "長崎",
@@ -161,6 +169,7 @@
  },
  {
   "name": "ジョイフルサン 宝町店",
+  "name_zh": "Joyful Sun 寶町店",
   "name_ja": "ジョイフルサン 宝町店",
   "category": "購物",
   "city": "長崎",
@@ -177,6 +186,7 @@
  },
  {
   "name": "ローソン（長崎駅Ⅲ 最近）",
+  "name_zh": "LAWSON 便利商店（距長崎駅Ⅲ最近）",
   "name_ja": "ローソン",
   "category": "購物",
   "city": "長崎",
@@ -193,6 +203,7 @@
  },
  {
   "name": "ファミリーマート（長崎駅前）",
+  "name_zh": "FamilyMart 全家（長崎站前）",
   "name_ja": "ファミリーマート",
   "category": "購物",
   "city": "長崎",
@@ -209,6 +220,7 @@
  },
  {
   "name": "ローソン（東急ステイ博多 樓下）",
+  "name_zh": "LAWSON 便利商店（東急STAY博多樓下）",
   "name_ja": "ローソン",
   "category": "購物",
   "city": "福岡",
@@ -225,6 +237,7 @@
  },
  {
   "name": "ファミリーマート（博多・24 小時）",
+  "name_zh": "FamilyMart 全家（博多・24 小時）",
   "name_ja": "ファミリーマート",
   "category": "購物",
   "city": "福岡",
@@ -241,6 +254,7 @@
  },
  {
   "name": "セブン-イレブン（博多駅南）",
+  "name_zh": "7-ELEVEN（博多站南）",
   "name_ja": "セブン-イレブン",
   "category": "購物",
   "city": "福岡",

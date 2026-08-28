@@ -1,6 +1,7 @@
 [
  {
   "name": "レストラン 高津",
+  "name_zh": "Restaurant 高津",
   "name_ja": "レストラン 高津",
   "category": "餐飲",
   "city": "北九州",
@@ -22,6 +23,7 @@
  },
  {
   "name": "広島お好み焼き 弘々家",
+  "name_zh": "廣島大阪燒 弘弘家",
   "name_ja": "広島お好み焼き 弘々家",
   "category": "餐飲",
   "city": "北九州",
@@ -85,6 +87,7 @@
  },
  {
   "name": "炭とおがわ",
+  "name_zh": "炭與小川（炭火燒鳥）",
   "name_ja": "炭とおがわ",
   "category": "餐飲",
   "city": "福岡",
@@ -106,6 +109,7 @@
  },
  {
   "name": "馳走なかむら",
+  "name_zh": "馳走 中村",
   "name_ja": "馳走なかむら",
   "category": "餐飲",
   "city": "福岡",
@@ -127,6 +131,7 @@
  },
  {
   "name": "ハート・ストリングス",
+  "name_zh": "Heart Strings（酒吧）",
   "name_ja": "ハート・ストリングス",
   "category": "餐飲",
   "city": "福岡",
@@ -148,6 +153,7 @@
  },
  {
   "name": "鮨 そえ島",
+  "name_zh": "鮨 添島",
   "name_ja": "鮨 そえ島",
   "category": "餐飲",
   "city": "福岡",
@@ -190,6 +196,7 @@
  },
  {
   "name": "油 ヒトツキ",
+  "name_zh": "油 Hitotsuki（一月）",
   "name_ja": "油 ヒトツキ",
   "category": "餐飲",
   "city": "福岡",
@@ -211,6 +218,7 @@
  },
  {
   "name": "レストラン アレナ",
+  "name_zh": "Restaurant Arena",
   "name_ja": "レストラン アレナ",
   "category": "餐飲",
   "city": "福岡",
@@ -253,6 +261,7 @@
  },
  {
   "name": "クッカーニャ",
+  "name_zh": "Cuccagna 義式餐廳",
   "name_ja": "クッカーニャ",
   "category": "餐飲",
   "city": "福岡",
@@ -316,6 +325,7 @@
  },
  {
   "name": "ステーキハウス バロン",
+  "name_zh": "牛排館 Baron",
   "name_ja": "ステーキハウス バロン",
   "category": "餐飲",
   "city": "熊本",
@@ -379,6 +389,7 @@
  },
  {
   "name": "おやど二本の葦束",
+  "name_zh": "旅宿 二本葦束",
   "name_ja": "おやど二本の葦束",
   "category": "餐飲",
   "city": "大分",

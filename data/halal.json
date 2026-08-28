@@ -1,6 +1,7 @@
 [
  {
   "name": "ミスターケバブ（Mr. Kebab）",
+  "name_zh": "Mr. Kebab 沙威瑪",
   "name_ja": "ミスターケバブ 福岡",
   "category": "餐飲",
   "city": "福岡",
@@ -23,6 +24,7 @@
  },
  {
   "name": "ザエカ（Zaika）",
+  "name_zh": "Zaika 印度料理",
   "name_ja": "ザエカ 福岡",
   "category": "餐飲",
   "city": "福岡",
@@ -118,6 +120,7 @@
  },
  {
   "name": "ハラールフードマルハバ",
+  "name_zh": "Marhaba 清真餐廳",
   "name_ja": "ハラールフードマルハバ",
   "category": "餐飲",
   "city": "福岡",
@@ -140,6 +143,7 @@
  },
  {
   "name": "ハラールフードショップ ナビさん",
+  "name_zh": "Nabi 清真食品店",
   "name_ja": "ハラールフードショップ ナビさん",
   "category": "購物",
   "city": "福岡",
@@ -158,6 +162,7 @@
  },
  {
   "name": "鮨しま",
+  "name_zh": "鮨島（清真壽司）",
   "name_ja": "鮨しま 福岡",
   "category": "餐飲",
   "city": "福岡",
@@ -179,6 +184,7 @@
  },
  {
   "name": "福岡マスジド（福岡清真寺）",
+  "name_zh": "福岡清真寺（Masjid）",
   "name_ja": "福岡マスジド",
   "category": "景點",
   "city": "福岡",
@@ -272,6 +278,7 @@
  },
  {
   "name": "つる平 アミュプラザ小倉",
+  "name_zh": "鶴平 AMU PLAZA 小倉",
   "name_ja": "つる平 アミュプラザ小倉",
   "category": "餐飲",
   "city": "北九州",
@@ -293,6 +300,7 @@
  },
  {
   "name": "ビスヌ ココウォーク長崎店",
+  "name_zh": "Bisnu 印度料理 Cocowalk 長崎店",
   "name_ja": "ビスヌ みらい長崎ココウォーク店",
   "category": "餐飲",
   "city": "長崎",
@@ -316,6 +324,7 @@
  },
  {
   "name": "ミラン 大波止店",
+  "name_zh": "Milan 印度料理 大波止店",
   "name_ja": "ミラン 大波止店",
   "category": "餐飲",
   "city": "長崎",
@@ -338,6 +347,7 @@
  },
  {
   "name": "別府マスジド",
+  "name_zh": "別府清真寺（Masjid）",
   "name_ja": "別府マスジド",
   "category": "景點",
   "city": "大分",

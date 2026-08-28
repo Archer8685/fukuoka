@@ -316,6 +316,7 @@ const PLACES = [
  },
  {
   "name": "別府マスジド",
+  "name_zh": "別府清真寺（Masjid）",
   "name_ja": "別府マスジド",
   "category": "景點",
   "city": "大分",
@@ -482,6 +483,7 @@ const PLACES = [
  },
  {
   "name": "草千里ヶ浜（阿蘇）",
+  "name_zh": "草千里之濱（阿蘇）",
   "name_ja": "草千里ヶ浜",
   "category": "景點",
   "city": "熊本",
@@ -561,6 +563,7 @@ const PLACES = [
  },
  {
   "name": "ヤシの木ブランコ",
+  "name_zh": "椰子樹鞦韆",
   "name_ja": "ヤシの木ブランコ",
   "category": "景點",
   "city": "福岡",
@@ -601,6 +604,7 @@ const PLACES = [
  },
  {
   "name": "久保田クリニック",
+  "name_zh": "久保田診所（電影場景）",
   "name_ja": "久保田クリニック",
   "category": "景點",
   "city": "福岡",
@@ -794,6 +798,7 @@ const PLACES = [
  },
  {
   "name": "柳川川下り 松月乘船場",
+  "name_zh": "柳川遊船 松月乘船場",
   "name_ja": "柳川川下り 松月乗船場",
   "category": "景點",
   "city": "福岡",
@@ -913,6 +918,7 @@ const PLACES = [
  },
  {
   "name": "福岡マスジド（福岡清真寺）",
+  "name_zh": "福岡清真寺（Masjid）",
   "name_ja": "福岡マスジド",
   "category": "景點",
   "city": "福岡",
@@ -989,6 +995,7 @@ const PLACES = [
  },
  {
   "name": "糸島のトトロの森（芥屋大門公園）",
+  "name_zh": "糸島龍貓森林（芥屋大門公園）",
   "name_ja": "糸島のトトロの森",
   "category": "景點",
   "city": "福岡",
@@ -1031,6 +1038,7 @@ const PLACES = [
  },
  {
   "name": "香月バス停",
+  "name_zh": "香月公車站",
   "name_ja": "香月バス停",
   "category": "景點",
   "city": "福岡",
@@ -1126,6 +1134,7 @@ const PLACES = [
  },
  {
   "name": "孔子廟・中國歷代博物館",
+  "name_zh": "孔子廟・中國歷代博物館",
   "name_ja": "孔子廟 中国歴代博物館",
   "category": "景點",
   "city": "長崎",
@@ -1836,6 +1845,7 @@ const PLACES = [
  },
  {
   "name": "まんだらけ 福岡店",
+  "name_zh": "Mandarake 中古動漫 福岡店",
   "name_ja": "まんだらけ 福岡店",
   "category": "動漫",
   "city": "福岡",
@@ -2027,6 +2037,7 @@ const PLACES = [
  },
  {
   "name": "武雄溫泉 樓門・元湯",
+  "name_zh": "武雄溫泉 樓門・元湯",
   "name_ja": "武雄温泉 楼門",
   "category": "溫泉",
   "city": "佐賀",
@@ -2231,6 +2242,7 @@ const PLACES = [
  },
  {
   "name": "由布院 由布見通り",
+  "name_zh": "由布院 由布見通",
   "name_ja": "由布院 由布見通り",
   "category": "購物",
   "city": "大分",
@@ -2269,6 +2281,7 @@ const PLACES = [
  },
  {
   "name": "上通・下通商店街",
+  "name_zh": "上通・下通商店街",
   "name_ja": "上通・下通アーケード商店街",
   "category": "購物",
   "city": "熊本",
@@ -3160,6 +3173,7 @@ const PLACES = [
  },
  {
   "name": "アール福岡（旧 ANATOMICA）",
+  "name_zh": "R 福岡（舊 ANATOMICA）",
   "name_ja": "アール福岡",
   "category": "購物",
   "city": "福岡",
@@ -3180,6 +3194,7 @@ const PLACES = [
  },
  {
   "name": "キラキラドンキ 博多マルイ",
+  "name_zh": "KIRAKIRA唐吉訶德 博多丸井店",
   "name_ja": "キラキラドンキ 博多マルイ",
   "category": "購物",
   "city": "福岡",
@@ -3199,6 +3214,7 @@ const PLACES = [
  },
  {
   "name": "セブン-イレブン（博多駅南）",
+  "name_zh": "7-ELEVEN（博多站南）",
   "name_ja": "セブン-イレブン",
   "category": "購物",
   "city": "福岡",
@@ -3213,6 +3229,7 @@ const PLACES = [
  },
  {
   "name": "ニューヨークストア住吉店",
+  "name_zh": "New York Store 住吉店",
   "name_ja": "ニューヨークストア",
   "category": "購物",
   "city": "福岡",
@@ -3227,6 +3244,7 @@ const PLACES = [
  },
  {
   "name": "ハラールフードショップ ナビさん",
+  "name_zh": "Nabi 清真食品店",
   "name_ja": "ハラールフードショップ ナビさん",
   "category": "購物",
   "city": "福岡",
@@ -3243,6 +3261,7 @@ const PLACES = [
  },
  {
   "name": "ファミリーマート（博多・24 小時）",
+  "name_zh": "FamilyMart 全家（博多・24 小時）",
   "name_ja": "ファミリーマート",
   "category": "購物",
   "city": "福岡",
@@ -3257,6 +3276,7 @@ const PLACES = [
  },
  {
   "name": "ボンラパス タンブル",
+  "name_zh": "Bon Repas 超市 Tumble",
   "name_ja": "ボンラパス",
   "category": "購物",
   "city": "福岡",
@@ -3291,6 +3311,7 @@ const PLACES = [
  },
  {
   "name": "マックスバリュ 博多駅南",
+  "name_zh": "MaxValu 超市 博多站南",
   "name_ja": "マックスバリュエクスプレス",
   "category": "購物",
   "city": "福岡",
@@ -3305,6 +3326,7 @@ const PLACES = [
  },
  {
   "name": "マルショク 博多",
+  "name_zh": "Marushoku 超市 博多",
   "name_ja": "マルショク",
   "category": "購物",
   "city": "福岡",
@@ -3319,6 +3341,7 @@ const PLACES = [
  },
  {
   "name": "ミスターマックス（24 小時）",
+  "name_zh": "Mr. Max 量販店（24 小時）",
   "name_ja": "ミスターマックス",
   "category": "購物",
   "city": "福岡",
@@ -3333,6 +3356,7 @@ const PLACES = [
  },
  {
   "name": "レガネットキュート",
+  "name_zh": "Reganet Cute 超市",
   "name_ja": "レガネットキュート 博多駅前",
   "category": "購物",
   "city": "福岡",
@@ -3347,6 +3371,7 @@ const PLACES = [
  },
  {
   "name": "ロピア 博多",
+  "name_zh": "Lopia 超市 博多",
   "name_ja": "ロピア",
   "category": "購物",
   "city": "福岡",
@@ -3361,6 +3386,7 @@ const PLACES = [
  },
  {
   "name": "ローソン（東急ステイ博多 樓下）",
+  "name_zh": "LAWSON 便利商店（東急STAY博多樓下）",
   "name_ja": "ローソン",
   "category": "購物",
   "city": "福岡",
@@ -3433,6 +3459,7 @@ const PLACES = [
  },
  {
   "name": "博多阪急・AMU PLAZA 博多",
+  "name_zh": "博多阪急・AMU PLAZA 博多",
   "name_ja": "博多阪急",
   "category": "購物",
   "city": "福岡",
@@ -3681,6 +3708,7 @@ const PLACES = [
  },
  {
   "name": "糸島くらし×ここのき",
+  "name_zh": "糸島生活×Kokonoki",
   "name_ja": "糸島くらし×ここのき",
   "category": "購物",
   "city": "福岡",
@@ -3702,6 +3730,7 @@ const PLACES = [
  },
  {
   "name": "糸島の顔がみえる本屋さん",
+  "name_zh": "糸島看得見人情的書店",
   "name_ja": "糸島の顔がみえる本屋さん",
   "category": "購物",
   "city": "福岡",
@@ -3723,6 +3752,7 @@ const PLACES = [
  },
  {
   "name": "郷土文具のお店 小富士",
+  "name_zh": "鄉土文具店 小富士",
   "name_ja": "郷土文具のお店 小富士",
   "category": "購物",
   "city": "福岡",
@@ -3762,6 +3792,7 @@ const PLACES = [
  },
  {
   "name": "みらい長崎ココウォーク",
+  "name_zh": "未來長崎 Cocowalk",
   "name_ja": "みらい長崎ココウォーク",
   "category": "購物",
   "city": "長崎",
@@ -3781,6 +3812,7 @@ const PLACES = [
  },
  {
   "name": "ジョイフルサン 宝町店",
+  "name_zh": "Joyful Sun 寶町店",
   "name_ja": "ジョイフルサン 宝町店",
   "category": "購物",
   "city": "長崎",
@@ -3795,6 +3827,7 @@ const PLACES = [
  },
  {
   "name": "ファミリーマート（長崎駅前）",
+  "name_zh": "FamilyMart 全家（長崎站前）",
   "name_ja": "ファミリーマート",
   "category": "購物",
   "city": "長崎",
@@ -3809,6 +3842,7 @@ const PLACES = [
  },
  {
   "name": "フーズ・ホットライン長崎店",
+  "name_zh": "Foods Hotline 長崎店",
   "name_ja": "フーズ・ホットライン長崎店",
   "category": "購物",
   "city": "長崎",
@@ -3823,6 +3857,7 @@ const PLACES = [
  },
  {
   "name": "ローソン（長崎駅Ⅲ 最近）",
+  "name_zh": "LAWSON 便利商店（距長崎駅Ⅲ最近）",
   "name_ja": "ローソン",
   "category": "購物",
   "city": "長崎",
@@ -3989,6 +4024,7 @@ const PLACES = [
  },
  {
   "name": "こがねむし",
+  "name_zh": "Koganemushi（金龜子・咖啡）",
   "name_ja": "こがねむし",
   "category": "餐飲",
   "city": "北九州",
@@ -4006,6 +4042,7 @@ const PLACES = [
  },
  {
   "name": "つる平 アミュプラザ小倉",
+  "name_zh": "鶴平 AMU PLAZA 小倉",
   "name_ja": "つる平 アミュプラザ小倉",
   "category": "餐飲",
   "city": "北九州",
@@ -4025,6 +4062,7 @@ const PLACES = [
  },
  {
   "name": "ふく料理 しのだ",
+  "name_zh": "河豚料理 篠田",
   "name_ja": "ふく料理 しのだ",
   "category": "餐飲",
   "city": "北九州",
@@ -4086,6 +4124,7 @@ const PLACES = [
  },
  {
   "name": "フルーツファクトリー モーン デ レトロ",
+  "name_zh": "水果工房 Mohn de Retro",
   "name_ja": "フルーツファクトリー モーン デ レトロ",
   "category": "餐飲",
   "city": "北九州",
@@ -4143,6 +4182,7 @@ const PLACES = [
  },
  {
   "name": "レストラン 高津",
+  "name_zh": "Restaurant 高津",
   "name_ja": "レストラン 高津",
   "category": "餐飲",
   "city": "北九州",
@@ -4162,6 +4202,7 @@ const PLACES = [
  },
  {
   "name": "三井倶楽部（レストラン）",
+  "name_zh": "三井俱樂部（餐廳）",
   "name_ja": "三井倶楽部",
   "category": "餐飲",
   "city": "北九州",
@@ -4206,6 +4247,7 @@ const PLACES = [
  },
  {
   "name": "下関くじら館",
+  "name_zh": "下關鯨魚館",
   "name_ja": "下関くじら館",
   "category": "餐飲",
   "city": "北九州",
@@ -4225,6 +4267,7 @@ const PLACES = [
  },
  {
   "name": "伽哩本舗 門司港レトロ店",
+  "name_zh": "咖哩本舖 門司港復古店",
   "name_ja": "伽哩本舗 門司港レトロ店",
   "category": "餐飲",
   "city": "北九州",
@@ -4245,6 +4288,7 @@ const PLACES = [
  },
  {
   "name": "元祖 瓦そば たかせ 門司港レトロ店",
+  "name_zh": "元祖 瓦片蕎麥麵 高瀨 門司港復古店",
   "name_ja": "元祖 瓦そば たかせ 門司港レトロ店",
   "category": "餐飲",
   "city": "北九州",
@@ -4327,6 +4371,7 @@ const PLACES = [
  },
  {
   "name": "広島お好み焼き 弘々家",
+  "name_zh": "廣島大阪燒 弘弘家",
   "name_ja": "広島お好み焼き 弘々家",
   "category": "餐飲",
   "city": "北九州",
@@ -4449,6 +4494,7 @@ const PLACES = [
  },
  {
   "name": "資さんうどん（小倉）",
+  "name_zh": "資さん烏龍麵（小倉）",
   "name_ja": "資さんうどん",
   "category": "餐飲",
   "city": "北九州",
@@ -4590,6 +4636,7 @@ const PLACES = [
  },
  {
   "name": "おやど二本の葦束",
+  "name_zh": "旅宿 二本葦束",
   "name_ja": "おやど二本の葦束",
   "category": "餐飲",
   "city": "大分",
@@ -4609,6 +4656,7 @@ const PLACES = [
  },
  {
   "name": "みくま飯店",
+  "name_zh": "三隈飯店",
   "name_ja": "みくま飯店",
   "category": "餐飲",
   "city": "大分",
@@ -4691,6 +4739,7 @@ const PLACES = [
  },
  {
   "name": "一番どり",
+  "name_zh": "一番雞（燒鳥）",
   "name_ja": "一番どり",
   "category": "餐飲",
   "city": "大分",
@@ -4802,6 +4851,7 @@ const PLACES = [
  },
  {
   "name": "戸山うなぎ",
+  "name_zh": "戶山鰻魚",
   "name_ja": "戸山うなぎ",
   "category": "餐飲",
   "city": "大分",
@@ -4818,6 +4868,7 @@ const PLACES = [
  },
  {
   "name": "日田まぶし千屋",
+  "name_zh": "日田釜飯 千屋（鰻魚）",
   "name_ja": "日田まぶし千屋",
   "category": "餐飲",
   "city": "大分",
@@ -4837,6 +4888,7 @@ const PLACES = [
  },
  {
   "name": "檪の丘",
+  "name_zh": "櫟之丘（窯烤披薩）",
   "name_ja": "檪の丘",
   "category": "餐飲",
   "city": "大分",
@@ -4900,6 +4952,7 @@ const PLACES = [
  },
  {
   "name": "由布まぶし 心（金鱗湖本店）",
+  "name_zh": "由布釜飯 心（金鱗湖本店）",
   "name_ja": "由布まぶし「心」金鱗湖本店",
   "category": "餐飲",
   "city": "大分",
@@ -5084,6 +5137,7 @@ const PLACES = [
  },
  {
   "name": "むつ五郎",
+  "name_zh": "陸奧五郎",
   "name_ja": "むつ五郎",
   "category": "餐飲",
   "city": "熊本",
@@ -5104,6 +5158,7 @@ const PLACES = [
  },
  {
   "name": "むら上",
+  "name_zh": "村上（壽司）",
   "name_ja": "むら上",
   "category": "餐飲",
   "city": "熊本",
@@ -5121,6 +5176,7 @@ const PLACES = [
  },
  {
   "name": "ステーキハウス バロン",
+  "name_zh": "牛排館 Baron",
   "name_ja": "ステーキハウス バロン",
   "category": "餐飲",
   "city": "熊本",
@@ -5180,6 +5236,7 @@ const PLACES = [
  },
  {
   "name": "洋食の店 橋本",
+  "name_zh": "洋食之店 橋本",
   "name_ja": "洋食の店 橋本",
   "category": "餐飲",
   "city": "熊本",
@@ -5196,6 +5253,7 @@ const PLACES = [
  },
  {
   "name": "熊本ラーメン 黒亭 本店",
+  "name_zh": "熊本拉麵 黑亭 本店",
   "name_ja": "熊本ラーメン 黒亭 本店",
   "category": "餐飲",
   "city": "熊本",
@@ -5258,6 +5316,7 @@ const PLACES = [
  },
  {
   "name": "馬桜 下通り店",
+  "name_zh": "馬櫻 下通店（馬肉）",
   "name_ja": "馬桜 下通り店",
   "category": "餐飲",
   "city": "熊本",
@@ -5320,6 +5379,7 @@ const PLACES = [
  },
  {
   "name": "Blue Bottle Coffee 福岡天神カフェ",
+  "name_zh": "Blue Bottle Coffee 福岡天神咖啡",
   "name_ja": "ブルーボトルコーヒー 福岡天神カフェ",
   "category": "餐飲",
   "city": "福岡",
@@ -5555,6 +5615,7 @@ const PLACES = [
  },
  {
   "name": "うどん平",
+  "name_zh": "烏龍麵 平",
   "name_ja": "うどん平",
   "category": "餐飲",
   "city": "福岡",
@@ -5576,6 +5637,7 @@ const PLACES = [
  },
  {
   "name": "うなぎの原田",
+  "name_zh": "原田鰻魚",
   "name_ja": "うなぎの原田",
   "category": "餐飲",
   "city": "福岡",
@@ -5592,6 +5654,7 @@ const PLACES = [
  },
  {
   "name": "うなぎ処 川よし",
+  "name_zh": "鰻魚處 川吉",
   "name_ja": "うなぎ処 川よし",
   "category": "餐飲",
   "city": "福岡",
@@ -5637,6 +5700,7 @@ const PLACES = [
  },
  {
   "name": "かろのうろん",
+  "name_zh": "Karo no Uron（角之烏龍麵）",
   "name_ja": "かろのうろん",
   "category": "餐飲",
   "city": "福岡",
@@ -5683,6 +5747,7 @@ const PLACES = [
  },
  {
   "name": "せいもん払い",
+  "name_zh": "誠文拂（せいもん払い・海鮮）",
   "name_ja": "せいもん払い",
   "category": "餐飲",
   "city": "福岡",
@@ -5705,6 +5770,7 @@ const PLACES = [
  },
  {
   "name": "たんか 本店（清川）",
+  "name_zh": "Tanka 本店（清川・燒肉）",
   "name_ja": "たんか 清川本店",
   "category": "餐飲",
   "city": "福岡",
@@ -5726,6 +5792,7 @@ const PLACES = [
  },
  {
   "name": "つきよし",
+  "name_zh": "月吉（居酒屋）",
   "name_ja": "つきよし",
   "category": "餐飲",
   "city": "福岡",
@@ -5768,6 +5835,7 @@ const PLACES = [
  },
  {
   "name": "にぎり塚本鮮魚店",
+  "name_zh": "握壽司 塚本鮮魚店",
   "name_ja": "にぎり塚本鮮魚店",
   "category": "餐飲",
   "city": "福岡",
@@ -5788,6 +5856,7 @@ const PLACES = [
  },
  {
   "name": "にしむら（西村）",
+  "name_zh": "西村（壽司）",
   "name_ja": "にしむら",
   "category": "餐飲",
   "city": "福岡",
@@ -5806,6 +5875,7 @@ const PLACES = [
  },
  {
   "name": "またいちの塩 製塩所 工房とったん",
+  "name_zh": "又一之鹽 製鹽所 工房Tottan",
   "name_ja": "またいちの塩 製塩所 工房とったん",
   "category": "餐飲",
   "city": "福岡",
@@ -5850,6 +5920,7 @@ const PLACES = [
  },
  {
   "name": "やきとり五二六",
+  "name_zh": "烤雞串 五二六",
   "name_ja": "やきとり五二六",
   "category": "餐飲",
   "city": "福岡",
@@ -5871,6 +5942,7 @@ const PLACES = [
  },
  {
   "name": "やきとり六三四",
+  "name_zh": "烤雞串 六三四",
   "name_ja": "やきとり六三四",
   "category": "餐飲",
   "city": "福岡",
@@ -5935,6 +6007,7 @@ const PLACES = [
  },
  {
   "name": "クッカーニャ",
+  "name_zh": "Cuccagna 義式餐廳",
   "name_ja": "クッカーニャ",
   "category": "餐飲",
   "city": "福岡",
@@ -5974,6 +6047,7 @@ const PLACES = [
  },
  {
   "name": "ザエカ（Zaika）",
+  "name_zh": "Zaika 印度料理",
   "name_ja": "ザエカ 福岡",
   "category": "餐飲",
   "city": "福岡",
@@ -6017,6 +6091,7 @@ const PLACES = [
  },
  {
   "name": "チョコレートショップ 博多の石畳",
+  "name_zh": "巧克力店 博多石疊",
   "name_ja": "チョコレートショップ 博多の石畳",
   "category": "餐飲",
   "city": "福岡",
@@ -6036,6 +6111,7 @@ const PLACES = [
  },
  {
   "name": "ドゥワンチャン",
+  "name_zh": "Duang Chan（泰式料理）",
   "name_ja": "ドゥワンチャン",
   "category": "餐飲",
   "city": "福岡",
@@ -6052,6 +6128,7 @@ const PLACES = [
  },
  {
   "name": "ハラールフードマルハバ",
+  "name_zh": "Marhaba 清真餐廳",
   "name_ja": "ハラールフードマルハバ",
   "category": "餐飲",
   "city": "福岡",
@@ -6072,6 +6149,7 @@ const PLACES = [
  },
  {
   "name": "ハート・ストリングス",
+  "name_zh": "Heart Strings（酒吧）",
   "name_ja": "ハート・ストリングス",
   "category": "餐飲",
   "city": "福岡",
@@ -6091,6 +6169,7 @@ const PLACES = [
  },
  {
   "name": "ミスターケバブ（Mr. Kebab）",
+  "name_zh": "Mr. Kebab 沙威瑪",
   "name_ja": "ミスターケバブ 福岡",
   "category": "餐飲",
   "city": "福岡",
@@ -6130,6 +6209,7 @@ const PLACES = [
  },
  {
   "name": "ルアン HOTEL CULTIA 太宰府",
+  "name_zh": "Luang HOTEL CULTIA 太宰府",
   "name_ja": "ルアン HOTEL CULTIA 太宰府",
   "category": "餐飲",
   "city": "福岡",
@@ -6147,6 +6227,7 @@ const PLACES = [
  },
  {
   "name": "レストラン アレナ",
+  "name_zh": "Restaurant Arena",
   "name_ja": "レストラン アレナ",
   "category": "餐飲",
   "city": "福岡",
@@ -6166,6 +6247,7 @@ const PLACES = [
  },
  {
   "name": "レストランエッサンス",
+  "name_zh": "Restaurant Essence",
   "name_ja": "レストランエッサンス",
   "category": "餐飲",
   "city": "福岡",
@@ -6307,6 +6389,7 @@ const PLACES = [
  },
  {
   "name": "串揚げはやし",
+  "name_zh": "串炸 林（はやし）",
   "name_ja": "串揚げはやし",
   "category": "餐飲",
   "city": "福岡",
@@ -6367,6 +6450,7 @@ const PLACES = [
  },
  {
   "name": "元祖もつ鍋楽天地 福岡空港國際線美食廣場店",
+  "name_zh": "元祖牛腸鍋 樂天地 福岡機場國際線美食廣場店",
   "name_ja": "元祖もつ鍋楽天地 福岡空港国際線フードコート店",
   "category": "餐飲",
   "city": "福岡",
@@ -6451,6 +6535,7 @@ const PLACES = [
  },
  {
   "name": "博多 喜多郎寿し",
+  "name_zh": "博多 喜多郎壽司",
   "name_ja": "博多 喜多郎寿し",
   "category": "餐飲",
   "city": "福岡",
@@ -6586,6 +6671,7 @@ const PLACES = [
  },
  {
   "name": "博多名代 吉塚うなぎ屋",
+  "name_zh": "博多名代 吉塚鰻魚屋",
   "name_ja": "博多名代 吉塚うなぎ屋",
   "category": "餐飲",
   "city": "福岡",
@@ -6651,6 +6737,7 @@ const PLACES = [
  },
  {
   "name": "古材の森（旧西原邸）",
+  "name_zh": "古材之森（舊西原宅邸）",
   "name_ja": "古材の森",
   "category": "餐飲",
   "city": "福岡",
@@ -6774,6 +6861,7 @@ const PLACES = [
  },
  {
   "name": "天麩羅処 ひらお（天神店）",
+  "name_zh": "天婦羅處 平尾（天神店）",
   "name_ja": "天麩羅処ひらお",
   "category": "餐飲",
   "city": "福岡",
@@ -6794,6 +6882,7 @@ const PLACES = [
  },
  {
   "name": "寿司・活魚料理 玄海",
+  "name_zh": "壽司・活魚料理 玄海",
   "name_ja": "寿司・活魚料理 玄海",
   "category": "餐飲",
   "city": "福岡",
@@ -6890,6 +6979,7 @@ const PLACES = [
  },
  {
   "name": "極味や（福岡 PARCO 店）",
+  "name_zh": "極味屋（福岡PARCO店）",
   "name_ja": "極味や 福岡パルコ店",
   "category": "餐飲",
   "city": "福岡",
@@ -6955,6 +7045,7 @@ const PLACES = [
  },
  {
   "name": "油 ヒトツキ",
+  "name_zh": "油 Hitotsuki（一月）",
   "name_ja": "油 ヒトツキ",
   "category": "餐飲",
   "city": "福岡",
@@ -6974,6 +7065,7 @@ const PLACES = [
  },
  {
   "name": "炭とおがわ",
+  "name_zh": "炭與小川（炭火燒鳥）",
   "name_ja": "炭とおがわ",
   "category": "餐飲",
   "city": "福岡",
@@ -7010,6 +7102,7 @@ const PLACES = [
  },
  {
   "name": "焼き鳥 こと",
+  "name_zh": "烤雞串 琴（こと）",
   "name_ja": "焼き鳥 こと",
   "category": "餐飲",
   "city": "福岡",
@@ -7027,6 +7120,7 @@ const PLACES = [
  },
  {
   "name": "焼き鳥 松元 西中洲店",
+  "name_zh": "烤雞串 松元 西中洲店",
   "name_ja": "焼き鳥 松元 西中洲店",
   "category": "餐飲",
   "city": "福岡",
@@ -7110,6 +7204,7 @@ const PLACES = [
  },
  {
   "name": "焼肉すどう 春吉",
+  "name_zh": "燒肉 須藤 春吉店",
   "name_ja": "焼肉すどう 春吉",
   "category": "餐飲",
   "city": "福岡",
@@ -7127,6 +7222,7 @@ const PLACES = [
  },
  {
   "name": "焼肉ホルモン山翔",
+  "name_zh": "燒肉內臟 山翔",
   "name_ja": "焼肉ホルモン山翔",
   "category": "餐飲",
   "city": "福岡",
@@ -7190,6 +7286,7 @@ const PLACES = [
  },
  {
   "name": "磯ぎよし（天神本店）",
+  "name_zh": "磯清（天神本店）",
   "name_ja": "磯ぎよし 天神本店",
   "category": "餐飲",
   "city": "福岡",
@@ -7233,6 +7330,7 @@ const PLACES = [
  },
  {
   "name": "立花うどん",
+  "name_zh": "立花烏龍麵",
   "name_ja": "立花うどん",
   "category": "餐飲",
   "city": "福岡",
@@ -7253,6 +7351,7 @@ const PLACES = [
  },
  {
   "name": "糸島ほたる",
+  "name_zh": "糸島螢（海鮮）",
   "name_ja": "糸島ほたる",
   "category": "餐飲",
   "city": "福岡",
@@ -7288,6 +7387,7 @@ const PLACES = [
  },
  {
   "name": "肉の雷橋",
+  "name_zh": "肉之雷橋（燒肉）",
   "name_ja": "肉の雷橋",
   "category": "餐飲",
   "city": "福岡",
@@ -7331,6 +7431,7 @@ const PLACES = [
  },
  {
   "name": "茶房きくち",
+  "name_zh": "茶房 菊池",
   "name_ja": "茶房きくち",
   "category": "餐飲",
   "city": "福岡",
@@ -7455,6 +7556,7 @@ const PLACES = [
  },
  {
   "name": "食事処マルタ活魚",
+  "name_zh": "食事處 丸太活魚",
   "name_ja": "食事処マルタ活魚",
   "category": "餐飲",
   "city": "福岡",
@@ -7475,6 +7577,7 @@ const PLACES = [
  },
  {
   "name": "馳走なかむら",
+  "name_zh": "馳走 中村",
   "name_ja": "馳走なかむら",
   "category": "餐飲",
   "city": "福岡",
@@ -7494,6 +7597,7 @@ const PLACES = [
  },
  {
   "name": "鮨 さかい",
+  "name_zh": "鮨 堺（さかい）",
   "name_ja": "鮨 さかい",
   "category": "餐飲",
   "city": "福岡",
@@ -7511,6 +7615,7 @@ const PLACES = [
  },
  {
   "name": "鮨 そえ島",
+  "name_zh": "鮨 添島",
   "name_ja": "鮨 そえ島",
   "category": "餐飲",
   "city": "福岡",
@@ -7549,6 +7654,7 @@ const PLACES = [
  },
  {
   "name": "鮨 菜とい",
+  "name_zh": "鮨 菜問（菜とい）",
   "name_ja": "鮨 菜とい",
   "category": "餐飲",
   "city": "福岡",
@@ -7570,6 +7676,7 @@ const PLACES = [
  },
  {
   "name": "鮨しま",
+  "name_zh": "鮨島（清真壽司）",
   "name_ja": "鮨しま 福岡",
   "category": "餐飲",
   "city": "福岡",
@@ -7589,6 +7696,7 @@ const PLACES = [
  },
  {
   "name": "かにや 本店",
+  "name_zh": "螃蟹屋（かにや）本店",
   "name_ja": "かにや 本店",
   "category": "餐飲",
   "city": "長崎",
@@ -7610,6 +7718,7 @@ const PLACES = [
  },
  {
   "name": "アサクラ",
+  "name_zh": "Asakura（洋食）",
   "name_ja": "アサクラ 佐世保",
   "category": "餐飲",
   "city": "長崎",
@@ -7630,6 +7739,7 @@ const PLACES = [
  },
  {
   "name": "ガーデンテラス 花のれん",
+  "name_zh": "Garden Terrace 花暖簾",
   "name_ja": "ガーデンテラス 花のれん",
   "category": "餐飲",
   "city": "長崎",
@@ -7666,6 +7776,7 @@ const PLACES = [
  },
  {
   "name": "ツル茶ん",
+  "name_zh": "Tsuru 茶館（土耳其飯・什錦麵）",
   "name_ja": "ツル茶ん",
   "category": "餐飲",
   "city": "長崎",
@@ -7689,6 +7800,7 @@ const PLACES = [
  },
  {
   "name": "ニッキー・アースティン 長崎駅前店",
+  "name_zh": "Nicky Austin 長崎站前店（土耳其飯）",
   "name_ja": "ニッキー・アースティン 長崎駅前店",
   "category": "餐飲",
   "city": "長崎",
@@ -7712,6 +7824,7 @@ const PLACES = [
  },
  {
   "name": "バーガーショップ あいかわ",
+  "name_zh": "漢堡店 Aikawa（あいかわ）",
   "name_ja": "バーガーショップ あいかわ",
   "category": "餐飲",
   "city": "長崎",
@@ -7731,6 +7844,7 @@ const PLACES = [
  },
  {
   "name": "ビスヌ ココウォーク長崎店",
+  "name_zh": "Bisnu 印度料理 Cocowalk 長崎店",
   "name_ja": "ビスヌ みらい長崎ココウォーク店",
   "category": "餐飲",
   "city": "長崎",
@@ -7752,6 +7866,7 @@ const PLACES = [
  },
  {
   "name": "ミサロッソ",
+  "name_zh": "Misa Rosso（佐世保漢堡）",
   "name_ja": "ミサロッソ",
   "category": "餐飲",
   "city": "長崎",
@@ -7772,6 +7887,7 @@ const PLACES = [
  },
  {
   "name": "ミラン 大波止店",
+  "name_zh": "Milan 印度料理 大波止店",
   "name_ja": "ミラン 大波止店",
   "category": "餐飲",
   "city": "長崎",
@@ -7792,6 +7908,7 @@ const PLACES = [
  },
  {
   "name": "下町の洋食 時代屋",
+  "name_zh": "下町洋食 時代屋",
   "name_ja": "下町の洋食 時代屋",
   "category": "餐飲",
   "city": "長崎",
@@ -7845,6 +7962,7 @@ const PLACES = [
  },
  {
   "name": "佐世保バーガー BigMan 京町本店",
+  "name_zh": "佐世保漢堡 BigMan 京町本店",
   "name_ja": "佐世保バーガー BigMan 京町本店",
   "category": "餐飲",
   "city": "長崎",
@@ -7887,6 +8005,7 @@ const PLACES = [
  },
  {
   "name": "割烹 とし",
+  "name_zh": "割烹 敏（とし）",
   "name_ja": "割烹とし",
   "category": "餐飲",
   "city": "長崎",
@@ -8084,6 +8203,7 @@ const PLACES = [
  },
  {
   "name": "思案橋ラーメン",
+  "name_zh": "思案橋拉麵",
   "name_ja": "思案橋ラーメン",
   "category": "餐飲",
   "city": "長崎",
@@ -8189,6 +8309,7 @@ const PLACES = [
  },
  {
   "name": "長崎ぶたまん 桃太呂 長崎駅店",
+  "name_zh": "長崎肉包 桃太呂 長崎站店",
   "name_ja": "長崎ぶたまん 桃太呂 長崎駅店",
   "category": "餐飲",
   "city": "長崎",
@@ -8292,6 +8413,7 @@ const PLACES = [
  },
  {
   "name": "ゆふいん七色の風",
+  "name_zh": "由布院 七色之風",
   "name_ja": "ゆふいん七色の風",
   "category": "住宿",
   "city": "大分",
@@ -8312,6 +8434,7 @@ const PLACES = [
  },
  {
   "name": "亀の井別荘",
+  "name_zh": "龜之井別莊",
   "name_ja": "亀の井別荘",
   "category": "住宿",
   "city": "大分",
@@ -8356,6 +8479,7 @@ const PLACES = [
  },
  {
   "name": "柚富の郷 彩岳館",
+  "name_zh": "柚富之鄉 彩岳館",
   "name_ja": "柚富の郷 彩岳館",
   "category": "住宿",
   "city": "大分",
@@ -8379,6 +8503,7 @@ const PLACES = [
  },
  {
   "name": "由布の彩 YADOYA おおはし",
+  "name_zh": "由布之彩 YADOYA 大橋",
   "name_ja": "由布の彩 YADOYA おおはし",
   "category": "住宿",
   "city": "大分",
@@ -8482,6 +8607,7 @@ const PLACES = [
  },
  {
   "name": "ソラリア西鉄ホテル福岡",
+  "name_zh": "Solaria 西鐵飯店 福岡",
   "name_ja": "ソラリア西鉄ホテル福岡",
   "category": "住宿",
   "city": "福岡",
@@ -8500,6 +8626,7 @@ const PLACES = [
  },
  {
   "name": "ホテル日航福岡",
+  "name_zh": "日航飯店 福岡",
   "name_ja": "ホテル日航福岡",
   "category": "住宿",
   "city": "福岡",
@@ -8518,6 +8645,7 @@ const PLACES = [
  },
  {
   "name": "リッチモンドホテル福岡天神",
+  "name_zh": "Richmond 飯店 福岡天神",
   "name_ja": "リッチモンドホテル福岡天神",
   "category": "住宿",
   "city": "福岡",
@@ -8613,6 +8741,7 @@ const PLACES = [
  },
  {
   "name": "ダイワロイネットホテル長崎",
+  "name_zh": "大和 Roynet 飯店 長崎",
   "name_ja": "ダイワロイネットホテル長崎",
   "category": "住宿",
   "city": "長崎",
@@ -8632,6 +8761,7 @@ const PLACES = [
  },
  {
   "name": "ホテルJALシティ長崎",
+  "name_zh": "JAL City 飯店 長崎",
   "name_ja": "ホテルJALシティ長崎",
   "category": "住宿",
   "city": "長崎",
@@ -8651,6 +8781,7 @@ const PLACES = [
  },
  {
   "name": "ホテルフォルツァ長崎",
+  "name_zh": "Forza 飯店 長崎",
   "name_ja": "ホテルフォルツァ長崎",
   "category": "住宿",
   "city": "長崎",
