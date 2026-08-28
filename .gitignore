@@ -16,3 +16,7 @@ audit/.geocode.lock
 
 # Hermes 工具產生的原子寫入暫存目錄
 .hermes-tmp.*/
+.hermes-tmp-*
+
+# skill 評測報告（與行程無關的一次性產物，400KB+）
+_eval_review_*.html
