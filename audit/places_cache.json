@@ -7628,6 +7628,119 @@
    },
    "fetched": "2026-08-23"
   },
+  "焼肉 多牛 博多駅南店": {
+   "data": {
+    "businessStatus": "OPERATIONAL",
+    "displayName": {
+     "languageCode": "ja",
+     "text": "焼肉 多牛 博多駅南店"
+    },
+    "editorialSummary": {
+     "languageCode": "ja",
+     "text": "カジュアルな雰囲気のシンプルな店。卓上の七輪で牛肉の炭火焼きやビールを楽しめる。"
+    },
+    "formattedAddress": "〒812-0016 福岡県福岡市博多区博多駅南１丁目５−３",
+    "id": "ChIJDaOyqreRQTURP2EiOFIuDzs",
+    "location": {
+     "latitude": 33.5856452,
+     "longitude": 130.4237455
+    },
+    "primaryTypeDisplayName": {
+     "languageCode": "ja",
+     "text": "焼肉店"
+    },
+    "rating": 3.8,
+    "regularOpeningHours": {
+     "nextOpenTime": "2026-08-28T08:30:00Z",
+     "openNow": false,
+     "periods": [
+      {
+       "close": {
+        "day": 0,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 0,
+        "hour": 17,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 2,
+        "hour": 23,
+        "minute": 30
+       },
+       "open": {
+        "day": 2,
+        "hour": 17,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 3,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 3,
+        "hour": 17,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 4,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 4,
+        "hour": 17,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 5,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 5,
+        "hour": 17,
+        "minute": 30
+       }
+      },
+      {
+       "close": {
+        "day": 6,
+        "hour": 23,
+        "minute": 0
+       },
+       "open": {
+        "day": 6,
+        "hour": 17,
+        "minute": 30
+       }
+      }
+     ],
+     "weekdayDescriptions": [
+      "月曜日: 定休日",
+      "火曜日: 17時30分～23時30分",
+      "水曜日: 17時30分～23時00分",
+      "木曜日: 17時30分～23時00分",
+      "金曜日: 17時30分～23時00分",
+      "土曜日: 17時30分～23時00分",
+      "日曜日: 17時30分～23時00分"
+     ]
+    },
+    "userRatingCount": 1278
+   },
+   "fetched": "2026-08-28"
+  },
   "焼肉 大東園 本店 福岡": {
    "data": {
     "businessStatus": "OPERATIONAL",
@@ -9770,5 +9883,5 @@
    "fetched": "2026-08-23"
   }
  },
- "updated": "2026-08-27"
+ "updated": "2026-08-28"
 }
