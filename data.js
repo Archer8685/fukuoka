@@ -401,6 +401,7 @@ const PLACES = [
  },
  {
   "name": "空想之森 アルテジオ",
+  "name_zh": "空想之森 Artegio 美術館",
   "name_ja": "空想の森 アルテジオ",
   "category": "景點",
   "city": "大分",
@@ -441,6 +442,7 @@ const PLACES = [
  },
  {
   "name": "くまモンスクエア（熊本熊部長辦公室）",
+  "name_zh": "熊本熊廣場（熊本熊部長辦公室）",
   "name_ja": "くまモンスクエア",
   "category": "景點",
   "city": "熊本",
@@ -539,6 +541,7 @@ const PLACES = [
  },
  {
   "name": "マリンワールド海の中道",
+  "name_zh": "海洋世界 海之中道水族館",
   "name_ja": "マリンワールド海の中道",
   "category": "景點",
   "city": "福岡",
@@ -655,6 +658,7 @@ const PLACES = [
  },
  {
   "name": "北原白秋生家・記念館",
+  "name_zh": "北原白秋故居・紀念館",
   "name_ja": "北原白秋生家・記念館",
   "category": "景點",
   "city": "福岡",
@@ -923,6 +927,7 @@ const PLACES = [
  },
  {
   "name": "福岡城跡・舞鶴公園",
+  "name_zh": "福岡城跡・舞鶴公園",
   "name_ja": "福岡城跡",
   "category": "景點",
   "city": "福岡",
@@ -1436,6 +1441,7 @@ const PLACES = [
  },
  {
   "name": "柳川雛祭 さげもんめぐり",
+  "name_zh": "柳川雛祭 吊飾巡禮（さげもん）",
   "name_ja": "柳川雛祭り さげもんめぐり",
   "category": "祭典",
   "city": "福岡",
@@ -1540,6 +1546,7 @@ const PLACES = [
  },
  {
   "name": "あるあるCity",
+  "name_zh": "aruaru City 動漫大樓",
   "name_ja": "あるあるCity",
   "category": "動漫",
   "city": "北九州",
@@ -1751,6 +1758,7 @@ const PLACES = [
  },
  {
   "name": "ONE PIECE 麦わらストア 福岡店",
+  "name_zh": "ONE PIECE 海賊王草帽商店 福岡店",
   "name_ja": "ONE PIECE 麦わらストア 福岡店",
   "category": "動漫",
   "city": "福岡",
@@ -1789,6 +1797,7 @@ const PLACES = [
  },
  {
   "name": "ちいかわらんど 福岡パルコ店",
+  "name_zh": "吉伊卡哇樂園 福岡PARCO店",
   "name_ja": "ちいかわらんど 福岡パルコ店",
   "category": "動漫",
   "city": "福岡",
@@ -1808,6 +1817,7 @@ const PLACES = [
  },
  {
   "name": "どんぐりの森 太宰府店",
+  "name_zh": "橡子共和國（吉卜力）太宰府店",
   "name_ja": "どんぐりの森 太宰府店",
   "category": "動漫",
   "city": "福岡",
@@ -1845,6 +1855,7 @@ const PLACES = [
  },
  {
   "name": "クレヨンしんちゃんオフィシャルショップ アクションデパート",
+  "name_zh": "蠟筆小新官方商店 Action Department",
   "name_ja": "クレヨンしんちゃんオフィシャルショップ アクションデパート",
   "category": "動漫",
   "city": "福岡",
@@ -1997,6 +2008,7 @@ const PLACES = [
  },
  {
   "name": "ミッフィー・ワンダースクエア",
+  "name_zh": "米飛兔 Wonder Square",
   "name_ja": "ミッフィー・ワンダースクエア",
   "category": "動漫",
   "city": "長崎",
@@ -2035,6 +2047,7 @@ const PLACES = [
  },
  {
   "name": "下ん湯（金鱗湖畔共同浴場）",
+  "name_zh": "下之湯（金鱗湖畔共同浴場）",
   "name_ja": "下ん湯",
   "category": "溫泉",
   "city": "大分",
@@ -2123,6 +2136,7 @@ const PLACES = [
  },
  {
   "name": "カモンワーフ",
+  "name_zh": "Kamon Wharf 唐戶碼頭",
   "name_ja": "カモンワーフ",
   "category": "購物",
   "city": "北九州",
@@ -2160,6 +2174,7 @@ const PLACES = [
  },
  {
   "name": "海峡プラザ",
+  "name_zh": "海峽廣場",
   "name_ja": "海峡プラザ",
   "category": "購物",
   "city": "北九州",
@@ -2234,6 +2249,7 @@ const PLACES = [
  },
  {
   "name": "お菓子の香梅 熊本城香梅庵",
+  "name_zh": "菓子之香梅 熊本城香梅庵",
   "name_ja": "お菓子の香梅 熊本城香梅庵",
   "category": "購物",
   "city": "熊本",
@@ -2710,6 +2726,7 @@ const PLACES = [
  },
  {
   "name": "MARK IS 福岡ももち",
+  "name_zh": "MARK IS 福岡百道",
   "name_ja": "マークイズ福岡ももち",
   "category": "購物",
   "city": "福岡",
@@ -3104,6 +3121,7 @@ const PLACES = [
  },
  {
   "name": "ふくや 中洲本店",
+  "name_zh": "福屋（ふくや）中洲本店・明太子",
   "name_ja": "ふくや 中洲本店",
   "category": "購物",
   "city": "福岡",
@@ -3122,6 +3140,7 @@ const PLACES = [
  },
  {
   "name": "ららぽーと福岡",
+  "name_zh": "LaLaport 福岡",
   "name_ja": "ららぽーと福岡",
   "category": "購物",
   "city": "福岡",
@@ -3252,6 +3271,7 @@ const PLACES = [
  },
  {
   "name": "マイング 博多・九州のおみやげ処",
+  "name_zh": "Ming 博多・九州伴手禮處",
   "name_ja": "マイング 博多・九州のおみやげ処",
   "category": "購物",
   "city": "福岡",
@@ -3507,6 +3527,7 @@ const PLACES = [
  },
  {
   "name": "天神・天神地下街",
+  "name_zh": "天神・天神地下街",
   "name_ja": "天神地下街",
   "category": "購物",
   "city": "福岡",
@@ -3566,6 +3587,7 @@ const PLACES = [
  },
  {
   "name": "明月堂 川端店（博多通りもん）",
+  "name_zh": "明月堂 川端店（博多通りもん銘菓）",
   "name_ja": "明月堂 川端店",
   "category": "購物",
   "city": "福岡",
@@ -3584,6 +3606,7 @@ const PLACES = [
  },
  {
   "name": "柳川よかもん館",
+  "name_zh": "柳川特產館（よかもん館）",
   "name_ja": "柳川よかもん館",
   "category": "購物",
   "city": "福岡",
@@ -3814,6 +3837,7 @@ const PLACES = [
  },
  {
   "name": "出国総合売店 スキポール",
+  "name_zh": "出境綜合商店 Schiphol",
   "name_ja": "出国総合売店 スキポール",
   "category": "購物",
   "city": "長崎",
@@ -4022,6 +4046,7 @@ const PLACES = [
  },
  {
   "name": "もじこい",
+  "name_zh": "Mojikoi（門司港燒咖哩）",
   "name_ja": "もじこい",
   "category": "餐飲",
   "city": "北九州",
@@ -4041,6 +4066,7 @@ const PLACES = [
  },
  {
   "name": "シロヤベーカリー 小倉店",
+  "name_zh": "Shiroya 麵包店 小倉店",
   "name_ja": "シロヤベーカリー 小倉店",
   "category": "餐飲",
   "city": "北九州",
@@ -4076,6 +4102,7 @@ const PLACES = [
  },
  {
   "name": "プリンセスピピ門司港",
+  "name_zh": "Princess Pipi 門司港（燒咖哩）",
   "name_ja": "世界にひとつだけの焼きカレー プリンセスピピ門司港",
   "category": "餐飲",
   "city": "北九州",
@@ -4099,6 +4126,7 @@ const PLACES = [
  },
  {
   "name": "ミルクホール門司港",
+  "name_zh": "Milk Hall 門司港",
   "name_ja": "ミルクホール門司港",
   "category": "餐飲",
   "city": "北九州",
@@ -4278,6 +4306,7 @@ const PLACES = [
  },
  {
   "name": "天寿し 京町店",
+  "name_zh": "天壽司 京町店",
   "name_ja": "天寿し 京町店",
   "category": "餐飲",
   "city": "北九州",
@@ -4399,6 +4428,7 @@ const PLACES = [
  },
  {
   "name": "資さんうどん 魚町店",
+  "name_zh": "資さん烏龍麵 魚町店",
   "name_ja": "資さんうどん 魚町店",
   "category": "餐飲",
   "city": "北九州",
@@ -4598,6 +4628,7 @@ const PLACES = [
  },
  {
   "name": "みっふぃー森のきっちん 由布院店",
+  "name_zh": "米飛兔 森之廚房 由布院店",
   "name_ja": "みっふぃー森のきっちん＆べーかりー 湯布院店",
   "category": "餐飲",
   "city": "大分",
@@ -4619,6 +4650,7 @@ const PLACES = [
  },
  {
   "name": "ゆふいん山椒郎",
+  "name_zh": "由布院 山椒郎",
   "name_ja": "ゆふいん山椒郎",
   "category": "餐飲",
   "city": "大分",
@@ -4639,6 +4671,7 @@ const PLACES = [
  },
  {
   "name": "テオムラタ（theomurata）",
+  "name_zh": "Theo Murata（巧克力）",
   "name_ja": "テオムラタ",
   "category": "餐飲",
   "city": "大分",
@@ -4824,6 +4857,7 @@ const PLACES = [
  },
  {
   "name": "湯の岳庵",
+  "name_zh": "湯之岳庵",
   "name_ja": "湯の岳庵",
   "category": "餐飲",
   "city": "大分",
@@ -4887,6 +4921,7 @@ const PLACES = [
  },
  {
   "name": "由布まぶし 心（駅前支店）",
+  "name_zh": "由布釜飯 心（站前支店）",
   "name_ja": "由布まぶし「心」湯布院駅前支店",
   "category": "餐飲",
   "city": "大分",
@@ -4946,6 +4981,7 @@ const PLACES = [
  },
  {
   "name": "由布院ミルヒ",
+  "name_zh": "由布院 Milch（起司蛋糕）",
   "name_ja": "由布院ミルヒ",
   "category": "餐飲",
   "city": "大分",
@@ -5179,6 +5215,7 @@ const PLACES = [
  },
  {
   "name": "菅乃屋 銀座通り店",
+  "name_zh": "菅乃屋 銀座通店（馬肉）",
   "name_ja": "菅乃屋 銀座通り店",
   "category": "餐飲",
   "city": "熊本",
@@ -5242,6 +5279,7 @@ const PLACES = [
  },
  {
   "name": "馬桜 銀座通り店",
+  "name_zh": "馬櫻 銀座通店（馬肉）",
   "name_ja": "馬桜 銀座通り店",
   "category": "餐飲",
   "city": "熊本",
@@ -5497,6 +5535,7 @@ const PLACES = [
  },
  {
   "name": "あまおうチーズケーキファクトリー Kingberry（太宰府天滿宮本店）",
+  "name_zh": "AMAOU 草莓起司蛋糕工房 Kingberry（太宰府天滿宮本店）",
   "name_ja": "あまおうチーズケーキファクトリー Kingberry 太宰府天満宮本店",
   "category": "餐飲",
   "city": "福岡",
@@ -5572,6 +5611,7 @@ const PLACES = [
  },
  {
   "name": "かさの家（梅ヶ枝餅）",
+  "name_zh": "笠之家（梅枝餅）",
   "name_ja": "かさの家",
   "category": "餐飲",
   "city": "福岡",
@@ -5620,6 +5660,7 @@ const PLACES = [
  },
  {
   "name": "すみ劇場 むさし坐",
+  "name_zh": "炭火劇場 武藏座",
   "name_ja": "すみ劇場 むさし坐",
   "category": "餐飲",
   "city": "福岡",
@@ -5701,6 +5742,7 @@ const PLACES = [
  },
  {
   "name": "とり田 博多本店",
+  "name_zh": "雞田（とり田）博多本店",
   "name_ja": "とり田 博多本店",
   "category": "餐飲",
   "city": "福岡",
@@ -5786,6 +5828,7 @@ const PLACES = [
  },
  {
   "name": "もつ鍋 極味や 福岡赤坂店",
+  "name_zh": "牛腸鍋 極味屋 福岡赤坂店",
   "name_ja": "もつ鍋 極味や 福岡赤坂店",
   "category": "餐飲",
   "city": "福岡",
@@ -5849,6 +5892,7 @@ const PLACES = [
  },
  {
   "name": "やす武",
+  "name_zh": "安武（やす武・蕎麥麵）",
   "name_ja": "やす武",
   "category": "餐飲",
   "city": "福岡",
@@ -5868,6 +5912,7 @@ const PLACES = [
  },
  {
   "name": "やま中（もつ鍋本店）",
+  "name_zh": "山中（牛腸鍋本店）",
   "name_ja": "元祖もつ鍋 楽天地／やま中 本店",
   "category": "餐飲",
   "city": "福岡",
@@ -5909,6 +5954,7 @@ const PLACES = [
  },
  {
   "name": "サフラン",
+  "name_zh": "Saffron（番紅花西餐廳）",
   "name_ja": "サフラン",
   "category": "餐飲",
   "city": "福岡",
@@ -5949,6 +5995,7 @@ const PLACES = [
  },
  {
   "name": "ステーキハウス ミディアムレア",
+  "name_zh": "牛排館 Medium Rare",
   "name_ja": "ステーキハウス ミディアムレア",
   "category": "餐飲",
   "city": "福岡",
@@ -6064,6 +6111,7 @@ const PLACES = [
  },
  {
   "name": "ミニヨン 博多店",
+  "name_zh": "Mignon 迷你可頌 博多店",
   "name_ja": "ミニヨン 博多店",
   "category": "餐飲",
   "city": "福岡",
@@ -6276,6 +6324,7 @@ const PLACES = [
  },
  {
   "name": "人形町今半 JR博多シティ店",
+  "name_zh": "人形町今半 JR博多City店（壽喜燒）",
   "name_ja": "人形町今半 ＪＲ博多シティ店",
   "category": "餐飲",
   "city": "福岡",
@@ -6298,6 +6347,7 @@ const PLACES = [
  },
  {
   "name": "伊都きんぐ 博多いっぴん通り店",
+  "name_zh": "伊都King 博多一品通店（草莓大福）",
   "name_ja": "伊都きんぐ 博多いっぴん通り店",
   "category": "餐飲",
   "city": "福岡",
@@ -6423,6 +6473,7 @@ const PLACES = [
  },
  {
   "name": "博多 魚蔵（都ホテル博多）",
+  "name_zh": "博多 魚藏（都飯店博多）",
   "name_ja": "博多 魚蔵 都ホテル博多",
   "category": "餐飲",
   "city": "福岡",
@@ -6444,6 +6495,7 @@ const PLACES = [
  },
  {
   "name": "博多めんたいやまや食堂 MARK IS 福岡ももち店",
+  "name_zh": "博多明太子 山屋食堂 MARK IS 福岡百道店",
   "name_ja": "博多めんたいやまや食堂 MARK IS 福岡ももち店",
   "category": "餐飲",
   "city": "福岡",
@@ -6466,6 +6518,7 @@ const PLACES = [
  },
  {
   "name": "博多もつ鍋 おおやま",
+  "name_zh": "博多牛腸鍋 大山",
   "name_ja": "博多もつ鍋おおやま",
   "category": "餐飲",
   "city": "福岡",
@@ -6488,6 +6541,7 @@ const PLACES = [
  },
  {
   "name": "博多もつ鍋 徳永屋 総本店",
+  "name_zh": "博多牛腸鍋 德永屋 總本店",
   "name_ja": "博多もつ鍋 徳永屋 総本店",
   "category": "餐飲",
   "city": "福岡",
@@ -6555,6 +6609,7 @@ const PLACES = [
  },
  {
   "name": "博多焼肉こうし",
+  "name_zh": "博多燒肉 KOUSHI（こうし）",
   "name_ja": "博多焼肉こうし",
   "category": "餐飲",
   "city": "福岡",
@@ -6698,6 +6753,7 @@ const PLACES = [
  },
  {
   "name": "天麩羅処 ひらお本店",
+  "name_zh": "天婦羅處 平尾（ひらお）本店",
   "name_ja": "天麩羅処ひらお 本店",
   "category": "餐飲",
   "city": "福岡",
@@ -6777,6 +6833,7 @@ const PLACES = [
  },
  {
   "name": "川端ぜんざい広場",
+  "name_zh": "川端紅豆湯廣場",
   "name_ja": "川端ぜんざい広場",
   "category": "餐飲",
   "city": "福岡",
@@ -6991,6 +7048,7 @@ const PLACES = [
  },
  {
   "name": "焼とりの八兵衛 Bekkan",
+  "name_zh": "烤雞串 八兵衛 別館",
   "name_ja": "焼とりの八兵衛 Bekkan",
   "category": "餐飲",
   "city": "福岡",
@@ -7089,6 +7147,7 @@ const PLACES = [
  },
  {
   "name": "焼肉・冷麺 大東園 本店",
+  "name_zh": "燒肉・冷麵 大東園 本店",
   "name_ja": "焼肉・冷麺 大東園本店",
   "category": "餐飲",
   "city": "福岡",
@@ -7294,6 +7353,7 @@ const PLACES = [
  },
  {
   "name": "葉隠うどん",
+  "name_zh": "葉隱烏龍麵",
   "name_ja": "葉隠うどん",
   "category": "餐飲",
   "city": "福岡",
@@ -7586,6 +7646,7 @@ const PLACES = [
  },
  {
   "name": "タンテ・アニー",
+  "name_zh": "Tante Annie（荷蘭風車鬆餅）",
   "name_ja": "タンテ・アニー",
   "category": "餐飲",
   "city": "長崎",

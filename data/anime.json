@@ -125,6 +125,7 @@
  },
  {
   "name": "ONE PIECE 麦わらストア 福岡店",
+  "name_zh": "ONE PIECE 海賊王草帽商店 福岡店",
   "name_ja": "ONE PIECE 麦わらストア 福岡店",
   "category": "動漫",
   "city": "福岡",
@@ -146,6 +147,7 @@
  },
  {
   "name": "クレヨンしんちゃんオフィシャルショップ アクションデパート",
+  "name_zh": "蠟筆小新官方商店 Action Department",
   "name_ja": "クレヨンしんちゃんオフィシャルショップ アクションデパート",
   "category": "動漫",
   "city": "福岡",
@@ -188,6 +190,7 @@
  },
  {
   "name": "ちいかわらんど 福岡パルコ店",
+  "name_zh": "吉伊卡哇樂園 福岡PARCO店",
   "name_ja": "ちいかわらんど 福岡パルコ店",
   "category": "動漫",
   "city": "福岡",
@@ -338,6 +341,7 @@
  },
  {
   "name": "あるあるCity",
+  "name_zh": "aruaru City 動漫大樓",
   "name_ja": "あるあるCity",
   "category": "動漫",
   "city": "北九州",

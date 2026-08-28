@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>福岡・九州 12 天 — 景點餐廳地圖</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
-<link rel="preload" href="data.js?v=110" as="script">
-<link rel="preload" href="trip.js?v=110" as="script">
+<link rel="preload" href="data.js?v=111" as="script">
+<link rel="preload" href="trip.js?v=111" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="stylesheet" href="libs/leaflet.css">
@@ -311,8 +311,8 @@ body.mode-place .card .dishes{display:none}
 </div>
 <div id="mobileDetail" hidden></div>
 
-<script src="data.js?v=110"></script>
-<script src="trip.js?v=110"></script>
+<script src="data.js?v=111"></script>
+<script src="trip.js?v=111"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -340,6 +340,10 @@ const REGIONS=[
 // 日文新字體 → 繁體：搜尋兩邊都正規化，輸入「天滿宮」找得到「天満宮」
 const _J2T=(typeof J2T!=="undefined")?J2T:{};
 function j2t(s){let r="";for(const c of s)r+=_J2T[c]||c;return r;}
+// 顯示名：有 name_zh 就用中文當標題，原文降為副標；
+// 沒有 name_zh 時維持原行為，但若 name 與 name_ja 相同則不重複顯示。
+function zhName(p){return p.name_zh||p.name;}
+function jaName(p){const ja=p.name_ja||p.name;return ja&&ja!==zhName(p)?ja:"";}
 
 const map=L.map('map',{zoomControl:true}).setView(REGIONS[0].center,REGIONS[0].zoom);
 // 國土地理院圖磚：官方、免金鑰、日本境內細節最好；座標為 WGS-84，與資料一致（無中國那種偏移問題）
@@ -720,8 +724,8 @@ function coordWarn(p){
 function popupHtml(p){
   const dishes=(p.dishes||p.activities||[]).map(d=>`<span>${d}</span>`).join("");
   return `<div class="pp">
-    <h3>${p.name}</h3>
-    <div class="sub">${p.name_ja?p.name_ja+"　":""}${p.city}・${p.area||""}${p.cuisine?("・"+p.cuisine):""}${isWinter(p)?"・❄️ 冬季限定":""}</div>
+    <h3>${zhName(p)}</h3>
+    <div class="sub">${jaName(p)?jaName(p)+"　":""}${p.city}・${p.area||""}${p.cuisine?("・"+p.cuisine):""}${isWinter(p)?"・❄️ 冬季限定":""}</div>
     ${p.tabelog?`<div class="row"><b>⭐ 食べログ ${p.tabelog}</b>${p.tabelog_area?`（${p.tabelog_area}${p.tabelog_rank?` 第 ${p.tabelog_rank} 名`:""}）`:""} <a href="https://tabelog.com/rstLst/?sw=${encodeURIComponent(p.name_ja||p.name)}" target="_blank" rel="noopener" style="font-size:10.5px;color:#b45309;font-weight:700;white-space:nowrap">↗ 到食べログ核對</a></div>`:""}
     ${halalLabel(p)?`<div class="row"><b>${halalLabel(p)[0]}</b>${p.halal_cert?`（${p.halal_cert}）`:""}</div>`:""}
     ${p.hours?`<div class="row"><b>🕐 </b>${p.hours}</div>`:""}
@@ -747,7 +751,7 @@ function passesBase(p){
 function matchesSearch(p){
   if(!state.q)return true;
   const q=j2t(state.q.toLowerCase());
-  const hay=j2t([p.name,p.name_ja,p.area,p.address,p.cuisine,p.reason,p.halal===true?'清真 ハラール halal':(p.halal||''),p.tabelog?'食べログ '+p.tabelog:'',...(p.dishes||[]),...(p.activities||[])].join(" ").toLowerCase());
+  const hay=j2t([p.name,p.name_zh,p.name_ja,p.area,p.address,p.cuisine,p.reason,p.halal===true?'清真 ハラール halal':(p.halal||''),p.tabelog?'食べログ '+p.tabelog:'',...(p.dishes||[]),...(p.activities||[])].join(" ").toLowerCase());
   return hay.includes(q);
 }
 function passes(p){return passesBase(p)&&matchesSearch(p);}
@@ -772,8 +776,8 @@ function buildList(items){
     const card=document.createElement('div');card.className='card';
     const badgeCfg=iconFor(p.category,p);
     const label=(CATS[p.category]||{label:p.category}).label;
-    card.innerHTML=`<div class="top"><span class="badge" style="background:${badgeCfg.color}">${badgeCfg.emoji} ${label}</span><h3>${p.name}</h3>${p.tabelog?`<span class="tabelog-tag">⭐${p.tabelog}</span>`:""}${halalLabel(p)?`<span class="halal-tag ${halalLabel(p)[1]}">${halalLabel(p)[0]}</span>`:""}${isWinter(p)?`<span class="winter-tag">❄️</span>`:""}</div>
-      ${p.name_ja?`<div class="ja">${p.name_ja}</div>`:""}
+    card.innerHTML=`<div class="top"><span class="badge" style="background:${badgeCfg.color}">${badgeCfg.emoji} ${label}</span><h3>${zhName(p)}</h3>${p.tabelog?`<span class="tabelog-tag">⭐${p.tabelog}</span>`:""}${halalLabel(p)?`<span class="halal-tag ${halalLabel(p)[1]}">${halalLabel(p)[0]}</span>`:""}${isWinter(p)?`<span class="winter-tag">❄️</span>`:""}</div>
+      ${jaName(p)?`<div class="ja">${jaName(p)}</div>`:""}
       <div class="meta">${p.area||""}${p.cuisine?"｜"+p.cuisine:""}${p.hours?"｜"+p.hours:""}${p.price?"｜"+p.price:""}${p.ticket?"｜門票 "+p.ticket:""}</div>
       ${(p.dishes||p.activities)?`<div class="dishes">${(p.dishes||p.activities).slice(0,4).join("、")}</div>`:""}`;
     card.onclick=()=>{
@@ -943,7 +947,7 @@ function renderTrip(keepView){
       if(FOOD_CATS.has(p.category)&&!state.cuisineGroups.has(CUISINE2GROUP[p.cuisine]||cuisineGroup(p.cuisine)))return;
       if(stopNames.has(_norm(p.name)))return;
       let searchMatch=true;
-      if(q){const hay=j2t([p.name,p.name_ja,p.area,p.cuisine,...(p.dishes||[]),...(p.activities||[])].join(" ").toLowerCase());searchMatch=hay.includes(q);}
+      if(q){const hay=j2t([p.name,p.name_zh,p.name_ja,p.area,p.cuisine,...(p.dishes||[]),...(p.activities||[])].join(" ").toLowerCase());searchMatch=hay.includes(q);}
       const cfg=iconFor(p.category,p);
       const mk=L.marker([p.lat,p.lng],{icon:L.divIcon({className:'pin-wrap',
         html:`<div class="pin" style="background:${cfg.color};transform:rotate(-45deg) scale(.72);opacity:${searchMatch?'.62':'.16'}"><span>${cfg.emoji}</span></div>`,
@@ -1153,7 +1157,7 @@ window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('p
     window.addEventListener('load',function(){
       navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){
         if(!('caches' in window))return;
-        caches.open('fukuoka-app-v110').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});
+        caches.open('fukuoka-app-v111').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});
           document.querySelectorAll('script[src],link[href]').forEach(function(el){
             var u=el.src||el.href; if(!u||u.indexOf(location.origin)!==0)return;
             c.match(u).then(function(hit){ if(!hit) c.add(u).catch(function(){}); });
