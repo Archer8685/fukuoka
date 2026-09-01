@@ -491,6 +491,132 @@ def check_alt_conflicts(notes, places):
         ok("備選清單無已知會撲空的店")
 
 
+# Hermes cron 排程檔。行前提醒的 prompt 裡硬寫了餐廳／設施名單，
+# 行程一改就會偷偷過期，而且沒有任何檢查抓得到——
+# 2026-09-01 發現 1/10 的訂位排程還在叫使用者訂「河太郎 中洲本店」
+# （已移到 2/12 午餐的博多駅店）、「COMICO ART MUSEUM YUFUIN」（已不在行程），
+# 且漏了要訂位的「菅乃屋 銀座通り店」。
+CRON_JOBS_JSON = os.path.join(
+    os.path.expanduser("~"), "AppData", "Local", "hermes", "cron", "jobs.json")
+
+# 只檢查這些排程（行前提醒）。名稱前綴用來篩掉與本專案無關的 job。
+CRON_NAME_PREFIX = "福岡行前"
+
+# 這些站點名稱雖然在 data/*.json，但屬於通用地標／園區，排程文字提到它們
+# 不代表引用了某個「已下架的站」，比對時忽略以免誤報。
+CRON_IGNORE_NAMES = {
+    "博多站", "小倉站", "熊本站", "由布院站", "豪斯登堡", "豪斯登堡站",
+    "博多埠頭", "福岡機場國際線航廈", "金鱗湖", "熊本城", "小倉城",
+    "太宰府天滿宮", "福岡 PARCO", "豪斯登堡 園內美食",
+}
+
+# note 出現這些字眼 = 這一站要事先訂位／預約，行前排程必須提到它。
+RESERVE_WORDS = (r"需訂位|務必訂位|建議先訂位|建議訂位|需要預約|需事先預約|"
+                 r"務必訂|完全預約制|需預約|請訂")
+
+# 有些站點的 note 要預約的是「從這站出發的交通」，排程自然寫交通名稱，
+# 不會逐字寫站點名稱。這些等價字樣也算有覆蓋。
+CRON_COVER_ALIASES = {
+    "福岡機場國際線航廈": ("ゆふいん号", "福岡機場國際線"),
+}
+
+
+# 已知的舊站／舊店名稱。這一層補 data/*.json 的盲點：若舊店已經連資料庫記錄都刪掉，
+# 單靠 places - live 無從知道它曾存在。發現新的真實過期案例就加在這裡。
+CRON_FORBIDDEN_PHRASES = {
+    "COMICO ART MUSEUM YUFUIN",
+    "河太郎 中洲本店",
+    "磯ぎよし 天神本店",
+}
+
+
+def check_cron_prompts(stops):
+    """Hermes 行前排程的 prompt 不該引用已不在現行行程的店家。
+
+    判斷依據：prompt 提到某個 data/*.json 裡的店名，但該店不在 trip.js 的
+    站點或 alt 備選中 → 這個排程觸發時會叫使用者去訂已經被換掉的店。
+    """
+    if stops is None:
+        return
+    if not os.path.exists(CRON_JOBS_JSON):
+        err(f"找不到 cron 排程檔：{CRON_JOBS_JSON}（無法驗證行前排程）")
+        return
+    try:
+        raw = json.load(io.open(CRON_JOBS_JSON, encoding="utf-8"))
+    except Exception as e:
+        err(f"cron jobs.json 不是合法 JSON，無法驗證行前排程：{e}")
+        return
+    jobs = raw if isinstance(raw, list) else raw.get("jobs", raw)
+    if isinstance(jobs, dict):
+        jobs = list(jobs.values())
+
+    # 現行行程真正在用的名稱：站點本身 ＋ alt 備選。
+    live = {s["name"] for s in stops}
+    for s in dump_notes() or []:
+        live.update(s["alt"])
+
+    places = {p["name"] for p in load_data_dir()}
+    # 候選 = 資料庫有、但現行行程沒在用的店；長度 >= 4 才比對，避免短名亂命中。
+    stale_candidates = sorted(
+        (n for n in places - live - CRON_IGNORE_NAMES if len(n) >= 4),
+        key=len, reverse=True)
+
+    bad = 0
+    checked = 0
+    for j in jobs:
+        name = j.get("name") or ""
+        if not name.startswith(CRON_NAME_PREFIX):
+            continue
+        checked += 1
+        prompt = j.get("prompt") or ""
+        jid = j.get("id") or j.get("job_id") or "?"
+        hits = [n for n in stale_candidates if n in prompt]
+        hits += [n for n in CRON_FORBIDDEN_PHRASES if n in prompt and n not in hits]
+        # 較長的名稱命中時，不要再回報它包含的短名（河太郎 博多駅店 vs 河太郎）
+        hits = [h for h in hits if not any(h != o and h in o for o in hits)]
+        for h in hits:
+            err(f"cron「{name}」({jid}) 引用了已不在現行行程的「{h}」")
+            bad += 1
+    if checked == 0:
+        warn(f"cron jobs.json 裡找不到任何「{CRON_NAME_PREFIX}」排程")
+    elif not bad:
+        ok(f"cron 行前排程（{checked} 個）未引用已下架的站點")
+
+    # 反向檢查：note 明說要訂位的站，必須有某個排程提到它。
+    # 只抓「已下架的站」是單向的——原本的 bug 另一半是「漏了菅乃屋 銀座通り店」，
+    # 那種缺漏在上面的比對裡完全隱形。
+    all_prompts = "\n".join(
+        (j.get("prompt") or "") for j in jobs
+        if (j.get("name") or "").startswith(CRON_NAME_PREFIX))
+    if not all_prompts:
+        return
+    missing = []
+    for s in dump_notes() or []:
+        if s["name"] not in live:
+            continue
+        # note 裡的「需訂位」可能是在講備選店（例：資さんうどん 是 24 小時營業，
+        # 但 note 提到備選「天寿し 京町店」完全預約制）。逐段比對，
+        # 命中訂位字眼的那一段若同時點名了 alt 備選，就不算這一站要訂位。
+        needs = False
+        for seg in re.split(r"<br>|。|；", s["note"]):
+            if not re.search(RESERVE_WORDS, seg):
+                continue
+            if any(a in seg for a in s["alt"]):
+                continue
+            needs = True
+            break
+        if not needs:
+            continue
+        aliases = CRON_COVER_ALIASES.get(s["name"], ())
+        if s["name"] not in all_prompts and not any(a in all_prompts for a in aliases):
+            missing.append(f"{s['date']} {s['t']} {s['name']}")
+    if missing:
+        for m in missing:
+            err(f"note 說要訂位，但沒有任何行前排程提到：{m}")
+    else:
+        ok("所有需訂位的站點都有排程覆蓋")
+
+
 def main():
     print("=== 福岡專案健檢 ===\n")
     places = load_data_dir()
@@ -505,6 +631,7 @@ def main():
     check_note_history(notes)
     check_alt_conflicts(notes, places)
     check_cross_file_facts()
+    check_cron_prompts(stops)
     print(f"\n=== 錯誤 {len(ERR)}、警告 {len(WARN)} ===")
     sys.exit(1 if ERR else 0)
 
