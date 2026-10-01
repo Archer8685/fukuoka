@@ -443,6 +443,7 @@ def check_cross_file_facts():
     files = {
         "trip.js": io.open("trip.js", encoding="utf-8").read(),
         "prep.html": io.open("prep.html", encoding="utf-8").read(),
+        "itinerary.html": io.open("itinerary.html", encoding="utf-8").read(),
         "HANDOFF.md": io.open("HANDOFF.md", encoding="utf-8").read(),
     }
     forbidden = {
@@ -469,8 +470,26 @@ def check_cross_file_facts():
             if phrase not in files[filename]:
                 err(f"{filename} 缺少現行決策：{phrase}")
                 bad += 1
+    # 本次 2/6、2/8 結構性變更：防止靜態說明頁殘留舊主行程／舊 Pass 結論。
+    itinerary_forbidden = (
+        "建議買 <b>JR 九州 Pass 北部九州 3 日券",
+        "Pass 用到：</b>2/4 小倉・八幡、2/5 下關・門司港、2/6 熊本",
+    )
+    prep_forbidden = (
+        "<tr><td>とり田 博多本店</td><td>2/6 晚餐</td>",
+        "<li><b>2/6 熊本</b>：馬肉",
+        "博多埠頭 → 海の中道 渡輪",
+    )
+    for phrase in itinerary_forbidden:
+        if phrase in files.get("itinerary.html", ""):
+            err(f"itinerary.html 殘留已過期決策：{phrase}")
+            bad += 1
+    for phrase in prep_forbidden:
+        if phrase in files.get("prep.html", ""):
+            err(f"prep.html 殘留已過期決策：{phrase}")
+            bad += 1
     if not bad:
-        ok("跨檔現行決策一致（皿倉山／田舎庵／由布院／プリンセスピピ）")
+        ok("跨檔現行決策一致（皿倉山／田舎庵／由布院／プリンセスピピ／Klook／相島）")
 
 
 def check_alt_conflicts(notes, places):
@@ -527,6 +546,12 @@ CRON_FORBIDDEN_PHRASES = {
     "COMICO ART MUSEUM YUFUIN",
     "河太郎 中洲本店",
     "磯ぎよし 天神本店",
+    # 2/6、2/8 已分別改成 Klook 完整團與相島；這些舊主行程名稱若再進提醒即為過期。
+    "菅乃屋 銀座通り店",
+    "とり田 博多本店",
+    "くまモンスクエア",
+    "博多埠頭→海の中道",
+    "ステーキハウス ミディアムレア",
 }
 
 
