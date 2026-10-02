@@ -913,10 +913,10 @@
   "reason": "相島渡船的新宮側港口；現行冬季主方案 09:20 去、13:50 自相島回。",
   "notes": "⚠️ 2027 班表與票價尚未公告；現行成人單程 ¥480，冬季風浪可能停航。",
   "duration": "候船 30 分",
-  "coord_status": "approx",
-  "lat": 33.71535,
-  "lng": 130.42747,
-  "coord_source": "新宮町官方渡船頁所示港區概略位置；出發前重驗"
+  "coord_status": "osm",
+  "lat": 33.7178509,
+  "lng": 130.4238292,
+  "coord_source": "OSM Overpass amenity=ferry_terminal「相島渡船場」；與 Google Maps POI「相島渡船新宮待合所」相差 3 m。API 恢復後以 verify_places 覆核"
  },
  {
   "name": "相島",
