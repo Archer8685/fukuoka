@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>福岡・九州 2/1–2/12 行程</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
-<link rel="preload" href="data.js?v=117" as="script">
-<link rel="preload" href="trip.js?v=117" as="script">
+<link rel="preload" href="data.js?v=118" as="script">
+<link rel="preload" href="trip.js?v=118" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
@@ -225,8 +225,8 @@ header.pg .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
   <div class="mb" id="mBody"></div>
 </dialog>
 
-<script src="data.js?v=117"></script>
-<script src="trip.js?v=117"></script>
+<script src="data.js?v=118"></script>
+<script src="trip.js?v=118"></script>
 <script>
 // ---- 共用：地點查找（日文新字體 → 繁體正規化）----
 const _J2T=(typeof J2T!=="undefined")?J2T:{};
@@ -307,7 +307,7 @@ const KIND={spot:{c:"#1b4f8a",t:"景點"},meal:{c:"#e67e22",t:"用餐"},hotel:{c
 const CITY_COLOR={"福岡":"var(--fuk)","長崎":"var(--ngs)","大分":"var(--oita)","北九州":"var(--kk)"};
 
 const GTIPS_HTML=`<div class="daytips"><details><summary>🚄 通用交通・JR Pass・2 月提醒</summary><div class="daytips-b">
-<b>JR Pass：</b>2/6 已改 Klook 巴士團，現行 JR 大移動只剩 2/4 小倉・八幡與 2/5 下關・門司港。請依 2027 票價重算北部九州 3 日券與逐段單買，<b>未重算前不要照舊購票</b>；南部／全九州版都不適合。<br>
+<b>JR Pass：</b>2/6 是 Klook 巴士團，JR 大移動只有 2/4 小倉・八幡與 2/5 下關・門司港。請依 2027 票價重算北部九州 3 日券與逐段單買，<b>未重算前不要直接購票</b>；南部／全九州版都不適合。<br>
 <b>⚠️ 北部九州 Pass 不含山陽新幹線：</b>博多↔小倉不能搭新幹線（JR 西日本區間），要走特急ソニック／きらめき或鹿兒島本線。<br>
 <b>2/6 Klook：</b>商品 101691 為福岡出發、天安河原＋高千穗峽＋熊本城約 10 小時完整團；集合、回程、午餐與票券依最終憑證。<br>
 <b>2/8 相島：</b>2027 年 1 月底及出發當日重查町營渡船；主方案 09:20 去、13:50 回，不等 17:00 末班。<br>
@@ -465,6 +465,6 @@ document.addEventListener('click',e=>{
 });
 window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('pgload').classList.add('done');});
 </script>
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('fukuoka-app-v117').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});});}).catch(function(){});});}</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('fukuoka-app-v118').then(function(c){var __pages=['./','itinerary.html','map.html','prep.html','config.js'];__pages.forEach(function(u){c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)c.add(u).catch(function(){});});});});}).catch(function(){});});}</script>
 </body>
 </html>
