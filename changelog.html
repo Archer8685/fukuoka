@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>更新紀錄 — 福岡・九州 2/1–2/12</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f7f9fb; --panel:#fff; --ink:#22282e; --muted:#77828d;
+  --accent:#1b4f8a; --accent2:#0e7c6b; --line:#dfe6ec; --chip:#eef3f7;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;color:var(--ink);background:var(--bg);padding-bottom:60px}
+.topnav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:58px;padding:9px clamp(14px,3vw,28px);background:rgba(247,249,251,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+.brand{display:flex;flex-direction:column;min-width:0}
+.brand strong{font-size:15px;line-height:1.25}
+.brand span{color:var(--muted);font-size:12px;line-height:1.35;white-space:nowrap}
+.navlinks{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.navlinks a{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 14px;border:1px solid var(--line);border-radius:8px;color:var(--ink);background:var(--panel);text-decoration:none;font-size:14px;font-weight:700}
+.wrap{max-width:880px;margin:0 auto;padding:0 14px}
+header.page{padding:22px 0 6px}
+header.page h1{font-size:22px}
+header.page .sub{color:var(--muted);font-size:13px;margin-top:5px;line-height:1.7}
+section.day{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:14px 0;padding:14px 18px}
+section.day h2{font-size:14px;color:var(--accent2);margin-bottom:6px}
+ul{list-style:none}
+li{display:flex;gap:8px;align-items:baseline;padding:7px 0;border-top:1px solid var(--chip);font-size:14px;line-height:1.6}
+li:first-child{border-top:0}
+.ver{flex-shrink:0;font-size:11px;font-weight:700;color:#fff;background:var(--accent);border-radius:6px;padding:1px 7px}
+.msg{min-width:0;overflow-wrap:anywhere}
+.state{color:var(--muted);font-size:13px;padding:28px 0;text-align:center}
+@media (max-width:420px){.navlinks a{padding:0 10px;font-size:13px}}
+</style>
+</head>
+<body>
+<nav class="topnav" aria-label="主要導覽">
+  <div class="brand">
+    <strong>Fukuoka Trip</strong>
+    <span>2027/2/1–2/12</span>
+  </div>
+  <div class="navlinks">
+    <a href="prep.html">行前</a>
+    <a href="itinerary.html">行程</a>
+    <a href="map.html">地圖</a>
+  </div>
+</nav>
+<div class="wrap">
+<header class="page">
+  <h1>📝 更新紀錄</h1>
+  <div class="sub">網站每次更新改了什麼，由新到舊排列。</div>
+</header>
+<div id="log"><p class="state">載入中…</p></div>
+</div>
+<script>
+(async function(){
+  const box=document.getElementById('log');
+  const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const all=[];
+  try{
+    for(let page=1;page<=5;page++){
+      const r=await fetch('https://api.github.com/repos/Archer8685/fukuoka/commits?per_page=100&page='+page);
+      if(!r.ok)throw new Error(r.status);
+      const d=await r.json();
+      all.push(...d);
+      if(d.length<100)break;
+    }
+  }catch(e){
+    box.innerHTML='<p class="state">目前無法載入更新紀錄（這一頁需要連網）。</p>';
+    return;
+  }
+  const byDate=new Map();
+  for(const c of all){
+    let line=c.commit.message.split('\n')[0].trim();
+    if(/^Merge /.test(line))continue;
+    line=line.replace(/^(feat|fix|chore|style|docs|refactor|perf|test)(\([^)]*\))?:\s*/,'');
+    const key=new Date(c.commit.committer.date).toLocaleDateString('zh-TW',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'});
+    if(!byDate.has(key))byDate.set(key,[]);
+    const m=line.match(/^(v\d+)\s*[:：]\s*(.*)$/);
+    byDate.get(key).push(m?{v:m[1],t:m[2]}:{v:'',t:line});
+  }
+  if(!byDate.size){box.innerHTML='<p class="state">沒有更新紀錄。</p>';return;}
+  box.innerHTML=[...byDate].map(([d,items])=>
+    `<section class="day"><h2>${esc(d)}</h2><ul>${items.map(i=>
+      `<li>${i.v?`<span class="ver">${esc(i.v)}</span>`:''}<span class="msg">${esc(i.t)}</span></li>`).join('')}</ul></section>`).join('');
+})();
+</script>
+</body>
+</html>

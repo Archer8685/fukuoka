@@ -125,6 +125,17 @@ git add -A && git commit && git push
 修改歷程屬於 commit message 與 changelog，不屬於 note。
 **不要在 note 裡寫日期戳記或「訂正」「換掉了」「原本是」這類字眼。**
 
+**範圍不只站點 note**：`changelog.html` 以外的所有頁面（`itinerary.html`、`map.html`、`prep.html`，
+以及會顯示在頁面上的 trip.js note／label／BACKUPS 和 `data/*.json` 的 reason／notes／hours／address）
+都只放現況。**過去的決定、方案比較、待決定事項也不放**——決策理由寫進 `DECISIONS.md`，
+待決定與外部待確認寫進 `HANDOFF.md`。
+- ❌ `結論待重算：北部九州 3 日券未必划算`（待決定）
+- ❌ `刻意選 12:09 這班，不選 11:09`、`✅ 採 A 案`（過去的決定）
+- ✅ `需訂位`、`出發前查班表`（行動指示可以留）
+
+`changelog.html` 直接讀 GitHub 的提交紀錄顯示，**commit 標題就是使用者會看到的更新說明**，
+請用 `vNNN: 改了什麼` 這種讀得懂的寫法。
+
 ## 🟡 第四類：HANDOFF.md 會落後
 
 `HANDOFF.md` 自稱「唯一權威」，但實際曾停在 v78 而行程已到 v103。
